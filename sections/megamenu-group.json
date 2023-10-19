@@ -1,0 +1,742 @@
+{
+  "type": "custom.megamenu",
+  "name": "Megamenu Sections",
+  "sections": {
+    "91fdad5f-eba6-402c-a514-e4064f3d4754": {
+      "type": "drawer-menu",
+      "blocks": {
+        "63faf4d9-e903-440e-ada8-a621709de338": {
+          "type": "menu",
+          "settings": {
+            "menu": "mega-shop-face-eye-lip-tools",
+            "icon_style": "plus",
+            "typography_style": "megamenu-link--large",
+            "spacing": 14,
+            "border_top": false,
+            "border_bottom": false,
+            "margin_top": 22,
+            "margin_bottom": 0,
+            "grid_layout": "grid",
+            "facebook_url": "",
+            "instagram_url": "",
+            "thumbnails__show": true,
+            "metafield": "smart.menu_image",
+            "override_1_handle": "shop",
+            "override_1_image": "shopify:\/\/shop_images\/KAB_SIGNATURE_SCULPTING_STICKS_COLOR_STICKS_Group_Swatch_1200x1200px.jpg",
+            "override_2_handle": "shade-finder",
+            "override_2_image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_CONTRAST_STICKS_ARM_SWATCHES_1200x1200px_e34f2794-5d16-4481-bade-13f629c714de.jpg",
+            "override_3_handle": "about-us",
+            "override_3_image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_CONTRAST_STICKS_SHAPE_1_1200x1200px.jpg",
+            "override_4_handle": "pro",
+            "override_4_image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_COLOR_STICKS_AWAKEN_1_1200x1200px.jpg",
+            "override_5_handle": ""
+          }
+        },
+        "9b8f1e74-284c-4aab-b615-c95bb73c5548": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": "main-menu",
+            "icon_style": "plus",
+            "typography_style": "megamenu-link--large",
+            "spacing": 20,
+            "border_top": false,
+            "border_bottom": false,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "grid_layout": "grid grid-cols-2",
+            "facebook_url": "",
+            "instagram_url": "",
+            "thumbnails__show": false,
+            "metafield": "smart.menu_image",
+            "override_1_handle": "",
+            "override_2_handle": "",
+            "override_3_handle": "",
+            "override_4_handle": "",
+            "override_5_handle": ""
+          }
+        },
+        "499dba69-ea53-4da7-9e3c-571904f2fc15": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": "",
+            "icon_style": "chevron-right",
+            "typography_style": "megamenu-link",
+            "spacing": 20,
+            "border_top": false,
+            "border_bottom": false,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "grid_layout": "grid grid-cols-2",
+            "facebook_url": "",
+            "instagram_url": "",
+            "thumbnails__show": false,
+            "metafield": "smart.menu_image",
+            "override_1_handle": "",
+            "override_2_handle": "",
+            "override_3_handle": "",
+            "override_4_handle": "",
+            "override_5_handle": ""
+          }
+        },
+        "56abd34e-e76c-4bec-bab1-188adb15426a": {
+          "type": "footer_action",
+          "settings": {
+            "title": "Log In",
+            "url": "\/account\/login",
+            "icon_list": "user",
+            "border_top": false,
+            "border_bottom": false
+          }
+        },
+        "d192f8b1-3231-47a7-870b-ed6cc9d37343": {
+          "type": "footer_action",
+          "disabled": true,
+          "settings": {
+            "title": "Order Status",
+            "url": "#",
+            "icon_list": "package",
+            "border_top": true,
+            "border_bottom": false
+          }
+        },
+        "bff3add2-447d-4fdd-a609-bf2944c441aa": {
+          "type": "footer_text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>[icon.5-stars]<\/p><h6><\/h6><h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis diam lorem. Praesent auctor dapibus purus, eu facilisis nunc auctor et. In fermentum nunc et est vulputate malesuada.”<\/h6><h6><\/h6><h6><strong>John Doe, <\/strong>Verified Buyer<\/h6>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "387c9a24-ed60-473d-b4ff-fac00982e9be": {
+          "type": "footer_buttons",
+          "settings": {
+            "button_primary__text": "Shop Best Sellers",
+            "button_primary__url": "shopify:\/\/collections\/best-sellers",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex flex-col md:flex-row w-full",
+            "button__desktop_layout": "flex md:!flex-col w-full",
+            "margin_top": 0,
+            "margin_bottom": 2,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "976d24df-d4f0-4a32-a6e7-8606c70e9a63": {
+          "type": "footer_text",
+          "settings": {
+            "title": "<h6>FREE SHIPPING ON US ORDERS OVER $75<\/h6>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "34cb402b-40f3-4ba2-b4c2-874a7ff96290": {
+          "type": "footer_social_links",
+          "disabled": true,
+          "settings": {
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "63faf4d9-e903-440e-ada8-a621709de338",
+        "9b8f1e74-284c-4aab-b615-c95bb73c5548",
+        "499dba69-ea53-4da7-9e3c-571904f2fc15",
+        "56abd34e-e76c-4bec-bab1-188adb15426a",
+        "d192f8b1-3231-47a7-870b-ed6cc9d37343",
+        "bff3add2-447d-4fdd-a609-bf2944c441aa",
+        "387c9a24-ed60-473d-b4ff-fac00982e9be",
+        "976d24df-d4f0-4a32-a6e7-8606c70e9a63",
+        "34cb402b-40f3-4ba2-b4c2-874a7ff96290"
+      ],
+      "settings": {
+        "logo": "branding_logo_dark_on_light",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "floating": true,
+        "align__horizontal": "items-center text-center",
+        "sectionID": ""
+      }
+    },
+    "be752d2c-6b3d-42ac-9191-7ef834365a46": {
+      "type": "drawer-menu",
+      "blocks": {
+        "620915fb-edb0-4911-a54e-94220d84e1c0": {
+          "type": "footer_text",
+          "settings": {
+            "title": "<p>[icon.5-stars]<\/p><h6><\/h6><h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis diam lorem. Praesent auctor dapibus purus, eu facilisis nunc auctor et. In fermentum nunc et est vulputate malesuada.”<\/h6><h6><\/h6><h6><strong>John Doe, <\/strong>Verified Buyer<\/h6>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e627292b-cb1b-4e52-b3b5-fb82b825fe6a": {
+          "type": "footer_buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "620915fb-edb0-4911-a54e-94220d84e1c0",
+        "e627292b-cb1b-4e52-b3b5-fb82b825fe6a"
+      ],
+      "disabled": true,
+      "settings": {
+        "logo": "branding_logo_dark_on_light",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "floating": true,
+        "align__horizontal": "items-center text-center",
+        "sectionID": ""
+      }
+    },
+    "a66831e4-2fd7-4c31-b577-9b13280f37ab": {
+      "type": "megamenu",
+      "blocks": {
+        "f365f80c-fda5-410a-8797-7eb28472d748": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 3,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "hidden @xl:block"
+          }
+        },
+        "4a596d34-752e-401b-9f35-d4ac806ddad3": {
+          "type": "feature_grid",
+          "disabled": true,
+          "settings": {
+            "title": "<h6><strong>BEST SELLERS<\/strong><\/h6>",
+            "title_font": 1,
+            "products": [
+
+            ],
+            "collections": [
+              "collection-1",
+              "collection-2",
+              "collection-3",
+              "collection-4",
+              "collection-5",
+              "collection-7"
+            ],
+            "blog": "",
+            "feature_title": "<h6>[title]<\/h6>",
+            "featured_title_font": 1,
+            "text_position": "bottom",
+            "overlay": "rgba(0,0,0,0)",
+            "size": 50,
+            "border_radius": 4,
+            "rows": 3,
+            "columns": 2,
+            "grid_gap": 20,
+            "margin_bottom": 0
+          }
+        },
+        "ecea9e5b-1ac6-4567-af61-ac06d33efe32": {
+          "type": "highlight_items",
+          "settings": {
+            "title": "<p>Eyeliner<\/p>",
+            "title_font": 1,
+            "url_1": "",
+            "image_1": "shopify:\/\/shop_images\/KAB_July_Lifestyle_04_Contrast_Stick_1200x1200px_1.jpg",
+            "overlay_1": "",
+            "labels_1": "",
+            "text_1": "",
+            "text_1_font": 1,
+            "url_2": "",
+            "overlay_2": "",
+            "labels_2": "",
+            "text_2": "",
+            "text_2_font": 1,
+            "url_3": "",
+            "overlay_3": "",
+            "labels_3": "",
+            "text_3": "",
+            "text_3_font": 1,
+            "size": 512,
+            "gap": 16,
+            "margin_bottom": 0
+          }
+        },
+        "40d21353-8a77-485d-bac8-9f90c0fc8ed7": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 5,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "0610ef0b-94d1-4cb2-bded-926b9f10c580": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "title_font": 1,
+            "menu": "",
+            "link_title": "<p>[link]<\/p>",
+            "link_font": 1,
+            "spacing": 0,
+            "margin_bottom": 0
+          }
+        },
+        "f67d3682-6874-4a09-8814-3e2360585528": {
+          "type": "feature_grid",
+          "disabled": true,
+          "settings": {
+            "title": "<h6><strong>BULLSTRAP RESERVE<\/strong><\/h6>",
+            "title_font": 1,
+            "products": [
+              "magsafe-iphone-cases-black-edition",
+              "magsafe-iphone-cases-bourbon",
+              "magsafe-iphone-cases-cloud",
+              "comet-magsafe-iphone-case"
+            ],
+            "collections": [
+
+            ],
+            "blog": "",
+            "feature_title": "<h6>[title]<\/h6>",
+            "featured_title_font": 1,
+            "text_position": "right",
+            "overlay": "rgba(0,0,0,0.1)",
+            "size": 44,
+            "border_radius": 3,
+            "rows": 4,
+            "columns": 1,
+            "grid_gap": 31,
+            "margin_bottom": 0
+          }
+        },
+        "06840954-2eb9-4c0c-be13-f6ffee32c2c3": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 3,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "52547456-8c5e-4130-bb86-947f7f4f1802": {
+          "type": "feature_grid",
+          "disabled": true,
+          "settings": {
+            "title": "<h6><strong>SALE<\/strong><\/h6>",
+            "title_font": 1,
+            "products": [
+              "magsafe-iphone-cases-black-edition",
+              "magsafe-iphone-cases-bourbon",
+              "magsafe-iphone-cases-cloud",
+              "comet-magsafe-iphone-case"
+            ],
+            "collections": [
+
+            ],
+            "blog": "",
+            "feature_title": "<h6>[title]<\/h6>",
+            "featured_title_font": 1,
+            "text_position": "right",
+            "overlay": "rgba(0,0,0,0.1)",
+            "size": 44,
+            "border_radius": 3,
+            "rows": 4,
+            "columns": 1,
+            "grid_gap": 31,
+            "margin_bottom": 0
+          }
+        },
+        "64af7b93-3017-46c5-98d9-2d9381d43cdd": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Shop All",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex md:!flex-col md:w-full",
+            "margin_top": 16,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "3efbddaa-21d2-4265-ae30-49f2aabde9d1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "grid_columns": 4,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "ab92f72d-c069-4d20-8b5d-82f9d184fb91": {
+          "type": "highlight_items",
+          "disabled": true,
+          "settings": {
+            "title": "<h6><strong>JUST DROPPED!<\/strong><\/h6>",
+            "title_font": 1,
+            "url_1": "shopify:\/\/collections\/collection-4",
+            "overlay_1": "rgba(0,0,0,0.55)",
+            "labels_1": "BADGE",
+            "text_1": "<h6><strong>Portfolio iPhone Cases - Maverick<\/strong><\/h6>",
+            "text_1_font": 1,
+            "url_2": "",
+            "overlay_2": "",
+            "labels_2": "",
+            "text_2": "",
+            "text_2_font": 1,
+            "url_3": "shopify:\/\/products\/black-night",
+            "overlay_3": "",
+            "labels_3": "BADGE",
+            "text_3": "<h6><strong>Leather MagSafe Wallet - Maverick<\/strong><\/h6>",
+            "text_3_font": 1,
+            "size": 512,
+            "gap": 16,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "f365f80c-fda5-410a-8797-7eb28472d748",
+        "4a596d34-752e-401b-9f35-d4ac806ddad3",
+        "ecea9e5b-1ac6-4567-af61-ac06d33efe32",
+        "40d21353-8a77-485d-bac8-9f90c0fc8ed7",
+        "0610ef0b-94d1-4cb2-bded-926b9f10c580",
+        "f67d3682-6874-4a09-8814-3e2360585528",
+        "06840954-2eb9-4c0c-be13-f6ffee32c2c3",
+        "52547456-8c5e-4130-bb86-947f7f4f1802",
+        "64af7b93-3017-46c5-98d9-2d9381d43cdd",
+        "3efbddaa-21d2-4265-ae30-49f2aabde9d1",
+        "ab92f72d-c069-4d20-8b5d-82f9d184fb91"
+      ],
+      "disabled": true,
+      "settings": {
+        "handle": "shop",
+        "grid_gap": 16,
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "responsive_visibility": "responsive"
+      }
+    },
+    "e06879d9-959d-4c66-8e16-58fda2231703": {
+      "type": "megamenu",
+      "blocks": {
+        "64908222-f94e-4098-9dc0-a62cbcfa6675": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 3,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "e5d9d6ee-5a04-4b87-96cb-b0aae66c4d83": {
+          "type": "menu",
+          "settings": {
+            "title": "<h6><strong>FEATURED<\/strong><\/h6>",
+            "title_font": 1,
+            "menu": "main-menu",
+            "link_title": "<h5><strong>[link]<\/strong><\/h5>",
+            "link_font": 1,
+            "spacing": 14,
+            "margin_bottom": 20
+          }
+        },
+        "d779d419-2961-4573-9989-f96292fa7587": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP ALL",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex md:!flex-col md:w-full",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "30b85d00-005a-417d-a872-402e427e7d9e": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 2,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "0cb024b5-b30e-4cc6-8ae4-762c35df2483": {
+          "type": "menu",
+          "settings": {
+            "title": "<h6><strong>IPHONE CASES<\/strong><\/h6>",
+            "title_font": 1,
+            "menu": "",
+            "link_title": "<h6>[link]<\/h6>",
+            "link_font": 1,
+            "spacing": 13,
+            "margin_bottom": 18
+          }
+        },
+        "e02979ca-dd2b-499b-b306-8daa6fa5395d": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 2,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "f9a57c31-f5a4-4303-8668-7e03f82669e6": {
+          "type": "menu",
+          "settings": {
+            "title": "<h6><strong>LEATHER WALLETS<\/strong><\/h6>",
+            "title_font": 1,
+            "menu": "main-menu",
+            "link_title": "<h6>[link]<\/h6>",
+            "link_font": 1,
+            "spacing": 18,
+            "margin_bottom": 34
+          }
+        },
+        "9ff50563-7170-486e-835f-eb4be9ecbb07": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 5,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "77751446-45bb-4d51-b68d-5794a7b3c1ee": {
+          "type": "highlight_items",
+          "settings": {
+            "title": "<h6><strong>NEW IN<\/strong><\/h6>",
+            "title_font": 1,
+            "url_1": "shopify:\/\/collections\/collection-4",
+            "overlay_1": "rgba(0,0,0,0.55)",
+            "labels_1": "BADGE",
+            "text_1": "<h6><strong>Portfolio iPhone Cases - Maverick<\/strong><\/h6>",
+            "text_1_font": 1,
+            "url_2": "",
+            "overlay_2": "",
+            "labels_2": "",
+            "text_2": "<p><strong>TRAVEL IN LUXURY<\/strong><\/p>",
+            "text_2_font": 1,
+            "url_3": "shopify:\/\/products\/black-night",
+            "overlay_3": "",
+            "labels_3": "BADGE",
+            "text_3": "<h6><strong>Bullstrap Reserve - The Dopp Kit<\/strong><\/h6>",
+            "text_3_font": 1,
+            "size": 512,
+            "gap": 16,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "64908222-f94e-4098-9dc0-a62cbcfa6675",
+        "e5d9d6ee-5a04-4b87-96cb-b0aae66c4d83",
+        "d779d419-2961-4573-9989-f96292fa7587",
+        "30b85d00-005a-417d-a872-402e427e7d9e",
+        "0cb024b5-b30e-4cc6-8ae4-762c35df2483",
+        "e02979ca-dd2b-499b-b306-8daa6fa5395d",
+        "f9a57c31-f5a4-4303-8668-7e03f82669e6",
+        "9ff50563-7170-486e-835f-eb4be9ecbb07",
+        "77751446-45bb-4d51-b68d-5794a7b3c1ee"
+      ],
+      "settings": {
+        "handle": "cases",
+        "grid_gap": 16,
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "responsive_visibility": "responsive"
+      }
+    },
+    "25e01dbd-6134-49c3-b24e-af2e8e582cb2": {
+      "type": "megamenu",
+      "blocks": {
+        "5e343e2e-1bdd-4164-866a-7f31c59139e5": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 5,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-center",
+            "align__horizontal": "items-center text-center",
+            "section_visibility": "hidden @xl:block"
+          }
+        },
+        "9641cbe4-08a4-4e5d-87d5-1caa08b8ec44": {
+          "type": "text",
+          "settings": {
+            "title": "<p>[icon.5-stars]<\/p><h6><\/h6><h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis diam lorem. Praesent auctor dapibus purus, eu facilisis nunc auctor et. In fermentum nunc et est vulputate malesuada.”<\/h6><h6><\/h6><h6><strong>John Doe, <\/strong>Verified Buyer<\/h6>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 12,
+            "section_max_width": "max-w-md",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "58d2fc50-38d3-4e0a-bd95-92112c76a421": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex flex-col md:flex-row",
+            "button__desktop_layout": "flex md:!flex-col w-full",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-sm",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9e9dffc9-bc27-456d-8b8a-07805a481c0b": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>FREE SHIPPING ON US ORDER OVER $100<\/h6>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "6ae9649c-af1f-4776-825d-cbeef44df94d": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 7,
+            "grid_rows": 1,
+            "padding_bottom": "pb-sm",
+            "padding_top": "pt-sm",
+            "align__vertical": "justify-start",
+            "align__horizontal": "items-start text-left",
+            "section_visibility": "responsive"
+          }
+        },
+        "645a0620-6f97-4747-84b0-a1a05806be30": {
+          "type": "feature_grid",
+          "settings": {
+            "title": "",
+            "title_font": 1,
+            "products": [
+              "magsafe-iphone-cases-bourbon",
+              "magsafe-iphone-cases-cloud",
+              "comet-magsafe-iphone-case",
+              "magsafe-iphone-cases-dune",
+              "gray-magsafe-iphone-case",
+              "cloud-magsafe-iphone-case",
+              "magsafe-iphone-cases-black-edition",
+              "magsafe-iphone-cases-maverick",
+              "magsafe-iphone-cases-ocean"
+            ],
+            "collections": [
+
+            ],
+            "blog": "",
+            "feature_title": "<h6>[title]<\/h6>",
+            "featured_title_font": 1,
+            "text_position": "right",
+            "overlay": "rgba(0,0,0,0.1)",
+            "size": 60,
+            "border_radius": 4,
+            "rows": 3,
+            "columns": 3,
+            "grid_gap": 36,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "5e343e2e-1bdd-4164-866a-7f31c59139e5",
+        "9641cbe4-08a4-4e5d-87d5-1caa08b8ec44",
+        "58d2fc50-38d3-4e0a-bd95-92112c76a421",
+        "9e9dffc9-bc27-456d-8b8a-07805a481c0b",
+        "6ae9649c-af1f-4776-825d-cbeef44df94d",
+        "645a0620-6f97-4747-84b0-a1a05806be30"
+      ],
+      "settings": {
+        "handle": "apple-watch",
+        "grid_gap": 36,
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "responsive_visibility": "responsive"
+      }
+    }
+  },
+  "order": [
+    "91fdad5f-eba6-402c-a514-e4064f3d4754",
+    "be752d2c-6b3d-42ac-9191-7ef834365a46",
+    "a66831e4-2fd7-4c31-b577-9b13280f37ab",
+    "e06879d9-959d-4c66-8e16-58fda2231703",
+    "25e01dbd-6134-49c3-b24e-af2e8e582cb2"
+  ]
+}

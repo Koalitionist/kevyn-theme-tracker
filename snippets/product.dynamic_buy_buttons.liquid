@@ -1,0 +1,35 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign grid_span = block.settings.grid_span
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign product_form_id = 'product-form-' | append: section.id | append: "-" | append: product.id
+  assign product_form_dynamic_buttons_id = product_form_id | append: '-dynamic'
+%}
+<div data-product-block="dynamic_buy_buttons"
+     class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  <div data-product-block-dynamic-button-events></div>
+  {% form 'product', product, id: product_form_dynamic_buttons_id %}
+    <input
+        type="hidden"
+        name="id"
+        value="{{ variant.id }}"
+        data-product-form-variant="{{ variant.id }}"
+    >
+    <input type="hidden"
+           data-selling-plan-output
+           name="selling_plan"
+           value=""
+           disabled
+           data-product-form-selling-plan-variant="{{ variant.id }}" />
+
+    {{ form | payment_button }}
+  {% endform %}
+</div>

@@ -1,0 +1,51 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign products = block.settings.products
+  assign _collections = block.settings.collections
+  assign feature_title = block.settings.feature_title
+  assign featured_title_font = block.settings.featured_title_font
+  assign overlay = block.settings.overlay
+  assign size = block.settings.size
+  assign border_radius = block.settings.border_radius
+  assign grid_gap = block.settings.grid_gap
+  assign layout = block.settings.layout
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign categories = 'products,collections' | split: ','
+
+  if border_radius == -1
+    assign border_radius = "100%"
+  else
+    assign border_radius = border_radius | append: "px"
+  endif
+
+  case layout
+    when 'grid-cols-1'
+      assign linkLayoutClasses = "grid grid-cols-[auto_1fr] text-left"
+    when 'grid-cols-2'
+      assign linkLayoutClasses = "grid text-center justify-center justify-items-center"
+  endcase
+%}
+
+<main class="grid h-min flex-1 w-full px-2 {{ layout }}"
+      style="gap: {{ grid_gap }}px">
+  {% for category in categories %}
+    {% assign items = block.settings[category].articles | default: block.settings[category] %}
+    {% for item in items %}
+      {% assign featureTitle = feature_title | replace: "[title]", item.title %}
+      {% assign image = item.featured_image | default: item.image | default: item.images[0] | default: item.media[0] %}
+
+      <a href="{{ item.url }}"
+         class="group/link gap-3 items-center grid-flow-dense border border-theme-text/10 rounded-theme-lg p-2 hf:bg-theme-text/[0.02] {{ linkLayoutClasses }}">
+        <picture class="overflow-hidden relative"
+                 style="background: {{ overlay }}; width: {{ size }}px; height: {{ size }}px; border-radius: {{ border_radius }};">
+          {% render '_image', image: item.featured_image, width: size, placeholder: 'product-3', class: 'object-cover w-full h-full relative' %}
+        </picture>
+        {% render 'richtext', type: featured_title_font, content: featureTitle, class: "group-hover/link:underline" %}
+      </a>
+    {% endfor %}
+  {% endfor %}
+</main>

@@ -1,0 +1,392 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TWT6W');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+      products = [];
+
+    {% for line_item in checkout.line_items %}
+        products.push({
+   'currency'            : '{{ shop.currency }}',
+            'item_id'               : {{ line_item.product_id | json }},
+            'item_sku'            : {{ line_item.sku | json }},
+            'item_variant_id'  : {{ line_item.variant_id | json }},
+            'item_name'        : {{ line_item.title | json }},
+            'item_brand'        : {{shop.name | json}},
+            'item_category'  : {{ line_item.product.type | json }},
+            'price'                 :  {{ line_item.price | amount_without_currency | remove: "," | json }}/100.0,
+            'quantity'            : {{ line_item.quantity | json }}
+        });
+    {% endfor %}
+
+    transaction_data = {
+        'transaction_id' : {{ checkout.order_number | json }},
+        'affiliation' : {{ shop.name | json }},
+        'value' : {{ checkout.total_price | amount_without_currency | remove: "," | remove: "." | json }}/100.0,
+        'tax' : {{ checkout.tax_price | amount_without_currency | remove: "," | remove: "." | json }}/100.0,
+        'shipping' : {{ checkout.shipping_price | amount_without_currency | remove: "," | remove: "." | json }}/100.0,
+        'subtotal' : {{ checkout.subtotal_price | amount_without_currency | remove: "," | remove: "." | json }}/100.0,
+        'coupon': '{{checkout.discounts[0].code}}',
+        'discount': {{checkout.discounts_amount | amount_without_currency | remove: "," | remove: "." | json }}/100.0,
+'currency': '{{ shop.currency }}',
+'payment_type': '{{checkout.transactions.gateway}}',
+        'items': products
+    };
+    user_data = {
+        'full_name' : {{ checkout.shipping_address.name | json }},
+        'first_name' : {{ checkout.shipping_address.first_name | json }},
+        'last_name' : {{ checkout.shipping_address.last_name | json }},
+        'address1' : {{ checkout.shipping_address.address1 | json }},
+        'address2' : {{ checkout.shipping_address.address2 | json }},
+        'street' : {{ checkout.shipping_address.street | json }},
+        'city' : {{ checkout.shipping_address.city | json }},
+        'province' : {{ checkout.shipping_address.province | json }},
+        'zip' : {{ checkout.shipping_address.zip | json }},
+        'country' : {{ checkout.shipping_address.country | json }},
+        'phone' : {{ checkout.shipping_address.phone | json }},
+        'email' : {{ checkout.email | json }}
+   };
+</script>
+
+{% if first_time_accessed %}
+<script>
+        dataLayer.push({
+            'event' : 'purchase',
+            'pageType' : 'nur_purchase',
+            'ecommerce' : transaction_data,
+            'user' : user_data
+        });
+</script>
+{% endif %}
+
+<!-- Transaction Data Script - END -->
+
+
+<script type="text/javascript">
+if (document.getElementById("mmmwidgetscript") === null || 
+document.getElementById("mmmwidgetscript") === undefined) {
+     (function() {
+         var cid = "S2V2eW4gQXVjb2lu";
+         var mmmScript = document.createElement("script");
+         mmmScript.defer = true;
+         mmmScript.setAttribute("id", "mmmwidgetscript");
+         mmmScript.setAttribute("referrerpolicy","origin");
+         mmmScript.src = "https://www.matchmymakeup.com/client/" + cid + 
+"/mmm_checkout.js?" + Date.now();
+         document.head.appendChild(mmmScript);
+     })();
+}
+</script>
+
+<script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/Sd3dwP76Keylg9TvYc6TJH7GqLDJMC7NfgrRVyxy/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
+<script>yotpoTrackConversionData = {source:"pixel_v2", platform:"shopify", orderId:"{{order_id}}", orderNumber:"{{order_number}}", orderName:"{{order_name|handleize}}", orderAmount:"{{subtotal_price|money_without_currency}}", orderCurrency:"{{shop.currency}}"}</script>
+
+<noscript><img src="//api.yotpo.com/conversion_tracking.gif?app_key=Sd3dwP76Keylg9TvYc6TJH7GqLDJMC7NfgrRVyxy&source=pixel_v2&platform=shopify&noscript=1&order_id={{order_id}}&order_number={{order_number}}&order_name={{order_name|handleize}}&order_amount={{subtotal_price|money_without_currency}}&order_currency={{shop.currency}}" width="1" height="1"></noscript>
+
+{% if customer.has_account == false  %}
+{% form 'create_customer' %}
+{{ form.errors | default_errors }}
+
+<div class="content-box" style="margin-bottom: -2em;margin-top: 2em;">
+<div class="content-box__row">
+
+<input type="hidden" value="" id="cfirst" name="customer[first_name]" size="30" />
+
+<input type="hidden" value="" id="clast" name="customer[last_name]" size="30" />
+
+<input type="hidden" value="" id="cemail" name="customer[email]" size="30" />
+
+
+<div style="float:left">
+<h2 class="os-step__title">CREATE AN ONLINE ACCOUNT!</h2>
+<div>Track your shipment</div>
+<div>Review your past purchases</div>
+<div>Save your information for faster checkout</div>
+<div style="margin-top:1.5em;margin-bottom: 1em;">
+<div><span style="padding-right: 30px;">Email:</span><span id="eml"></span></div>
+<div><span style="padding-right: 4px;">Password:</span><input type="password" value="" name="customer[password]" size="30" style="    background-color: rgb(250, 255, 189) !important;background-image: none !important;color: rgb(0, 0, 0) !important;width: 80px;" /></div>
+</div>
+</div>
+<div style="margin-top:20px;float:left;margin-left: 40px;">
+<input type="submit" class="btn" value="CREATE AN ACCOUNT" style="border:1px solid grey!important" id="createAccount" />
+</div>
+</div>
+</div>
+{% endform %}
+{% endif %}
+
+<script>
+document.getElementById('eml').textContent = Shopify.checkout.email;
+document.getElementById('cemail').value = Shopify.checkout.email;
+document.getElementById('cfirst').value = Shopify.checkout.billing_address.first_name;
+document.getElementById('clast').value = Shopify.checkout.billing_address.last_name;
+
+</script>
+<style>
+#createAccount { background-color: #434343; } 
+.step__footer__continue-btn { background-color: #434343; text-transform: uppercase; } 
+</style>
+
+      <script>
+dataLayer = [];
+    </script>
+
+<script>
+  var eci_Email= '{{checkout.email}}';
+   var eci_Phone ='{{checkout.billing_address.phone}}';
+   var eci_FirstName ='{{checkout.customer.first_name}}';
+   var eci_LastName = '{{checkout.customer.last_name}}';
+   var eci_Street = '{{checkout.billing_address.street}}';
+   var eci_City = '{{checkout.billing_address.city}}';
+   var eci_PostalCode ='{{checkout.billing_address.zip}}';
+   var eci_Country = '{{checkout.billing_address.country_code}}';
+</script>
+
+<script>
+  var productlist = [
+    {% for item in checkout.line_items %}{
+    "productAvailable": "{{ item.product.available }}",
+    "name":"{{ item.product.title }}",
+    "id":"{{ item.product_id}}",
+    "price":"{{ item.price   | money_without_currency}}",
+    "type":"{{ item.product.type }}",
+    "quantity":"{{ item.quantity }}",
+    "coupon: "",
+    {% if item.variant %}
+    "variant": [{
+        "variantAvailable": "{{ item.variant.available }}",
+        "variantID": "{{ item.variant_id }}"
+        {%- if item.variant.option1 != blank -%}
+          , "colour": "{{ item.variant.option1 }}"
+        {%- endif -%}
+      }],
+    {% endif %}
+    },
+    {% endfor %}
+    ]
+  
+  if ((location.search==""&&location.pathname.indexOf('/checkouts/')>-1) || location.search.indexOf('step=contact_information')==0) {
+    dataLayer.push({
+      'event': 'ecommerce_event',
+      'eventCategory': 'ecommerce',
+      'eventAction': 'checkout',
+      'eventLabel': '',	 // Checkout Step
+      {% if customer.tags contains 'Pro' %}
+	'userType': 'member-pro',
+  {% else %}
+	'userType': 'member-regular',
+  {% endif %}
+      'ecommerce': {
+        'checkout': {
+          'actionField': {
+            'step': 1
+          },
+          'products': productlist
+        }
+      }
+    });
+  }
+  if (location.search.indexOf('&step=shipping_method')>-1) {
+    dataLayer.push({
+      'event': 'ecommerce_event',
+      'eventCategory': 'ecommerce',
+      'eventAction': 'checkout',
+      'eventLabel': '',	 // Checkout Step
+        {% if customer.tags contains 'Pro' %}
+	'userType': 'member-pro',
+  {% else %}
+	'userType': 'member-regular',
+  {% endif %}
+      'ecommerce': {
+        'checkout': {
+          'actionField': {
+            'step': 2
+          },
+          'products': productlist
+        }
+      }
+    });
+  }
+  if (location.pathname.indexOf('/order/')>-1) {
+    //problem: the admin api can also get to this page.
+    dataLayer.push({
+      'event': 'ecommerce_event',
+      'eventCategory': 'ecommerce',
+      'eventAction': 'checkout',
+      'eventLabel': '',	 // Checkout Step
+        {% if customer.tags contains 'Pro' %}
+	'userType': 'member-pro',
+  {% else %}
+	'userType': 'member-regular',
+  {% endif %}
+      'ecommerce': {
+        'checkout': {
+          'actionField': {
+            'step': 3
+          },
+          'products': productlist
+        }
+      }
+    });
+  }
+  
+  {% if checkout.order_id %}
+    dataLayer.push({
+      'event': 'purchase',
+      'eventCategory': 'Ecommerce',
+      'eventAction': 'Purchase',
+      'eventLabel': '{{ checkout.order_id }}',
+      'eventValue': '{{ checkout.total_price }}',	 // Transaction ID
+      {% if customer.tags contains 'Pro' %}
+	    'userType': 'member-pro',
+      {% else %}
+      'userType': 'member-regular',
+      {% endif %}
+      'ecommerce': {
+        'currencyCode': 'USD',
+        'purchase ': {
+          'actionField': {
+            'id': '{{checkout.order_id }}',
+            'revenue': '{{ (checkout.total_price - checkout.tax_price - checkout.shipping_price) | money_without_currency }}',
+            'tax': '{{ checkout.tax_price | money_without_currency}}',
+            'shipping': '{{checkout.shipping_price | money_without_currency}}',
+            'discount': '{{ checkout.discounts_amount | money_without_currency}}'
+          },
+          'products': productlist
+        }
+      }
+    });
+  {% endif %}
+</script>
+
+{% comment -%}
+  RAKUTEN MARKETING CONVERSION CODE
+
+  Copy the Conversion Code script and add it into the Order Processing - Additional Scripts in the checkout settings.
+  Found in the admin portal under Settings -> Checkout
+
+  You will need to assign the "taxRate" and "taxCountriesList" below this comment block
+
+  When the user reaches the confirmation page for the first time, this script will build the rm_trans DataLayer and fire the Rakuten Marketing conversion tags.
+  Tax calculations will be based on delivery country and can be altered by updating the value of "taxRate" and the "taxCountriesList".
+  Tax deduction will be bypassed on products that are not marked as taxable or on all products if the shipping country is not in the taxCountriesList.
+  e.g For UK VAT - Assigning taxRate to "20" and using a "taxCountriesList" of all the EU Country Codes will assume you are charging 20% on all taxable products shipping to the listed country codes.
+
+  More information about additional confirmation page scripts can be found at https://help.shopify.com/en/manual/orders/status-tracking/add-conversion-tracking-to-thank-you-page
+{%- endcomment -%}
+
+{%- assign rakutenMarketing_taxRate = 0 -%}
+{%- assign rakutenMarketing_taxCountriesList = 'US' | split: ',' -%}
+
+{%- if first_time_accessed -%}
+
+
+  {%- if customer.has_account and customer.orders.size > 1 -%}
+    {%- assign rakutenMarketing_customerStatus = 'Existing' -%}
+  {%- elsif customer.has_account and customer.orders.size <= 1 -%}
+    {%- assign rakutenMarketing_customerStatus = 'New' -%}
+  {%- else -%}
+    {%- assign rakutenMarketing_customerStatus = 'Guest' -%}
+  {%- endif -%}
+
+  {%- assign rakutenMarketing_taxDeduction = 0 -%}
+  {%- if rakutenMarketing_taxRate > 0 and rakutenMarketing_taxCountriesList.size > 0 and rakutenMarketing_taxCountriesList contains shipping_address.country_code -%}
+    {%- assign rakutenMarketing_taxDeduction = rakutenMarketing_taxRate | plus: 100 | times: 0.01 -%}
+  {%- else -%}
+    {%- assign rakutenMarketing_taxRate = 0 -%}
+  {%- endif -%}
+
+  <!-- START of Rakuten Marketing Conversion Tracking -->
+  <script type="text/javascript">
+    (function (url) {
+      /*Tracking Bootstrap - Set Up DataLayer objects/properties here*/
+      if(!window.DataLayer){
+        window.DataLayer = {};
+      }
+      if(!DataLayer.events){
+        DataLayer.events = {};
+      }
+      DataLayer.events.SPIVersion = DataLayer.events.SPIVersion || '3.2';
+      DataLayer.events.SiteSection = '1';
+  
+      var loc, ct = document.createElement('script'); ct.type = 'text/javascript';
+      ct.async = true; ct.src = url; loc = document.getElementsByTagName('script')[0];
+      loc.parentNode.insertBefore(ct, loc);
+    }(document.location.protocol + '//intljs.rmtag.com/117272.ct.js'));
+  </script>
+  <script type="text/javascript">
+    // taxType: {{ rakutenMarketing_taxType }}
+    // taxDeduction: {{ rakutenMarketing_taxDeduction }}
+
+    window.rm_trans = {
+      affiliateConfig: {ranMID: "43798", discountType: "item", includeStatus: "false"},
+      orderid: '{{ order_number }}',
+      conversionType: 'Sale',
+      currency: '{{ shop.currency }}',
+      customerID: '{{ customer.id }}',
+      customerStatus: '{{ rakutenMarketing_customerStatus }}',
+      discountCode: '{{ order.discounts | map: 'code' | compact | join: ',' | default: 'Discount' }}',
+      discountAmount: {% if discounts_amount > 0 %}{{ discounts_amount | times: 0.01}}{% else %}0{% endif %},
+      taxAmount: {{ tax_price | times: 0.01 }},
+      optionalData: {},    /*THIS IS OPTIONAL*/
+      lineitems : [
+      {% for line_item in line_items %}  {
+          quantity : {{ line_item.quantity }},
+          unitPrice : {{ line_item.price | times: 0.01 }},
+          unitPriceLessTax: {% if line_item.taxable and rakutenMarketing_taxDeduction != 0 -%}{{ line_item.price | times: 0.01 | divided_by: rakutenMarketing_taxDeduction}}{%- else -%}{{ line_item.price | times: 0.01 }}{%- endif -%},
+          SKU: '{{ line_item.sku }}',
+          productName: '{{ line_item.title }}',
+          optionalData: {    /*THIS IS OPTIONAL*/
+              brand: 'ITEM_BRAND',       /*THIS IS OPTIONAL*/
+              cat: 'ITEM_CATEGORY',      /*THIS IS OPTIONAL*/
+              coupon: 'ITEM_COUPON',     /*THIS IS OPTIONAL*/
+              discount: 'ITEM_DISCOUNT'  /*THIS IS OPTIONAL*/
+          }
+        }{% if line_items.last != line_item %},{% endif %}
+      {% endfor -%}
+      ]
+    };
+
+    /*Do not edit any information beneath this line*/
+    window.DataLayer?(DataLayer.events=DataLayer.events||{},DataLayer.Sale=DataLayer.Sale||{Basket:rm_trans},DataLayer.Sale.Basket=DataLayer.Sale.Basket||rm_trans):window.DataLayer={Sale:{Basket:rm_trans},events:{}},DataLayer.events.SPIVersion="3.2",DataLayer.Sale.Basket.Ready=!0;function __readRMCookie(e){for(var t=e+"=",a=document.cookie.split(";"),r=0;r<a.length;r++){for(var n=a[r];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(t))return n.substring(t.length,n.length)}return""}function __readRMCookiev2(e,t){for(var a=__readRMCookie(t=t||"rmStore");a!==decodeURIComponent(a);)a=decodeURIComponent(a);for(var r=a.split("|"),n=0;n<r.length;n++){var o=r[n].split(":")[0],i=r[n].split(":")[1];if(o===e)return i}return""}function __readParam(e,t,a,r){var n=t||"",o=a||"",i=r||{},s=__readRMCookiev2(e||""),d=i[n],m=(s=i.ignoreCookie||!1?0:s)||d||o;return m=("string"!=typeof m||"false"!==m.toLowerCase())&&m}function sRAN(){var e=DataLayer&&DataLayer.Sale&&DataLayer.Sale.Basket?DataLayer.Sale.Basket:{},t=e.affiliateConfig||{},a=__readParam("atm","tagType","pixel",t),r=__readParam("adr","discountType","order",t),n=__readParam("acs","includeStatus","false",t),o=__readParam("arto","removeOrderTax","false",t),i=__readParam("artp","removeTaxFromProducts","false",t),s=__readParam("artd","removeTaxFromDiscount","false",t),d=__readParam("atr","taxRate",0,t),m=(100+(d=Number(d)))/100,u=__readParam("ald","land",!1,{})||(t.land&&!0===t.land?__readRMCookie("ranLandDateTime"):t.land)||!1,l=__readParam("atrv","tr",!1,{})||(t.tr&&!0===t.tr?__readRMCookie("ranSiteID"):t.tr)||!1,c=!1,p=__readParam("amid","ranMID","",t)||e.ranMID;if(!p)return!1;if(!(void 0===t.allowCommission||"false"!==t.allowCommission))return!1;var y=encodeURIComponent(e.orderid||"OrderNumberNotAvailable"),f="",v="",_="",C="",N=e.currency||"";N=encodeURIComponent(N.toUpperCase());var h=e.taxAmount?Math.abs(Math.round(100*Number(e.taxAmount))):0,g=e.discountAmount?Math.abs(Math.round(100*Number(e.discountAmount))):0;s&&d&&(g=Math.round(g/m));var b="pixel"===a?"ep":"mop"===a?"eventnvppixel":"ep",R=e.customerStatus||"",D=document.location.protocol+"//track.linksynergy.com/"+b+"?",I="";null!=R&&""!=R&&(n&&"EXISTING"==R.toUpperCase()||n&&"RETURNING"==R.toUpperCase())&&(I="R_");for(var S=[],w=0,U=0;U<(e.lineitems?e.lineitems.length:0);U++){var x=!1,P=window.JSON?JSON.parse(JSON.stringify(e.lineitems[U])):e.lineitems[U],T=Number(P.unitPriceLessTax||P.unitPrice||0);i&&d&&!P.unitPriceLessTax&&(T/=m);for(var L=0;L<S.length;L++){S[L].SKU===P.SKU&&(x=!0,S[L].quantity=Number(S[L].quantity)+Number(P.quantity),S[L].totalValueLessTax=Number(S[L].totalValueLessTax)+Number(P.quantity)*T,S[L].totalValue=Number(S[L].totalValue)+Number(P.quantity)*Number(P.unitPrice))}x||(P.totalValue=Number(P.quantity)*Number(P.unitPrice),P.totalValueLessTax=Number(P.quantity)*T,S.push(P)),w+=Number(P.quantity)*T*100}var k={};for(U=0;U<S.length;U++){P=S[U];var O=encodeURIComponent(P.SKU),M=P.totalValueLessTax||P.totalValue,A=P.quantity,q=encodeURIComponent(P.productName)||"",E=100*Number(M);"item"===r.toLowerCase()&&g&&(E-=g*E/w);var B=P.optionalData;for(var V in B)B.hasOwnProperty(V)&&(k[V]=k[V]||"",k[V]+=encodeURIComponent(B[V])+"|");f+=I+O+"|",v+=A+"|",_+=Math.round(E)+"|",C+=I+q+"|"}f=f.slice(0,-1),v=v.slice(0,-1),_=_.slice(0,-1),C=C.slice(0,-1),g&&"order"===r.toLowerCase()?(f+="|"+I+"DISCOUNT",C+="|"+I+"DISCOUNT",v+="|0",_+="|-"+g):g&&"item"===r.toLowerCase()&&(c=!0),o&&h&&(f+="|"+I+"ORDERTAX",v+="|0",_+="|-"+h,C+="|"+I+"ORDERTAX"),D+="mid="+p+"&ord="+y+"&skulist="+f+"&qlist="+v+"&amtlist="+_+"&cur="+N+"&namelist="+C+"&img=1&",u&&(D+="land="+u+"&"),l&&(D+="tr="+l+"&"),c&&(D+="discount="+g+"&");B=e.optionalData||{};for(var V in e.discountCode&&(B.coupon=e.discountCode),e.customerStatus&&(B.custstatus=e.customerStatus),e.customerID&&(B.custid=e.customerID),g&&(B.disamt=g),B)B.hasOwnProperty(V)&&(D+=encodeURIComponent(V)+"="+encodeURIComponent(B[V])+"&");for(var V in k)k.hasOwnProperty(V)&&(D+=encodeURIComponent(V)+"list="+k[V].slice(0,-1),g&&"order"===r.toLowerCase()&&(D+="disamt"==V||"margin"==V?"|0":"|DISCOUNT"),h&&o&&(D+="disamt"==V||"margin"==V?"|0":"|ORDERTAX"),D+="&");"&"===D[D.length-1]&&(D=D.slice(0,-1)),2037<D.length&&(D=D.slice(0,2037),D+="&trunc=true");var j,G=document.createElement("img");G.setAttribute("src",D),G.setAttribute("height","1px"),G.setAttribute("width","1px"),(j=document.getElementsByTagName("script")[0]).parentNode.insertBefore(G,j)}function sDisplay(){var e=null,t=e,a=e,r=e,n=e,o=window.DataLayer&&window.DataLayer.Sale&&window.DataLayer.Sale.Basket?window.DataLayer.Sale.Basket:{},i=o.displayConfig||{},s=o.customerStatus||"",d=o.discountAmount?Math.abs(Number(o.discountAmount)):0,m=e,u="",l=__readParam("dmid","rdMID","",i);if(!l)return!1;var c=__readParam("dtm","tagType","js",i),p="if"===(c="js"===c||"if"===c||"img"===c?c:"js")?"iframe":"img"===c?c:"script",y="//"+__readParam("ddn","domain","tags.rd.linksynergy.com",i)+"/"+c+"/"+l,f=__readParam("dis","includeStatus","false",i),v=__readParam("dcomm","allowCommission","notset",i);"true"===v||!0===v||"1"===v||1===v?u="1":"false"!==v&&!1!==v&&"0"!==v&&0!==v||(u="0");var _="";if(null!=s&&""!=s&&(f&&"EXISTING"==s.toUpperCase()||f&&"RETURNING"==s.toUpperCase())&&(_="R_"),!o.orderid||!o.conversionType)return!1;r=0,a=encodeURIComponent(_+o.orderid),t="",n="conv",m=encodeURIComponent(o.currency||"");for(var C=0;C<(o.lineitems?o.lineitems.length:0);C++)r+=Number(o.lineitems[C].unitPriceLessTax)*Number(o.lineitems[C].quantity)||Number(o.lineitems[C].unitPrice)*Number(o.lineitems[C].quantity),t+=encodeURIComponent(o.lineitems[C].SKU)+",";r=Math.round(100*(r-d))/100,t=t.slice(0,-1),n&&(y=-1<y.indexOf("?")?y+"&pt="+n:y+"/?pt="+n),t&&(y=-1<y.indexOf("?")?y+"&prodID="+t:y+"/?prodID="+t),a&&(y=-1<y.indexOf("?")?y+"&orderNumber="+a:y+"/?orderNumber="+a),r&&(y=-1<y.indexOf("?")?y+"&price="+r:y+"/?price="+r),m&&(y=-1<y.indexOf("?")?y+"&cur="+m:y+"/?cur="+m),u&&(y=-1<y.indexOf("?")?y+"&tvalid="+u:y+"/?tvalid="+u);var N=document.createElement(p);N.src=y,"script"===p?N.type="text/javascript":"iframe"===p&&N.setAttribute("style","display: none;"),document.getElementsByTagName("body")[0].appendChild(N)}function sSearch(){var i=window.DataLayer&&window.DataLayer.Sale&&window.DataLayer.Sale.Basket?window.DataLayer.Sale.Basket:{},s=i.searchConfig||{},d=__readParam("smid","rsMID","",s);if(!d)return!1;var e=function(){var e=i.discountAmount?Math.abs(Number(i.discountAmount)):0,t=__readParam("sct","conversionType","conv",s),a=0,r="";if(!i.orderid)return!1;a=0,r=encodeURIComponent(i.orderid);for(var n=0;n<(i.lineitems?i.lineitems.length:0);n++)a+=Number(i.lineitems[n].unitPrice)*Number(i.lineitems[n].quantity);a=Math.round(100*(a-e))/100;window.DataLayer.Sale.Basket;var o=[];o[0]="id="+d,o[1]="type="+t,o[2]="val="+a,o[3]="orderId="+r,o[4]="promoCode="+encodeURIComponent(i.discountCode||""),o[5]="valueCurrency="+encodeURIComponent(i.currency||"USD"),o[6]="GCID=",o[7]="kw=",o[8]="product=",k_trackevent(o,"113")},t=-1<document.location.protocol.indexOf("s")?"https://":"http://";t+="113.xg4ken.com/media/getpx.php?cid="+d;var a=document.createElement("script");a.type="text/javascript",a.src=t,a.onload=e,a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||e()},document.getElementsByTagName("head")[0].appendChild(a)}sRAN(),sDisplay(),sSearch();
+
+  </script>
+  <!-- END of Rakuten Marketing Conversion Tracking -->
+
+<!-- ECI: End -Facebook Pixel Purchase Code -->
+<script type="text/javascript">
+	var productIds = new Array();
+
+	{% for item in checkout.line_items %}
+		productIds.push({{item.product_id}});
+	{% endfor %}
+
+	fbq('track', 'Purchase', {
+	content_type: 'product',
+	content_ids: productIds,
+	value: '{{ checkout.subtotal_price | money_without_currency | remove: ',' }}',
+	currency: 'USD',
+});
+	
+</script>
+<!-- ECI: End -Facebook Pixel Purchase Code -->
+
+{%- endif -%}
+
+{%- if first_time_accessed -%}  
+<!-- EC AW DataLayer Code START -->
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    eci_order_subtotal: {{ checkout.subtotal_price | money_without_currency | remove: ','}}, 
+    eci_order_id: '{{ order_number  }}', 
+    event: 'eci_order_confirmation_viewed'
+  });
+  </script>
+  <!-- EC AW DataLayer Code END -->
+ {%- endif -%}

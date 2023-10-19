@@ -1,0 +1,48 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign icon_1 = block.settings.icon_1
+  assign content_1 = block.settings.content_1
+  assign content_font_1 = block.settings.content_font_1
+  assign icon_2 = block.settings.icon_2
+  assign content_2 = block.settings.content_2
+  assign content_font_2 = block.settings.content_font_2
+  assign icon_3 = block.settings.icon_3
+  assign content_3 = block.settings.content_3
+  assign content_font_3 = block.settings.content_font_3
+  assign icon_4 = block.settings.icon_4
+  assign content_4 = block.settings.content_4
+  assign content_font_4 = block.settings.content_font_4
+  assign icon_size = block.settings.icon_size
+  assign spacing = block.settings.spacing
+  assign align__horizontal = block.settings.align__horizontal
+  assign margin_top = block.settings.margin_top
+  assign margin_bottom = block.settings.margin_bottom
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+     class="richtext__features grid gap-6 md:flex justify-between flex-wrap w-full {{ section_max_width | default: "max-w-full" }} {{ responsive_visibility }}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+
+  {% for index in (1..4) %}
+    {% liquid
+      assign _icon = 'icon_' | append: index
+      assign _content = 'content_' | append: index
+      assign _content_font = 'content_font_' | append: index
+      assign icon = block.settings[_icon]
+      assign content = block.settings[_content]
+      assign content_font = block.settings[_content_font]
+
+      if icon == blank and content == blank
+        continue
+      endif
+    %}
+    <div class="flex flex-col {{ align__horizontal }}"
+         style="gap: {{ spacing }}px">
+      {% render '_image', image: icon, height: icon_size %}
+      {% render 'richtext', type: content_font, content: content %}
+    </div>
+  {% endfor %}
+</div>

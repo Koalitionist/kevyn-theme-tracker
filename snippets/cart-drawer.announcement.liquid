@@ -1,0 +1,85 @@
+{% assign now_date = 'now' | date: '%s' %}
+<div class="relative overflow-hidden h-announcement transition-[height] ease-linear w-full bg-theme-bg {{ class }}"
+     data-announcement-bar>
+  {% assign blockIndex = 0 %}
+  {% for block in section.blocks %}
+    {% if block.type != 'announcement' %}{% continue %}{% endif %}
+
+    {% if block.settings.scheduled %}
+      {% if block.settings.start_date != blank and request.design_mode == false %}
+
+        {% assign block_start_date = block.settings.start_date | date: '%s' %}
+        {% if block_start_date > now_date %}{% continue %}{% endif %}
+
+        {% if block.settings.end_date != blank %}
+          {% assign block_end_date = block.settings.end_date | date: '%s' %}
+          {% if block_end_date < now_date %}{% continue %}{% endif %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+
+    {% if blockIndex == 0 and desktop %}
+      <style>
+        :root {
+          --announcement-height: {{ section.settings.announcements__height }}px;
+        }
+      </style>
+    {% endif %}
+    {% if blockIndex == 0 and mobile %}
+      <style>
+        [data-drawer="cart"] {
+          --announcement-height: {{ section.settings.announcements__height }}px;
+        }
+      </style>
+    {% endif %}
+
+
+    {% case block.settings.position %}
+      {% when 'left' %}
+        {% assign positionClasses = "self-start text-left" %}
+      {% when 'center' %}
+        {% assign positionClasses = "self-center text-center" %}
+      {% when 'right' %}
+        {% assign positionClasses = "self-end text-right" %}
+    {% endcase %}
+    {% assign text = block.settings.text %}
+    {% assign short_text = block.settings.short_text | default: text %}
+
+    <div class="absolute top-0 left-0 h-full w-full transition-all duration-500 ease-linear"
+         data-announcement-index="{{ blockIndex }}"
+         data-announcement-duration="{{ block.settings.display_duration }}"
+         data-announcement-text="{{ block.settings.color_text }}"
+         data-announcement-bg="{{ block.settings.color_bg }}"
+         style="opacity: 0; pointer-events: none;">
+      {% if text_style == 'short' and block.settings.short_text contains '<a' or block.settings.link == blank %}
+        <div class="cart-drawer__announcement flex h-full w-full items-center bg-theme-bg-hex text-theme-text-hex [&_a]:underline select-none" {{ block.shopify_attributes }}>
+          <div class="container w-fit flex-shrink {{ positionClasses }}">
+            {% render 'richtext', type: block.settings.announcement_font, content: short_text %}
+          </div>
+        </div>
+      {% elsif text_style != 'short' and block.settings.text contains '<a' or block.settings.link == blank %}
+        <div class="cart-drawer__announcement flex h-full w-full items-center bg-theme-bg-hex text-theme-text-hex [&_a]:underline select-none" {{ block.shopify_attributes }}>
+          <div class="container w-fit flex-shrink {{ positionClasses }}">
+            {% render 'richtext', type: block.settings.announcement_font, content: text, class: "max-md:hidden" %}
+            {% render 'richtext', type: block.settings.announcement_font, content: short_text, class: "md:hidden" %}
+          </div>
+        </div>
+      {% else %}
+        <a class="cart-drawer__announcement flex h-full w-full items-center bg-theme-bg-hex text-theme-text-hex select-none"
+           {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} {{ block.shopify_attributes }}>
+          <div class="container w-fit flex-shrink {{ positionClasses }}">
+            {% case text_style %}
+              {% when 'short' %}
+                {% render 'richtext', type: block.settings.announcement_font, content: short_text %}
+              {% else %}
+                {% render 'richtext', type: block.settings.announcement_font, content: text, class: "max-md:hidden" %}
+                {% render 'richtext', type: block.settings.announcement_font, content: short_text, class: "md:hidden" %}
+            {% endcase %}
+          </div>
+        </a>
+      {% endif %}
+    </div>
+
+    {% assign blockIndex = blockIndex | plus: 1 %}
+  {% endfor %}
+</div>

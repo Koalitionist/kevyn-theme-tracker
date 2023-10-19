@@ -1,0 +1,69 @@
+{% comment %}
+Variables:
+- type
+- content
+- class
+- html_attributes
+{% endcomment %}
+
+
+{% for i in (1..1) %}
+  {% if content == blank %}
+    {% break %}
+  {% endif %}
+
+  {% capture input %}
+    <place_holder class="class_holder {{ class }}" {{ html_attributes }}
+                  style="{{ style }}">{{ content }}</place_holder>
+  {% endcapture %}
+
+  {% if content contains '<p' or content contains '<h1' or content contains '<h2' or content contains '<h3' or content contains '<h4' or content contains '<h5' or content contains '<h6' %}
+    {% assign custom_tag = "div" %}
+  {% endif %}
+
+  {% case type %}
+    {% when 1 or "h1" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_1_tag %}
+      {{ input | replace: 'class_holder', 'h1' | replace: 'place_holder', tagType }}
+    {% when 2 or "h2" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_2_tag %}
+      {{ input | replace: 'class_holder', 'h2' | replace: 'place_holder', tagType }}
+    {% when 3 or "h3" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_3_tag %}
+      {{ input | replace: 'class_holder', 'h3' | replace: 'place_holder', tagType }}
+    {% when 4 or "h4" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_4_tag %}
+      {{ input | replace: 'class_holder', 'h4' | replace: 'place_holder', tagType }}
+    {% when 5 or "h5" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_5_tag %}
+      {{ input | replace: 'class_holder', 'h5' | replace: 'place_holder', tagType }}
+    {% when 6 or "h6" %}
+      {% assign tagType = custom_tag | default: settings.font_heading_6_tag %}
+      {{ input | replace: 'class_holder', 'h6' | replace: 'place_holder', tagType }}
+    {% when 7 or "h7" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_1_tag %}
+      {{ input | replace: 'class_holder', 'h7' | replace: 'place_holder', tagType }}
+    {% when 8 or "h8" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_2_tag %}
+      {{ input | replace: 'class_holder', 'h8' | replace: 'place_holder', tagType }}
+    {% when 9 or "h9" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_3_tag %}
+      {{ input | replace: 'class_holder', 'h9' | replace: 'place_holder', tagType }}
+    {% when 10 or "h10" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_3_tag %}
+      {{ input | replace: 'class_holder', 'h10' | replace: 'place_holder', tagType }}
+    {% when 11 or "h11" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_3_tag %}
+      {{ input | replace: 'class_holder', 'h11' | replace: 'place_holder', tagType }}
+    {% when 12 or "h12" %}
+      {% assign tagType = custom_tag | default: settings.font_additional_3_tag %}
+      {{ input | replace: 'class_holder', 'h12' | replace: 'place_holder', tagType }}
+    {% when 13 or "body" %}
+      {% assign tagType = custom_tag | default: settings.font_body_tag %}
+      {{ input | replace: 'class_holder', 'p' | replace: 'place_holder', tagType }}
+    {% when "prose" %}
+      <div class="prose prose-theme p {{ class }}" {{ html_attributes }}>
+        {{ content }}
+      </div>
+  {% endcase %}
+{% endfor %}

@@ -1,0 +1,775 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign preheading = section.settings.preheading
+  assign preheading_font = section.settings.preheading_font
+  assign title = section.settings.title
+  assign title_font = section.settings.title_font
+  assign content = section.settings.content
+  assign content_font = section.settings.content_font
+  assign align__horizontal = section.settings.align__horizontal
+  assign feature_title_font = section.settings.feature_title_font
+  assign feature_content_font = section.settings.feature_content_font
+  assign layout = section.settings.layout
+  assign icon_size = section.settings.icon_size
+  assign feature__align__horizontal = section.settings.feature__align__horizontal
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div id="{{ sectionID }}"
+     class="features container-bg-full {{ responsive_visibility }} {{ padding_top }} {{ padding_bottom }} {{ color_scheme }}">
+  <section class="{% if layout == 'icon-minimal' %}lg:grid lg:grid-cols-[1fr_2fr] lg:gap-8{% endif %}">
+    <header class="pb-8">
+      <div class="gap-3 flex flex-col {{ align__horizontal }}">
+        {% render 'richtext', type: preheading_font, content: preheading %}
+        {% render 'richtext', type: title_font, content: title %}
+        {% render 'richtext', type: content_font, content: content %}
+        {% comment %}{% render 'richtext', type: "prose", content: content %}{% endcomment %}
+      </div>
+    </header>
+
+    {% case layout %}
+      {% when 'icon-minimal' %}
+        <main class="grid gap-4 grid-cols-1 md:grid-cols-2">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout %}
+          {% endfor %}
+        </main>
+
+      {% when 'icon-image' %}
+        {% liquid
+          assign gridClasses = 'grid-cols-2'
+          if section.blocks.size >= 4
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+          endif
+          if section.blocks.size == 3 or section.blocks.size == 6
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          endif
+        %}
+        <main class="grid gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16 {{ gridClasses }}">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout %}
+          {% endfor %}
+        </main>
+      {% when 'icon-flat' %}
+        {% liquid
+          assign gridClasses = 'grid-cols-2'
+          if section.blocks.size > 4
+            assign gridClasses = 'grid-cols-2 lg:grid-cols-4'
+          endif
+          if section.blocks.size == 3 or section.blocks.size == 6
+            assign gridClasses = 'grid-cols-2 lg:grid-cols-3'
+          endif
+        %}
+        <main class="grid gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16 {{ gridClasses }}">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout %}
+          {% endfor %}
+        </main>
+      {% when 'icon-cards' %}
+        {% liquid
+          assign gridClasses = 'grid-cols-1 md:grid-cols-2'
+          if section.blocks.size > 4
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+          endif
+          if section.blocks.size == 3 or section.blocks.size == 6
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          endif
+        %}
+        <main class="grid gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 {{ gridClasses }}">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout %}
+          {% endfor %}
+        </main>
+      {% when 'image-flat' %}
+        {% liquid
+          assign gridClasses = 'grid-cols-1 md:grid-cols-2'
+          if section.blocks.size > 2
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+          endif
+          if section.blocks.size == 3 or section.blocks.size == 6
+            assign gridClasses = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          endif
+        %}
+        <main class="grid gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 {{ gridClasses }}">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout, forloop: forloop %}
+          {% endfor %}
+        </main>
+      {% when 'image-column' %}
+        <main class="grid gap-8">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, type: layout, forloop: forloop %}
+          {% endfor %}
+        </main>
+      {% when 'story' %}
+        <main class="grid gap-16">
+          {% for block in section.blocks %}
+            {% render 'features.feature', block: block, forloop: forloop, type: layout %}
+          {% endfor %}
+        </main>
+    {% endcase %}
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Features",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "preheading",
+      "label": "Pre heading"
+    },
+    {
+      "type": "range",
+      "id": "preheading_font",
+      "label": "Preheading Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "title_font",
+      "label": "Title Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Richtext"
+    },
+    {
+      "type": "range",
+      "id": "content_font",
+      "label": "Content Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "radio",
+      "id": "align__horizontal",
+      "label": "Horizontal Alignment",
+      "default": "items-center text-center",
+      "options": [
+        {
+          "value": "items-start text-left",
+          "label": "Left"
+        },
+        {
+          "value": "items-center text-center",
+          "label": "Center"
+        },
+        {
+          "value": "items-end text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "range",
+      "id": "feature_title_font",
+      "label": "Feature Title Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "range",
+      "id": "feature_content_font",
+      "label": "Feature Content Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "icon-flat",
+      "options": [
+        {
+          "value": "icon-image",
+          "label": "Icon via Image"
+        },
+        {
+          "value": "icon-minimal",
+          "label": "Icon Minimal"
+        },
+        {
+          "value": "icon-flat",
+          "label": "Icon Flat"
+        },
+        {
+          "value": "icon-cards",
+          "label": "Icon Cards"
+        },
+        {
+          "value": "image-flat",
+          "label": "Image Flat"
+        },
+        {
+          "value": "image-column",
+          "label": "Image Column"
+        },
+        {
+          "value": "story",
+          "label": "Story"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon Size",
+      "default": 20,
+      "min": 16,
+      "max": 140,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "radio",
+      "id": "feature__align__horizontal",
+      "label": "Horizontal Feature Content Alignment",
+      "default": "items-center text-center",
+      "options": [
+        {
+          "value": "items-start text-left",
+          "label": "Left"
+        },
+        {
+          "value": "items-center text-center",
+          "label": "Center"
+        },
+        {
+          "value": "items-end text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "name": "Feature",
+      "type": "feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_list",
+          "label": "Icon List",
+          "default": "check-square-broken",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "activity"
+            },
+            {
+              "value": "alert-circle",
+              "label": "alert-circle"
+            },
+            {
+              "value": "announcement",
+              "label": "announcement"
+            },
+            {
+              "value": "arrow-narrow-left",
+              "label": "arrow-narrow-left"
+            },
+            {
+              "value": "arrow-narrow-right",
+              "label": "arrow-narrow-right"
+            },
+            {
+              "value": "at-sign",
+              "label": "at-sign"
+            },
+            {
+              "value": "bookmark-add",
+              "label": "bookmark-add"
+            },
+            {
+              "value": "bookmark-check",
+              "label": "bookmark-check"
+            },
+            {
+              "value": "building-large",
+              "label": "building-large"
+            },
+            {
+              "value": "building",
+              "label": "building"
+            },
+            {
+              "value": "calendar",
+              "label": "calendar"
+            },
+            {
+              "value": "check-circle-broken",
+              "label": "check-circle-broken"
+            },
+            {
+              "value": "check-circle",
+              "label": "check-circle"
+            },
+            {
+              "value": "check-heart",
+              "label": "check-heart"
+            },
+            {
+              "value": "check-square-broken",
+              "label": "check-square-broken"
+            },
+            {
+              "value": "check-square",
+              "label": "check-square"
+            },
+            {
+              "value": "check",
+              "label": "check"
+            },
+            {
+              "value": "chevron-down",
+              "label": "chevron-down"
+            },
+            {
+              "value": "chevron-left",
+              "label": "chevron-left"
+            },
+            {
+              "value": "chevron-right",
+              "label": "chevron-right"
+            },
+            {
+              "value": "chevron-selector-vertical",
+              "label": "chevron-selector-vertical"
+            },
+            {
+              "value": "chevron-up",
+              "label": "chevron-up"
+            },
+            {
+              "value": "clock",
+              "label": "clock"
+            },
+            {
+              "value": "cloud-blank",
+              "label": "cloud-blank"
+            },
+            {
+              "value": "credit-card",
+              "label": "credit-card"
+            },
+            {
+              "value": "currency-dollar-circle",
+              "label": "currency-dollar-circle"
+            },
+            {
+              "value": "face-happy",
+              "label": "face-happy"
+            },
+            {
+              "value": "face-neutral",
+              "label": "face-neutral"
+            },
+            {
+              "value": "face-sad",
+              "label": "face-sad"
+            },
+            {
+              "value": "face-smile",
+              "label": "face-smile"
+            },
+            {
+              "value": "globe",
+              "label": "globe"
+            },
+            {
+              "value": "heart-hand",
+              "label": "heart-hand"
+            },
+            {
+              "value": "heart",
+              "label": "heart"
+            },
+            {
+              "value": "help-circle",
+              "label": "help-circle"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "image",
+              "label": "image"
+            },
+            {
+              "value": "info-circle",
+              "label": "info-circle"
+            },
+            {
+              "value": "lock",
+              "label": "lock"
+            },
+            {
+              "value": "marker-pin",
+              "label": "marker-pin"
+            },
+            {
+              "value": "menu",
+              "label": "menu"
+            },
+            {
+              "value": "minus-circle",
+              "label": "minus-circle"
+            },
+            {
+              "value": "minus-square",
+              "label": "minus-square"
+            },
+            {
+              "value": "minus",
+              "label": "minus"
+            },
+            {
+              "value": "percent-circle",
+              "label": "percent-circle"
+            },
+            {
+              "value": "percent",
+              "label": "percent"
+            },
+            {
+              "value": "pin",
+              "label": "pin"
+            },
+            {
+              "value": "plane",
+              "label": "plane"
+            },
+            {
+              "value": "plus-circle",
+              "label": "plus-circle"
+            },
+            {
+              "value": "plus-square",
+              "label": "plus-square"
+            },
+            {
+              "value": "plus",
+              "label": "plus"
+            },
+            {
+              "value": "puzzle-piece",
+              "label": "puzzle-piece"
+            },
+            {
+              "value": "rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "search",
+              "label": "search"
+            },
+            {
+              "value": "share",
+              "label": "share"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "shopping-bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "shopping-cart"
+            },
+            {
+              "value": "star",
+              "label": "star"
+            },
+            {
+              "value": "tag",
+              "label": "tag"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "thumbs-up"
+            },
+            {
+              "value": "tool",
+              "label": "tool"
+            },
+            {
+              "value": "truck",
+              "label": "truck"
+            },
+            {
+              "value": "user",
+              "label": "user"
+            },
+            {
+              "value": "x-circle",
+              "label": "x-circle"
+            },
+            {
+              "value": "x-close",
+              "label": "x-close"
+            },
+            {
+              "value": "zap",
+              "label": "zap"
+            }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Marty McFly</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>I'm sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it's a little hard to come by.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "link_text",
+          "label": "Link Text",
+          "default": "<p>IRead More</p>"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features",
+      "settings": {
+        "preheading": "<p>Subtle</p>",
+        "preheading_font": 1,
+        "title": "<p>Amazing Features</p>",
+        "title_font": 1,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dignissimos ex natus nobis. Amet, architecto corporis culpa excepturi in modi necessitatibus non, placeat quod repudiandae tempora tenetur vitae!</p>",
+        "feature_title_font": 1,
+        "layout": "icon-cards",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1"
+      },
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "serving_dish",
+            "title": "<p>Biff Tannen</p>",
+            "content": "<p>And one for you, McFly; I believe that makes four in a row. Now let me give you a nickel's worth of free advice, young man. This so-called Dr. Brown is dangerous. He's a real nutcase. You hang around with him, you're gonna end up in big trouble.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "chat_bubble",
+            "title": "<p>Dr. Emmett Brown</p>",
+            "content": "<p>This is all wrong. I don't know what it is. But when I kiss you, it's like I'm kissing... my brother. I guess that doesn't make any sense, does it?</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "plane",
+            "title": "<p>Stella Baines</p>",
+            "content": "<p>Let me show you my plan for sending you home. Please excuse the crudity of this model. I didn't have time to build it to scale or paint it.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "nut_free",
+            "title": "<p>Mark Dixon</p>",
+            "content": "<p>Hey, hey, listen, guys... Look, I don't wanna mess with no reefer addicts, okay?</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "lightning_bolt",
+            "title": "<p>George McFly</p>",
+            "content": "<p>I'm sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it's a little hard to come by.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_list": "carrot",
+            "title": "<p>Lorraine Baines</p>",
+            "content": "<p>Marty, I'm sorry, but the only power source capable of generating 1.21 gigawatts of electricity is a bolt of lightning.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

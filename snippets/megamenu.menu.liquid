@@ -1,0 +1,26 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign menu = block.settings.menu
+  assign link_title = block.settings.link_title
+  assign link_font = block.settings.link_font
+  assign spacing = block.settings.spacing
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<section class="flex-1 flex flex-col"
+         style="margin-bottom: {{ margin_bottom }}px">
+  <header>{% render 'richtext', type: title_font, content: title, class: "mb-4" %}</header>
+  <main class="grid flex-1"
+        style="gap: {{ spacing }}px">
+    {% for link in menu.links %}
+      <a href="{{ link.url }}"
+         class="group">
+        {% assign linkTitle = link_title | replace: "[link]", link.title %}
+        {% render 'richtext', type: link_font, content: linkTitle, class: "group-hf:underline" %}
+      </a>
+    {% endfor %}
+  </main>
+</section>

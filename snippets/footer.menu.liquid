@@ -1,0 +1,36 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign heading = block.settings.heading
+  assign menu = block.settings.menu
+  assign columns = block.settings.columns
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<nav {{ block.shopify_attributes }} class="footer__menu {{ columns }}">
+  {%- if heading != blank -%}
+    <h2 class="footer-title mb-3">{{ heading }}</h2>
+  {%- endif -%}
+  <ul class="mb-auto grid h-min w-full gap-4 leading-none">
+    {% for link in menu.links %}
+      <li>
+        <h2 class="footer-title mb-3">
+          <a href="{{ link.url }}"
+             class="hf:underline">{{ link.title }}</a>
+        </h2>
+        {% if link.links.size > 0 %}
+          <ul class="mb-auto grid h-min w-full gap-2">
+            {% for sublink in link.links %}
+              <li>
+                <a href="{{ sublink.url }}"
+                   class="py-0.5 flex footer-link hf:opacity-100 hf:underline">
+                  {{ sublink.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+

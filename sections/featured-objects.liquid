@@ -1,0 +1,1880 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign limit = section.settings.limit
+  assign desktop_style = section.settings.desktop_style
+  assign mobile_style = section.settings.mobile_style
+  assign container_overflow = section.settings.container_overflow
+  assign slider__show_dots = section.settings.slider__show_dots
+  assign slider__show_buttons = section.settings.slider__show_buttons
+  assign slider__desktop_cols = section.settings.slider__desktop_cols
+  assign slider__mobile_cols = section.settings.slider__mobile_cols
+  assign slider__auto_rotate = section.settings.slider__auto_rotate
+  assign slider__speed = section.settings.slider__speed
+  assign grid_columns_desktop = section.settings.grid_columns_desktop
+  assign grid_collapse_at_desktop = section.settings.grid_collapse_at_desktop
+  assign grid_columns_mobile = section.settings.grid_columns_mobile
+  assign grid_mobile_limit = section.settings.grid_mobile_limit
+  assign grid_collapse_at_mobile = section.settings.grid_collapse_at_mobile
+  assign hide_button = section.settings.hide_button
+  assign card__background_color = section.settings.card__background_color
+  assign card_style = section.settings.card_style
+  assign center_products = section.settings.center_products
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+
+  assign tabs = section.blocks | where: "type", "tab_group"
+
+  if tabs.size == 0
+    assign tabs = " " | split: ""
+  endif
+
+
+%}
+
+<div id="{{ sectionID }}"
+     class="featured-objects relative {{ color_scheme }} {{ padding_top }} {{ padding_bottom }} {{ responsive_visibility }}"
+     data-featured-objects-section="{{ section.id }}">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+        {% render 'products-scrollable.heading', block: block %}
+        {% break %}
+    {% endcase %}
+  {% endfor %}
+  <header class="mb-6 container {% if tabs.size <= 1 %}hidden{% endif %}">
+    <div class="relative grid w-full"
+         data-scroll-slider>
+      <div class="grid max-w-full snap-x snap-mandatory auto-cols-min grid-flow-col-dense gap-3 overflow-x-auto pt-1 pb-6"
+           data-scroll-container>
+        {% for tab in tabs %}
+          <button class="faq__group whitespace-nowrap rounded-full px-5 text-sm transition-all ac:bg-primary-bg ac:text-primary-text bg-primary-bg/[0.15] text-theme-text/80 md:text-base py-2 md:px-6 md:py-3 ac:font-bold {% if forloop.index0 == 0 %}active{% endif %}"
+                  data-scroll-item
+                  data-featured-objects-tab-button="{{ forloop.index0 }}">
+            {{ tab.settings.title | default: "Tab" }}
+          </button>
+        {% endfor %}
+      </div>
+      <div data-scroll-controls
+           class="hidden select-none">
+        {% render 'scroll-bar-elements', element: 'scrollbar' %}
+      </div>
+    </div>
+  </header>
+  <main class="relative w-full h-full overflow-hidden grid"
+        style="grid-template-columns: repeat({{ tabs.size }}, 100%)"
+        data-featured-objects-tab-container>
+    {% for tab in tabs %}
+
+      {%- liquid
+        assign limit = section.settings.limit
+        assign desktop_style = section.settings.desktop_style
+        assign mobile_style = section.settings.mobile_style
+        assign container_overflow = section.settings.container_overflow
+        assign slider__show_dots = section.settings.slider__show_dots
+        assign slider__desktop_cols = section.settings.slider__desktop_cols
+        assign slider__mobile_cols = section.settings.slider__mobile_cols
+        assign slider__auto_rotate = section.settings.slider__auto_rotate
+        assign slider__speed = section.settings.slider__speed
+        assign grid_columns_desktop = section.settings.grid_columns_desktop
+        assign grid_collapse_at_desktop = section.settings.grid_collapse_at_desktop
+        assign grid_columns_mobile = section.settings.grid_columns_mobile
+        assign grid_mobile_limit = section.settings.grid_mobile_limit
+        assign grid_collapse_at_mobile = section.settings.grid_collapse_at_mobile
+        assign hide_button = section.settings.hide_button
+        assign card__background_color = section.settings.card__background_color
+        assign center_products = section.settings.center_products
+
+        if tab.settings.use_group_settings
+          assign limit = tab.settings.limit
+          assign desktop_style = tab.settings.desktop_style
+          assign mobile_style = tab.settings.mobile_style
+          assign container_overflow = tab.settings.container_overflow
+          assign slider__show_dots = tab.settings.slider__show_dots
+          assign slider__desktop_cols = tab.settings.slider__desktop_cols
+          assign slider__mobile_cols = tab.settings.slider__mobile_cols
+          assign slider__auto_rotate = tab.settings.slider__auto_rotate
+          assign slider__speed = tab.settings.slider__speed
+          assign grid_columns_desktop = tab.settings.grid_columns_desktop
+          assign grid_collapse_at_desktop = tab.settings.grid_collapse_at_desktop
+          assign grid_columns_mobile = tab.settings.grid_columns_mobile
+          assign grid_mobile_limit = tab.settings.grid_mobile_limit
+          assign grid_collapse_at_mobile = tab.settings.grid_collapse_at_mobile
+          assign hide_button = tab.settings.hide_button
+          assign card__background_color = tab.settings.card__background_color
+          assign center_products = tab.settings.center_products
+        endif
+        assign scrollable = null
+        assign slider = null
+        assign grid = null
+
+        case desktop_style
+          when 'scrollable'
+            assign scrollable = "lg:block "
+          when 'slider'
+            assign slider = "lg:block "
+          when 'grid'
+            assign grid = "lg:block "
+        endcase
+
+        case mobile_style
+          when 'scrollable'
+            assign scrollable = scrollable | append: "max-lg:block"
+          when 'slider'
+            assign slider = slider | append: "max-lg:block"
+          when 'grid'
+            assign grid = grid | append: "max-lg:block"
+        endcase
+
+        assign scrollWrapperClasses = "container"
+        assign scrollContainerClasses = ""
+        assign centerProductsClasses = ""
+        assign sliderDotClasses = "hidden"
+
+        if container_overflow
+          assign scrollWrapperClasses = ""
+          assign scrollContainerClasses = "scroll-pl-4 md:scroll-pl-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))] px-4 md:px-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))]"
+        endif
+
+        if center_products
+          assign centerProductsClasses = "flex justify-center"
+        endif
+
+        if slider__show_dots
+          assign sliderDotClasses = "grid"
+        endif
+
+      -%}
+
+
+      <div class="relative"
+           data-featured-objects-tab-content={{ forloop.index0 }}>
+        {% if scrollable %}
+          <section class="relative pb-8 hidden {{ scrollable }}"
+                   data-scroll-slider>
+            <main class="{{ scrollWrapperClasses }} {{ centerProductsClasses }}">
+              <div class="grid grid-flow-col-dense auto-cols-auto w-min max-w-full gap-6 overflow-x-auto pb-8 snap-mandatory snap-x scrollbar-none {{ scrollContainerClasses }}"
+                   data-scroll-container>
+                {% liquid
+                  assign limit = section.settings.limit
+                  if tab.settings.use_group_settings
+                    assign limit = tab.settings.limit
+                  endif
+                  assign break = false
+                  assign currentTab = false
+                  for block in section.blocks
+
+                    if tab.id
+                      if tab.id == block.id
+                        assign currentTab = true
+                        continue
+                      endif
+                      if currentTab == false
+                        continue
+                      endif
+                      if block.type == 'tab_group'
+                        break
+                      endif
+                    endif
+
+                    assign objects = null
+                    case block.type
+                      when 'source_products' or 'source_collections'
+                        assign objects = block.settings.source
+                      when 'source_articles'
+                        assign objects = block.settings.source.articles
+                      when 'source_collection'
+                        assign objects = block.settings.source.products
+                      when 'source_metafield'
+
+                        assign metafieldResources = '[article.,[product.,[collection.,[shop.,[page.,[blog.' | split: ','
+                        for resource in metafieldResources
+
+                          if block.settings.source contains resource
+                            assign split = block.settings.source | replace_first: resource, '|~|split|~|' | split: '|~|split|~|'
+                            assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+                            assign metafield = split_2[0] | trim | split: '.'
+
+                            case resource
+                              when '[article.'
+                                assign metafield = article.metafields[metafield[0]][metafield[1]]
+                              when '[product.'
+                                assign metafield = product.metafields[metafield[0]][metafield[1]]
+                              when '[collection.'
+                                assign metafield = collection.metafields[metafield[0]][metafield[1]]
+                              when '[shop.'
+                                assign metafield = shop.metafields[metafield[0]][metafield[1]]
+                              when '[page.'
+                                assign metafield = page.metafields[metafield[0]][metafield[1]]
+                              when '[blog.'
+                                assign metafield = blog.metafields[metafield[0]][metafield[1]]
+                            endcase
+                            break
+                          endif
+                        endfor
+                        case metafield.type
+                          when 'list.product_reference' or 'list.collection_reference'
+                            assign objects = metafield.value
+                          when 'collection_reference'
+                            assign objects = metafield.value.products
+                        endcase
+                      when 'source_custom_item'
+                        render 'featured-objects.source_custom_item', class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', hide_button: hide_button, block: block
+
+                        assign limit = limit | minus: 1
+                        if limit <= 0
+                          assign break = true
+                          break
+                        endif
+                    endcase
+
+                    if break
+                      break
+                    endif
+
+                    for item in objects
+                      if item.url contains "/collections/"
+                        assign type = 'collection'
+                        render 'object-card', item: item, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', hide_button: hide_button
+
+                      elsif item.url contains "/products/"
+                        assign type = 'product'
+                        case card_style
+                          when 'default'
+                            render 'product-card', product: item, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', hide_button: hide_button
+                          when 'preview_card'
+                            render 'product-preview-card', product: item, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', hide_button: hide_button
+
+                        endcase
+
+                      elsif item.url contains "/blogs/" and item.author
+                        assign type = 'article'
+                        render 'object-card', item: item, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', hide_button: hide_button
+                      endif
+
+                      assign limit = limit | minus: 1
+                      if limit <= 0
+                        assign break = true
+                        break
+                      endif
+                    endfor
+                    if break
+                      break
+                    endif
+
+                  endfor
+                %}
+              </div>
+            </main>
+
+            {% render 'scroll-bar-elements', element: "scrollbar_with_buttons" %}
+          </section>
+        {% endif %}
+        {% if slider %}
+
+          {% liquid
+            assign limit = section.settings.limit
+            if tab.settings.use_group_settings
+              assign limit = tab.settings.limit
+            endif
+            assign currentSize = 0
+            assign currentIndex = 0
+            assign break = false
+            assign currentTab = false
+            capture contentBlocks
+              for block in section.blocks
+
+                if tab.id
+                  if tab.id == block.id
+                    assign currentTab = true
+                    continue
+                  endif
+                  if currentTab == false
+                    continue
+                  endif
+                  if block.type == 'tab_group'
+                    break
+                  endif
+                endif
+
+                assign objects = null
+                case block.type
+                  when 'source_products' or 'source_collections'
+                    assign objects = block.settings.source
+                  when 'source_articles'
+                    assign objects = block.settings.source.articles
+                  when 'source_collection'
+                    assign objects = block.settings.source.products
+                  when 'source_metafield'
+
+                    assign metafieldResources = '[article.,[product.,[collection.,[shop.,[page.,[blog.' | split: ','
+                    for resource in metafieldResources
+
+                      if block.settings.source contains resource
+                        assign split = block.settings.source | replace_first: resource, '|~|split|~|' | split: '|~|split|~|'
+                        assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+                        assign metafield = split_2[0] | trim | split: '.'
+
+                        case resource
+                          when '[article.'
+                            assign metafield = article.metafields[metafield[0]][metafield[1]]
+                          when '[product.'
+                            assign metafield = product.metafields[metafield[0]][metafield[1]]
+                          when '[collection.'
+                            assign metafield = collection.metafields[metafield[0]][metafield[1]]
+                          when '[shop.'
+                            assign metafield = shop.metafields[metafield[0]][metafield[1]]
+                          when '[page.'
+                            assign metafield = page.metafields[metafield[0]][metafield[1]]
+                          when '[blog.'
+                            assign metafield = blog.metafields[metafield[0]][metafield[1]]
+                        endcase
+                        break
+                      endif
+                    endfor
+                    case metafield.type
+                      when 'list.product_reference' or 'list.collection_reference'
+                        assign objects = metafield.value
+                      when 'collection_reference'
+                        assign objects = metafield.value.products
+                    endcase
+                  when 'source_custom_item'
+                    assign mobileFirst = currentIndex | modulo: slider__mobile_cols
+                    assign desktopFirst = currentIndex | modulo: slider__desktop_cols
+
+                    assign scrollSnapClasses = ""
+                    if mobileFirst == 0
+                      assign scrollSnapClasses = " max-lg:snap-center"
+                    endif
+                    if desktopFirst == 0
+                      assign scrollSnapClasses = scrollSnapClasses | append: " lg:snap-start"
+                    endif
+
+                    assign objectClasses = 'min-w-[120px]' | append: scrollSnapClasses
+
+                    render 'featured-objects.source_custom_item', block: block, class: objectClasses, hide_button: hide_button
+                    assign currentIndex = currentIndex | plus: 1
+                    assign currentSize = currentSize | plus: 1
+                    assign limit = limit | minus: 1
+                    if limit <= 0
+                      assign break = true
+                      break
+                    endif
+                endcase
+
+                if break
+                  break
+                endif
+
+                for item in objects
+                  assign mobileFirst = currentIndex | modulo: slider__mobile_cols
+                  assign desktopFirst = currentIndex | modulo: slider__desktop_cols
+                  assign scrollSnapClasses = ""
+                  if mobileFirst == 0
+                    assign scrollSnapClasses = " max-lg:snap-center"
+                  endif
+                  if desktopFirst == 0
+                    assign scrollSnapClasses = scrollSnapClasses | append: " lg:snap-start"
+                  endif
+
+                  assign objectClasses = 'min-w-[120px]' | append: scrollSnapClasses
+
+
+                  if item.url contains "/collections/"
+                    assign type = 'collection'
+                    render 'object-card', item: item, class: objectClasses, hide_button: hide_button
+
+                  elsif item.url contains "/products/"
+                    assign type = 'product'
+
+                    case card_style
+                      when 'default'
+                        render 'product-card', product: item, class: objectClasses, hide_button: hide_button
+                      when 'preview_card'
+                        render 'product-preview-card', product: item, class: objectClasses, hide_button: hide_button
+                    endcase
+
+                  elsif item.url contains "/blogs/" and item.author
+                    assign type = 'article'
+                    render 'object-card', item: item, class: objectClasses, hide_button: hide_button
+                  endif
+
+                  assign limit = limit | minus: 1
+                  assign size = forloop.index
+                  assign currentIndex = currentIndex | plus: 1
+                  if limit <= 0
+                    assign break = true
+                    break
+                  endif
+                endfor
+                assign currentSize = currentSize | plus: size
+                if break
+                  break
+                endif
+
+              endfor
+            endcapture
+
+            assign mobile_pages = currentSize | times: 1.0 | divided_by: slider__mobile_cols | ceil
+            assign desktop_pages = currentSize | times: 1.0 | divided_by: slider__desktop_cols | ceil
+            assign mobile_page_index = 0
+            assign desktop_page_index = 0
+          %}
+
+          {% if slider and slider__show_buttons and desktop_pages > 1 %}
+
+            <div class="container p-0 max-lg:hidden pointer-events-none">
+              <div class="relative">
+                <div class="absolute top-0 left-8 z-10"
+                     style="width: calc((100% / {{ slider__desktop_cols }}) - 16px * {{ slider__desktop_cols | minus: 1 }})">
+                  <div class="{{ settings.product_card__image__ratio }} w-full relative">
+                    <div class="absolute -left-8 top-0 w-[var(--layout-page-width)] h-full">
+                      <button class="pointer-events-auto absolute top-1/2 -translate-y-1/2 -left-4 p-1.5 items-center justify-center rounded-full border border-theme-text hf:bg-theme-text/10"
+                              data-slider-prev>
+                        {% render '_icon', icon: 'arrow-left', class: "w-4 h-4" %}
+                      </button>
+                      <button class="pointer-events-auto absolute top-1/2 -translate-y-1/2 -right-4 p-1.5 flex items-center justify-center rounded-full border border-theme-text hf:bg-theme-text/10"
+                              data-slider-next>
+                        {% render '_icon', icon: 'arrow-right', class: "w-4 h-4" %}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          {% endif %}
+
+          <section class="relative container overflow-hidden pb-14 hidden {{ slider }} px-0 md:pl-8 md:pr-4 {% if slider__show_dots %}pb-14{% endif %}"
+                   data-slider="{{ section.id }}"
+                   data-slider-auto-rotate="{{ slider__auto_rotate }}"
+                   data-slider-slide-duration="{{ slider__speed }}">
+
+            <div class="relative overflow-x-auto scrollbar-none snap-mandatory snap-x"
+                 data-slider-container>
+              <div class="relative lg:w-[var(--features-slider-width--desktop)] w-[var(--features-slider-width--mobile)]"
+                   style="--features-slider-width--desktop: calc(100% * {{ desktop_pages }});--features-slider-width--mobile: calc(100% * {{ mobile_pages }});">
+                <figure class="test-1 group transition-all {% if forloop.first %}active{% endif %}">
+
+                  <main class="grid gap-4 lg:grid-cols-[var(--slider-cols--desktop)] grid-cols-[var(--slider-cols--mobile)] mr-4 max-md:px-24"
+                        style="--slider-cols--desktop: repeat({{ slider__desktop_cols | times: desktop_pages }}, 1fr);
+                            --slider-cols--mobile: repeat({{ slider__mobile_cols | times: mobile_pages }}, 1fr);">
+                    {{ contentBlocks }}
+                  </main>
+                </figure>
+              </div>
+            </div>
+
+
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 items-center justify-center z-10 grid-flow-col-dense auto-cols-min gap-3 text-primary-outline {{ sliderDotClasses }}">
+              {% for index in (1..mobile_pages) %}
+                {% if mobile_pages <= 1 and desktop_pages <= 1 %}
+                  {% break %}
+                {% endif %}
+                {% assign buttonClasses = "" %}
+                {% if desktop_pages == 1 %}
+                  {% assign buttonClasses = "lg:hidden" %}
+                {% endif %}
+                {% if index > desktop_pages %}
+                  {% assign buttonClasses = "lg:hidden" %}
+                {% endif %}
+                <button type="button"
+                        class="group -m-1 p-1 {{ buttonClasses }}"
+                        data-slider-button="{{ index | minus: 1 }}">
+                  <span class="sr-only">Show Slide {{ index }}</span>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-3 h-3"
+                       viewBox="0 0 30 30"
+                       xml:space="preserve">
+                    <circle cx="15"
+                            cy="15"
+                            r="13"
+                            fill="currentColor"
+                            stroke-width="4"
+                            stroke-dasharray="90"
+                            class="{% if slider__auto_rotate %}group-ac:animate-dot{% else %}group-ac:opacity-100 opacity-[0.72]{% endif %} -rotate-90 origin-center"
+                            style="animation-duration: {{ slider__speed }}s">
+                    </circle>
+                    <circle cx="15"
+                            cy="15"
+                            r="13"
+                            fill="transparent"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            stroke-dasharray="90"
+                            class="{% if slider__auto_rotate %}group-ac:animate-circle{% endif %} -rotate-90 origin-center"
+                            style="animation-duration: {{ slider__speed }}s">
+                    </circle>
+                  </svg>
+                </button>
+
+              {% endfor %}
+            </div>
+          </section>
+
+        {% endif %}
+        {% if grid %}
+          {% liquid
+            assign objectClasses = ""
+            assign limit = section.settings.limit
+            assign grid_mobile_limit = section.settings.grid_mobile_limit
+            assign grid_collapse_at_desktop = section.settings.grid_collapse_at_desktop
+            assign grid_collapse_at_mobile = section.settings.grid_collapse_at_mobile
+            if tab.settings.use_group_settings
+              assign limit = tab.settings.limit
+              assign grid_mobile_limit = tab.settings.grid_mobile_limit
+              assign grid_collapse_at_desktop = tab.settings.grid_collapse_at_desktop
+              assign grid_collapse_at_mobile = tab.settings.grid_collapse_at_mobile
+            endif
+            assign totalDesktopSize = 0
+            assign totalSize = 0
+            assign break = false
+            assign currentTab = false
+            assign currentSize = 0
+            capture contentBlocks
+              for block in section.blocks
+
+                if tab.id
+                  if tab.id == block.id
+                    assign currentTab = true
+                    continue
+                  endif
+                  if currentTab == false
+                    continue
+                  endif
+                  if block.type == 'tab_group'
+                    break
+                  endif
+                endif
+
+                assign objects = null
+                case block.type
+                  when 'source_products' or 'source_collections'
+                    assign objects = block.settings.source
+                  when 'source_articles'
+                    assign objects = block.settings.source.articles
+                  when 'source_collection'
+                    assign objects = block.settings.source.products
+                  when 'source_metafield'
+
+                    assign metafieldResources = '[article.,[product.,[collection.,[shop.,[page.,[blog.' | split: ','
+                    for resource in metafieldResources
+
+                      if block.settings.source contains resource
+                        assign split = block.settings.source | replace_first: resource, '|~|split|~|' | split: '|~|split|~|'
+                        assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+                        assign metafield = split_2[0] | trim | split: '.'
+
+                        case resource
+                          when '[article.'
+                            assign metafield = article.metafields[metafield[0]][metafield[1]]
+                          when '[product.'
+                            assign metafield = product.metafields[metafield[0]][metafield[1]]
+                          when '[collection.'
+                            assign metafield = collection.metafields[metafield[0]][metafield[1]]
+                          when '[shop.'
+                            assign metafield = shop.metafields[metafield[0]][metafield[1]]
+                          when '[page.'
+                            assign metafield = page.metafields[metafield[0]][metafield[1]]
+                          when '[blog.'
+                            assign metafield = blog.metafields[metafield[0]][metafield[1]]
+                        endcase
+                        break
+                      endif
+                    endfor
+                    case metafield.type
+                      when 'list.product_reference' or 'list.collection_reference'
+                        assign objects = metafield.value
+                      when 'collection_reference'
+                        assign objects = metafield.value.products
+                    endcase
+                  when 'source_custom_item'
+                    render 'featured-objects.source_custom_item', block: block, class: objectClasses, hide_button: hide_button
+                    assign limit = limit | minus: 1
+                    if limit <= 0
+                      assign break = true
+                      break
+                    endif
+                endcase
+
+                if break
+                  break
+                endif
+
+                assign desktopSize = 0
+
+                for item in objects
+
+                  if item.url contains "/collections/"
+                    assign type = 'collection'
+                    render 'object-card', item: item, class: objectClasses, hide_button: hide_button
+
+                  elsif item.url contains "/products/"
+                    assign type = 'product'
+
+                    case card_style
+                      when 'default'
+                        render 'product-card', product: item, class: objectClasses, hide_button: hide_button
+                      when 'preview_card'
+                        render 'product-preview-card', product: item, class: objectClasses, hide_button: hide_button
+                    endcase
+
+                  elsif item.url contains "/blogs/" and item.author
+                    assign type = 'article'
+                    render 'object-card', item: item, class: objectClasses, hide_button: hide_button
+                  endif
+
+                  assign currentSize = currentSize | plus: 1
+                  assign limit = limit | minus: 1
+                  assign grid_mobile_limit = grid_mobile_limit | minus: 1
+                  assign size = forloop.index
+
+
+                  if limit >= 0
+                    assign desktopSize = forloop.index
+                  endif
+
+                  if limit == 0
+                    assign objectClasses = objectClasses | append: " lg:hidden feature_grid_mobile"
+                  endif
+
+                  if currentSize == grid_collapse_at_desktop
+                    assign objectClasses = objectClasses | append: " lg:hidden feature_grid_desktop group-[.active]/grid:flex"
+                  endif
+
+                  if currentSize == grid_collapse_at_mobile
+                    assign objectClasses = objectClasses | append: " max-lg:hidden feature_grid_mobile group-[.active]/grid:flex"
+                  endif
+
+                  if limit <= 0 and grid_mobile_limit <= 0
+                    assign break = true
+                    break
+                  endif
+
+                endfor
+
+                assign totalDesktopSize = totalDesktopSize | plus: desktopSize
+                assign totalSize = totalSize | plus: size
+
+                if break
+                  break
+                endif
+
+              endfor
+            endcapture
+
+            assign showMoreButtonClasses = ""
+            if totalDesktopSize > grid_collapse_at_desktop
+              assign showMoreButtonClasses = "lg:flex"
+            endif
+            if totalSize > grid_collapse_at_mobile
+              assign showMoreButtonClasses = showMoreButtonClasses | append: " max-lg:flex"
+            endif
+          %}
+
+          <section class="group/grid relative container overflow-hidden hidden {{ grid }}"
+                   data-featured-objects-grid>
+            <main class="grid gap-4 lg:grid-cols-[var(--slider-cols--desktop)] grid-cols-[var(--slider-cols--mobile)] [&>*]:min-w-[unset]"
+                  style="--slider-cols--desktop: repeat({{ grid_columns_desktop }}, 1fr);
+                      --slider-cols--mobile: repeat({{ grid_columns_mobile }}, 1fr);">
+              {{ contentBlocks }}
+            </main>
+            <button class="button-primary mx-auto mt-3 w-full md:w-auto hidden {{ showMoreButtonClasses }}"
+                    data-featured-objects-show-more-button>
+              <span class="group-[.active]/grid:hidden">Show more</span>
+              <span class="hidden group-[.active]/grid:inline">Show less</span>
+            </button>
+
+          </section>
+
+        {% endif %}
+      </div>
+    {% endfor %}
+
+  </main>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'footer' %}
+        {% render 'products-scrollable.heading', block: block %}
+        {% break %}
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Featured Objects",
+  "settings": [
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "Limit",
+      "default": 12,
+      "min": 3,
+      "max": 24,
+      "step": 1
+    },
+    {
+      "type": "radio",
+      "id": "desktop_style",
+      "label": "Desktop Style",
+      "default": "scrollable",
+      "options": [
+        {
+          "value": "scrollable",
+          "label": "Scrollable"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "radio",
+      "id": "mobile_style",
+      "label": "Mobile Style",
+      "default": "scrollable",
+      "options": [
+        {
+          "value": "scrollable",
+          "label": "Scrollable"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Scrollable Style Only"
+    },
+    {
+      "type": "checkbox",
+      "id": "container_overflow",
+      "label": "Fill fullscreen when scrolling"
+    },
+    {
+      "type": "header",
+      "content": "Slider Style Only"
+    },
+    {
+      "type": "checkbox",
+      "id": "slider__show_dots",
+      "label": "Slider Dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "slider__show_buttons",
+      "label": "Show Arrow Buttons",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "slider__desktop_cols",
+      "label": "Desktop - Items per Slide",
+      "default": 4,
+      "min": 2,
+      "max": 6,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "slider__mobile_cols",
+      "label": "Mobile - Items per Slide",
+      "default": 2,
+      "min": 1,
+      "max": 3,
+      "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "slider__auto_rotate",
+      "label": "Auto Rotate"
+    },
+    {
+      "type": "range",
+      "id": "slider__speed",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "label": "Change slides every",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Grid Style Only"
+    },
+    {
+      "type": "range",
+      "id": "grid_columns_desktop",
+      "label": "Desktop Grid Columns",
+      "default": 5,
+      "min": 1,
+      "max": 12,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "grid_collapse_at_desktop",
+      "label": "Desktop: Add Show more button after X items",
+      "default": 10,
+      "min": 2,
+      "max": 25,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "grid_columns_mobile",
+      "label": "Mobile Grid Columns",
+      "default": 2,
+      "min": 1,
+      "max": 3,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "grid_mobile_limit",
+      "label": "Mobile Limit",
+      "default": 12,
+      "min": 3,
+      "max": 24,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "grid_collapse_at_mobile",
+      "label": "Mobile: Add Show more button after X items",
+      "default": 6,
+      "min": 2,
+      "max": 25,
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_button",
+      "label": "Hide Button",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "card__background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Object Style"
+    },
+    {
+      "type": "radio",
+      "id": "card_style",
+      "label": "Object Style",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "preview_card",
+          "label": "Preview Card"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_products",
+      "label": "Center Products if less than width"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Heading",
+      "type": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "richtext",
+          "id": "preheading",
+          "label": "Pre heading"
+        },
+        {
+          "type": "range",
+          "id": "preheading_font",
+          "label": "Pre heading Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "range",
+          "id": "subtitle_font",
+          "label": "Subtitle Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Richtext"
+        },
+        {
+          "type": "range",
+          "id": "content_font",
+          "label": "Content Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary__text",
+          "label": "Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_secondary__style",
+          "label": "Style",
+          "default": "button-primary--outline",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "radio",
+          "id": "align__horizontal",
+          "label": "Horizontal Alignment",
+          "default": "items-center text-center",
+          "options": [
+            {
+              "value": "items-start text-left",
+              "label": "Left"
+            },
+            {
+              "value": "items-center text-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end text-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "section_max_width",
+          "label": "Content Max Width",
+          "default": "max-w-2xl",
+          "options": [
+            {
+              "value": "max-w-full",
+              "label": "Fullwidth"
+            },
+            {
+              "value": "max-w-[var(--layout-page-width)]",
+              "label": "Container"
+            },
+            {
+              "value": "max-w-6xl",
+              "label": "6xl"
+            },
+            {
+              "value": "max-w-5xl",
+              "label": "5xl"
+            },
+            {
+              "value": "max-w-4xl",
+              "label": "4xl"
+            },
+            {
+              "value": "max-w-3xl",
+              "label": "3xl"
+            },
+            {
+              "value": "max-w-2xl",
+              "label": "2xl"
+            },
+            {
+              "value": "max-w-xl",
+              "label": "xl"
+            },
+            {
+              "value": "max-w-lg",
+              "label": "lg"
+            },
+            {
+              "value": "max-w-md",
+              "label": "md"
+            },
+            {
+              "value": "max-w-sm",
+              "label": "sm"
+            },
+            {
+              "value": "max-w-xs",
+              "label": "xs"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -12,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "name": "Footer",
+      "type": "footer",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "richtext",
+          "id": "preheading",
+          "label": "Pre heading"
+        },
+        {
+          "type": "range",
+          "id": "preheading_font",
+          "label": "Pre heading Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "range",
+          "id": "subtitle_font",
+          "label": "Subtitle Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Richtext"
+        },
+        {
+          "type": "range",
+          "id": "content_font",
+          "label": "Content Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary__text",
+          "label": "Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_secondary__style",
+          "label": "Style",
+          "default": "button-primary--outline",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "radio",
+          "id": "align__horizontal",
+          "label": "Horizontal Alignment",
+          "default": "items-center text-center",
+          "options": [
+            {
+              "value": "items-start text-left",
+              "label": "Left"
+            },
+            {
+              "value": "items-center text-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end text-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "section_max_width",
+          "label": "Content Max Width",
+          "default": "max-w-2xl",
+          "options": [
+            {
+              "value": "max-w-full",
+              "label": "Fullwidth"
+            },
+            {
+              "value": "max-w-[var(--layout-page-width)]",
+              "label": "Container"
+            },
+            {
+              "value": "max-w-6xl",
+              "label": "6xl"
+            },
+            {
+              "value": "max-w-5xl",
+              "label": "5xl"
+            },
+            {
+              "value": "max-w-4xl",
+              "label": "4xl"
+            },
+            {
+              "value": "max-w-3xl",
+              "label": "3xl"
+            },
+            {
+              "value": "max-w-2xl",
+              "label": "2xl"
+            },
+            {
+              "value": "max-w-xl",
+              "label": "xl"
+            },
+            {
+              "value": "max-w-lg",
+              "label": "lg"
+            },
+            {
+              "value": "max-w-md",
+              "label": "md"
+            },
+            {
+              "value": "max-w-sm",
+              "label": "sm"
+            },
+            {
+              "value": "max-w-xs",
+              "label": "xs"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "name": "Tab Group",
+      "type": "tab_group",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Group"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_group_settings",
+          "label": "Use group Settings",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "limit",
+          "label": "Limit",
+          "default": 12,
+          "min": 3,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "type": "radio",
+          "id": "desktop_style",
+          "label": "Desktop Style",
+          "default": "scrollable",
+          "options": [
+            {
+              "value": "scrollable",
+              "label": "Scrollable"
+            },
+            {
+              "value": "slider",
+              "label": "Slider"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "mobile_style",
+          "label": "Mobile Style",
+          "default": "scrollable",
+          "options": [
+            {
+              "value": "scrollable",
+              "label": "Scrollable"
+            },
+            {
+              "value": "slider",
+              "label": "Slider"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Scrollable Style Only"
+        },
+        {
+          "type": "checkbox",
+          "id": "container_overflow",
+          "label": "Fill fullscreen when scrolling"
+        },
+        {
+          "type": "header",
+          "content": "Slider Style Only"
+        },
+        {
+          "type": "checkbox",
+          "id": "slider__show_dots",
+          "label": "Slider Dots",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "slider__desktop_cols",
+          "label": "Desktop - Items per Slide",
+          "default": 4,
+          "min": 2,
+          "max": 6,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "slider__mobile_cols",
+          "label": "Mobile - Items per Slide",
+          "default": 2,
+          "min": 1,
+          "max": 3,
+          "step": 1
+        },
+        {
+          "type": "checkbox",
+          "id": "slider__auto_rotate",
+          "label": "Auto Rotate"
+        },
+        {
+          "type": "range",
+          "id": "slider__speed",
+          "min": 3,
+          "max": 20,
+          "step": 1,
+          "unit": "s",
+          "label": "Change slides every",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Grid Style Only"
+        },
+        {
+          "type": "range",
+          "id": "grid_columns_desktop",
+          "label": "Desktop Grid Columns",
+          "default": 5,
+          "min": 1,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "grid_collapse_at_desktop",
+          "label": "Desktop: Add Show more button after X items",
+          "default": 10,
+          "min": 2,
+          "max": 25,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "grid_columns_mobile",
+          "label": "Mobile Grid Columns",
+          "default": 2,
+          "min": 1,
+          "max": 3,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "grid_mobile_limit",
+          "label": "Mobile Limit",
+          "default": 12,
+          "min": 3,
+          "max": 24,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "grid_collapse_at_mobile",
+          "label": "Mobile: Add Show more button after X items",
+          "default": 6,
+          "min": 2,
+          "max": 25,
+          "step": 1
+        },
+        {
+          "type": "header",
+          "content": "Content Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_button",
+          "label": "Hide Button",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "card__background_color",
+          "label": "Background color"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "checkbox",
+          "id": "center_products",
+          "label": "Center Products if less than width"
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "type": "source_products",
+      "settings": [
+        {
+          "type": "product_list",
+          "id": "source",
+          "label": "Products"
+        }
+      ]
+    },
+    {
+      "name": "Prods via Collection",
+      "type": "source_collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "source",
+          "label": "Collection"
+        }
+      ]
+    },
+    {
+      "name": "Collections",
+      "type": "source_collections",
+      "settings": [
+        {
+          "type": "collection_list",
+          "id": "source",
+          "label": "Collections"
+        }
+      ]
+    },
+    {
+      "name": "Articles via Blog",
+      "type": "source_articles",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "source",
+          "label": "Blog"
+        }
+      ]
+    },
+    {
+      "name": "Prod/Cols via Metafield",
+      "type": "source_metafield",
+      "settings": [
+        {
+          "type": "text",
+          "id": "source",
+          "label": "Metafield",
+          "default": "[product.smart.related_products]",
+          "info": "Supports metafield access on Global Objects (Product, Article, Collection, Page, Shop, Blog) via [object.namespace.field] placeholder"
+        },
+        {
+          "type": "paragraph",
+          "content": "Supports `list.collection_reference` for Collections, `list.product_reference` for Products, and `collection_reference` for Products."
+        }
+      ]
+    },
+    {
+      "name": "Custom Content Item",
+      "type": "source_custom_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Content",
+          "info": "Supports type text metafield access on Global Objects (Product, Article, Collection, Page, Shop, Blog) via [object.namespace.field] placeholder"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Font Group",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "button__mobile_layout",
+          "label": "Mobile Button Layout",
+          "default": "flex max-md:flex-col max-md:w-full",
+          "options": [
+            {
+              "value": "flex",
+              "label": "Fit Space"
+            },
+            {
+              "value": "flex max-md:flex-col max-md:w-full",
+              "label": "Fullwidth"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "button__desktop_layout",
+          "label": "Desktop Button Layout",
+          "default": "flex",
+          "options": [
+            {
+              "value": "flex",
+              "label": "Fit Space"
+            },
+            {
+              "value": "flex md:!flex-col md:w-full",
+              "label": "Fullwidth"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Objects"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,30 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign image = block.settings.image
+  assign button_primary__text = block.settings.button_primary__text
+  assign button_primary__url = block.settings.button_primary__url
+  assign flex_position = block.settings.flex_position
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  if button_primary__text != blank and button_primary__url != blank
+    assign button_primary__show = true
+  endif
+%}
+
+
+<figure id="block--{{ block.id }}" {{ block.shopify_attributes }}
+        class="aspect-[0.85] relative rounded-theme-lg overflow-hidden"
+        style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% render '_image', image: image, width: 500, class: "absolute inset-0 w-full h-full object-cover", placeholder: 'product-2' %}
+  {% if button_primary__show %}
+    <div class="p-3 w-full h-full flex {{ flex_position }}">
+      <a href="{{ button_primary__url }}"
+         class="button-theme w-full justify-between py-2 px-2 md:px-4 max-md:tracking-tight max-md:text-[13px] font-medium">
+        {{ button_primary__text }}
+        {% render '_icon', icon: "arrow-right", class: "w-5 h-5" %}
+      </a>
+    </div>
+  {% endif %}
+</figure>

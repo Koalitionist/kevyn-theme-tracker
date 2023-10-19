@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "width": "max-w-2xl",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "2a281c3b-423d-4e8d-b8c3-704b67016a2d": {
+      "type": "richtext",
+      "blocks": {
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-3": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Have a question? We're here to help! You can contact us directly by <a href=\"mailto:customerservice@kevynaucoin.com\"><span style=\"text-decoration:underline\">email<\/span><\/a><br\/> or by filling in the below fields. Our operating hours are Monday to <br\/>Friday 9:00 a.m to 6:00 p.m. EST (excluding major US Holidays).<\/p><p>You can also refer to our <a href=\"https:\/\/kevynaucoin.myshopify.com\/pages\/faqs-1\" title=\"faqs\">FAQ page<\/a>  for an immediate answer to common questions.<\/p><p><br\/> I consent to the transfer and processing of my personal data in accordance with the <br\/><a href=\"https:\/\/kevynaucoinbeauty.com\/pages\/cookie-policy\"> Cookie Policy<\/a> and <a href=\"https:\/\/kevynaucoinbeauty.com\/pages\/privacy-policy?ose=false\">Privacy Policy.<\/a><\/p><p><\/p><p>1-888-367-1319<\/p><p>Mon - Friday am - 6pm EST<\/p><p>customerservice@kevynaucoin.com<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-0",
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-1",
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-2",
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-3",
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-4",
+        "template--14836388134999__2a281c3b-423d-4e8d-b8c3-704b67016a2d-1689687308dfeb531b-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "a8a9822c-c167-40d9-8655-3d666bc8165b": {
+      "type": "forms",
+      "blocks": {
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-0": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>Contact Form<\/h3>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-left",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/h4>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Trade name: Your Business Name Inc.<br\/>Phone number: +1 123-456-7891<br\/>Email: yourbusinessemail@address.com<br\/>Physical address: 3 Industrial Pkwy S, Aurora Ontario L4G 3V9<br\/>VAT number: FRXX999999999<br\/>Trade number: 123456789<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-3": {
+          "type": "separator",
+          "settings": {
+            "height": 20
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-4": {
+          "type": "input",
+          "settings": {
+            "title": "Name",
+            "name": "name",
+            "type": "text",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "name",
+            "grid_span": "col-span-6"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-5": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "",
+            "grid_span": "col-span-6"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-6": {
+          "type": "input",
+          "settings": {
+            "title": "Phone Number",
+            "name": "phone number",
+            "type": "tel",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "tel",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-7": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "name": "body",
+            "placeholder": "",
+            "rows": 4,
+            "required": false
+          }
+        },
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-8": {
+          "type": "buttons",
+          "settings": {
+            "title": "Send",
+            "reset__show": false,
+            "reset__title": "",
+            "fullwidth": true,
+            "grid_span": "col-span-4"
+          }
+        }
+      },
+      "block_order": [
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-0",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-1",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-2",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-3",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-4",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-5",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-6",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-7",
+        "template--14836388134999__a8a9822c-c167-40d9-8655-3d666bc8165b-1689692517aafd424b-8"
+      ],
+      "settings": {
+        "type": "contact",
+        "hide_if_account": false,
+        "show_only_on_target": false,
+        "target_id": "",
+        "success_message": "<p>Thank you for contacting us.<\/p>",
+        "redirect": "off",
+        "width": "max-w-2xl",
+        "fullwidth": true,
+        "image__overlay": "",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2a281c3b-423d-4e8d-b8c3-704b67016a2d",
+    "a8a9822c-c167-40d9-8655-3d666bc8165b"
+  ]
+}

@@ -1,0 +1,58 @@
+{% if settings.product_data__metafields_namespaces contains "metafields." %}
+{% assign metafields = settings.product_data__metafields_namespaces | replace: " ", ""  %}
+{% else %}
+{% assign metafields = settings.product_data__metafields_namespaces | replace: " ", "" | prepend: 'metafields.' | replace: ',', ',metafields.' %}
+{% endif %}
+{% if metafields != "metafields." %}
+{% assign useMetafields = metafields %}
+{% endif %}
+
+{% assign selectInput = '
+id,
+handle,
+variants.available,
+variants.featured_media,
+variants.option1,
+variants.option2,
+variants.option3,
+variants.options,
+variants.store_availability,
+variants.price,
+variants.compare_at_price,
+variants.id,
+variants.sku,
+variants.title,
+variants.metafields.smart,
+variants.inventory_quantity,
+variants.inventory_policy,
+variants.inventory_management,
+collections.handle,
+requires_selling_plan,
+selling_plan_groups,
+options,
+option1,
+option2,
+option3,
+price,
+price_min,
+price_varies,
+compare_at_price,
+compare_at_price_min,
+compare_at_price_varies,
+options_with_values,
+title,
+featured_media,
+media,
+seo_description,
+description,
+vendor,
+url,
+available,
+tags,
+metafields.reviews,
+metafields.smart,
+metafields.shopify--discovery--product_recommendation,
+selected_or_first_available_variant,
+' | append: useMetafields %}
+
+{% render '_json_product', input: input, select: selectInput %}

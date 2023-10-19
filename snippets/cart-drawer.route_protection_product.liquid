@@ -1,0 +1,41 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign products = block.settings.products
+  assign limit_quantity = block.settings.limit_quantity
+  assign checkout_disabled = block.settings.checkout_disabled
+  assign empty_cart_show = block.settings.empty_cart_show
+  assign content__show = block.settings.content__show
+  assign title = block.settings.title
+  assign description = block.settings.description
+  assign variant_id = block.settings.variant_id
+  assign use_advanced_pricing = block.settings.use_advanced_pricing
+  assign price = block.settings.price
+  assign percentage = block.settings.percentage
+  assign percentage_threshold = block.settings.percentage_threshold
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign _product = products | first %}
+{% capture route_protection_settings %}
+  {
+  "products": {{ products | json }},
+  "limit_quantity": {{ limit_quantity | json }},
+  "checkout_disabled": {{ checkout_disabled | json }},
+  "content__show": {{ content__show | json }},
+  "title": {{ title | default: _product.title | json }},
+  "description": {{ description | json }},
+  "variant_id": {{ variant_id | default: _product.first_available_variant.id | times: 1 | json }},
+  "use_advanced_pricing": {{ use_advanced_pricing | json }},
+  "price": {{ price | json }},
+  "percentage": {{ percentage | json }},
+  "percentage_threshold": {{ percentage_threshold | json }}
+  }
+{% endcapture %}
+
+{% if _product and _product.variants %}
+  <div data-route-protection="{{ block.id }}" {{ block.shopify_attributes }}
+       data-route-protection-settings="{{ route_protection_settings | escape }}">
+  </div>
+{% endif %}
+
+

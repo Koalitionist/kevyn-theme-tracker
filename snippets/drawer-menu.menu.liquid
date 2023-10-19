@@ -1,0 +1,150 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign menu = block.settings.menu
+  assign icon_style = block.settings.icon_style
+  assign typography_style = block.settings.typography_style
+  assign spacing = block.settings.spacing
+  assign border_top = block.settings.border_top
+  assign border_bottom = block.settings.border_bottom
+  assign margin_top = block.settings.margin_top
+  assign margin_bottom = block.settings.margin_bottom
+  assign grid_layout = block.settings.grid_layout
+  assign facebook_url = block.settings.facebook_url
+  assign instagram_url = block.settings.instagram_url
+  assign thumbnails__show = block.settings.thumbnails__show
+  assign metafield = block.settings.metafield
+  assign override_1_handle = block.settings.override_1_handle
+  assign override_1_image = block.settings.override_1_image
+  assign override_2_handle = block.settings.override_2_handle
+  assign override_2_image = block.settings.override_2_image
+  assign override_3_handle = block.settings.override_3_handle
+  assign override_3_image = block.settings.override_3_image
+  assign override_4_handle = block.settings.override_4_handle
+  assign override_4_image = block.settings.override_4_image
+  assign override_5_handle = block.settings.override_5_handle
+  assign override_5_image = block.settings.override_5_image
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+
+  if border_top
+    assign border_classes = "border-t border-t-gray-200 "
+  endif
+  if border_bottom
+    assign border_classes = border_classes | append: "border-b border-b-gray-200 "
+  endif
+
+%}
+
+<div class="{{ grid_layout }} {{ border_classes }} gap-x-2" {{ block.shopify_attributes }}
+     style="padding-bottom: {{ margin_bottom }}px; padding-top: {{ margin_top }}px; row-gap: {{ spacing }}px;"
+     data-drawer-menu="{{ block.id }}">
+  {% for link in menu.links %}
+    {% assign namespace = metafield | split: '.' | first | trim %}
+    {% assign key = metafield | split: '.' | last | trim %}
+
+    {% assign overrideImage = null %}
+    {% for i in (1..5) %}
+      {% assign overrideHandleSetting = "override_" | append: i | append: "_handle" %}
+      {% assign overrideImageSetting = "override_" | append: i | append: "_image" %}
+      {% if block.settings[overrideHandleSetting] == link.handle %}
+        {% assign overrideImage = block.settings[overrideImageSetting] | default: "hide-image" %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% assign image = overrideImage | default: link.object.metafields[namespace][key].value | default: link.object.image | default: link.object.featured_image | default: null %}
+
+    <div data-drawer-menu-handle="{{ link.handle }}"
+         data-drawer-menu-url="{{ link.url }}"
+         {% if link.links.size > 0 %}data-drawer-menu-has-links="true"{% endif %}>
+      <a class="dropdown-toggle px-4 flex flex-1 w-full text-left gap-4 items-center  group ac:bg-theme-text/[0.02]"
+         href="{{ link.url }}"
+         data-drawer-menu-toggle>
+        {% if thumbnails__show %}
+          <div class="py-1">
+            <picture class="block relative w-12 h-12 rounded-theme overflow-hidden ">
+              {% if image != 'hide-image' %}
+                {% render '_image', image: image, width: 60, height: 60, class: "w-full h-full object-cover", preload: true %}
+              {% endif %}
+            </picture>
+          </div>
+
+        {% endif %}
+        <span class="flex-1 gap-4 flex items-center justify-between {{ typography_style }}">
+          <span class="flex-1 group-[.dropdown-toggle:hover]:underline">{{ link.title }}</span>
+          <button class="hf:underline text-xs hidden group-[.dropdown-toggle.active]:block opacity-0 group-[.dropdown-toggle.active]:opacity-100 transition-all duration-150 font-normal"
+                  data-drawer-menu-view-all>
+            View All
+          </button>
+          <span class="hidden"
+                data-drawer-menu-dropdown-icon>
+            {% case icon_style %}
+              {% when 'chevron-right' %}
+                {% render '_icon', icon: icon_style, class: "h-[1em] w-auto group-[.dropdown-toggle.active]:rotate-90 transition-all ease-linear duration-150" %}
+              {% when 'plus' %}
+                <svg class="h-[1em] w-auto"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                        fill="currentColor" />
+                  <path fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                        fill="currentColor"
+                        class="-rotate-90 origin-center group-[.dropdown-toggle.active]:rotate-0 transition-all ease-linear duration-150" />
+                </svg>
+            {% endcase %}
+          </span>
+        </span>
+      </a>
+      <div class="px-4 relative overflow-hidden transition-all duration-150 ease-linear @container"
+           data-drawer-menu-dropdown
+           style="max-height: 0">
+        <div class="py-5 gap-8 grid">
+          {% for sub_link in link.links %}
+            <div class="grid gap-3">
+              <div>
+                <a href="{{ sub_link.url }}"
+                   class="megamenu-title hf:underline">
+                  {{ sub_link.title }}
+                </a>
+              </div>
+              <div class="grid gap-2">
+                {% for dropdown_link in sub_link.links %}
+                  <div class="{% if forloop.last %}mb-8{% endif %}">
+                    <a href="{{ dropdown_link.url }}"
+                       class="megamenu-link hf:underline">
+                      {{ dropdown_link.title }}
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  {% if facebook_url != blank or instagram_url != blank %}
+    <div class="flex gap-6 items-center px-4">
+      {% if facebook_url != blank %}
+        <a class="dropdown-toggle group ac:bg-theme-text/[0.02] w-6 h-6"
+           href="{{ facebook_url }}">
+          <span class="sr-only">Facebook</span>
+          {% render '_icon', icon: 'facebook', class: "w-6 h-6" %}
+        </a>
+      {% endif %}
+      {% if instagram_url != blank %}
+        <a class="dropdown-toggle group ac:bg-theme-text/[0.02] w-6 h-6"
+           href="{{ instagram_url }}">
+          <span class="sr-only">Instagram</span>
+          {% render '_icon', icon: 'instagram', class: "w-6 h-6" %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

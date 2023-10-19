@@ -1,0 +1,3834 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign sticky = section.settings.sticky
+  assign breadcrumbs__show = section.settings.breadcrumbs__show
+  assign gallery__layout = section.settings.gallery__layout
+  assign gallery__zoom = section.settings.gallery__zoom
+  assign gallery__zoom_scale = section.settings.gallery__zoom_scale
+  assign gallery__first_image_full = section.settings.gallery__first_image_full
+  assign gallery__show_thumbnails = section.settings.gallery__show_thumbnails
+  assign gallery__use_variant_thumbnail_images = section.settings.gallery__use_variant_thumbnail_images
+  assign gallery__size = section.settings.gallery__size
+  assign gallery__aspect_ratio = section.settings.gallery__aspect_ratio
+  assign hide_not_selected_variant_images = section.settings.hide_not_selected_variant_images
+  assign variants_multi_images = section.settings.variants_multi_images
+  assign variants_image_metafield = section.settings.variants_image_metafield
+  assign gallery__loop_videos = section.settings.gallery__loop_videos
+  assign grid_gap = section.settings.grid_gap
+  assign section_layout = section.settings.section_layout
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<script>
+  console.log({{ product.variants[0].metafields.custom.variant_images.value | json }});
+</script>
+
+{% liquid
+  assign product_form_id = 'product-form-' | append: section.id | append: "-" | append: product.id
+  assign variant = product.selected_or_first_available_variant
+
+  case section.settings.gallery__size
+    when 'small'
+      assign desktopGridClasses = "lg:grid-cols-[1fr_600px]"
+    when 'medium'
+      assign desktopGridClasses = "lg:grid-cols-[1fr_500px]"
+    when 'large'
+      assign desktopGridClasses = "lg:grid-cols-[1fr_400px]"
+    when 'xl'
+      assign desktopGridClasses = "lg:grid-cols-[1fr_350px]"
+  endcase
+
+  if section.settings.sticky
+    assign stickyClasses = 'lg:pb-24 lg:sticky lg:top-spacing-8 lg:max-h-[calc(100vh-var(--top-bar-spacing))] lg:overflow-y-auto scrollbar-none -mx-2 px-2 transition-all ease-linear'
+    assign stickyAttributes = 'data-product-sticky-content'
+  endif
+%}
+
+<div id="{{ sectionID }}"
+     class="product {{ section_layout }} {{ color_scheme }} {{ padding_top }} {{ padding_bottom }} {{ responsive_visibility }} relative">
+  <div class="absolute inset-0 z-10 transition-all duration-75 ease-linear bg-theme-bg"
+       data-product-loading-screen></div>
+  <article class="w-full grid gap-8 xl:gap-12 {{ desktopGridClasses }}"
+           data-product-handle="{{ product.handle }}"
+           data-product-form-id="{{ product_form_id }}"
+           data-product-selected-variant="{{ product.selected_or_first_available_variant.id }}">
+    <script type="application/json"
+            data-section-settings>{{- section.settings | json -}}</script>
+    <section data-product-gallery>
+      {% render 'product.gallery' %}
+    </section>
+    <section class="h-min grid gap-2 {{ stickyClasses }}" {{ stickyAttributes }}>
+      {% if breadcrumbs__show %}
+        {% render '_breadcrumbs' %}
+      {% endif %}
+
+      <div class="grid grid-cols-12 items-baseline"
+           data-product-blocks="{{ product.handle }}"
+           style="gap: {{ grid_gap }}px;">
+        <div data-product-block="side_effects"
+             class="hidden"></div>
+        {% assign isFlexGroup = false %}
+        {% for block in section.blocks %}
+          {% if block.settings.grid_span == "flex_group" and isFlexGroup == false %}
+            {% assign isFlexGroup = '<div class="flex gap-2 col-span-12 items-baseline">|||</div>' %}
+            {{ isFlexGroup | split: "|||" | first }}
+          {% endif %}
+          {% if block.settings.grid_span != "flex_group" and isFlexGroup != false %}
+            {{ isFlexGroup | split: "|||" | last }}
+            {% assign isFlexGroup = false %}
+          {% endif %}
+          {% case block.type %}
+            {% when '@app' %}
+              <div data-product-block="@app"
+                   class="col-span-12 {{ custom_css }}" {{ block.shopify_attributes }}>
+                {% render block %}
+              </div>
+            {% when 'text' %}
+              {% render 'product.text', block: block %}
+            {% when 'rating' %}
+              {% render 'product.rating', block: block %}
+            {% when 'image' %}
+              {% render 'product.image', block: block %}
+            {% when 'title' %}
+              {% render 'product.title', block: block %}
+            {% when 'vendor' %}
+              {% render 'product.vendor', block: block %}
+            {% when 'sku' %}
+              {% render 'product.sku', block: block, variant: variant %}
+            {% when 'price' %}
+              {% render 'product.price', block: block, variant: variant %}
+            {% when 'variant_upsell' %}
+              {% render 'product.variant_upsell', block: block, variant: variant %}
+            {% when 'variant_selector' %}
+              {% if product.variants.size > 1 %}
+                {% render 'product.variant_selector', block: block, variant: variant %}
+              {% endif %}
+            {% when 'product_sibling' %}
+              {% render 'product.product_sibling', block: block %}
+            {% when 'quantity_selector' %}
+              {% render 'product.quantity_selector', block: block %}
+            {% when 'custom_liquid' %}
+              {% render 'product.custom_liquid', block: block %}
+            {% when 'description' %}
+              {% render 'product.description', block: block %}
+            {% when 'collapsible_tab' %}
+              {% render 'product.collapsible_tab', block: block %}
+            {% when 'share' %}
+              {% render 'product.share', block: block %}
+            {% when 'dynamic_buy_buttons' %}
+              {% render 'product.dynamic_buy_buttons', block: block, variant: variant %}
+            {% when 'payment_terms' %}
+              {% render 'product.payment_terms', block: block, variant: variant %}
+            {% when 'buy_buttons' %}
+              {% render 'product.buy_buttons', block: block, variant: variant %}
+            {% when 'complementary' %}
+              {% render 'product.complementary', block: block %}
+            {% when 'icon_with_text' %}
+              {% render 'product.icon_with_text', block: block %}
+            {% when 'inventory' %}
+              {% render 'product.inventory', block: block, variant: variant %}
+            {% when 'pre_order' %}
+              {% render 'product.pre_order', block: block, variant: variant %}
+            {% when 'popup' %}
+              {% render 'product.popup', block: block, type: 'button' %}
+          {% endcase %}
+          {% if block.settings.grid_span == "flex_group" and forloop.last %}
+            {{ isFlexGroup | split: "|||" | last }}
+            {% assign isFlexGroup = false %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    {% render '_seo', type: 'product' %}
+  </article>
+</div>
+
+{% for block in section.blocks %}
+  {% if block.type == 'popup' %}
+    {% render 'product.popup', block: block, type: 'content' %}
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "sticky",
+      "default": true,
+      "label": "Enable sticky content on desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "breadcrumbs__show",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Media Gallery",
+      "info": "Learn more about [media types.](https://help.shopify.com/manual/products/product-media)"
+    },
+    {
+      "type": "radio",
+      "id": "gallery__layout",
+      "label": "Layout",
+      "default": "horizontal",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "Horizontal Slider"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "vertical",
+          "label": "Vertical Scroll"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "gallery__zoom",
+      "label": "Enable Image Zoom",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "gallery__zoom_scale",
+      "label": "Image Zoom Scale",
+      "default": 200,
+      "min": 110,
+      "max": 300,
+      "step": 10,
+      "unit": "%"
+    },
+    {
+      "type": "checkbox",
+      "id": "gallery__first_image_full",
+      "label": "Show first Image in full-width",
+      "info": "Grid view only"
+    },
+    {
+      "type": "radio",
+      "id": "gallery__show_thumbnails",
+      "label": "Show Thumbnails",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        },
+        {
+          "value": "hidden",
+          "label": "Hidden"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "gallery__use_variant_thumbnail_images",
+      "label": "Use Variant Image Thumbnails",
+      "default": false
+    },
+    {
+      "type": "radio",
+      "id": "gallery__size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra Large"
+        }
+      ],
+      "default": "large",
+      "label": "Desktop media size",
+      "info": "Media is automatically optimized for mobile."
+    },
+    {
+      "type": "select",
+      "id": "gallery__aspect_ratio",
+      "default": "auto",
+      "label": "Image Aspect Ratio",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto Fit"
+        },
+        {
+          "value": "9 / 16",
+          "label": "Story Format (9-16)"
+        },
+        {
+          "value": "2 / 3",
+          "label": "Smartphone (2-3)"
+        },
+        {
+          "value": "3 / 4",
+          "label": "Horizontal Image (3-4)"
+        },
+        {
+          "value": "1",
+          "label": "Square (1-1)"
+        },
+        {
+          "value": "4 / 3",
+          "label": "TV Format (4-3)"
+        },
+        {
+          "value": "16 / 9",
+          "label": "Widescreen (16-9)"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_not_selected_variant_images",
+      "label": "Hide not selected Variant Images",
+      "default": false
+    },
+    {
+      "type": "radio",
+      "id": "variants_multi_images",
+      "label": "Show Dedicated Variant Images",
+      "default": "disabled",
+      "options": [
+        {
+          "value": "disabled",
+          "label": "Disabled"
+        },
+        {
+          "value": "via_metafield",
+          "label": "Via Metafield"
+        },
+        {
+          "value": "via_image_order",
+          "label": "Via Image Order"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "variants_image_metafield",
+      "label": "Variants Image Metafield",
+      "default": "smart.images",
+      "info": "t:sections.product.settings.variants_image_metafield.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "gallery__loop_videos",
+      "default": false,
+      "label": "Enable video looping"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid Spacing",
+      "default": 12,
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "radio",
+      "id": "section_layout",
+      "label": "Section Layout",
+      "default": "container-bg-full",
+      "options": [
+        {
+          "value": "container-bg-full",
+          "label": "Container"
+        },
+        {
+          "value": "fullwidth",
+          "label": "Fullwidth"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text block"
+        },
+        {
+          "type": "range",
+          "id": "text_font",
+          "label": "Text Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "radio",
+          "id": "text_align",
+          "label": "Text Alignment",
+          "default": "text-left",
+          "options": [
+            {
+              "value": "text-left",
+              "label": "Left"
+            },
+            {
+              "value": "text-center",
+              "label": "Center"
+            },
+            {
+              "value": "text-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "section_max_width",
+          "label": "Content Max Width",
+          "default": "max-w-2xl",
+          "options": [
+            {
+              "value": "max-w-full",
+              "label": "Fullwidth"
+            },
+            {
+              "value": "max-w-[var(--layout-page-width)]",
+              "label": "Container"
+            },
+            {
+              "value": "max-w-6xl",
+              "label": "6xl"
+            },
+            {
+              "value": "max-w-5xl",
+              "label": "5xl"
+            },
+            {
+              "value": "max-w-4xl",
+              "label": "4xl"
+            },
+            {
+              "value": "max-w-3xl",
+              "label": "3xl"
+            },
+            {
+              "value": "max-w-2xl",
+              "label": "2xl"
+            },
+            {
+              "value": "max-w-xl",
+              "label": "xl"
+            },
+            {
+              "value": "max-w-lg",
+              "label": "lg"
+            },
+            {
+              "value": "max-w-md",
+              "label": "md"
+            },
+            {
+              "value": "max-w-sm",
+              "label": "sm"
+            },
+            {
+              "value": "max-w-xs",
+              "label": "xs"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "responsive_visibility",
+          "label": "Responsive Visibility",
+          "default": "responsive",
+          "options": [
+            {
+              "value": "responsive",
+              "label": "Mobile & Desktop"
+            },
+            {
+              "value": "md:hidden",
+              "label": "Mobile only"
+            },
+            {
+              "value": "max-md:hidden",
+              "label": "Desktop only"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Title",
+      "type": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>[title]</p>",
+          "info": "Use [title] as Placeholder"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Vendor",
+      "type": "vendor",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Price",
+      "type": "price",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Variant Selector",
+      "type": "variant_selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "disable_unavailable",
+          "label": "Disable Unavailable Variants"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_selector",
+          "label": "Select variant by image",
+          "default": false,
+          "info": "Applies to products with up to 18 Variants and needs an image attached to each variant."
+        },
+        {
+          "type": "header",
+          "content": "Default Selector options"
+        },
+        {
+          "type": "paragraph",
+          "content": "The options apply if the `Variant by Image` selector is disabled or products do not meet the requirements."
+        },
+        {
+          "type": "checkbox",
+          "id": "color_selector",
+          "label": "Use Color Selector"
+        },
+        {
+          "type": "header",
+          "content": "Color Selector Options"
+        },
+        {
+          "type": "radio",
+          "id": "color_selector__source",
+          "label": "Swatches Color/Image Selection",
+          "default": "via_option",
+          "options": [
+            {
+              "value": "via_option",
+              "label": "Via Option Title"
+            },
+            {
+              "value": "via_option_then_image",
+              "label": "Via Option Title then Image"
+            },
+            {
+              "value": "via_image",
+              "label": "Via Image"
+            },
+            {
+              "value": "via_metafield",
+              "label": "Via Metafield"
+            },
+            {
+              "value": "via_image_then_metafield",
+              "label": "Via Image then Metafield"
+            },
+            {
+              "value": "via_metafield_then_image",
+              "label": "Via Metafield then Image"
+            }
+          ],
+          "info": "The default fallback option for all choices is via the Product Option title and `swatches.json` setup."
+        },
+        {
+          "type": "range",
+          "id": "color_selector_size",
+          "label": "Color Selector Size",
+          "default": 32,
+          "min": 18,
+          "max": 60,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "color_selector_radius",
+          "label": "Color Selector Radius",
+          "default": -1,
+          "min": -1,
+          "max": 32,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "textarea",
+          "id": "color_list",
+          "label": "Color Options",
+          "default": "color,colour,couleur,cor,colore,farbe,색,色,カラー,färg,farve,szín,barva",
+          "info": "Comma seperated list of colors to match by Product Option"
+        },
+        {
+          "type": "radio",
+          "id": "default_type",
+          "options": [
+            {
+              "value": "radio",
+              "label": "Pills"
+            },
+            {
+              "value": "select",
+              "label": "Dropdown"
+            }
+          ],
+          "default": "radio",
+          "label": "Default Type"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Variant as Upsell",
+      "type": "variant_upsell",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Use A variant selector with exactly 2 values as an upsell Selector"
+        },
+        {
+          "type": "text",
+          "id": "option_name",
+          "label": "Option Name"
+        },
+        {
+          "type": "text",
+          "id": "value_name",
+          "label": "Upsell Value"
+        },
+        {
+          "type": "text",
+          "id": "value_label",
+          "label": "Custom Label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upsell Image"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "SKU",
+      "type": "sku",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Quantity selector",
+      "type": "quantity_selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Buy buttons",
+      "type": "buy_buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "button__style",
+          "label": "Button Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Dynamic Buy buttons",
+      "type": "dynamic_buy_buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Payment Terms",
+      "type": "payment_terms",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Description",
+      "type": "description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "radio",
+          "id": "style",
+          "label": "Style",
+          "default": "accordion",
+          "options": [
+            {
+              "value": "plain",
+              "label": "Plain Content"
+            },
+            {
+              "value": "accordion",
+              "label": "Description Dropdown"
+            },
+            {
+              "value": "accordion_style_h1",
+              "label": "Change H1 Headings to Dropdown"
+            },
+            {
+              "value": "tabs_style_h1",
+              "label": "Change H1 Headings to Tabs"
+            },
+            {
+              "value": "accordion_custom_tags",
+              "label": "Custom Tags to create Dropdowns"
+            },
+            {
+              "value": "tabs_custom_tags",
+              "label": "Custom Tags to create Tabs"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "uncollapse",
+          "label": "Open first Dropdown"
+        },
+        {
+          "type": "header",
+          "content": "Custom Tags Only"
+        },
+        {
+          "type": "paragraph",
+          "content": "Custom tags are matched via inline square bracket tags. I.e.:  [Title] Content here [/Title]"
+        },
+        {
+          "type": "textarea",
+          "id": "custom_tag_overrides",
+          "label": "Override Titles",
+          "info": "Comma separated list to override Each Dropdown block Title. Must be in the same order as the Dropdowns"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Share",
+      "type": "share",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)."
+        },
+        {
+          "type": "paragraph",
+          "content": "A store title and description are included with the preview image. [Learn more](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Custom liquid",
+      "type": "custom_liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom liquid",
+          "info": "Add app snippets or other Liquid code to create advanced customizations."
+        }
+      ]
+    },
+    {
+      "name": "Collapsible row",
+      "type": "collapsible_tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible row",
+          "info": "Include a heading that explains the content.",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "apple",
+              "label": "Apple"
+            },
+            {
+              "value": "banana",
+              "label": "Banana"
+            },
+            {
+              "value": "bottle",
+              "label": "Bottle"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "carrot",
+              "label": "Carrot"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "Chat bubble"
+            },
+            {
+              "value": "check_mark",
+              "label": "Check mark"
+            },
+            {
+              "value": "clipboard",
+              "label": "Clipboard"
+            },
+            {
+              "value": "dairy",
+              "label": "Dairy"
+            },
+            {
+              "value": "dairy_free",
+              "label": "Dairy free"
+            },
+            {
+              "value": "dryer",
+              "label": "Dryer"
+            },
+            {
+              "value": "eye",
+              "label": "Eye"
+            },
+            {
+              "value": "fire",
+              "label": "Fire"
+            },
+            {
+              "value": "gluten_free",
+              "label": "Gluten free"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "iron",
+              "label": "Iron"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            },
+            {
+              "value": "leather",
+              "label": "Leather"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "Lightning bolt"
+            },
+            {
+              "value": "lipstick",
+              "label": "Lipstick"
+            },
+            {
+              "value": "lock",
+              "label": "Lock"
+            },
+            {
+              "value": "map_pin",
+              "label": "Map pin"
+            },
+            {
+              "value": "nut_free",
+              "label": "Nut free"
+            },
+            {
+              "value": "pants",
+              "label": "Pants"
+            },
+            {
+              "value": "paw_print",
+              "label": "Paw print"
+            },
+            {
+              "value": "pepper",
+              "label": "Pepper"
+            },
+            {
+              "value": "perfume",
+              "label": "Perfume"
+            },
+            {
+              "value": "plane",
+              "label": "Plane"
+            },
+            {
+              "value": "plant",
+              "label": "Plant"
+            },
+            {
+              "value": "price_tag",
+              "label": "Price tag"
+            },
+            {
+              "value": "question_mark",
+              "label": "Question mark"
+            },
+            {
+              "value": "recycle",
+              "label": "Recycle"
+            },
+            {
+              "value": "return",
+              "label": "Return"
+            },
+            {
+              "value": "ruler",
+              "label": "Ruler"
+            },
+            {
+              "value": "serving_dish",
+              "label": "Serving dish"
+            },
+            {
+              "value": "shirt",
+              "label": "Shirt"
+            },
+            {
+              "value": "shoe",
+              "label": "Shoe"
+            },
+            {
+              "value": "silhouette",
+              "label": "Silhouette"
+            },
+            {
+              "value": "snowflake",
+              "label": "Snowflake"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "stopwatch",
+              "label": "Stopwatch"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "washing",
+              "label": "Washing"
+            }
+          ],
+          "default": "check_mark",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Row content"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Row content from page"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Product rating",
+      "type": "rating",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Complementary products",
+      "type": "complementary",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "checkbox",
+          "id": "image__show_secondary",
+          "label": "Show Secondary Image"
+        },
+        {
+          "type": "radio",
+          "id": "source",
+          "label": "Data Source",
+          "default": "complementary",
+          "info": "Auto-generated related products are not selectable and need to be added manually to each Product.",
+          "options": [
+            {
+              "value": "complementary",
+              "label": "Complementary"
+            },
+            {
+              "value": "related",
+              "label": "Related"
+            }
+          ]
+        },
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Default Products",
+          "info": "Fallback in case complementary products are not set up.",
+          "limit": 10
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_upsell_products",
+          "label": "Hide Upsell selection if related/complementary products are available"
+        },
+        {
+          "type": "paragraph",
+          "content": "To select complementary products, add the Search & Discovery app. [Learn more](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+        },
+        {
+          "type": "radio",
+          "id": "style",
+          "label": "Style",
+          "default": "small",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small Cards"
+            },
+            {
+              "value": "large",
+              "label": "Product Cards"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Icon with text",
+      "type": "icon_with_text",
+      "settings": [
+        {
+          "type": "select",
+          "id": "layout",
+          "options": [
+            {
+              "value": "flex-row",
+              "label": "Horizontal"
+            },
+            {
+              "value": "flex-col",
+              "label": "Vertical"
+            }
+          ],
+          "default": "flex-row",
+          "label": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "item_layout",
+          "options": [
+            {
+              "value": "flex-row",
+              "label": "Horizontal"
+            },
+            {
+              "value": "flex-col",
+              "label": "Vertical"
+            }
+          ],
+          "default": "flex-row",
+          "label": "Item Layout"
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Size",
+          "default": 20,
+          "min": 16,
+          "max": 36,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "header",
+          "content": "Content",
+          "info": "Choose an icon or add an image for each column or row."
+        },
+        {
+          "type": "range",
+          "id": "content_font",
+          "label": "Content Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icon 1",
+          "default": "check-square-broken",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "activity"
+            },
+            {
+              "value": "alert-circle",
+              "label": "alert-circle"
+            },
+            {
+              "value": "announcement",
+              "label": "announcement"
+            },
+            {
+              "value": "arrow-narrow-left",
+              "label": "arrow-narrow-left"
+            },
+            {
+              "value": "arrow-narrow-right",
+              "label": "arrow-narrow-right"
+            },
+            {
+              "value": "at-sign",
+              "label": "at-sign"
+            },
+            {
+              "value": "bookmark-add",
+              "label": "bookmark-add"
+            },
+            {
+              "value": "bookmark-check",
+              "label": "bookmark-check"
+            },
+            {
+              "value": "building-large",
+              "label": "building-large"
+            },
+            {
+              "value": "building",
+              "label": "building"
+            },
+            {
+              "value": "calendar",
+              "label": "calendar"
+            },
+            {
+              "value": "check-circle-broken",
+              "label": "check-circle-broken"
+            },
+            {
+              "value": "check-circle",
+              "label": "check-circle"
+            },
+            {
+              "value": "check-heart",
+              "label": "check-heart"
+            },
+            {
+              "value": "check-square-broken",
+              "label": "check-square-broken"
+            },
+            {
+              "value": "check-square",
+              "label": "check-square"
+            },
+            {
+              "value": "check",
+              "label": "check"
+            },
+            {
+              "value": "chevron-down",
+              "label": "chevron-down"
+            },
+            {
+              "value": "chevron-left",
+              "label": "chevron-left"
+            },
+            {
+              "value": "chevron-right",
+              "label": "chevron-right"
+            },
+            {
+              "value": "chevron-selector-vertical",
+              "label": "chevron-selector-vertical"
+            },
+            {
+              "value": "chevron-up",
+              "label": "chevron-up"
+            },
+            {
+              "value": "clock",
+              "label": "clock"
+            },
+            {
+              "value": "cloud-blank",
+              "label": "cloud-blank"
+            },
+            {
+              "value": "credit-card",
+              "label": "credit-card"
+            },
+            {
+              "value": "currency-dollar-circle",
+              "label": "currency-dollar-circle"
+            },
+            {
+              "value": "face-happy",
+              "label": "face-happy"
+            },
+            {
+              "value": "face-neutral",
+              "label": "face-neutral"
+            },
+            {
+              "value": "face-sad",
+              "label": "face-sad"
+            },
+            {
+              "value": "face-smile",
+              "label": "face-smile"
+            },
+            {
+              "value": "globe",
+              "label": "globe"
+            },
+            {
+              "value": "heart-hand",
+              "label": "heart-hand"
+            },
+            {
+              "value": "heart",
+              "label": "heart"
+            },
+            {
+              "value": "help-circle",
+              "label": "help-circle"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "image",
+              "label": "image"
+            },
+            {
+              "value": "info-circle",
+              "label": "info-circle"
+            },
+            {
+              "value": "lock",
+              "label": "lock"
+            },
+            {
+              "value": "marker-pin",
+              "label": "marker-pin"
+            },
+            {
+              "value": "menu",
+              "label": "menu"
+            },
+            {
+              "value": "minus-circle",
+              "label": "minus-circle"
+            },
+            {
+              "value": "minus-square",
+              "label": "minus-square"
+            },
+            {
+              "value": "minus",
+              "label": "minus"
+            },
+            {
+              "value": "percent-circle",
+              "label": "percent-circle"
+            },
+            {
+              "value": "percent",
+              "label": "percent"
+            },
+            {
+              "value": "pin",
+              "label": "pin"
+            },
+            {
+              "value": "plane",
+              "label": "plane"
+            },
+            {
+              "value": "plus-circle",
+              "label": "plus-circle"
+            },
+            {
+              "value": "plus-square",
+              "label": "plus-square"
+            },
+            {
+              "value": "plus",
+              "label": "plus"
+            },
+            {
+              "value": "puzzle-piece",
+              "label": "puzzle-piece"
+            },
+            {
+              "value": "rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "search",
+              "label": "search"
+            },
+            {
+              "value": "share",
+              "label": "share"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "shopping-bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "shopping-cart"
+            },
+            {
+              "value": "star",
+              "label": "star"
+            },
+            {
+              "value": "tag",
+              "label": "tag"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "thumbs-up"
+            },
+            {
+              "value": "tool",
+              "label": "tool"
+            },
+            {
+              "value": "truck",
+              "label": "truck"
+            },
+            {
+              "value": "user",
+              "label": "user"
+            },
+            {
+              "value": "x-circle",
+              "label": "x-circle"
+            },
+            {
+              "value": "x-close",
+              "label": "x-close"
+            },
+            {
+              "value": "zap",
+              "label": "zap"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "richtext",
+          "id": "heading_1",
+          "label": "Heading 1",
+          "info": "Leave the heading label blank to hide the icon column."
+        },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icon 2",
+          "default": "check-square-broken",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "activity"
+            },
+            {
+              "value": "alert-circle",
+              "label": "alert-circle"
+            },
+            {
+              "value": "announcement",
+              "label": "announcement"
+            },
+            {
+              "value": "arrow-narrow-left",
+              "label": "arrow-narrow-left"
+            },
+            {
+              "value": "arrow-narrow-right",
+              "label": "arrow-narrow-right"
+            },
+            {
+              "value": "at-sign",
+              "label": "at-sign"
+            },
+            {
+              "value": "bookmark-add",
+              "label": "bookmark-add"
+            },
+            {
+              "value": "bookmark-check",
+              "label": "bookmark-check"
+            },
+            {
+              "value": "building-large",
+              "label": "building-large"
+            },
+            {
+              "value": "building",
+              "label": "building"
+            },
+            {
+              "value": "calendar",
+              "label": "calendar"
+            },
+            {
+              "value": "check-circle-broken",
+              "label": "check-circle-broken"
+            },
+            {
+              "value": "check-circle",
+              "label": "check-circle"
+            },
+            {
+              "value": "check-heart",
+              "label": "check-heart"
+            },
+            {
+              "value": "check-square-broken",
+              "label": "check-square-broken"
+            },
+            {
+              "value": "check-square",
+              "label": "check-square"
+            },
+            {
+              "value": "check",
+              "label": "check"
+            },
+            {
+              "value": "chevron-down",
+              "label": "chevron-down"
+            },
+            {
+              "value": "chevron-left",
+              "label": "chevron-left"
+            },
+            {
+              "value": "chevron-right",
+              "label": "chevron-right"
+            },
+            {
+              "value": "chevron-selector-vertical",
+              "label": "chevron-selector-vertical"
+            },
+            {
+              "value": "chevron-up",
+              "label": "chevron-up"
+            },
+            {
+              "value": "clock",
+              "label": "clock"
+            },
+            {
+              "value": "cloud-blank",
+              "label": "cloud-blank"
+            },
+            {
+              "value": "credit-card",
+              "label": "credit-card"
+            },
+            {
+              "value": "currency-dollar-circle",
+              "label": "currency-dollar-circle"
+            },
+            {
+              "value": "face-happy",
+              "label": "face-happy"
+            },
+            {
+              "value": "face-neutral",
+              "label": "face-neutral"
+            },
+            {
+              "value": "face-sad",
+              "label": "face-sad"
+            },
+            {
+              "value": "face-smile",
+              "label": "face-smile"
+            },
+            {
+              "value": "globe",
+              "label": "globe"
+            },
+            {
+              "value": "heart-hand",
+              "label": "heart-hand"
+            },
+            {
+              "value": "heart",
+              "label": "heart"
+            },
+            {
+              "value": "help-circle",
+              "label": "help-circle"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "image",
+              "label": "image"
+            },
+            {
+              "value": "info-circle",
+              "label": "info-circle"
+            },
+            {
+              "value": "lock",
+              "label": "lock"
+            },
+            {
+              "value": "marker-pin",
+              "label": "marker-pin"
+            },
+            {
+              "value": "menu",
+              "label": "menu"
+            },
+            {
+              "value": "minus-circle",
+              "label": "minus-circle"
+            },
+            {
+              "value": "minus-square",
+              "label": "minus-square"
+            },
+            {
+              "value": "minus",
+              "label": "minus"
+            },
+            {
+              "value": "percent-circle",
+              "label": "percent-circle"
+            },
+            {
+              "value": "percent",
+              "label": "percent"
+            },
+            {
+              "value": "pin",
+              "label": "pin"
+            },
+            {
+              "value": "plane",
+              "label": "plane"
+            },
+            {
+              "value": "plus-circle",
+              "label": "plus-circle"
+            },
+            {
+              "value": "plus-square",
+              "label": "plus-square"
+            },
+            {
+              "value": "plus",
+              "label": "plus"
+            },
+            {
+              "value": "puzzle-piece",
+              "label": "puzzle-piece"
+            },
+            {
+              "value": "rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "search",
+              "label": "search"
+            },
+            {
+              "value": "share",
+              "label": "share"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "shopping-bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "shopping-cart"
+            },
+            {
+              "value": "star",
+              "label": "star"
+            },
+            {
+              "value": "tag",
+              "label": "tag"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "thumbs-up"
+            },
+            {
+              "value": "tool",
+              "label": "tool"
+            },
+            {
+              "value": "truck",
+              "label": "truck"
+            },
+            {
+              "value": "user",
+              "label": "user"
+            },
+            {
+              "value": "x-circle",
+              "label": "x-circle"
+            },
+            {
+              "value": "x-close",
+              "label": "x-close"
+            },
+            {
+              "value": "zap",
+              "label": "zap"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "richtext",
+          "id": "heading_2",
+          "label": "Heading 2",
+          "info": "Leave the heading label blank to hide the icon column."
+        },
+        {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Icon 3",
+          "default": "check-square-broken",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "activity"
+            },
+            {
+              "value": "alert-circle",
+              "label": "alert-circle"
+            },
+            {
+              "value": "announcement",
+              "label": "announcement"
+            },
+            {
+              "value": "arrow-narrow-left",
+              "label": "arrow-narrow-left"
+            },
+            {
+              "value": "arrow-narrow-right",
+              "label": "arrow-narrow-right"
+            },
+            {
+              "value": "at-sign",
+              "label": "at-sign"
+            },
+            {
+              "value": "bookmark-add",
+              "label": "bookmark-add"
+            },
+            {
+              "value": "bookmark-check",
+              "label": "bookmark-check"
+            },
+            {
+              "value": "building-large",
+              "label": "building-large"
+            },
+            {
+              "value": "building",
+              "label": "building"
+            },
+            {
+              "value": "calendar",
+              "label": "calendar"
+            },
+            {
+              "value": "check-circle-broken",
+              "label": "check-circle-broken"
+            },
+            {
+              "value": "check-circle",
+              "label": "check-circle"
+            },
+            {
+              "value": "check-heart",
+              "label": "check-heart"
+            },
+            {
+              "value": "check-square-broken",
+              "label": "check-square-broken"
+            },
+            {
+              "value": "check-square",
+              "label": "check-square"
+            },
+            {
+              "value": "check",
+              "label": "check"
+            },
+            {
+              "value": "chevron-down",
+              "label": "chevron-down"
+            },
+            {
+              "value": "chevron-left",
+              "label": "chevron-left"
+            },
+            {
+              "value": "chevron-right",
+              "label": "chevron-right"
+            },
+            {
+              "value": "chevron-selector-vertical",
+              "label": "chevron-selector-vertical"
+            },
+            {
+              "value": "chevron-up",
+              "label": "chevron-up"
+            },
+            {
+              "value": "clock",
+              "label": "clock"
+            },
+            {
+              "value": "cloud-blank",
+              "label": "cloud-blank"
+            },
+            {
+              "value": "credit-card",
+              "label": "credit-card"
+            },
+            {
+              "value": "currency-dollar-circle",
+              "label": "currency-dollar-circle"
+            },
+            {
+              "value": "face-happy",
+              "label": "face-happy"
+            },
+            {
+              "value": "face-neutral",
+              "label": "face-neutral"
+            },
+            {
+              "value": "face-sad",
+              "label": "face-sad"
+            },
+            {
+              "value": "face-smile",
+              "label": "face-smile"
+            },
+            {
+              "value": "globe",
+              "label": "globe"
+            },
+            {
+              "value": "heart-hand",
+              "label": "heart-hand"
+            },
+            {
+              "value": "heart",
+              "label": "heart"
+            },
+            {
+              "value": "help-circle",
+              "label": "help-circle"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "image",
+              "label": "image"
+            },
+            {
+              "value": "info-circle",
+              "label": "info-circle"
+            },
+            {
+              "value": "lock",
+              "label": "lock"
+            },
+            {
+              "value": "marker-pin",
+              "label": "marker-pin"
+            },
+            {
+              "value": "menu",
+              "label": "menu"
+            },
+            {
+              "value": "minus-circle",
+              "label": "minus-circle"
+            },
+            {
+              "value": "minus-square",
+              "label": "minus-square"
+            },
+            {
+              "value": "minus",
+              "label": "minus"
+            },
+            {
+              "value": "percent-circle",
+              "label": "percent-circle"
+            },
+            {
+              "value": "percent",
+              "label": "percent"
+            },
+            {
+              "value": "pin",
+              "label": "pin"
+            },
+            {
+              "value": "plane",
+              "label": "plane"
+            },
+            {
+              "value": "plus-circle",
+              "label": "plus-circle"
+            },
+            {
+              "value": "plus-square",
+              "label": "plus-square"
+            },
+            {
+              "value": "plus",
+              "label": "plus"
+            },
+            {
+              "value": "puzzle-piece",
+              "label": "puzzle-piece"
+            },
+            {
+              "value": "rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "search",
+              "label": "search"
+            },
+            {
+              "value": "share",
+              "label": "share"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "shopping-bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "shopping-cart"
+            },
+            {
+              "value": "star",
+              "label": "star"
+            },
+            {
+              "value": "tag",
+              "label": "tag"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "thumbs-up"
+            },
+            {
+              "value": "tool",
+              "label": "tool"
+            },
+            {
+              "value": "truck",
+              "label": "truck"
+            },
+            {
+              "value": "user",
+              "label": "user"
+            },
+            {
+              "value": "x-circle",
+              "label": "x-circle"
+            },
+            {
+              "value": "x-close",
+              "label": "x-close"
+            },
+            {
+              "value": "zap",
+              "label": "zap"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3"
+        },
+        {
+          "type": "richtext",
+          "id": "heading_3",
+          "label": "Heading 3",
+          "info": "Leave the heading label blank to hide the icon column."
+        },
+        {
+          "type": "select",
+          "id": "icon_4",
+          "label": "Icon 4",
+          "default": "check-square-broken",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "activity"
+            },
+            {
+              "value": "alert-circle",
+              "label": "alert-circle"
+            },
+            {
+              "value": "announcement",
+              "label": "announcement"
+            },
+            {
+              "value": "arrow-narrow-left",
+              "label": "arrow-narrow-left"
+            },
+            {
+              "value": "arrow-narrow-right",
+              "label": "arrow-narrow-right"
+            },
+            {
+              "value": "at-sign",
+              "label": "at-sign"
+            },
+            {
+              "value": "bookmark-add",
+              "label": "bookmark-add"
+            },
+            {
+              "value": "bookmark-check",
+              "label": "bookmark-check"
+            },
+            {
+              "value": "building-large",
+              "label": "building-large"
+            },
+            {
+              "value": "building",
+              "label": "building"
+            },
+            {
+              "value": "calendar",
+              "label": "calendar"
+            },
+            {
+              "value": "check-circle-broken",
+              "label": "check-circle-broken"
+            },
+            {
+              "value": "check-circle",
+              "label": "check-circle"
+            },
+            {
+              "value": "check-heart",
+              "label": "check-heart"
+            },
+            {
+              "value": "check-square-broken",
+              "label": "check-square-broken"
+            },
+            {
+              "value": "check-square",
+              "label": "check-square"
+            },
+            {
+              "value": "check",
+              "label": "check"
+            },
+            {
+              "value": "chevron-down",
+              "label": "chevron-down"
+            },
+            {
+              "value": "chevron-left",
+              "label": "chevron-left"
+            },
+            {
+              "value": "chevron-right",
+              "label": "chevron-right"
+            },
+            {
+              "value": "chevron-selector-vertical",
+              "label": "chevron-selector-vertical"
+            },
+            {
+              "value": "chevron-up",
+              "label": "chevron-up"
+            },
+            {
+              "value": "clock",
+              "label": "clock"
+            },
+            {
+              "value": "cloud-blank",
+              "label": "cloud-blank"
+            },
+            {
+              "value": "credit-card",
+              "label": "credit-card"
+            },
+            {
+              "value": "currency-dollar-circle",
+              "label": "currency-dollar-circle"
+            },
+            {
+              "value": "face-happy",
+              "label": "face-happy"
+            },
+            {
+              "value": "face-neutral",
+              "label": "face-neutral"
+            },
+            {
+              "value": "face-sad",
+              "label": "face-sad"
+            },
+            {
+              "value": "face-smile",
+              "label": "face-smile"
+            },
+            {
+              "value": "globe",
+              "label": "globe"
+            },
+            {
+              "value": "heart-hand",
+              "label": "heart-hand"
+            },
+            {
+              "value": "heart",
+              "label": "heart"
+            },
+            {
+              "value": "help-circle",
+              "label": "help-circle"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "image",
+              "label": "image"
+            },
+            {
+              "value": "info-circle",
+              "label": "info-circle"
+            },
+            {
+              "value": "lock",
+              "label": "lock"
+            },
+            {
+              "value": "marker-pin",
+              "label": "marker-pin"
+            },
+            {
+              "value": "menu",
+              "label": "menu"
+            },
+            {
+              "value": "minus-circle",
+              "label": "minus-circle"
+            },
+            {
+              "value": "minus-square",
+              "label": "minus-square"
+            },
+            {
+              "value": "minus",
+              "label": "minus"
+            },
+            {
+              "value": "percent-circle",
+              "label": "percent-circle"
+            },
+            {
+              "value": "percent",
+              "label": "percent"
+            },
+            {
+              "value": "pin",
+              "label": "pin"
+            },
+            {
+              "value": "plane",
+              "label": "plane"
+            },
+            {
+              "value": "plus-circle",
+              "label": "plus-circle"
+            },
+            {
+              "value": "plus-square",
+              "label": "plus-square"
+            },
+            {
+              "value": "plus",
+              "label": "plus"
+            },
+            {
+              "value": "puzzle-piece",
+              "label": "puzzle-piece"
+            },
+            {
+              "value": "rocket",
+              "label": "rocket"
+            },
+            {
+              "value": "search",
+              "label": "search"
+            },
+            {
+              "value": "share",
+              "label": "share"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "shopping-bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "shopping-cart"
+            },
+            {
+              "value": "star",
+              "label": "star"
+            },
+            {
+              "value": "tag",
+              "label": "tag"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "thumbs-up"
+            },
+            {
+              "value": "tool",
+              "label": "tool"
+            },
+            {
+              "value": "truck",
+              "label": "truck"
+            },
+            {
+              "value": "user",
+              "label": "user"
+            },
+            {
+              "value": "x-circle",
+              "label": "x-circle"
+            },
+            {
+              "value": "x-close",
+              "label": "x-close"
+            },
+            {
+              "value": "zap",
+              "label": "zap"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image 4"
+        },
+        {
+          "type": "richtext",
+          "id": "heading_4",
+          "label": "Heading 4",
+          "info": "Leave the heading label blank to hide the icon column."
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Inventory Count",
+      "type": "inventory",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "range",
+          "id": "threshold",
+          "label": "Low inventory threshold",
+          "min": 2,
+          "max": 100,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Image",
+      "type": "image",
+      "limit": 1,
+      "settings": [
+        {
+          "id": "image__ratio",
+          "type": "select",
+          "default": "pb-[125%]",
+          "options": [
+            {
+              "value": "pb-[125%]",
+              "label": "Portrait"
+            },
+            {
+              "value": "pb-[100%]",
+              "label": "Square"
+            }
+          ],
+          "label": "Image ratio"
+        },
+        {
+          "type": "color_background",
+          "id": "image__background",
+          "label": "Image background",
+          "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+        },
+        {
+          "type": "checkbox",
+          "id": "image__drop_shadow",
+          "label": "Add a drop shadow to the image",
+          "info": "Transparent images only",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "grid_row_span",
+          "default": "row-span-1",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "row-span-1",
+              "label": "1 row"
+            },
+            {
+              "value": "row-span-2",
+              "label": "2 rows"
+            },
+            {
+              "value": "row-span-3",
+              "label": "3 rows"
+            },
+            {
+              "value": "row-span-4",
+              "label": "4 rows"
+            },
+            {
+              "value": "row-span-5",
+              "label": "5 rows"
+            },
+            {
+              "value": "row-span-6",
+              "label": "6 rows"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Pre-order Notice",
+      "type": "pre_order",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "radio",
+          "id": "preorder_date",
+          "label": "Preorder Notice Detail",
+          "default": "estimate",
+          "options": [
+            {
+              "value": "estimate",
+              "label": "Estimate"
+            },
+            {
+              "value": "precise",
+              "label": "Precise"
+            },
+            {
+              "value": "none",
+              "label": "None"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Product Sibling",
+      "type": "product_sibling",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "radio",
+          "id": "selector",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image Selector"
+            },
+            {
+              "value": "color",
+              "label": "Color Selector"
+            },
+            {
+              "value": "radio",
+              "label": "Pills"
+            },
+            {
+              "value": "select",
+              "label": "Dropdown"
+            }
+          ],
+          "default": "image",
+          "label": "Default Type"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    },
+    {
+      "name": "Popup",
+      "type": "popup",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Button Trigger"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label"
+        },
+        {
+          "type": "radio",
+          "id": "label__style",
+          "label": "Label Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            },
+            {
+              "value": "plain-link text-left",
+              "label": "Plain Link"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "grid_span",
+          "default": "col-span-12",
+          "label": "Spacing",
+          "options": [
+            {
+              "value": "col-span-3",
+              "label": "One Quarter"
+            },
+            {
+              "value": "col-span-4",
+              "label": "One Third"
+            },
+            {
+              "value": "col-span-6",
+              "label": "Half"
+            },
+            {
+              "value": "col-span-8",
+              "label": "Two Thirds"
+            },
+            {
+              "value": "col-span-9",
+              "label": "Three Quarter"
+            },
+            {
+              "value": "col-span-12",
+              "label": "Full"
+            },
+            {
+              "value": "flex_group",
+              "label": "Flex Group"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Popup Content"
+        },
+        {
+          "type": "richtext",
+          "id": "preheading",
+          "label": "Pre heading"
+        },
+        {
+          "type": "range",
+          "id": "preheading_font",
+          "label": "Pre heading Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "popup_title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "range",
+          "id": "subtitle_font",
+          "label": "Subtitle Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Richtext"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary__text",
+          "label": "Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_secondary__style",
+          "label": "Style",
+          "default": "button-primary--outline",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Margin Bottom",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Margin Top",
+          "default": 0,
+          "min": -16,
+          "max": 128,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "header",
+          "content": "Popup Layout"
+        },
+        {
+          "type": "radio",
+          "id": "align__horizontal",
+          "label": "Horizontal Alignment",
+          "default": "items-center text-center",
+          "options": [
+            {
+              "value": "items-start text-left",
+              "label": "Left"
+            },
+            {
+              "value": "items-center text-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end text-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Popup Background"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background Image"
+        },
+        {
+          "type": "color_background",
+          "id": "image__overlay",
+          "label": "Overlay",
+          "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "default": "bg-theme-bg text-theme-text color-inherit",
+          "options": [
+            {
+              "value": "bg-theme-bg text-theme-text color-inherit",
+              "label": "Inherit from parent/theme"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-1",
+              "label": "Color group 1"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-2",
+              "label": "Color group 2"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-3",
+              "label": "Color group 3"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-4",
+              "label": "Color group 4"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-5",
+              "label": "Color group 5"
+            }
+          ],
+          "label": "Color scheme"
+        },
+        {
+          "type": "text",
+          "id": "custom_css",
+          "label": "Additional CSS Classes"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

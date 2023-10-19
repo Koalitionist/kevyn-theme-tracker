@@ -1,0 +1,63 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign image = block.settings.image
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign opacity = block.settings.opacity
+  assign button_primary__text = block.settings.button_primary__text
+  assign button_primary__url = block.settings.button_primary__url
+  assign button_primary__style = block.settings.button_primary__style
+  assign button__mobile_layout = block.settings.button__mobile_layout
+  assign button__desktop_layout = block.settings.button__desktop_layout
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  assign image__ratio = settings.product_card__image__ratio | default: 'pb-[125%]'
+  assign image__background = settings.product_card__image__background
+  assign image__drop_shadow = settings.product_card__image__drop_shadow | default: false
+
+  assign background_color = section.settings.card__background_color | default: settings.product_card__background_color
+
+  assign imageClasses = 'w-full h-full object-cover inset-0 '
+  if image__drop_shadow
+    assign imageClasses = imageClasses | append: "drop-shadow-product"
+  endif
+
+  if button_primary__text != blank and button_primary__url != blank
+    assign button_primary__show = true
+  endif
+
+
+-%}
+
+
+<article class="flex flex-col space-y-1 relative items-stretch {{ class }}" {{ html_attributes }}
+         data-card>
+
+  {% comment %} IMAGE {% endcomment %}
+  {% if image != blank %}
+    <div class="grid relative outline-none hf:outline-none h-0 w-full {{ image__ratio }}">
+      <div class="w-full h-full inset-0 absolute overflow-hidden rounded-theme-lg"
+           style="background: {{ image__background }};"
+           data-card-image>
+        {% render '_image', image: image, width: 500, class: imageClasses, placeholder: 'product-3' %}
+      </div>
+    </div>
+  {% endif %}
+  <div class="p-2 text-center">
+    {% render 'richtext.text', block: block, no_block: true %}
+  </div>
+
+
+  <div class="mt-2 text-center flex justify-center {{ button__mobile_layout }} {{ button__desktop_layout }}">
+    {% if button_primary__show %}
+      <a href="{{ button_primary__url }}"
+         class="{{ button_primary__style }} block max-md:px-3 max-md:tracking-normal">
+        {% render 'richtext', type: 1, content: button_primary__text, opacity: opacity, class: "flex items-center justify-between" %}
+      </a>
+    {% endif %}
+  </div>
+
+</article>
+

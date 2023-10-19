@@ -1,0 +1,28 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign url = block.settings.url
+  assign icon_list = block.settings.icon_list
+  assign border_top = block.settings.border_top
+  assign border_bottom = block.settings.border_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+
+  if border_top
+    assign border_classes = "border-t border-t-gray-200 "
+  endif
+  if border_bottom
+    assign border_classes = border_classes | append: "border-b border-b-gray-200 "
+  endif
+
+%}
+
+<a href="{{ url }}" {{ block.shopify_attributes }}
+   class="megamenu-link flex gap-4 w-full hf:underline py-5 text-left items-center {{ border_classes }}">
+  {% render '_icon', icon: icon_list, class: "w-5 h-5" %}
+  <span class="flex-1">{{ title }}</span>
+  {% render '_icon', icon: 'chevron-right', class: "w-4 h-4" %}
+</a>
+

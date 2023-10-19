@@ -1,0 +1,36 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign _blog = block.settings.blog
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<section>
+  <header class="border-b pb-2 text-sm font-medium border-b-theme-text/40 leading-[24px] mb-6">
+    <h2>
+      {{ "main_article.related_articles" | t }}
+    </h2>
+  </header>
+  <main class="grid gap-8">
+    {% for _article in _blog.articles limit: 3 %}
+      <article class="grid grid-cols-[128px_1fr] items-center gap-4">
+        <a class="relative h-32 w-32 overflow-hidden block"
+           href="{{ _article.url }}">
+          {% render '_image', image: _article.image, width: 256, class: "relative block h-full w-full object-cover", placeholder: 'product-1' %}
+        </a>
+        {% comment %} TITLE {% endcomment %}
+        <div class="grid">
+          <h1 class="inline-flex product-card-title--small">
+            <a class="outline-none hf:outline-none hf:underline"
+               href="{{ _article.url }}">
+              {{ _article.title }}
+            </a>
+          </h1>
+
+          <div class="text-sm leading-[24px]">{{ _article.published_at | time_tag: format: 'date' }}</div>
+        </div>
+
+      </article>
+    {% endfor %}
+  </main>
+</section>
+

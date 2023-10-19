@@ -1,0 +1,42 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign content = block.settings.content
+  assign content_font = block.settings.content_font
+  assign image = block.settings.image
+  assign overlay = block.settings.overlay
+  assign url = block.settings.url
+  assign link = block.settings.link
+  assign link_font = block.settings.link_font
+  assign style = block.settings.style
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<a {% if url %}href="{{ url }}"{% endif %}
+   class="group relative block w-[calc(((var(--layout-page-width)-64px)/3)-16px)] max-w-[calc(100vw-70px)] {{ style }} {{ responsive_visibility }}"
+   data-scroll-item>
+  <figure class="absolute grid h-full w-full overflow-hidden rounded-theme-md"> {% if image == blank %}
+      {% assign number = forloop.index | modulo: 6 | plus: 1 %}
+      {% assign placeholderImage = 'product-' | append: number %}
+    {% endif %}
+    {% render '_image', image: image, class: "absolute top-0 left-0 h-full w-full bg-inherit object-cover group-hf:scale-105 scale-100 transition-all ease-linear", placeholder: placeholderImage %}
+    <figcaption class="absolute inset-0 z-10 flex h-full w-full items-center justify-center p-6 text-center"
+                style="background-image: {{ overlay }}">
+      <div class="flex flex-col justify-center items-center text-center gap-1">
+        {% render 'richtext', type: title_font, content: title, class: "text-theme-overlay-text" %}
+        {% render 'richtext', type: content_font, content: content, class: "text-theme-overlay-text" %}
+      </div>
+      {% if url %}
+        <div class="absolute bottom-6 left-6 flex items-center">
+          <i class="flex h-8 w-8 min-w-8 items-center justify-center rounded-full bg-theme-bg/90 text-theme-text">
+            {% render '_icon', icon: 'arrow-right', class: "h-4 w-4" %}
+          </i>
+
+          {% render 'richtext', type: link_font, content: link, class: "text-primary-text ml-3" %}
+        </div>
+      {% endif %}
+    </figcaption>
+  </figure>
+</a>

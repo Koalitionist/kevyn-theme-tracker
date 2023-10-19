@@ -1,0 +1,28 @@
+{% liquid
+  assign title_font = title_font | default: 1
+  assign content_font = content_font | default: 1
+%}
+
+<details class="flex appearance-none group"
+         data-collapsible
+         data-block-id="{{ blockId }}"
+         {% if open %}open="open"{% endif %}>
+  <summary class="py-2.5 select-none cursor-pointer"
+           tabindex="0">
+    <span class="flex justify-between items-center">
+      <div data-collapsible-title>
+        {% render 'richtext', type: title_font, content: title %}
+      </div>
+      {% render '_icon', icon: 'plus', class: "w-3 h-3 group-open:-rotate-90 transition-all" %}
+    </span>
+
+  </summary>
+
+  <div class="transition-all duration-150 overflow-hidden ease-linear"
+       style="max-height: 0;">
+    <div class="pb-2"
+         data-collapsible-content>
+      {% render 'richtext', type: content_font, content: content %}
+    </div>
+  </div>
+</details>

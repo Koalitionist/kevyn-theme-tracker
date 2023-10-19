@@ -1,0 +1,77 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign grid_span = block.settings.grid_span
+  assign button__style = block.settings.button__style
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+
+  assign product_form_id = 'product-form-' | append: section.id | append: "-" | append: product.id
+
+  assign addToCartClasses = ''
+  assign soldOutClasses = 'hidden'
+  assign unavailableClasses = 'hidden'
+
+  if variant == blank
+    assign addToCartClasses = 'hidden'
+    assign soldOutClasses = 'hidden'
+    assign unavailableClasses = ''
+  endif
+  if variant.available == false
+    assign addToCartClasses = 'hidden'
+    assign soldOutClasses = ''
+    assign unavailableClasses = 'hidden'
+  endif
+%}
+
+<div data-product-block="buy_buttons"
+     class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% form 'product', product, id: product_form_id, novalidate: 'novalidate' %}
+    <input
+        type="hidden"
+        name="id"
+        value="{{ variant.id }}"
+        data-product-form-variant="{{ variant.id }}"
+        {% if variant.available == false %}
+          disabled
+        {% endif %}
+    >
+    <button
+        type="submit"
+        name="add"
+        class="{{ button__style }} w-full"
+        data-product-form-submit
+        {% if variant.available == false %}
+          disabled
+        {% endif %}
+    >
+
+      <span data-product-form-submit-add-to-cart
+            class="{{ addToCartClasses }}">
+        {{ "product.add_to" | t }}
+      </span>
+      <span data-product-form-submit-sold-out
+            class="{{ soldOutClasses }}">
+        {{ "product.sold_out" | t }}
+      </span>
+      <span data-product-form-submit-unavailable
+            class="{{ unavailableClasses }}">
+        {{ "product.unavailable" | t }}
+      </span>
+      {% render '_loading-spinner', class: "bg-primary-bg" %}
+    </button>
+  {% endform %}
+</div>
+
+{% comment %}
+Translations:
+ {{ "product.pre_order" | t }}
+
+{% endcomment %}
+

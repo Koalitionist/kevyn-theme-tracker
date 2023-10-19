@@ -1,0 +1,652 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>[title]<\/h2>",
+            "title_font": 3,
+            "margin_bottom": 10,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38": {
+          "type": "product_count",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Products ([count])<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9b52ae94-6586-4ed8-bebb-505003961df6": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "<p>[description]<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26",
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38",
+        "9b52ae94-6586-4ed8-bebb-505003961df6"
+      ],
+      "settings": {
+        "image__show": true,
+        "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
+        "height_desktop": 300,
+        "height_mobile": 300,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "filter_sort_bar": {
+      "type": "main-collection-filter-sort-bar",
+      "disabled": true,
+      "settings": {
+        "filters__show": true,
+        "filters__type": "megamenu",
+        "filters__count": true,
+        "sort__show": true,
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "cfbbd98f-b456-4a7d-afba-31f2c84a8571": {
+      "type": "richtext",
+      "blocks": {
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>SOMETHING NEW<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-4": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Our brand ambassador, Drita Paljevic is the pro of makeup on the day of \"I dos\". These looks exude timeless-glam  for the bride, bridesmaid or guest. Explore these beauty tips that are here to stay.<\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "LEARN MORE",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-0",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-1",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-2",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-3",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-4",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-4xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "faf86b8d-a44d-4fce-8831-6d9218520362": {
+      "type": "image-with-text",
+      "blocks": {
+        "bd010261-59db-437a-aeb6-51bda154addc": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>SOMETHING BLUE SET ($187 VALUE)<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9af067dc-a107-4d2c-b7e4-2d996e45ca69": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>This selection of our top-selling face and lip products is specially curated to make all brides feel confident, beautiful, and prepared from the first kiss to the last dance on their big day.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "09e48003-14c6-4362-b0c9-8607fab1ae3a": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "LEARN MORE",
+            "button_primary__url": "shopify:\/\/products\/something-blue-set-187-value",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "bd010261-59db-437a-aeb6-51bda154addc",
+        "9af067dc-a107-4d2c-b7e4-2d996e45ca69",
+        "09e48003-14c6-4362-b0c9-8607fab1ae3a"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/SomethingBlue.mp4",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "4d53a4d6-e5a9-4027-917a-1eeb969949f8": {
+      "type": "image-with-text",
+      "blocks": {
+        "1e07aa4c-4067-4f0d-97e9-477522ed5d8d": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>LIP KIT BY DRITA ($100 VALUE)<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "d13d08c1-a2b7-4fa9-96f3-51c9bc731fc9": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Achieve wedding-day-ready lips with our radiance-boosting lip kit, designed to ensure your look lasts all night.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9f5996b9-cc7d-4ebf-b752-f43d710dc175": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "LEARN MORE",
+            "button_primary__url": "shopify:\/\/products\/lip-kit-by-drita",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "1e07aa4c-4067-4f0d-97e9-477522ed5d8d",
+        "d13d08c1-a2b7-4fa9-96f3-51c9bc731fc9",
+        "9f5996b9-cc7d-4ebf-b752-f43d710dc175"
+      ],
+      "settings": {
+        "source": "video",
+        "image": "shopify:\/\/shop_images\/Duet_Shadow_Brush_Model__1200x1200px_150dpi.jpg",
+        "video": "shopify:\/\/files\/videos\/DritaLipKit.mp4",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "c26d99db-a1f9-4300-a0a2-668ee980aa65": {
+      "type": "image-with-text",
+      "blocks": {
+        "e930dd12-6bd8-48e5-90a5-aa536a87c3b6": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>FINISHING TOUCH: COLOR + LIGHT<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f20ccc43-8a21-43c9-8cbc-44e7cef47a55": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Catch the light, color, and all the stares — courtesy of our glimmering Lighting and Color Sticks. These effortlessly, gorgeous hues offer a natural glow and flush that lasts because diamonds are forever and  wedding photos too, right?<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bfe3434d-f3d5-4d4a-89e0-07fa6299ab7e": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "LIGHT",
+            "button_primary__url": "shopify:\/\/products\/the-lighting-stick",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "COLOR",
+            "button_secondary__url": "shopify:\/\/products\/the-color-stick",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e930dd12-6bd8-48e5-90a5-aa536a87c3b6",
+        "f20ccc43-8a21-43c9-8cbc-44e7cef47a55",
+        "bfe3434d-f3d5-4d4a-89e0-07fa6299ab7e"
+      ],
+      "settings": {
+        "source": "video",
+        "image": "shopify:\/\/shop_images\/Duet_Definer_Brush_1200x1200px_ada81e0f-a96d-4c85-a744-b46411872f27.jpg",
+        "video": "shopify:\/\/files\/videos\/Color_LightingSticks.mp4",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "82a203a5-e12c-480b-afdd-94c2b9399ffb": {
+      "type": "richtext",
+      "disabled": true,
+      "blocks": {
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>UNLEASH YOUR INNER ARTIST<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-5xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-0",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-1",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-2",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-3",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-4",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-4": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-0",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-1",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-2",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-3",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-4"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/f0995bb99ce449ffaa8abf4631ddec9e.mp4",
+        "video_url": "",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 790,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "pagination_size": 16,
+        "columns__desktop": "lg:grid-cols-4",
+        "columns__mobile": "grid-cols-2",
+        "card_style": "default",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "filter_sort_bar",
+    "cfbbd98f-b456-4a7d-afba-31f2c84a8571",
+    "faf86b8d-a44d-4fce-8831-6d9218520362",
+    "4d53a4d6-e5a9-4027-917a-1eeb969949f8",
+    "c26d99db-a1f9-4300-a0a2-668ee980aa65",
+    "82a203a5-e12c-480b-afdd-94c2b9399ffb",
+    "dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5",
+    "product-grid"
+  ]
+}

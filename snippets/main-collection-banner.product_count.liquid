@@ -1,0 +1,19 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign margin_bottom = block.settings.margin_bottom
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+     class="main-collection-banner__product_count {{ section_max_width | default: "max-w-full" }} {{ responsive_visibility }}"
+     style="margin-bottom: {{ margin_bottom }}px;">
+  {% capture count %}
+    {{ title | replace: '[count]', collection.products_count }}
+  {% endcapture %}
+  {% render 'richtext', type: title_font, content: count %}
+</div>
+

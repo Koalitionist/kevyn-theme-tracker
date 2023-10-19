@@ -1,0 +1,367 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign container_overflow = section.settings.container_overflow
+  assign center_products = section.settings.center_products
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign scrollWrapperClasses = "container"
+
+  if container_overflow
+    assign scrollWrapperClasses = ""
+    assign scrollContainerClasses = "scroll-pl-4 md:scroll-pl-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))] px-4 md:px-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))]"
+  endif
+
+  if center_products
+    assign centerProductsClasses = "flex justify-center"
+  endif
+%}
+
+
+<div id="{{ sectionID }}"
+     class="categories {{ color_scheme }} {{ padding_top }} {{ padding_bottom }} {{ responsive_visibility }}">
+  <section class="relative block pb-8"
+           data-scroll-slider>
+    <main class="{{ scrollWrapperClasses }} {{ centerProductsClasses }}">
+      <div class="grid grid-flow-col-dense auto-cols-auto w-min max-w-full gap-6 overflow-x-auto pb-8 snap-mandatory snap-x scrollbar-none {{ scrollContainerClasses }}"
+           data-scroll-container>
+        {% for block in section.blocks %}
+          {% render 'categories.category', block: block, forloop: forloop %}
+        {% endfor %}
+      </div>
+    </main>
+
+    <footer data-scroll-controls
+            class="hidden select-none container relative">
+      <div class="relative">
+        {% render 'scroll-bar-elements', element: 'scrollbar' %}
+      </div>
+    </footer>
+  </section>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Categories",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "container_overflow",
+      "label": "Fill fullscreen when scrolling"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_products",
+      "label": "Center Products if less than width"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Category",
+      "type": "category",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Richtext"
+        },
+        {
+          "type": "range",
+          "id": "content_font",
+          "label": "Content Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "color_background",
+          "id": "overlay",
+          "label": "Overlay",
+          "default": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "richtext",
+          "id": "link",
+          "label": "Call to Action"
+        },
+        {
+          "type": "range",
+          "id": "link_font",
+          "label": "Link Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "radio",
+          "id": "style",
+          "label": "Style",
+          "default": "row-span-1 pb-[75%]",
+          "options": [
+            {
+              "value": "row-span-1 pb-[75%]",
+              "label": "Small"
+            },
+            {
+              "value": "row-span-2 pb-[calc(150%+24px)]",
+              "label": "Double"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "responsive_visibility",
+          "label": "Responsive Visibility",
+          "default": "responsive",
+          "options": [
+            {
+              "value": "responsive",
+              "label": "Mobile & Desktop"
+            },
+            {
+              "value": "md:hidden",
+              "label": "Mobile only"
+            },
+            {
+              "value": "max-md:hidden",
+              "label": "Desktop only"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Categories",
+      "settings": {
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit"
+      },
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-2 pb-[calc(150%+24px)]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "<h2>Discover</h2>",
+            "url": "/#",
+            "link": "<p>Find out More</p>",
+            "style": "row-span-1 pb-[75%]"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

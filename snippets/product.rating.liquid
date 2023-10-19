@@ -1,0 +1,75 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign grid_span = block.settings.grid_span
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+
+  assign type = settings.product_data__type
+  assign show_review_count = settings.product_data__show_review_count
+  assign show_0_reviews = settings.product_data__show_0_reviews
+  assign metafield_reviews_count = settings.product_data__metafield_reviews_count
+  assign metafield_rating = settings.product_data__metafield_rating
+  assign metafield_rating_average = settings.product_data__metafield_rating_average
+
+  case type
+    when 'shopify'
+      assign rating = product.metafields.reviews.rating
+      assign rating_count = product.metafields.reviews.rating_count
+    when 'rating'
+      assign rating_namespace = metafield_rating | trim | split: '.' | first
+      assign rating_selector = metafield_rating | trim | split: '.' | last
+      assign rating_count_namespace = metafield_reviews_count | trim | split: '.' | first
+      assign rating_count_selector = metafield_reviews_count | trim | split: '.' | last
+
+      assign rating = product.metafields[rating_namespace][rating_selector]
+      assign rating_count = product.metafields[rating_count_namespace][rating_count_selector]
+    when 'reviews_rating'
+      assign rating_namespace = metafield_rating_average | trim | split: '.' | first
+      assign rating_selector = metafield_rating_average | trim | split: '.' | last
+      assign rating_count_namespace = metafield_reviews_count | trim | split: '.' | first
+      assign rating_count_selector = metafield_reviews_count | trim | split: '.' | last
+
+      assign rating = product.metafields[rating_namespace][rating_selector]
+      assign rating_count = product.metafields[rating_count_namespace][rating_count_selector]
+
+  endcase
+
+  if rating_count.type == null
+    assign rating_count = rating_count | times: 1
+  endif
+  if rating.type == null
+    assign rating = rating | times: 1.0
+  endif
+  if rating.value
+    assign rating = rating.value
+  endif
+
+
+%}
+
+<div data-product-block="rating"
+     class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% assign rating_count = rating_count | times: 1 %}
+
+  {% if rating_count and show_0_reviews or rating_count > 0 %}
+    <figure class="flex items-center mt-2">
+      {% render '_star-rating', rating: rating, class: "h-4 space-x-0.5", id_prefix: product.id %}
+      <figcaption class="ml-2 text-xs text-theme-text/70">
+        {% if show_review_count %}
+          {% if rating_count %}
+            {{ rating_count }} review{% if rating_count != 1 %}s{% endif %}
+          {% else %}
+            {{ "product.no_reviews" | t }}
+          {% endif %}
+        {% endif %}
+      </figcaption>
+    </figure>
+  {% endif %}
+</div>

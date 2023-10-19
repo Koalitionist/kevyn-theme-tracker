@@ -1,0 +1,23 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign gallery__zoom = block.settings.gallery__zoom
+  assign gallery__zoom_scale = block.settings.gallery__zoom_scale
+  assign hide_not_selected_variant_images = block.settings.hide_not_selected_variant_images
+  assign variants_multi_images = block.settings.variants_multi_images
+  assign variants_image_metafield = block.settings.variants_image_metafield
+  assign gallery__loop_videos = block.settings.gallery__loop_videos
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div class="pb-16 md:absolute md:top-0 md:left-0 md:w-1/2 md:pt-10 md:pl-9 max-md:col-span-12 max-md:-mx-4 md:max-w-[calc(100vh-80px-104px)]">
+  <div data-product-block="image_gallery"
+       class="relative md:pb-[100%] {{ custom_css }}" {{ block.shopify_attributes }}
+       data-block-settings="{{- block.settings | json | escape -}}"
+       style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+
+  </div>
+</div>
+

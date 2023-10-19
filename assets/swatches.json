@@ -1,0 +1,1156 @@
+{
+  "colors": [
+    {
+      "Absinthia (Bronze Shimmer)": "#5d3323"
+    },
+    {
+      "Mini Size": "MiniIndecentMascara_Open_1200x1200px.jpg"
+    },
+    {
+      "Ariabelle (Soft Cool Pink)": "#e8bcc5"
+    },
+    {
+      "Ariana (Neutral Warm)": "#d6938a"
+    },
+    {
+      "Ash Blonde": "#a08f7c"
+    },
+    {
+      "Ash Brown": "#DCBE73"
+    },
+    {
+      "Basic Black": "#000000"
+    },
+    {
+      "Basic Brown": "#69563f"
+    },
+    {
+      "Beaugonia": "#ab7f67"
+    },
+    {
+      "Belle of the Ball": "#d55e6c"
+    },
+    {
+      "Black": "#262628"
+    },
+    {
+      "Black Dahlia (Deep Burgundy)": "#3a0001"
+    },
+    {
+      "Bloodroses": "#6a2c3e"
+    },
+    {
+      "Bloodroses (Deep Blood Red)": "#b92d2b"
+    },
+    {
+      "Bloodroses (Deep Burgundy)": "#6a2c3e"
+    },
+    {
+      "Bloodroses (Sheer Plum)": "#6a2c3e"
+    },
+    {
+      "Bloodroses (Violet Burgundy)": "#924354"
+    },
+    {
+      "Bloodroses Noir (Deep Brown\/Red)": "#440002"
+    },
+    {
+      "Blossom (Medium Warm Pink)": "#eb779a"
+    },
+    {
+      "Blue Amethyst": "#9a607e"
+    },
+    {
+      "Bronze": "#953212"
+    },
+    {
+      "Brunette": "#6d5748"
+    },
+    {
+      "Cadence (Blue)": "#004976"
+    },
+    {
+      "Candlelight": "#eed8c2"
+    },
+    {
+      "Candlelight (Soft Golden Shimmer)": "#9f716d"
+    },
+    {
+      "Candlelight A": "#eed8c2"
+    },
+    {
+      "Candlelight B": "eed8c2"
+    },
+    {
+      "Capri (Cool Pink)": ""
+    },
+    {
+      "Carbon": "#56486c"
+    },
+    {
+      "Carliana (True Red)": "#c92727"
+    },
+    {
+      "Cashmere (Natural Soft Rose)": "#e793a3"
+    },
+    {
+      "Cerise (Cool Red)": "#a50034"
+    },
+    {
+      "Citrine (Bright Gold Shimmer)": "#ad9f8b"
+    },
+    {
+      "Clear": "#f3e8e9"
+    },
+    {
+      "Cloudaine (Baby Pink)": "#c64f58"
+    },
+    {
+      "Coffee Bean": "#755546"
+    },
+    {
+      "Copper": "#c99468"
+    },
+    {
+      "Corrector": "#f9b985"
+    },
+    {
+      "Cosmic": "#ece5d1"
+    },
+    {
+      "Crystal Clear": "#E3EDF5"
+    },
+    {
+      "Cyber Opal": "#fbf3f0"
+    },
+    {
+      "Cyber Sky": "#e8f6ff"
+    },
+    {
+      "Dahliana (Nude Creme)": "#c27759"
+    },
+    {
+      "Dark Brunette": "#4e403b"
+    },
+    {
+      "Deep": "#93512c"
+    },
+    {
+      "Deep A": "#7c4d3a"
+    },
+    {
+      "Deep EC 07": "#e2924b"
+    },
+    {
+      "Deep EC 08": "#d67e32"
+    },
+    {
+      "Deep EC 09": "#b96736"
+    },
+    {
+      "Deep EF 12": "#d88650"
+    },
+    {
+      "Deep EF 13": "#be6e42"
+    },
+    {
+      "Deep EF 14": "#a8582a"
+    },
+    {
+      "Deep EF 15": "#a15425"
+    },
+    {
+      "Deep EF 16": "#7d3818"
+    },
+    {
+      "Deep FB 12": "#b37743"
+    },
+    {
+      "Deep FB 13": "#b47041"
+    },
+    {
+      "Deep FB 14": "#a96733"
+    },
+    {
+      "Deep FB 15": "#935934"
+    },
+    {
+      "Deep FB 16": "#7f4e2d"
+    },
+    {
+      "Defining Green": "#586337"
+    },
+    {
+      "Defining Navy": "#605175"
+    },
+    {
+      "Demi": "#937378"
+    },
+    {
+      "Desert Days (Matte Warm Bronze)": "#ecc4ab"
+    },
+    {
+      "Desert Nights (Matte Deep Warm Bronze)": "#e5a77e"
+    },
+    {
+      "Diaphanous LT": "#e9e1d1"
+    },
+    {
+      "Dolline (Apricot)": "#e8927c"
+    },
+    {
+      "Dolly": "#b5616e"
+    },
+    {
+      "Duo #1 (Bloodroses\/ Nuelle)": "#ba8275"
+    },
+    {
+      "Duo #2 (Pravella\/ Janelle)": "#d990a3"
+    },
+    {
+      "Duo #3 (Tansoleil\/ Bettina)": "#dc8572"
+    },
+    {
+      "Duo #4": "#a17d67"
+    },
+    {
+      "Dusk Medium": "#be8075"
+    },
+    {
+      "Eliarice (Warm Red)": "#c8415a"
+    },
+    {
+      "Endless (Fuschia)": "#ce0058"
+    },
+    {
+      "Enduring (Cool Nude)": "#d6938a"
+    },
+    {
+      "Enigma": "#ec3d74"
+    },
+    {
+      "Eternal (True Red)": "#bf0d3e"
+    },
+    {
+      "Evergreen (Green)": "#13322b"
+    },
+    {
+      "Everlasting (Cool Garnet)": "#a6093d"
+    },
+    {
+      "Evermore (Pale Nude)": "#e1bbb4"
+    },
+    {
+      "Faconne (Mauve Pink)": "#fd8eb6"
+    },
+    {
+      "Faded Heather": "#c19180"
+    },
+    {
+      "Falon (Baby Pink)": "#e67965"
+    },
+    {
+      "Fatal": "#a91f27"
+    },
+    {
+      "Fira (Mango)": "#d14124"
+    },
+    {
+      "Fire Amber": "#e57131"
+    },
+    {
+      "For Keeps (Medium Peach)": "#aa544b"
+    },
+    {
+      "Forever (Hot Pink)": "#bf3a43"
+    },
+    {
+      "Galaxy": "#07080e"
+    },
+    {
+      "Gold": "#cfa668"
+    },
+    {
+      "Grapevine": "#b95d78"
+    },
+    {
+      "Halo": "#f0cfca"
+    },
+    {
+      "Incandescent": "#E1CFC9"
+    },
+    {
+      "Lustre": "#EEDBC7"
+    },
+    {
+      "1 - SSE": "#efc796"
+    },
+    {
+      "10 - SSE": "#c4875b"
+    },
+    {
+      "11 - SSE": "#cd7629"
+    },
+    {
+      "12 - SSE": "#bb5f0a"
+    },
+    {
+      "13 - SSE": "#aa4b16"
+    },
+    {
+      "14 - SSE": "#943c18"
+    },
+    {
+      "15 - SSE": "#622209"
+    },
+    {
+      "16 - SSE": "#451906"
+    },
+    {
+      "2 - SSE": "#f2c492"
+    },
+    {
+      "3 - SSE": "#e3b579"
+    },
+    {
+      "4 - SSE": "#ebb062"
+    },
+    {
+      "5 - SSE": "#dca666"
+    },
+    {
+      "6 - SSE": "#e6a456"
+    },
+    {
+      "7 - SSE": "#e8aa61"
+    },
+    {
+      "8 - SSE": "#d7883b"
+    },
+    {
+      "9 - SSE": "#e08c4e"
+    },
+    {
+      "Adoring Lips": ""
+    },
+    {
+      "Ash Blonde B P": "#DCBE73"
+    },
+    {
+      "Ash Blonde P": "#DCBE73"
+    },
+    {
+      "Ash Blonde TF": "#DCBE73"
+    },
+    {
+      "Bloodroses Noir": "#7A2C27"
+    },
+    {
+      "Brunette B P": "#8E4C3D"
+    },
+    {
+      "Brunette P": "#8E4C3D"
+    },
+    {
+      "Brunette TF": "#8E4C3D"
+    },
+    {
+      "Carnal": "#A66656"
+    },
+    {
+      "Confidential": "#C23C3D"
+    },
+    {
+      "Cosmic Flame": "#F29116"
+    },
+    {
+      "Cosmic Flame Duo": ""
+    },
+    {
+      "Dark Brunette P": "#642810"
+    },
+    {
+      "Dark Brunette TF": "#642810"
+    },
+    {
+      "Deep 08 Tint": "#DFA986"
+    },
+    {
+      "Deep 09 Tint": "#B97A5F"
+    },
+    {
+      "Deep 10 Tint": "#B48070"
+    },
+    {
+      "Deep 13": " #B97245"
+    },
+    {
+      "Deep S": "#AB7D64"
+    },
+    {
+      "Devastating": "#C96252"
+    },
+    {
+      "Divine": "#A66650"
+    },
+    {
+      "Endless": "#B7173E"
+    },
+    {
+      "Eternal": "#87102B"
+    },
+    {
+      "Explicit": "#C76F71"
+    },
+    {
+      "Fire": "#E16458"
+    },
+    {
+      "Infinite": "#DC7B70"
+    },
+    {
+      "Indecent Black": "#0E0D0E"
+    },
+    {
+      "Kobicha": "#614E42"
+    },
+    {
+      "Light 01 Tint": "#FCD9BB"
+    },
+    {
+      "Light 02 Tint": "#F9DAB9"
+    },
+    {
+      "Light 02": "#F4CAA1"
+    },
+    {
+      "Light 03 Tint": "#F7D1B2"
+    },
+    {
+      "Light 03": "#F7D1B2"
+    },
+    {
+      "Light S": "#D5A988"
+    },
+    {
+      "Medium 04 Tint": "#F7C8AA"
+    },
+    {
+      "Medium 05 Tint": "#EBB282"
+    },
+    {
+      "Medium 06 Tint": "#F3C4A2"
+    },
+    {
+      "Medium 06": "#D49E70"
+    },
+    {
+      "Medium 07 Tint": "#EBB59C"
+    },
+    {
+      "Medium 07": "#EBB59C"
+    },
+    {
+      "Medium S": "#AE8B70"
+    },
+    {
+      "Minimal": "#AF655D"
+    },
+    {
+      "New Naked": "#945941"
+    },
+    {
+      "Nude": ""
+    },
+    {
+      "Persistence": "#9A4775"
+    },
+    {
+      "Pink": "#ff81c0"
+    },
+    {
+      "Pixie Dream": "#F9E9ED"
+    },
+    {
+      "Pretty Pout": ""
+    },
+    {
+      "Prism Rose Duo": ""
+    },
+    {
+      "Pure": "#8D594F"
+    },
+    {
+      "Purple": "#7e1e9c"
+    },
+    {
+      "Resilient": "#C6417E"
+    },
+    {
+      "Rosy Bloom": "#F18485"
+    },
+    {
+      "Samilke": ""
+    },
+    {
+      "Solar Quartz": "#FEF4E6"
+    },
+    {
+      "Spirit": "#E65DCF"
+    },
+    {
+      "Uninterrupted": "#D78981"
+    },
+    {
+      "Vanta": "#000000"
+    },
+    {
+      "Vio-Light": "#EE679B"
+    },
+    {
+      "Warm Brunette TF": "#B6614D"
+    },
+    {
+      "White": "#ffffff"
+    },
+    {
+      "Helena (Neutral Cool)": "#cf6f77"
+    },
+    {
+      "Hint of Peach": "#ffe9d9"
+    },
+    {
+      "Hyacinth (Rose Plum)": "#ce707e"
+    },
+    {
+      "IBIZA": "#dbb8cc"
+    },
+    {
+      "Immaculate": "#ef9c7c"
+    },
+    {
+      "Infinite (Warm Nude)": "#b65a65"
+    },
+    {
+      "Invincible (Natural Rose)": "#b46b7a"
+    },
+    {
+      "Ironclad (Grey)": "#5e514d"
+    },
+    {
+      "Isadore (Neutral Pink)": "#ae4955"
+    },
+    {
+      "Janelline (Sheer Vibrant Fuschia)": "#c50023"
+    },
+    {
+      "Janet": "#946666"
+    },
+    {
+      "Jorjia (Bright Fuschia)": "#d03b63"
+    },
+    {
+      "Julia": "#bf1b2e"
+    },
+    {
+      "Kate": "#882733"
+    },
+    {
+      "Kobicha (Brown)": "#4e3524"
+    },
+    {
+      "Kunzite (Soft Pink Shimmer)": "#b59271"
+    },
+    {
+      "Leajana (Soft Rose Pink)": "#bd616c"
+    },
+    {
+      "Legendary": "#ca6470"
+    },
+    {
+      "Light": "#cc8c5a"
+    },
+    {
+      "Light A": "#c0a392"
+    },
+    {
+      "Light EC 01": "#fbd09f"
+    },
+    {
+      "Light EC 02": "#f7c68f"
+    },
+    {
+      "Light EF 01": "#ffd0a1"
+    },
+    {
+      "Light EF 02": "#fbc289"
+    },
+    {
+      "Light EF 03": "#fcc191"
+    },
+    {
+      "Light EF 04": "#fdb97f"
+    },
+    {
+      "Light EF 05": "#f1ae7d"
+    },
+    {
+      "Light FB 01": "#f9cba7"
+    },
+    {
+      "Light FB 02": "#f2cba2"
+    },
+    {
+      "Light FB 03": "#eabb8f"
+    },
+    {
+      "Light FB 04": "#ebc08d"
+    },
+    {
+      "Light FB 05": "#e6ad78"
+    },
+    {
+      "Light FB 4.5": "#e8b284"
+    },
+    {
+      "Lilium": "#c68b82"
+    },
+    {
+      "Liquifuchsia (Hot Pink)": "#a61f4a"
+    },
+    {
+      "Magenta Sapphire": "#c939a2"
+    },
+    {
+      "Marzie (Medium Rose)": "#c15c64"
+    },
+    {
+      "Medium": "#cb8657"
+    },
+    {
+      "Medium (Neutral Nude)": "#cda492"
+    },
+    {
+      "Medium A": "#9f8276"
+    },
+    {
+      "Medium EC 03": "#f8bf84"
+    },
+    {
+      "Medium EC 04": "#f4b273"
+    },
+    {
+      "Medium EC 05": "#f2a867"
+    },
+    {
+      "Medium EC 06": "#f0a05c"
+    },
+    {
+      "Medium EF 06": "#fab382"
+    },
+    {
+      "Medium EF 07": "#f3aa75"
+    },
+    {
+      "Medium EF 08": "#eba169"
+    },
+    {
+      "Medium EF 09": "#e08e4e"
+    },
+    {
+      "Medium EF 10": "#ea9760"
+    },
+    {
+      "Medium EF 11": "#ea8e5b"
+    },
+    {
+      "Medium FB 06": "#d29c6d"
+    },
+    {
+      "Medium FB 07": "#d99f6d"
+    },
+    {
+      "Medium FB 08": "#ce915b"
+    },
+    {
+      "Medium FB 09": "#bb8557"
+    },
+    {
+      "Medium FB 10": "#c58353"
+    },
+    {
+      "Medium FB 10.5": "#bd7f44"
+    },
+    {
+      "Medium FB 11": "#bf7e54"
+    },
+    {
+      "Medium FB 5.5": "#dda16f"
+    },
+    {
+      "Medium FB 7.5": "#d49665"
+    },
+    {
+      "Messaline (Rose Pink)": "#e85686"
+    },
+    {
+      "Micavel (Creamy Cool)": "#e37460"
+    },
+    {
+      "Minimal (Pinky Nude)": "#7f3035"
+    },
+    {
+      "Modern Love": "#d07d75"
+    },
+    {
+      "Moonlight": "#d5cec2"
+    },
+    {
+      "Myracle (Hot Pink)": "#e93cac"
+    },
+    {
+      "Natura (Neutral)": "#c09c83"
+    },
+    {
+      "Neottiana (Neutral Warm Shimmer)": "#975243"
+    },
+    {
+      "Nerinese": "#fa8269"
+    },
+    {
+      "Nicole": "#ba817a"
+    },
+    {
+      "Normal to Dry": "#ffffff"
+    },
+    {
+      "Normal to Oily": "#f5f5f5"
+    },
+    {
+      "Nyalia (Rose Creme)": "#832724"
+    },
+    {
+      "Palette #1": "#b2845b"
+    },
+    {
+      "Palette #2": "#c49f7d"
+    },
+    {
+      "Palette #3": "#88573a"
+    },
+    {
+      "Palette #4": "#424345"
+    },
+    {
+      "Papavier (Natural Plum Shimmer)": "#591b1d"
+    },
+    {
+      "Pasiflora": "#9e1b21"
+    },
+    {
+      "Patrice (Deep Red)": "#600011"
+    },
+    {
+      "Peche (Peach)": "#f38b8a"
+    },
+    {
+      "Peonine (Warm Pink Shimmer)": "#ac624c"
+    },
+    {
+      "Persistence (Deep Violet)": "#a15a95"
+    },
+    {
+      "PF 01": "#ffdbc4"
+    },
+    {
+      "PF 02": "#facab1"
+    },
+    {
+      "PF 03": "#f2c2a9"
+    },
+    {
+      "PF 04": "#eab892"
+    },
+    {
+      "PF 05": "#e2ae8f"
+    },
+    {
+      "PF 06": "#dda985"
+    },
+    {
+      "PF 07": "#db9e71"
+    },
+    {
+      "PF 08": "#c08e69"
+    },
+    {
+      "PF 09": "#c4895e"
+    },
+    {
+      "PF 10": "#b17249"
+    },
+    {
+      "PF 11": "#a26342"
+    },
+    {
+      "PF 12": "#85563c"
+    },
+    {
+      "Pink Crystal": "#f9c1d9"
+    },
+    {
+      "Pink Sand": "#f8c1c6"
+    },
+    {
+      "Poisonberry": "#99315c"
+    },
+    {
+      "Poisonberry (Vibrant Plum)": "#83224d"
+    },
+    {
+      "Poppy Topaz": "#f6736c"
+    },
+    {
+      "Pravella (Soft Pink)": "#c65c62"
+    },
+    {
+      "Prism Rose": "#E7978C"
+    },
+    {
+      "Radiant Diaphanous (Warm Translucent)": "#f0cd9d"
+    },
+    {
+      "Relentless (Pinky Nude)": "#cf6f77"
+    },
+    {
+      "Resilient (Bright Magenta)": "#af1685"
+    },
+    {
+      "Reyna": "#b23f1d"
+    },
+    {
+      "Rose Cliff": "#fd9caa"
+    },
+    {
+      "Rose Gold": "#e48c7f"
+    },
+    {
+      "Rose Quartz (Rose Shimmer)": "#ad846b"
+    },
+    {
+      "Roserin": "#be5f65"
+    },
+    {
+      "Roserin (Rose Plum)": "#b35e61"
+    },
+    {
+      "SAHARA": "#fdcdaa"
+    },
+    {
+      "Samilke": "#cd5f68"
+    },
+    {
+      "Saylair (Sandy Nude)": "#c28374"
+    },
+    {
+      "Selenite (Soft Grey Shimmer)": "#c7c0c0"
+    },
+    {
+      "SF02": "#d6c6b5"
+    },
+    {
+      "SF03": "#eebd94"
+    },
+    {
+      "SF04": "#cba988"
+    },
+    {
+      "SF05": "#cab59a"
+    },
+    {
+      "SF06": "#c9b59a"
+    },
+    {
+      "SF07": "#ccb39a"
+    },
+    {
+      "SF08": "#c29c88"
+    },
+    {
+      "SF09": "#c29c88"
+    },
+    {
+      "SF13": "#bb8f71"
+    },
+    {
+      "SF14": "#a67952"
+    },
+    {
+      "SF7.5": "#dc9b75"
+    },
+    {
+      "SF8.5": "#ab7e57"
+    },
+    {
+      "Shadore (Soft Pink)": "#ffa3b5"
+    },
+    {
+      "Sheer Ash Blonde": "#857273"
+    },
+    {
+      "Sheer Brunette": "#6a5e60"
+    },
+    {
+      "Sheer Dark Brunette": "#786a67"
+    },
+    {
+      "Sheer Warm Blonde": "#362f34"
+    },
+    {
+      "Siena (Warm Coral)": ""
+    },
+    {
+      "Silk (Fuschia Pink)": "#fe71b7"
+    },
+    {
+      "Sireedan (Peachy Nude)": "#d9907f"
+    },
+    {
+      "Smokey Nude": "#98675e"
+    },
+    {
+      "Soft Clay": "#f0bc9f"
+    },
+    {
+      "Spectrum Bronze": "#DAA981"
+    },
+    {
+      "Starlight": "#ecbaa8"
+    },
+    {
+      "Starlight A": "#ecbaa8"
+    },
+    {
+      "Starlight B": "#ecbaa8"
+    },
+    {
+      "Stealth (Green \/ Blue)": "#003e51"
+    },
+    {
+      "Sundown Deep": "#b87967"
+    },
+    {
+      "Sunlight": "#b58150"
+    },
+    {
+      "Sunlight A": "#b58150"
+    },
+    {
+      "Sunlight B": "#b58150"
+    },
+    {
+      "Sunrise Light": "#c09084"
+    },
+    {
+      "Sunset": "#ff4040"
+    },
+    {
+      "Sunstone (Soft Copper Shimmer)": "#d8ad91"
+    },
+    {
+      "Suspicious": "#f08e87"
+    },
+    {
+      "SX 01 (Soft Peach \/ Light)": "#efc796"
+    },
+    {
+      "SX 02 (Soft Peach \/ Light)": "#f2c492"
+    },
+    {
+      "SX 03 (Neutral \/ Light)": "#e3b579"
+    },
+    {
+      "SX 04 (Golden \/ Light)": "#ebb062"
+    },
+    {
+      "SX 05 (Neutral \/ Light)": "#dca666"
+    },
+    {
+      "SX 06 (Golden \/ Fair \/ Medium)": "#e6a456"
+    },
+    {
+      "SX 07 (Slight Golden \/ Medium)": "#e8aa61"
+    },
+    {
+      "SX 08 (Golden \/ Medium)": "#d7883b"
+    },
+    {
+      "SX 09 (Peach \/ Medium)": "#e08c4e"
+    },
+    {
+      "SX 10 (Neutral \/ Medium)": "#c4875b"
+    },
+    {
+      "SX 11 (Golden \/ Medium \/ Deep)": "#cd7629"
+    },
+    {
+      "SX 12 (Golden \/ Deep)": "#bb5f0a"
+    },
+    {
+      "SX 13 (Peach \/ Deep)": "#aa4b16"
+    },
+    {
+      "SX 14 (Peach \/ Deep)": "#943c18"
+    },
+    {
+      "SX 15 (Neutral \/ Deep)": "#622209"
+    },
+    {
+      "SX 16 (Neutral \/ Deep)": "#451906"
+    },
+    {
+      "Tammabelle (Warm Pink Creme)": "#944439"
+    },
+    {
+      "Tansoleil (Apricot)": "#b85a3b"
+    },
+    {
+      "Taupey Grey": "#ae9285"
+    },
+    {
+      "Tenacious (Medium Bright Pink)": "#d76f94"
+    },
+    {
+      "The Defining Navy Palette": "#6f9db7"
+    },
+    {
+      "The Expert Lip Kit -The Femme Fatale (Red)": "#ad0004"
+    },
+    {
+      "The Expert Lip Kit -The Minimalist (Pink)": "#fbc4bf"
+    },
+    {
+      "The Femme Fatale (Red)": "#ad0004"
+    },
+    {
+      "The Minimalist (Pink)": "#fbc4bf"
+    },
+    {
+      "Smokey Nude PL": "#e0aea2"
+    },
+    {
+      "Thelmadora": "#d48873"
+    },
+    {
+      "Thelmadora (Rosy Nude)": "#c07a6e"
+    },
+    {
+      "Timeless (Vibrant Orange)": "#e03f2d"
+    },
+    {
+      "Titanium": "#c19a8b"
+    },
+    {
+      "Topaz (Bronze Shimmer)": "#38291b"
+    },
+    {
+      "Tori": "#ba716a"
+    },
+    {
+      "Tresbelle (Deep Peach)": "#884639"
+    },
+    {
+      "Tropical Days (Warm Bronze)": ""
+    },
+    {
+      "Tropical Nights (Cool Bronze)": ""
+    },
+    {
+      "Tulapina": "#dd7962"
+    },
+    {
+      "Tusk": "#fee8d1"
+    },
+    {
+      "Twilight Lotus (Mauve)": "#953b5c"
+    },
+    {
+      "Undressed": "#DDA896"
+    },
+    {
+      "Uninterrupted (Soft Neutral Pink)": "#c48490"
+    },
+    {
+      "Valentina (Bright Pink Cream)": "#8b2a49"
+    },
+    {
+      "Vanta (Black)": "#101820"
+    },
+    {
+      "Velvet (Bright Apple Red)": "#fe2b4e"
+    },
+    {
+      "Vesuvian (Caramel)": "#d4794e"
+    },
+    {
+      "Violet Quartz": "#a77fb8"
+    },
+    {
+      "Warm Blonde": "#8f7c64"
+    },
+    {
+      "White Gold": "#ecdac8"
+    },
+    {
+      "Wild Orchid": "#b65062"
+    },
+    {
+      "Wild Orchid (Pinkish Plum)": "#9f2448"
+    },
+    {
+      "Yanilena (Bright Coral)": "#ff2d38"
+    },
+    {
+      "Mini Indecent Mascara": "#0e0d0e"
+    },
+    {
+      "CE Light": "#D6A69D"
+    },
+    {
+      "CE Medium": "#D7A493"
+    },
+    {
+      "CE Medium Deep": "#C06D4B"
+    },
+    {
+      "CE Deep": "#6F3929"
+    },
+    {
+      "Soft light": "#D5906E"
+    },
+    {
+      "Warm light": "#A3684B"
+    },
+    {
+      "Awaken": "#C87065"
+    },
+    {
+      "Be Vivacious": "#8F3E3D"
+    },
+    {
+      "Blooming": "#D53D31"
+    },
+    {
+      "Shape": "#D7B097"
+    },
+    {
+      "Tone": "#C8917A"
+    },
+    {
+      "Chiseled": "#99705D"
+    },
+    {
+      "Define": "#62382D"
+    }
+  ]
+}

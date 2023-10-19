@@ -1,0 +1,82 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- capture productSiblingsJson -%}
+  [{%- for block in section.blocks -%}
+  {
+  "title": "{{ block.settings.title }}",
+  "title_type": {{ block.settings.title_type | json }},
+  "options": "{{ block.settings.options }}",
+  "products": [{%- for _product in block.settings.products -%}
+    {
+    "id": {{ _product.id | json }},
+    "handle": {{ _product.handle | json }},
+    "image": {{ _product.featured_image | json }},
+    "option": {{ _product.metafields.smart.sibling_title.value | json }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}]
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}]
+{%- endcapture -%}
+
+<script type="application/json"
+        data-product-siblings>
+  {{ productSiblingsJson }}
+
+
+</script>
+
+{% schema %}
+{
+  "name": "Product sibling Groups",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "You can setup up to 10 Product Sibling groups here. Make sure that you include the siblings block within the product information section."
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Siblings Group",
+      "type": "siblings",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Products"
+        },
+        {
+          "type": "radio",
+          "id": "title_type",
+          "label": "Title type",
+          "default": "list",
+          "options": [
+            {
+              "value": "list",
+              "label": "Comma Separated List"
+            },
+            {
+              "value": "metafield",
+              "label": "`smart.sibling_title` Metafield"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "options",
+          "label": "Options",
+          "info": "Comma seperated list of the options title in the same order as the selected products. Fallback is the product title"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,12 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign url = block.settings.url
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<a {{ block.shopify_attributes }}
+    class="flex items-center nav-link h-full border-b-2 border-b-transparent mt-px pt-0.5 hf:border-b-primary-bg sm:whitespace-nowrap ac:border-b-primary-bg"
+    data-product-add-to-cart-bar-link="{{ url }}"
+    href="{{ url | default: "#" }}">{{ title }}
+</a>

@@ -1,0 +1,93 @@
+{% comment %}
+    Renders a list of product's price (regular, sale)
+
+    Accepts:
+    - product_or_variant: {Object} Product Liquid object (optional) / Variant
+    - style: {Union} sale | percentage | value
+    - class: {String} Adds a price class to the price element (optional)
+
+    Usage:
+    {% render 'price', product_or_variant: product %}
+    {% render 'price', product_or_variant: variant %}
+{% endcomment %}
+
+{% liquid
+
+  assign compare_at_price = product_or_variant.compare_at_price
+  assign price = product_or_variant.price
+  assign available = product_or_variant.available
+
+
+  comment
+  BULLSTRAP CUSTOM LOGIC!
+  endcomment
+  assign tags = product_or_variant.product.tags | default: product_or_variant.tags
+
+  assign discount_enabled = true
+  if tags contains "no-discount"
+    assign discount_enabled = false
+  endif
+
+
+  if customer.tags contains 'Production' and discount_enabled
+
+    assign discount = settings.production_discount
+    assign percent_off = 100 | minus: discount
+
+    assign price = price | times: percent_off | divided_by: 100
+    assign compare_at_price = product_or_variant.price
+
+  endif
+
+  if customer.tags contains 'Industry' and discount_enabled
+
+    assign discount = settings.industry_discount
+    assign percent_off = 100 | minus: discount
+
+    assign price = price | times: percent_off | divided_by: 100
+    assign compare_at_price = product_or_variant.price
+
+  endif
+
+  if customer.tags contains 'Pro' and discount_enabled
+
+    assign discount = settings.pro_discount
+    assign percent_off = 100 | minus: discount
+
+    assign price = price | times: percent_off | divided_by: 100
+    assign compare_at_price = product_or_variant.price
+
+  endif
+
+
+  if customer.tags contains 'Society Member' and customer.tags contains 'Active Subscriber' and discount_enabled
+
+    assign discount = 20
+    assign percent_off = 100 | minus: discount
+
+    assign price = price | times: percent_off | divided_by: 100
+    assign compare_at_price = product_or_variant.price
+
+  endif
+
+  if price < compare_at_price and available
+
+    assign label__discount_percentage = compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price
+    assign label__discount_value = compare_at_price | minus: price | money_without_trailing_zeros
+
+    case style
+      when 'sale'
+        assign label__discount = 'On Sale'
+      when 'percentage'
+        assign label__discount = label__discount_percentage | round | append: "% off"
+      when 'value'
+        assign label__discount = "Save " | append: label__discount_value
+    endcase
+  endif
+%}
+
+{% if label__discount %}
+  <div class="label-item label--primary m-0.5 {{ class }}">
+    {{ label__discount }}
+  </div>
+{% endif %}

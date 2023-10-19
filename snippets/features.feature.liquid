@@ -1,0 +1,283 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign icon_list = block.settings.icon_list
+  assign title = block.settings.title
+  assign content = block.settings.content
+  assign link_text = block.settings.link_text
+  assign url = block.settings.url
+  assign svg = block.settings.svg
+  assign image = block.settings.image
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign feature_title_font = section.settings.feature_title_font %}
+{% assign feature_content_font = section.settings.feature_content_font %}
+{% assign feature__align__horizontal = section.settings.feature__align__horizontal %}
+
+{% case type %}
+  {% when 'icon-image' and url != blank %}
+    {% if url != blank %}
+      <a id="block--{{ block.id }}" {{ block.shopify_attributes }}
+         class="features__feature {% if url %}group{% endif %} flex flex-col gap-2 relative p-2 {{ feature__align__horizontal }}"
+        {% if url %}href="{{ url }}"{% endif %}>
+        <div class="text-primary-outline mb-1"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% elsif image != blank %}
+            {% render '_image', image: image, class: "", width: section.settings.icon_size %}
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        <div>
+          {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+          {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+
+          {% comment %}<div class="max-w-none _p mb-1">{% endcomment %}
+          {% comment %}{{ content }}{% endcomment %}
+          {% comment %}</div>{% endcomment %}
+        </div>
+        {% if url %}
+          <span class="group-hf:underline text-[15px] text-primary-bg hf:text-primary-bg/80">
+            {{ link_text }}
+          </span>
+        {% endif %}
+      </a>
+    {% else %}
+      <div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+           class="features__feature {% if url %}group{% endif %} flex flex-col gap-2 relative p-2 [&_a]:underline {{ feature__align__horizontal }}">
+        <div class="text-primary-outline mb-1"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% elsif image != blank %}
+            {% render '_image', image: image, class: "", width: section.settings.icon_size %}
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        <div>
+          {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+          {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+
+        </div>
+      </div>
+    {% endif %}
+
+
+  {% when 'icon-minimal' %}
+    {% if url != blank %}
+      <a id="block--{{ block.id }}" {{ block.shopify_attributes }}
+         class="features__feature group hf:bg-gray-50 flex gap-4 relative rounded-theme-md p-2"
+         href="{{ url }}">
+        <div class="text-primary-outline"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        <div>
+          {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+          {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        </div>
+      </a>
+    {% else %}
+      <div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+           class="features__feature flex gap-4 relative rounded-theme-md p-2 [&_a]:underline"
+      >
+        <div class="text-primary-outline"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        <div>
+          {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+          {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        </div>
+      </div>
+    {% endif %}
+
+  {% when 'icon-flat' %}
+
+    {% if url != blank %}
+      <a id="block--{{ block.id }}" {{ block.shopify_attributes }}
+         class="features__feature group flex flex-col"
+         href="{{ url }}">
+        <div class="p-3 rounded-theme w-min flex items-center justify-center bg-primary-bg/30 text-primary-text group-hf:bg-primary-bg/50"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mt-3" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        {% if url %}
+          <span class="group-hf:underline text-[13px] text-primary-bg hf:text-primary-bg/80">
+            {{ link_text }}
+          </span>
+        {% endif %}
+      </a>
+    {% else %}
+      <div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+           class="features__feature {% if url %}group{% endif %} flex flex-col [&_a]:underline">
+        <div class="p-3 rounded-theme w-min flex items-center justify-center bg-primary-bg/30 text-primary-text group-hf:bg-primary-bg/50"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mt-3" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+      </div>
+    {% endif %}
+
+
+  {% when 'icon-cards' %}
+
+    {% if url != blank %}
+      <a id="block--{{ block.id }}" {{ block.shopify_attributes }}
+         class="group hf:bg-theme-text/5 block text-center relative bg-theme-text/[0.02] rounded-theme-lg px-4 sm:px-6 pt-8 pb-6 mt-5"
+         href="{{ url }}">
+        <div class="p-4 rounded-theme-md flex items-center justify-center bg-primary-bg/30 text-primary-text group-hf:bg-primary-bg/50 absolute left-1/2 -translate-x-1/2 shadow-lg -top-2 -translate-y-1/2"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        {% if url %}
+          <span class="group-hf:underline text-[13px] text-primary-bg hf:text-primary-bg/80">
+            {{ link_text }}
+          </span>
+        {% endif %}
+      </a>
+    {% else %}
+      <div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+           class="block text-center relative bg-theme-text/[0.02] rounded-theme-lg px-4 sm:px-6 pt-8 pb-6 mt-5 [&_a]:underline">
+        <div class="p-4 rounded-theme-md flex items-center justify-center bg-primary-bg/30 text-primary-text group-hf:bg-primary-bg/50 absolute left-1/2 -translate-x-1/2 shadow-lg -top-2 -translate-y-1/2"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+      </div>
+    {% endif %}
+
+
+
+  {% when 'image-flat' %}
+    <figure id="block--{{ block.id }}" {{ block.shopify_attributes }}
+            class="features__feature ">
+      <picture class="block w-full overflow-hidden pb-[100%] relative rounded-theme mb-3">
+        {% if image == blank %}
+          {% assign number = forloop.index | modulo: 6 | plus: 1 %}
+          {% assign placeholderImage = 'product-' | append: number %}
+        {% endif %}
+        {% render '_image', image: image, class: "absolute w-full h-full object-cover", placeholder: placeholderImage %}
+      </picture>
+      <figcaption>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mb-1" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        {% if url %}
+          <a href="{{ url }}"
+             class="hf:underline text-[13px] text-primary-bg hf:text-primary-bg/80">
+            {{ link_text }}
+          </a>
+        {% endif %}
+      </figcaption>
+    </figure>
+
+  {% when 'image-column' %}
+    <figure id="block--{{ block.id }}" {{ block.shopify_attributes }}
+            class="features__feature grid sm:grid-cols-[5fr_7fr] gap-6 lg:grid-cols-[4fr_8fr] lg:gap-8">
+      <figcaption class="flex flex-col justify-center">
+        {% render 'richtext', type: feature_title_font, content: title, class: "mb-1" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        {% if url %}
+          <a href="{{ url }}"
+             class="hf:underline text-[13px] text-primary-bg hf:text-primary-bg/80">
+            {{ link_text }}
+          </a>
+        {% endif %}
+      </figcaption>
+      <picture class="block w-full overflow-hidden -order-1 sm:order-2 pb-[100%] sm:pb-[48%] lg:pb-[28%] relative rounded-theme">
+        {% if image == blank %}
+          {% assign number = forloop.index | modulo: 6 | plus: 1 %}
+          {% assign placeholderImage = 'collection-' | append: number %}
+        {% endif %}
+        {% render '_image', image: image, class: "absolute w-full h-full object-cover", placeholder: placeholderImage %}
+      </picture>
+    </figure>
+
+  {% when 'story' %}
+    {% liquid
+      assign orderClasses = 'order-first md:ml-auto'
+      assign mod = forloop.index | modulo: 2
+      if mod == 0
+        assign orderClasses = 'md:order-last'
+      endif
+    %}
+    <section class="grid md:grid-cols-2 md:gap-16">
+      <main class="flex flex-col justify-center items-start pb-4 md:pb-8 {{ orderClasses }}">
+        <div class="p-4 rounded-theme flex items-center justify-center bg-primary-bg/30 text-primary-text group-hf:bg-primary-bg/50 mb-6"
+             style="--icon-size: {{ section.settings.icon_size }}px">
+          {% if svg != blank %}
+            <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+              {{ svg }}
+            </div>
+          {% else %}
+            {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+          {% endif %}
+        </div>
+        {% render 'richtext', type: feature_title_font, content: title, class: "mb-1" %}
+        {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+        {% if url %}
+          <a href="{{ url }}"
+             class="button-primary mt-6">
+            {{ link_text }}
+          </a>
+        {% endif %}
+      </main>
+      <picture class="w-full pb-[66%] relative rounded-theme">
+        {% if image == blank %}
+          {% assign number = forloop.index | modulo: 6 | plus: 1 %}
+          {% assign placeholderImage = 'collection-' | append: number %}
+        {% endif %}
+        {% render '_image', image: image, class: "absolute w-full h-full object-cover rounded-theme-md", width: 900, height: 600, placeholder: placeholderImage %}
+      </picture>
+    </section>
+
+{% endcase %}

@@ -1,0 +1,72 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign products = block.settings.products
+  assign metafield = block.settings.metafield
+  assign limit = block.settings.limit
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign namespace = metafield | trim | split: '.' | first
+  assign field = metafield | trim | split: '.' | last
+
+%}
+
+<section>
+  <header class="border-b pb-2 text-sm font-medium border-b-theme-text/40 leading-[24px] mb-6">
+    <h2>
+      {{ "main_article.related_products" | t }}
+    </h2>
+  </header>
+  <main class="grid gap-8">
+    {% if article.metafields[namespace][field].value and article.metafields[namespace][field].type == 'list.product_reference' %}
+      {% assign metafieldProducts = article.metafields[namespace][field].value %}
+      {% for product in metafieldProducts %}
+        {% if limit <= 0 %}
+          {% break %}
+        {% endif %}
+        <article class="grid grid-cols-[128px_1fr] items-center gap-4">
+          <a class="relative h-32 w-32 overflow-hidden block"
+             href="{{ product.url }}">
+            {% render '_image', image: product.featured_image, width: 256, class: "relative block h-full w-full object-cover", placeholder: 'product-1' %}
+          </a>
+          {% comment %} TITLE {% endcomment %}
+          <div class="">
+            <h1 class="inline-flex product-card-title--small">
+              <a class="outline-none hf:outline-none hf:underline"
+                 href="{{ product.url }}">
+                {{ product.title }}
+              </a>
+            </h1>
+            {% render '_price', product_or_variant: product %}
+          </div>
+        </article>
+        {% assign limit = limit | minus: 1 %}
+      {% endfor %}
+
+
+    {% endif %}
+    {% for product in products %}
+      {% if limit <= 0 %}
+        {% break %}
+      {% endif %}
+      <article class="grid grid-cols-[128px_1fr] items-center gap-4">
+        <a class="relative h-32 w-32 overflow-hidden block"
+           href="{{ product.url }}">
+          {% render '_image', image: product.featured_image, width: 256, class: "relative block h-full w-full object-cover", placeholder: 'product-1' %}
+        </a>
+        {% comment %} TITLE {% endcomment %}
+        <div class="">
+          <h1 class="inline-flex product-card-title--small">
+            <a class="outline-none hf:outline-none hf:underline"
+               href="{{ product.url }}">
+              {{ product.title }}
+            </a>
+          </h1>
+          {% render '_price', product_or_variant: product %}
+        </div>
+      </article>
+      {% assign limit = limit | minus: 1 %}
+    {% endfor %}
+  </main>
+</section>

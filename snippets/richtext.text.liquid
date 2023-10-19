@@ -1,0 +1,87 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign opacity = block.settings.opacity
+  assign alignment_desktop = block.settings.alignment_desktop
+  assign alignment_mobile = block.settings.alignment_mobile
+  assign margin_top = block.settings.margin_top
+  assign margin_bottom = block.settings.margin_bottom
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  for i in (1..15)
+    assign secondHalf = ''
+    if title contains '[article.'
+      assign split = title | replace_first: '[article.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: article.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    if title contains '[product.'
+      assign split = title | replace_first: '[product.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: product.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    if title contains '[collection.'
+      assign split = title | replace_first: '[collection.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: collection.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    if title contains '[shop.'
+      assign split = title | replace_first: '[shop.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: shop.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    if title contains '[page.'
+      assign split = title | replace_first: '[page.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: page.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    if title contains '[blog.'
+      assign split = title | replace_first: '[blog.', '|~|split|~|' | split: '|~|split|~|'
+      assign split_2 = split[1] | replace_first: ']', '|~|split|~|' | split: '|~|split|~|'
+      assign first = split[0]
+      assign metafield = split_2[0] | trim | split: '.'
+      assign last = split_2[1]
+      assign title = first | append: blog.metafields[metafield[0]][metafield[1]].value | append: last
+      continue
+    endif
+
+    break
+  endfor
+%}
+
+<div {% unless no_block %}id="block--{{ block.id }}" {{ block.shopify_attributes }}{% endunless %}
+     class="w-full {{ section_max_width | default: "max-w-full" }} {{ responsive_visibility }} {{ alignment_desktop }} {{ alignment_mobile }}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% render 'richtext', type: title_font, content: title, opacity: opacity, class: typeClass %}
+</div>
+

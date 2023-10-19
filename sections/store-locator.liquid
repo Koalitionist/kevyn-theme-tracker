@@ -1,0 +1,221 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign section_title = section.settings.section_title
+  assign address = section.settings.address
+  assign map_address = section.settings.map_address
+  assign api_key = section.settings.api_key
+  assign show_button = section.settings.show_button
+  assign background_image = section.settings.background_image
+  assign background_image_position = section.settings.background_image_position
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  assign display_map = false
+  assign onboarding = false
+
+  if api_key == blank and background_image == blank
+    assign onboarding = true
+  endif
+  if api_key != blank and map_address
+    assign display_map = true
+  endif
+-%}
+
+{% if background_image != blank %}
+  {%- unless display_map -%}
+    <style>
+      .map-{{ section.id }} {
+        background-size: cover;
+        background-position: center;
+        background-image: url("{{ background_image | img_url: '1800x' }}");
+        background-position: {{ background_image_position | default: 'center center' }};
+      }
+
+      @media only screen and (max-width: 750px) {
+        .map-{{ section.id }} {
+          padding-top: {{ 1 | divided_by: background_image.aspect_ratio | times: 100 }}%;
+        }
+      }
+    </style>
+  {%- endunless -%}
+{% endif %}
+
+<style>
+  .map-section {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .map-section .rte p {
+    font-size: inherit;
+    margin: 0 0 0.65rem;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .map-section {
+      height: 500px;
+    }
+  }
+
+  .map-section .page-width {
+    height: 100%;
+  }
+
+  .map-section--load-error {
+    height: auto;
+  }
+
+  .map-onboarding {
+    @apply absolute inset-0 bg-cover
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+
+</style>
+
+<div class="map-section"
+     data-section-id="{{ section.id }}"
+     data-section-type="map">
+  {%- if section_title != blank or address != blank -%}
+    <div class="container relative h-full flex md:items-center">
+      <div class="relative bg-white p-6 shadow-md z-10 mt-6 mx-4 w-full md:max-w-sm h-min">
+        {%- if section_title != blank -%}
+          <h3 class="mb-4 text-lg font-semibold tracking-tight">
+            {{ section_title | escape }}
+          </h3>
+        {%- endif -%}
+        {%- if address != blank -%}
+          <div class="text-sm tracking-normal rte">{{ address }}</div>
+          {%- if show_button -%}
+            <a href="https://maps.google.com?daddr={{ map_address | escape }}"
+               target="_blank"
+               rel="noopener"
+               aria-label="{{ section_title }}">
+              <button class="mx-auto w-full font-normal button-primary">Get Directions</button>
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+  <a class="block absolute inset-0 z-[5]"
+     href="https://www.google.com/maps/place/{{ section.settings.map_address | escape }}"
+     target="_blank"
+     rel="noopener"
+     aria-label="{{ section.settings.map_address | escape }}"></a>
+  {%- if onboarding -%}
+    {% render '_image', placeholder: 'lifestyle-2', class: "absolute inset-0 z-[4]" %}
+  {%- endif -%}
+  <div
+      id="Map-{{ section.id }}"
+      data-map
+      class="absolute inset-0 w-full h-[150%] mb-[-50%] md:w-[130%] md:h-full md:mb-[-30%] map-{{ section.id }}"
+      data-address-setting="{{ map_address | escape }}"
+      data-api-key="{{ api_key }}"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Store Locator",
+  "settings": [
+    {
+      "id": "section_title",
+      "type": "text",
+      "label": "Heading",
+      "default": "Our retail store"
+    },
+    {
+      "id": "address",
+      "type": "richtext",
+      "label": "Address and hours",
+      "default": "<p>301 Front St W<br>Toronto, Canada</p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm</p>"
+    },
+    {
+      "id": "map_address",
+      "type": "text",
+      "label": "Map address",
+      "info": "Google maps will find the exact location",
+      "default": "301 Front St W, Toronto, ON M5V 2T6"
+    },
+    {
+      "id": "api_key",
+      "type": "text",
+      "label": "Google Maps API key",
+      "info": "You'll need to [register a Google Maps API Key](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) to display the map"
+    },
+    {
+      "id": "show_button",
+      "type": "checkbox",
+      "label": "Show 'Get directions' button",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Image",
+      "info": "Use instead of an API key"
+    },
+    {
+      "type": "select",
+      "id": "background_image_position",
+      "label": "Image focal point",
+      "default": "center center",
+      "options": [
+        {
+          "label": "Top left",
+          "value": "top left"
+        },
+        {
+          "label": "Top center",
+          "value": "top center"
+        },
+        {
+          "label": "Top right",
+          "value": "top right"
+        },
+        {
+          "label": "Center left",
+          "value": "center left"
+        },
+        {
+          "label": "Center center",
+          "value": "center center"
+        },
+        {
+          "label": "Center right",
+          "value": "center right"
+        },
+        {
+          "label": "Bottom left",
+          "value": "bottom left"
+        },
+        {
+          "label": "Bottom center",
+          "value": "bottom center"
+        },
+        {
+          "label": "Bottom right",
+          "value": "bottom right"
+        }
+      ],
+      "info": "Used to keep the subject of your photo in view."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Locator"
+    }
+  ]
+}
+{% endschema %}

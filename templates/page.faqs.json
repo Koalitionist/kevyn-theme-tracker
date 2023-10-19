@@ -1,0 +1,477 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "width": "max-w-2xl",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "35066f74-c962-4a2e-88be-05041114e317": {
+      "type": "faq",
+      "blocks": {
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>20% OFF REVIEWS OFFER<\/p>",
+            "answer": "<p>This offer is for any customer that makes an online purchase at KevynAucoinBeauty.com. Once you make a purchase you will receive<br\/>an email to leave a review within 2 weeks. Write a review and automatically receive your unique coupon. Please reach out to <a href=\"mailto:ShopKevyn@kevynaucoin.com\">ShopKevyn@kevynaucoin.com<\/a> for any questions.<\/p><p> <\/p>",
+            "page": ""
+          }
+        },
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>PRO 50% OFF JUNE OFFER<\/p>",
+            "answer": "<p>Offer valid until 6.21 at 11:59pm EST. Offer includes an additional 10% off the pro 40% off membership discount; totaling 50% off. Login to account for discount to automatically apply. Valid for pro members only. Not valid with other discounts.<\/p>",
+            "page": ""
+          }
+        },
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-13": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WELCOME15 OFFER<\/p>",
+            "answer": "<p>Offer valid for first time customers only. Offer includes 15% OFF all products gift cards. Not valid with other discounts. Input code at checkout for discount to apply. Not valid on Pro Lash Curler, Refill Pads, The Lighting Sticks and The Iconic Brush Set.<\/p>",
+            "page": ""
+          }
+        },
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-14": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>SMS SIGN UP JUNE OFFER<\/p>",
+            "answer": "<p>Offer valid until 6.30 at 11:59pm EST. Offer includes a $10 off unique discount code when you<br\/>sign up to receive text message marketing. You will automatically receive your code once you sign up. Please reach out to <a href=\"mailto:shopkevyn@kevynaucoin.com\">shopkevyn@kevynaucoin.com<\/a> if you have any questions.<\/p>",
+            "page": ""
+          }
+        },
+        "ae89209e-d164-42d1-8d56-81bdaeb8de53": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>UNLOCK5 OFFER<\/p>",
+            "answer": "<p>Offer includes $5 off your purchase when you sign up for SMS; one time use per customer. Offer valid on all products gift cards. Discount automatically applies at checkout. Not valid on Pro Lash Curler and Refill Pads and The Iconic Brush Set.<\/p>",
+            "page": ""
+          }
+        },
+        "a9a75c86-a2ba-4335-a09e-42774e2c541d": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>E-GIFT CARDS<\/p>",
+            "answer": "<p>E-gift cards are valid for one year from purchase, and are applicable on all products. E-gift cards are NOT valid with other discounts or promotions, including the Pro Membership. You will receive your discount code via email; input code at checkout for discount to apply. Please be sure to check your spam\/junk folder if you cannot locate your email.<\/p>",
+            "page": ""
+          }
+        },
+        "950d98cd-3333-40eb-8bcf-c83e5a064725": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOW DO I RESOLVE AN ISSUE MY ORDER HAS RUN INTO AT CUSTOMS IN MY COUNTRY?<\/p>",
+            "answer": "<p>Kevyn Aucoin Beauty is not responsible or liable for any orders that are taken by customs in another country. Furthermore, Kevyn Aucoin Beauty is unable to contact customs to find missing or retrieved products from any orders. If you are missing an order or products from an order that have gone through customs, please reach out to the appropriate customs customer service agent in your country to rectify your issue. We are unable to refund or reship any orders that undergo any issues at international custom offices.<\/p>",
+            "page": ""
+          }
+        },
+        "95ff305f-cc8f-44de-9d08-7093e9d725d4": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN WILL MY ORDER SHIP?<\/p>",
+            "answer": "<p>Pending order verification and payment approval, all orders placed with standard shipping will ship within 1-2 business days from the day your order is placed. Domestic orders placed with expedited shipping will ship within 1 business day. You will receive a shipping confirmation email with a tracking number once your order has shipped.<\/p>",
+            "page": ""
+          }
+        },
+        "232e5e04-d73b-4010-b3d2-d13025b1f33a": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>I'M ORDERING FROM OUTSIDE THE UNITED STATES. HOW DO I CHECK OUT?<\/p>",
+            "answer": "<p>To ship outside of the U.S., simply select your country in the shipping details at checkout.<\/p>",
+            "page": ""
+          }
+        },
+        "837ce2d6-5a3b-4ffc-aa41-3c88ba5b168e": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOW CAN I TRACK MY ORDER?<\/p>",
+            "answer": "<p>Upon checkout, an email will be sent to you to confirm your order. Once your order has shipped, you will receive an additional email with a tracking number to confirm your order has shipped. To track the status of your shipment, you can click on the tracking number directly from your email or by logging into your account and selecting order history. From there you will be able to see if the order is awaiting fulfillment or has shipped. <br\/>If you are not a registered user, you can track your order under Track Orders by entering your email address and order number. To register, you can <a href=\"\/account\/login\">create an account here.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "3926fca6-9f8b-4b3d-9254-9f921725f72d": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN CAN I EXPECT MY ORDER TO ARRIVE?<\/p>",
+            "answer": "<p>Domestic orders deliver within 5-7 business days. Should you wish to receive expedited shipping, please select 2-day shipping upon checkout, which is available at an extra cost.<br\/><br\/><br\/><br\/>International orders will deliver within 14 business days. Please note depending on your local carrier, some international packages may not have door-to-door tracking, but only be stamped when it reaches their facility.  <br\/><br\/><br\/><br\/>Orders shipped outside of the United States may be subject to import duties, taxes, and charges which are not included in the total cost of this order. These additional charges will not be covered by Kevyn Aucoin Beauty.<\/p>",
+            "page": ""
+          }
+        },
+        "2e404f40-815b-4934-9f3c-90ce2e006c71": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>MY ORDER NEVER ARRIVED. WHAT'S NEXT?<\/p>",
+            "answer": "<p>If you do not receive your order by the estimated time of delivery, please contact our Customer Service Department at customerservice@kevynaucoin.com or (888) 367-1319. To receive the fastest service, please provide the order number along with your email address.<\/p>",
+            "page": ""
+          }
+        },
+        "929eb767-5246-401d-bf14-39f65a29d6e9": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>THE ITEM(S) ARRIVED DAMAGED\/DEFECTIVE, WHAT SHOULD I DO?<\/p>",
+            "answer": "<p>When your Kevynaucoin.com order arrives, please inspect the package for any damage or defects. It is normal for the shipping package to show some wear, however, if you think a product in your shipment is damaged or defective, please contact us immediately at customerservice@kevynaucoin.com or (888) 367-1319. Please provide your order number along with your email address for the fastest service. To ensure prompt resolution, please keep the original shipping package and the damaged or defective product for inspection. If, after having examined the product, we confirm that it is damaged or defective, we will provide you instructions for returning the damaged or defective product to us. Refunds and exchanges are subject to company approval.<\/p>",
+            "page": ""
+          }
+        },
+        "426f8f0e-ed6d-4620-9333-fe1eddf91608": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>AM I ABLE TO CHANGE OR CANCEL MY ONLINE ORDER?<\/p>",
+            "answer": "<p>Once you receive an order confirmation, unfortunately your order is already being processed and cannot be changed. To cancel, please contact our Customer Service Department at customerservice@kevynaucoin.com or (888) 367-1319.<\/p>",
+            "page": ""
+          }
+        },
+        "4e871ba6-1dfc-4830-88bb-52e019efcaaf": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHAT FORMS OF PAYMENT CAN I USE?<\/p>",
+            "answer": "<p>Kevynaucoin.com accepts PayPal and the following credit cards: Visa, MasterCard, American Express, Discover. We also accept debit cards with a Visa or MasterCard logo. <br\/><br\/><br\/><br\/>Payment is available via PayPal at checkout with a registered PayPal account. Don’t have a PayPal Account? You can sign up for one on the Paypal website.  <br\/><br\/><br\/>We also accept international credit cards with billing addresses in U.S.<\/p>",
+            "page": ""
+          }
+        },
+        "99208687-7db2-45cc-877c-063cf3280fae": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN WILL I BE CHARGED?<\/p>",
+            "answer": "<p>Payment is authorized and charged as soon as your order is placed and processed.<\/p>",
+            "page": ""
+          }
+        },
+        "5b862012-91bb-41d2-aaf1-726eb52d15cb": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>CAN I GIFT WRAP MY ORDER?<\/p>",
+            "answer": "<p>Unfortunately, we currently do not offer gift wrapping. If or when we do, we will be sure to let you know!<\/p>",
+            "page": ""
+          }
+        },
+        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>IN WHAT CURRENCY ARE THE PRICES DISPLAYED ON KEVYNAUCOIN.COM<\/p>",
+            "answer": "<p>All prices of merchandise are shown in U.S. Dollars (USD) across the site and at checkout.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1",
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12",
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-13",
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-14",
+        "ae89209e-d164-42d1-8d56-81bdaeb8de53",
+        "a9a75c86-a2ba-4335-a09e-42774e2c541d",
+        "950d98cd-3333-40eb-8bcf-c83e5a064725",
+        "95ff305f-cc8f-44de-9d08-7093e9d725d4",
+        "232e5e04-d73b-4010-b3d2-d13025b1f33a",
+        "837ce2d6-5a3b-4ffc-aa41-3c88ba5b168e",
+        "3926fca6-9f8b-4b3d-9254-9f921725f72d",
+        "2e404f40-815b-4934-9f3c-90ce2e006c71",
+        "929eb767-5246-401d-bf14-39f65a29d6e9",
+        "426f8f0e-ed6d-4620-9333-fe1eddf91608",
+        "4e871ba6-1dfc-4830-88bb-52e019efcaaf",
+        "99208687-7db2-45cc-877c-063cf3280fae",
+        "5b862012-91bb-41d2-aaf1-726eb52d15cb",
+        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2"
+      ],
+      "settings": {
+        "title": "<h2>ORDER & PAYMENT<\/h2>",
+        "title_font": 1,
+        "question_font": 1,
+        "answer_font": 1,
+        "width": "max-w-3xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "9492d320-2568-4f6c-b2a9-83cf60e47fa7": {
+      "type": "faq",
+      "blocks": {
+        "ac267e7c-9495-450d-aa66-b48a2833b5fd": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHAT IS YOUR RETURN POLICY?<\/p>",
+            "answer": "<p>To return\/exchange a Kevynaucoin.com purchase within 30 days of purchase: Please contact our Customer Service Department at customerservice@kevynaucoin.com or (888) 367-1319. Returns are only accepted for products that are in new or gently used condition. Upon customer service approval, we will provide you with a return authorization number as well as shipping instructions for your return package. Refunds and exchanges are subject to company approval. <br\/><br\/>Please note we do not provide return labels. Shipping, handling charges are not refundable.<\/p><p><br\/>Unfortunately we cannot accept returns for products that have not been purchased at Kevynaucoinbeauty.com.<\/p>",
+            "page": ""
+          }
+        },
+        "5f2d2b14-8681-4503-b9b2-92be9ed64324": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>DO YOU SHIP INTERNATIONALLY?<\/p>",
+            "answer": "<p>We now offer worldwide shipping! For a complete list, click on the Country\/Region dropdown under Shipping Address upon checkout. <br\/><br\/>Additionally, Kevyn Aucoin products are sold all over the world. Use our store locator to find a store that carries Kevyn Aucoin Beauty near you.<\/p>",
+            "page": ""
+          }
+        },
+        "8fc218b0-7e4e-4985-a025-ac377a49592a": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>CAN I EXPEDITE AN INTERNATIONAL ORDER?<\/p>",
+            "answer": "<p>International orders ship out as USPS First Class Mail.<\/p><p>Unfortunately, we currently offer standard shipping on international orders only. International orders will take up to 14-21 business days to arrive.<\/p><p>We wait 3-weeks to reship any orders to ensure the appropriate delivery status of the package. <\/p><p>Additional tax and duty fees may be required upon delivery by customer depending on size of order.<\/p>",
+            "page": ""
+          }
+        },
+        "155e42b9-fe67-4bfd-a789-266bbf59a921": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN WILL I RECEIVE MY REFUND ON A RETURN?<\/p>",
+            "answer": "<p>From the day we receive your returned package, please allow up to 14 business days for us to process your return. You will receive your refund in the original form of payment. <br\/><br\/>If after 14 days you have not received your refund, please contact us at customerservice@kevynaucoin.com or (888) 367-1319.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "ac267e7c-9495-450d-aa66-b48a2833b5fd",
+        "5f2d2b14-8681-4503-b9b2-92be9ed64324",
+        "8fc218b0-7e4e-4985-a025-ac377a49592a",
+        "155e42b9-fe67-4bfd-a789-266bbf59a921"
+      ],
+      "settings": {
+        "title": "<h2>SHIPPING, RETURNS & EXCHANGES<\/h2>",
+        "title_font": 1,
+        "question_font": 1,
+        "answer_font": 1,
+        "width": "max-w-3xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "5faf511d-447a-4242-b74d-b6f4327a5a92": {
+      "type": "faq",
+      "blocks": {
+        "640a4ef9-56fd-4998-9743-f0711b1e96d7": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOW CAN I RECEIVE FREE SAMPLES?<\/p>",
+            "answer": "<p>We currently do not offer free samples with any purchase.<br\/>Should you have any questions, please contact our Customer Service Department at customerservice@kevynaucoin.com or (888) 367-1319.<\/p>",
+            "page": ""
+          }
+        },
+        "548b4272-ff7a-476b-b9fd-06275fa11c2b": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>FIRST TIME PURCHASE CODE: WELCOME15<\/p>",
+            "answer": "<p>We currently offer 15% off your first purchase. Offer is valid for first time customers. Offer is valid on all products excluding: The Eyelash Curler, The Contour Eyshadow Palette, The Volume Mascara, Gift Cards and our minis. Input code at checkout for discount to apply.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "640a4ef9-56fd-4998-9743-f0711b1e96d7",
+        "548b4272-ff7a-476b-b9fd-06275fa11c2b"
+      ],
+      "settings": {
+        "title": "<h2>SAMPLES & PROMOTIONS<\/h2>",
+        "title_font": 1,
+        "question_font": 1,
+        "answer_font": 1,
+        "width": "max-w-3xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "a0c999d7-86f3-4bac-b3c3-5797cbb240aa": {
+      "type": "faq",
+      "blocks": {
+        "c3eadc04-516a-4d05-8179-bab0b0de7d92": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>ARE YOUR PRODUCTS LATEX FREE?<\/p>",
+            "answer": "<p>Yes, our products are latex free.<\/p>",
+            "page": ""
+          }
+        },
+        "5435d2a8-cb24-4d1b-940d-7ff31f00a088": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>ARE ANY OF YOUR PRODUCTS FORMULATED FOR TEENAGE OR YOUNGER SKIN?<\/p>",
+            "answer": "<p>All of our products can be used on any skin type.<\/p>",
+            "page": ""
+          }
+        },
+        "bb7cf4e6-859a-44b2-ab61-847aca41fc9e": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHAT IS THE SAFEST WAY TO REMOVE YOUR PRODUCTS?<\/p>",
+            "answer": "<p>Any makeup remover that works with your skin will be best to remove our products. Oil-based removers will remove oil-based and waterproof products with the most ease.<\/p>",
+            "page": ""
+          }
+        },
+        "534eb99e-cadb-4090-b0ff-c3ce1744c9ff": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>DO YOUR PRODUCTS CONTAIN PARABENS? IF SO, WHY?<\/p>",
+            "answer": "<p>Very few of our products contain parabens. Parabens preserve the product and extend the longevity of use.<\/p>",
+            "page": ""
+          }
+        },
+        "05cba443-ce01-48be-a26f-d042eb1b8e1f": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>IS THERE A TASTE OR SMELL TO THE LIP PRODUCTS?<\/p>",
+            "answer": "<p>Yes, our lip products have a fig flavor, natural oils and mango butter to hydrate and condition your lips.<\/p>",
+            "page": ""
+          }
+        },
+        "22c9c13b-1945-4234-b5f6-f915506cae2a": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>DO YOU SELL THE RED REPLACEMENT PADS FOR THE EYELASH CURLER?<\/p>",
+            "answer": "<p>One replacement pad comes with The Eyelash Curler. We do sell the 3-red refill pads separately that can be used with our new Professional Lash Curler. We recommend changing your pad every 6-12 months.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "c3eadc04-516a-4d05-8179-bab0b0de7d92",
+        "5435d2a8-cb24-4d1b-940d-7ff31f00a088",
+        "bb7cf4e6-859a-44b2-ab61-847aca41fc9e",
+        "534eb99e-cadb-4090-b0ff-c3ce1744c9ff",
+        "05cba443-ce01-48be-a26f-d042eb1b8e1f",
+        "22c9c13b-1945-4234-b5f6-f915506cae2a"
+      ],
+      "settings": {
+        "title": "<h2>PRODUCTS<\/h2>",
+        "title_font": 1,
+        "question_font": 1,
+        "answer_font": 1,
+        "width": "max-w-3xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "0531e082-293e-4454-b53d-2aa641ddb8a9": {
+      "type": "faq",
+      "blocks": {
+        "3bbd6d8e-8ce0-401b-b22b-69c9f510057f": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>I AM A PRO ARTIST, HOW CAN I RECEIVE DISCOUNTS ON PRODUCTS?<\/p>",
+            "answer": "<p>Pro Artists first need to submit an application under the Pro Artist section of our website. Once approved, you can receive your discount online. This discount on Kevyn Aucoin products only works on our website and not in store. Please note that as Pro Artist accounts already enjoy 40% on all products unless otherwise specified, they are not qualified to enjoy any other discounts such as promo discount code, etc.<\/p>",
+            "page": ""
+          }
+        },
+        "05af2075-8bbe-40c3-8de3-82768ed3a94f": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN AND HOW WILL I KNOW IF MY APPLICATION IS APPROVED?<\/p>",
+            "answer": "<p>Please allow up to 4 to 6 weeks for approval. Once your application has been reviewed and approved, you will receive an email about how you can shop with your Pro discount on our website.<\/p>",
+            "page": ""
+          }
+        },
+        "7d5ea8aa-86cb-4470-a683-905ae41a8a7e": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOW DO I PLACE MY ORDER USING MY PRO ARTIST DISCOUNT?<\/p>",
+            "answer": "<p>Log into your registered account with your username and password. Your Pro Artists 40% discount will be applied and deducted from your order at checkout. If you are interested and eligible for a Pro Artist membership, you can submit your application under the Pro Artist section of our website.<br\/><br\/>Shipping rates vary on shipping location. If you are a Pro Artist with an international shipping address, please not your order is subject to import duties, taxes, and charges which are not included in the total cost of this order. These additional charges will not be covered by Kevyn Aucoin Beauty. For full disclosure on international shipping, please visit our <a href=\"\/pages\/shipping-returns\">Shipping page.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "e45c9e1f-c01b-4560-9301-1b1528620e2a": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>WHEN IS THE DISCOUNT APPLIED?<\/p>",
+            "answer": "<p>All prices on our website will reflect discounted prices once your logged into your account. The price shown in your cart at checkout will reflect the 40% off.<\/p>",
+            "page": ""
+          }
+        },
+        "8555856c-9c4c-49f1-b832-5210d1f958da": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>IS THERE A MEMBERSHIP FEE?<\/p>",
+            "answer": "<p>There is no cost! As a member of the Pro Artist program, we love to see your love for the KAB Products when working on photoshoots, weddings, events and award season. We are also very grateful when Pro Artists recommend KAB products to all those who enjoy premier makeup from an incredible heritage brand. To become a Pro Artist member, we require a copy of photo identification and two proper credentials, which are listed on the Pro Artist application form. <br\/><br\/><br\/>Instagram pages are not accepted as credentials.<\/p>",
+            "page": ""
+          }
+        },
+        "1421ab86-a792-4118-94b3-cc6f302691ab": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>AM I ELIGIBLE FOR ANY SITE PROMOTIONS? (GIFTS\/SAMPLES\/DISCOUNTS)<\/p>",
+            "answer": "<p>Our Pro Membership discount is not valid with other discounts or promotions. This includes any discount codes\/vouchers that would be input at checkout. If you would rather use the promotional offer, please logout and continue as a guest. If you are logged into a Pro account, discounts will not work at checkout. Please note, e-gift cards will not work at checkout when logged in at a Pro Member.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "3bbd6d8e-8ce0-401b-b22b-69c9f510057f",
+        "05af2075-8bbe-40c3-8de3-82768ed3a94f",
+        "7d5ea8aa-86cb-4470-a683-905ae41a8a7e",
+        "e45c9e1f-c01b-4560-9301-1b1528620e2a",
+        "8555856c-9c4c-49f1-b832-5210d1f958da",
+        "1421ab86-a792-4118-94b3-cc6f302691ab"
+      ],
+      "settings": {
+        "title": "<h2>PRO ARTIST<\/h2>",
+        "title_font": 1,
+        "question_font": 1,
+        "answer_font": 1,
+        "width": "max-w-3xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "35066f74-c962-4a2e-88be-05041114e317",
+    "9492d320-2568-4f6c-b2a9-83cf60e47fa7",
+    "5faf511d-447a-4242-b74d-b6f4327a5a92",
+    "a0c999d7-86f3-4bac-b3c3-5797cbb240aa",
+    "0531e082-293e-4454-b53d-2aa641ddb8a9"
+  ]
+}

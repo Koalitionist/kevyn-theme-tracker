@@ -1,0 +1,1005 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign pagination_size = section.settings.pagination_size
+  assign columns__desktop = section.settings.columns__desktop
+  assign columns__mobile = section.settings.columns__mobile
+  assign filters__show = section.settings.filters__show
+  assign filters__count = section.settings.filters__count
+  assign filters__auto_apply = section.settings.filters__auto_apply
+  assign sort__show = section.settings.sort__show
+  assign headings = section.settings.headings
+  assign headings_font = section.settings.headings_font
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign color_scheme = section.settings.color_scheme
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- capture filterTag -%}
+  {{- settings.custom_hide_condition -}}
+{%- endcapture -%}
+{% assign filterTag = filterTag | trim | strip_newlines %}
+{% if filters__show %}
+  {% assign gridActive = "active" %}
+{% endif %}
+
+{% liquid
+  assign sort_by = search.sort_by | default: search.default_sort_by
+  assign customFilterStyles = section.blocks | map: "settings" | map: "title"
+%}
+
+
+<div id="{{ sectionID }}"
+     data-collection-grid-with-filters="{{ section.id }}"
+     class="main-collection-grid-with-filters container-bg-full group grid gap-12 ac:lg:grid-cols-[240px_1fr] {{ color_scheme }}  {{ gridActive }} {{ padding_top }} {{ padding_bottom }}">
+  <aside class="hidden h-min gap-8 max-w-[240px] filter-sidebar group-ac:grid max-lg:!hidden"
+         data-collection-grid-filters-sidebar>
+    <header>
+      {% assign filterHeading = headings | replace: "[headings]", "Filters" %}
+      {% render 'richtext', type: headings_font, content: filterHeading, class: "" %}
+    </header>
+    <main class="grid">
+      <form class="max-w-full [--font-nav-link-weight:700] md:[--font-nav-link-weight:700]"
+            id="form__collection-grid-filter--{{ section.id }}"
+            {% if filters__auto_apply %}data-filter-auto-apply="true"{% endif %}>
+        <input type="hidden"
+               name="type"
+               value="{{ search.types | join: "," }}">
+        <input type="hidden"
+               name="q"
+               value="{{ search.terms }}">
+        {%- for filter in search.filters -%}
+          <div class="relative"
+               data-collection-filter-name="{{ filter.param_name }}"
+               data-collection-filter-type="{{ filter.type }}"
+               data-collection-grid-filter-item>
+            <button type="button"
+                    data-collection-filter-toggle
+                    class="flex w-full items-center justify-between border-b py-4 no-js-hidden hf:text-theme-text/80 nav-link border-theme-text/5">
+              <span>{{ filter.label | escape }}</span>
+              {% render '_icon', icon: 'chevron-down', class: "ml-2 w-4 h-4" %}
+            </button>
+            {% assign blockSettings = null %}
+            {% if customFilterStyles contains filter.label and filter.typef != "price_range" %}
+              {% assign blockSettings = section.blocks | map: "settings" | where: "title", filter.label | first %}
+
+              {% case blockSettings.style %}
+                {% when 'checkboxes' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+                      <fieldset class="grid gap-3">
+                        {%- for value in filter.values -%}
+                          <label class="flex cursor-pointer items-center font-normal space-x-2 leading-[1.4] {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}">
+                            <span class="relative h-4 w-4">
+                              <input type="checkbox"
+                                     class="h-full w-full appearance-none border peer rounded-theme-sm border-theme-text bg-theme-bg"
+                                     {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                     name="{{ value.param_name }}"
+                                     value="{{ value.value }}"
+                                {% if value.active %}checked="checked"{% endif %} >
+                              <span class="absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 peer-checked:opacity-100">
+                                {% render '_icon', icon: 'check-mark', class: 'w-3.5 h-3.5 stroke-2 text-theme-text' %}
+                              </span>
+                            </span>
+                            <span class="truncate max-w-[220px]">
+                              {{ value.label }}
+                            </span>
+                            <span>{% if filters__count %}({{ value.count }}){% endif %}</span>
+                          </label>
+
+                        {%- endfor -%}
+                      </fieldset>
+                    </div>
+                  </div>
+                {% when 'tags' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+
+                      <fieldset class="flex flex-wrap gap-1.5">
+                        {% for value in filter.values %}
+                          <label class="cursor-pointer select-none {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}"
+                                 title="{{ value }}">
+                            <input type="checkbox"
+                                   {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                   name="{{ value.param_name }}"
+                                   value="{{ value.value }}"
+                              {% if value.active %}checked="checked"{% endif %}
+                                   class="absolute appearance-none outline-none peer hfa:outline-none"
+                            />
+                            <span class="block truncate label--primary--outline peer-checked:label--primary label-item min-w-[34px] peer-checked:border-theme-text peer-disabled:cursor-not-allowed peer-disabled:opacity-60 hf:border-primary-outline peer-disabled:hf:opacity-70 max-w-[240px]">
+                              {{ value.value }}
+                            </span>
+                          </label>
+                        {% endfor %}
+                      </fieldset>
+
+                    </div>
+                  </div>
+                {% when 'color' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+
+                      <fieldset class="flex flex-wrap gap-2">
+                        {% for value in filter.values %}
+                          <label class="cursor-pointer rounded-full border border-theme-text/50 {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}"
+                                 title="{{ value.value }}">
+                            <input type="checkbox"
+                                   name="{{ value.param_name }}"
+                                   value="{{ value.value }}"
+                                   {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                              {% if value.active %}checked="checked"{% endif %}
+                                   class="absolute appearance-none outline-none peer hfa:outline-none"
+                            >
+                            <span class="flex h-6 w-6 items-center justify-center rounded-full ring-2 ring-transparent ring-offset-1 peer-checked:ring-theme-text peer-disabled:cursor-not-allowed peer-disabled:opacity-60 svg:opacity-0 peer-checked:svg:opacity-100 hf:ring-primary-outline peer-disabled:hf:opacity-70 md:h-8 md:w-8"
+                                  style="background: var(--color-swatch--{{ value.value | downcase | handleize }}, {{ value.value | downcase }})"></span>
+                          </label>
+                        {% endfor %}
+                      </fieldset>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endif %}
+            {% unless customFilterStyles contains filter.label %}
+              {% case filter.type %}
+                {% when 'price_range' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+                      <input data-collection-filter-price-from-input
+                             type="hidden"
+                             class="hidden"
+                             name="filter.v.price.gte"
+                             value="{{ filter.min_value.value | default: 0 }}">
+                      <input data-collection-filter-price-to-input
+                             type="hidden"
+                             class="hidden"
+                             name="filter.v.price.lte"
+                             value="{{ filter.max_value.value | default: filter.range_max }}">
+                      <div class="mt-4 flex justify-between font-medium tracking-tight text-[13px]">
+                        <span data-collection-filter-price-from="{{ filter.min_value.value | default: 0 }}"
+                              data-collection-filter-price-min="0">
+                          {{ filter.min_value.value | money | default: 0 | money }}
+                        </span>
+                        <span data-collection-filter-price-to="{{ filter.max_value.value | default: filter.range_max }}"
+                              data-collection-filter-price-max="{{ filter.range_max }}">
+                          {{ filter.max_value.value | money | default: filter.range_max | money }}
+                        </span>
+                      </div>
+                      <div
+                          data-collection-filter-price-slider
+                          class="relative mt-1 flex h-5 cursor-pointer touch-none items-center"
+                      >
+                        <div class="h-1 w-full rounded-full bg-gray-300"></div>
+                        <div class="absolute h-1 w-auto rounded-full bg-gray-700"
+                             data-collection-filter-price-slider-bar></div>
+                        <button data-collection-filter-price-slider-from-thumb
+                                type="button"
+                                class="absolute top-1/2 -mx-1 -translate-y-1/2 cursor-grab p-1 outline-none transition-transform duration-75 focus:scale-150 focus:text-secondary-outline active:cursor-grabbing hfa:outline-none">
+                          <span class="block h-3 w-3 rounded-full border border-white bg-current transition-colors"></span>
+                        </button>
+                        <button data-collection-filter-price-slider-to-thumb
+                                type="button"
+                                class="absolute top-1/2 -mx-1 -translate-y-1/2 cursor-grab p-1 outline-none transition-transform duration-75 focus:scale-150 focus:text-secondary-outline active:cursor-grabbing hfa:outline-none">
+                          <span class="block h-3 w-3 rounded-full border border-white bg-current"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                {% when 'boolean' or 'list' %}
+
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+                      <fieldset class="grid gap-3">
+                        {%- for value in filter.values -%}
+                          <label class="flex cursor-pointer items-center font-normal space-x-2 leading-[1.4] {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}">
+                            <span class="relative h-4 w-4">
+                              <input type="checkbox"
+                                     class="h-full w-full appearance-none border peer rounded-theme-sm border-theme-text bg-theme-bg"
+                                     {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                     name="{{ value.param_name }}"
+                                     value="{{ value.value }}"
+                                {% if value.active %}checked="checked"{% endif %}>
+                              <span class="absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 peer-checked:opacity-100">
+                                {% render '_icon', icon: 'check-mark', class: 'w-3.5 h-3.5 stroke-2 text-theme-text' %}
+                              </span>
+                            </span>
+                            <span class="truncate max-w-[220px]">
+                              {{ value.label }}
+                            </span>
+                            <span>{% if filters__count %}({{ value.count }}){% endif %}</span>
+                          </label>
+
+                        {%- endfor -%}
+                      </fieldset>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endunless %}
+
+          </div>
+        {%- endfor -%}
+        <div class="mt-3 flex w-full items-center">
+          {% assign withActive = false %}
+          {%- for filter in search.filters -%}
+            {% case filter.type %}
+              {% when 'price_range' %}
+                {% if filter.max_value.value < filter.range_max or filter.min_value.value > 0 %}
+                  {% assign withActive = filter.url_to_remove | split: "?" | first %}
+                  {% break %}
+                {% endif %}
+              {% when 'list' or 'boolean' %}
+                {%- for value in filter.values -%}
+                  {% if value.active %}
+                    {% assign withActive = filter.url_to_remove | split: "?" | first %}{% break %}
+                  {% endif %}
+                {% endfor %}
+            {% endcase %}
+            {% if withActive %}{% break %}{% endif %}
+          {% endfor %}
+          {% if withActive %}
+            <a href="{{ withActive }}?sort_by={{ sort_by }}"
+               class="mr-2 button-primary mt-3--outline">
+              {{ "search_grid_with_filters.reset" | t }}
+            </a>
+          {% endif %}
+          <button type="submit"
+                  class="w-full button-primary">
+            {{ "search_grid_with_filters.apply" | t }}
+          </button>
+        </div>
+      </form>
+    </main>
+  </aside>
+  <main class="grid gap-8 h-min">
+    <header class="relative z-10 flex items-center justify-between lg:justify-end gap-12">
+
+      <button type="button"
+              class="lg:flex items-center justify-center gap-2 hidden"
+              data-collection-grid-filters-toggle-button>
+        {% capture toggleHeading %}
+          <span class="flex items-center justify-center gap-3 whitespace-nowrap">
+            <span class="hidden group-ac:inline">
+              {{ "search_grid_with_filters.hide_filters" | t }}
+            </span>
+            <span class="group-ac:hidden">
+              {{ "search_grid_with_filters.show_filters" | t }}
+            </span>
+            {% render '_icon', icon: "filters", class: "w-[0.85em] h-[0.85em]" %}
+          </span>
+        {% endcapture %}
+        {% assign toggleHeading = headings | replace: "[headings]", toggleHeading %}
+        {% render 'richtext', type: headings_font, content: toggleHeading, html_attributes: 'data-collection-grid-filters-toggle-content' %}
+      </button>
+
+      <button type="button"
+              class="flex items-center justify-center gap-2 lg:hidden"
+              data-collection-grid-filters-toggle-button
+              data-drawer-open="collection-filters">
+        {% capture toggleHeading %}
+          <span class="flex items-center justify-center gap-3 whitespace-nowrap">
+            Show Filters
+            {% render '_icon', icon: "filters", class: "w-[0.85em] h-[0.85em]" %}
+          </span>
+        {% endcapture %}
+        {% assign toggleHeading = headings | replace: "[headings]", toggleHeading %}
+        {% render 'richtext', type: headings_font, content: toggleHeading, html_attributes: 'data-collection-grid-filters-toggle-content' %}
+      </button>
+
+      {% if sort__show %}
+        <section class="sort">
+          <div class="relative"
+               data-collection-filter-type="list">
+            <button type="button"
+                    class="flex items-center hf:text-theme-text/80 nav-link"
+                    data-collection-sort-button>
+              {% capture sortByHeading %}
+                <span class="flex items-center justify-center gap-3 whitespace-nowrap">
+                  {{ "search_grid_with_filters.sort_by" | t }}
+                  {% render '_icon', icon: 'chevron-down', class: "w-[0.85em] h-[0.85em]" %}
+                </span>
+              {% endcapture %}
+              {% assign sortByHeading = headings | replace: "[headings]", sortByHeading %}
+              {% render 'richtext', type: headings_font, content: sortByHeading %}
+            </button>
+
+            <div data-collection-sort-container
+                 data-collection-filter-container="no-toggle"
+                 class="absolute top-full -right-2 overflow-hidden p-4 shadow-xl drop-shadow-md transition-all ease-linear bg-theme-bg min-w-[240px]"
+                 style="max-height: 0; opacity: 0">
+              <div class="w-full">
+
+                <fieldset class="grid gap-3 max-lg:hidden">
+                  {% for option in search.sort_options %}
+                    {% if value.active %}{% assign withActive = true %}{% endif %}
+                    <label class="sort--{{ option.value }} flex space-x-2 font-normal items-center cursor-pointer leading-[1.4]">
+                      <span class="relative flex h-4 w-4 items-center justify-center">
+                        <input type="radio"
+                               class="h-full w-full appearance-none rounded-full border peer border-theme-text bg-theme-bg"
+                               name="sort_by"
+                               form="form__collection-grid-filter--{{ section.id }}"
+                               value="{{ option.value }}"
+                               {% if option.value == sort_by %}checked="checked"{% endif %}>
+                        <span class="absolute flex h-3 w-3 items-center justify-center rounded-full opacity-0 left-0.5 top-0.5 bg-primary-bg peer-checked:opacity-100">
+                        </span>
+                      </span>
+                      <span class="truncate max-w-[220px]">
+                        {% case option.value %}
+                          {% when "relevance" %}
+                            {{ "search_grid_with_filters.relevance" | t }}
+                          {% when "manual" %}
+                            {{ "search_grid_with_filters.featured" | t }}
+                          {% when "best-selling" %}
+                            {{ "search_grid_with_filters.best_selling" | t }}
+                          {% when "title-ascending" %}
+                            {{ "search_grid_with_filters.alphabetically_a_z" | t }}
+                          {% when "title-descending" %}
+                            {{ "search_grid_with_filters.alphabetically_z_a" | t }}
+                          {% when "price-ascending" %}
+                            {{ "search_grid_with_filters.price_low" | t }}
+                          {% when "price-descending" %}
+                            {{ "search_grid_with_filters.price_high" | t }}
+                          {% when "created-ascending" %}
+                            {{ "search_grid_with_filters.date_old" | t }}
+                          {% when "created-descending" %}
+                            {{ "search_grid_with_filters.date_new" | t }}
+                        {% endcase %}
+                      </span>
+                    </label>
+                  {%- endfor -%}
+                  <div class="flex w-full items-center">
+                    <button type="submit"
+                            form="form__collection-grid-filter--{{ section.id }}"
+                            class="w-full button-primary">
+                      {{ "search_grid_with_filters.apply_sort" | t }}
+                    </button>
+                  </div>
+                </fieldset>
+                <fieldset class="grid gap-3 lg:hidden">
+                  {% for option in search.sort_options %}
+                    {% if value.active %}{% assign withActive = true %}{% endif %}
+                    <label class="sort--{{ option.value }} flex space-x-2 font-normal items-center cursor-pointer leading-[1.4]">
+                      <span class="relative flex h-4 w-4 items-center justify-center">
+                        <input type="radio"
+                               class="h-full w-full appearance-none rounded-full border peer border-theme-text bg-theme-bg"
+                               name="sort_by"
+                               form="form__collection-grid-filter--mobile--{{ section.id }}"
+                               value="{{ option.value }}"
+                               {% if option.value == sort_by %}checked="checked"{% endif %}>
+                        <span class="absolute flex h-3 w-3 items-center justify-center rounded-full opacity-0 left-0.5 top-0.5 bg-primary-bg peer-checked:opacity-100">
+                        </span>
+                      </span>
+                      <span class="truncate">
+                        {% case option.value %}
+                          {% when "relevance" %}
+                            {{ "search_grid_with_filters.relevance" | t }}
+                          {% when "manual" %}
+                            {{ "search_grid_with_filters.featured" | t }}
+                          {% when "best-selling" %}
+                            {{ "search_grid_with_filters.best_selling" | t }}
+                          {% when "title-ascending" %}
+                            {{ "search_grid_with_filters.alphabetically_a_z" | t }}
+                          {% when "title-descending" %}
+                            {{ "search_grid_with_filters.alphabetically_z_a" | t }}
+                          {% when "price-ascending" %}
+                            {{ "search_grid_with_filters.price_low" | t }}
+                          {% when "price-descending" %}
+                            {{ "search_grid_with_filters.price_high" | t }}
+                          {% when "created-ascending" %}
+                            {{ "search_grid_with_filters.date_old" | t }}
+                          {% when "created-descending" %}
+                            {{ "search_grid_with_filters.date_new" | t }}
+                        {% endcase %}
+                      </span>
+                    </label>
+                  {%- endfor -%}
+                  <div class="flex w-full items-center">
+                    <button type="submit"
+                            form="form__collection-grid-filter--mobile--{{ section.id }}"
+                            class="w-full button-primary">
+                      {{ "search_grid_with_filters.apply_sort" | t }}
+                    </button>
+                  </div>
+                </fieldset>
+
+              </div>
+            </div>
+          </div>
+
+          <noscript>
+            {% render '_form', form: 'no-js-collection-sort' %}
+          </noscript>
+        </section>
+      {% endif %}
+    </header>
+    {% capture active_filters %}
+      {% assign withActive = false %}
+      {% for filter in search.filters %}
+        {% case filter.type %}
+          {% when 'price_range' %}
+            {% if filter.max_value.value < filter.range_max or filter.min_value.value > 0 %}
+              {% assign withActive = filter.url_to_remove | split: "?" | first %}
+              <a class="inline-flex badge m-0.5 md:m-1.5"
+                 href="{{ filter.url_to_remove }}">
+                {{ filter.min_value.value | money }} - {{ filter.max_value.value | money }}
+                {% render '_icon', icon: 'x-close', class: 'w-4 h-4 ml-1.5' %}
+              </a>
+            {% endif %}
+          {% when 'boolean' or 'list' %}
+            {% for value in filter.active_values %}
+              {% assign withActive = filter.url_to_remove | split: "?" | first %}
+              <a class="inline-flex badge m-0.5 md:m-1.5"
+                 href="{{ value.url_to_remove }}">
+                {{ value.label }}
+                {% render '_icon', icon: 'x-close', class: 'w-4 h-4 ml-1.5' %}
+              </a>
+            {% endfor %}
+        {% endcase %}
+      {% endfor %}
+
+
+      {% if withActive %}
+        <a href="{{ withActive }}?sort_by={{ sort_by }}&q={{ search.terms }}&type={{ search.types | join: ',' }}"
+           class="inline-flex items-center pl-1 text-sm m-0.5 hf:underline">
+          {{ "search_grid_with_filters.clear_all" | t }} {% render '_icon', icon: 'x-close', class: 'w-4 h-4 ml-1.5' %}
+        </a>
+      {% endif %}
+    {% endcapture %}
+    {% if withActive %}
+      <nav class="flex h-min flex-wrap -m-0.5 md:-mx-1.5">
+        {{ active_filters }}
+      </nav>
+    {% endif %}
+
+    <section class="">
+      {% paginate search.results by pagination_size -%}
+        {%- if search.results.size == 0 -%}
+          <div class="mx-auto py-16 text-center prose prose-theme">
+            <h2 class="">
+              {{ "search_grid_with_filters.no_items" | t }}
+              <br>
+            </h2>
+          </div>
+        {%- endif -%}
+        <div class="grid gap-x-6 gap-y-10 {{ columns__mobile }} {{ columns__desktop }}">
+          {% for result in search.results -%}
+            {% case result.object_type %}
+              {% when 'product' %}
+                {% unless result.tags contains filterTag %}
+                  {% render 'product-card', product: result %}
+                {% endunless %}
+              {% when 'article' %}
+                {% render '_content-card', content: result, settings: section.settings %}
+              {% when 'page' %}
+                {% render '_content-card', content: result, settings: section.settings %}
+              {% when 'collection' %}
+                {% render '_content-card', content: result, settings: section.settings %}
+            {% endcase %}
+          {%- endfor %}
+        </div>
+        <div class="flex justify-center mt-10">
+          {% render '_pagination', paginate: paginate %}
+        </div>
+      {%- endpaginate %}
+    </section>
+  </main>
+</div>
+
+
+<div class="group/drawer-menu fixed pointer-events-none inset-0 z-50 ac:pointer-events-auto hidden ac:block lg:!hidden"
+     data-drawer="collection-filters">
+  <div class="fixed inset-y-0 left-0 w-full max-w-[30rem] border-r border-r-gray-100 shadow-lg z-10 transition-all -translate-x-full group-[.active]/drawer-menu:translate-x-0 ease-linear flex flex-col h-full overflow-hidden justify-between max-h-screen {{ color_scheme }}"
+       data-drawer-content>
+    <header class="flex justify-between items-center w-full h-header container absolute top-0 inset-x-0 bg-theme-bg shadow-md z-10">
+      {% assign drawerHeading = headings | replace: "[headings]", "Filters" %}
+      {% render 'richtext', type: headings_font, content: drawerHeading %}
+      <button type="button"
+              class="w-8 h-8 flex items-center justify-center text-gray-400 hf:text-gray-900 transition-all"
+              data-drawer-close="collection-filters">
+        <span class="sr-only">
+          {{ "search_grid_with_filters.close_filters" | t }}
+        </span>
+        {% render '_icon', icon: 'x-close', class: "w-6 h-6 stroke-2" %}
+      </button>
+    </header>
+    <main class="relative top-header bottom-0 flex-1 overflow-y-auto scrollbar-none pb-64 pt-4 bg-theme-bg px-4 md:px-8"
+          data-collection-grid-filters-sidebar>
+      <form class="max-w-full"
+            id="form__collection-grid-filter--mobile--{{ section.id }}"
+            {% if filters__auto_apply %}data-filter-auto-apply="true"{% endif %}>
+        <input type="hidden"
+               name="type"
+               value="{{ search.types | join: "," }}">
+        <input type="hidden"
+               name="q"
+               value="{{ search.terms }}">
+        {%- for filter in search.filters -%}
+          <div class="relative"
+               data-collection-filter-name="{{ filter.param_name }}"
+               data-collection-filter-type="{{ filter.type }}"
+               data-collection-grid-filter-item>
+            <button type="button"
+                    data-collection-filter-toggle
+                    class="flex w-full items-center justify-between border-b py-4 no-js-hidden hf:text-theme-text/80 nav-link border-theme-text/5">
+              <span>{{ filter.label | escape }}</span>
+              {% render '_icon', icon: 'chevron-down', class: "ml-2 w-4 h-4" %}
+            </button>
+            {% assign blockSettings = null %}
+            {% if customFilterStyles contains filter.label and filter.typef != "price_range" %}
+              {% assign blockSettings = section.blocks | map: "settings" | where: "title", filter.label | first %}
+
+              {% case blockSettings.style %}
+                {% when 'checkboxes' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+                      <fieldset class="grid gap-3">
+                        {%- for value in filter.values -%}
+                          <label class="flex cursor-pointer items-center font-normal space-x-2 leading-[1.4] {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}">
+                            <span class="relative h-4 w-4">
+                              <input type="checkbox"
+                                     class="h-full w-full appearance-none border peer rounded-theme-sm border-theme-text bg-theme-bg"
+                                     {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                     name="{{ value.param_name }}"
+                                     value="{{ value.value }}"
+                                {% if value.active %}checked="checked"{% endif %} >
+                              <span class="absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 peer-checked:opacity-100">
+                                {% render '_icon', icon: 'check-mark', class: 'w-3.5 h-3.5 stroke-2 text-theme-text' %}
+                              </span>
+                            </span>
+                            <span class="truncate max-w-[220px]">
+                              {{ value.label }}
+                            </span>
+                            <span>{% if filters__count %}({{ value.count }}){% endif %}</span>
+                          </label>
+
+                        {%- endfor -%}
+                      </fieldset>
+                    </div>
+                  </div>
+                {% when 'tags' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+
+                      <fieldset class="flex flex-wrap gap-1.5">
+                        {% for value in filter.values %}
+                          <label class="cursor-pointer select-none {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}"
+                                 title="{{ value }}">
+                            <input type="checkbox"
+                                   name="{{ value.param_name }}"
+                                   value="{{ value.value }}"
+                                   {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                              {% if value.active %}checked="checked"{% endif %}
+                                   class="absolute appearance-none outline-none peer hfa:outline-none"
+                            />
+                            <span class="block truncate label--primary--outline peer-checked:label--primary label-item min-w-[34px] peer-checked:border-theme-text peer-disabled:cursor-not-allowed peer-disabled:opacity-60 hf:border-primary-outline peer-disabled:hf:opacity-70 max-w-[240px]">
+                              {{ value.value }}
+                            </span>
+                          </label>
+                        {% endfor %}
+                      </fieldset>
+
+                    </div>
+                  </div>
+                {% when 'color' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+
+                      <fieldset class="flex flex-wrap gap-2">
+                        {% for value in filter.values %}
+                          <label class="cursor-pointer rounded-full border border-theme-text/50 {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}"
+                                 title="{{ value.value }}">
+                            <input type="checkbox"
+                                   name="{{ value.param_name }}"
+                                   {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                   value="{{ value.value }}"
+                              {% if value.active %}checked="checked"{% endif %}
+                                   class="absolute appearance-none outline-none peer hfa:outline-none">
+                            <span class="flex h-6 w-6 items-center justify-center rounded-full ring-2 ring-transparent ring-offset-1 peer-checked:ring-theme-text peer-disabled:cursor-not-allowed peer-disabled:opacity-60 svg:opacity-0 peer-checked:svg:opacity-100 hf:ring-primary-outline peer-disabled:hf:opacity-70 md:h-8 md:w-8"
+                                  style="background: var(--color-swatch--{{ value.value | downcase | handleize }}, {{ value.value | downcase }})"></span>
+                          </label>
+                        {% endfor %}
+                      </fieldset>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endif %}
+            {% unless customFilterStyles contains filter.label %}
+              {% case filter.type %}
+                {% when 'price_range' %}
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+                      <input data-collection-filter-price-from-input
+                             type="hidden"
+                             class="hidden"
+                             name="filter.v.price.gte"
+                             value="{{ filter.min_value.value | default: 0 }}">
+                      <input data-collection-filter-price-to-input
+                             type="hidden"
+                             class="hidden"
+                             name="filter.v.price.lte"
+                             value="{{ filter.max_value.value | default: filter.range_max }}">
+                      <div class="mt-4 flex justify-between font-medium tracking-tight text-[13px]">
+                        <span data-collection-filter-price-from="{{ filter.min_value.value | default: 0 }}"
+                              data-collection-filter-price-min="0">
+                          {{ filter.min_value.value | money | default: 0 | money }}
+                        </span>
+                        <span data-collection-filter-price-to="{{ filter.max_value.value | default: filter.range_max }}"
+                              data-collection-filter-price-max="{{ filter.range_max }}">
+                          {{ filter.max_value.value | money | default: filter.range_max | money }}
+                        </span>
+                      </div>
+                      <div
+                          data-collection-filter-price-slider
+                          class="relative mt-1 flex h-5 cursor-pointer touch-none items-center"
+                      >
+                        <div class="h-1 w-full rounded-full bg-gray-300"></div>
+                        <div class="absolute h-1 w-auto rounded-full bg-gray-700"
+                             data-collection-filter-price-slider-bar></div>
+                        <button data-collection-filter-price-slider-from-thumb
+                                type="button"
+                                class="absolute top-1/2 -mx-1 -translate-y-1/2 cursor-grab p-1 outline-none transition-transform duration-75 focus:scale-150 focus:text-secondary-outline active:cursor-grabbing hfa:outline-none">
+                          <span class="block h-3 w-3 rounded-full border border-white bg-current transition-colors"></span>
+                        </button>
+                        <button data-collection-filter-price-slider-to-thumb
+                                type="button"
+                                class="absolute top-1/2 -mx-1 -translate-y-1/2 cursor-grab p-1 outline-none transition-transform duration-75 focus:scale-150 focus:text-secondary-outline active:cursor-grabbing hfa:outline-none">
+                          <span class="block h-3 w-3 rounded-full border border-white bg-current"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                {% when 'boolean' or 'list' %}
+
+                  <div data-collection-filter-container="no-toggle"
+                       class="relative top-full overflow-hidden transition-all ease-linear px-0.5 -mx-0.5"
+                       style="max-height: 0; opacity: 0">
+                    <div class="w-full py-3">
+
+                      <fieldset class="grid gap-3">
+                        {%- for value in filter.values -%}
+                          <label class="flex cursor-pointer items-center font-normal space-x-2 leading-[1.4] {% if value.count <= 0 and value.active != true %}opacity-40 !cursor-default{% endif %}">
+                            <span class="relative h-4 w-4">
+                              <input type="checkbox"
+                                     class="h-full w-full appearance-none border peer rounded-theme-sm border-theme-text bg-theme-bg"
+                                     {% if value.count <= 0 and value.active != true %}disabled="disabled"{% endif %}
+                                     name="{{ value.param_name }}"
+                                     value="{{ value.value }}"
+                                {% if value.active %}checked="checked"{% endif %} >
+                              <span class="absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 peer-checked:opacity-100">
+                                {% render '_icon', icon: 'check-mark', class: 'w-3.5 h-3.5 stroke-2 text-theme-text' %}
+                              </span>
+                            </span>
+                            <span class="truncate max-w-[220px]">
+                              {{ value.label }}
+                            </span>
+                            <span>{% if filters__count %}({{ value.count }}){% endif %}</span>
+                          </label>
+
+                        {%- endfor -%}
+                      </fieldset>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endunless %}
+
+          </div>
+        {%- endfor -%}
+      </form>
+    </main>
+    <footer class="z-10 absolute border-t border-t-gray-200 py-3 md:py-6 shadow-invert-md shadow-theme-text/5 bottom-0 w-full justify-end space-y-5 inset-x-0 px-4 bg-theme-bg">
+      <div class="mt-3 flex w-full items-center">
+        {% assign withActive = false %}
+        {%- for filter in search.filters -%}
+          {% case filter.type %}
+            {% when 'price_range' %}
+              {% if filter.max_value.value < filter.range_max or filter.min_value.value > 0 %}
+                {% assign withActive = filter.url_to_remove | split: "?" | first %}
+                {% break %}
+              {% endif %}
+            {% when 'list' or 'boolean' %}
+              {%- for value in filter.values -%}
+                {% if value.active %}
+                  {% assign withActive = filter.url_to_remove | split: "?" | first %}{% break %}
+                {% endif %}
+              {% endfor %}
+          {% endcase %}
+          {% if withActive %}{% break %}{% endif %}
+        {% endfor %}
+        {% if withActive %}
+          <a href="{{ withActive }}?sort_by={{ sort_by }}"
+             class="mr-2 button-primary mt-3--outline">
+            {{ "search_grid_with_filters.reset" | t }}
+          </a>
+        {% endif %}
+        <button type="submit"
+                form="form__collection-grid-filter--mobile--{{ section.id }}"
+                class="w-full button-primary">
+          {{ "search_grid_with_filters.apply" | t }}
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  {% render 'drawer-overlay' %}
+</div>
+
+{% schema %}
+{
+  "name": "Search grid with filters",
+  "enabled_on": {
+    "templates": [
+      "search"
+    ]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product Grid"
+    },
+    {
+      "id": "pagination_size",
+      "type": "range",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 16,
+      "label": "Products per page"
+    },
+    {
+      "type": "select",
+      "id": "columns__desktop",
+      "default": "lg:grid-cols-4 group-ac:lg:grid-cols-3",
+      "label": "Number of columns on Desktop / Filter Visible",
+      "options": [
+        {
+          "value": "lg:grid-cols-3 group-ac:lg:grid-cols-2",
+          "label": "3 / 2 columns"
+        },
+        {
+          "value": "lg:grid-cols-4 group-ac:lg:grid-cols-3",
+          "label": "4 / 3 columns"
+        },
+        {
+          "value": "lg:grid-cols-5 group-ac:lg:grid-cols-4",
+          "label": "5 / 4 columns"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns__mobile",
+      "default": "grid-cols-2",
+      "label": "Number of columns on mobile",
+      "options": [
+        {
+          "value": "grid-cols-1",
+          "label": "1 column"
+        },
+        {
+          "value": "grid-cols-2",
+          "label": "2 columns"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Filtering and sorting"
+    },
+    {
+      "type": "checkbox",
+      "id": "filters__show",
+      "default": true,
+      "label": "Show filters by default",
+      "info": "Customize [filters](/admin/menus)"
+    },
+    {
+      "type": "checkbox",
+      "id": "filters__count",
+      "label": "Show Filter Count"
+    },
+    {
+      "type": "checkbox",
+      "id": "filters__auto_apply",
+      "label": "Apply Filters Automatically",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sorting"
+    },
+    {
+      "type": "checkbox",
+      "id": "sort__show",
+      "default": true,
+      "label": "Enable sorting"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "richtext",
+      "id": "headings",
+      "label": "headings",
+      "info": "Use [headings] as placeholder.",
+      "default": "<h3>[headings]</h3>"
+    },
+    {
+      "type": "range",
+      "id": "headings_font",
+      "label": "HeadingsFont",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Filter Style Override",
+      "type": "filter_style",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Handle",
+          "info": "Needs to match the label in the Search & Discovery App."
+        },
+        {
+          "type": "radio",
+          "id": "style",
+          "label": "Style",
+          "default": "checkboxes",
+          "options": [
+            {
+              "value": "checkboxes",
+              "label": "Checkboxes"
+            },
+            {
+              "value": "tags",
+              "label": "Tags"
+            },
+            {
+              "value": "color",
+              "label": "Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Search grid with filters"
+    }
+  ]
+}
+{% endschema %}

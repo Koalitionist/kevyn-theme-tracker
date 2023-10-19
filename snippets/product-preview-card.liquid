@@ -1,0 +1,258 @@
+{% liquid
+  assign background_color = section.settings.card__background_color | default: settings.product_card__background_color
+
+  assign image__ratio = settings.product_card__image__ratio
+  assign image__background = settings.product_card__image__background
+  assign image__drop_shadow = settings.product_card__image__drop_shadow
+  assign image__margin_bottom = settings.product_card__image__margin_bottom
+  assign image__show_secondary = settings.product_card__image__show_secondary
+
+  assign labels__discount = settings.product_card__labels__discount
+  assign labels__responsive_visibility = settings.product_card__labels__responsive_visibility
+  assign labels__show = settings.product_card__labels__show
+
+  assign variant_count__responsive_visibility = settings.product_card__variant_count__responsive_visibility
+  assign variant_count__show = settings.product_card__variant_count__show
+  assign variant_count__show_hover = settings.product_card__variant_count__show_hover
+
+  assign title__margin_bottom = settings.product_card__title__margin_bottom
+  assign title_tag = settings.product_card__title__font_tag
+  assign title_font = settings.product_card__title__font
+
+
+  assign rating__margin_bottom = settings.product_card__rating__margin_bottom
+  assign rating__responsive_visibility = settings.product_card__rating__responsive_visibility
+  assign rating__show = settings.product_card__rating__show
+
+  assign description__show = settings.product_card__description__show
+
+  assign vendor__margin_bottom = settings.product_card__vendor__margin_bottom
+  assign vendor__responsive_visibility = settings.product_card__vendor__responsive_visibility
+  assign vendor__show = settings.product_card__vendor__show
+
+  assign price__margin_bottom = settings.product_card__price__margin_bottom
+  assign price__responsive_visibility = settings.product_card__price__responsive_visibility
+  assign price__show = settings.product_card__price__show
+
+  assign variant_selector__show = settings.product_card__variant_selector__show
+  assign variant_selector__color_list = settings.product_card__variant_selector__color_list
+
+  assign button__style = settings.product_card__button__style
+  assign button_single_variant_add_to_cart = settings.product_card__button_single_variant_add_to_cart
+
+%}
+
+{% liquid
+  assign handle = product.handle
+  assign compare_at_price = product.compare_at_price
+  assign price = product.price
+  assign available = product.available
+  assign url = product.url
+  assign featured_image = product.featured_image
+  assign images = product.images
+  assign variants = product.variants
+  assign metafields = product.metafields
+  assign title = product.title
+  assign id = product.id
+  assign vendor = product.vendor
+  assign options_with_values = product.options_with_values
+
+  unless product
+    assign compare_at_price = 8999
+    assign price = 6999
+    assign title = "Placeholder Product"
+    assign vendor = shop.name
+  endunless
+
+  unless available
+    assign sold_out = true
+    assign label__sold_out = true
+  endunless
+
+  assign imageClasses = 'w-full h-full object-cover inset-0 '
+  if image__drop_shadow
+    assign imageClasses = imageClasses | append: "drop-shadow-product"
+  endif
+
+  if settings.product_data__variants_color_swatches != blank
+    assign color_metafield_namespace = settings.product_data__variants_color_swatches | trim | split: "." | first
+    assign color_metafield_key = settings.product_data__variants_color_swatches | trim | split: "." | last
+  endif
+
+
+  assign color_filter_metafield = settings.collection__filter_variant_color_metafield
+  assign color_filter_namespace = color_filter_metafield | trim | split: '.' | first
+  assign color_filter_key = color_filter_metafield | trim | split: '.' | last
+
+  if variant_count__show_hover
+    assign variant_count__show_hover_classes = "opacity-0 group-hf:opacity-100"
+
+  endif
+
+%}
+
+
+<article class="product-preview-card overflow-hidden rounded-theme-lg flex flex-col space-y-1 relative items-stretch p-4 md:p-6 text-center {{ class }}" {{ html_attributes }}
+         style="background: {{ background_color }};">
+
+  {% comment %} IMAGE / LABEL / VARIANT COUNT CONTAINER {% endcomment %}
+  <a class="product-card__image grid relative outline-none hf:outline-none h-0 {{ image__ratio }}"
+     href="{% if is_collection %}{{ collection.url | split: '?' | first }}{% endif %}{{ url }}"
+     style="margin-bottom: {{ image__margin_bottom }}px"
+     aria-label="{{ title }}">
+    <div class="absolute inset-0 h-full w-full overflow-hidden"
+         style="background: {{ image__background }};">
+      {% render '_image', image: featured_image, width: 500, class: imageClasses, placeholder: 'product-1' %}
+    </div>
+    {% comment %} SECONDARY IMAGE {% endcomment %}
+    {% if image__show_secondary and images[1].src %}
+      <div class="absolute inset-0 h-full w-full overflow-hidden opacity-0 transition-all duration-75 hf:opacity-100"
+           style="background: {{ background_color }}">
+        <div
+            class="absolute inset-0"
+            style="background: {{ image__background }}"
+        ></div>
+
+        {% render '_image', image: images[1], width: 500, class: imageClasses, placeholder: 'product-2' %}
+      </div>
+    {% endif %}
+
+    {% comment %} VARIANT COUNT {% endcomment %}
+    {% if variant_count__show and variants.size > 1 %}
+      <div class="pointer-events-none absolute bottom-2 left-1/2 w-[calc(100%-16px)] -translate-x-1/2 rounded-theme-sm bg-white/80 px-2 py-2 text-center text-[11px] font-semibold transition-all duration-75 md:bottom-3 md:w-[calc(100%-24px)] md:text-xs {{ variant_count__responsive_visibility }} {{ variant_count__show_hover_classes }}">
+        Available in {{ variants.size }} variations
+      </div>
+    {% endif %}
+
+    {% comment %} LABELS {% endcomment %}
+    {% if labels__show %}
+      <div class="absolute top-3 right-3 max-w-[65%] flex flex-wrap -m-0.5 justify-end {{ labels__responsive_visibility }}">
+        {% for label in metafields.smart.product_labels.value %}
+          <div class="label label-item bg-primary-bg text-primary-text m-0.5">
+            {{ label }}
+          </div>
+        {% endfor %}
+        {% for label in metafields.smart.labels.value %}
+          <div class="label  m-0.5"
+               style="color: {{ label.color }}; background: {{ label.background_color }};">
+            {{ label.label_text }}
+          </div>
+        {% endfor %}
+        {% render '_price-label', product_or_variant: product, style: labels__discount %}
+
+        {% if sold_out %}
+          <div class="label-theme-inverted m-0.5">
+            {{ "product_preview_card.sold_out" | t }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </a>
+
+  <div class="relative flex flex-1 flex-col items-center gap-2 md:px-3 md:pb-3">
+    {% comment %} REVIEW STARS {% endcomment %}
+    {%- if rating__show -%}
+
+      {% liquid
+
+        assign type = settings.product_data__type
+        assign show_review_count = settings.product_data__show_review_count
+        assign show_0_reviews = settings.product_data__show_0_reviews
+        assign metafield_reviews_count = settings.product_data__metafield_reviews_count
+        assign metafield_rating = settings.product_data__metafield_rating
+        assign metafield_rating_average = settings.product_data__metafield_rating_average
+
+        case type
+          when 'shopify'
+            assign rating = product.metafields.reviews.rating
+            assign rating_count = product.metafields.reviews.rating_count
+          when 'rating'
+            assign rating_namespace = metafield_rating | trim | split: '.' | first
+            assign rating_selector = metafield_rating | trim | split: '.' | last
+            assign rating_count_namespace = metafield_reviews_count | trim | split: '.' | first
+            assign rating_count_selector = metafield_reviews_count | trim | split: '.' | last
+
+            assign rating = product.metafields[rating_namespace][rating_selector]
+            assign rating_count = product.metafields[rating_count_namespace][rating_count_selector]
+          when 'reviews_rating'
+            assign rating_namespace = metafield_rating_average | trim | split: '.' | first
+            assign rating_selector = metafield_rating_average | trim | split: '.' | last
+            assign rating_count_namespace = metafield_reviews_count | trim | split: '.' | first
+            assign rating_count_selector = metafield_reviews_count | trim | split: '.' | last
+
+            assign rating = product.metafields[rating_namespace][rating_selector]
+            assign rating_count = product.metafields[rating_count_namespace][rating_count_selector]
+
+        endcase
+
+        if rating_count.type == null
+          assign rating_count = rating_count | times: 1
+        endif
+        if rating.type == null
+          assign rating = rating | times: 1.0
+        endif
+        if rating.value
+          assign rating = rating.value
+        endif
+      %}
+
+      {% assign rating_count = rating_count | times: 1 %}
+
+      {% if rating_count and show_0_reviews or rating_count > 0 %}
+        <figure class="flex items-center mt-2 {{ rating__responsive_visibility }}"
+                style="margin-bottom: {{ rating__margin_bottom }}px">
+          {% render '_star-rating', rating: rating, class: "md:h-4 h-3 md:space-x-0.5 space-x-px", id_prefix: product.id %}
+          <figcaption class="ml-2 whitespace-nowrap leading-[1] _h6 !font-normal"
+                      data-card-reviews-text>
+            {% if show_review_count %}
+              {% if rating_count %}
+                {{ rating_count }} review{% if rating_count != 1 %}s{% endif %}
+              {% else %}
+                {{ "product_preview_card.no_reviews" | t }}
+              {% endif %}
+            {% endif %}
+          </figcaption>
+        </figure>
+      {% endif %}
+    {%- endif -%}
+
+    {% comment %} PRICE {% endcomment %}
+    {% if price__show %}
+      <div class="product-card__price flex items-center justify-center gap-1 {{ price__responsive_visibility }}"
+           style="margin-bottom: {{ price__margin_bottom }}px">
+        {% render '_price', product_or_variant: product, class: "max-md:!text-[13px]" %}
+        {{ product.metafields.smart.price_addon_text }}
+      </div>
+    {% endif %}
+
+    {% comment %} TITLE {% endcomment %}
+    <div style="margin-bottom: {{ title__margin_bottom }}px"
+         class="product-card__title">
+      <a class="outline-none hf:outline-none hf:underline product-card-title  max-md:!text-[13px]"
+         href="{% if is_collection %}{{ collection.url | split: '?' | first }}{% endif %}{{ url }}">
+        {{ title }}
+      </a>
+    </div>
+
+
+    {% comment %} VENDOR {% endcomment %}
+    {% if vendor__show %}
+      <h2 class="product-card__vendor inline-flex text-sm text-theme-text/60 {{ vendor__responsive_visibility }}"
+          style="margin-bottom: {{ vendor__margin_bottom }}px">
+        <a href="{{ routes.collections_url }}/vendors?q={{ vendor | url_escape }}"
+           class="hf:underline"
+           title="{{ vendor }}">
+          {{ vendor }}
+        </a>
+      </h2>
+    {% endif %}
+
+    {% comment %} SHORT DESCRIPTION {% endcomment %}
+    {%- if description__show and metafields.smart.short_description != blank -%}
+      <div class="product-card__description">
+        {% render 'richtext', type: 1, content: metafields.smart.short_description, class: "_h6 !font-normal" %}
+      </div>
+    {%- endif -%}
+  </div>
+</article>

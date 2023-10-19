@@ -1,0 +1,698 @@
+{
+  "sections": {
+    "product": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>[title]<\/h2>",
+            "title_font": 3,
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-12",
+            "custom_css": ""
+          }
+        },
+        "3af4ab2c-23fc-4c51-965c-c14550ff86d6": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-12",
+            "custom_css": ""
+          }
+        },
+        "15a9a450-42c9-4fc2-ac75-45d34ca561f8": {
+          "type": "pre_order",
+          "disabled": true,
+          "settings": {
+            "preorder_date": "none",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "2d7820c8-67fd-4dd2-9ace-7f26070531ab": {
+          "type": "product_sibling",
+          "disabled": true,
+          "settings": {
+            "selector": "color",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "eff4baba-f840-4c71-b23d-d00a9607244b": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "threshold": 5,
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "6d9e4d3c-db73-44e5-9494-8aed9804461b": {
+          "type": "variant_selector",
+          "settings": {
+            "disable_unavailable": true,
+            "image_selector": false,
+            "color_selector": true,
+            "color_selector__source": "via_option",
+            "color_selector_size": 40,
+            "color_selector_radius": 32,
+            "color_list": "color,colour,couleur,cor,colore,farbe,색,色,カラー,färg,farve,szín,barva",
+            "default_type": "select",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-12",
+            "custom_css": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-6",
+            "button__style": "button-primary",
+            "custom_css": ""
+          }
+        },
+        "16eae1aa-2b18-4ddb-b435-b481ac775019": {
+          "type": "dynamic_buy_buttons",
+          "settings": {
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-6",
+            "custom_css": ""
+          }
+        },
+        "84f1fb2b-14dd-43ec-a162-ee6c55dd2076": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "title": "<h6>AirPods Pro 2 Cases feature cut-outs for both lanyard holder and speaker<\/h6>",
+            "title_font": 1,
+            "image__show_secondary": false,
+            "source": "complementary",
+            "products": [
+
+            ],
+            "hide_upsell_products": false,
+            "style": "large",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "236d893a-09fb-41d6-9a92-f6b89fcc9dc3": {
+          "type": "payment_terms",
+          "settings": {
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "grid_span": "col-span-12",
+            "custom_css": ""
+          }
+        },
+        "361aa43a-7115-4d90-913b-6c5469523931": {
+          "type": "icon_with_text",
+          "disabled": true,
+          "settings": {
+            "layout": "flex-row",
+            "item_layout": "flex-row",
+            "size": 20,
+            "content_font": 1,
+            "icon_1": "check-square-broken",
+            "heading_1": "<h6>Lifetime Warranty<\/h6>",
+            "icon_2": "check-square-broken",
+            "heading_2": "<h6>Loyalty Rewards<\/h6>",
+            "icon_3": "check-square-broken",
+            "heading_3": "<h6>Real Leather<\/h6>",
+            "icon_4": "check-square-broken",
+            "heading_4": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "2b596108-d929-44dd-9aa3-0e8946ad7e24": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Leather",
+            "icon": "check_mark",
+            "content": "<p><\/p>",
+            "page": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "0e9224d8-26f8-4bae-8b3e-44dd0b6ec132": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Features",
+            "icon": "check_mark",
+            "content": "<p>This feature set is global to all products<\/p>",
+            "page": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "f34f7772-9ad5-4f4c-af9d-75d74ab09c8c": {
+          "type": "description",
+          "settings": {
+            "style": "accordion",
+            "uncollapse": false,
+            "custom_tag_overrides": "Style Notes,\nSize & Fit,\nDetails",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "4c3f920b-1d2d-4bd9-9527-5eee483e1f70": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.how_to_use_label.value }}",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.my_fields.how_to_use_text | metafield_tag }}<\/p>",
+            "page": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "d61b7de2-6f58-4859-8c3a-e76a8b3ce1f4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.pro_tips_label.value }}",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.my_fields.pro_tips_text | metafield_tag }}<\/p>",
+            "page": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        },
+        "1d0e6c4d-7805-483e-a9ea-8ac8b2537ef3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.my_fields.ingredients_label.value }}",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.my_fields.ingredients_text | metafield_tag }}<\/p>",
+            "page": "",
+            "margin_bottom": 0,
+            "margin_top": 0,
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "3af4ab2c-23fc-4c51-965c-c14550ff86d6",
+        "price",
+        "15a9a450-42c9-4fc2-ac75-45d34ca561f8",
+        "2d7820c8-67fd-4dd2-9ace-7f26070531ab",
+        "eff4baba-f840-4c71-b23d-d00a9607244b",
+        "6d9e4d3c-db73-44e5-9494-8aed9804461b",
+        "quantity_selector",
+        "buy_buttons",
+        "16eae1aa-2b18-4ddb-b435-b481ac775019",
+        "84f1fb2b-14dd-43ec-a162-ee6c55dd2076",
+        "236d893a-09fb-41d6-9a92-f6b89fcc9dc3",
+        "361aa43a-7115-4d90-913b-6c5469523931",
+        "2b596108-d929-44dd-9aa3-0e8946ad7e24",
+        "0e9224d8-26f8-4bae-8b3e-44dd0b6ec132",
+        "f34f7772-9ad5-4f4c-af9d-75d74ab09c8c",
+        "4c3f920b-1d2d-4bd9-9527-5eee483e1f70",
+        "d61b7de2-6f58-4859-8c3a-e76a8b3ce1f4",
+        "1d0e6c4d-7805-483e-a9ea-8ac8b2537ef3"
+      ],
+      "settings": {
+        "sticky": true,
+        "breadcrumbs__show": false,
+        "gallery__layout": "vertical",
+        "gallery__zoom": true,
+        "gallery__zoom_scale": 230,
+        "gallery__first_image_full": true,
+        "gallery__show_thumbnails": "responsive",
+        "gallery__size": "large",
+        "gallery__aspect_ratio": "auto",
+        "hide_not_selected_variant_images": true,
+        "variants_multi_images": "via_metafield",
+        "variants_image_metafield": "custom.variant_images",
+        "gallery__loop_videos": false,
+        "grid_gap": 12,
+        "section_layout": "container-bg-full",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "98428de0-8867-4d8b-8ec2-a494d1cd043f": {
+      "type": "product-add-to-cart-bar",
+      "blocks": {
+        "09ec4484-8156-47fb-8211-55d86a630d02": {
+          "type": "link",
+          "settings": {
+            "title": "<p>FAQ<\/p>",
+            "url": "shopify:\/\/pages\/faqs"
+          }
+        },
+        "5fe7643f-170c-4681-b4a9-daa5796e8f0c": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Find A Store<\/p>",
+            "url": "shopify:\/\/pages\/find-a-store"
+          }
+        },
+        "1269ab68-5ca9-4f38-a3f8-942b37b046ce": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Reviews<\/p>",
+            "url": "shopify:\/\/pages\/reviews"
+          }
+        },
+        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Why Kevyn Aucoin<\/p>",
+            "url": "shopify:\/\/pages\/about-kevyn-aucoin-beauty"
+          }
+        }
+      },
+      "block_order": [
+        "09ec4484-8156-47fb-8211-55d86a630d02",
+        "5fe7643f-170c-4681-b4a9-daa5796e8f0c",
+        "1269ab68-5ca9-4f38-a3f8-942b37b046ce",
+        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7"
+      ],
+      "settings": {
+        "upsell_product": "",
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "4da73737-842b-49f3-a203-eb1a1773407b": {
+      "type": "richtext",
+      "blocks": {
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>KEVYNSPIRATION<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-4": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>“Blush can bring a glow and bloom of youth to your face. Coloring is simple, too. Pink and apricot are my favorite colors. Occasionally, I'll use something else for a special effect, but more or less, it is foolproof. And don't just apply it to the cheeks either. A light application of blush, to the temples, forehead and chin brings the face together. Liquid or creme blush is best applied before powder. That way it blends in easier and with loose powder over it, it looks like it's coming from within.”<br\/><br\/>— Kevyn Aucoin<\/h6><h6><\/h6><h6><\/h6><p><\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-0",
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-1",
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-2",
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-3",
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-4",
+        "template--14834750029911__4da73737-842b-49f3-a203-eb1a1773407b-16892788425a1df5d9-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "af9eecd9-4e8e-4fcd-ae30-574ca7e997f9": {
+      "type": "image-with-text",
+      "blocks": {
+        "e78fb07c-4d6f-4ad7-a466-e4204ae81fc6": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>BLUSH IS THE NEW BOLD<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "99644c30-d8aa-4d86-9442-5740430d98af": {
+          "type": "text",
+          "settings": {
+            "title": "<p>“Blush is the finishing touch. No matter the time of the year, this cream blush is the perfect tool for a natural healthy lift glow. I love this stick because you can never do wrong: it melds seamlessly with the skin, resulting in a flawless and radiant appearance.”<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ff61e55e-e446-4cbe-90d2-b121227ee1a2": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>— Drita Paljevic<br\/>Make Up Artist and Kevyn Aucoin Brand Ambassador<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e78fb07c-4d6f-4ad7-a466-e4204ae81fc6",
+        "99644c30-d8aa-4d86-9442-5740430d98af",
+        "ff61e55e-e446-4cbe-90d2-b121227ee1a2"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_SIGNATURE_SCULPTING_STICKS_COLOR_STICKS_Group_Swatch_1200x1200px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "07262f7f-c06b-4421-a43f-86b710eaa09a": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-0": {
+          "type": "heading",
+          "settings": {
+            "preheading": "<h2>You May Also Like<\/h2>",
+            "preheading_font": 3,
+            "title": "",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 22
+          }
+        },
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-1": {
+          "type": "source_products",
+          "disabled": true,
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "best-sellers"
+          }
+        },
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-3": {
+          "type": "source_metafield",
+          "disabled": true,
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-0",
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-1",
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-2",
+        "template--18752996901183__07262f7f-c06b-4421-a43f-86b710eaa09a-16860959139078b909-3"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": true,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "1689274456b42fb03a": {
+      "type": "apps",
+      "blocks": {
+        "8b690033-bd74-4b4d-9730-3d3a1c53a0e6": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "8b690033-bd74-4b4d-9730-3d3a1c53a0e6"
+      ],
+      "settings": {
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "b87d756b-cc56-4844-9812-087ed525f8d0": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 230,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "product-siblings": {
+      "type": "product-siblings",
+      "blocks": {
+        "7edf88c3-112a-4148-abe6-8f9a8952111a": {
+          "type": "siblings",
+          "settings": {
+            "title": "Color",
+            "products": [
+
+            ],
+            "title_type": "metafield",
+            "options": ""
+          }
+        }
+      },
+      "block_order": [
+        "7edf88c3-112a-4148-abe6-8f9a8952111a"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "product",
+    "98428de0-8867-4d8b-8ec2-a494d1cd043f",
+    "4da73737-842b-49f3-a203-eb1a1773407b",
+    "af9eecd9-4e8e-4fcd-ae30-574ca7e997f9",
+    "07262f7f-c06b-4421-a43f-86b710eaa09a",
+    "1689274456b42fb03a",
+    "b87d756b-cc56-4844-9812-087ed525f8d0",
+    "product-siblings"
+  ]
+}

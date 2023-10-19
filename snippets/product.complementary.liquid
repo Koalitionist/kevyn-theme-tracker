@@ -1,0 +1,110 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign image__show_secondary = block.settings.image__show_secondary
+  assign source = block.settings.source
+  assign products = block.settings.products
+  assign hide_upsell_products = block.settings.hide_upsell_products
+  assign style = block.settings.style
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign upsellProducts = product.metafields.shopify--discovery--product_recommendation.complementary_products.value %}
+{% assign size = upsellProducts.size | plus: products.count %}
+
+{%- capture filterTag -%}
+  {{- settings.custom_hide_condition -}}
+{%- endcapture -%}
+{% assign filterTag = filterTag | trim | strip_newlines %}
+
+<div data-product-block="complementary"
+     class="col-span-12 {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  <div>
+    {% render 'richtext', type: title_font, content: title %}
+    <main class="relative py-2">
+      {% if size == 1 and style == "small" %}
+        <div>
+          {% for item in upsellProducts %}
+            {% assign complementaryClass = "hidden" %}
+            {% if item.id == product.id %}
+              {% continue %}
+            {% endif %}
+            {% unless item.tags contains filterTag %}
+              {% case style %}
+                {% when 'small' %}
+                  {% render 'product-card--flat', product %}
+                {% when 'large' %}
+                  {% render 'product-card', product: item, settings: section.settings %}
+              {% endcase %}
+            {% endunless %}
+          {% endfor %}
+
+          {% for item in products %}
+            {% assign currentClass = complementaryClass %}
+            {% if item.id == product.id %}
+              {% assign currentClass = complementaryClass | replace: "hidden", "" | append: "hidden" %}
+            {% endif %}
+            {% unless item.tags contains filterTag %}
+              {% case style %}
+                {% when 'small' %}
+                  {% render 'product-card--flat', product: item, settings: section.settings, class: currentClass %}
+                {% when 'large' %}
+                  {% render 'product-card', product: item, settings: section.settings, class: currentClass %}
+              {% endcase %}
+
+            {% endunless %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="grid gap-4 grid-flow-col-dense overflow-x-auto scroll-pl-8 py-8 -my-8 relative snap-mandatory snap-x "
+             style="grid-auto-columns: {% if style== "small" %}170px{% else %}calc(50% - 16px){% endif %};">
+          {% assign complementaryClass = "" %}
+
+          {% for item in upsellProducts %}
+            {% assign complementaryClass = "hidden" %}
+            {% if item.id == product.id %}
+              {% continue %}
+            {% endif %}
+            {% unless item.tags contains filterTag %}
+
+              {% case style %}
+                {% when 'small' %}
+                  {% render '_product-card--small', product: item, settings: section.settings %}
+                {% when 'large' %}
+                  {% render '_product-card', product: item, settings: section.settings %}
+              {% endcase %}
+
+            {% endunless %}
+          {% endfor %}
+
+          {% for item in products %}
+            {% assign currentClass = complementaryClass %}
+            {% if item.id == product.id %}
+              {% assign currentClass = complementaryClass | replace: "hidden", "" | append: "hidden" %}
+            {% endif %}
+            {% unless item.tags contains filterTag %}
+              {% render '_product-card--small', product: item, settings: section.settings, class: currentClass %}
+
+              {% case style %}
+                {% when 'small' %}
+                  {% render '_product-card--small', product: item, settings: section.settings, class: currentClass %}
+                {% when 'large' %}
+                  {% render '_product-card', product: item, settings: section.settings, class: currentClass %}
+              {% endcase %}
+
+            {% endunless %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </main>
+  </div>
+</div>
+
+

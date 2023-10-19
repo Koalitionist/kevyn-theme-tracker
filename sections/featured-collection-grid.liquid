@@ -1,0 +1,510 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign products = section.settings.products
+  assign _collection = section.settings.collection
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign block = section.blocks[0]
+  assign type = block.type | default: "none"
+
+  if button_primary__text and button_primary__url
+    assign button_primary__show = true
+  endif
+
+  if button_secondary__text and button_secondary__url
+    assign button_secondary__show = true
+  endif
+
+  case type
+    when 'image'
+      assign gridClasses = 'grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 md:[&_>_*:nth-of-type(n+7)]:hidden max-lg:[&_>_*:nth-of-type(n+5)]:hidden'
+    when 'content'
+      assign gridClasses = 'grid-cols-4 md:grid-cols-6 lg:grid-cols-8 max-xl:md:[&_>_*:nth-of-type(n+7)]:hidden max-lg:[&_>_*:nth-of-type(n+5)]:hidden xl:[&_>_*:nth-of-type(n+8)]:hidden'
+    when 'none'
+      assign gridClasses = 'grid-cols-4 md:grid-cols-6 xl:grid-cols-8 max-xl:[&_>_*:nth-of-type(n+7)]:hidden max-md:[&_>_*:nth-of-type(n+5)]:hidden'
+  endcase
+%}
+
+<section id="{{ sectionID }}"
+         class="featured-collection-grid container-bg-full {{ color_scheme }} {{ section_layout }} {{ padding_top }} {{ padding_bottom }} {{ responsive_visibility }}">
+  <div class="grid gap-2 md:gap-x-4 md:gap-y-6 {{ gridClasses }}">
+    {% case block.type %}
+      {% when 'image' %}
+        {% render 'featured-collection-grid.image', block: block, _collection: _collection %}
+      {% when 'content' %}
+        {% render 'featured-collection-grid.content', block: block %}
+    {% endcase %}
+    {% assign count = 8 %}
+    {% assign productIds = "" %}
+    {% for _product in products limit: 8 %}
+      {% assign count = count | minus: 1 %}
+      {% assign productIds = productIds | append: "|||" | append: _product.id %}
+      {% render 'product-card', product: _product, class: 'col-span-2' %}
+    {% endfor %}
+
+    {% for _product in _collection.products %}
+      {% if productIds contains _product.id %}{% continue %}{% endif %}
+      {% if count <= 0 %}
+        {% break %}
+      {% endif %}
+      {% assign count = count | minus: 1 %}
+      {% assign productIds = productIds | append: "|||" | append: _product.id %}
+      {% render 'product-card', product: _product, class: 'col-span-2' %}
+    {% endfor %}
+
+    {% if _collection.products.size == 0 or _collection.products == null %}
+      {% assign showSamples = true %}
+    {% endif %}
+
+    {% if products.count == 0 and showSamples %}
+      {% for i in (0..5) %}
+        {% render 'product-card', class: 'col-span-2' %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Collection Grid",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "max_blocks": 1,
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "color_background",
+          "id": "image__overlay",
+          "label": "Overlay",
+          "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "default": "bg-theme-bg text-theme-text color-inherit",
+          "options": [
+            {
+              "value": "bg-theme-bg text-theme-text color-inherit",
+              "label": "Inherit from parent/theme"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-1",
+              "label": "Color group 1"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-2",
+              "label": "Color group 2"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-3",
+              "label": "Color group 3"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-4",
+              "label": "Color group 4"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-5",
+              "label": "Color group 5"
+            }
+          ],
+          "label": "Color scheme"
+        }
+      ]
+    },
+    {
+      "name": "Content",
+      "type": "content",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "color_background",
+          "id": "image__overlay",
+          "label": "Overlay",
+          "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "richtext",
+          "id": "preheading",
+          "label": "Pre heading"
+        },
+        {
+          "type": "range",
+          "id": "preheading_font",
+          "label": "Pre heading Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "title_font",
+          "label": "Title Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "range",
+          "id": "subtitle_font",
+          "label": "Subtitle Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Richtext"
+        },
+        {
+          "type": "range",
+          "id": "content_font",
+          "label": "Content Font",
+          "default": 1,
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "info": "Typography Groups 1 - 3"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary__text",
+          "label": "Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary__url",
+          "label": "URL",
+          "default": "/"
+        },
+        {
+          "type": "radio",
+          "id": "button_secondary__style",
+          "label": "Style",
+          "default": "button-primary--outline",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "radio",
+          "id": "align__vertical",
+          "label": "Vertical Alignment",
+          "default": "justify-center",
+          "options": [
+            {
+              "value": "justify-start",
+              "label": "Top"
+            },
+            {
+              "value": "justify-center",
+              "label": "Center"
+            },
+            {
+              "value": "justify-end",
+              "label": "Bottom"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "align__horizontal",
+          "label": "Horizontal Alignment",
+          "default": "items-center text-center",
+          "options": [
+            {
+              "value": "items-start text-left",
+              "label": "Left"
+            },
+            {
+              "value": "items-center text-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end text-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "default": "bg-theme-bg text-theme-text color-inherit",
+          "options": [
+            {
+              "value": "bg-theme-bg text-theme-text color-inherit",
+              "label": "Inherit from parent/theme"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-1",
+              "label": "Color group 1"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-2",
+              "label": "Color group 2"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-3",
+              "label": "Color group 3"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-4",
+              "label": "Color group 4"
+            },
+            {
+              "value": "bg-theme-bg text-theme-text color-group-5",
+              "label": "Color group 5"
+            }
+          ],
+          "label": "Color scheme"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection Grid",
+      "settings": {
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md"
+      },
+      "blocks": [
+        {
+          "type": "content",
+          "settings": {
+            "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.12) 100%)",
+            "preheading": "<h3>Content</h3>",
+            "preheading_font": 1,
+            "title": "<h2>Yeah, well, history is gonna change.</h2>",
+            "title_font": 1,
+            "content": "<p>Stand tall, boy. Have some respect for yourself. Don't you know, if you let people walk over you now, they'll be walking over you for the rest of your life. Look at me. You think I'm gonna spend the rest of my life in this slop house?</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

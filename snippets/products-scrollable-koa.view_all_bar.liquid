@@ -1,0 +1,28 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign view_all_text = block.settings.view_all_text
+  assign view_all_font = block.settings.view_all_font
+  assign url = block.settings.url
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign title = title | default: default_title %}
+
+<header class="container flex justify-between mb-3 relative" {{ block.shopify_attributes }}
+        style="margin-bottom: {{ margin_bottom }}px">
+
+  <div>
+    {% render 'richtext', type: title_font, content: title %}
+  </div>
+
+  <a href="{{ url | default: default_url }}"
+     class="hf:underline group flex gap-2 items-center text-secondary-text">
+    {% render 'richtext', type: view_all_font, content: view_all_text, class: "text-secondary-text" %}
+
+    {% render '_icon', icon: "arrow-right", class: 'h-5 w-5' %}
+  </a>
+</header>
+

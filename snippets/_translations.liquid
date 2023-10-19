@@ -1,0 +1,285 @@
+<script>
+  window.theme_content = {
+  "bundle": {
+    "unlock": "{{ 'bundle.unlock' | t }}",
+    "begin_adding": "{{ 'bundle.begin_adding' | t }}",
+    "close": "{{ 'bundle.close' | t }}",
+    "show_previous": "{{ 'bundle.show_previous' | t }}",
+    "show_next": "{{ 'bundle.show_next' | t }}"
+  },
+  "bundle_koa": {
+    "unlock": "{{ 'bundle_koa.unlock' | t }}",
+    "begin_adding": "{{ 'bundle_koa.begin_adding' | t }}",
+    "close": "{{ 'bundle_koa.close' | t }}",
+    "show_previous": "{{ 'bundle_koa.show_previous' | t }}",
+    "show_next": "{{ 'bundle_koa.show_next' | t }}"
+  },
+  "cart_drawer": {
+    "checkout": "{{ 'cart_drawer.checkout' | t }}",
+    "subtotal": "{{ 'cart_drawer.subtotal' | t }}",
+    "shipping_and": "{{ 'cart_drawer.shipping_and' | t }}",
+    "added": "{{ 'cart_drawer.added' | t }}",
+    "close": "{{ 'cart_drawer.close' | t }}"
+  },
+  "collection_grid_with_filters": {
+    "reset": "{{ 'collection_grid_with_filters.reset' | t }}",
+    "apply": "{{ 'collection_grid_with_filters.apply' | t }}",
+    "hide_filters": "{{ 'collection_grid_with_filters.hide_filters' | t }}",
+    "show_filters": "{{ 'collection_grid_with_filters.show_filters' | t }}",
+    "sort_by": "{{ 'collection_grid_with_filters.sort_by' | t }}",
+    "featured": "{{ 'collection_grid_with_filters.featured' | t }}",
+    "best_selling": "{{ 'collection_grid_with_filters.best_selling' | t }}",
+    "alphabetically_a_z": "{{ 'collection_grid_with_filters.alphabetically_a_z' | t }}",
+    "alphabetically_z_a": "{{ 'collection_grid_with_filters.alphabetically_z_a' | t }}",
+    "price_low": "{{ 'collection_grid_with_filters.price_low' | t }}",
+    "price_high": "{{ 'collection_grid_with_filters.price_high' | t }}",
+    "date_old": "{{ 'collection_grid_with_filters.date_old' | t }}",
+    "date_new": "{{ 'collection_grid_with_filters.date_new' | t }}",
+    "apply_sort": "{{ 'collection_grid_with_filters.apply_sort' | t }}",
+    "clear_all": "{{ 'collection_grid_with_filters.clear_all' | t }}",
+    "no_products": "{{ 'collection_grid_with_filters.no_products' | t }}",
+    "use_fewer": "{{ 'collection_grid_with_filters.use_fewer' | t }}",
+    "close_filters": "{{ 'collection_grid_with_filters.close_filters' | t }}"
+  },
+  "drawer_menu": {
+    "close_nav": "{{ 'drawer_menu.close_nav' | t }}"
+  },
+  "footer": {
+    "follow_us": "{{ 'footer.follow_us' | t }}",
+    "newsletter": "{{ 'footer.newsletter' | t }}",
+    "thank_you": "{{ 'footer.thank_you' | t }}"
+  },
+  "main_article": {
+    "comments": "{{ 'main_article.comments' | t }}",
+    "no_comments": "{{ 'main_article.no_comments' | t }}",
+    "comments_2": "{{ 'main_article.comments_2' | t }}",
+    "add_a": "{{ 'main_article.add_a' | t }}",
+    "all_comments": "{{ 'main_article.all_comments' | t }}",
+    "previous_article": "{{ 'main_article.previous_article' | t }}",
+    "next_article": "{{ 'main_article.next_article' | t }}",
+    "related_articles": "{{ 'main_article.related_articles' | t }}",
+    "related_products": "{{ 'main_article.related_products' | t }}"
+  },
+  "main_blog": {
+    "view_all": "{{ 'main_blog.view_all' | t }}"
+  },
+  "main_cart": {
+    "my_cart": "{{ 'main_cart.my_cart' | t }}",
+    "product": "{{ 'main_cart.product' | t }}",
+    "sku": "{{ 'main_cart.sku' | t }}",
+    "quantity": "{{ 'main_cart.quantity' | t }}",
+    "total": "{{ 'main_cart.total' | t }}",
+    "shipping_and": "{{ 'main_cart.shipping_and' | t }}",
+    "checkout": "{{ 'main_cart.checkout' | t }}",
+    "this_is": "{{ 'main_cart.this_is' | t }}",
+    "cart_note": "{{ 'main_cart.cart_note' | t }}",
+    "your_cart": "{{ 'main_cart.your_cart' | t }}",
+    "have_an": "{{ 'main_cart.have_an' | t }}",
+    "log_in": "{{ 'main_cart.log_in' | t }}",
+    "to_check": "{{ 'main_cart.to_check' | t }}",
+    "continue_shopping": "{{ 'main_cart.continue_shopping' | t }}"
+  },
+  "main_collection_filter_sort_bar": {
+    "featured": "{{ 'main_collection_filter_sort_bar.featured' | t }}",
+    "best_selling": "{{ 'main_collection_filter_sort_bar.best_selling' | t }}",
+    "alphabetically_a_z": "{{ 'main_collection_filter_sort_bar.alphabetically_a_z' | t }}",
+    "alphabetically_z_a": "{{ 'main_collection_filter_sort_bar.alphabetically_z_a' | t }}",
+    "price_low": "{{ 'main_collection_filter_sort_bar.price_low' | t }}",
+    "price_high": "{{ 'main_collection_filter_sort_bar.price_high' | t }}",
+    "date_old": "{{ 'main_collection_filter_sort_bar.date_old' | t }}",
+    "date_new": "{{ 'main_collection_filter_sort_bar.date_new' | t }}",
+    "reset": "{{ 'main_collection_filter_sort_bar.reset' | t }}",
+    "apply_filters": "{{ 'main_collection_filter_sort_bar.apply_filters' | t }}",
+    "filters": "{{ 'main_collection_filter_sort_bar.filters' | t }}",
+    "sort_by": "{{ 'main_collection_filter_sort_bar.sort_by' | t }}",
+    "apply_sort": "{{ 'main_collection_filter_sort_bar.apply_sort' | t }}",
+    "sort": "{{ 'main_collection_filter_sort_bar.sort' | t }}",
+    "clear_all": "{{ 'main_collection_filter_sort_bar.clear_all' | t }}"
+  },
+  "main_collection_product_grid": {
+    "no_products": "{{ 'main_collection_product_grid.no_products' | t }}",
+    "use_fewer": "{{ 'main_collection_product_grid.use_fewer' | t }}"
+  },
+  "main_collections_list": {
+    "no_collections": "{{ 'main_collections_list.no_collections' | t }}"
+  },
+  "main_order": {
+    "account": "{{ 'main_order.account' | t }}",
+    "order_history": "{{ 'main_order.order_history' | t }}",
+    "addresses": "{{ 'main_order.addresses' | t }}",
+    "log_out": "{{ 'main_order.log_out' | t }}",
+    "order": "{{ 'main_order.order' | t }}",
+    "back_to": "{{ 'main_order.back_to' | t }}",
+    "product": "{{ 'main_order.product' | t }}",
+    "sku": "{{ 'main_order.sku' | t }}",
+    "quantity": "{{ 'main_order.quantity' | t }}",
+    "total": "{{ 'main_order.total' | t }}",
+    "subtotal": "{{ 'main_order.subtotal' | t }}",
+    "discount": "{{ 'main_order.discount' | t }}",
+    "shipping": "{{ 'main_order.shipping' | t }}",
+    "tax_included": "{{ 'main_order.tax_included' | t }}",
+    "tax_excluded": "{{ 'main_order.tax_excluded' | t }}",
+    "refunded_amount": "{{ 'main_order.refunded_amount' | t }}",
+    "billing_address": "{{ 'main_order.billing_address' | t }}",
+    "no_billing": "{{ 'main_order.no_billing' | t }}",
+    "shipping_address": "{{ 'main_order.shipping_address' | t }}",
+    "no_shipping": "{{ 'main_order.no_shipping' | t }}"
+  },
+  "main_search_filters": {
+    "relevance": "{{ 'main_search_filters.relevance' | t }}",
+    "featured": "{{ 'main_search_filters.featured' | t }}",
+    "best_selling": "{{ 'main_search_filters.best_selling' | t }}",
+    "alphabetically_a_z": "{{ 'main_search_filters.alphabetically_a_z' | t }}",
+    "alphabetically_z_a": "{{ 'main_search_filters.alphabetically_z_a' | t }}",
+    "price_low": "{{ 'main_search_filters.price_low' | t }}",
+    "price_high": "{{ 'main_search_filters.price_high' | t }}",
+    "date_old": "{{ 'main_search_filters.date_old' | t }}",
+    "date_new": "{{ 'main_search_filters.date_new' | t }}",
+    "reset": "{{ 'main_search_filters.reset' | t }}",
+    "apply_filters": "{{ 'main_search_filters.apply_filters' | t }}",
+    "filters": "{{ 'main_search_filters.filters' | t }}",
+    "sort_by": "{{ 'main_search_filters.sort_by' | t }}",
+    "apply_sort": "{{ 'main_search_filters.apply_sort' | t }}",
+    "sort": "{{ 'main_search_filters.sort' | t }}",
+    "clear_all": "{{ 'main_search_filters.clear_all' | t }}"
+  },
+  "main_search_input": {
+    "search_results": "{{ 'main_search_input.search_results' | t }}",
+    "article": "{{ 'main_search_input.article' | t }}",
+    "page": "{{ 'main_search_input.page' | t }}",
+    "product": "{{ 'main_search_input.product' | t }}",
+    "apply_changes": "{{ 'main_search_input.apply_changes' | t }}"
+  },
+  "password_footer": {
+    "follow_us": "{{ 'password_footer.follow_us' | t }}",
+    "newsletter": "{{ 'password_footer.newsletter' | t }}",
+    "thank_you": "{{ 'password_footer.thank_you' | t }}"
+  },
+  "product_add_to_cart_bar": {
+    "add_to": "{{ 'product_add_to_cart_bar.add_to' | t }}"
+  },
+  "product_drawer": {
+    "close": "{{ 'product_drawer.close' | t }}"
+  },
+  "product_quick_view": {
+    "close": "{{ 'product_quick_view.close' | t }}"
+  },
+  "product_quick_view_koa": {
+    "close": "{{ 'product_quick_view_koa.close' | t }}"
+  },
+  "search_grid_with_filters": {
+    "reset": "{{ 'search_grid_with_filters.reset' | t }}",
+    "apply": "{{ 'search_grid_with_filters.apply' | t }}",
+    "hide_filters": "{{ 'search_grid_with_filters.hide_filters' | t }}",
+    "show_filters": "{{ 'search_grid_with_filters.show_filters' | t }}",
+    "sort_by": "{{ 'search_grid_with_filters.sort_by' | t }}",
+    "relevance": "{{ 'search_grid_with_filters.relevance' | t }}",
+    "featured": "{{ 'search_grid_with_filters.featured' | t }}",
+    "best_selling": "{{ 'search_grid_with_filters.best_selling' | t }}",
+    "alphabetically_a_z": "{{ 'search_grid_with_filters.alphabetically_a_z' | t }}",
+    "alphabetically_z_a": "{{ 'search_grid_with_filters.alphabetically_z_a' | t }}",
+    "price_low": "{{ 'search_grid_with_filters.price_low' | t }}",
+    "price_high": "{{ 'search_grid_with_filters.price_high' | t }}",
+    "date_old": "{{ 'search_grid_with_filters.date_old' | t }}",
+    "date_new": "{{ 'search_grid_with_filters.date_new' | t }}",
+    "apply_sort": "{{ 'search_grid_with_filters.apply_sort' | t }}",
+    "clear_all": "{{ 'search_grid_with_filters.clear_all' | t }}",
+    "no_items": "{{ 'search_grid_with_filters.no_items' | t }}",
+    "close_filters": "{{ 'search_grid_with_filters.close_filters' | t }}"
+  },
+  "tagged_product_images": {
+    "select_tab": "{{ 'tagged_product_images.select_tab' | t }}"
+  },
+  "video_banner": {
+    "close": "{{ 'video_banner.close' | t }}"
+  },
+  "benefit_tabs": {
+    "select_tab": "{{ 'benefit_tabs.select_tab' | t }}"
+  },
+  "featured_articles": {
+    "view_all": "{{ 'featured_articles.view_all' | t }}"
+  },
+  "header": {
+    "show_previous": "{{ 'header.show_previous' | t }}",
+    "show_next": "{{ 'header.show_next' | t }}",
+    "menu": "{{ 'header.menu' | t }}",
+    "back": "{{ 'header.back' | t }}",
+    "close_nav": "{{ 'header.close_nav' | t }}",
+    "account": "{{ 'header.account' | t }}",
+    "login": "{{ 'header.login' | t }}",
+    "search": "{{ 'header.search' | t }}",
+    "cart": "{{ 'header.cart' | t }}"
+  },
+  "header_koa": {
+    "show_previous": "{{ 'header_koa.show_previous' | t }}",
+    "show_next": "{{ 'header_koa.show_next' | t }}",
+    "menu": "{{ 'header_koa.menu' | t }}",
+    "back": "{{ 'header_koa.back' | t }}",
+    "close_nav": "{{ 'header_koa.close_nav' | t }}",
+    "account": "{{ 'header_koa.account' | t }}",
+    "login": "{{ 'header_koa.login' | t }}",
+    "search": "{{ 'header_koa.search' | t }}",
+    "cart": "{{ 'header_koa.cart' | t }}"
+  },
+  "newsletter": {
+    "newsletter": "{{ 'newsletter.newsletter' | t }}",
+    "thank_you": "{{ 'newsletter.thank_you' | t }}"
+  },
+  "object_over_image": {
+    "view_product": "{{ 'object_over_image.view_product' | t }}",
+    "sold_out": "{{ 'object_over_image.sold_out' | t }}",
+    "shop_now": "{{ 'object_over_image.shop_now' | t }}"
+  },
+  "product": {
+    "add_to": "{{ 'product.add_to' | t }}",
+    "sold_out": "{{ 'product.sold_out' | t }}",
+    "unavailable": "{{ 'product.unavailable' | t }}",
+    "pre_order": "{{ 'product.pre_order' | t }}",
+    "in_stock": "{{ 'product.in_stock' | t }}",
+    "available": "{{ 'product.available' | t }}",
+    "last_item": "{{ 'product.last_item' | t }}",
+    "items_left": "{{ 'product.items_left' | t }}",
+    "close": "{{ 'product.close' | t }}",
+    "quantity": "{{ 'product.quantity' | t }}",
+    "no_reviews": "{{ 'product.no_reviews' | t }}",
+    "sold_out_2": "{{ 'product.sold_out_2' | t }}"
+  },
+  "slideshow": {
+    "close": "{{ 'slideshow.close' | t }}"
+  },
+  "object_card": {
+    "starting_at": "{{ 'object_card.starting_at' | t }}"
+  },
+  "product_card_koa": {
+    "sold_out": "{{ 'product_card_koa.sold_out' | t }}",
+    "no_reviews": "{{ 'product_card_koa.no_reviews' | t }}",
+    "view_product": "{{ 'product_card_koa.view_product' | t }}",
+    "add_to": "{{ 'product_card_koa.add_to' | t }}",
+    "sold_out_2": "{{ 'product_card_koa.sold_out_2' | t }}"
+  },
+  "product_card": {
+    "sold_out": "{{ 'product_card.sold_out' | t }}",
+    "no_reviews": "{{ 'product_card.no_reviews' | t }}",
+    "view_product": "{{ 'product_card.view_product' | t }}",
+    "choose_an": "{{ 'product_card.choose_an' | t }}",
+    "add_to": "{{ 'product_card.add_to' | t }}",
+    "sold_out_2": "{{ 'product_card.sold_out_2' | t }}"
+  },
+  "product_preview_card": {
+    "sold_out": "{{ 'product_preview_card.sold_out' | t }}",
+    "no_reviews": "{{ 'product_preview_card.no_reviews' | t }}"
+  },
+  "scroll_bar_elements": {
+    "show_previous": "{{ 'scroll_bar_elements.show_previous' | t }}",
+    "show_next": "{{ 'scroll_bar_elements.show_next' | t }}"
+  },
+  "collection_card": {
+    "starting_at": "{{ 'collection_card.starting_at' | t }}"
+  },
+  "form": {
+    "newsletter": "{{ 'form.newsletter' | t }}",
+    "thank_you": "{{ 'form.thank_you' | t }}"
+  }
+};
+</script>
+  

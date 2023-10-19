@@ -1,0 +1,79 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign type_selector__show = section.settings.type_selector__show
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div class="search-input bg-theme-bg text-theme-text">
+  <form class="container py-16"
+        data-search-types-form>
+    <input type="hidden"
+           name="q"
+           value="{{ search.terms }}">
+
+    <input type="hidden"
+           name="sort_by"
+           value="{{ search.sort_by }}">
+
+    <h2 class="_h3 mb-2">Search query: {{ search.terms }}</h2>
+    <p class="_mb-4 font-medium">
+      {{ "main_search_input.search_results" | t }}
+      ({{ search.results_count }})
+    </p>
+
+    {% if type_selector__show %}
+      <div class="flex flex-wrap sm:grid sm:auto-cols-min sm:grid-flow-col-dense gap-2 items-center">
+        <fieldset class="grid auto-cols-min grid-flow-col-dense gap-2 items-center">
+          <label class="grid cursor-pointer">
+            <input type="checkbox"
+                   {% if search.types contains 'article' %}checked="checked"{% endif %}
+                   class="peer appearance-none"
+                   name="type"
+                   value="article">
+            <span class="label--primary--outline peer-checked:label--primary peer-checked:bg-primary-bg peer-checked:text-primary-text">
+              {{ "main_search_input.article" | t }}
+            </span>
+          </label>
+          <label class="grid cursor-pointer">
+            <input type="checkbox"
+                   {% if search.types contains 'page' %}checked="checked"{% endif %}
+                   class="peer appearance-none"
+                   name="type"
+                   value="page">
+            <span class="label--primary--outline peer-checked:label--primary peer-checked:bg-primary-bg peer-checked:text-primary-text">
+              {{ "main_search_input.page" | t }}
+            </span>
+          </label>
+          <label class="grid cursor-pointer">
+            <input type="checkbox"
+                   {% if search.types contains 'product' %}checked="checked"{% endif %}
+                   class="peer appearance-none"
+                   name="type"
+                   value="product">
+            <span class="label--primary--outline peer-checked:label--primary peer-checked:bg-primary-bg peer-checked:text-primary-text">
+              {{ "main_search_input.product" | t }}
+            </span>
+          </label>
+        </fieldset>
+        <button type="submit"
+                class="sm:ml-2 h-full button-primary--outline text-xs px-2 py-1 whitespace-nowrap hf:bg-primary-bg/10">
+          {{ "main_search_input.apply_changes" | t }}
+        </button>
+      </div>
+    {% endif %}
+
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "Search Bar Input",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "type_selector__show",
+      "label": "Show Search Type Selector"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,157 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign upsell_product = section.settings.upsell_product
+  assign responsive_visibility = section.settings.responsive_visibility
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign variant = product.selected_or_first_available_variant
+%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    position: sticky;
+    z-index: 43;
+    top: -2px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  #shopify-section-{{ section.id }} ~ .shopify-section {
+    position: relative;
+    z-index: 42;
+  }
+
+  #shopify-section-{{ section.id }} ~ .shopify-section [id] {
+    scroll-padding-top: 68px;
+    scroll-margin-top: 68px
+  }
+</style>
+
+<div id="{{ sectionID }}"
+     class="product-add-to-cart-bar container-bg-full {{ color_scheme }} {{ responsive_visibility }} sm:border-y sm:border-y-theme-text/20 max-sm:bg-transparent">
+  <section class="flex items-center justify-between min-h-[64px]">
+    <nav class="flex-1 lg:grid auto-cols-min self-stretch gap-4 lg:gap-8 grid-flow-col-dense max-lg:hidden">
+      {% for block in section.blocks %}
+        {% render 'product-add-to-cart-bar.link', block: block %}
+      {% endfor %}
+    </nav>
+    <main class="block sm:grid auto-cols-min grid-flow-col-dense gap-2 md:gap-6 py-2 items-center justify-between sm:justify-center w-full sm:w-auto max-sm:mx-auto whitespace-nowrap max-lg:sm:ml-auto"
+          data-product-add-to-cart-bar
+          data-product-add-to-cart-bar-upsell-product="{{ upsell_product.handle }}"
+          data-quick-view-product="{{ upsell_product.handle }}">
+
+      <picture class="relative block h-[50px] w-[50px] overflow-hidden rounded-theme-sm max-sm:hidden">
+        {% assign image = variant.featured_image | default: product.images | first %}
+        {% render '_image', image: image, width: 50, class: "block inset-0 w-full h-full object-cover object-center" %}
+      </picture>
+      <div class="truncate sm:max-w-[180px] max-w-[100px] flex flex-col justify-center max-sm:hidden">
+        <span class="font-semibold text-sm tracking-tight truncate sm:max-w-[180px] max-w-[100px]">{{ product.title }}</span>
+        <span class="text-xs tracking-tight truncate sm:max-w-[180px] max-w-[100px]">{{ variant.title }}</span>
+      </div>
+
+      <button class="button-primary max-sm:w-full whitespace-nowrap self-end justify-self-end ml-auto flex"
+              type="button">
+        {{ "product_add_to_cart_bar.add_to" | t }}
+      </button>
+    </main>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Add to cart bar",
+  "settings": [
+    {
+      "type": "product",
+      "id": "upsell_product",
+      "label": "Upsell product",
+      "info": "Setup via Metafields App as Default"
+    },
+    {
+      "type": "radio",
+      "id": "responsive_visibility",
+      "label": "Responsive Visibility",
+      "default": "responsive",
+      "options": [
+        {
+          "value": "responsive",
+          "label": "Mobile & Desktop"
+        },
+        {
+          "value": "md:hidden",
+          "label": "Mobile only"
+        },
+        {
+          "value": "max-md:hidden",
+          "label": "Desktop only"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Link",
+      "type": "link",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product add to cart bar"
+    }
+  ]
+}
+{% endschema %}

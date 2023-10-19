@@ -1,0 +1,118 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign label__style = block.settings.label__style
+  assign grid_span = block.settings.grid_span
+  assign preheading = block.settings.preheading
+  assign preheading_font = block.settings.preheading_font
+  assign popup_title = block.settings.popup_title
+  assign title_font = block.settings.title_font
+  assign subtitle = block.settings.subtitle
+  assign subtitle_font = block.settings.subtitle_font
+  assign content = block.settings.content
+  assign _page = block.settings.page
+  assign button_primary__text = block.settings.button_primary__text
+  assign button_primary__url = block.settings.button_primary__url
+  assign button_primary__style = block.settings.button_primary__style
+  assign button_secondary__text = block.settings.button_secondary__text
+  assign button_secondary__url = block.settings.button_secondary__url
+  assign button_secondary__style = block.settings.button_secondary__style
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign align__horizontal = block.settings.align__horizontal
+  assign image = block.settings.image
+  assign image__overlay = block.settings.image__overlay
+  assign color_scheme = block.settings.color_scheme
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% case type %}
+  {% when 'button' %}
+    <div data-product-block="popup"
+         class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+         data-block-settings="{{- block.settings | json | escape -}}"
+         style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+      <button
+          type="button"
+          data-drawer-open="product-popup--{{ block.id }}"
+          class="{{ label__style }} w-full"
+      >
+        {{ title }}
+      </button>
+    </div>
+
+  {% when 'content' %}
+    {% liquid
+      assign baseContentClasses = 'group-ac:opacity-100 ease-linear opacity-0 transition-all duration-150 z-10'
+      assign closeButtonClasses = 'text-theme-text hf:text-theme-text/80'
+      if image
+        assign overlayClasses = 'text-theme-overlay-text'
+        assign closeButtonClasses = 'text-theme-overlay-text hf:text-theme-overlay-text/80'
+      endif
+    %}
+
+    <div class="group fixed pointer-events-none inset-0 z-[101] ac:pointer-events-auto hidden"
+         data-drawer="product-popup--{{ block.id }}">
+      <section class="{{ baseContentClasses }} fixed inset-0 flex items-center justify-center container pointer-events-none"
+               data-drawer-content>
+        <figure class="group relative md:mb-10 w-full max-h-[90vh] max-w-3xl shadow-lg group-ac:pointer-events-auto rounded-theme-lg overflow-hidden {{ color_scheme }} ">
+          <button type="button"
+                  class="absolute top-2 right-2 flex h-6 w-6 items-center justify-center transition-all duration-75 z-[101] {{ closeButtonClasses }}"
+                  data-drawer-close="product-popup--{{ block.id }}">
+            <div class="sr-only">
+              {{ "product.close" | t }}
+            </div>
+            {% render '_icon', icon: 'x-mark', class: "w-5 h-5 stroke-2" %}
+          </button>
+
+
+          {% render '_image', image: image, class: "absolute inset-0 w-full h-full object-cover scale-110 group-ac:scale-100 transition-all" %}
+
+          <figcaption class="relative inset-0 z-10 h-full w-full pt-10 pb-8 md:px-6"
+                      style="background-image: {{ image__overlay }};">
+            <div class="container h-full w-full flex flex-col max-h-[min(820px,calc(100vh-64px))] overflow-y-auto scrollbar-y-slim {{ align__horizontal }}">
+              <div class="grid gap-3">
+                {% render 'richtext', type: preheading_font, content: preheading, class: overlayClasses %}
+                {% render 'richtext', type: title_font, content: popup_title, class: overlayClasses %}
+                {% render 'richtext', type: subtitle_font, content: subtitle, class: overlayClasses %}
+                {% render 'richtext', type: 1, content: content, class: overlayClasses %}
+                {% render 'richtext', type: 1, content: _page.content, class: overlayClasses, no_newlines: true, class: "rte prose prose-theme" %}
+
+                {% if button_secondary__show or button_primary__show %}
+                  <div class="mt-4 -mx-2 flex flex-col sm:flex-row {{ align__horizontal | replace: "items", "sm:justify" | replace: "items-end", "sm:justify-end" }}">
+                    {% if button_secondary__show %}
+                      <a href="{{ button_secondary__url }}"
+                         class="{{ button_secondary__style }} m-2">
+                        {{ button_secondary__text }}
+                      </a>
+                    {% endif %}
+                    {% if button_primary__show %}
+                      <a href="{{ button_primary__url }}"
+                         class="{{ button_primary__style }} m-2">
+                        {{ button_primary__text }}
+                      </a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </figcaption>
+
+        </figure>
+      </section>
+      <div class="pointer-events-none fixed inset-0 bg-white/[0.72] opacity-0 transition-all group-ac:opacity-100 group-ac:pointer-events-auto"
+           data-drawer-overlay
+           data-cart-drawer-overlay>
+      </div>
+      {% comment %}<button type="button"
+              class="text-black group-ac:fixed hidden group-ac:md:flex top-4 right-4 h-6 w-6 items-center justify-center transition-all duration-75 hf:text-theme-overlay-text/80 sm:bg-transparent z-[101]"
+              data-drawer-close="product-popup--{{ block.id }}">
+        <div class="sr-only">
+          {{ "product.close" | t }}
+        </div>
+        {% render '_icon', icon: 'x-mark', class: "w-5 h-5 stroke-2" %}
+      </button>{% endcomment %}
+    </div>
+
+{% endcase %}

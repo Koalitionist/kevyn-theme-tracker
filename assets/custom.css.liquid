@@ -1,0 +1,79 @@
+{% comment %} Add Custom CSS Here {% endcomment %}
+
+strong {
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/1989/1347/files/Calibre-Thin.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/1989/1347/files/Calibre-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Calibre";
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/1989/1347/files/Calibre-Semibold.woff2?) format("woff2");
+}
+
+.yotpo .yotpo-bottomline .yotpo-icon-star,
+.yotpo .yotpo-bottomline .yotpo-icon-half-star,
+.yotpo .yotpo-bottomline .yotpo-icon-empty-star {
+    color: black !important;
+}
+
+.yotpo .yotpo-icon-default-star:before,
+.yotpo .yotpo-icon-star:before {
+  display: inline-flex !important;
+  width: 1.25rem !important;
+}
+
+.yotpo .yotpo-display-wrapper a {
+  font-family: "Calibre" !important;
+  font-weight: 300 !important;
+  color: black !important;
+}
+
+.yotpo .yotpo-display-wrapper a:hover {
+  color: black !important;
+}
+
+.yotpo .standalone-bottomline .star-clickable {
+  align-items: center;
+}
+
+afterpay-placement{
+  grid-column: span 12 / span 12;
+}
+@media(max-width:700px) {
+  #logoSVG {
+    width: 190px !important;
+  }
+}
+
+@media(max-width:450px) {
+  #logoSVG {
+    width: 150px !important;
+  }
+}
+
+@media(max-width:350px) {
+  #logoSVG {
+    width: 100px !important;
+  }
+}
+.h-header-half {
+  height:  calc(var(--header-height, 0px) / 2);
+}
+.tp-1_5{
+  top:1.5rem;
+}

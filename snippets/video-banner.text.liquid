@@ -1,0 +1,13 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign type = block.settings.type
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+     class="max-w-lg grid gap-3"
+     style="margin-bottom: {{ margin_bottom }}px;">
+  {% render 'typography', type: type, content: title, class: "text-theme-overlay-text" %}
+</div>

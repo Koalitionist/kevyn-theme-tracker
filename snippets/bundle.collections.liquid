@@ -1,0 +1,120 @@
+{% liquid
+
+  assign target_limit = section.settings.target_limit
+
+  assign container_overflow = section.settings.container_overflow
+  assign scrollWrapperClasses = "container"
+
+  if container_overflow
+    assign scrollWrapperClasses = ""
+    assign scrollContainerClasses = "scroll-pl-4 md:scroll-pl-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))] px-4 md:px-[max(2rem,calc((100%-var(--layout-page-width)+4rem)/2))]"
+  endif
+%}
+
+{% for i in (1..3) %}
+  {% liquid
+    assign scrollable_title_key = "scrollable_title_" | append: i
+    assign scrollable_title = section.settings[scrollable_title_key]
+    assign target_products_key = "target_products_" | append: i
+    assign target_products = section.settings[target_products_key]
+    assign target_collection_key = "target_collection_" | append: i
+    assign target_collection = section.settings[target_collection_key]
+
+    assign product_limit = target_limit
+    assign productIds = "" | append: "|||"
+    assign break = false
+    assign scrollableProducts = target_products | where: 'available'
+    assign scrollableCollectionProducts = target_collection.products | where: 'available'
+
+    if scrollableProducts.size == 0 and scrollableCollectionProducts.size == 0
+      continue
+    endif
+  %}
+
+
+  <section class="relative my-16 block"
+           data-scroll-slider>
+    <header class="container mb-4">
+      {% if scrollable_title != blank %}
+        <h3 class="h3">{{ scrollable_title }}</h3>
+      {% endif %}
+    </header>
+    <main class="{{ scrollWrapperClasses }}">
+      <div class="grid grid-flow-col-dense auto-cols-auto w-min max-w-full gap-6 overflow-x-auto pb-8 snap-mandatory snap-x w-full scrollbar-none {{ scrollContainerClasses }}"
+           data-scroll-container>
+
+
+        {% for _product in scrollableProducts %}
+          {% if productIds contains _product.id %}{% continue %}{% endif %}
+          {% render 'product-card', product: _product, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', disableCartOpen: true %}
+          {% assign productIds = productIds | append: "|||" | append: _product.id %}
+          {% assign product_limit = product_limit | minus: 1 %}
+          {% if product_limit <= 0 %}
+            {% assign break = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if break %}{% continue %}{% endif %}
+
+
+        {% for _product in scrollableCollectionProducts %}
+          {% if productIds contains _product.id %}{% continue %}{% endif %}
+          {% render 'product-card', product: _product, class: 'min-w-[180px] w-[calc(100vw/2)] md:w-[calc(var(--layout-page-width)/4)]', html_attributes: 'data-scroll-item', disableCartOpen: true %}
+          {% assign productIds = productIds | append: "|||" | append: _product.id %}
+          {% assign product_limit = product_limit | minus: 1 %}
+          {% if product_limit <= 0 %}
+            {% assign break = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </main>
+
+    <footer data-scroll-controls
+            class="container relative hidden select-none">
+      <div class="relative">
+        {% render 'scroll-bar-elements', element: 'scrollbar' %}
+      </div>
+      <button class="absolute -top-96 left-4 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 stroke-2 text-gray-400 shadow-sm transition-all ease-in-out group 2xl:-left-10 hf:text-gray-900 bg-theme-bg/80"
+              style="opacity: 0; pointer-events: none"
+              data-scroll-prev>
+        <span class="sr-only">
+          {{ "bundle.show_previous" | t }}
+        </span>
+        <svg class="mr-1 h-3 w-3 rotate-180 stroke-2"
+             fill="none"
+             viewBox="0 0 10 10"
+             aria-hidden="true"
+             stroke="currentColor"
+        >
+          <path class="opacity-0 transition group-hover:opacity-100"
+                d="M0 5h7"
+          ></path>
+          <path class="transition group-hover:translate-x-[3px]"
+                d="M1 1l4 4-4 4"
+          ></path>
+        </svg>
+      </button>
+      <button class="absolute -top-96 right-4 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 stroke-2 text-gray-400 shadow-sm transition-all ease-in-out group 2xl:-right-10 hf:text-gray-900 bg-theme-bg/80"
+              style="opacity: 0; pointer-events: none"
+              data-scroll-next>
+        <span class="sr-only">
+          {{ "bundle.show_next" | t }}
+        </span>
+        <svg class="ml-1 h-3 w-3 stroke-2"
+             fill="none"
+             viewBox="0 0 10 10"
+             aria-hidden="true"
+             stroke="currentColor"
+        >
+          <path class="opacity-0 transition group-hover:opacity-100"
+                d="M0 5h7"
+          ></path>
+          <path class="transition group-hover:translate-x-[3px]"
+                d="M1 1l4 4-4 4"
+          ></path>
+        </svg>
+      </button>
+    </footer>
+  </section>
+{% endfor %}

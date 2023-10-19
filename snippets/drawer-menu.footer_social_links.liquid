@@ -1,0 +1,21 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div class="flex space-x-3 overflow-x-scroll scrollbar-none {{ responsive_visibility }}">
+  {% assign socialLinks = "social_twitter_link,social_facebook_link,social_pinterest_link,social_instagram_link,social_tiktok_link,social_tumblr_link,social_snapchat_link,social_youtube_link,social_vimeo_link" | split: ',' %}
+  {% for link in socialLinks %}
+    {% if settings[link] != blank %}
+      {% assign icon = link | replace: "social_", "" | replace: "_link", "" %}
+      <a href="{{ settings[link] }}"
+         class="transition-all text-theme-text/70 hf:text-theme-text"
+         target="_blank"
+         referrerpolicy="no-referrer">
+        <span class="sr-only">{{ icon | capitalize }}</span>
+        {% render '_icon', icon: icon, class: "w-6 h-6" %}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

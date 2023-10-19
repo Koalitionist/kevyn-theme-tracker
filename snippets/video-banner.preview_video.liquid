@@ -1,0 +1,82 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign video = block.settings.video
+  assign video_url = block.settings.video_url
+  assign url = block.settings.url
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  unless block
+    assign video = section.settings.video
+    assign video_url = section.settings.video_url
+    assign url = section.settings.url
+  endunless
+-%}
+
+
+{% if video != blank %}
+  {{ video | media_tag: image_size: "2048x", autoplay: true, muted: true, loop: true, controls: false, preload: "none", class: 'absolute inset-0 w-full h-full object-cover' }}
+{% elsif video_url != blank %}
+  {% if video_url.type == 'youtube' %}
+    <iframe src="https://www.youtube.com/embed/{{ video_url.id }}?autoplay=1&showinfo=0&controls=0&rel=0&modestbranding=1&loop=1&mute=1"
+            loading="lazy"
+            frameborder="0"
+            class="js-youtube absolute z-0 w-[var(--video-width)] h-[var(--video-height)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            allow="autoplay; encrypted-media; muted; loop"
+            allowfullscreen></iframe>
+  {% elsif video_url.type == 'vimeo' %}
+    <iframe src="https://player.vimeo.com/video/{{ video_url.id }}?autoplay=1&portrait=0&byline=0&loop=1&sidedock=0&muted=1"
+            loading="lazy"
+            allow="autoplay; encrypted-media"
+            class="js-vimeo absolute z-0 w-[var(--video-width)] h-[var(--video-height)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            frameborder="0"></iframe>
+  {% endif %}
+{% elsif url != blank %}
+  {% if url contains 'cdn.shopify.com/videos' %}
+    <video playsinline="playsinline"
+           autoplay="autoplay"
+           muted="muted"
+           loop="loop"
+           preload="none"
+           class="absolute inset-0 w-full h-full object-cover">
+      {% if url contains '.mp4' %}
+        <source src="{{ url }}"
+                type="video/mp4">
+      {% endif %}
+      {% if url contains '.mov' %}
+        <source src="{{ url }}"
+                type="video/quicktime">
+      {% endif %}
+      {% if url contains '.m4v' %}
+        <source src="{{ url }}"
+                type="video/x-m4v">
+      {% endif %}
+      {% if url contains '.webm' %}
+        <source src="{{ url }}"
+                type="video/webm">
+      {% endif %}
+      {% assign fileUrl = "" | file_url | split: "?" | first %}
+      {% assign fileName = url | split: '/' | last | split: '.' | first %}
+      <img src="{{ fileUrl }}/preview_images/{{ fileName }}.thumbnail.0000000_2048x.jpg?v={{ 'now' | date: "%s" }}">
+    </video>
+  {% else %}
+
+    {% if url contains 'youtu' or url contains 'youtube' %}
+      {% assign video_url_id = url | split: '?' | first | split: '/' | last %}
+      <iframe src="https://www.youtube.com/embed/{{ video_url_id }}?autoplay=1&showinfo=0&controls=0&rel=0&modestbranding=1&loop=1&mute=1&portrait=0&byline=0&sidedock=0&muted=1"
+              loading="lazy"
+              frameborder="0"
+              class="js-youtube absolute z-0 w-[var(--video-width)] h-[var(--video-height)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+              allow="autoplay; encrypted-media; muted; loop"
+              allowfullscreen></iframe>
+    {% else %}
+      <iframe src="{{ url | split: '?' | first }}?autoplay=1&showinfo=0&controls=0&rel=0&modestbranding=1&loop=1&mute=1&portrait=0&byline=0&sidedock=0&muted=1"
+              loading="lazy"
+              frameborder="0"
+              class="js-youtube absolute z-0 w-[var(--video-width)] h-[var(--video-height)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+              allow="autoplay; encrypted-media; muted; loop"
+              allowfullscreen></iframe>
+    {% endif %}
+  {% endif %}
+{% endif %}

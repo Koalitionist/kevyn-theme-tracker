@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "2a4a2b13-fd8f-46b0-a0ca-0d9658136e59": {
+          "type": "related_products",
+          "settings": {
+            "products": [
+              "magsafe-iphone-cases-black-edition",
+              "magsafe-iphone-cases-bourbon",
+              "magsafe-iphone-cases-cloud"
+            ],
+            "metafield": "smart.related_products",
+            "limit": 3
+          }
+        },
+        "c4550231-d4a4-4b34-b472-7840129664a5": {
+          "type": "related_articles",
+          "settings": {
+            "blog": "news"
+          }
+        }
+      },
+      "block_order": [
+        "2a4a2b13-fd8f-46b0-a0ca-0d9658136e59",
+        "c4550231-d4a4-4b34-b472-7840129664a5"
+      ],
+      "settings": {
+        "image__show": true,
+        "date__show": true,
+        "author__show": true,
+        "share_buttons__show": true,
+        "comments__show": true,
+        "nav__show": true,
+        "title": "<h2>[title]<\/h2>",
+        "title_font": 1,
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

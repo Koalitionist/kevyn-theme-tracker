@@ -1,0 +1,1002 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "width": "max-w-2xl",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "71c89520-1a19-4d94-93c7-262f6402d7bb": {
+      "type": "richtext",
+      "blocks": {
+        "template--14836375978071__71c89520-1a19-4d94-93c7-262f6402d7bb-1689687308dfeb531b-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>BEHIND THE SCENES<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836375978071__71c89520-1a19-4d94-93c7-262f6402d7bb-1689687308dfeb531b-4": {
+          "type": "text",
+          "settings": {
+            "title": "<p>KEVYN AUCOIN BEAUTY was founded in 2001 by one of the most iconic and influential makeup artists of all time, Kevyn Aucoin. To understand the root of the heritage beauty brand today, you must first start by understanding who Kevyn Aucoin was and why his legacy left a longstanding impact on the beauty world today.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-5xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14836375978071__71c89520-1a19-4d94-93c7-262f6402d7bb-1689687308dfeb531b-3",
+        "template--14836375978071__71c89520-1a19-4d94-93c7-262f6402d7bb-1689687308dfeb531b-4"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "654d8272-b246-4d4d-9fcd-bf81de97e9ed": {
+      "type": "image-with-text",
+      "blocks": {
+        "673772cf-1f4f-4172-b23a-749404352652": {
+          "type": "text",
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "487bb213-762b-4823-be65-d127d9584ab3": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE EARLY YEARS<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "74243b4f-b44e-4cf6-a7cf-aaeee19e5498": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn Aucoin was born on February 14, 1962 in Shreveport, Louisiana and was adopted as an infant by his mother, Thelma. Kevyn was often quoted as saying that “he knew he was gay at the age of six”, which left him the frequent target of bullying. Kevyn was considered “different.\" He was infatuated with the fashion and makeup styles that frequented the pages of Vogue and other fashion magazines, which is how his interest in makeup began when he was 11 years old. He started experimenting with makeup on his sister and best friend, Carla and captured everything he created with his polaroid camera.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "673772cf-1f4f-4172-b23a-749404352652",
+        "487bb213-762b-4823-be65-d127d9584ab3",
+        "74243b4f-b44e-4cf6-a7cf-aaeee19e5498"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/ABOUT_US_KEVYN_IMAGES_EARLY_64493c4e-7fd7-4472-938e-cd19308e89e9.png",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "20b5b7a8-232c-441f-aded-af2f99778a0f": {
+      "type": "image-with-text",
+      "blocks": {
+        "b6c9342f-8069-4956-bdfd-f551a8e8ba34": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "fe581c87-32ff-46b5-8091-8a0a7bd0fe00": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>NEW YORK CITY<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "12635b6a-5ed2-463e-8c6b-53f9003e8452": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Despite his adversities, and humble beginnings, his passion for makeup prevailed. Kevyn recognized that self expression and the transformative power of makeup could make the world a better place. He moved to New York and became what we know as the American Dream. He sat outside the Vogue office with his portfolio until he was given a chance. <br\/>A few months later Kevyn went on to be one of the first makeup artists to be featured on the cover of Vogue. <\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "b6c9342f-8069-4956-bdfd-f551a8e8ba34",
+        "fe581c87-32ff-46b5-8091-8a0a7bd0fe00",
+        "12635b6a-5ed2-463e-8c6b-53f9003e8452"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/ABOUT_US_KEVYN_IMAGES_1_0e4346b5-1797-49fa-888d-aeaad3184851.png",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "75308085-e7cc-4052-a899-067a224c649c": {
+      "type": "image-with-text",
+      "blocks": {
+        "128885e7-c0ec-4ba9-9479-fa1264c29ff0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "55fd0820-39f4-413b-a5bb-e928fbd10200": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>A STAR IS BORN<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f2d9bea2-d84f-4c72-857d-eebdf2ffefc0": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn put makeup artistry on the map. His philosophy was that every woman is beautiful within, and makeup was simply his tool for helping her discover that beauty. Kevyn was a content creator of his time, and his work was everywhere – highly acclaimed music videos, backstage at fashion week, gracing album covers and fashion advertising. His work was featured on 19 Vogue covers in 3 years and he appeared on numerous talk shows, including The Oprah Winfrey Show. Kevyn even debuted as himself in the infamous “she’s fashion roadkill” episode of Sex and the City.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "128885e7-c0ec-4ba9-9479-fa1264c29ff0",
+        "55fd0820-39f4-413b-a5bb-e928fbd10200",
+        "f2d9bea2-d84f-4c72-857d-eebdf2ffefc0"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/ABOUT_US_KEVYN_IMAGES_2_a52f76c1-5e35-4eb1-852f-d58e8ba79364.png",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "cdc0993a-4b65-4103-853f-3b4e4504a996": {
+      "type": "image-with-text",
+      "blocks": {
+        "a12e2539-fa7a-4dd3-8a69-2ccd8689be80": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f54809d6-1e45-4a44-97bb-1d5bb63d3487": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>KEVYN'S MUSES<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e6032541-e3a6-4485-a49d-50a3a73b095e": {
+          "type": "text",
+          "settings": {
+            "title": "<p>It was hard to find a celebrity's face that Kevyn hadn’t touched– J Lo, Madonna, Tina Turner, Whitney Houston, Kate Moss, Christy Turlington, Naomi Campbell, Janet Jackson, Liza Minelli, Stevie Nicks, Courtney Love, Lisa Marie Presley, Julia Roberts, Gwyneth Paltrow, Tori Amos and Cher, to name a few. He was a best friend to everyone who sat in his chair, which is why he was so highly requested. <\/p><p>“I was not going to go to any other person, besides Kevyn’s chair.. There was always a line, but he was the only makeup artist in town who understood black skin..I’m not going anywhere else.\" – Naomi Campbell<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "a12e2539-fa7a-4dd3-8a69-2ccd8689be80",
+        "f54809d6-1e45-4a44-97bb-1d5bb63d3487",
+        "e6032541-e3a6-4485-a49d-50a3a73b095e"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/ABOUT_US_KEVYN_IMAGES_3_a8bc7439-c495-4fa7-934e-2d722ba4c9c9.png",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "31d9f954-95f6-4630-b917-68bfb0d75304": {
+      "type": "image-with-text",
+      "blocks": {
+        "105da4a8-035f-4a9a-81ff-2e91d4bf849c": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "cf56dd9d-6e97-4147-82c0-35c5cfcf32a1": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE MUSE<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b4100ef7-3883-4b5d-8c67-eb7da05c9840": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn singlehandedly created the celebrity makeup artist category or PRO artistry, as we call it today. He was the pioneer of contouring and made it mainstream. Empowerment and education were rooted in everything that he did. He was a master of his craft and he wanted to share it with the world. Kevyn went on to author bestselling books <em>The Art of Makeup <\/em>(1994), <em>Making Faces<\/em> (1997), and <em>Face Forward<\/em> (2001) which share his techniques. He was a muse who inspired others, including Issac Mizrahi and viral makeup artist Mario Dedivanovic (Kim Kardashian’s makeup artist). Yet, his favorite muse throughout the years continued to be his sister Carla. <\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "105da4a8-035f-4a9a-81ff-2e91d4bf849c",
+        "cf56dd9d-6e97-4147-82c0-35c5cfcf32a1",
+        "b4100ef7-3883-4b5d-8c67-eb7da05c9840"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/July_KA_10_Lifestyle_Rd2_be515604-dac5-4b16-8a2c-840c7ab61170.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "c12ede03-4e59-4b14-969b-353466268e04": {
+      "type": "image-with-text",
+      "blocks": {
+        "b7ef93ee-9e0a-4eb9-9819-205a2a186356": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "2fe0fcb5-ae5a-4a68-acb6-b2508fb83895": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>AWARD-WINNING ARTIST<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f2c73d9f-75cc-4d8d-be3e-80f09c37fc27": {
+          "type": "text",
+          "settings": {
+            "title": "<p>In 1995, Kevyn went on to be the only makeup artist to win a CFDA Award and in 2019, J Lo dedicated her CFDA Fashion Icon award to Kevyn and Oribe for “helping her turn from an around-the-way girl, to a girl who could grace a magazine cover.”<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "b7ef93ee-9e0a-4eb9-9819-205a2a186356",
+        "2fe0fcb5-ae5a-4a68-acb6-b2508fb83895",
+        "f2c73d9f-75cc-4d8d-be3e-80f09c37fc27"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/ABOUT_US_KEVYN_IMAGES_JLO_345d1329-18c7-4a4c-b088-d4ee826e7581.png",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "5839a3de-454a-4538-b90e-afb86790e577": {
+      "type": "image-with-text",
+      "blocks": {
+        "25700533-67b8-4ec2-99b7-0cf1571aa841": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>KEVYN AUCOIN BEAUTY<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "01482d30-642c-48d4-a2a5-76fc33631991": {
+          "type": "text",
+          "settings": {
+            "title": "<p><strong>The Start and End of Something Beautiful<\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "284ac8fb-04d4-479b-bb43-ed70eeb63909": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn also worked behind the scenes as an Art Director and Product Developer creating top selling products for some of the most well-known brands today. He also mentored up and coming pro makeup artists, since he was first and foremost an educator and beauty specialist to his core. <br\/><br\/>Kevyn was an advocate of LGBTQ rights and volunteered at the Hetrick-Martin Institute, a New York center dedicated to helping LGBTQ youth.<br\/><br\/>He was so much more than a professional makeup artist, which is what lead to a documentary being created about his life - The Larger <em>Than Life<\/em> film. <em>Larger Than Life<\/em> opens with a touching quote from Aucoin that summarizes his motives for working as a makeup artist. He said, “The most extraordinary experience for me that I could possibly have with another person is to show them their beauty because some way, somehow in showing someone else their beauty you see the beauty in yourself\". “You understand your own uniqueness, your own strengths and your own beauty, you know, and that’s possibly, I think, the search we’re all in, is to find the beauty in ourselves.”<br\/><br\/>Kevyn tragically passed away in 2002, but not before launching his legacy brand, in 2001 – Kevyn Aucoin Beauty, where Kevyn’s spirit lives on today.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "25700533-67b8-4ec2-99b7-0cf1571aa841",
+        "01482d30-642c-48d4-a2a5-76fc33631991",
+        "284ac8fb-04d4-479b-bb43-ed70eeb63909"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/GettyImages-1039930346_1_8de2be2b-4704-4b6b-84f3-237f9edbe524.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[125%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "189ef78c-4a21-491b-bac6-9eca1cc5d080": {
+      "type": "image-with-text",
+      "blocks": {
+        "0ec7d1e5-e315-4e1b-842a-87adde72991d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "314c7709-5263-46c5-95c5-73bee2ae5af0": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE FUNDAMENTALS<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e10ae544-96f6-4647-82ce-fad364df5870": {
+          "type": "text",
+          "settings": {
+            "title": "<p>In the words of Kevyn Aucoin himself,<br\/><br\/><em>“First of all, let me say that I believe there are no rules when it comes to makeup. In a world of constant change…I feel the goal should be to expand our definition of what we consider ‘acceptable, normal and beautiful.’ The future will belong to those with open minds and open hearts, who can appreciate beauty in all its forms.” – Kevyn Aucoin<br\/><br\/><\/em>Kevyn Aucoin Beauty is a brand that encompasses approachability, artistry, empowerment and celebrates originality. It’s unapologetic, brave and rather quite fearless.<br\/><br\/>Kevyn himself believed that every woman is beautiful within, and makeup was simply his tool for helping her discover that beauty. He was a man and an artist decades ahead of his time, which has paved the way for innovative, award-winning products, high-performance formulas and textures.<br\/><br\/>His luxurious textures and expansive shade ranges have had a global-broad-appeal for 20 years, when most brands had a limited shade range.<br\/><br\/>He was a true industry pioneer who championed inclusivity, originality, empowerment and education, which you will see carried over today in the brand pillars. <br\/><br\/>Whether you’re a makeup newbie or a pro makeup artist,  It doesn’t matter what age, sex or race you are. There is something for everyone with the brands approachable artistry positioning rooted deep in inclusivity.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "0ec7d1e5-e315-4e1b-842a-87adde72991d",
+        "314c7709-5263-46c5-95c5-73bee2ae5af0",
+        "e10ae544-96f6-4647-82ce-fad364df5870"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Shot07_KevinAucoin_0375c_91f4c56a-91f4-4969-abf9-eee62fe068cf.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "5d718eb7-bda7-4a0f-bd1a-41852cc47960": {
+      "type": "image-with-text",
+      "blocks": {
+        "de33b660-dad7-46c4-9a13-a0c03f689edb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "720c2404-e5f1-43cc-962e-1685eb6a60bb": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>OUR MISSION<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e412d621-2ed8-4399-97fd-1103e0865d6f": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn Aucoin Beauty paves the way for bold, beautiful, <br\/>self expression.<br\/><br\/>Daring to create the unknown, while respecting its heritage and where it’s been.<br\/><br\/>Empowering you to explore, express and experiment on your own terms.<br\/><br\/>Kevyn Aucoin Beauty stays true to the belief that makeup does not cover, but rather, uncovers your true self.<br\/><br\/><em>Your Beauty is Brave<\/em><\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "de33b660-dad7-46c4-9a13-a0c03f689edb",
+        "720c2404-e5f1-43cc-962e-1685eb6a60bb",
+        "e412d621-2ed8-4399-97fd-1103e0865d6f"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_February_Lifestyle_01_SSE_PRIMER_LOOSE_POWDER_1200x1200px_c60b540b-4263-451e-b687-9730b9461633.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "9c390e49-a91e-49b2-8d74-836c294d0ee1": {
+      "type": "image-with-text",
+      "blocks": {
+        "edba96e5-1c7f-4231-abe2-085ef2380534": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "00dd8bbb-a9b7-41b3-94c2-be274f213bfe": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>OUR PROMISE<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f2f7c00d-6b39-46df-b94a-c2041cff6c53": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Kevyn Aucoin Beauty is still recognized and celebrated as a leading, luxury artisty brand today — 20 years after its initial launch. The brand is distributed in top-leading international retail outlets across North America, Canada, UK, Australia and beyond. It’s a PR darling that graces the insides of Allure Beauty, Vogue, Harpers Bazarre and other press outlets. Hero products can be seen in PRO makeup artists kits, celebrity hands and used to create buzz-worthy looks amongst today’s modern influencers.<br\/><br\/>We, at Kevyn Aucoin Beauty, will continue to honor Kevyn by maintaining his iconic best-selling products and by continuing to create <strong>a visionary collection of modern products developed by PRO makeup artists, using efficacious ingredients, luxurious textures and extensive shade ranges.<br\/><br\/><\/strong>Inspired by his technique, words and imagery. We will continue to promote an always-on education mentality in all that we do and support up-and coming-artists and the professional makeup artist community through our Pro program, curated masterclasses, monthly newsletters and more. We will continue to be an advocate for adversity and inclusion and will continue to support the Hetrick-Martin Institute, which was a cause that was near and dear to our founder's heart. Our promise is to hold the spirit of Kevyn close and let it guide the brand in all that we do. <\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "edba96e5-1c7f-4231-abe2-085ef2380534",
+        "00dd8bbb-a9b7-41b3-94c2-be274f213bfe",
+        "f2f7c00d-6b39-46df-b94a-c2041cff6c53"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_AUGUST_07_CONTOUR_EYESHADOW_PANS_LIGHT_DEEP_1200x1200px_9ab33ece-bda4-4bcb-b408-408ed83d24a9.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-4": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-0",
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-1",
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-2",
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-3",
+        "template--14836375978071__8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc-168968711719d94014-4"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/51f13daaa5734af59fcd81636f4a06df.mp4",
+        "video_url": "",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 700,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "6fafb3d3-890c-4a27-adaa-cbcc81099c95": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-0": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h2>Best Sellers<\/h2>",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 50
+          }
+        },
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-1": {
+          "type": "source_products",
+          "disabled": true,
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "best-sellers"
+          }
+        },
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-3": {
+          "type": "source_metafield",
+          "disabled": true,
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-0",
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-1",
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-2",
+        "template--14836375978071__6fafb3d3-890c-4a27-adaa-cbcc81099c95-168968905245c81871-3"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "71c89520-1a19-4d94-93c7-262f6402d7bb",
+    "654d8272-b246-4d4d-9fcd-bf81de97e9ed",
+    "20b5b7a8-232c-441f-aded-af2f99778a0f",
+    "75308085-e7cc-4052-a899-067a224c649c",
+    "cdc0993a-4b65-4103-853f-3b4e4504a996",
+    "31d9f954-95f6-4630-b917-68bfb0d75304",
+    "c12ede03-4e59-4b14-969b-353466268e04",
+    "5839a3de-454a-4538-b90e-afb86790e577",
+    "189ef78c-4a21-491b-bac6-9eca1cc5d080",
+    "5d718eb7-bda7-4a0f-bd1a-41852cc47960",
+    "9c390e49-a91e-49b2-8d74-836c294d0ee1",
+    "8be6e6cb-f2b3-4399-a7e9-5de9eabfb2fc",
+    "6fafb3d3-890c-4a27-adaa-cbcc81099c95"
+  ]
+}

@@ -1,0 +1,31 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign type = block.settings.type
+  assign target = block.settings.target
+  assign target_collection = block.settings.target_collection
+  assign target_products = block.settings.target_products
+  assign receives_quantity = block.settings.receives_quantity
+  assign receives_discount_percentage = block.settings.receives_discount_percentage
+  assign receives_collection = block.settings.receives_collection
+  assign receives_products = block.settings.receives_products
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  assign receivesProducts = receives_products | map: 'handle' | uniq
+  assign receivesProducts = receives_collection.products | map: 'handle' | concat: receives_products | uniq
+%}
+
+{%- capture giftJson -%}
+  {
+  "content": {{ content | json }},
+  "type": {{ type | json }},
+  "target": {{ target | json }},
+  "target_collection": {{ target_collection.handle | json }},
+  "target_products": {{ target_products | map: 'handle' | json }},
+  "receives_quantity": {{ receives_quantity | json }},
+  "receives_discount_percentage": {{ receives_discount_percentage | json }},
+  "receives_products": {{ receivesProducts | json }}
+  }
+{%- endcapture -%}
+{{- giftJson -}}{%- unless forloop.last -%},{%- endunless -%}

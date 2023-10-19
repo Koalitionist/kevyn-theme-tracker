@@ -1,0 +1,92 @@
+{%- liquid
+  assign image__ratio = settings.image__ratio | default: 'pb-[125%]'
+  assign image__show_secondary = settings.image__show_secondary | default: false
+  assign vendor__show = settings.vendor__show | default: false
+  assign rating__show = settings.rating__show | default: false
+  assign labels__show = settings.labels__show | default: false
+  assign labels__discount = settings.labels__discount | default: "sale"
+  assign image__background = settings.image__background | default: "transparent"
+  assign image__drop_shadow = settings.image__drop_shadow | default: false
+
+  assign compare_at_price = product.compare_at_price
+  assign price = product.price
+
+  if product.available == false
+    assign sold_out = true
+    assign label__sold_out = true
+  endif
+
+  assign imageClasses = 'w-full h-full object-cover inset-0 '
+  if image__drop_shadow
+    assign imageClasses = imageClasses | append: "drop-shadow-product"
+  endif
+
+-%}
+
+
+<article class="flex flex-col space-y-1 relative items-stretch {{ class }}" {{ html_attributes }}
+         data-card
+         data-quick-view-product="{{ product.handle }}">
+
+  {% comment %} IMAGE {% endcomment %}
+  <a class="grid relative outline-none hf:outline-none h-0 w-full pb-[100%]"
+     href="{% if is_collection %}{{ collection.url | split: '?' | first }}{% endif %}{{ product.url }}"
+     data-card-image-link>
+    <div class="w-full h-full inset-0 absolute overflow-hidden"
+         style="background: {{ image__background }};"
+         data-card-image>
+      {% render '_image', image: product.featured_image, width: 500, class: imageClasses, placeholder: 'product-1' %}
+    </div>
+  </a>
+
+  <div class="flex items-center">
+    <picture class="relative mr-2 h-16 w-16 overflow-hidden"
+             style="background: {{ image__background }};"
+             data-card-image>
+
+      {% render '_image', image: product.featured_image, width: 128, class: "h-full w-full object-cover", placeholder: 'product-1' %}
+    </picture>
+    {% comment %} TITLE {% endcomment %}
+    <h1 class="inline-flex product-card-title--small">
+      <a class="outline-none hf:outline-none hf:underline mb-4"
+         data-card-title
+         href="{% if is_collection %}{{ collection.url | split: '?' | first }}{% endif %}{{ product.url }}">
+        {{ product.title }}
+      </a>
+    </h1>
+  </div>
+
+  {% comment %} ADD TO CART - PRE OPEN SCREEN {% endcomment %}
+  <div class="self-end mt-auto w-full flex-1 flex flex-col justify-end text-center">
+
+    <a class="button-primary--outline mt-2 flex w-full items-center justify-between px-3 py-2 text-sm outline-none hf:outline-none"
+       style="display: var(--product-quick-view-off-display)"
+       {% if sold_out %}aria-disabled="true"
+       {% else %}href="{{ product.url }}"{% endif %}
+       data-card-cta-link>
+      <span class="whitespace-nowrap {% if sold_out %}hidden{% endif %}"
+            data-card-cta-content>View</span>
+      <span class="{% if product.available %}hidden{% endif %}"
+            data-card-cta-sold-out>Sold Out</span>
+    </a>
+
+    <button data-product-quick-view-add-button="{{ product.handle }}"
+            data-card-cta-button
+            style="display: var(--product-quick-view-on-display)"
+            class="no-js-hidden button-primary--outline mt-2 flex w-full items-center justify-between px-3 py-2 text-sm outline-none hf:outline-none"
+            {% if sold_out %}disabled="disabled"{% endif %}>
+      <div>
+        <span class="whitespace-nowrap {% if sold_out %}hidden{% endif %}"
+              data-card-cta-content>View</span>
+        <span class="{% if product.available %}hidden{% endif %}"
+              data-card-cta-sold-out>Sold Out</span>
+      </div>
+      {% comment %}  PRICE {% endcomment %}
+
+      <div class="text-xl"
+           data-card-price>
+        {% render '_price', product_or_variant: product %}
+      </div>
+    </button>
+  </div>
+</article>

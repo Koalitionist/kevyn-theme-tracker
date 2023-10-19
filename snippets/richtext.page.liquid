@@ -1,0 +1,17 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign _page = block.settings.page
+  assign title_font = block.settings.title_font
+  assign opacity = block.settings.opacity
+  assign margin_top = block.settings.margin_top
+  assign margin_bottom = block.settings.margin_bottom
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div id="block--{{ block.id }}" {{ block.shopify_attributes }}
+     class="w-full {{ section_max_width | default: "max-w-full" }} {{ responsive_visibility }}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% render 'richtext', type: title_font, content: _page.content, opacity: opacity, no_newlines: true %}
+</div>

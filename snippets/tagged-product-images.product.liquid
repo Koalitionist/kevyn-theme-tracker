@@ -1,0 +1,60 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign _product = block.settings.product
+  assign image = block.settings.image
+  assign tag = block.settings.tag
+  assign description = block.settings.description
+  assign description_font = block.settings.description_font
+  assign action = block.settings.action
+  assign action_font = block.settings.action_font
+  assign action__style = block.settings.action__style
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign action = action | replace: "[title]", _product.title
+  assign image = image | default: _product.featured_image
+
+  if image == blank
+    assign number = forloop.index | modulo: 6 | plus: 1
+    assign placeholderImage = 'product-' | append: number
+  endif
+
+%}
+
+
+<section {{ block.shopify_attributes }}
+    class="{{ class }}"
+    data-scroll-item
+    data-product-card-collection-url="{{ collection.url }}"
+    data-quick-view-product="{{ handle }}">
+  <figure class="relative w-full pb-[100%] mb-4 overflow-hidden rounded-theme-sm">
+    {% render '_image', image: image, placeholder: placeholderImage, width: 400, class: "absolute w-full h-full object-cover" %}
+    {% if tag != blank %}
+      <figcaption class="flex text-sm font-medium items-center justify-center px-4 py-2 bg-primary-bg text-primary-text rounded-theme-sm absolute left-0 bottom-0">
+        {{ tag }}
+      </figcaption>
+    {% endif %}
+  </figure>
+  <div class="grid gap-2 text-center p-3">
+
+
+    {% render 'richtext', type: description_font, content: description %}
+
+    <a class="mt-2 w-full px-3 py-1 text-sm hf:outline-none outline-none {{ action__style }}"
+        {% comment %}style="display: var(--product-quick-view-off-display)"{% endcomment %}
+       href="{{ _product.url }}">
+      {% render 'richtext', type: action_font, content: action, class: action__style %}
+      {% render '_loading-spinner' %}
+    </a>
+    {% comment %}<button data-product-quick-view-add-button="{{ _product.handle }}"
+            data-card-cta-button
+            style="display: var(--product-quick-view-on-display)"
+            class="no-js-hidden mt-2 w-full px-3 py-1 text-sm hf:outline-none outline-none {{ action__style }}">
+      {% render 'richtext', type: action_font, content: action %}
+      {% render '_loading-spinner' %}
+    </button>{% endcomment %}
+
+
+  </div>
+</section>

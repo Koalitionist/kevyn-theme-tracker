@@ -1,0 +1,1470 @@
+{
+  "sections": {
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a": {
+      "type": "image-banner",
+      "blocks": {
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
+          "type": "text",
+          "settings": {
+            "title": "<p>NEW<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>OPULENT <\/h1><h1>FINISHING <\/h1><h1>POWDER<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "00e07788-6c56-44a8-99ec-01804e63100e": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
+        "00e07788-6c56-44a8-99ec-01804e63100e"
+      ],
+      "settings": {
+        "source": "video",
+        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123_HEADER_BANNER_1.jpg",
+        "video": "shopify:\/\/files\/videos\/Copy of Opulent Web Video (1).mp4",
+        "video_url": "",
+        "url": "shopify:\/\/products\/the-lighting-stick",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 880,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "c01c8908-eb19-4d95-a852-323ab30e41cd": {
+      "type": "products-scrollable",
+      "blocks": {
+        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3": {
+          "type": "view_all_bar",
+          "settings": {
+            "title": "<h2>BEST SELLERS<\/h2>",
+            "title_font": 3,
+            "view_all_text": "<p>View All<\/p>",
+            "view_all_font": 3,
+            "url": "",
+            "margin_bottom": 36
+          }
+        },
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3",
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": true,
+        "hide_if_empty": true,
+        "container_overflow": true,
+        "center_products": true,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "c050b217-8204-4574-99ce-651874893724": {
+      "type": "richtext",
+      "blocks": {
+        "template--18752996770111__c050b217-8204-4574-99ce-651874893724-1682368928bd91794d-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>THREE DIMENSIONS OF EFFORTLESS SCULPTING<\/h2>",
+            "title_font": 3,
+            "opacity": 58,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 48,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--18752996770111__c050b217-8204-4574-99ce-651874893724-1682368928bd91794d-3"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "0d93169a-e1c0-4e95-afd6-0d89f4484b65": {
+      "type": "image-with-text",
+      "blocks": {
+        "6b47dd76-fdd3-4dfd-b55a-8a760addf61d": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>AS EASY <\/h2><h2>AS <\/h2><h2>1-2-3<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "eddf0b05-4e4c-48df-b0d9-0a877c376135": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>Choose your highlight, <\/h5><h5>blush and contour<\/h5><h5> from our Signature<\/h5><h5> Sculpting Collection for an all-day, <\/h5><h5>effortless look.<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "6b47dd76-fdd3-4dfd-b55a-8a760addf61d",
+        "eddf0b05-4e4c-48df-b0d9-0a877c376135"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/3 Finger Sculpting map (Instagram Post (Square)).mp4",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-[1fr_66%]",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "113443f1-f151-41f8-8d5b-7c235c9b252d": {
+      "type": "image-banner",
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123-12.jpg",
+        "video_url": "",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 1050,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "76990100-2a10-4e11-8c11-9bc13a33b24c": {
+      "type": "richtext",
+      "blocks": {
+        "91faef7d-d773-4d99-afc9-271463dad25d": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "726fd27d-b7c6-4404-8eb4-402e447537be": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>— Kevyn Aucoin<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "91faef7d-d773-4d99-afc9-271463dad25d",
+        "726fd27d-b7c6-4404-8eb4-402e447537be"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-lg",
+        "padding_bottom": "pb-lg",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "86c1c1f4-8727-4ce8-b967-29e25fe12d97": {
+      "type": "image-with-text",
+      "blocks": {
+        "9b347942-be15-4457-9983-6de727dd5612": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE CONTRAST STICK<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bcd0d90c-c727-4832-8276-c4803d4fdcb1": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Define your unique features with smooth and precise application.<\/h4>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "a142de5e-e913-4a34-8c54-e854b6a8908f": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/The Contrast Stick",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "9b347942-be15-4457-9983-6de727dd5612",
+        "bcd0d90c-c727-4832-8276-c4803d4fdcb1",
+        "a142de5e-e913-4a34-8c54-e854b6a8908f"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_04_Contrast_Stick_1200x1200px_1.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "94a2072d-0ce0-419c-996b-ed64b07f4648": {
+      "type": "image-with-text",
+      "blocks": {
+        "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE COLOR STICK<\/h1>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "cf462966-3d22-4bab-ac37-799188a5e875": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>A pigment-rich, ultra-creamy lightweight blush.<\/h4>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ba86114e-b390-4d42-aa6b-dfbcac6f4e46": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "content_1": "<p>Inspire people to enjoy life. It's what we do!<\/p>",
+            "content_font_1": 1,
+            "content_2": "<p>10% of our annual profits to help those in need<\/p>",
+            "content_font_2": 1,
+            "content_3": "<p>Giving is how Bullstrap fulfills it's purpose<\/p>",
+            "content_font_3": 1,
+            "content_4": "",
+            "content_font_4": 1,
+            "icon_size": 30,
+            "spacing": 18,
+            "align__horizontal": "items-center text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "a9056317-7e54-473d-9a14-5efaa859e2a0": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "DISCOVER",
+            "button_primary__url": "shopify:\/\/products\/the-color-stick",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0",
+        "cf462966-3d22-4bab-ac37-799188a5e875",
+        "ba86114e-b390-4d42-aa6b-dfbcac6f4e46",
+        "a9056317-7e54-473d-9a14-5efaa859e2a0"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_COLOR_STICKS_LIFESTYLE3_1200x1200px_jpg.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6": {
+      "type": "image-with-text",
+      "blocks": {
+        "b6debc72-2368-456d-a06b-779d56421b25": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>THE LIGHTING STICK<\/h2>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "d92ead48-d031-43b2-aa6a-d9d45801fbe8": {
+          "type": "text",
+          "settings": {
+            "title": "<p>A refined shimmering glow that complements all skin tones from every angle.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "35ec8c5e-307f-45c8-b8e3-4be7a33b3a92": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "DISCOVER",
+            "button_secondary__url": "shopify:\/\/products\/the-lighting-stick",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "b6debc72-2368-456d-a06b-779d56421b25",
+        "d92ead48-d031-43b2-aa6a-d9d45801fbe8",
+        "35ec8c5e-307f-45c8-b8e3-4be7a33b3a92"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KevynAucoin23-_84.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[75%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "762d39e4-4b75-493f-9d46-b262cc99e399": {
+      "type": "object-over-image",
+      "blocks": {
+        "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_dca93a3e-63fd-453c-abb7-afdb0dd45ec1.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "button_primary__text": "NEW PRO LASH CURLER",
+            "button_primary__url": "shopify:\/\/products\/the-professional-eyelash-curler",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "862565af-e409-40fa-8bd2-583ed8a15ce3": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_June_Lifestyle_2_SSE_Duet_Concealer_Brush_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "button_primary__text": "BECOME A PRO MEMBER",
+            "button_primary__url": "shopify:\/\/pages\/pro",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1",
+        "862565af-e409-40fa-8bd2-583ed8a15ce3"
+      ],
+      "settings": {
+        "spacing": 60,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "c88f7abc-f293-492b-87c6-ee3eedeff8bf": {
+      "type": "richtext",
+      "blocks": {
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>EDITOR'S PICKS<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-left",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-0",
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-1",
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-2",
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-3",
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-4",
+        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-start text-left",
+        "width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "31e10a51-dbe5-437c-a7e4-fc2aedc76660": {
+      "type": "categories",
+      "blocks": {
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-0": {
+          "type": "category",
+          "settings": {
+            "title": "<h2>FACE FORWARD<\/h2>",
+            "title_font": 1,
+            "content": "",
+            "content_font": 1,
+            "image": "shopify:\/\/shop_images\/KAB_June_Lifestyle_4_Etherealist_Concealer_1200x1200px.jpg",
+            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
+            "url": "shopify:\/\/collections\/face",
+            "link": "<p>EXPLORE<\/p>",
+            "link_font": 1,
+            "style": "row-span-2 pb-[calc(150%+24px)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-1": {
+          "type": "category",
+          "settings": {
+            "title": "<h2>BRIDAL LOOK<\/h2>",
+            "title_font": 1,
+            "content": "",
+            "content_font": 1,
+            "image": "shopify:\/\/shop_images\/SomethingBlueSet_1200x1200px.jpg",
+            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
+            "url": "shopify:\/\/collections\/bridal-get-the-look",
+            "link": "<p>EXPLORE<\/p>",
+            "link_font": 1,
+            "style": "row-span-1 pb-[75%]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-2": {
+          "type": "category",
+          "settings": {
+            "title": "<h2>BETTER TOGETHER<\/h2>",
+            "title_font": 1,
+            "content": "",
+            "content_font": 1,
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-07-17_at_11.08.59_AM.png",
+            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
+            "url": "shopify:\/\/collections\/perfect-pairs",
+            "link": "<p>EXPORE<\/p>",
+            "link_font": 1,
+            "style": "row-span-1 pb-[75%]",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-0",
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-1",
+        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-2"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "container_overflow": true,
+        "center_products": true,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "3c576937-3efa-4efc-8e59-161e786e2c4a": {
+      "type": "products-scrollable-koa",
+      "blocks": {
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "preheading": "<p>FOR THE PROS<\/p>",
+            "preheading_font": 1,
+            "title": "",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 0
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1": {
+          "type": "source_products",
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1": {
+          "type": "source_collection",
+          "settings": {
+            "source": "pro-kits"
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1": {
+          "type": "source_metafield",
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "4452e9a0-34c2-49b8-8617-fa9179fa8dec": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h2>FOR THE PROS<\/h2>",
+            "title_font": 3,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 60
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1": {
+          "type": "source_products",
+          "disabled": true,
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "pro-kits"
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3": {
+          "type": "source_metafield",
+          "disabled": true,
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 6,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": true,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "7252a397-b2d6-480b-b379-7bee1a4b42e4": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/LightingStickHeroNew.jpg",
+        "video_url": "",
+        "url": "shopify:\/\/products\/the-lighting-stick",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 690,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "max-md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "34ef0d1c-0582-4c4c-a551-00a17a6b8a3f": {
+      "type": "richtext",
+      "blocks": {
+        "92dc301f-eaa5-4d22-8551-ccf5ef46dba1": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>Exceptional performance. Luxurious finish.<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "20653eba-8e13-4550-bb5a-25cefce3c007": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>Highlighters that effortlessly glide onto your most desirable features — leaving skin dewy and luminous for a fresh-faced glow.<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "92dc301f-eaa5-4d22-8551-ccf5ef46dba1",
+        "20653eba-8e13-4550-bb5a-25cefce3c007"
+      ],
+      "disabled": true,
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "9e0f9acb-ae8a-4340-a9ab-6f54f0067a11": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "shopify:\/\/collections\/complexion",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 1050,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "max-md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "e632efd9-bab4-44e2-810b-3c9f7f104d59": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "shopify:\/\/collections\/complexion",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 530,
+        "height_mobile": 270,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "0e74636a-5726-4ae0-854d-50b6b3e0a383": {
+      "type": "richtext",
+      "blocks": {
+        "042a7891-64a4-4f86-af98-5e37417ed83b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "26375f25-e6d5-4fe5-b16c-163b4312349b": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "8b543fbb-8b29-479b-9166-44b26a2ca76c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "4ac7c582-f31d-4570-b145-34afd5566869": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>THE REVIEWS ARE IN<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "3d177eb2-f441-4009-b9d7-24c0eb8472d9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b57480a4-4585-4780-9d82-aa0979f46ea6": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "042a7891-64a4-4f86-af98-5e37417ed83b",
+        "26375f25-e6d5-4fe5-b16c-163b4312349b",
+        "8b543fbb-8b29-479b-9166-44b26a2ca76c",
+        "4ac7c582-f31d-4570-b145-34afd5566869",
+        "3d177eb2-f441-4009-b9d7-24c0eb8472d9",
+        "b57480a4-4585-4780-9d82-aa0979f46ea6"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "b2ad8b97-5d85-4c86-b4ad-1ab7382b431c": {
+      "type": "featured-reviews",
+      "blocks": {
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>UNFORGETTABLE LIPSTICK<\/p><p>The texture feels so smooth and the color is attractive!<\/p>",
+            "author": "<p>Deborah M.<\/p>"
+          }
+        },
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>VOLUME MASCARA<\/p><p>Lengthens, Curls, Doesn't Clump or Flake & Lasts All Day<\/p><p>It looks natural on my lashes and has a good ratio of length to thickness. A second application makes it \"out on the town\" worthy.<\/p>",
+            "author": "<p>J.M. C<\/p>"
+          }
+        },
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>ETHEREALIST FOUNDATION<\/p><p>Perfection. This shade is an EXACT match for my skin. It doesn't look like makeup, it looks like my skin only smooth, radiant and pore less. Effortless application. I use a brush and this foundation disappears on my face. Never cakey or dull.<\/p>",
+            "author": "<p>Pandora J.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1",
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0",
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Feb_Lifestyle_8_EComm_Reviews_1200x1200px.jpg",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__order": "-order-1 lg:order-2",
+        "review_font": 1,
+        "author_font": 1,
+        "style": "slider",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "2a043576-a944-4341-a24f-5193a924b278": {
+      "type": "features",
+      "blocks": {
+        "template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>GLOBAL SHIPPING<\/h3>",
+            "content": "<p>Shop from anywhere in the world. —&gt;<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Shipping_922829d9-cb45-4f6c-866e-0755848e3bfc.png"
+          }
+        },
+        "652923a9-2528-47fc-bae6-b36d84081f7d": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>CONTACT US<\/h3>",
+            "content": "<p>customerservice@kevynaucoin.com<\/p><p>1-888-367-1319 <\/p><p>(M-F from 9am-6pm EST)<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Contact_37f54aac-aa84-4dca-8c04-039053d289e7.png"
+          }
+        },
+        "6f69cd92-8fa1-41fc-942f-d3e4370a7e47": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>AFTERPAY<\/h3>",
+            "content": "<p>Buy now and pay later in 4-easy installments<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Afterpay-outline.png"
+          }
+        },
+        "967e3779-8008-4836-9c9d-a9f6f11720c4": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>FREE SHIPPING<\/h3>",
+            "content": "<p>on domestic orders $75+<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Truck_225ccb62-3844-455c-bbbd-3dda73bd7a19.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0",
+        "652923a9-2528-47fc-bae6-b36d84081f7d",
+        "6f69cd92-8fa1-41fc-942f-d3e4370a7e47",
+        "967e3779-8008-4836-9c9d-a9f6f11720c4"
+      ],
+      "settings": {
+        "preheading": "",
+        "preheading_font": 1,
+        "title": "",
+        "title_font": 1,
+        "content": "",
+        "content_font": 1,
+        "align__horizontal": "items-center text-center",
+        "feature_title_font": 3,
+        "feature_content_font": 3,
+        "layout": "icon-image",
+        "icon_size": 80,
+        "feature__align__horizontal": "items-center text-center",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "f9359fcb-c5d8-4d4e-a991-e7a7821039b9": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eyeshadow.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CqyQ6AduhEG\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_1_a283c79b-5731-46f6-8d78-6e3bc0f25aad.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Ck_obgZJL21\/?igshid=YmMyMTA2M2Y=",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ProLashCurler.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CrgR3s7AQck\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DuetDefiner_Model_1000x1000px300dpi.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CpF2FaPMz9J\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 230,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4": {
+      "type": "forms",
+      "blocks": {
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h2><strong>Sign Up<\/strong><\/h2>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Lorem <strong>ipsum <\/strong>dolor sit amet, consectetur adipiscing elit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1": {
+          "type": "separator",
+          "settings": {
+            "height": 20
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1": {
+          "type": "input",
+          "settings": {
+            "title": "First Name",
+            "name": "first_name",
+            "type": "text",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "given-name",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2": {
+          "type": "input",
+          "settings": {
+            "title": "Last Name",
+            "name": "last_name",
+            "type": "text",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "family-name",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1": {
+          "type": "password",
+          "settings": {
+            "title": "Password",
+            "confirm_pw__title": "Confirm Password",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "Sign Up",
+            "reset__show": false,
+            "reset__title": "Reset",
+            "fullwidth": true,
+            "grid_span": "col-span-12"
+          }
+        }
+      },
+      "block_order": [
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "type": "create_customer",
+        "hide_if_account": false,
+        "show_only_on_target": false,
+        "target_id": "",
+        "success_message": "<p>Thank you for contacting us.<\/p>",
+        "redirect": "off",
+        "width": "max-w-md",
+        "fullwidth": true,
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
+    "c01c8908-eb19-4d95-a852-323ab30e41cd",
+    "c050b217-8204-4574-99ce-651874893724",
+    "0d93169a-e1c0-4e95-afd6-0d89f4484b65",
+    "113443f1-f151-41f8-8d5b-7c235c9b252d",
+    "76990100-2a10-4e11-8c11-9bc13a33b24c",
+    "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
+    "94a2072d-0ce0-419c-996b-ed64b07f4648",
+    "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6",
+    "762d39e4-4b75-493f-9d46-b262cc99e399",
+    "c88f7abc-f293-492b-87c6-ee3eedeff8bf",
+    "31e10a51-dbe5-437c-a7e4-fc2aedc76660",
+    "3c576937-3efa-4efc-8e59-161e786e2c4a",
+    "4452e9a0-34c2-49b8-8617-fa9179fa8dec",
+    "7252a397-b2d6-480b-b379-7bee1a4b42e4",
+    "34ef0d1c-0582-4c4c-a551-00a17a6b8a3f",
+    "9e0f9acb-ae8a-4340-a9ab-6f54f0067a11",
+    "e632efd9-bab4-44e2-810b-3c9f7f104d59",
+    "0e74636a-5726-4ae0-854d-50b6b3e0a383",
+    "b2ad8b97-5d85-4c86-b4ad-1ab7382b431c",
+    "2a043576-a944-4341-a24f-5193a924b278",
+    "f9359fcb-c5d8-4d4e-a991-e7a7821039b9",
+    "7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4"
+  ]
+}

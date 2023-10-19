@@ -1,0 +1,20 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign grid_span = block.settings.grid_span
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign productTitle = title | replace: "[title]", product.title %}
+
+<div data-product-block="title"
+     class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+     style="--font-scale-h3: {{ font_scale | divided_by: 100.0 }}"
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% render 'richtext', type: title_font, content: productTitle %}
+</div>

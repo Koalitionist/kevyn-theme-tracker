@@ -1,0 +1,203 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign slide = block.settings.slide
+  assign slide_speed = block.settings.slide_speed
+  assign video = block.settings.video
+  assign video_url = block.settings.video_url
+  assign url = block.settings.url
+  assign autoplay = block.settings.autoplay
+  assign preview_image = block.settings.preview_image
+  assign image__overlay = block.settings.image__overlay
+  assign preheading = block.settings.preheading
+  assign preheading_font = block.settings.preheading_font
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign subtitle = block.settings.subtitle
+  assign subtitle_font = block.settings.subtitle_font
+  assign content = block.settings.content
+  assign content_font = block.settings.content_font
+  assign button_primary__text = block.settings.button_primary__text
+  assign button_primary__url = block.settings.button_primary__url
+  assign button_primary__style = block.settings.button_primary__style
+  assign button_secondary__text = block.settings.button_secondary__text
+  assign button_secondary__url = block.settings.button_secondary__url
+  assign button_secondary__style = block.settings.button_secondary__style
+  assign height = block.settings.height
+  assign content_gap = block.settings.content_gap
+  assign align__vertical = block.settings.align__vertical
+  assign align__horizontal = block.settings.align__horizontal
+  assign section_layout = block.settings.section_layout
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+  assign color_scheme = block.settings.color_scheme
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  if button_primary__text != blank and button_primary__url != blank
+    assign button_primary__show = true
+  endif
+
+  if button_secondary__text != blank and button_secondary__url != blank
+    assign button_secondary__show = true
+  endif
+
+  assign containerClasses = 'flex-col'
+
+  if content_image != blank
+    assign containerClasses = 'flex-col md:flex-row !text-left'
+    assign buttonLeftClasses = '!justify-start'
+  endif
+
+  if first
+    assign activeClass = "active"
+  endif
+
+  assign align_content = align__vertical | append: ' ' | append: align__horizontal
+  assign preview_image = preview_image | default: video.preview_image
+%}
+
+<figure class="snap-start group w-full h-full relative overflow-hidden {{ color_scheme }} {{ responsive_visibility }} isolate grid"
+        id="block--{{ block.id }}" {{ block.shopify_attributes }}
+        data-slideshow-slide="{{ forloop.index0 }}"
+        style="min-height: {{ height }}px; --video-height: max(calc(100vh * 1.4),100vw);--video-width: {% if section_layout == 'fullwidth'%}max(calc(100vh * 1.4), 100vw){% else %}max(calc(100vh * 1.4), var(--layout-page-width)){% endif %}">
+  <div class="absolute inset-0 z-0 h-full w-full object-cover overflow-hidden">
+    {% if autoplay %}
+      {% render 'video-banner.preview_video', block: block %}
+    {% else %}
+      {% render '_image', image: preview_image, class: 'absolute inset-0 w-full h-full object-cover z-0', placeholder: 'lifestyle-1', sizes: "100vw" %}
+    {% endif %}
+  </div>
+
+  <figure class="relative isolate grid w-full"
+          style="min-height: {{ height }}px; --video-height: max(calc(100vh * 1.4),100vw);--video-width: {% if section_layout == 'fullwidth'%}max(calc(100vh * 1.4), 100vw){% else %}max(calc(100vh * 1.4), var(--layout-page-width)){% endif %}">
+
+    <div class="absolute inset-0 z-0 h-full w-full object-cover overflow-hidden">
+      {% if autoplay %}
+        {% render 'video-banner.preview_video', block: preview_video %}
+      {% else %}
+        {% render '_image', image: preview_image, class: 'absolute inset-0 w-full h-full object-cover z-0', placeholder: 'lifestyle-1', sizes: "100vw" %}
+      {% endif %}
+    </div>
+
+    <figcaption class="z-10 h-full w-full px-6 py-8"
+                style="background-image: {{ image__overlay }};">
+      <div class="container h-full w-full flex {{ containerClasses }} {{ align__vertical }} {{ align__horizontal }}">
+        <div class="{{ section_max_width }} grid"
+             style="gap: {{ content_gap }}px">
+          {% render 'richtext', type: preheading_font, content: preheading, class: "text-theme-overlay-text" %}
+          {% render 'richtext', type: title_font, content: title, class: "text-theme-overlay-text" %}
+          {% render 'richtext', type: subtitle_font, content: subtitle, class: "text-theme-overlay-text" %}
+          {% render 'richtext', type: content_font, content: content, class: "text-theme-overlay-text" %}
+
+          {% if button_secondary__show or button_primary__show %}
+            <div class="mt-4 -mx-2 flex flex-col sm:flex-row {{ align__horizontal | replace: "items", "sm:justify" | replace: "items-end", "sm:justify-end" }} {{ buttonLeftClasses }}">
+              {% if button_secondary__show %}
+                <a href="{{ button_secondary__url }}"
+                   class="{{ button_secondary__style }} m-2">
+                  {{ button_secondary__text }}
+                </a>
+              {% endif %}
+              {% if button_primary__show %}
+                <a href="{{ button_primary__url }}"
+                   class="{{ button_primary__style }} m-2">
+                  {{ button_primary__text }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </figcaption>
+  </figure>
+</figure>
+
+{% assign videoContainerClasses = "w-full h-full" %}
+
+{% if video != blank or video_url != blank or url != blank %}
+  <div class="group fixed pointer-events-none inset-0 z-[101] ac:pointer-events-auto hidden"
+       data-drawer="video--{{ block.id }}"
+       data-video-banner="{{ block.id }}">
+    <section class="fixed inset-x-0 top-0 w-full border-b border-b-gray-100 z-10 group-ac:opacity-100 ease-linear h-screen opacity-0 transition-[transform,_opacity] group-ac:delay-[0s,_0s] delay-[0s,_140ms] duration-[140ms,_0s] pointer-events-none flex justify-center items-center container"
+             data-drawer-content>
+      <div class="max-w-[96vw] group-ac:delay-300 hidden group-ac:block w-full aspect-[16/9] group-ac:pointer-events-auto">
+        {% if video != blank %}
+          {{ video | media_tag: image_size: "2048x", autoplay: false, muted: false, loop: false, controls: true, preload: "none", class: videoContainerClasses }}
+        {% elsif video_url != blank %}
+          {% if video_url.type == 'youtube' %}
+            <iframe src="https://www.youtube.com/embed/{{ video_url.id }}?autoplay=0&showinfo=0&controls=1&rel=0&modestbranding=1&loop=0"
+                    loading="lazy"
+                    frameborder="0"
+                    class="js-youtube {{ videoContainerClasses }}"
+                    allow="autoplay; encrypted-media; muted; loop"
+                    allowfullscreen></iframe>
+          {% elsif video_url.type == 'vimeo' %}
+            <iframe src="https://player.vimeo.com/video/{{ video_url.id }}?autoplay=0&portrait=0&byline=0&loop=0&sidedock=0"
+                    loading="lazy"
+                    allow="autoplay; encrypted-media"
+                    class="js-vimeo {{ videoContainerClasses }}"
+                    frameborder="0"></iframe>
+          {% endif %}
+        {% elsif url != blank %}
+          {% if url contains 'cdn.shopify.com/videos' %}
+            <video playsinline="playsinline"
+                   controls="controls"
+                   preload="none"
+                   class="{{ videoContainerClasses }}">
+              {% if url contains '.mp4' %}
+                <source src="{{ url }}"
+                        type="video/mp4">
+              {% endif %}
+              {% if url contains '.mov' %}
+                <source src="{{ url }}"
+                        type="video/quicktime">
+              {% endif %}
+              {% if url contains '.m4v' %}
+                <source src="{{ url }}"
+                        type="video/x-m4v">
+              {% endif %}
+              {% if url contains '.webm' %}
+                <source src="{{ url }}"
+                        type="video/webm">
+              {% endif %}
+              {% assign fileUrl = "" | file_url | split: "?" | first %}
+              {% assign fileName = url | split: '/' | last | split: '.' | first %}
+              <img src="{{ fileUrl }}/preview_images/{{ fileName }}.thumbnail.0000000_2048x.jpg?v={{ 'now' | date: "%s" }}">
+            </video>
+          {% else %}
+            {% if url contains 'youtu' or url contains 'youtube' %}
+              {% assign video_url_id = url | split: '?' | first | split: '/' | last %}
+              <iframe src="https://www.youtube.com/embed/{{ video_url_id }}?autoplay=0&showinfo=0&controls=1&rel=0&modestbranding=1&loop=0"
+                      loading="lazy"
+                      frameborder="0"
+                      class="js-youtube {{ videoContainerClasses }}"
+                      allow="autoplay; encrypted-media; muted; loop"
+                      allowfullscreen></iframe>
+            {% else %}
+              <iframe src="{{ url | split: '?' | first }}?autoplay=0&showinfo=0&controls=0&rel=0&modestbranding=1&portrait=0&byline=0&sidedock=0"
+                      loading="lazy"
+                      frameborder="0"
+                      class="js-youtube absolute z-0 w-[var(--video-width)] h-[var(--video-height)] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                      allow="autoplay; encrypted-media; muted; loop"
+                      allowfullscreen></iframe>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      </div>
+    </section>
+    <div class="fixed inset-0 bg-white/[0.72] opacity-0 transition-all group-ac:opacity-100 group-ac:pointer-events-auto pointer-events-none"
+         data-drawer-overlay
+         data-cart-drawer-overlay>
+      <button type="button"
+              class="group-ac:fixed hidden group-ac:flex top-5 right-5 h-6 w-6 items-center justify-center transition-all duration-75 text-theme-text hf:text-theme-text/80 sm:bg-transparent z-[101]"
+              data-drawer-close="video--{{ section.id }}">
+        <div class="sr-only">
+          {{ "slideshow.close" | t }}
+        </div>
+        {% render "_icon", icon: 'x-mark', class: "w-5 h-5 stroke-2" %}
+      </button>
+    </div>
+
+  </div>
+{% endif %}
+

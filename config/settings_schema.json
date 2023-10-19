@@ -1,0 +1,3981 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Smart",
+    "theme_author": "Framework Labs",
+    "theme_version": "2.4.9",
+    "theme_documentation_url": "http://docs.smarttheme.com/",
+    "theme_support_url": "http://smarttheme.com/"
+  },
+  {
+    "name": "Branding",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "branding_logo_dark_on_light",
+        "label": "Dark on light background"
+      },
+      {
+        "type": "image_picker",
+        "id": "branding_logo_light_on_dark",
+        "label": "Light on dark background"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "branding_logo_secondary_dark_on_light",
+        "label": "Dark on light background"
+      },
+      {
+        "type": "image_picker",
+        "id": "branding_logo_secondary_light_on_dark",
+        "label": "Light on dark background"
+      },
+      {
+        "type": "header",
+        "content": "Favicon"
+      },
+      {
+        "type": "image_picker",
+        "id": "branding_favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32 x 32px"
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "layout_is_fullwidth",
+        "label": "Full-width Layout",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "layout_page_width",
+        "min": 960,
+        "max": 1920,
+        "step": 20,
+        "default": 1440,
+        "unit": "px",
+        "label": "Page width",
+        "info": "Requires Full-width disabled"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_sm",
+        "label": "Section Padding: Small",
+        "default": 32,
+        "min": 0,
+        "max": 64,
+        "step": 4,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_sm__mobile",
+        "label": "Section Padding: Small Mobile",
+        "default": 32,
+        "min": 0,
+        "max": 64,
+        "step": 4,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_md",
+        "label": "Section Padding: Medium",
+        "default": 96,
+        "min": 48,
+        "max": 192,
+        "step": 4,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_md__mobile",
+        "label": "Section Padding: Medium Mobile",
+        "default": 96,
+        "min": 0,
+        "max": 192,
+        "step": 4,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_lg",
+        "label": "Section Padding: Large",
+        "default": 240,
+        "min": 150,
+        "max": 500,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "layout_section_padding_lg__mobile",
+        "label": "Section Padding: Large Mobile",
+        "default": 240,
+        "min": 0,
+        "max": 500,
+        "step": 10,
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "name": "Colors Theme",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Global theme colors"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "default": "bg-theme-bg text-theme-text color-group-1",
+        "options": [
+          {
+            "value": "bg-theme-bg text-theme-text color-group-1",
+            "label": "Color group 1"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-2",
+            "label": "Color group 2"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-3",
+            "label": "Color group 3"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-4",
+            "label": "Color group 4"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-5",
+            "label": "Color group 5"
+          }
+        ],
+        "label": "Color scheme"
+      },
+      {
+        "type": "header",
+        "content": "Theme Grayscale"
+      },
+      {
+        "type": "select",
+        "id": "color_grayscale",
+        "label": "Grayscale",
+        "default": "gray",
+        "options": [
+          {
+            "value": "slate",
+            "label": "Slate"
+          },
+          {
+            "value": "gray",
+            "label": "Gray"
+          },
+          {
+            "value": "zinc",
+            "label": "Zinc"
+          },
+          {
+            "value": "neutral",
+            "label": "Neutral"
+          },
+          {
+            "value": "stone",
+            "label": "Stone"
+          }
+        ]
+      },
+      {
+        "type": "radio",
+        "id": "color_grayscale_style",
+        "label": "Grayscale Style",
+        "default": "normal",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "inverted",
+            "label": "Inverted"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Utility Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_error",
+        "label": "Error",
+        "default": "#fc0000"
+      },
+      {
+        "type": "color",
+        "id": "color_warning",
+        "label": "Warning",
+        "default": "#f59e0b"
+      },
+      {
+        "type": "color",
+        "id": "color_success",
+        "label": "Success",
+        "default": "#22c55e"
+      },
+      {
+        "type": "color",
+        "id": "color_info",
+        "label": "Info",
+        "default": "#38bdf8"
+      },
+      {
+        "type": "color",
+        "id": "color_review_stars",
+        "label": "Review Stars",
+        "default": "#f3e008"
+      }
+    ]
+  },
+  {
+    "name": "Color Group 1",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_1_title",
+        "label": "Color Group Description",
+        "info": "Adding a descriptive title makes it easier to recognize your Color Schemes for easy identification.",
+        "default": "Color Scheme 1"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_1_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_1_overlay_text",
+        "label": "Overlay Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_1_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color_background",
+        "id": "color_1_bg_gradient",
+        "label": "Background gradient",
+        "default": "linear-gradient(180deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.15) 100%)"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_1_primary_text",
+        "label": "Primary Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_1_primary_bg",
+        "label": "Primary Background",
+        "default": "#19D48B",
+        "info": "Used for ‘Solid’ buttons"
+      },
+      {
+        "type": "color_background",
+        "id": "color_1_primary_bg_gradient",
+        "label": "Primary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_1_primary_outline",
+        "label": "Primary Outline",
+        "default": "#19D48B"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_1_secondary_text",
+        "label": "Secondary Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_1_secondary_bg",
+        "label": "Secondary Background",
+        "default": "#A634FF"
+      },
+      {
+        "type": "color_background",
+        "id": "color_1_secondary_bg_gradient",
+        "label": "Secondary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_1_secondary_outline",
+        "label": "Secondary Outline",
+        "default": "#A634FF"
+      }
+    ]
+  },
+  {
+    "name": "Color Group 2",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_2_title",
+        "label": "Color Group Description",
+        "info": "Adding a descriptive title makes it easier to recognize your Color Schemes for easy identification.",
+        "default": "Color Scheme 2"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_2_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_2_overlay_text",
+        "label": "Overlay Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_2_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color_background",
+        "id": "color_2_bg_gradient",
+        "label": "Background gradient",
+        "default": "linear-gradient(180deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.15) 100%)"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_2_primary_text",
+        "label": "Primary Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_2_primary_bg",
+        "label": "Primary Background",
+        "default": "#19D48B",
+        "info": "Used for ‘Solid’ buttons"
+      },
+      {
+        "type": "color_background",
+        "id": "color_2_primary_bg_gradient",
+        "label": "Primary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_2_primary_outline",
+        "label": "Primary Outline",
+        "default": "#19D48B"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_2_secondary_text",
+        "label": "Secondary Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_2_secondary_bg",
+        "label": "Secondary Background",
+        "default": "#A634FF"
+      },
+      {
+        "type": "color_background",
+        "id": "color_2_secondary_bg_gradient",
+        "label": "Secondary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_2_secondary_outline",
+        "label": "Secondary Outline",
+        "default": "#A634FF"
+      }
+    ]
+  },
+  {
+    "name": "Color Group 3",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_3_title",
+        "label": "Color Group Description",
+        "info": "Adding a descriptive title makes it easier to recognize your Color Schemes for easy identification.",
+        "default": "Color Scheme 3"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_3_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_3_overlay_text",
+        "label": "Overlay Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_3_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color_background",
+        "id": "color_3_bg_gradient",
+        "label": "Background gradient",
+        "default": "linear-gradient(180deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.15) 100%)"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_3_primary_text",
+        "label": "Primary Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_3_primary_bg",
+        "label": "Primary Background",
+        "default": "#19D48B",
+        "info": "Used for ‘Solid’ buttons"
+      },
+      {
+        "type": "color_background",
+        "id": "color_3_primary_bg_gradient",
+        "label": "Primary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_3_primary_outline",
+        "label": "Primary Outline",
+        "default": "#19D48B"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_3_secondary_text",
+        "label": "Secondary Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_3_secondary_bg",
+        "label": "Secondary Background",
+        "default": "#A634FF"
+      },
+      {
+        "type": "color_background",
+        "id": "color_3_secondary_bg_gradient",
+        "label": "Secondary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_3_secondary_outline",
+        "label": "Secondary Outline",
+        "default": "#A634FF"
+      }
+    ]
+  },
+  {
+    "name": "Color Group 4",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_4_title",
+        "label": "Color Group Description",
+        "info": "Adding a descriptive title makes it easier to recognize your Color Schemes for easy identification.",
+        "default": "Header"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_4_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_4_overlay_text",
+        "label": "Overlay Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_4_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color_background",
+        "id": "color_4_bg_gradient",
+        "label": "Background gradient",
+        "default": "linear-gradient(180deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.15) 100%)"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_4_primary_text",
+        "label": "Primary Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_4_primary_bg",
+        "label": "Primary Background",
+        "default": "#19D48B",
+        "info": "Used for ‘Solid’ buttons"
+      },
+      {
+        "type": "color_background",
+        "id": "color_4_primary_bg_gradient",
+        "label": "Primary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_4_primary_outline",
+        "label": "Primary Outline",
+        "default": "#19D48B"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_4_secondary_text",
+        "label": "Secondary Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_4_secondary_bg",
+        "label": "Secondary Background",
+        "default": "#A634FF"
+      },
+      {
+        "type": "color_background",
+        "id": "color_4_secondary_bg_gradient",
+        "label": "Secondary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_4_secondary_outline",
+        "label": "Secondary Outline",
+        "default": "#A634FF"
+      }
+    ]
+  },
+  {
+    "name": "Color Group 5",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_5_title",
+        "label": "Color Group Description",
+        "info": "Adding a descriptive title makes it easier to recognize your Color Schemes for easy identification.",
+        "default": "Footer"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_5_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_5_overlay_text",
+        "label": "Overlay Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_5_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color_background",
+        "id": "color_5_bg_gradient",
+        "label": "Background gradient",
+        "default": "linear-gradient(180deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.15) 100%)"
+      },
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_5_primary_text",
+        "label": "Primary Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_5_primary_bg",
+        "label": "Primary Background",
+        "default": "#19D48B",
+        "info": "Used for ‘Solid’ buttons"
+      },
+      {
+        "type": "color_background",
+        "id": "color_5_primary_bg_gradient",
+        "label": "Primary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_5_primary_outline",
+        "label": "Primary Outline",
+        "default": "#19D48B"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_5_secondary_text",
+        "label": "Secondary Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_5_secondary_bg",
+        "label": "Secondary Background",
+        "default": "#A634FF"
+      },
+      {
+        "type": "color_background",
+        "id": "color_5_secondary_bg_gradient",
+        "label": "Secondary Gradient Background",
+        "info": "Take precedence over ‘Accent’"
+      },
+      {
+        "type": "color",
+        "id": "color_5_secondary_outline",
+        "label": "Secondary Outline",
+        "default": "#A634FF"
+      }
+    ]
+  },
+  {
+    "name": "Fonts",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "font_family_1",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font_weights_1",
+        "label": "Font Weights / Styles",
+        "default": "300, 400, 400i, 700, 700i, 800"
+      },
+      {
+        "type": "text",
+        "id": "font_custom_family_1",
+        "label": "Custom font family"
+      },
+      {
+        "type": "html",
+        "id": "font_custom_src_1",
+        "label": "Custom font src HTML"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.fonts.settings.paragraph__1.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_family_2",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font_weights_2",
+        "label": "Font Weights / Styles",
+        "default": "300, 400, 400i, 700, 700i, 800"
+      },
+      {
+        "type": "text",
+        "id": "font_custom_family_2",
+        "label": "Custom font family"
+      },
+      {
+        "type": "html",
+        "id": "font_custom_src_2",
+        "label": "Custom font src HTML"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.fonts.settings.paragraph__2.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_family_3",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font_weights_3",
+        "label": "Font Weights / Styles",
+        "default": "300, 400, 400i, 700, 700i, 800"
+      },
+      {
+        "type": "text",
+        "id": "font_custom_family_3",
+        "label": "Custom font family"
+      },
+      {
+        "type": "html",
+        "id": "font_custom_src_3",
+        "label": "Custom font src HTML"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.fonts.settings.paragraph__3.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_family_4",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font_weights_4",
+        "label": "Font Weights / Styles",
+        "default": "300, 400, 400i, 700, 700i, 800"
+      },
+      {
+        "type": "text",
+        "id": "font_custom_family_4",
+        "label": "Custom font family"
+      },
+      {
+        "type": "html",
+        "id": "font_custom_src_4",
+        "label": "Custom font src HTML"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.fonts.settings.paragraph__4.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_family_5",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font_weights_5",
+        "label": "Font Weights / Styles",
+        "default": "300, 400, 400i, 700, 700i, 800"
+      },
+      {
+        "type": "text",
+        "id": "font_custom_family_5",
+        "label": "Custom font family"
+      },
+      {
+        "type": "html",
+        "id": "font_custom_src_5",
+        "label": "Custom font src HTML"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.fonts.settings.paragraph__5.content"
+      }
+    ]
+  },
+  {
+    "name": "Typography Group 1",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading 1"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h1_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h1",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h1_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h1_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "48px / 36px | 700 | 1"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h1_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 2"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h2_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h2",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h2_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h2_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "36px / 32px | 700 | 1.1"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h2_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 3"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h3_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h3",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h3_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h3_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "30px / 24px | 600 | 1.2"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h3_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__3.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 4"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h4_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h4",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h4_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h4_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "24px / 20px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h4_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__4.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 5"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h5_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h5",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h5_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h5_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "21px / 16px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h5_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__5.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 6"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_h6_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h6",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h6_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h6_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 500 | 1.5"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_h6_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__6.content"
+      },
+      {
+        "type": "header",
+        "content": "Paragraph"
+      },
+      {
+        "type": "select",
+        "id": "typography_1_p_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "p",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_1_p_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_p_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.7"
+      },
+      {
+        "type": "text",
+        "id": "typography_1_p_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_1.settings.paragraph__7.content"
+      }
+    ]
+  },
+  {
+    "name": "Typography Group 2",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading 1"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h1_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h1",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h1_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h1_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "48px / 36px | 700 | 1"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h1_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 2"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h2_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h2",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h2_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h2_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "36px / 32px | 700 | 1.1"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h2_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 3"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h3_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h3",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h3_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h3_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "30px / 24px | 600 | 1.2"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h3_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__3.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 4"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h4_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h4",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h4_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h4_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "24px / 20px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h4_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__4.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 5"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h5_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h5",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h5_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h5_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "21px / 16px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h5_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__5.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 6"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_h6_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h6",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h6_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h6_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 500 | 1.5"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_h6_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__6.content"
+      },
+      {
+        "type": "header",
+        "content": "Paragraph"
+      },
+      {
+        "type": "select",
+        "id": "typography_2_p_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "p",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_2_p_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_p_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.7"
+      },
+      {
+        "type": "text",
+        "id": "typography_2_p_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_2.settings.paragraph__7.content"
+      }
+    ]
+  },
+  {
+    "name": "Typography Group 3",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading 1"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h1_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h1",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h1_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h1_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "48px / 36px | 700 | 1"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h1_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 2"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h2_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h2",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h2_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h2_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "36px / 32px | 700 | 1.1"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h2_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 3"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h3_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h3",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h3_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h3_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "30px / 24px | 600 | 1.2"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h3_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__3.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 4"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h4_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h4",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h4_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h4_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "24px / 20px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h4_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__4.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 5"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h5_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h5",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h5_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h5_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "21px / 16px | 600 | 1.3"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h5_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__5.content"
+      },
+      {
+        "type": "header",
+        "content": "Heading 6"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_h6_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "h6",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h6_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h6_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 500 | 1.5"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_h6_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__6.content"
+      },
+      {
+        "type": "header",
+        "content": "Paragraph"
+      },
+      {
+        "type": "select",
+        "id": "typography_3_p_tag",
+        "label": "HTML Tag",
+        "info": "Adjust the default HTML Tag for SEO",
+        "default": "p",
+        "options": [
+          {
+            "value": "p",
+            "label": "p"
+          },
+          {
+            "value": "h1",
+            "label": "h1"
+          },
+          {
+            "value": "h2",
+            "label": "h2"
+          },
+          {
+            "value": "h3",
+            "label": "h3"
+          },
+          {
+            "value": "h4",
+            "label": "h4"
+          },
+          {
+            "value": "h5",
+            "label": "h5"
+          },
+          {
+            "value": "h6",
+            "label": "h6"
+          },
+          {
+            "value": "blockquote",
+            "label": "blockquote"
+          },
+          {
+            "value": "div",
+            "label": "div"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "typography_3_p_font_family",
+        "label": "Font Family",
+        "default": "sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_p_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.7"
+      },
+      {
+        "type": "text",
+        "id": "typography_3_p_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.typography_group_3.settings.paragraph__7.content"
+      }
+    ]
+  },
+  {
+    "name": "Dynamic Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header & Navigation"
+      },
+      {
+        "type": "paragraph",
+        "content": ".nav-link"
+      },
+      {
+        "type": "text",
+        "id": "typography_nav_link_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_nav_link_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.4 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_nav_link_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.dynamic_typography.settings.paragraph__1.content"
+      },
+      {
+        "type": "paragraph",
+        "content": ".megamenu-title"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_title_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_title_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 600 | 1.4 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_title_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.dynamic_typography.settings.paragraph__2.content"
+      },
+      {
+        "type": "paragraph",
+        "content": ".megamenu-link"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 400 | 1.6 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.dynamic_typography.settings.paragraph__3.content"
+      },
+      {
+        "type": "paragraph",
+        "content": ".megamenu-link--large"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_large_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_large_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "24px | 700 | 1.4 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_link_large_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.dynamic_typography.settings.paragraph__4.content"
+      },
+      {
+        "type": "paragraph",
+        "content": ".megamenu-image-caption"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_image_caption_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_image_caption_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "18px | 600 | 1.3 | 0.7 "
+      },
+      {
+        "type": "text",
+        "id": "typography_megamenu_image_caption_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.dynamic_typography.settings.paragraph__5.content"
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Typography"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_button",
+        "label": "Font Family",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "text",
+        "id": "font_button_custom",
+        "label": "Custom font family"
+      },
+      {
+        "type": "range",
+        "id": "font_button_size",
+        "label": "Desktop Font Size",
+        "default": 16,
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "font_button_mobile_size",
+        "label": "Mobile Font Size",
+        "default": 16,
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "font_button_weight",
+        "label": "Font Weight",
+        "default": 500,
+        "min": 100,
+        "max": 900,
+        "step": 100
+      },
+      {
+        "type": "range",
+        "id": "font_button_letter_spacing",
+        "label": "Letter Spacing",
+        "default": 0,
+        "min": -10,
+        "max": 10,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "type": "select",
+        "id": "button_text_transform",
+        "label": "Letter Casing",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "uppercase",
+            "label": "Uppercase"
+          },
+          {
+            "value": "lowercase",
+            "label": "Lowercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "Capitalize"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.buttons.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Styling"
+      },
+      {
+        "type": "range",
+        "id": "button_horizontal_padding",
+        "label": "Horizontal Padding",
+        "default": 8,
+        "min": 4,
+        "max": 64,
+        "step": 4,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "button_vertical_padding",
+        "label": "Vertical Padding",
+        "default": 8,
+        "min": 2,
+        "max": 24,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "button_border_radius",
+        "label": "Corner Radius",
+        "default": 0,
+        "min": -1,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "info": "Set to -1 to create a fully rounded-theme border"
+      },
+      {
+        "type": "range",
+        "id": "button_border_width",
+        "label": "Border Width",
+        "default": 1,
+        "min": 0,
+        "max": 6,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "button_shadow",
+        "label": "Shadow",
+        "default": 0,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.buttons.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Hover Transition"
+      },
+      {
+        "type": "range",
+        "id": "button_hover_border_radius",
+        "label": "Corner Radius",
+        "default": 0,
+        "min": -1,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "info": "Set to the default Corner Radius to disable"
+      },
+      {
+        "type": "range",
+        "id": "button_hover_scale",
+        "label": "Scale",
+        "default": 100,
+        "min": 80,
+        "max": 130,
+        "step": 5,
+        "unit": "%"
+      },
+      {
+        "type": "range",
+        "id": "button_hover_shadow",
+        "label": "shadow",
+        "default": 0,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      }
+    ]
+  },
+  {
+    "name": "Design Elements",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Design Style"
+      },
+      {
+        "type": "checkbox",
+        "id": "design_tooltips_show",
+        "label": "Show Tooltips",
+        "default": true
+      },
+      {
+        "type": "radio",
+        "id": "design_border_radius",
+        "label": "Corner Styles",
+        "default": "soft",
+        "options": [
+          {
+            "value": "soft",
+            "label": "Soft (Very round corners)"
+          },
+          {
+            "value": "medium",
+            "label": "Medium (A few round corners)"
+          },
+          {
+            "value": "bold",
+            "label": "Bold (No rounded-theme corners)"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Pagination"
+      },
+      {
+        "type": "radio",
+        "id": "design_pagination_style",
+        "label": "Style",
+        "default": "compact",
+        "options": [
+          {
+            "value": "compact",
+            "label": "Compact"
+          },
+          {
+            "value": "floating",
+            "label": "Floating"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Breadcrumbs"
+      },
+      {
+        "type": "paragraph",
+        "content": ".breadcrumbs"
+      },
+      {
+        "type": "text",
+        "id": "typography_breadcrumbs_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_breadcrumbs_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 500 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_breadcrumbs_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.design_elements.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Labels"
+      },
+      {
+        "type": "paragraph",
+        "content": ".label-item"
+      },
+      {
+        "type": "text",
+        "id": "typography_labels_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_labels_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "14px | 400 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_labels_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.design_elements.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Product Price"
+      },
+      {
+        "type": "paragraph",
+        "content": ".product-price"
+      },
+      {
+        "type": "text",
+        "id": "typography_product_price_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_product_price_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 700 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_product_price_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.design_elements.settings.paragraph__3.content"
+      },
+      {
+        "type": "header",
+        "content": "Input Elements"
+      },
+      {
+        "type": "paragraph",
+        "content": ".input-element"
+      },
+      {
+        "type": "text",
+        "id": "typography_input_element_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_input_element_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 400 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_input_element_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.design_elements.settings.paragraph__4.content"
+      }
+    ]
+  },
+  {
+    "name": "Product Data",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Pre Orders"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_data__preorder_cta",
+        "label": "Preorder Call to Action",
+        "info": "Change the default 'Add to Cart' buttons to 'Pre-Order'"
+      },
+      {
+        "type": "header",
+        "content": "Variant Display"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_data__hide_oos_variants",
+        "label": "Hide Out of Stock Variants",
+        "default": false
+      },
+      {
+        "type": "paragraph",
+        "content": "Please follow the instructions [here](https://help.shopify.com/en/manual/products/inventory/getting-started-with-inventory/hide-out-of-stock#hide-out-of-stock-products-using-shopify-flow) to create a Shopify Flow to hide Products from Collections when all Variants are Out Of Stock"
+      },
+      {
+        "type": "text",
+        "id": "product_data__variants_color_swatches",
+        "label": "Variant Metafield based Colors Swatches",
+        "info": "Format: 'namespace.key'. Metafield Namespaces need to be setup below to match the required metafield. DANGER: This can increase the load time of the entire site."
+      },
+      {
+        "type": "header",
+        "content": "Custom Hide Conditions"
+      },
+      {
+        "type": "liquid",
+        "id": "custom_hide_condition",
+        "label": "Custom Product Hide Conditions"
+      },
+      {
+        "type": "paragraph",
+        "content": "DANGER: Hiding products with an override can lead to inconsistent results on collections and in search results, as Pagination is calculated before filtering the products."
+      },
+      {
+        "type": "header",
+        "content": "Metafields"
+      },
+      {
+        "type": "textarea",
+        "id": "product_data__metafields_namespaces",
+        "label": "Metafield Namespaces",
+        "info": "Load additional metafield namespaces to allow for dynamic data to populate. DANGER: This can increase the load time of the entire site. Format: 'metafields.custom' or 'variants.metafields.custom' "
+      },
+      {
+        "type": "header",
+        "content": "Reviews"
+      },
+      {
+        "type": "paragraph",
+        "content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-rating-block)"
+      },
+      {
+        "type": "radio",
+        "id": "product_data__type",
+        "label": "Type",
+        "default": "shopify",
+        "options": [
+          {
+            "value": "shopify",
+            "label": "Shopify App"
+          },
+          {
+            "value": "rating",
+            "label": "Type Rating Metafield"
+          },
+          {
+            "value": "reviews_rating",
+            "label": "Individual Rating / Reviews Metafield"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Important: Using custom metafields requires to load the Metafield data into the Product Data Modal via the `Product Data` Section."
+      },
+      {
+        "type": "checkbox",
+        "id": "product_data__show_review_count",
+        "label": "Show review count",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_data__show_0_reviews",
+        "label": "Show 0 Reviews"
+      },
+      {
+        "type": "text",
+        "id": "product_data__metafield_reviews_count",
+        "label": "Count Namespace.Metafield"
+      },
+      {
+        "type": "header",
+        "content": "Used for Type Rating Metafield"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Learn more](https://shopify.dev/docs/apps/custom-data/metafields/types)"
+      },
+      {
+        "type": "text",
+        "id": "product_data__metafield_rating",
+        "label": "Type Rating Namespace.Metafield"
+      },
+      {
+        "type": "header",
+        "content": "Used for Individual Rating / Reviews Metafield"
+      },
+      {
+        "type": "text",
+        "id": "product_data__metafield_rating_average",
+        "label": "Rating Average Namespace.Metafield"
+      }
+    ]
+  },
+  {
+    "name": "Product Card",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Card style"
+      },
+      {
+        "type": "color",
+        "id": "product_card__background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "id": "product_card__image__ratio",
+        "type": "select",
+        "default": "pb-[125%]",
+        "options": [
+          {
+            "value": "pb-[75%]",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "pb-[100%]",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "pb-[125%]",
+            "label": "Portrait (4:5)"
+          },
+          {
+            "value": "pb-[133%]",
+            "label": "Tall Portrait (3:4)"
+          },
+          {
+            "value": "pb-[177%]",
+            "label": "Story (9:16)"
+          }
+        ],
+        "label": "Image ratio"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__image__default_source",
+        "label": "Primary Image Source",
+        "default": "featured_image",
+        "options": [
+          {
+            "value": "featured_image",
+            "label": "Featured Image"
+          },
+          {
+            "value": "variant_image",
+            "label": "First Available Variant"
+          }
+        ],
+        "info": "Choosing the Variant option will automatically show the Searched Variant on the Search Page or via Collection Filters."
+      },
+      {
+        "id": "product_card__image__show_secondary",
+        "type": "checkbox",
+        "default": false,
+        "label": "Show second image on hover"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__image__secondary_source",
+        "label": "Secondary Image Source",
+        "default": "product",
+        "options": [
+          {
+            "value": "product",
+            "label": "Second Product Image"
+          },
+          {
+            "value": "variant",
+            "label": "Next Available Image after Variant (Color only)"
+          },
+          {
+            "value": "metafield",
+            "label": "Via Variant metafield (Color only)"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "product_card__image__secondary_source_metafield",
+        "label": "Prods image secondary Metafield",
+        "default": "smart.images"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__image__drop_shadow",
+        "label": "Add a drop shadow to the image",
+        "info": "Transparent images only",
+        "default": false
+      },
+      {
+        "type": "color_background",
+        "id": "product_card__image__background",
+        "label": "Image background",
+        "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+      },
+      {
+        "type": "range",
+        "id": "product_card__image__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__1.content"
+      },
+      {
+        "type": "header",
+        "content": "Labels"
+      },
+      {
+        "content": "You can setup custom labels via product metafields using `metafields.smart.product_labels` as a list of single line text.",
+        "type": "paragraph"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__labels__show",
+        "label": "Show Labels"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__labels__discount",
+        "label": "Discount Label type",
+        "info": "Shows when a product has a higher compare at price than the price field.",
+        "default": "sale",
+        "options": [
+          {
+            "value": "sale",
+            "label": "On Sale"
+          },
+          {
+            "value": "percentage",
+            "label": "Discount Percentage"
+          },
+          {
+            "value": "value",
+            "label": "Discount Value"
+          }
+        ]
+      },
+      {
+        "type": "radio",
+        "id": "product_card__labels__responsive_visibility",
+        "label": "Responsive Visibility",
+        "default": "responsive",
+        "options": [
+          {
+            "value": "responsive",
+            "label": "Mobile & Desktop"
+          },
+          {
+            "value": "md:hidden",
+            "label": "Mobile only"
+          },
+          {
+            "value": "max-md:hidden",
+            "label": "Desktop only"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__2.content"
+      },
+      {
+        "type": "header",
+        "content": "Variant Quantity Display"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__variant_count__show",
+        "label": "Show Variant Count"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__variant_count__show_hover",
+        "label": "Show Variant Count only on Hover"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__variant_count__responsive_visibility",
+        "label": "Responsive Visibility",
+        "default": "responsive",
+        "options": [
+          {
+            "value": "responsive",
+            "label": "Mobile & Desktop"
+          },
+          {
+            "value": "md:hidden",
+            "label": "Mobile only"
+          },
+          {
+            "value": "max-md:hidden",
+            "label": "Desktop only"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__3.content"
+      },
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+        "type": "paragraph",
+        "content": ".product-card-title"
+      },
+      {
+        "type": "text",
+        "id": "typography_product_card__title__font_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_product_card__title__font_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 600 | 1.5 | 1"
+      },
+      {
+        "type": "text",
+        "id": "typography_product_card__title__font_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__4.content"
+      },
+      {
+        "type": "range",
+        "id": "product_card__title__type",
+        "label": "Font Group",
+        "default": 1,
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "info": "Typography Groups 1 - 3"
+      },
+      {
+        "type": "range",
+        "id": "product_card__title__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__5.content"
+      },
+      {
+        "type": "header",
+        "content": "Reviews"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__rating__show",
+        "label": "Show Reviews"
+      },
+      {
+        "type": "range",
+        "id": "product_card__rating__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__rating__responsive_visibility",
+        "label": "Responsive Visibility",
+        "default": "responsive",
+        "options": [
+          {
+            "value": "responsive",
+            "label": "Mobile & Desktop"
+          },
+          {
+            "value": "md:hidden",
+            "label": "Mobile only"
+          },
+          {
+            "value": "max-md:hidden",
+            "label": "Desktop only"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__6.content"
+      },
+      {
+        "type": "header",
+        "content": "Short Description"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__description__show",
+        "label": "Show Description",
+        "info": "The Short Description is set via the Product metafield: smart.short_description"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__7.content"
+      },
+      {
+        "type": "header",
+        "content": "Vendor"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__vendor__show",
+        "label": "Show Vendor"
+      },
+      {
+        "type": "range",
+        "id": "product_card__vendor__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__vendor__responsive_visibility",
+        "label": "Responsive Visibility",
+        "default": "responsive",
+        "options": [
+          {
+            "value": "responsive",
+            "label": "Mobile & Desktop"
+          },
+          {
+            "value": "md:hidden",
+            "label": "Mobile only"
+          },
+          {
+            "value": "max-md:hidden",
+            "label": "Desktop only"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__8.content"
+      },
+      {
+        "type": "header",
+        "content": "Price"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__price__show",
+        "label": "Show Price"
+      },
+      {
+        "type": "range",
+        "id": "product_card__price__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__price__responsive_visibility",
+        "label": "Responsive Visibility",
+        "default": "responsive",
+        "options": [
+          {
+            "value": "responsive",
+            "label": "Mobile & Desktop"
+          },
+          {
+            "value": "md:hidden",
+            "label": "Mobile only"
+          },
+          {
+            "value": "max-md:hidden",
+            "label": "Desktop only"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__9.content"
+      },
+      {
+        "type": "header",
+        "content": "Variant Selector"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__variant_selector__show",
+        "label": "Show Color Variant Selector"
+      },
+      {
+        "type": "textarea",
+        "id": "product_card__variant_selector__color_list",
+        "label": "Match product Options",
+        "default": "color,colour,couleur,cor,colore,farbe,색,色,カラー,färg,farve,szín,barva",
+        "info": "Comma seperated list of colors"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__color_selector",
+        "label": "Swatches Color/Image Selection",
+        "default": "via_option",
+        "options": [
+          {
+            "value": "via_option",
+            "label": "Via Option Title"
+          },
+          {
+            "value": "via_option_then_image",
+            "label": "Via Option Title then Image"
+          },
+          {
+            "value": "via_image",
+            "label": "Via Image"
+          },
+          {
+            "value": "via_metafield",
+            "label": "Via Metafield"
+          },
+          {
+            "value": "via_image_then_metafield",
+            "label": "Via Image then Metafield"
+          },
+          {
+            "value": "via_metafield_then_image",
+            "label": "Via Metafield then Image"
+          }
+        ],
+        "info": "The default fallback option for all choices is via the Product Option title and `swatches.json` setup."
+      },
+      {
+        "type": "range",
+        "id": "product_card__color_selector_size",
+        "label": "Color Selector Size",
+        "default": 22,
+        "min": 18,
+        "max": 60,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "product_card__color_selector_radius",
+        "label": "Color Selector Radius",
+        "default": -1,
+        "min": -1,
+        "max": 32,
+        "step": 1,
+        "unit": "px",
+        "info": "set to -1 for fully rounded."
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "radio",
+        "id": "product_card__button__style",
+        "label": "Style",
+        "default": "button-primary",
+        "options": [
+          {
+            "value": "button-primary",
+            "label": "Primary"
+          },
+          {
+            "value": "button-primary--outline",
+            "label": "Primary Outline"
+          },
+          {
+            "value": "button-secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "button-secondary--outline",
+            "label": "Secondary Outline"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__button_color_variant_add_to_cart",
+        "label": "Show Add to Cart for color variants",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "product_card__button_single_variant_add_to_cart",
+        "label": "Show Add to Cart if no variants",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_card.settings.paragraph__10.content"
+      }
+    ]
+  },
+  {
+    "name": "Collection",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Filters"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection__filter_variant_select",
+        "label": "Select Color Variant on Filter",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Matches Product Options containing \"color\" Values as highest priority"
+      },
+      {
+        "type": "text",
+        "id": "collection__filter_variant_color_metafield",
+        "label": "Variant Metafield based Colors Swatches",
+        "info": "Format: 'namespace.key'. Metafield Namespaces need to be setup in the Product Data to match the required metafield. DANGER: This can increase the load time of the entire site."
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.collection.settings.paragraph__1.content"
+      }
+    ]
+  },
+  {
+    "name": "Small Product Card",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "small_product_card__variant_selector__show",
+        "label": "Show Variant Selector & Skip Product Drawer",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+        "type": "paragraph",
+        "content": ".product-card-title--small"
+      },
+      {
+        "type": "text",
+        "id": "typography_small_product_card__title__font_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_small_product_card__title__font_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 600 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_small_product_card__title__font_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.small_product_card.settings.paragraph__1.content"
+      }
+    ]
+  },
+  {
+    "name": "Article Card",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+        "type": "paragraph",
+        "content": ".article-card-title"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_title_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_title_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 600 | 1.5 |1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_title_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.article_card.settings.paragraph__1.content"
+      },
+      {
+        "type": "range",
+        "id": "article_card__title__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Detail Info"
+      },
+      {
+        "type": "paragraph",
+        "content": ".article-card-specs"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_specs_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_specs_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "13px | 400 | 1.4 | 0.7 "
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_specs_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.article_card.settings.paragraph__2.content"
+      },
+      {
+        "type": "range",
+        "id": "article_card__specs__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Description"
+      },
+      {
+        "type": "paragraph",
+        "content": ".article-card-description"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_description_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_description_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.7 |1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_description_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.article_card.settings.paragraph__3.content"
+      },
+      {
+        "type": "range",
+        "id": "article_card__description__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Link"
+      },
+      {
+        "type": "paragraph",
+        "content": ".article-card-link"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_link_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_link_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "15px | 600 | 1.5 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_article_card_link_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.article_card.settings.paragraph__4.content"
+      },
+      {
+        "type": "range",
+        "id": "article_card__link__margin_bottom",
+        "label": "Margin Bottom",
+        "default": 0,
+        "min": -16,
+        "max": 128,
+        "step": 2,
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Social accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https://twitter.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https://facebook.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest",
+        "info": "https://pinterest.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "https://instagram.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "TikTok",
+        "info": "https://tiktok.com/@shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr",
+        "info": "https://shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "Snapchat",
+        "info": "https://www.snapchat.com/add/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "YouTube",
+        "info": "https://www.youtube.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo",
+        "info": "https://vimeo.com/shopify"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "drawer",
+        "label": "Cart type"
+      },
+      {
+        "type": "paragraph",
+        "content": ".cart-title"
+      },
+      {
+        "type": "text",
+        "id": "typography_cart_title_font_family",
+        "label": "Font family",
+        "default": "inherit"
+      },
+      {
+        "type": "text",
+        "id": "typography_cart_title_size_weight_height",
+        "label": "size | weight | height | opacity",
+        "default": "16px | 400 | 1.2 | 1 "
+      },
+      {
+        "type": "text",
+        "id": "typography_cart_title_spacing_transform_style",
+        "label": "spacing | transform | style",
+        "default": "0 | none | normal"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.cart.settings.paragraph__1.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_gift_checkbox",
+        "label": "Enable gift checkbox",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_note",
+        "label": "Enable cart note",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Cart Drawer Settings"
+      },
+      {
+        "type": "select",
+        "id": "cart_color_scheme",
+        "default": "bg-theme-bg text-theme-text color-inherit",
+        "options": [
+          {
+            "value": "bg-theme-bg text-theme-text color-inherit",
+            "label": "Inherit from parent/theme"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-1",
+            "label": "Color group 1"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-2",
+            "label": "Color group 2"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-3",
+            "label": "Color group 3"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-4",
+            "label": "Color group 4"
+          },
+          {
+            "value": "bg-theme-bg text-theme-text color-group-5",
+            "label": "Color group 5"
+          }
+        ],
+        "label": "Color scheme"
+      }
+    ]
+  },
+  {
+    "name": "Beta Features",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "beta_features__show",
+        "label": "Enable Beta Features",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "These features are still in development and may not work as expected. Use at your own risk."
+      },
+      {
+        "type": "header",
+        "content": "Mega Menu 2.0 Desktop"
+      },
+      {
+        "type": "header",
+        "content": "Menu Drawer 2.0"
+      }
+    ]
+  },
+  {
+    "name": "User Tags Discounts",
+    "settings": [
+      {
+        "type": "range",
+        "id": "pro_discount",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Pro Discount Percent",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "production_discount",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Production Discount Percent",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "industry_discount",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Industry Discount Percent",
+        "default": 50
+      }
+    ]
+  }
+]

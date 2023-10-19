@@ -1,0 +1,40 @@
+{%- if recommendations.performed? -%}
+  {% comment %}  {%- capture recommdationsData -%}
+      {
+      "type": "{{- recommendations.intent -}}",
+      "products": [{%- for p in recommendations.products -%}{
+      "id": "{{- p.id -}}",
+      "url": "{{- p.url | split: '?' | first -}}"
+      }{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]
+      }
+    {%- endcapture -%}
+    <script type="application/json"
+            data-product-recommendation="{{- product.id -}}">
+  {{- recommdationsData | strip_newlines | replace: " ", "" -}}
+
+
+    </script>{% endcomment %}
+  {%- capture recommdationsData -%}
+    {
+    "type": "{{- recommendations.intent -}}",
+    "products": [{%- for p in recommendations.products -%}{% render 'product-data.json', input: p %}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]
+    }
+  {%- endcapture -%}
+  <script type="application/json"
+          data-product-recommendation-full="{{- product.id -}}">
+{{- recommdationsData | strip_newlines -}}
+
+
+  </script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Product recommendations",
+  "settings": [],
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  }
+}
+{% endschema %}

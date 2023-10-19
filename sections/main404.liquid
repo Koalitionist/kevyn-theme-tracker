@@ -1,0 +1,299 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign image = section.settings.image
+  assign image__overlay = section.settings.image__overlay
+  assign min_height = section.settings.min_height
+  assign align__vertical = section.settings.align__vertical
+  assign align__horizontal = section.settings.align__horizontal
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign align_content = align__vertical | append: ' ' | append: align__horizontal
+%}
+
+<div id="{{ sectionID }}"
+     class="404 {{ color_scheme }} {{ section_layout }} {{ padding_top }} {{ padding_bottom }} {{ responsive_visibility }}">
+  <figure class="grid w-full relative isolate min-h-[calc(100vh-var(--top-bar-spacing))]">
+    {% render '_image', image: image, class: 'absolute inset-0 w-full h-full object-cover z-0 ' %}
+    <figcaption class="z-10 w-full h-full px-6 py-8 "
+                style="background-image: {{ image__overlay }};">
+      <div class="container h-full w-full flex flex-col {{ align_content }} space-y-3">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}
+              {% render 'main404.text', block: block %}
+            {% when 'image' %}
+              {% render 'main404.image', block: block %}
+            {% when 'buttons' %}
+              {% render 'main404.buttons', block: block %}
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </figcaption>
+  </figure>
+</div>
+
+{% schema %}
+{
+  "name": "Main 404",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "color_background",
+      "id": "image__overlay",
+      "label": "Overlay",
+      "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Min Height",
+      "default": 320,
+      "min": 240,
+      "max": 640,
+      "step": 20,
+      "unit": "px"
+    },
+    {
+      "type": "radio",
+      "id": "align__vertical",
+      "label": "Vertical Alignment",
+      "default": "justify-center",
+      "options": [
+        {
+          "value": "justify-start",
+          "label": "Top"
+        },
+        {
+          "value": "justify-center",
+          "label": "Center"
+        },
+        {
+          "value": "justify-end",
+          "label": "Bottom"
+        }
+      ]
+    },
+    {
+      "type": "radio",
+      "id": "align__horizontal",
+      "label": "Horizontal Alignment",
+      "default": "items-center text-center",
+      "options": [
+        {
+          "value": "items-start text-left",
+          "label": "Left"
+        },
+        {
+          "value": "items-center text-center",
+          "label": "Center"
+        },
+        {
+          "value": "items-end text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Content"
+        },
+        {
+          "type": "radio",
+          "id": "style",
+          "label": "Heading Style",
+          "default": "h2",
+          "options": [
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "preheading",
+              "label": "pre-header"
+            },
+            {
+              "value": "richtext",
+              "label": "richtext"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inline Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 80,
+          "min": 20,
+          "max": 200,
+          "step": 5,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "type": "buttons",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_primary__text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "button_primary__url",
+          "label": "URL"
+        },
+        {
+          "type": "radio",
+          "id": "button_primary__style",
+          "label": "Style",
+          "default": "button-primary",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary__text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary__url",
+          "label": "URL"
+        },
+        {
+          "type": "radio",
+          "id": "button_secondary__style",
+          "label": "Style",
+          "default": "button-primary--outline",
+          "options": [
+            {
+              "value": "button-primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button-primary--outline",
+              "label": "Primary Outline"
+            },
+            {
+              "value": "button-secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button-secondary--outline",
+              "label": "Secondary Outline"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

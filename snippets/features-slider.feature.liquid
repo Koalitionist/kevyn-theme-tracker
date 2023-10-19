@@ -1,0 +1,42 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign icon_list = block.settings.icon_list
+  assign title = block.settings.title
+  assign content = block.settings.content
+  assign link_text = block.settings.link_text
+  assign url = block.settings.url
+  assign svg = block.settings.svg
+  assign image = block.settings.image
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign feature_title_font = section.settings.feature_title_font %}
+{% assign feature_content_font = section.settings.feature_content_font %}
+{% assign feature__align__horizontal = section.settings.feature__align__horizontal %}
+
+<a id="block--{{ block.id }}" {{ block.shopify_attributes }}
+   class="features-slider__feature {% if url %}group{% endif %} flex flex-col gap-2 relative rounded-theme-md {{ feature__align__horizontal }} {{ class }}"
+  {% if url %}href="{{ url }}"{% endif %}>
+  <div class="text-primary-outline mb-1"
+       style="--icon-size: {{ section.settings.icon_size }}px">
+    {% if svg != blank %}
+      <div class="svg:w-[var(--icon-size)] svg:h-[var(--icon-size)]">
+        {{ svg }}
+      </div>
+    {% elsif image != blank %}
+      {% render '_image', image: image, class: "", width: section.settings.icon_size %}
+    {% else %}
+      {% render '_icon', icon: icon_list, class: 'w-[var(--icon-size)] h-[var(--icon-size)]' %}
+    {% endif %}
+  </div>
+  <div>
+    {% render 'richtext', type: feature_title_font, content: title, class: "mb-2" %}
+    {% render 'richtext', type: feature_content_font, content: content, class: "mb-2" %}
+
+  </div>
+  {% if url %}
+    <span class="group-hf:underline text-[15px] text-primary-bg hf:text-primary-bg/80">
+      {{ link_text }}
+    </span>
+  {% endif %}
+</a>

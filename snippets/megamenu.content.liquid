@@ -1,0 +1,97 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign grid_columns = block.settings.grid_columns
+  assign grid_rows = block.settings.grid_rows
+  assign padding_bottom = block.settings.padding_bottom
+  assign padding_top = block.settings.padding_top
+  assign align__vertical = block.settings.align__vertical
+  assign align__horizontal = block.settings.align__horizontal
+  assign section_visibility = block.settings.section_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign columnIndex = forloop.index0
+
+  assign align_content = align__vertical | append: ' ' | append: align__horizontal
+
+  case grid_columns
+    when 1
+      assign grid_column_class = 'col-span-1'
+    when 2
+      assign grid_column_class = 'col-span-2'
+    when 3
+      assign grid_column_class = 'col-span-3'
+    when 4
+      assign grid_column_class = 'col-span-4'
+    when 5
+      assign grid_column_class = 'col-span-5'
+    when 6
+      assign grid_column_class = 'col-span-6'
+    when 7
+      assign grid_column_class = 'col-span-7'
+    when 8
+      assign grid_column_class = 'col-span-8'
+    when 9
+      assign grid_column_class = 'col-span-9'
+    when 10
+      assign grid_column_class = 'col-span-10'
+    when 11
+      assign grid_column_class = 'col-span-11'
+    when 12
+      assign grid_column_class = 'col-span-12'
+  endcase
+
+  case grid_rows
+    when 1
+      assign grid_row_class = 'row-span-1'
+    when 2
+      assign grid_row_class = 'row-span-2'
+    when 3
+      assign grid_row_class = 'row-span-3'
+    when 4
+      assign grid_row_class = 'row-span-4'
+    when 5
+      assign grid_row_class = 'row-span-5'
+    when 6
+      assign grid_row_class = 'row-span-6'
+  endcase
+%}
+
+<section class="{{ grid_column_class }} {{ grid_row_class }} {{ padding_bottom }} {{ padding_top }} {{ section_visibility }}" {{ block.shopify_attributes }} >
+  <div class="flex flex-col h-full {{ align_content }} {{ section_visibility }}">
+    <div class="flex flex-col {{ align__horizontal }}">
+      {% liquid
+        for block in section.blocks
+          if forloop.index0 <= columnIndex
+            continue
+          endif
+          if block.type == 'content'
+            break
+          endif
+
+          case block.type
+            when 'text'
+              render 'richtext.text', block: block
+            when 'image'
+              render 'richtext.image', block: block
+            when 'buttons'
+              render 'richtext.buttons', block: block
+            when 'accent_line'
+              render 'richtext.accent_line', block: block
+            when 'features'
+              render 'richtext.features', block: block
+            when 'page'
+              render 'richtext.page', block: block
+            when 'feature_grid'
+              render 'megamenu.feature_grid', block: block
+            when 'menu'
+              render 'megamenu.menu', block: block
+            when 'highlight_items'
+              render 'megamenu.highlight_items', block: block
+          endcase
+        endfor
+      %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+{% assign className = 'bg-white/[0.72]' %}
+{% if class contains "bg-" %}
+  {% assign className = class %}
+{% endif %}
+
+<div class="fixed inset-0 transition-all opacity-0 group-ac:opacity-100 group-[.active]/drawer-menu:opacity-100 {{ className }}"
+     data-drawer-overlay>
+</div>

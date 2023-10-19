@@ -1,0 +1,27 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign grid_span = block.settings.grid_span
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div data-product-block="quantity_selector"
+     class="{{ grid_span }} {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  <noscript>
+    <label class="input--primary--outline flex text-[13px] font-semibold select-none no-js-hidden">
+      <span class="flex-1">
+        {{ "product.quantity" | t }}
+      </span>
+      <input class="w-16 outline-none text-right"
+             type="number"
+             name="quantity"
+             min="1"
+             value="1"
+             form="{{ product_form_id }}">
+    </label>
+  </noscript>
+</div>

@@ -1,0 +1,67 @@
+{%- liquid
+  assign image__ratio = settings.product_card__image__ratio | default: 'pb-[125%]'
+  assign image__background = settings.product_card__image__background
+  assign image__drop_shadow = settings.product_card__image__drop_shadow | default: false
+
+  assign background_color = section.settings.card__background_color | default: settings.product_card__background_color
+
+  assign imageClasses = 'w-full h-full object-cover inset-0 '
+  if image__drop_shadow
+    assign imageClasses = imageClasses | append: "drop-shadow-product"
+  endif
+
+  assign collectionProducts = item.products | sort: 'price_min'
+  assign author = item.author
+  assign published_at = item.published_at
+-%}
+
+<article class="flex flex-col space-y-1 relative items-stretch {{ class }}" {{ html_attributes }}
+         data-card
+         style="background-color: {{ background_color }}">
+
+  {% comment %} IMAGE {% endcomment %}
+  <a class="grid relative outline-none hf:outline-none h-0 w-full {{ image__ratio }}"
+     href="{{ collection.url }}">
+    <div class="w-full h-full inset-0 absolute overflow-hidden"
+         style="background: {{ image__background }};"
+         data-card-image>
+      {% render '_image', image: item.image, width: 500, class: imageClasses, placeholder: 'product-3' %}
+    </div>
+  </a>
+  <div class="object-card__content relative flex flex-1 flex-col items-stretch space-y-1 px-3 pb-3">
+    {% comment %} TITLE {% endcomment %}
+    <h1 class=" inline-flex pt-2 font-semibold tracking-tight text-base">
+      <a class="outline-none hf:outline-none hf:underline"
+         data-card-title
+         href="{{ item.url }}">{{ item.title }}</a>
+    </h1>
+
+    {% if collectionProducts[0] %}
+      {% comment %}  PRICE {% endcomment %}
+      <div class="text-sm text-gray-600"
+           data-card-price>
+        {{ "object_card.starting_at" | t }} {{ collectionProducts[0].price_min | money }}
+      </div>
+    {% endif %}
+
+
+    <h1 class="article-card-title {{ titleWrapClasses }}">{{ article.title }}</h1>
+    <div class="article-card-specs flex items-center gap-2 w-full truncate">
+      {% if author %}<span>{{ author }}</span>{% endif %}
+      {% if author and published_at %}<span class="h-1.5 w-1.5 rounded-full bg-theme-text/40"></span>{% endif %}
+      {% if author and published_at %}<span>{{ published_at | time_tag: format: 'date' }}</span>{% endif %}
+    </div>
+
+    <div class="self-end mt-auto w-full flex-1 flex flex-col justify-end text-center gap-2">
+
+      {% unless hide_button %}
+        <a class="mt-2 w-full button-primary"
+           href="{{ item.url }}"
+           data-card-cta-link>
+          <span class="whitespace-nowrap"
+                data-card-cta-content>View</span>
+        </a>
+      {% endunless %}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,52 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign layout = block.settings.layout
+  assign item_layout = block.settings.item_layout
+  assign size = block.settings.size
+  assign content_font = block.settings.content_font
+  assign icon_1 = block.settings.icon_1
+  assign image_1 = block.settings.image_1
+  assign heading_1 = block.settings.heading_1
+  assign icon_2 = block.settings.icon_2
+  assign image_2 = block.settings.image_2
+  assign heading_2 = block.settings.heading_2
+  assign icon_3 = block.settings.icon_3
+  assign image_3 = block.settings.image_3
+  assign heading_3 = block.settings.heading_3
+  assign icon_4 = block.settings.icon_4
+  assign image_4 = block.settings.image_4
+  assign heading_4 = block.settings.heading_4
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div data-product-block="icon_with_text"
+     class="col-span-12 {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  <div class="{{ layout }} flex justify-center py-2 gap-2.5 {% if layout == 'flex-row' %} !grid md:grid-cols-[--grid-desktop] grid-cols-[--grid-mobile]{% endif %}"
+       style="--grid-desktop: repeat(4, auto);--grid-mobile: repeat(2, auto);">
+    {% for i in (1..4) %}
+      {% assign icon = 'icon_' | append: i %}
+      {% assign image = 'image_' | append: i %}
+      {% assign heading = 'heading_' | append: i %}
+      {% if block.settings[heading] == blank %}{% continue %}{% endif %}
+
+      <div class="flex items-center mr-2.5 {{ item_layout }}">
+        <span class="relative inline-flex items-center justify-center"
+              style="width: {{ size }}px; height: {{ size }}px;">
+          {% if block.settings[image] == blank %}
+            {% render '_icon', icon: block.settings[icon], class: "w-full h-full relative" %}
+          {% endif %}
+          {% render '_image', image: block.settings[image], width: 20, class: "w-full h-full object-contain" %}
+        </span>
+        <span class="ml-1.5 text-[13px] tracking-tight">
+          {% render 'richtext', type: content_font, content: block.settings[heading] %}
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+

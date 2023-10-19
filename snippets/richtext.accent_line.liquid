@@ -1,0 +1,17 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign color = block.settings.color
+  assign height = block.settings.height
+  assign width = block.settings.width
+  assign margin_top = block.settings.margin_top
+  assign margin_bottom = block.settings.margin_bottom
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div class="w-full {{ section_max_width }} {{ responsive_visibility }}"
+     id="block--{{ block.id }}" {{ block.shopify_attributes }}>
+  <hr class="inline-flex w-full"
+      style="border-top: {{ height }}px solid {{ color }}; max-width: {{ width }}px; margin-bottom: {{ margin_bottom }}px" />
+</div>

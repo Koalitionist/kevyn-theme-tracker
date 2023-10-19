@@ -1,0 +1,54 @@
+{%- liquid
+  assign logo = settings[section.settings.logo]
+  assign center_logo = section.settings.center_logo
+  assign force_hamburger_menu = section.settings.force_hamburger_menu
+  assign center_logo__desktop = section.settings.center_logo__desktop
+  assign whole_line_logo = section.settings.whole_line_logo
+
+  assign logo_svg = section.settings.logo_svg
+
+
+  if force_hamburger_menu and center_logo
+    assign positionClasses = "lg:flex-grow lg:basis-0 justify-center"
+  elsif center_logo
+    assign positionClasses = "flex-grow lg:basis-0 max-lg:justify-center"
+  else
+    assign positionClasses = "flex-grow basis-0"
+  endif
+
+  if center_logo__desktop
+    assign positionClasses = positionClasses | append: " lg:flex-grow lg:basis-0 justify-center"
+  endif
+
+  assign image_logo_height = 120
+
+  if section.settings.height and section.settings.logo_height
+    assign logo_height = section.settings.height | times: section.settings.logo_height | divided_by: 100
+    assign image_logo_height = logo_height | times: 2 | default: 120
+  endif
+%}
+  
+{% if section.settings.logo != "branding_logo_none" %}
+  <a href="{{ routes.root_url }}"
+    {% if logo_svg != blank and whole_line_logo %}      
+    class="grid justify-center max-lg:items-center max-lg:justify-center bg-theme-bg z-10 min-w-min lg:min-w-max max-h-full pr-4 md:pr-0 {{ positionClasses }} {{ class }}"
+    {% else %}
+      class="grid max-lg:items-center max-lg:justify-center bg-theme-bg z-10 min-w-min lg:min-w-max max-h-full pr-4 md:pr-0 h-[var(--header-logo-height)] {{ positionClasses }} {{ class }}"
+  {% endif %} 
+      {% if logo_svg != blank %}
+      style=" height:{{section.settings.logo_height}}px"
+     {% else if logo_height %}style="--header-logo-height: {{ logo_height }}px" {% endif %}>
+   {% if logo_svg != blank %} 
+   <div class="text-center">
+      {{ logo_svg }}
+   </div>
+   {%else if logo %}
+      {% render '_image', image: logo, height: image_logo_height, default_alt: shop.name, class: "h-auto w-auto  test max-h-[var(--header-logo-height)] max-w-full", preload: true %}
+  {% else %}
+      <h2 class="text-3xl font-bold whitespace-nowrap flex items-center">{{ shop.name }}</h2>
+  {% endif %}
+</a>
+{% else %}
+  <div class="grid max-lg:items-center max-lg:justify-center bg-theme-bg z-10 min-w-min lg:min-w-max max-h-full pr-4 md:pr-0 h-[var(--header-logo-height)] {{ positionClasses }} {{ class }}">
+  </div>
+{% endif %}

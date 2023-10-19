@@ -1,0 +1,612 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>[title]<\/h2>",
+            "title_font": 3,
+            "margin_bottom": 10,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38": {
+          "type": "product_count",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Products ([count])<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9b52ae94-6586-4ed8-bebb-505003961df6": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "<p>[description]<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26",
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38",
+        "9b52ae94-6586-4ed8-bebb-505003961df6"
+      ],
+      "settings": {
+        "image__show": true,
+        "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
+        "height_desktop": 300,
+        "height_mobile": 300,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "9848a988-ce03-4797-a1ca-1379f5d08b50": {
+      "type": "richtext",
+      "blocks": {
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Get inspired and prepare for the hottest F\/W beauty trends out there! We lined up all the products you need to achieve these looks straight off the runway. <\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-0",
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-1",
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-2",
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-3",
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-4",
+        "template--14835289817175__9848a988-ce03-4797-a1ca-1379f5d08b50-1689360999daaac2a4-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-4xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "1d95a706-70a5-47a8-83ae-529d049a2cdb": {
+      "type": "image-with-text",
+      "blocks": {
+        "a155bf80-9e74-4cf0-94d6-3561ea471808": {
+          "type": "text",
+          "settings": {
+            "title": "<p><em>Beauty at the Cucculelli Shaheen <br\/>Fashion Show<\/em><\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "860404d3-64be-4aa7-ace3-c1a3850af1c0": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>SIREN SLAY<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "17f7e841-8e84-42c5-b410-cd0470f0a7d0": {
+          "type": "text",
+          "settings": {
+            "title": "<p>For the Siren Slay look, the pro team recreated a timeless smokey eye with a sharp winged liner using The Contour Eyeshadow Palette in Deep.<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "a155bf80-9e74-4cf0-94d6-3561ea471808",
+        "860404d3-64be-4aa7-ace3-c1a3850af1c0",
+        "17f7e841-8e84-42c5-b410-cd0470f0a7d0"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/cucculelli.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "",
+        "image__aspect_ratio": "pb-[125%]",
+        "content_ratio": "md:grid-cols-[1fr_44%]",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "62194a5e-b296-40ff-9086-334952b0923e": {
+      "type": "richtext",
+      "blocks": {
+        "eaef36ae-ec06-4b70-b61d-8284bb879cc1": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>GET THE \"SIREN SLAY\" LOOK<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "c5e4c6c4-e087-4add-b306-7855ddb0b894": {
+          "type": "text",
+          "settings": {
+            "title": "<h6><strong>SKIN<br\/><\/strong>Apply Stripped Nude Skin Tint to even out the look of your complexion while allowing your natural skin to shine through. This is our artists backstage hero for skin-prep.<br\/><br\/><strong>EYES<br\/><\/strong>Use The Contour Eyeshadow Palette in Deep to sculpt and contour the eyes. Apply matte powder and then add lighter shades to the arch of the brow and inner corner. To create a metallic pop, wet the brush and use any luminescent shade for a more intensified look. Create a winged liner look with The Precision Liquid Liner.<br\/><br\/><strong>CHEEKS<br\/><\/strong>Let your cheekbones look softly lit with a touch of rosy color and Glass Glow Face & Body in Spectrum Bronze to highlight the high points <br\/>of your face. <br\/><br\/><strong>LIPS<br\/><\/strong>Add a touch of color with Unforgettable Lipstick in Suspicious and Lip Liner in New Naked.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "2f7b218a-3213-462d-93cf-7715100a6287": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "07b18edd-26ac-4c6e-97ec-299f65fbd6bf": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "eaef36ae-ec06-4b70-b61d-8284bb879cc1",
+        "c5e4c6c4-e087-4add-b306-7855ddb0b894",
+        "2f7b218a-3213-462d-93cf-7715100a6287",
+        "07b18edd-26ac-4c6e-97ec-299f65fbd6bf"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "5a3bb58d-9e37-453e-9f17-f33922076fb0": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14835289817175__5a3bb58d-9e37-453e-9f17-f33922076fb0-1689360809d3c5be30-0": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h3>SHOP THE LOOK<\/h3>",
+            "title_font": 3,
+            "subtitle": "<h4>Cucculelli Shaheen<\/h4>",
+            "subtitle_font": 3,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 50
+          }
+        },
+        "template--14835289817175__5a3bb58d-9e37-453e-9f17-f33922076fb0-1689360809d3c5be30-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "cucculelli-shaheen"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835289817175__5a3bb58d-9e37-453e-9f17-f33922076fb0-1689360809d3c5be30-0",
+        "template--14835289817175__5a3bb58d-9e37-453e-9f17-f33922076fb0-1689360809d3c5be30-2"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "dbaa48e2-a137-4327-b86d-09ca0f170e92": {
+      "type": "image-with-text",
+      "blocks": {
+        "f61644d4-a93a-4cea-8131-4e6fd6ce5767": {
+          "type": "text",
+          "settings": {
+            "title": "<p><em>Beauty at the Marrisa Wilson <br\/>Fashion Show<\/em><\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ca43ce9c-c9c7-47ab-97eb-00d616ed94b2": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>GLAZED BLUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "1172cc90-677b-4e86-810d-70337676f3d5": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Inspired by the moodiness of jazz sounds from Marrisa Wilson's Fall 2023 collection. This look features the radiance from Glass Glow Face & Body and a vibrant blush color that plays up the cheekbones.<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "f61644d4-a93a-4cea-8131-4e6fd6ce5767",
+        "ca43ce9c-c9c7-47ab-97eb-00d616ed94b2",
+        "1172cc90-677b-4e86-810d-70337676f3d5"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/cucculelli.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "",
+        "image__aspect_ratio": "pb-[125%]",
+        "content_ratio": "md:grid-cols-[1fr_44%]",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "afe57c84-92df-467a-9626-74b2e6c24f2e": {
+      "type": "richtext",
+      "blocks": {
+        "48e425d4-5732-4453-8e32-581460d025b8": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>GET THE \"GLAZED BLUSH\" LOOK<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "5b2e52f8-ada4-423a-94de-9347a6581c84": {
+          "type": "text",
+          "settings": {
+            "title": "<h6><strong>SKIN<br\/><\/strong>Prep skin with SSE Primer and Stripped Nude Skin Tint to even out the look of the skin tone while allowing the natural skin to shine through.<br\/><br\/><strong>EYES<br\/><\/strong>Brows are groomed and natural with True Feather Brow. Using the Contour Eyeshadow Palette Collection, create a halo of warm, red-browns and finish off the look with liner and mascara to define the eyes.<br\/><br\/><strong>CHEEKS<br\/><\/strong>Drape the Neo-Blush in Sunset from the cheeks to the temple. For a soft look, try bringing the blush up and around the outer edge of the brow. Add luminosity with Glass Glow Face & Body in Cosmic Flame to the high points of the face.<br\/><br\/><strong>LIPS<br\/><\/strong>Add a touch of color with Unforgettable Lipstick in Suspicious  and add shine with Glass Glow Lip in Prism Rose.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "563f7586-37bf-4e5b-862c-f517f372f1a1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "beecf9a6-130f-4fbc-80a6-7d1dc388784d": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "48e425d4-5732-4453-8e32-581460d025b8",
+        "5b2e52f8-ada4-423a-94de-9347a6581c84",
+        "563f7586-37bf-4e5b-862c-f517f372f1a1",
+        "beecf9a6-130f-4fbc-80a6-7d1dc388784d"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "2aa6e6bf-5855-42f0-bbe7-8cae418aff08": {
+      "type": "products-scrollable",
+      "blocks": {
+        "5a859858-0bf0-4bba-9dc9-f86ce755166d": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h3>SHOP THE LOOK<\/h3>",
+            "title_font": 3,
+            "subtitle": "<h4>Marrisa Wilson<\/h4>",
+            "subtitle_font": 3,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 50
+          }
+        },
+        "70aa58bb-4546-4d92-abec-f8cf5c9dea44": {
+          "type": "source_collection",
+          "settings": {
+            "source": "marissa-wilson"
+          }
+        }
+      },
+      "block_order": [
+        "5a859858-0bf0-4bba-9dc9-f86ce755166d",
+        "70aa58bb-4546-4d92-abec-f8cf5c9dea44"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "filter_sort_bar": {
+      "type": "main-collection-filter-sort-bar",
+      "settings": {
+        "filters__show": true,
+        "filters__type": "megamenu",
+        "filters__count": true,
+        "sort__show": true,
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "pagination_size": 8,
+        "columns__desktop": "lg:grid-cols-4",
+        "columns__mobile": "grid-cols-2",
+        "card_style": "default",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "9848a988-ce03-4797-a1ca-1379f5d08b50",
+    "1d95a706-70a5-47a8-83ae-529d049a2cdb",
+    "62194a5e-b296-40ff-9086-334952b0923e",
+    "5a3bb58d-9e37-453e-9f17-f33922076fb0",
+    "dbaa48e2-a137-4327-b86d-09ca0f170e92",
+    "afe57c84-92df-467a-9626-74b2e6c24f2e",
+    "2aa6e6bf-5855-42f0-bbe7-8cae418aff08",
+    "filter_sort_bar",
+    "product-grid"
+  ]
+}

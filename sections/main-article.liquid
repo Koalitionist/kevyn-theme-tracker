@@ -1,0 +1,536 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign image__show = section.settings.image__show
+  assign date__show = section.settings.date__show
+  assign author__show = section.settings.author__show
+  assign share_buttons__show = section.settings.share_buttons__show
+  assign comments__show = section.settings.comments__show
+  assign nav__show = section.settings.nav__show
+  assign title = section.settings.title
+  assign title_font = section.settings.title_font
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  if share_buttons__show
+    assign shareGridClasses = "md:grid-cols-[36px_1fr] md:gap-x-[70px] gap-8"
+  endif
+  assign title = title | replace: '[title]', article.title
+
+%}
+
+
+<article id="{{ sectionID }}"
+         class="article {{ padding_top }} {{ padding_bottom }} {{ color_scheme }}">
+  {% if image__show and article.image != blank %}
+    <picture class="relative grid h-56 md:h-96 overflow-hidden shadow rounded-theme-lg lg:h-[610px]">
+      {% render '_image', image: article.image, class: 'absolute w-full h-full inset-0 object-cover group-hf:scale-105 transition-all ease-in', sizes: "100vw", preload: true %}
+    </picture>
+  {% endif %}
+
+  <div class="container pt-8 grid gap-x-8 lg:grid-cols-3">
+    {% render 'richtext', type: title_font, content: title, class: 'mb-6 max-w-4xl lg:col-span-3' %}
+    <main class="lg:col-span-2 max-lg:pb-8">
+      {% if date__show or author__show %}
+        <header class="mb-6 border-y py-6 border-y-theme-text/40">
+          {% if author__show %}
+            <span class="text-sm leading-[24px]">{{ article.author }}</span>
+          {% endif %}
+          {% if date__show and author__show %} <span class="inline-block px-2">-</span> {% endif %}
+          {% if date__show %}
+            <span class="text-sm leading-[24px]">{{ article.published_at | time_tag: format: 'date' }}</span>
+          {% endif %}
+        </header>
+      {% endif %}
+
+      <div class="grid {{ shareGridClasses }}">
+        <aside class="sticky -mt-6 grid h-min gap-4 pt-6 max-md:hidden top-top-bar-spacing">
+          {%- assign share_url = shop.url | append: article.url | url_param_escape -%}
+          {%- assign twitter_text = article.title | url_param_escape -%}
+          {%- assign pinterest_description = article.excerpt_or_content | strip_html | truncatewords: 15 | url_param_escape -%}
+          {%- assign pinterest_image = article.image | img_url: 'large' | prepend: 'https:' -%}
+
+          <a class="text-theme-text/70 hf:text-theme-text"
+             role="listitem"
+             title="Share on Facebook"
+             href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+             target="_blank"
+             rel="noopener">
+            {%- render '_icon', icon: 'facebook', class: "w-9 h-9" -%}
+          </a>
+          <a class="text-theme-text/70 hf:text-theme-text"
+             title="Share on Pinterest"
+             role="listitem"
+             href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+             target="_blank"
+             rel="noopener">
+            {%- render '_icon', icon: 'pinterest', class: "w-9 h-9" -%}
+          </a>
+          <a class="text-theme-text/70 hf:text-theme-text"
+             title="Share on Twitter"
+             role="listitem"
+             href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
+             target="_blank"
+             rel="noopener">
+            {%- render '_icon', icon: 'twitter', class: "w-9 h-9" -%}
+          </a>
+          <a class="text-theme-text/70 hf:text-theme-text"
+             title="Share via Email"
+             role="listitem"
+             href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}">
+            {% render '_icon', icon: 'email', class: "w-9 h-9" %}
+          </a>
+        </aside>
+
+        <div>
+          <main class="max-w-none w-full rte prose font-group-1 prose-theme mt-4-[calc(100%+4rem)]-w-[calc(100%+4rem)] lg:prose-video:-mx-8 lg:prose-video:w-[calc(100%+4rem)] lg:prose-video:max-w-[calc(100%+4rem)] lg:prose-pre:-mx-8 lg:prose-pre:w-[calc(100%+4rem)] lg:prose-pre:max-w-[calc(100%+4rem)]">
+            {{ article.content }}
+          </main>
+          <section class="">
+            {%- if comments__show and article.comments_enabled? -%}
+              <header class="mb-4">
+                <h3 class="font-bold h4">
+                  {{ "main_article.comments" | t }}
+                </h3>
+                {% if article.comments_count == 0 %}
+                  <h4 class="mt-1">
+                    {{ "main_article.no_comments" | t }}
+                  </h4>
+                {% endif %}
+                {% if article.comments_count > 0 %}
+                  <h4 class="mt-1">{{ article.comments_count }}
+                    {{ "main_article.comments_2" | t }}
+                  </h4>
+                {% endif %}
+              </header>
+              {%- if article.comments_count > 0 -%}
+                <main class="mb-6 grid gap-4">
+                  {%- paginate article.comments by 50 -%}
+                    {%- for comment in article.comments -%}
+                      <div class="border border-gray-200 bg-gray-50 p-4 rounded-theme">
+                        <div class="mb-2 flex justify-between text-sm">
+                          <p class="font-medium">{{ comment.author }}</p>
+                          <span class="text-gray-600">
+                            {{ comment.created_at | time_tag: format: 'date' }}
+                          </span>
+                        </div>
+                        <div class="prose prose-theme">
+                          {{- comment.content -}}
+                        </div>
+                      </div>
+                    {%- endfor -%}
+
+                    <div class="flex justify-center py-4">
+                      {% render '_pagination', paginate: paginate %}
+                    </div>
+                  {%- endpaginate -%}
+                </main>
+              {%- endif -%}
+
+              <footer>
+
+                {% liquid
+                  assign type = 'new_comment'
+                  assign success_message = "Thank you for commenting."
+                  assign formClasses = 'group/form flex flex-col md:justify-center md:grid md:grid-cols-12 mx-auto gap-4 w-full'
+
+
+                  assign blockTypes = section.blocks | map: "type"
+                  assign blockNames = section.blocks | map: "settings" | map: "name"
+                %}
+
+                {% form type, article, id: id, class: formClasses, data-form-type: type %}
+                  {% liquid
+                    assign formElementClasses = ""
+                    if form.posted_successfully?
+                      assign formElementClasses = "hidden"
+                    endif
+
+                  %}
+
+                  {% comment %} Fallback input in case its not added as a block {% endcomment %}
+                  {% if formElementClasses != 'hidden' %}
+                    <h3 class="col-span-12 mt-4 mb-2 text-lg font-bold">
+                      {{ "main_article.add_a" | t }}
+                    </h3>
+                    {%- if blog.moderated? -%}
+                      <p class="mb-2 text-sm">
+                        {{ "main_article.all_comments" | t }}
+                      </p>
+                    {%- endif -%}
+
+                    {%- assign form_author = form.author | default: customer.name | escape -%}
+                    {%- assign form_email = form.email | default: customer.email | escape -%}
+
+                    {%
+                        render '_form-elements',
+                        form: form,
+                        type: 'text',
+                        name: 'comment[author]',
+                        class: 'col-span-12',
+                        label: "Name",
+                        placeholder: "tim@apple.com",
+                        value: form_author,
+                        required: true
+                    %}
+                    {%
+                        render '_form-elements',
+                        form: form,
+                        type: 'email',
+                        name: 'comment[email]',
+                        class: 'col-span-12',
+                        label: "Email",
+                        value: form_email,
+                        placeholder: "tim@apple.com",
+                        required: true
+                    %}
+                    {%
+                        render '_form-elements',
+                        form: form,
+                        type: 'textarea',
+                        name: 'comment[body]',
+                        class: 'col-span-12',
+                        label: "Message",
+                        placeholder: "Your Message",
+                        required: true,
+                        body: form.body,
+                        rows: 4
+                    %}
+                    <div class="col-end-13 flex justify-end">
+                      {%
+                          render '_form-elements',
+                          form: form,
+                          type: 'submit',
+                          label: "Comment"
+                      %}
+                    </div>
+                  {% endif %}
+
+
+                  {% if form.errors %}
+                    <small class="col-span-12 grid gap-2 text-xs text-error sm:mx-auto sm:text-center">
+                      {%- if form.errors contains 'form' -%}
+                        {% if form.errors.messages['form'] contains 'verify your email' %}
+                          <small class="ml-1 flex items-center text-xs font-medium text-info mt-1.5">
+                            {% render '_icon', icon: 'warning', class: 'w-6 h-6 mr-2 opacity-70' %}
+                            <span>
+                              {{ form.errors.messages['form'] }}.
+                            </span>
+                          </small>
+                        {% else %}
+                          <small class="ml-1 flex items-center text-xs font-medium text-error mt-1.5 [&_a]:underline">
+                            {% render '_icon', icon: 'warning-triangle', class: 'w-5 h-5 mr-2 opacity-70' %}
+                            <span>
+                              {{ form.errors.messages['form'] }}.
+                            </span>
+                          </small>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </small>
+                  {% endif %}
+
+                  {% if form.posted_successfully? %}
+                    <div class="col-span-12 grid gap-2 text-lg font-bold text-success sm:mx-auto sm:text-center">
+                      <span>{{ success_message }}</span>
+                    </div>
+                  {% endif %}
+
+                {% endform %}
+
+              </footer>
+            {%- endif -%}
+          </section>
+          <footer class="">
+            {%- if nav__show and blog.previous_article or blog.next_article -%}
+              {%- comment -%}
+                Implementation may look a bit strange here as we're using the "next_article" for the previous button and vice-versa. But we actually found that from
+                a user point of view, it feels "more logical", if you are on the most recent article, to have a button "next article" on the right that goes to the
+                previous article.
+              {%- endcomment -%}
+
+              <div class="flex w-full items-center justify-between pt-8">
+
+                <a class="flex items-center gap-3 text-sm text-gray-300 leading-[1] ac:text-gray-800 ac:hf:underline {% if blog.next_article %}active{% endif %}"
+                   {%- if blog.next_article -%}href="{{ blog.next_article.url }}"{%- endif -%}
+                   rel="prev">
+                  {%- render '_icon', icon: 'arrow-left', class: "w-4 h-4" -%}
+                  <span>
+                    {{ "main_article.previous_article" | t }}
+                  </span>
+                </a>
+
+
+                <a class="flex items-center gap-3 text-gray-300 text-sm leading-[1] ac:text-gray-800 ac:hf:underline {% if blog.previous_article %}active{% endif %}"
+                   {% if blog.previous_article %}href="{{ blog.previous_article.url }}"{% endif %}
+                   rel="next">
+                  <span>
+                    {{ "main_article.next_article" | t }}
+                  </span>
+                  {%- render '_icon', icon: 'arrow-right', class: "w-4 h-4" -%}
+                </a>
+              </div>
+            {%- endif -%}
+          </footer>
+        </div>
+      </div>
+    </main>
+    <aside class="lg:-mt-[57px] grid gap-6 h-min sticky top-top-bar-spacing pt-6">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when '@app' %}
+            {% render block %}
+          {% when 'related_articles' %}
+            {% render 'main-article.related_articles', block: block %}
+          {% when 'related_products' %}
+            {% render 'main-article.related_products', block: block %}
+        {% endcase %}
+      {% endfor %}
+    </aside>
+  </div>
+  <footer>
+    <aside class="flex justify-evenly gap-4 pt-8 md:hidden">
+      {%- assign share_url = shop.url | append: article.url | url_param_escape -%}
+      {%- assign twitter_text = article.title | url_param_escape -%}
+      {%- assign pinterest_description = article.excerpt_or_content | strip_html | truncatewords: 15 | url_param_escape -%}
+      {%- assign pinterest_image = article.image | img_url: 'large' | prepend: 'https:' -%}
+
+      <a class="text-theme-text/70 hf:text-theme-text"
+         role="listitem"
+         title="Share on Facebook"
+         href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+         target="_blank"
+         rel="noopener">
+        {%- render '_icon', icon: 'facebook', class: "w-9 h-9" -%}
+      </a>
+      <a class="text-theme-text/70 hf:text-theme-text"
+         title="Share on Pinterest"
+         role="listitem"
+         href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+         target="_blank"
+         rel="noopener">
+        {%- render '_icon', icon: 'pinterest', class: "w-9 h-9" -%}
+      </a>
+      <a class="text-theme-text/70 hf:text-theme-text"
+         title="Share on Twitter"
+         role="listitem"
+         href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
+         target="_blank"
+         rel="noopener">
+        {%- render '_icon', icon: 'twitter', class: "w-9 h-9" -%}
+      </a>
+      <a class="text-theme-text/70 hf:text-theme-text"
+         title="Share via Email"
+         role="listitem"
+         href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}">
+        {% render '_icon', icon: 'email', class: "w-9 h-9" %}
+      </a>
+    </aside>
+  </footer>
+</article>
+
+
+
+{% schema %}
+{
+  "name": "Blog post",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "image__show",
+      "label": "Show Image",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "date__show",
+      "label": "Show Date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "author__show",
+      "label": "Show Author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "share_buttons__show",
+      "label": "Show Share Buttons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "comments__show",
+      "label": "Show Comments",
+      "info": "If enabled on the Article",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "nav__show",
+      "label": "Show Preview/Next Buttons",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>[title]</p>",
+      "info": "Use [title] as a placeholder"
+    },
+    {
+      "type": "range",
+      "id": "title_font",
+      "label": "Title Font",
+      "default": 1,
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "info": "Typography Groups 1 - 3"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "default": "pt-0",
+      "options": [
+        {
+          "value": "pt-0",
+          "label": "None"
+        },
+        {
+          "value": "pt-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pt-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pt-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Top Padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "default": "pb-0",
+      "options": [
+        {
+          "value": "pb-0",
+          "label": "None"
+        },
+        {
+          "value": "pb-sm",
+          "label": "Small"
+        },
+        {
+          "value": "pb-md",
+          "label": "Medium"
+        },
+        {
+          "value": "pb-lg",
+          "label": "Large"
+        }
+      ],
+      "label": "Bottom Padding"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "name": "Related Products",
+      "type": "related_products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Products",
+          "limit": 7
+        },
+        {
+          "type": "text",
+          "id": "metafield",
+          "label": "Set via Article Metafield",
+          "placeholder": "custom.related_products",
+          "default": "smart.related_products"
+        },
+        {
+          "type": "range",
+          "id": "limit",
+          "label": "Limit",
+          "default": 3,
+          "min": 1,
+          "max": 7,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "Related Articles",
+      "type": "related_articles",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Blog"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

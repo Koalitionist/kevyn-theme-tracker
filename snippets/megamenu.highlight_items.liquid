@@ -1,0 +1,70 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign url_1 = block.settings.url_1
+  assign image_1 = block.settings.image_1
+  assign overlay_1 = block.settings.overlay_1
+  assign labels_1 = block.settings.labels_1
+  assign text_1 = block.settings.text_1
+  assign text_1_font = block.settings.text_1_font
+  assign url_2 = block.settings.url_2
+  assign image_2 = block.settings.image_2
+  assign overlay_2 = block.settings.overlay_2
+  assign labels_2 = block.settings.labels_2
+  assign text_2 = block.settings.text_2
+  assign text_2_font = block.settings.text_2_font
+  assign url_3 = block.settings.url_3
+  assign image_3 = block.settings.image_3
+  assign overlay_3 = block.settings.overlay_3
+  assign labels_3 = block.settings.labels_3
+  assign text_3 = block.settings.text_3
+  assign text_3_font = block.settings.text_3_font
+  assign size = block.settings.size
+  assign gap = block.settings.gap
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<section class="flex-1 flex flex-col"
+         style="margin-bottom: {{ margin_bottom }}px">
+  <header>{% render 'richtext', type: title_font, content: title, class: "mb-4" %}</header>
+  <main class="grid grid-flow-col-dense auto-cols-fr flex-1"
+        style="gap: {{ gap }}px">
+    {% for index in (1..3) %}
+      {% liquid
+        assign _url = 'url_' | append: index
+        assign _image = 'image_' | append: index
+        assign _overlay = 'overlay_' | append: index
+        assign _labels = 'labels_' | append: index
+        assign _text = 'text_' | append: index
+        assign _text_font = 'text_' | append: index | append: "_font"
+
+        assign url = block.settings[_url]
+        assign image = block.settings[_image]
+        assign overlay = block.settings[_overlay]
+        assign labels = block.settings[_labels] | split: ','
+        assign text = block.settings[_text]
+        assign text_font = block.settings[_text_font]
+
+      %}
+      {% if image != blank %}
+        <a {% if url != blank %}href="{{ url }}"{% endif %}
+           class="group grid gap-3">
+          <picture class="overflow-hidden relative rounded-theme-md {{ image_order }} aspect-1 relative"
+                   style="max-width: {{ size }}px; max-height: {{ size }}px;">
+            {% render '_image', image: image, width: size, placeholder: 'product-3', class: 'object-cover w-full h-full relative scale-100 group-hf:scale-105 transition-all duration-75 ease-in-out' %}
+            <div class="absolute inset-0 w-full h-full"
+                 style="background: {{ overlay }};"></div>
+            <div class="absolute z-[5] inset-x-0 top-0 w-full p-2 flex flex-wrap gap-1">
+              {% for label in labels %}
+                <div class="label label-item bg-primary-bg text-primary-text">{{ label | trim }}</div>
+              {% endfor %}
+            </div>
+          </picture>
+          {% render 'richtext', type: text_font, content: text, class: "group-hf:underline" %}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </main>
+</section>

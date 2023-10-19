@@ -1,0 +1,16 @@
+<script data-product-json="{{ product.handle }}"
+        type="application/json">{% render 'product-data.json', input: product %}</script>
+
+
+
+
+{% schema %}
+{
+  "name": "Product data",
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  }
+}
+{% endschema %}

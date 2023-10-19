@@ -1,0 +1,120 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = section.settings.title
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<script type="application/json"
+        data-gift-with-purchase
+        class="gift-with-purchase">
+  {
+    "settings": {{ section.settings | json }},
+    "blocks": [{% render 'gift-with-purchase.gift' for section.blocks as block %}]
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Gift with purchase",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Select Your Free Gift"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Buy X get Y Gift",
+      "type": "gift",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "radio",
+          "id": "type",
+          "label": "Base Gift on",
+          "default": "quantity",
+          "options": [
+            {
+              "value": "quantity",
+              "label": "Cart item quantity"
+            },
+            {
+              "value": "price",
+              "label": "Cart total price"
+            }
+          ]
+        },
+        {
+          "type": "number",
+          "id": "target",
+          "label": "Target",
+          "info": "Quantity Discount as number - In Cents for `Cart Total` calculation (i.e. $39,40 -> 3940)",
+          "default": 3
+        },
+        {
+          "type": "header",
+          "content": "Based on any items from"
+        },
+        {
+          "type": "collection",
+          "id": "target_collection",
+          "label": "Collection"
+        },
+        {
+          "type": "product_list",
+          "id": "target_products",
+          "label": "Products"
+        },
+        {
+          "type": "header",
+          "content": "Customer Gets"
+        },
+        {
+          "type": "number",
+          "id": "receives_quantity",
+          "label": "Quantity",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "receives_discount_percentage",
+          "label": "Percentage Off",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Any items from"
+        },
+        {
+          "type": "collection",
+          "id": "receives_collection",
+          "label": "Collection"
+        },
+        {
+          "type": "product_list",
+          "id": "receives_products",
+          "label": "Products"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gift with purchase"
+    }
+  ]
+}
+{% endschema %}

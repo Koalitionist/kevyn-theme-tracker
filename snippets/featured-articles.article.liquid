@@ -1,0 +1,71 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign article = block.settings.article
+  assign responsive_visibility = block.settings.responsive_visibility
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign article = blog_article | default: article
+  assign size = section.settings.size
+  assign author__show = section.settings.author__show
+  assign date__show = section.settings.date__show
+  assign description__show = section.settings.description__show
+
+  assign title_wrap = section.settings.title_wrap
+  assign image__overlay = section.settings.image__overlay
+  assign description = article.excerpt_or_content | strip_html | truncatewords: 50
+  assign author = article.author
+  assign published_at = article.published_at
+
+  if article == blank
+    assign author = "Mr. Peabody"
+    assign published_at = "2023-02-13"
+    assign description = "What if I send in the tape and they don't like it? I mean, what if they say I'm no good? What if they say 'Get outta here, kid. You got no future'? I mean, I just don't think I can take that kind of rejection. Jesus, I'm starting to sound like my old man!"
+  endif
+
+  assign titleWrapClasses = 'w-full truncate'
+
+  if title_wrap
+    assign titleWrapClasses = ''
+  endif
+%}
+
+<article
+    class="group relative block max-w-[calc(100vw-64px)] {{ responsive_visibility }}"
+    style="width: calc(((var(--layout-page-width) - 64px) / {{ size }}) - (24px * {{ size | minus: 1 }} / {{ size }}))"
+    data-scroll-item>
+
+  <div class="grid gap-4 w-full max-w-full overflow-hidden">
+    <a href="{{ article.url }}"
+       class="block relative pb-[75%] w-full overflow-hidden rounded-theme-md"
+       aria-label="{{ article.title }}">
+      {% if article == blank %}
+        {% assign number = forloop.index | modulo: 6 | plus: 1 %}
+        {% assign placeholderImage = 'collection-' | append: number %}
+      {% endif %}
+      {% render '_image', image: article.image, class: "absolute top-0 left-0 h-full w-full bg-inherit object-cover group-hf:scale-105 scale-100 transition-all ease-linear", placeholder: placeholderImage %}
+      <div class="absolute inset-0"
+           style="background: {{ image__overlay }}"></div>
+    </a>
+
+    <div class="grid gap-2">
+      <h1 class="article-card-title {{ titleWrapClasses }}">{{ article.title }}</h1>
+      <div class="article-card-specs flex items-center gap-2 w-full truncate">
+        {% if author__show %}<span>{{ author }}</span>{% endif %}
+        {% if author__show and date__show %}<span class="h-1.5 w-1.5 rounded-full bg-theme-text/40"></span>{% endif %}
+        {% if date__show %}<span>{{ published_at | time_tag: format: 'date' }}</span>{% endif %}
+
+      </div>
+      {% if description__show %}
+        <p class="article-card-description line-clamp-4">
+          {{ description }}
+        </p>
+      {% endif %}
+      <a href="{{ article.url }}"
+         class="hf:underline mt-2 article-card-link text-secondary-text">
+        Read more
+      </a>
+    </div>
+  </div>
+</article>

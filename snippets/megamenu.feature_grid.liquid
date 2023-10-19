@@ -1,0 +1,86 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign title_font = block.settings.title_font
+  assign products = block.settings.products
+  assign _collections = block.settings.collections
+  assign _blog = block.settings.blog
+  assign feature_title = block.settings.feature_title
+  assign featured_title_font = block.settings.featured_title_font
+  assign text_position = block.settings.text_position
+  assign overlay = block.settings.overlay
+  assign size = block.settings.size
+  assign border_radius = block.settings.border_radius
+  assign rows = block.settings.rows
+  assign columns = block.settings.columns
+  assign grid_gap = block.settings.grid_gap
+  assign margin_bottom = block.settings.margin_bottom
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% liquid
+  assign categories = 'products,collections,blog' | split: ','
+  assign limit = rows | times: columns
+  assign items = "" | split: "" | compact
+  if border_radius == -1
+    assign border_radius = "100%"
+  else
+    assign border_radius = border_radius | append: "px"
+  endif
+
+  case text_position
+    when 'left'
+      assign text_style = 'grid-template-columns: 1fr ' | append: size | append: 'px; text-align: right;'
+      assign image_order = "order-2"
+    when 'bottom'
+      assign text_style = 'grid-template-rows: ' | append: size | append: 'px 1fr;'
+    when 'right'
+      assign text_style = 'grid-template-columns: ' | append: size | append: 'px 1fr;'
+    when 'top'
+      assign text_style = 'grid-template-rows: 1fr ' | append: size | append: 'px;'
+      assign image_order = "order-2"
+  endcase
+%}
+
+{% for category in categories %}
+  {% for item in block.settings[category] %}
+    {% if count >= limit %}
+      {% break %}
+    {% endif %}
+    {% assign featureTitle = feature_title | replace: "[title]", item.title %}
+    {% assign image = item.featured_image | default: item.image | default: item.images[0] | default: item.media[0] %}
+    {% capture itemContent %}
+      <a href="{{ item.url }}"
+         class="group grid gap-2 items-center grid-flow-dense"
+         style="{{ text_style }}">
+        <picture class="overflow-hidden relative {{ image_order }}"
+                 style="background: {{ overlay }}; width: {{ size }}px; height: {{ size }}px; border-radius: {{ border_radius }};">
+          {% render '_image', image: item.featured_image, width: size, placeholder: 'product-3', class: 'object-cover w-full h-full relative scale-100 group-hf:scale-105 transition-all duration-75 ease-in-out' %}
+        </picture>
+        {% render 'richtext', type: featured_title_font, content: featureTitle, class: "group-hf:underline" %}
+      </a>
+    {% endcapture %}
+    {% assign itemContent = itemContent | split: "||!|!|" %}
+    {% assign items = items | concat: itemContent %}
+    {% assign count = count | plus: 1 %}
+  {% endfor %}
+{% endfor %}
+
+
+<section class="flex-1 flex flex-col"
+         style="margin-bottom: {{ margin_bottom }}px">
+  <header>{% render 'richtext', type: title_font, content: title, class: "mb-4" %}</header>
+  <main class="grid auto-cols-fr grid-flow-col-dense flex-1"
+        style="gap: {{ grid_gap }}px">
+    {% assign count = 0 %}
+    {% for col in (1..columns) %}
+      {% assign offset = col | minus: 1 | times: rows %}
+      <div class="grid"
+           style="gap: {{ grid_gap }}px">
+        {% for item in items offset: offset limit: rows %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </main>
+</section>

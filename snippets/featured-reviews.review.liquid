@@ -1,0 +1,18 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign rating = block.settings.rating
+  assign review = block.settings.review
+  assign author = block.settings.author
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% assign id_prefix = block.id | append: "_" | append: id_index %}
+
+<figure id="block--{{ block.id }}" {{ block.shopify_attributes }}
+        class="featured-reviews__review p-6 rounded-theme-md grid gap-3 border border-theme-text {{ class }}" {{ html_attributes }}>
+  <header class="flex justify-between gap-4 items center">
+    {% render 'richtext', type: section.settings.author_font, content: author, custom_tag: "cite" %}
+    {% render '_star-rating', rating: rating, class: 'h-6', id_prefix: id_prefix %}
+  </header>
+  {% render 'richtext', type: section.settings.review_font, content: review, custom_tag: "blockquote" %}
+</figure>

@@ -1,0 +1,225 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign vendor__show = section.settings.vendor__show
+  assign rating__show = section.settings.rating__show
+  assign labels__show = section.settings.labels__show
+  assign labels__discount = section.settings.labels__discount
+  assign image__ratio = section.settings.image__ratio
+  assign image__show_secondary = section.settings.image__show_secondary
+  assign image__background = section.settings.image__background
+  assign image__drop_shadow = section.settings.image__drop_shadow
+  assign pagination_size = section.settings.pagination_size
+  assign columns__desktop = section.settings.columns__desktop
+  assign columns__mobile = section.settings.columns__mobile
+  assign article_show_date = section.settings.article_show_date
+  assign article_show_author = section.settings.article_show_author
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<section id="{{ sectionID }}"
+         class="search-grid text-theme-text bg-theme-bg {{ color_scheme }}">
+  <main class="container pt-8 pb-8">
+    {%- capture filterTag -%}
+      {{- settings.custom_hide_condition -}}
+    {%- endcapture -%}
+    {% assign filterTag = filterTag | trim | strip_newlines %}
+
+    {% paginate search.results by pagination_size -%}
+      <div class="grid gap-x-6 gap-y-10 {{ columns__mobile }} {{ columns__desktop }}">
+        {% for result in search.results -%}
+          {% case result.object_type %}
+            {% when 'product' %}
+              {% unless result.tags contains filterTag %}
+                {% render 'product-card', product: result %}
+              {% endunless %}
+            {% when 'article' %}
+              {% render '_content-card', content: result, settings: section.settings %}
+            {% when 'page' %}
+              {% render '_content-card', content: result, settings: section.settings %}
+            {% when 'collection' %}
+              {% render '_content-card', content: result, settings: section.settings %}
+          {% endcase %}
+        {%- endfor %}
+      </div>
+      <div class="flex justify-center mt-10">
+        {% render '_pagination', paginate: paginate %}
+      </div>
+    {%- endpaginate %}
+  </main>
+</section>
+
+
+{% schema %}
+{
+  "name": "Search results",
+  "settings": [
+    {
+      "content": "Product card",
+      "type": "header"
+    },
+    {
+      "id": "vendor__show",
+      "type": "checkbox",
+      "default": false,
+      "label": "Show vendor"
+    },
+    {
+      "id": "rating__show",
+      "type": "checkbox",
+      "default": false,
+      "label": "Show product rating",
+      "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+    },
+    {
+      "type": "checkbox",
+      "id": "labels__show",
+      "label": "Show labels",
+      "default": true
+    },
+    {
+      "content": "You can setup custom labels via product metafields using `metafields.smart.product_labels` as a list of single line text.",
+      "type": "paragraph"
+    },
+    {
+      "type": "radio",
+      "id": "labels__discount",
+      "label": "Discount Label type",
+      "info": "Shows when a product has a higher compare at price than the price field.",
+      "default": "sale",
+      "options": [
+        {
+          "value": "sale",
+          "label": "On Sale"
+        },
+        {
+          "value": "percentage",
+          "label": "Discount Percentage"
+        },
+        {
+          "value": "value",
+          "label": "Discount Value"
+        }
+      ]
+    },
+    {
+      "content": "Image",
+      "type": "header"
+    },
+    {
+      "id": "image__ratio",
+      "type": "select",
+      "default": "pb-[125%]",
+      "options": [
+        {
+          "value": "pb-[125%]",
+          "label": "Portrait"
+        },
+        {
+          "value": "pb-[100%]",
+          "label": "Square"
+        }
+      ],
+      "label": "Image ratio"
+    },
+    {
+      "id": "image__show_secondary",
+      "type": "checkbox",
+      "default": false,
+      "label": "Show second image on hover"
+    },
+    {
+      "type": "color_background",
+      "id": "image__background",
+      "label": "Image background",
+      "default": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)"
+    },
+    {
+      "type": "checkbox",
+      "id": "image__drop_shadow",
+      "label": "Add a drop shadow to the image",
+      "info": "Transparent images only",
+      "default": false
+    },
+    {
+      "content": "Layout",
+      "type": "header"
+    },
+    {
+      "id": "pagination_size",
+      "type": "range",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 16,
+      "label": "Products per page"
+    },
+    {
+      "type": "select",
+      "id": "columns__desktop",
+      "default": "lg:grid-cols-4",
+      "label": "Number of columns on desktop",
+      "options": [
+        {
+          "value": "lg:grid-cols-1",
+          "label": "1 column"
+        },
+        {
+          "value": "lg:grid-cols-2",
+          "label": "2 columns"
+        },
+        {
+          "value": "lg:grid-cols-3",
+          "label": "3 columns"
+        },
+        {
+          "value": "lg:grid-cols-4",
+          "label": "4 columns"
+        },
+        {
+          "value": "lg:grid-cols-5",
+          "label": "5 columns"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns__mobile",
+      "default": "grid-cols-2",
+      "label": "Number of columns on mobile",
+      "options": [
+        {
+          "value": "grid-cols-1",
+          "label": "1 column"
+        },
+        {
+          "value": "grid-cols-2",
+          "label": "2 columns"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Blog card",
+      "info": "Blog card styles also apply to page cards in search results. To change card styles update your theme settings."
+    },
+    {
+      "type": "checkbox",
+      "id": "article_show_date",
+      "default": true,
+      "label": "Show date"
+    },
+    {
+      "type": "checkbox",
+      "id": "article_show_author",
+      "default": false,
+      "label": "Show author"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ]
+}
+{% endschema %}

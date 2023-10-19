@@ -1,0 +1,21 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign text = block.settings.text
+  assign text_font = block.settings.text_font
+  assign text_align = block.settings.text_align
+  assign opacity = block.settings.opacity
+  assign margin_bottom = block.settings.margin_bottom
+  assign margin_top = block.settings.margin_top
+  assign section_max_width = block.settings.section_max_width
+  assign responsive_visibility = block.settings.responsive_visibility
+  assign grid_span = block.settings.grid_span
+  assign custom_css = block.settings.custom_css
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+<div data-product-block="text"
+     class="{{ grid_span }} {{ text_align }} {{ section_max_width }} {{ responsive_visibility }} {{ custom_css }}" {{ block.shopify_attributes }}
+     data-block-settings="{{- block.settings | json | escape -}}"
+     style="margin-bottom: {{ margin_bottom }}px; margin-top: {{ margin_top }}px;">
+  {% render 'richtext', type: text_font, content: text, opacity: opacity %}
+</div>

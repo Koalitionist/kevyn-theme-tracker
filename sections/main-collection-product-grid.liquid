@@ -1,0 +1,178 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign pagination_size = section.settings.pagination_size
+  assign columns__desktop = section.settings.columns__desktop
+  assign columns__mobile = section.settings.columns__mobile
+  assign card_style = section.settings.card_style
+  assign color_scheme = section.settings.color_scheme
+  assign sectionID = section.settings.sectionID
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- capture filterTag -%}
+  {{- settings.custom_hide_condition -}}
+{%- endcapture -%}
+{% assign filterTag = filterTag | trim | strip_newlines %}
+
+
+<section id="{{ sectionID }}"
+         class="main-collection-product-grid {{ color_scheme }}">
+  <main class="container pt-8 pb-8">
+    {% paginate collection.products by pagination_size -%}
+
+      {%- if collection.products.size == 0 -%}
+        <div class="prose prose-theme py-16 text-center mx-auto">
+          <h2 class="">
+            {{ "main_collection_product_grid.no_products" | t }}
+            <br>
+            <a href="{{ collection.url }}?sort_by={{ collection.sort_by | default: collection.default_sort_by }}"
+               class="underline">
+              {{ "main_collection_product_grid.use_fewer" | t }}
+            </a>
+          </h2>
+        </div>
+      {%- endif -%}
+
+      <div class="grid gap-4 md:gap-x-6 md:gap-y-10 {{ columns__mobile }} {{ columns__desktop }}">
+        {% for product in collection.products -%}
+          {% unless product.tags contains filterTag %}
+            {% liquid
+
+              case card_style
+                when 'default'
+                  render 'product-card', product: product, is_collection: true
+                when 'preview_card'
+                  render 'product-preview-card', product: product, is_collection: true
+              endcase
+            %}
+          {% endunless %}
+        {%- endfor %}
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <div class="flex justify-center mt-10">
+          {% render '_pagination', paginate: paginate %}
+        </div>
+      {% endif %}
+    {%- endpaginate %}
+  </main>
+</section>
+
+{% schema %}
+{
+  "name": "Product grid",
+  "class": "section",
+  "settings": [
+    {
+      "content": "Layout",
+      "type": "header"
+    },
+    {
+      "id": "pagination_size",
+      "type": "range",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "default": 16,
+      "label": "Products per page"
+    },
+    {
+      "type": "select",
+      "id": "columns__desktop",
+      "default": "lg:grid-cols-4",
+      "label": "Number of columns on desktop",
+      "options": [
+        {
+          "value": "lg:grid-cols-1",
+          "label": "1 column"
+        },
+        {
+          "value": "lg:grid-cols-2",
+          "label": "2 columns"
+        },
+        {
+          "value": "lg:grid-cols-3",
+          "label": "3 columns"
+        },
+        {
+          "value": "lg:grid-cols-4",
+          "label": "4 columns"
+        },
+        {
+          "value": "lg:grid-cols-5",
+          "label": "5 columns"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns__mobile",
+      "default": "grid-cols-2",
+      "label": "Number of columns on mobile",
+      "options": [
+        {
+          "value": "grid-cols-1",
+          "label": "1 column"
+        },
+        {
+          "value": "grid-cols-2",
+          "label": "2 columns"
+        }
+      ]
+    },
+    {
+      "type": "radio",
+      "id": "card_style",
+      "label": "Object Style",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "preview_card",
+          "label": "Preview Card"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "default": "bg-theme-bg text-theme-text color-inherit",
+      "options": [
+        {
+          "value": "bg-theme-bg text-theme-text color-inherit",
+          "label": "Inherit from parent/theme"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-1",
+          "label": "Color group 1"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-2",
+          "label": "Color group 2"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-3",
+          "label": "Color group 3"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-4",
+          "label": "Color group 4"
+        },
+        {
+          "value": "bg-theme-bg text-theme-text color-group-5",
+          "label": "Color group 5"
+        }
+      ],
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "sectionID",
+      "label": "Section ID"
+    }
+  ]
+}
+{% endschema %}

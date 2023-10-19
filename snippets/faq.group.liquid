@@ -1,0 +1,16 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{% comment %}max-w-xs truncate block rounded-full px-4 py-2 bg-gray-200 text-xs ac:bg-gray-800 ac:text-white{% endcomment %}
+{% if title != blank %}
+  <button class="faq__group whitespace-nowrap rounded-full px-5 text-sm transition-all ac:bg-primary-bg ac:text-primary-text bg-primary-bg/[0.15] text-theme-text/80 md:text-base py-2 md:px-6 md:py-3 ac:font-bold {% if index == 0 %}active{% endif %}"
+          data-scroll-item
+          data-tabs-button="{{ index }}"
+      {{ block.shopify_attributes }}>
+    {{ title }}
+  </button>
+{% endif %}
+

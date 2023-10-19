@@ -1,0 +1,158 @@
+{% if section.settings.center_logo or section.settings.center_logo__desktop %}
+    {% assign positionClasses = "basis-0 flex-grow flex-1 " %}
+{% else %}
+    {% assign positionClasses = "lg:basis-0 lg:flex-grow lg:flex-1 t" %}
+{% endif %}
+
+{% liquid
+  assign button_primary__text = section.settings.button_primary__text
+  assign button_primary__url = section.settings.button_primary__url
+  assign button_primary__style = section.settings.button_primary__style
+  assign show_button_mobile = section.settings.show_button_mobile
+  assign show_button_desktop = section.settings.show_button_desktop
+
+
+  if button_primary__text and button_primary__url and show_button_desktop != false
+    assign button_primary__show = true
+  endif
+%}
+
+
+<div class="absolute inset-0 w-full h-full bg-theme-bg z-50 ac:opacity-100 ac:pointer-events-auto opacity-0 pointer-events-none transition-all duration-75 {{ class }}"
+     data-header-search-bar>
+  <div class="container h-full flex items-center justify-end">
+    {% render 'header.hamburger-menu' %}
+    {% render 'header.logo', class: "!hidden md:!flex" %}
+
+    <div class="hidden md:flex justify-end space-x-4 pl-4 {{ positionClasses }}">
+      {% if button_primary__show %}
+        <a href="{{ button_primary__url }}"
+           class="{{ button_primary__style }} whitespace-nowrap">
+          {{ button_primary__text }}
+        </a>
+      {% endif %}
+      <div class="hidden md:flex justify-end space-x-4 items-center">
+      <button type="button"
+              data-drawer-open="search"
+              data-header-search-button
+                class="relative text-primary-outline hover:text-primary-outline">
+        <span class="sr-only">
+          {{ "header_koa.search" | t }}
+        </span>
+          {% render '_icon', icon: 'search', class: "w-6 h-6 stroke-[1.5px]" %}
+      </button>
+        {% if customer and shop.customer_accounts_enabled %}
+        <a href="{{ routes.account_url }}"
+             class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+          <span class="sr-only">
+            {{ "header_koa.account" | t }}
+          </span>
+            {% render '_icon', icon: 'user', class: 'w-6 h-6 stroke-[1.5px]' %}
+        </a>
+      {% endif %}
+        {% if customer == null and shop.customer_accounts_enabled %}
+        <a href="{{ routes.account_login_url }}"
+             class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+          <span class="sr-only">
+            {{ "header_koa.login" | t }}
+          </span>
+            {% render '_icon', icon: 'user', class: 'w-6 h-6 stroke-[1.5px]' %}
+        </a>
+      {% endif %}
+        {% case settings.cart_type %}
+          {% when 'drawer' %}
+      <button type="button"
+              data-drawer-open="cart"
+                    class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+        <span class="sr-only">
+                {{ "header_koa.cart" | t }}
+        </span>
+              {% render '_icon', icon: 'cart', class: "w-6 h-6 stroke-[1.5px]" %}
+              <span class="absolute flex items-center justify-center bg-primary-bg text-primary-text rounded-full -right-1.5 -top-1 h-4 w-4 text-[10px] font-medium tracking-tight leading-none">
+          <span data-cart-item-count>{{ cart.item_count }}</span>
+        </span>
+      </button>
+          {% when 'page' %}
+            <a type="button"
+               href="/cart"
+               class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+              <span class="sr-only">
+                {{ "header_koa.cart" | t }}
+              </span>
+              {% render '_icon', icon: 'cart', class: "w-6 h-6 stroke-[1.5px]" %}
+              <span class="absolute flex items-center justify-center bg-primary-bg text-primary-text rounded-full -right-1.5 -top-1 h-4 w-4 text-[10px] font-medium tracking-tight leading-none">
+                <span data-cart-item-count>{{ cart.item_count }}</span>
+              </span>
+            </a>
+        {% endcase %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-end space-x-4 pl-4 {{ positionClasses }} {{ class }}">
+  {% if button_primary__show %}
+    <a href="{{ button_primary__url }}"
+       class="{{ button_primary__style }} whitespace-nowrap {% if show_button_mobile == false %}max-md:hidden{% endif %}">
+      {{ button_primary__text }}
+    </a>
+  {% endif %}
+  <div class="flex justify-end space-x-4 items-center">
+  <button type="button"
+          data-drawer-open="search"
+            class="relative text-primary-outline hover:text-primary-outline">
+    <span class="sr-only">
+      {{ "header_koa.search" | t }}
+    </span>
+      {% render '_icon', icon: 'search', class: "w-6 h-6 stroke-[1.5px]" %}
+  </button>
+
+    {% if customer and shop.customer_accounts_enabled %}
+    <a href="{{ routes.account_url }}"
+         class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+      <span class="sr-only">
+        {{ "header_koa.account" | t }}
+      </span>
+        {% render '_icon', icon: 'user', class: 'w-6 h-6 stroke-[1.5px]' %}
+    </a>
+  {% endif %}
+    {% if customer == null and shop.customer_accounts_enabled %}
+    <a href="{{ routes.account_login_url }}"
+         class="hidden md:inline-flex relative text-primary-outline hover:text-primary-outline">
+      <span class="sr-only">
+        {{ "header_koa.login" | t }}
+      </span>
+        {% render '_icon', icon: 'user', class: 'w-6 h-6 stroke-[1.5px]' %}
+    </a>
+  {% endif %}
+    {% case settings.cart_type %}
+      {% when 'drawer' %}
+  <button type="button"
+          data-drawer-open="cart"
+                class="relative text-primary-outline hover:text-primary-outline">
+    <span class="sr-only">
+            {{ "header_koa.cart" | t }}
+    </span>
+          {% render '_icon', icon: 'cart', class: "w-6 h-6 stroke-[1.5px]" %}
+          <span class="absolute flex items-center justify-center bg-primary-bg text-primary-text rounded-full -right-1.5 -top-1 h-4 w-4 text-[10px] font-medium tracking-tight leading-none">
+      <span data-cart-item-count>{{ cart.item_count }}</span>
+    </span>
+  </button>
+      {% when 'page' %}
+        <a type="button"
+           href="/cart"
+           class="relative text-primary-outline hover:text-primary-outline">
+          <span class="sr-only">
+            {{ "header_koa.cart" | t }}
+          </span>
+          {% render '_icon', icon: 'cart', class: "w-6 h-6 stroke-[1.5px]" %}
+          <span class="absolute flex items-center justify-center bg-primary-bg text-primary-text rounded-full -right-1.5 -top-1 h-4 w-4 text-[10px] font-medium tracking-tight leading-none">
+            <span data-cart-item-count>{{ cart.item_count }}</span>
+          </span>
+        </a>
+    {% endcase %}
+  </div>
+</div>
+
+

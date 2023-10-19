@@ -1,0 +1,30 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign discount_code = block.settings.discount_code
+  assign target_products = block.settings.target_products
+  assign target_collections = block.settings.target_collections
+  assign target_limit = block.settings.target_limit
+  assign target = block.settings.target
+  assign receives_quantity = block.settings.receives_quantity
+  assign receives_products = block.settings.receives_products
+  assign receives_collections = block.settings.receives_collections
+  assign receives_discount = block.settings.receives_discount
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  assign receivesProducts = receives_products | map: 'handle' | uniq
+  assign receivesProducts = receives_collection.products | map: 'handle' | concat: receives_products | uniq
+%}
+
+{
+"type": {{ block.type | json }},
+"discount_code": {{ sp_discount_code | json }},
+"target_collections": {{ target_collections | map: 'handle' | json }},
+"target_products": {{ target_products | map: 'handle' | json }},
+"target": {{ target | json }},
+"receives_quantity": {{ receives_quantity | json }},
+"receives_products": {{ receivesProducts | json }},
+"target_limit": {{ target_limit | json }},
+"receives_discount_percentage": {{ receives_discount_percentage | json }}
+}

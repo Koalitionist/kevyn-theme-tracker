@@ -1,0 +1,19 @@
+{%- liquid
+  assign preheading = section.settings.preheading
+  assign preheading_font = section.settings.preheading_font
+  assign title = section.settings.title
+  assign title_font = section.settings.title_font
+  assign subtitle = section.settings.subtitle
+  assign subtitle_font = section.settings.subtitle_font
+  assign content = section.settings.content
+  assign align__horizontal = section.settings.align__horizontal
+-%}
+
+<header class="container-bg-full mb-6 h-full w-full flex flex-col {{ align__horizontal }}">
+  <div class="grid max-w-lg gap-3">
+    {% render 'richtext', type: preheading_font, content: preheading %}
+    {% render 'richtext', type: title_font, content: title %}
+    {% render 'richtext', type: subtitle_font, content: subtitle %}
+    {% render 'richtext', type: "prose", content: content %}
+  </div>
+</header>

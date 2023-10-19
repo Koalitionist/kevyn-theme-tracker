@@ -1,0 +1,25 @@
+{%- comment -%} Auto Generated Variables start {%- endcomment -%}
+{%- liquid
+  assign title = block.settings.title
+  assign target = block.settings.target
+  assign receives_discount = block.settings.receives_discount
+  assign receives_quantity = block.settings.receives_quantity
+  assign receives_products = block.settings.receives_products
+  assign receives_collection = block.settings.receives_collection
+-%}
+{%- comment -%} Auto Generated Variables end {%- endcomment -%}
+
+{%- liquid
+  assign receivesProducts = receives_products | map: 'handle' | uniq
+  assign receivesProducts = receives_collection.products | map: 'handle' | concat: receivesProducts | uniq
+%}
+
+{
+"id": {{ block.id | json }},
+"type": {{ block.type | json }},
+"discount_code": {{ title | json }},
+"target": {{ target | json }},
+"receives_quantity": {{ receives_quantity | json }},
+"receives_products": {{ receivesProducts | json }},
+"receives_discount": {{ receives_discount | json }}
+}

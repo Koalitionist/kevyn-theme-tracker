@@ -1,0 +1,1039 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>[title]<\/h2>",
+            "title_font": 3,
+            "margin_bottom": 10,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38": {
+          "type": "product_count",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Products ([count])<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9b52ae94-6586-4ed8-bebb-505003961df6": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "<p>[description]<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26",
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38",
+        "9b52ae94-6586-4ed8-bebb-505003961df6"
+      ],
+      "settings": {
+        "image__show": true,
+        "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
+        "height_desktop": 300,
+        "height_mobile": 300,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "filter_sort_bar": {
+      "type": "main-collection-filter-sort-bar",
+      "disabled": true,
+      "settings": {
+        "filters__show": true,
+        "filters__type": "megamenu",
+        "filters__count": true,
+        "sort__show": true,
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "pagination_size": 8,
+        "columns__desktop": "lg:grid-cols-4",
+        "columns__mobile": "grid-cols-2",
+        "card_style": "default",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "cfbbd98f-b456-4a7d-afba-31f2c84a8571": {
+      "type": "richtext",
+      "blocks": {
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>INTRODUCING THE NEW #ARTISTBRUSHSERIES<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-4": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Designed by makeup artists, with you in mind. <br\/><br\/>Multi-use brushes, thoughtfully created for precise application and easy blending. <br\/><br\/>Explore, express, and experiment with makeup on your own terms.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-0",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-1",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-2",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-3",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-4",
+        "template--14835144949847__cfbbd98f-b456-4a7d-afba-31f2c84a8571-168934427718d182cd-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-4xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "faf86b8d-a44d-4fce-8831-6d9218520362": {
+      "type": "image-with-text",
+      "blocks": {
+        "bd010261-59db-437a-aeb6-51bda154addc": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>NEW LOOK DUET CONCEALER BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9af067dc-a107-4d2c-b7e4-2d996e45ca69": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Cover, Flip & Buff concealer like a pro.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "09e48003-14c6-4362-b0c9-8607fab1ae3a": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-concealer-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "bd010261-59db-437a-aeb6-51bda154addc",
+        "9af067dc-a107-4d2c-b7e4-2d996e45ca69",
+        "09e48003-14c6-4362-b0c9-8607fab1ae3a"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Concealer_Brush_Model_1200x1200px_150dpi.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "1a9c4382-ce37-4286-962c-dfee11d61a0d": {
+      "type": "image-with-text",
+      "blocks": {
+        "a8f2ab3a-cc2c-4514-8aab-4c78b1694afe": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET CONTOUR BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "10e914d7-af1d-4a21-8f47-c7ba9d49beab": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Expertly designed for seamless sculpting — enhance, define, and contour with ease.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "454adc44-2ba9-452f-a57d-a69bc1b61f06": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-contour-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "a8f2ab3a-cc2c-4514-8aab-4c78b1694afe",
+        "10e914d7-af1d-4a21-8f47-c7ba9d49beab",
+        "454adc44-2ba9-452f-a57d-a69bc1b61f06"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Contour_Brush_1200x1200px_886d10e6-b607-4d04-af85-c979c52097a6.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "4d53a4d6-e5a9-4027-917a-1eeb969949f8": {
+      "type": "image-with-text",
+      "blocks": {
+        "1e07aa4c-4067-4f0d-97e9-477522ed5d8d": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET SHADOW BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "d13d08c1-a2b7-4fa9-96f3-51c9bc731fc9": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>An essential tool for creating beautifully blended eye looks.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9f5996b9-cc7d-4ebf-b752-f43d710dc175": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-shadow-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "1e07aa4c-4067-4f0d-97e9-477522ed5d8d",
+        "d13d08c1-a2b7-4fa9-96f3-51c9bc731fc9",
+        "9f5996b9-cc7d-4ebf-b752-f43d710dc175"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Shadow_Brush_Model__1200x1200px_150dpi.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "c26d99db-a1f9-4300-a0a2-668ee980aa65": {
+      "type": "image-with-text",
+      "blocks": {
+        "e930dd12-6bd8-48e5-90a5-aa536a87c3b6": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET DEFINER BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "f20ccc43-8a21-43c9-8cbc-44e7cef47a55": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Slick, sharp lines and edges made easy with this detailing brush for eyes, lips or brows.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bfe3434d-f3d5-4d4a-89e0-07fa6299ab7e": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-definer-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e930dd12-6bd8-48e5-90a5-aa536a87c3b6",
+        "f20ccc43-8a21-43c9-8cbc-44e7cef47a55",
+        "bfe3434d-f3d5-4d4a-89e0-07fa6299ab7e"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Definer_Brush_1200x1200px_ada81e0f-a96d-4c85-a744-b46411872f27.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "5584be7f-fb53-4730-b9e8-001e6766c51a": {
+      "type": "image-with-text",
+      "blocks": {
+        "3b71fe1d-cb81-4e15-b1a6-9e8b483d14d9": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET PRECISION SHADOW BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "1c2f52f0-84f6-48d0-bbd5-4386a0a56716": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Smudge and smoke your eye look with this precision brush.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "4146adff-da69-48fd-9da9-d6fcc3472c11": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-precision-shadow-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "3b71fe1d-cb81-4e15-b1a6-9e8b483d14d9",
+        "1c2f52f0-84f6-48d0-bbd5-4386a0a56716",
+        "4146adff-da69-48fd-9da9-d6fcc3472c11"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Precision_Brush__Model_1200x1200px_150dpi.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "7af9ffc1-ca87-4920-8af0-71d266dbd5b3": {
+      "type": "image-with-text",
+      "blocks": {
+        "be28c33d-9558-4880-a8a8-c4c9ea36fef9": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET DEFINER BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "77e15589-1d55-44f4-884a-a41af161e089": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Slick, sharp lines and edges made easy with this detailing brush for eyes, lips or brows.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "6dc0c022-7332-4ef7-a870-dce68ba855fe": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-definer-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "be28c33d-9558-4880-a8a8-c4c9ea36fef9",
+        "77e15589-1d55-44f4-884a-a41af161e089",
+        "6dc0c022-7332-4ef7-a870-dce68ba855fe"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Blurring_Brush_1200x1200px.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "3f04b168-a229-4ad5-90bf-0b63bb6bd928": {
+      "type": "image-with-text",
+      "blocks": {
+        "7e23a288-8716-4c9f-ae94-a230315c7be8": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET BLUSH BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "57bd3552-ff13-42df-93f2-4e5b13ddae68": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>Blush, Highlight, Set & Bake with this must-have dual ended fluffy brush.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "6e0937c7-134b-49fa-9f08-d075ddef6169": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-blush-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "7e23a288-8716-4c9f-ae94-a230315c7be8",
+        "57bd3552-ff13-42df-93f2-4e5b13ddae68",
+        "6e0937c7-134b-49fa-9f08-d075ddef6169"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Blush_Brush_Model_1200x1200_150dpi.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "da9f0e34-06ee-4429-adab-26a5fb04e0cd": {
+      "type": "image-with-text",
+      "blocks": {
+        "f635b948-6b48-4409-9833-09071abfb0fe": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>DUET FOUNDATION BRUSH<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "3c2e0b32-074a-4e05-93b8-42924cea0561": {
+          "type": "text",
+          "settings": {
+            "title": "<h6>All-in-one brush for precise placement and easy blending of foundation.<\/h6>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "0da15348-ff00-4f44-80d3-074b240047c3": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/products\/duet-foundation-brush",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "f635b948-6b48-4409-9833-09071abfb0fe",
+        "3c2e0b32-074a-4e05-93b8-42924cea0561",
+        "0da15348-ff00-4f44-80d3-074b240047c3"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Duet_Foundation_Brush_1200x1200px_8428eb37-d503-4d99-9d20-9fe81629adbd.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "82a203a5-e12c-480b-afdd-94c2b9399ffb": {
+      "type": "richtext",
+      "blocks": {
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>UNLEASH YOUR INNER ARTIST<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-5xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-0",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-1",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-2",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-3",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-4",
+        "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-5"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-4": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-0",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-1",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-2",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-3",
+        "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-4"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/f0995bb99ce449ffaa8abf4631ddec9e.mp4",
+        "video_url": "",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 790,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "filter_sort_bar",
+    "product-grid",
+    "cfbbd98f-b456-4a7d-afba-31f2c84a8571",
+    "faf86b8d-a44d-4fce-8831-6d9218520362",
+    "1a9c4382-ce37-4286-962c-dfee11d61a0d",
+    "4d53a4d6-e5a9-4027-917a-1eeb969949f8",
+    "c26d99db-a1f9-4300-a0a2-668ee980aa65",
+    "5584be7f-fb53-4730-b9e8-001e6766c51a",
+    "7af9ffc1-ca87-4920-8af0-71d266dbd5b3",
+    "3f04b168-a229-4ad5-90bf-0b63bb6bd928",
+    "da9f0e34-06ee-4429-adab-26a5fb04e0cd",
+    "82a203a5-e12c-480b-afdd-94c2b9399ffb",
+    "dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5"
+  ]
+}

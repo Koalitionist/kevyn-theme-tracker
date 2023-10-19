@@ -1,0 +1,81 @@
+{% liquid
+  assign button_primary__text = section.settings.button_primary__text
+  assign button_primary__url = section.settings.button_primary__url
+  assign button_primary__style = section.settings.button_primary__style
+  assign show_button_mobile = section.settings.show_button_mobile
+
+  if button_primary__text and button_primary__url
+    assign button_primary__show = true
+  endif
+%}
+
+
+{% if settings.beta_features__show == false %}
+  <div class="group fixed pointer-events-none inset-0 z-50 ac:pointer-events-auto hidden"
+       data-drawer="nav">
+    <div class="fixed inset-y-0 left-0 w-full max-w-[30rem] border-r border-r-gray-100 shadow-lg z-10 transition-all -translate-x-full group-ac:translate-x-0 ease-linear flex flex-col h-full overflow-hidden justify-between max-h-screen {{ section.settings.color_scheme | default: "color-group-1" }}"
+         data-drawer-content
+         data-mobile-nav>
+      <header class="flex justify-between items-center w-full h-header px-4 absolute top-0 inset-x-0 {{ section.settings.color_scheme | default: "color-group-1" }}">
+        {% render 'header.logo' %}
+        <button type="button"
+                class="w-8 h-8 flex items-center justify-center text-gray-400 hf:text-gray-900 transition-all"
+                data-drawer-close="nav">
+          <span class="sr-only">
+            {{ "header.close_nav" | t }}
+          </span>
+          {% render '_icon', icon: 'x-close', class: "w-5 h-5 stroke-2" %}
+        </button>
+      </header>
+      <main class="relative top-header bottom-0 flex-1 overflow-hidden">
+        {% render 'header.mobile-nav-links', megaMenus: megaMenus, handle: section.settings.menu.handle, links: section.settings.menu.links, level: 1 %}
+      </main>
+      <footer class="z-10 absolute {{ section.settings.color_scheme | default: "color-group-1" }} border-t border-t-gray-200 py-8 shadow-invert-md relative bottom-0 w-full justify-end space-y-5 inset-x-0 px-4">
+        {% if button_primary__show %}
+          <a href="{{ button_primary__url }}"
+             class="{{ button_primary__style }} whitespace-nowrap md:hidden w-full">
+            {{ button_primary__text }}
+          </a>
+        {% endif %}
+
+        <div class="">
+          {% if customer and shop.customer_accounts_enabled %}
+            <a href="{{ routes.account_url }}"
+               class="inline-flex items-center text-gray-500 hf:text-gray-900 hf:underline transition-all">
+              {% render '_icon', icon: 'user', class: 'w-5 h-5 stroke-2' %}
+              <span class="ml-4">
+                {{ "header.account" | t }}
+              </span>
+            </a>
+          {% endif %}
+          {% if customer == null and shop.customer_accounts_enabled %}
+            <a href="{{ routes.account_login_url }}"
+               class="inline-flex items-center text-gray-500 hf:text-gray-900 hf:underline transition-all">
+              {% render '_icon', icon: 'user', class: 'w-5 h-5 stroke-2' %}
+              <span class="ml-4">
+                {{ "header.login" | t }}
+              </span>
+            </a>
+          {% endif %}
+        </div>
+        <div class="flex space-x-3 overflow-x-scroll scrollbar-none">
+
+          {% assign socialLinks = "social_twitter_link,social_facebook_link,social_pinterest_link,social_instagram_link,social_tiktok_link,social_tumblr_link,social_snapchat_link,social_youtube_link,social_vimeo_link" | split: ',' %}
+          {% for link in socialLinks %}
+            {% if settings[link] != blank %}
+              {% assign icon = link | replace: "social_", "" | replace: "_link", "" %}
+              <a href="{{ settings[link] }}"
+                 class="transition-all text-theme-text/70 hf:text-theme-text"
+                 target="_blank"
+                 referrerpolicy="no-referrer">
+                <span class="sr-only">{{ icon | capitalize }}</span>
+                {% render '_icon', icon: icon, class: "w-6 h-6" %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </footer>
+    </div>
+    {% render 'drawer-overlay' %}
+  </div>
+{% endif %}

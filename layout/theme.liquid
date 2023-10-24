@@ -402,7 +402,7 @@ var afterpay_js_snippet_version = '1.1.7';
 document.addEventListener("DOMContentLoaded", () => {
   console.log('DOM LOADED!--------')
   let  externalScript = document.querySelector('script[src="https://static.afterpay.com/shopify-afterpay-javascript.js"]');
-
+  console.log('external script', externalScript)
   externalScript.onload = function() {
     console.log('------------yes--------')
       myFunction();

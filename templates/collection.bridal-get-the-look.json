@@ -410,7 +410,6 @@
     },
     "82a203a5-e12c-480b-afdd-94c2b9399ffb": {
       "type": "richtext",
-      "disabled": true,
       "blocks": {
         "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-0": {
           "type": "text",
@@ -506,6 +505,7 @@
         "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-4",
         "template--14835144949847__82a203a5-e12c-480b-afdd-94c2b9399ffb-168934427718d182cd-5"
       ],
+      "disabled": true,
       "settings": {
         "align__horizontal": "items-center text-center",
         "width": "max-w-5xl",
@@ -518,7 +518,6 @@
     },
     "dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-0": {
           "type": "text",
@@ -604,6 +603,7 @@
         "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-3",
         "template--14835144949847__dcbede42-d6e6-4ca4-a6a5-a37bc25b2aa5-16893604392bdb58d6-4"
       ],
+      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/f0995bb99ce449ffaa8abf4631ddec9e.mp4",

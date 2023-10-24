@@ -277,12 +277,6 @@
       "Halo": "#f0cfca"
     },
     {
-      "Incandescent": "#E1CFC9"
-    },
-    {
-      "Lustre": "#EEDBC7"
-    },
-    {
       "1 - SSE": "#efc796"
     },
     {
@@ -1151,6 +1145,24 @@
     },
     {
       "Define": "#62382D"
+    },
+    {
+      "Enchanting": "#B55F59"
+    },
+    {
+      "Expressive": "#F5144E"
+    },
+    {
+      "Fabulous": "#F77F62"
+    },
+    {
+      "Striking": "#8D1C10"
+    },
+    {
+      "Stunning": "#AF1C06"
+    },
+    {
+      "You-Phoric": "#A42D4F"
     }
   ]
 }

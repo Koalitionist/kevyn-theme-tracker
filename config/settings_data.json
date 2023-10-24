@@ -663,6 +663,7 @@
           },
           "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
             "type": "empty_text",
+            "disabled": true,
             "settings": {
               "title": "<h3>Nothing to see here!<\/h3><p><\/p><p>Continue shopping below. We've picked a few of our favorites. <\/p>",
               "title_font": 1,
@@ -740,7 +741,7 @@
           "976d24df-d4f0-4a32-a6e7-8606c70e9a63"
         ],
         "settings": {
-          "free_shipping_bar__show": "all",
+          "free_shipping_bar__show": "disable",
           "free_shipping_bar__type": "total_price",
           "free_shipping_bar__starting_percentage": 0,
           "free_shipping_bar__target": 7500,

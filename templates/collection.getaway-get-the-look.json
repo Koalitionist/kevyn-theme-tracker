@@ -176,7 +176,6 @@
     },
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7": {
       "type": "main-collection-banner",
-      "disabled": true,
       "blocks": {
         "6dc3e34a-7f08-4af6-8227-793033e453b3": {
           "type": "description",
@@ -192,6 +191,7 @@
       "block_order": [
         "6dc3e34a-7f08-4af6-8227-793033e453b3"
       ],
+      "disabled": true,
       "settings": {
         "image__show": false,
         "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
@@ -209,7 +209,6 @@
     },
     "df631480-8a8c-4a52-a390-7443ecf7ae96": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "db877fd7-0d3d-4594-b04b-9af931ddcb1f": {
           "type": "text",
@@ -255,6 +254,7 @@
         "5f42c9d0-8a12-4ab9-9179-177f44d8cf46",
         "0454f268-0847-4b5a-b79d-9394974b8c69"
       ],
+      "disabled": true,
       "settings": {
         "image__overlay": "",
         "min_height": 400,
@@ -271,7 +271,6 @@
     },
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8": {
       "type": "tagged-product-images",
-      "disabled": true,
       "blocks": {
         "5ba16434-29f7-4281-b7f6-7c81a3d230b2": {
           "type": "product",
@@ -315,6 +314,7 @@
         "f5bd6899-3f1c-4ab2-91b2-dbc13936dcaa",
         "110c1eda-1863-4be9-9faa-cf78442cdfdf"
       ],
+      "disabled": true,
       "settings": {
         "title": "<h2><strong>Let's Stay Connected<\/strong><\/h2>",
         "title_font": 1,

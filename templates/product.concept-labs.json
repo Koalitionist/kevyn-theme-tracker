@@ -538,7 +538,6 @@
     },
     "09738d9a-f191-4891-ad8b-a38b61695adb": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "template--18752996770111__a43a2af3-464a-4d95-bdca-7173d61d2b2a-1683781260eaa9b5ac-2": {
           "type": "text",
@@ -591,6 +590,7 @@
         "template--18752996770111__a43a2af3-464a-4d95-bdca-7173d61d2b2a-1683781260eaa9b5ac-3",
         "template--18752996770111__a43a2af3-464a-4d95-bdca-7173d61d2b2a-1683781260eaa9b5ac-4"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/video-banner_c0a9b53b-0f63-4dff-943e-43ebfeff4af8.jpg",

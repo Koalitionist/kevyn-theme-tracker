@@ -271,6 +271,31 @@
         "sectionID": ""
       }
     },
+    "671a46e8-6353-451b-b14a-0686c10f22c5": {
+      "type": "image-with-text",
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/90sLook.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-[1fr_66%]",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "product-siblings": {
       "type": "product-siblings",
       "blocks": {
@@ -556,6 +581,7 @@
   },
   "order": [
     "product",
+    "671a46e8-6353-451b-b14a-0686c10f22c5",
     "product-siblings",
     "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",

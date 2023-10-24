@@ -344,7 +344,6 @@
       "blocks": {
         "1ec8cb9e-e466-4863-9dcd-c33b72960ca3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "title": "<h2>GET THE LOOK<\/h2><h4>Kevyn Aucoin Beauty ambassador and celebrity makeup artist, Drita Paljevic recreates the signature and iconic 90s inspired look.<\/h4>",
             "title_font": 1,
@@ -361,7 +360,6 @@
       "block_order": [
         "1ec8cb9e-e466-4863-9dcd-c33b72960ca3"
       ],
-      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/90sLook.mp4",

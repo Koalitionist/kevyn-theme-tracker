@@ -1,3 +1,4 @@
+
 export type _Article_metafields = { [T: string]: { [T: string]: _Metafield_liquid["value"] } };
 
 export type _Blog_metafields = { [T: string]: { [T: string]: _Metafield_liquid["value"] } };
@@ -18,13 +19,7 @@ export type AppsSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -52,13 +47,7 @@ export type BenefitTabsSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: radio */
     layout: "order-2" | "-order-1";
     /** Input type: select */
@@ -98,18 +87,9 @@ export type BundleSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: radio */
@@ -192,7 +172,9 @@ export type BundleBlocksDiscount_level = {
   type: "discount_level";
 };
 
-export type BundleBlocks = BundleBlocksFree_shipping | BundleBlocksDiscount_level;
+export type BundleBlocks =
+  | BundleBlocksFree_shipping
+  | BundleBlocksDiscount_level;
 
 export type BundleKoaSection = {
   blocks: BundleKoaBlocks[];
@@ -200,18 +182,9 @@ export type BundleKoaSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: radio */
@@ -292,7 +265,9 @@ export type BundleKoaBlocksDiscount_level = {
   type: "discount_level";
 };
 
-export type BundleKoaBlocks = BundleKoaBlocksFree_shipping | BundleKoaBlocksDiscount_level;
+export type BundleKoaBlocks =
+  | BundleKoaBlocksFree_shipping
+  | BundleKoaBlocksDiscount_level;
 
 export type CartDrawerSection = {
   blocks: CartDrawerBlocks[];
@@ -300,15 +275,9 @@ export type CartDrawerSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    align__horizontal__footer:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal__footer: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     announcements__height: number;
     /** Input type: radio */
@@ -324,13 +293,7 @@ export type CartDrawerSection = {
     /** Input type: range */
     free_shipping_bar__bar_height: number;
     /** Input type: select */
-    free_shipping_bar__color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    free_shipping_bar__color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     free_shipping_bar__height: number;
     /** Input type: radio */
@@ -417,11 +380,7 @@ export type CartDrawerBlocksFooter_text = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -431,19 +390,7 @@ export type CartDrawerBlocksFooter_text = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -464,19 +411,7 @@ export type CartDrawerBlocksFooter_accent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -493,17 +428,9 @@ export type CartDrawerBlocksFooter_buttons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -511,19 +438,7 @@ export type CartDrawerBlocksFooter_buttons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -542,11 +457,7 @@ export type CartDrawerBlocksEmpty_text = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -556,19 +467,7 @@ export type CartDrawerBlocksEmpty_text = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -589,19 +488,7 @@ export type CartDrawerBlocksEmpty_accent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -618,17 +505,9 @@ export type CartDrawerBlocksEmpty_buttons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -636,19 +515,7 @@ export type CartDrawerBlocksEmpty_buttons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -707,13 +574,7 @@ export type CategoriesSection = {
     /** Input type: checkbox */
     center_products: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: select */
@@ -765,18 +626,9 @@ export type CollectionGridWithFiltersSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    columns__desktop:
-      | "lg:grid-cols-3 group-ac:lg:grid-cols-2"
-      | "lg:grid-cols-4 group-ac:lg:grid-cols-3"
-      | "lg:grid-cols-5 group-ac:lg:grid-cols-4";
+    columns__desktop: "lg:grid-cols-3 group-ac:lg:grid-cols-2" | "lg:grid-cols-4 group-ac:lg:grid-cols-3" | "lg:grid-cols-5 group-ac:lg:grid-cols-4";
     /** Input type: select */
     columns__mobile: "grid-cols-1" | "grid-cols-2";
     /** Input type: checkbox */
@@ -828,13 +680,7 @@ export type CollectionNavSection = {
     /** Input type: select */
     aspect_ratio: "pb-[100%]" | "pb-[125%]" | "pb-[133%]" | "pb-[177%]";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     min_width_desktop: number;
     /** Input type: range */
@@ -865,11 +711,7 @@ export type CollectionNavBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -879,19 +721,7 @@ export type CollectionNavBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -912,19 +742,7 @@ export type CollectionNavBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -941,17 +759,9 @@ export type CollectionNavBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -959,19 +769,7 @@ export type CollectionNavBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -1019,27 +817,13 @@ export type DrawerMenuSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     floating: boolean;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: text */
     sectionID?: string;
   };
@@ -1105,11 +889,7 @@ export type DrawerMenuBlocksFooter_text = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -1119,19 +899,7 @@ export type DrawerMenuBlocksFooter_text = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -1169,19 +937,7 @@ export type DrawerMenuBlocksFooter_accent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -1198,17 +954,9 @@ export type DrawerMenuBlocksFooter_buttons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -1216,19 +964,7 @@ export type DrawerMenuBlocksFooter_buttons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -1245,10 +981,7 @@ export type DrawerMenuBlocksFooter_features = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     content_font_1: number;
     /** Input type: range */
@@ -1266,19 +999,7 @@ export type DrawerMenuBlocksFooter_features = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     spacing: number;
     /** Input type: richtext */
@@ -1318,73 +1039,7 @@ export type DrawerMenuBlocksFooter_action = {
     /** Input type: checkbox */
     border_top: boolean;
     /** Input type: select */
-    icon_list:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_list: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: inline_richtext */
     title?: string;
     /** Input type: url */
@@ -1411,13 +1066,7 @@ export type FaqSection = {
     /** Input type: range */
     answer_font: number;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -1429,18 +1078,7 @@ export type FaqSection = {
     /** Input type: range */
     title_font: number;
     /** Input type: select */
-    width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm";
+    width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm";
     /** Input type: text */
     sectionID?: string;
     /** Input type: richtext */
@@ -1473,7 +1111,9 @@ export type FaqBlocksFaq = {
   type: "faq";
 };
 
-export type FaqBlocks = FaqBlocksGroup | FaqBlocksFaq;
+export type FaqBlocks =
+  | FaqBlocksGroup
+  | FaqBlocksFaq;
 
 export type FeaturedArticlesSection = {
   blocks: FeaturedArticlesBlocks[];
@@ -1485,13 +1125,7 @@ export type FeaturedArticlesSection = {
     /** Input type: checkbox */
     center_products: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: checkbox */
@@ -1524,24 +1158,13 @@ export type FeaturedArticlesBlocksHeading = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -1609,13 +1232,7 @@ export type FeaturedCollectionGridSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -1636,13 +1253,7 @@ export type FeaturedCollectionGridBlocksImage = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: image_picker */
     image?: _Image_liquid | string;
     /** Input type: color_background */
@@ -1655,32 +1266,15 @@ export type FeaturedCollectionGridBlocksContent = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -1727,13 +1321,7 @@ export type FeaturedObjectsSection = {
     /** Input type: checkbox */
     center_products: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: radio */
@@ -1784,22 +1372,11 @@ export type FeaturedObjectsBlocksHeading = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -1807,19 +1384,7 @@ export type FeaturedObjectsBlocksHeading = {
     /** Input type: range */
     preheading_font: number;
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     subtitle_font: number;
     /** Input type: range */
@@ -1848,22 +1413,11 @@ export type FeaturedObjectsBlocksFooter = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -1873,19 +1427,7 @@ export type FeaturedObjectsBlocksFooter = {
     /** Input type: range */
     preheading_font: number;
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     subtitle_font: number;
     /** Input type: range */
@@ -2008,11 +1550,7 @@ export type FeaturedObjectsBlocksSource_custom_item = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     opacity: number;
     /** Input type: range */
@@ -2046,13 +1584,7 @@ export type FeaturedProductSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     gallery__aspect_ratio: "auto" | "9 / 16" | "2 / 3" | "3 / 4" | "1" | "4 / 3" | "16 / 9";
     /** Input type: checkbox */
@@ -2100,14 +1632,7 @@ export type FeaturedProductBlocksText = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2117,19 +1642,7 @@ export type FeaturedProductBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -2146,14 +1659,7 @@ export type FeaturedProductBlocksTitle = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2172,14 +1678,7 @@ export type FeaturedProductBlocksVendor = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2194,14 +1693,7 @@ export type FeaturedProductBlocksPrice = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2218,13 +1710,7 @@ export type FeaturedProductBlocksVariant_selector = {
     /** Input type: checkbox */
     color_selector: boolean;
     /** Input type: radio */
-    color_selector__source:
-      | "via_option"
-      | "via_option_then_image"
-      | "via_image"
-      | "via_metafield"
-      | "via_image_then_metafield"
-      | "via_metafield_then_image";
+    color_selector__source: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
     /** Input type: range */
     color_selector_radius: number;
     /** Input type: range */
@@ -2272,14 +1758,7 @@ export type FeaturedProductBlocksSku = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2294,14 +1773,7 @@ export type FeaturedProductBlocksQuantity_selector = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2316,20 +1788,9 @@ export type FeaturedProductBlocksBuy_buttons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2344,14 +1805,7 @@ export type FeaturedProductBlocksDynamic_buy_buttons = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2366,14 +1820,7 @@ export type FeaturedProductBlocksPayment_terms = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2392,13 +1839,7 @@ export type FeaturedProductBlocksDescription = {
     /** Input type: range */
     margin_top: number;
     /** Input type: radio */
-    style:
-      | "plain"
-      | "accordion"
-      | "accordion_style_h1"
-      | "tabs_style_h1"
-      | "accordion_custom_tags"
-      | "tabs_custom_tags";
+    style: "plain" | "accordion" | "accordion_style_h1" | "tabs_style_h1" | "accordion_custom_tags" | "tabs_custom_tags";
     /** Input type: checkbox */
     uncollapse: boolean;
     /** Input type: text */
@@ -2413,14 +1854,7 @@ export type FeaturedProductBlocksShare = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2444,51 +1878,7 @@ export type FeaturedProductBlocksCollapsible_tab = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "none"
-      | "apple"
-      | "banana"
-      | "bottle"
-      | "box"
-      | "carrot"
-      | "chat_bubble"
-      | "check_mark"
-      | "clipboard"
-      | "dairy"
-      | "dairy_free"
-      | "dryer"
-      | "eye"
-      | "fire"
-      | "gluten_free"
-      | "heart"
-      | "iron"
-      | "leaf"
-      | "leather"
-      | "lightning_bolt"
-      | "lipstick"
-      | "lock"
-      | "map_pin"
-      | "nut_free"
-      | "pants"
-      | "paw_print"
-      | "pepper"
-      | "perfume"
-      | "plane"
-      | "plant"
-      | "price_tag"
-      | "question_mark"
-      | "recycle"
-      | "return"
-      | "ruler"
-      | "serving_dish"
-      | "shirt"
-      | "shoe"
-      | "silhouette"
-      | "snowflake"
-      | "star"
-      | "stopwatch"
-      | "truck"
-      | "washing";
+    icon: "none" | "apple" | "banana" | "bottle" | "box" | "carrot" | "chat_bubble" | "check_mark" | "clipboard" | "dairy" | "dairy_free" | "dryer" | "eye" | "fire" | "gluten_free" | "heart" | "iron" | "leaf" | "leather" | "lightning_bolt" | "lipstick" | "lock" | "map_pin" | "nut_free" | "pants" | "paw_print" | "pepper" | "perfume" | "plane" | "plant" | "price_tag" | "question_mark" | "recycle" | "return" | "ruler" | "serving_dish" | "shirt" | "shoe" | "silhouette" | "snowflake" | "star" | "stopwatch" | "truck" | "washing";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2509,14 +1899,7 @@ export type FeaturedProductBlocksRating = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -2533,277 +1916,13 @@ export type FeaturedProductBlocksIcon_with_text = {
     /** Input type: range */
     content_font: number;
     /** Input type: select */
-    icon_1:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_1: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_2:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_2: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_3:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_3: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_4:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_4: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
     item_layout: "flex-row" | "flex-col";
     /** Input type: select */
@@ -2855,22 +1974,9 @@ export type FeaturedProductBlocksImage = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_row_span:
-      | "row-span-1"
-      | "row-span-2"
-      | "row-span-3"
-      | "row-span-4"
-      | "row-span-5"
-      | "row-span-6";
+    grid_row_span: "row-span-1" | "row-span-2" | "row-span-3" | "row-span-4" | "row-span-5" | "row-span-6";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: checkbox */
     image__drop_shadow: boolean;
     /** Input type: select */
@@ -2906,46 +2012,17 @@ export type FeaturedProductBlocksPopup = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: radio */
-    label__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline"
-      | "plain-link text-left";
+    label__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline" | "plain-link text-left";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -3018,13 +2095,7 @@ export type FeaturedReviewsSection = {
     /** Input type: range */
     author_font: number;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: radio */
     image__order: "-order-1" | "-order-1 lg:order-2";
     /** Input type: select */
@@ -3068,25 +2139,13 @@ export type FeaturesSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: radio */
-    feature__align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    feature__align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     feature_content_font: number;
     /** Input type: range */
@@ -3094,14 +2153,7 @@ export type FeaturesSection = {
     /** Input type: range */
     icon_size: number;
     /** Input type: select */
-    layout:
-      | "icon-image"
-      | "icon-minimal"
-      | "icon-flat"
-      | "icon-cards"
-      | "image-flat"
-      | "image-column"
-      | "story";
+    layout: "icon-image" | "icon-minimal" | "icon-flat" | "icon-cards" | "image-flat" | "image-column" | "story";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -3128,73 +2180,7 @@ export type FeaturesBlocksFeature = {
   id: string;
   settings: {
     /** Input type: select */
-    icon_list:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_list: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: richtext */
     content?: `<${_BlockTag}${string}</${_BlockTag}>`;
     /** Input type: image_picker */
@@ -3219,27 +2205,15 @@ export type FeaturesSliderSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: checkbox */
     auto_rotate: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: radio */
-    feature__align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    feature__align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     feature_content_font: number;
     /** Input type: range */
@@ -3278,73 +2252,7 @@ export type FeaturesSliderBlocksFeature = {
   id: string;
   settings: {
     /** Input type: select */
-    icon_list:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_list: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: richtext */
     content?: `<${_BlockTag}${string}</${_BlockTag}>`;
     /** Input type: image_picker */
@@ -3371,19 +2279,9 @@ export type FooterSection = {
     /** Input type: checkbox */
     address_show: boolean;
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     country_selector_show: boolean;
     /** Input type: checkbox */
@@ -3391,12 +2289,7 @@ export type FooterSection = {
     /** Input type: checkbox */
     language_selector_show: boolean;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: range */
     logo_height: number;
     /** Input type: checkbox */
@@ -3484,7 +2377,10 @@ export type FooterBlocksImage = {
   type: "image";
 };
 
-export type FooterBlocks = FooterBlocksMenu | FooterBlocksText | FooterBlocksImage;
+export type FooterBlocks =
+  | FooterBlocksMenu
+  | FooterBlocksText
+  | FooterBlocksImage;
 
 export type FormsSection = {
   blocks: FormsBlocks[];
@@ -3492,53 +2388,19 @@ export type FormsSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     fullwidth: boolean;
     /** Input type: checkbox */
     hide_if_account: boolean;
     /** Input type: select */
-    redirect:
-      | "off"
-      | "/"
-      | "/account"
-      | "/account/login"
-      | "/account/login#recover"
-      | "/account/register"
-      | "/account/logout"
-      | "/account/addresses"
-      | "/cart";
+    redirect: "off" | "/" | "/account" | "/account/login" | "/account/login#recover" | "/account/register" | "/account/logout" | "/account/addresses" | "/cart";
     /** Input type: checkbox */
     show_only_on_target: boolean;
     /** Input type: select */
-    type:
-      | "customer"
-      | "customer_login"
-      | "create_customer"
-      | "customer_address"
-      | "contact"
-      | "reset_customer_password"
-      | "recover_customer_password"
-      | "activate_customer_password";
+    type: "customer" | "customer_login" | "create_customer" | "customer_address" | "contact" | "reset_customer_password" | "recover_customer_password" | "activate_customer_password";
     /** Input type: select */
-    width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm";
+    width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm";
     /** Input type: image_picker */
     image?: _Image_liquid | string;
     /** Input type: color_background */
@@ -3559,20 +2421,9 @@ export type FormsBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -3582,19 +2433,7 @@ export type FormsBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -3618,14 +2457,7 @@ export type FormsBlocksPassword = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: text */
     confirm_pw__title?: string;
     /** Input type: text */
@@ -3638,14 +2470,7 @@ export type FormsBlocksEmail = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: text */
     placeholder?: string;
     /** Input type: text */
@@ -3658,69 +2483,9 @@ export type FormsBlocksInput = {
   id: string;
   settings: {
     /** Input type: select */
-    autocomplete:
-      | "off"
-      | "name"
-      | "honorific-prefix"
-      | "given-name"
-      | "additional-name"
-      | "family-name"
-      | "honorific-suffix"
-      | "nickname"
-      | "email"
-      | "username"
-      | "new-password"
-      | "current-password"
-      | "one-time-code"
-      | "organization-title"
-      | "organization"
-      | "street-address"
-      | "address-line1"
-      | "address-line2"
-      | "address-line3"
-      | "address-level4"
-      | "address-level3"
-      | "address-level2"
-      | "address-level1"
-      | "country"
-      | "country-name"
-      | "postal-code"
-      | "cc-name"
-      | "cc-given-name"
-      | "cc-additional-name"
-      | "cc-family-name"
-      | "cc-number"
-      | "cc-exp"
-      | "cc-exp-month"
-      | "cc-exp-year"
-      | "cc-csc"
-      | "cc-type"
-      | "transaction-currency"
-      | "transaction-amount"
-      | "language"
-      | "bday"
-      | "bday-day"
-      | "bday-month"
-      | "bday-year"
-      | "sex"
-      | "tel"
-      | "tel-country-code"
-      | "tel-national"
-      | "tel-area-code"
-      | "tel-local"
-      | "tel-extension"
-      | "impp"
-      | "url"
-      | "photo";
+    autocomplete: "off" | "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "email" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "url" | "photo";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: checkbox */
     required: boolean;
     /** Input type: radio */
@@ -3795,14 +2560,7 @@ export type FormsBlocksButtons = {
     /** Input type: checkbox */
     fullwidth: boolean;
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: checkbox */
     reset__show: boolean;
     /** Input type: text */
@@ -3869,23 +2627,13 @@ export type HeaderSection = {
     /** Input type: checkbox */
     accounts__show: boolean;
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: checkbox */
     center_logo: boolean;
     /** Input type: checkbox */
     center_logo__desktop: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     flat_mobile_menu: boolean;
     /** Input type: checkbox */
@@ -3895,12 +2643,7 @@ export type HeaderSection = {
     /** Input type: range */
     height: number;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: range */
     logo_height: number;
     /** Input type: radio */
@@ -3996,23 +2739,13 @@ export type HeaderKoaSection = {
     /** Input type: checkbox */
     accounts__show: boolean;
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: checkbox */
     center_logo: boolean;
     /** Input type: checkbox */
     center_logo__desktop: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     flat_mobile_menu: boolean;
     /** Input type: checkbox */
@@ -4022,12 +2755,7 @@ export type HeaderKoaSection = {
     /** Input type: range */
     height: number;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: range */
     logo_height: number;
     /** Input type: radio */
@@ -4127,13 +2855,7 @@ export type HighlightsSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -4152,11 +2874,7 @@ export type HighlightsBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: radio */
     content_position: "top" | "bottom";
     /** Input type: range */
@@ -4168,19 +2886,7 @@ export type HighlightsBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -4222,19 +2928,7 @@ export type HighlightsBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -4251,17 +2945,9 @@ export type HighlightsBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
     content_position: "top" | "bottom";
     /** Input type: range */
@@ -4271,19 +2957,7 @@ export type HighlightsBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -4300,10 +2974,7 @@ export type HighlightsBlocksFeatures = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     content_font_1: number;
     /** Input type: range */
@@ -4323,19 +2994,7 @@ export type HighlightsBlocksFeatures = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     spacing: number;
     /** Input type: richtext */
@@ -4372,19 +3031,7 @@ export type HighlightsBlocksPage = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: page */
@@ -4429,13 +3076,7 @@ export type ImageBannerSection = {
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     height: number;
     /** Input type: range */
@@ -4451,19 +3092,7 @@ export type ImageBannerSection = {
     /** Input type: radio */
     section_layout: "container-bg-full" | "fullwidth";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     source: "image" | "video" | "video_url";
     /** Input type: video */
@@ -4479,7 +3108,7 @@ export type ImageBannerSection = {
     /** Input type: url */
     url?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "image-banner";
 };
@@ -4490,11 +3119,7 @@ export type ImageBannerBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -4504,19 +3129,7 @@ export type ImageBannerBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -4529,10 +3142,7 @@ export type ImageBannerBlocksLabels = {
   id: string;
   settings: {
     /** Input type: radio */
-    label__style:
-      | "bg-primary-bg text-primary-text"
-      | "bg-primary-text text-primary-bg"
-      | "bg-secondary-bg text-secondary-text";
+    label__style: "bg-primary-bg text-primary-text" | "bg-primary-text text-primary-bg" | "bg-secondary-bg text-secondary-text";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -4542,19 +3152,7 @@ export type ImageBannerBlocksLabels = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: textarea */
     labels?: string;
   };
@@ -4590,19 +3188,7 @@ export type ImageBannerBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -4619,17 +3205,9 @@ export type ImageBannerBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -4637,19 +3215,7 @@ export type ImageBannerBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -4675,13 +3241,7 @@ export type ImageFeedSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     image__aspect_ratio: "pb-[75%]" | "pb-[100%]" | "pb-[125%]";
     /** Input type: range */
@@ -4737,27 +3297,13 @@ export type ImageWithTextSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    content_ratio:
-      | "md:grid-cols-[1fr_66%]"
-      | "md:grid-cols-[44%_1fr]"
-      | "md:grid-cols-2"
-      | "md:grid-cols-[1fr_44%]"
-      | "md:grid-cols-[66%_1fr]";
+    content_ratio: "md:grid-cols-[1fr_66%]" | "md:grid-cols-[44%_1fr]" | "md:grid-cols-2" | "md:grid-cols-[1fr_44%]" | "md:grid-cols-[66%_1fr]";
     /** Input type: select */
     image__aspect_ratio: "pb-[75%]" | "pb-[85%]" | "pb-[100%]" | "pb-[125%]";
     /** Input type: checkbox */
@@ -4791,7 +3337,7 @@ export type ImageWithTextSection = {
     /** Input type: liquid */
     section_liquid?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "image-with-text";
 };
@@ -4802,11 +3348,7 @@ export type ImageWithTextBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -4816,19 +3358,7 @@ export type ImageWithTextBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -4845,17 +3375,9 @@ export type ImageWithTextBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -4863,19 +3385,7 @@ export type ImageWithTextBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -4892,10 +3402,7 @@ export type ImageWithTextBlocksFeatures = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     content_font_1: number;
     /** Input type: range */
@@ -4913,19 +3420,7 @@ export type ImageWithTextBlocksFeatures = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     spacing: number;
     /** Input type: richtext */
@@ -4958,32 +3453,15 @@ export type ImageWithTextKoaSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     image__aspect_ratio: "pb-[75%]" | "pb-[100%]" | "pb-[125%]";
     /** Input type: radio */
@@ -5027,7 +3505,7 @@ export type ImageWithTextKoaSection = {
     /** Input type: text */
     title?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "image-with-text-koa";
 };
@@ -5037,13 +3515,7 @@ export type MainAccountSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: text */
     sectionID?: string;
   };
@@ -5055,13 +3527,7 @@ export type MainAddressesSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: text */
     sectionID?: string;
   };
@@ -5076,13 +3542,7 @@ export type MainArticleSection = {
     /** Input type: checkbox */
     author__show: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     comments__show: boolean;
     /** Input type: checkbox */
@@ -5146,13 +3606,7 @@ export type MainBlogSection = {
     /** Input type: checkbox */
     author__show: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     date__show: boolean;
     /** Input type: select */
@@ -5173,13 +3627,7 @@ export type MainCartSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -5194,20 +3642,11 @@ export type MainCartBlocksEmpty = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -5256,20 +3695,11 @@ export type MainCollectionBannerSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     height_desktop: number;
     /** Input type: range */
@@ -5300,19 +3730,7 @@ export type MainCollectionBannerBlocksTitle = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -5329,19 +3747,7 @@ export type MainCollectionBannerBlocksDescription = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -5358,19 +3764,7 @@ export type MainCollectionBannerBlocksProduct_count = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -5390,13 +3784,7 @@ export type MainCollectionFilterSortBarSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     filters__count: boolean;
     /** Input type: checkbox */
@@ -5433,20 +3821,9 @@ export type MainCollectionProductGridSection = {
     /** Input type: radio */
     card_style: "default" | "preview_card";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    columns__desktop:
-      | "lg:grid-cols-1"
-      | "lg:grid-cols-2"
-      | "lg:grid-cols-3"
-      | "lg:grid-cols-4"
-      | "lg:grid-cols-5";
+    columns__desktop: "lg:grid-cols-1" | "lg:grid-cols-2" | "lg:grid-cols-3" | "lg:grid-cols-4" | "lg:grid-cols-5";
     /** Input type: select */
     columns__mobile: "grid-cols-1" | "grid-cols-2";
     /** Input type: range */
@@ -5462,20 +3839,9 @@ export type MainCollectionsListSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    columns__desktop:
-      | "lg:grid-cols-1"
-      | "lg:grid-cols-2"
-      | "lg:grid-cols-3"
-      | "lg:grid-cols-4"
-      | "lg:grid-cols-5";
+    columns__desktop: "lg:grid-cols-1" | "lg:grid-cols-2" | "lg:grid-cols-3" | "lg:grid-cols-4" | "lg:grid-cols-5";
     /** Input type: select */
     columns__mobile: "grid-cols-1" | "grid-cols-2";
     /** Input type: select */
@@ -5511,30 +3877,13 @@ export type MainPageSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
     padding_top: "pt-0" | "pt-sm" | "pt-md" | "pt-lg";
     /** Input type: select */
-    width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm";
+    width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm";
     /** Input type: text */
     sectionID?: string;
   };
@@ -5546,13 +3895,7 @@ export type MainSearchFiltersSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     filters__count: boolean;
     /** Input type: checkbox */
@@ -5576,12 +3919,7 @@ export type MainSearchGridSection = {
     /** Input type: checkbox */
     article_show_date: boolean;
     /** Input type: select */
-    columns__desktop:
-      | "lg:grid-cols-1"
-      | "lg:grid-cols-2"
-      | "lg:grid-cols-3"
-      | "lg:grid-cols-4"
-      | "lg:grid-cols-5";
+    columns__desktop: "lg:grid-cols-1" | "lg:grid-cols-2" | "lg:grid-cols-3" | "lg:grid-cols-4" | "lg:grid-cols-5";
     /** Input type: select */
     columns__mobile: "grid-cols-1" | "grid-cols-2";
     /** Input type: checkbox */
@@ -5624,20 +3962,11 @@ export type Main404Section = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     min_height: number;
     /** Input type: image_picker */
@@ -5676,17 +4005,9 @@ export type Main404BlocksButtons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -5699,7 +4020,10 @@ export type Main404BlocksButtons = {
   type: "buttons";
 };
 
-export type Main404Blocks = Main404BlocksText | Main404BlocksImage | Main404BlocksButtons;
+export type Main404Blocks =
+  | Main404BlocksText
+  | Main404BlocksImage
+  | Main404BlocksButtons;
 
 export type MarqueeBarSection = {
   blocks: MarqueeBarBlocks[];
@@ -5711,13 +4035,7 @@ export type MarqueeBarSection = {
     /** Input type: checkbox */
     center_items: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     duration: number;
     /** Input type: range */
@@ -5810,13 +4128,7 @@ export type MegamenuSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     grid_gap: number;
     /** Input type: radio */
@@ -5831,10 +4143,7 @@ export type MegamenuBlocksContent = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: range */
@@ -5968,11 +4277,7 @@ export type MegamenuBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -5982,19 +4287,7 @@ export type MegamenuBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -6032,19 +4325,7 @@ export type MegamenuBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -6061,17 +4342,9 @@ export type MegamenuBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6079,19 +4352,7 @@ export type MegamenuBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -6108,10 +4369,7 @@ export type MegamenuBlocksFeatures = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     content_font_1: number;
     /** Input type: range */
@@ -6129,19 +4387,7 @@ export type MegamenuBlocksFeatures = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     spacing: number;
     /** Input type: richtext */
@@ -6181,20 +4427,11 @@ export type NewsletterSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     min_height: number;
     /** Input type: select */
@@ -6206,19 +4443,7 @@ export type NewsletterSection = {
     /** Input type: radio */
     section_layout: "container-bg-full" | "fullwidth";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: image_picker */
     image?: _Image_liquid | string;
     /** Input type: color_background */
@@ -6233,11 +4458,7 @@ export type NewsletterBlocksEmail = {
   id: string;
   settings: {
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: text */
@@ -6256,11 +4477,7 @@ export type NewsletterBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6270,19 +4487,7 @@ export type NewsletterBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -6320,19 +4525,7 @@ export type NewsletterBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -6349,17 +4542,9 @@ export type NewsletterBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6367,19 +4552,7 @@ export type NewsletterBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -6405,13 +4578,7 @@ export type ObjectOverImageSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -6439,17 +4606,9 @@ export type ObjectOverImageBlocksObject = {
   id: string;
   settings: {
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: range */
@@ -6480,11 +4639,7 @@ export type ObjectOverImageBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6494,19 +4649,7 @@ export type ObjectOverImageBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -6527,19 +4670,7 @@ export type ObjectOverImageBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -6556,17 +4687,9 @@ export type ObjectOverImageBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6574,19 +4697,7 @@ export type ObjectOverImageBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -6614,19 +4725,9 @@ export type PasswordFooterSection = {
     /** Input type: checkbox */
     address_show: boolean;
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     country_selector_show: boolean;
     /** Input type: checkbox */
@@ -6634,12 +4735,7 @@ export type PasswordFooterSection = {
     /** Input type: checkbox */
     language_selector_show: boolean;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: range */
     logo_height: number;
     /** Input type: checkbox */
@@ -6739,22 +4835,11 @@ export type PasswordHeaderSection = {
     /** Input type: checkbox */
     center_logo: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     height: number;
     /** Input type: select */
-    logo:
-      | "branding_logo_dark_on_light"
-      | "branding_logo_light_on_dark"
-      | "branding_logo_secondary_dark_on_light"
-      | "branding_logo_secondary_light_on_dark"
-      | "branding_logo_none";
+    logo: "branding_logo_dark_on_light" | "branding_logo_light_on_dark" | "branding_logo_secondary_dark_on_light" | "branding_logo_secondary_light_on_dark" | "branding_logo_none";
     /** Input type: range */
     logo_height: number;
     /** Input type: link_list */
@@ -6777,13 +4862,7 @@ export type ProductSection = {
     /** Input type: checkbox */
     breadcrumbs__show: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     gallery__aspect_ratio: "auto" | "9 / 16" | "2 / 3" | "3 / 4" | "1" | "4 / 3" | "16 / 9";
     /** Input type: checkbox */
@@ -6833,14 +4912,7 @@ export type ProductBlocksText = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6850,19 +4922,7 @@ export type ProductBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -6879,14 +4939,7 @@ export type ProductBlocksTitle = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6905,14 +4958,7 @@ export type ProductBlocksVendor = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6927,14 +4973,7 @@ export type ProductBlocksPrice = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -6951,13 +4990,7 @@ export type ProductBlocksVariant_selector = {
     /** Input type: checkbox */
     color_selector: boolean;
     /** Input type: radio */
-    color_selector__source:
-      | "via_option"
-      | "via_option_then_image"
-      | "via_image"
-      | "via_metafield"
-      | "via_image_then_metafield"
-      | "via_metafield_then_image";
+    color_selector__source: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
     /** Input type: range */
     color_selector_radius: number;
     /** Input type: range */
@@ -7005,14 +5038,7 @@ export type ProductBlocksSku = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7027,14 +5053,7 @@ export type ProductBlocksQuantity_selector = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7049,20 +5068,9 @@ export type ProductBlocksBuy_buttons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7077,14 +5085,7 @@ export type ProductBlocksDynamic_buy_buttons = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7099,14 +5100,7 @@ export type ProductBlocksPayment_terms = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7125,13 +5119,7 @@ export type ProductBlocksDescription = {
     /** Input type: range */
     margin_top: number;
     /** Input type: radio */
-    style:
-      | "plain"
-      | "accordion"
-      | "accordion_style_h1"
-      | "tabs_style_h1"
-      | "accordion_custom_tags"
-      | "tabs_custom_tags";
+    style: "plain" | "accordion" | "accordion_style_h1" | "tabs_style_h1" | "accordion_custom_tags" | "tabs_custom_tags";
     /** Input type: checkbox */
     uncollapse: boolean;
     /** Input type: text */
@@ -7146,14 +5134,7 @@ export type ProductBlocksShare = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7177,51 +5158,7 @@ export type ProductBlocksCollapsible_tab = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "none"
-      | "apple"
-      | "banana"
-      | "bottle"
-      | "box"
-      | "carrot"
-      | "chat_bubble"
-      | "check_mark"
-      | "clipboard"
-      | "dairy"
-      | "dairy_free"
-      | "dryer"
-      | "eye"
-      | "fire"
-      | "gluten_free"
-      | "heart"
-      | "iron"
-      | "leaf"
-      | "leather"
-      | "lightning_bolt"
-      | "lipstick"
-      | "lock"
-      | "map_pin"
-      | "nut_free"
-      | "pants"
-      | "paw_print"
-      | "pepper"
-      | "perfume"
-      | "plane"
-      | "plant"
-      | "price_tag"
-      | "question_mark"
-      | "recycle"
-      | "return"
-      | "ruler"
-      | "serving_dish"
-      | "shirt"
-      | "shoe"
-      | "silhouette"
-      | "snowflake"
-      | "star"
-      | "stopwatch"
-      | "truck"
-      | "washing";
+    icon: "none" | "apple" | "banana" | "bottle" | "box" | "carrot" | "chat_bubble" | "check_mark" | "clipboard" | "dairy" | "dairy_free" | "dryer" | "eye" | "fire" | "gluten_free" | "heart" | "iron" | "leaf" | "leather" | "lightning_bolt" | "lipstick" | "lock" | "map_pin" | "nut_free" | "pants" | "paw_print" | "pepper" | "perfume" | "plane" | "plant" | "price_tag" | "question_mark" | "recycle" | "return" | "ruler" | "serving_dish" | "shirt" | "shoe" | "silhouette" | "snowflake" | "star" | "stopwatch" | "truck" | "washing";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7242,14 +5179,7 @@ export type ProductBlocksRating = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7293,277 +5223,13 @@ export type ProductBlocksIcon_with_text = {
     /** Input type: range */
     content_font: number;
     /** Input type: select */
-    icon_1:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_1: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_2:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_2: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_3:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_3: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_4:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_4: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
     item_layout: "flex-row" | "flex-col";
     /** Input type: select */
@@ -7615,22 +5281,9 @@ export type ProductBlocksImage = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_row_span:
-      | "row-span-1"
-      | "row-span-2"
-      | "row-span-3"
-      | "row-span-4"
-      | "row-span-5"
-      | "row-span-6";
+    grid_row_span: "row-span-1" | "row-span-2" | "row-span-3" | "row-span-4" | "row-span-5" | "row-span-6";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: checkbox */
     image__drop_shadow: boolean;
     /** Input type: select */
@@ -7681,46 +5334,17 @@ export type ProductBlocksPopup = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: radio */
-    label__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline"
-      | "plain-link text-left";
+    label__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline" | "plain-link text-left";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7793,13 +5417,7 @@ export type ProductAddToCartBarSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: text */
@@ -7837,13 +5455,7 @@ export type ProductDrawerSection = {
     /** Input type: checkbox */
     active: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     grid_gap: number;
   };
@@ -7854,22 +5466,9 @@ export type ProductDrawerBlocksImage = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_row_span:
-      | "row-span-1"
-      | "row-span-2"
-      | "row-span-3"
-      | "row-span-4"
-      | "row-span-5"
-      | "row-span-6";
+    grid_row_span: "row-span-1" | "row-span-2" | "row-span-3" | "row-span-4" | "row-span-5" | "row-span-6";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: checkbox */
     image__drop_shadow: boolean;
     /** Input type: select */
@@ -7890,14 +5489,7 @@ export type ProductDrawerBlocksText = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7907,19 +5499,7 @@ export type ProductDrawerBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -7936,14 +5516,7 @@ export type ProductDrawerBlocksTitle = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7962,14 +5535,7 @@ export type ProductDrawerBlocksVendor = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -7984,14 +5550,7 @@ export type ProductDrawerBlocksPrice = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8023,13 +5582,7 @@ export type ProductDrawerBlocksVariant_selector = {
     /** Input type: checkbox */
     color_selector: boolean;
     /** Input type: radio */
-    color_selector__source:
-      | "via_option"
-      | "via_option_then_image"
-      | "via_image"
-      | "via_metafield"
-      | "via_image_then_metafield"
-      | "via_metafield_then_image";
+    color_selector__source: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
     /** Input type: range */
     color_selector_radius: number;
     /** Input type: range */
@@ -8056,14 +5609,7 @@ export type ProductDrawerBlocksSku = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8078,14 +5624,7 @@ export type ProductDrawerBlocksQuantity_selector = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8100,20 +5639,9 @@ export type ProductDrawerBlocksBuy_buttons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8128,14 +5656,7 @@ export type ProductDrawerBlocksDynamic_buy_buttons = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8150,14 +5671,7 @@ export type ProductDrawerBlocksPayment_terms = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8176,13 +5690,7 @@ export type ProductDrawerBlocksDescription = {
     /** Input type: range */
     margin_top: number;
     /** Input type: radio */
-    style:
-      | "plain"
-      | "accordion"
-      | "accordion_style_h1"
-      | "tabs_style_h1"
-      | "accordion_custom_tags"
-      | "tabs_custom_tags";
+    style: "plain" | "accordion" | "accordion_style_h1" | "tabs_style_h1" | "accordion_custom_tags" | "tabs_custom_tags";
     /** Input type: checkbox */
     uncollapse: boolean;
     /** Input type: text */
@@ -8197,14 +5705,7 @@ export type ProductDrawerBlocksShare = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8228,51 +5729,7 @@ export type ProductDrawerBlocksCollapsible_tab = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "none"
-      | "apple"
-      | "banana"
-      | "bottle"
-      | "box"
-      | "carrot"
-      | "chat_bubble"
-      | "check_mark"
-      | "clipboard"
-      | "dairy"
-      | "dairy_free"
-      | "dryer"
-      | "eye"
-      | "fire"
-      | "gluten_free"
-      | "heart"
-      | "iron"
-      | "leaf"
-      | "leather"
-      | "lightning_bolt"
-      | "lipstick"
-      | "lock"
-      | "map_pin"
-      | "nut_free"
-      | "pants"
-      | "paw_print"
-      | "pepper"
-      | "perfume"
-      | "plane"
-      | "plant"
-      | "price_tag"
-      | "question_mark"
-      | "recycle"
-      | "return"
-      | "ruler"
-      | "serving_dish"
-      | "shirt"
-      | "shoe"
-      | "silhouette"
-      | "snowflake"
-      | "star"
-      | "stopwatch"
-      | "truck"
-      | "washing";
+    icon: "none" | "apple" | "banana" | "bottle" | "box" | "carrot" | "chat_bubble" | "check_mark" | "clipboard" | "dairy" | "dairy_free" | "dryer" | "eye" | "fire" | "gluten_free" | "heart" | "iron" | "leaf" | "leather" | "lightning_bolt" | "lipstick" | "lock" | "map_pin" | "nut_free" | "pants" | "paw_print" | "pepper" | "perfume" | "plane" | "plant" | "price_tag" | "question_mark" | "recycle" | "return" | "ruler" | "serving_dish" | "shirt" | "shoe" | "silhouette" | "snowflake" | "star" | "stopwatch" | "truck" | "washing";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8293,14 +5750,7 @@ export type ProductDrawerBlocksRating = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8344,277 +5794,13 @@ export type ProductDrawerBlocksIcon_with_text = {
     /** Input type: range */
     content_font: number;
     /** Input type: select */
-    icon_1:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_1: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_2:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_2: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_3:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_3: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_4:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_4: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
     item_layout: "flex-row" | "flex-col";
     /** Input type: select */
@@ -8692,13 +5878,7 @@ export type ProductQuickViewSection = {
     /** Input type: checkbox */
     active: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     grid_gap: number;
     /** Input type: product */
@@ -8736,14 +5916,7 @@ export type ProductQuickViewBlocksText = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8753,19 +5926,7 @@ export type ProductQuickViewBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -8782,14 +5943,7 @@ export type ProductQuickViewBlocksTitle = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8808,14 +5962,7 @@ export type ProductQuickViewBlocksVendor = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8830,14 +5977,7 @@ export type ProductQuickViewBlocksPrice = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8869,13 +6009,7 @@ export type ProductQuickViewBlocksVariant_selector = {
     /** Input type: checkbox */
     color_selector: boolean;
     /** Input type: radio */
-    color_selector__source:
-      | "via_option"
-      | "via_option_then_image"
-      | "via_image"
-      | "via_metafield"
-      | "via_image_then_metafield"
-      | "via_metafield_then_image";
+    color_selector__source: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
     /** Input type: range */
     color_selector_radius: number;
     /** Input type: range */
@@ -8902,14 +6036,7 @@ export type ProductQuickViewBlocksSku = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8924,14 +6051,7 @@ export type ProductQuickViewBlocksQuantity_selector = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8946,20 +6066,9 @@ export type ProductQuickViewBlocksBuy_buttons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8974,14 +6083,7 @@ export type ProductQuickViewBlocksDynamic_buy_buttons = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -8996,14 +6098,7 @@ export type ProductQuickViewBlocksPayment_terms = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9022,13 +6117,7 @@ export type ProductQuickViewBlocksDescription = {
     /** Input type: range */
     margin_top: number;
     /** Input type: radio */
-    style:
-      | "plain"
-      | "accordion"
-      | "accordion_style_h1"
-      | "tabs_style_h1"
-      | "accordion_custom_tags"
-      | "tabs_custom_tags";
+    style: "plain" | "accordion" | "accordion_style_h1" | "tabs_style_h1" | "accordion_custom_tags" | "tabs_custom_tags";
     /** Input type: checkbox */
     uncollapse: boolean;
     /** Input type: text */
@@ -9043,14 +6132,7 @@ export type ProductQuickViewBlocksShare = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9074,51 +6156,7 @@ export type ProductQuickViewBlocksCollapsible_tab = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "none"
-      | "apple"
-      | "banana"
-      | "bottle"
-      | "box"
-      | "carrot"
-      | "chat_bubble"
-      | "check_mark"
-      | "clipboard"
-      | "dairy"
-      | "dairy_free"
-      | "dryer"
-      | "eye"
-      | "fire"
-      | "gluten_free"
-      | "heart"
-      | "iron"
-      | "leaf"
-      | "leather"
-      | "lightning_bolt"
-      | "lipstick"
-      | "lock"
-      | "map_pin"
-      | "nut_free"
-      | "pants"
-      | "paw_print"
-      | "pepper"
-      | "perfume"
-      | "plane"
-      | "plant"
-      | "price_tag"
-      | "question_mark"
-      | "recycle"
-      | "return"
-      | "ruler"
-      | "serving_dish"
-      | "shirt"
-      | "shoe"
-      | "silhouette"
-      | "snowflake"
-      | "star"
-      | "stopwatch"
-      | "truck"
-      | "washing";
+    icon: "none" | "apple" | "banana" | "bottle" | "box" | "carrot" | "chat_bubble" | "check_mark" | "clipboard" | "dairy" | "dairy_free" | "dryer" | "eye" | "fire" | "gluten_free" | "heart" | "iron" | "leaf" | "leather" | "lightning_bolt" | "lipstick" | "lock" | "map_pin" | "nut_free" | "pants" | "paw_print" | "pepper" | "perfume" | "plane" | "plant" | "price_tag" | "question_mark" | "recycle" | "return" | "ruler" | "serving_dish" | "shirt" | "shoe" | "silhouette" | "snowflake" | "star" | "stopwatch" | "truck" | "washing";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9139,14 +6177,7 @@ export type ProductQuickViewBlocksRating = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9190,277 +6221,13 @@ export type ProductQuickViewBlocksIcon_with_text = {
     /** Input type: range */
     content_font: number;
     /** Input type: select */
-    icon_1:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_1: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_2:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_2: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_3:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_3: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_4:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_4: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
     item_layout: "flex-row" | "flex-col";
     /** Input type: select */
@@ -9538,13 +6305,7 @@ export type ProductQuickViewKoaSection = {
     /** Input type: checkbox */
     active: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: product */
     preview_product?: _Product_liquid | string;
   };
@@ -9580,14 +6341,7 @@ export type ProductQuickViewKoaBlocksText = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9597,19 +6351,7 @@ export type ProductQuickViewKoaBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     text_align: "text-left" | "text-center" | "text-right";
     /** Input type: range */
@@ -9626,14 +6368,7 @@ export type ProductQuickViewKoaBlocksTitle = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9652,14 +6387,7 @@ export type ProductQuickViewKoaBlocksVendor = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9674,14 +6402,7 @@ export type ProductQuickViewKoaBlocksPrice = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9713,13 +6434,7 @@ export type ProductQuickViewKoaBlocksVariant_selector = {
     /** Input type: checkbox */
     color_selector: boolean;
     /** Input type: radio */
-    color_selector__source:
-      | "via_option"
-      | "via_option_then_image"
-      | "via_image"
-      | "via_metafield"
-      | "via_image_then_metafield"
-      | "via_metafield_then_image";
+    color_selector__source: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
     /** Input type: range */
     color_selector_radius: number;
     /** Input type: range */
@@ -9746,14 +6461,7 @@ export type ProductQuickViewKoaBlocksSku = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9768,14 +6476,7 @@ export type ProductQuickViewKoaBlocksQuantity_selector = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9790,20 +6491,9 @@ export type ProductQuickViewKoaBlocksBuy_buttons = {
   id: string;
   settings: {
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9818,14 +6508,7 @@ export type ProductQuickViewKoaBlocksDynamic_buy_buttons = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9840,14 +6523,7 @@ export type ProductQuickViewKoaBlocksPayment_terms = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9866,13 +6542,7 @@ export type ProductQuickViewKoaBlocksDescription = {
     /** Input type: range */
     margin_top: number;
     /** Input type: radio */
-    style:
-      | "plain"
-      | "accordion"
-      | "accordion_style_h1"
-      | "tabs_style_h1"
-      | "accordion_custom_tags"
-      | "tabs_custom_tags";
+    style: "plain" | "accordion" | "accordion_style_h1" | "tabs_style_h1" | "accordion_custom_tags" | "tabs_custom_tags";
     /** Input type: checkbox */
     uncollapse: boolean;
     /** Input type: text */
@@ -9887,14 +6557,7 @@ export type ProductQuickViewKoaBlocksShare = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9918,51 +6581,7 @@ export type ProductQuickViewKoaBlocksCollapsible_tab = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "none"
-      | "apple"
-      | "banana"
-      | "bottle"
-      | "box"
-      | "carrot"
-      | "chat_bubble"
-      | "check_mark"
-      | "clipboard"
-      | "dairy"
-      | "dairy_free"
-      | "dryer"
-      | "eye"
-      | "fire"
-      | "gluten_free"
-      | "heart"
-      | "iron"
-      | "leaf"
-      | "leather"
-      | "lightning_bolt"
-      | "lipstick"
-      | "lock"
-      | "map_pin"
-      | "nut_free"
-      | "pants"
-      | "paw_print"
-      | "pepper"
-      | "perfume"
-      | "plane"
-      | "plant"
-      | "price_tag"
-      | "question_mark"
-      | "recycle"
-      | "return"
-      | "ruler"
-      | "serving_dish"
-      | "shirt"
-      | "shoe"
-      | "silhouette"
-      | "snowflake"
-      | "star"
-      | "stopwatch"
-      | "truck"
-      | "washing";
+    icon: "none" | "apple" | "banana" | "bottle" | "box" | "carrot" | "chat_bubble" | "check_mark" | "clipboard" | "dairy" | "dairy_free" | "dryer" | "eye" | "fire" | "gluten_free" | "heart" | "iron" | "leaf" | "leather" | "lightning_bolt" | "lipstick" | "lock" | "map_pin" | "nut_free" | "pants" | "paw_print" | "pepper" | "perfume" | "plane" | "plant" | "price_tag" | "question_mark" | "recycle" | "return" | "ruler" | "serving_dish" | "shirt" | "shoe" | "silhouette" | "snowflake" | "star" | "stopwatch" | "truck" | "washing";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -9983,14 +6602,7 @@ export type ProductQuickViewKoaBlocksRating = {
   id: string;
   settings: {
     /** Input type: select */
-    grid_span:
-      | "col-span-3"
-      | "col-span-4"
-      | "col-span-6"
-      | "col-span-8"
-      | "col-span-9"
-      | "col-span-12"
-      | "flex_group";
+    grid_span: "col-span-3" | "col-span-4" | "col-span-6" | "col-span-8" | "col-span-9" | "col-span-12" | "flex_group";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -10034,277 +6646,13 @@ export type ProductQuickViewKoaBlocksIcon_with_text = {
     /** Input type: range */
     content_font: number;
     /** Input type: select */
-    icon_1:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_1: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_2:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_2: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_3:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_3: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
-    icon_4:
-      | "none"
-      | "activity"
-      | "alert-circle"
-      | "announcement"
-      | "arrow-narrow-left"
-      | "arrow-narrow-right"
-      | "at-sign"
-      | "bookmark-add"
-      | "bookmark-check"
-      | "building-large"
-      | "building"
-      | "calendar"
-      | "check-circle-broken"
-      | "check-circle"
-      | "check-heart"
-      | "check-square-broken"
-      | "check-square"
-      | "check"
-      | "chevron-down"
-      | "chevron-left"
-      | "chevron-right"
-      | "chevron-selector-vertical"
-      | "chevron-up"
-      | "clock"
-      | "cloud-blank"
-      | "credit-card"
-      | "currency-dollar-circle"
-      | "face-happy"
-      | "face-neutral"
-      | "face-sad"
-      | "face-smile"
-      | "globe"
-      | "heart-hand"
-      | "heart"
-      | "help-circle"
-      | "home"
-      | "image"
-      | "info-circle"
-      | "lock"
-      | "marker-pin"
-      | "menu"
-      | "minus-circle"
-      | "minus-square"
-      | "minus"
-      | "percent-circle"
-      | "percent"
-      | "pin"
-      | "plane"
-      | "plus-circle"
-      | "plus-square"
-      | "plus"
-      | "puzzle-piece"
-      | "rocket"
-      | "search"
-      | "share"
-      | "shopping-bag"
-      | "shopping-cart"
-      | "star"
-      | "tag"
-      | "thumbs-up"
-      | "tool"
-      | "truck"
-      | "user"
-      | "x-circle"
-      | "x-close"
-      | "zap";
+    icon_4: "none" | "activity" | "alert-circle" | "announcement" | "arrow-narrow-left" | "arrow-narrow-right" | "at-sign" | "bookmark-add" | "bookmark-check" | "building-large" | "building" | "calendar" | "check-circle-broken" | "check-circle" | "check-heart" | "check-square-broken" | "check-square" | "check" | "chevron-down" | "chevron-left" | "chevron-right" | "chevron-selector-vertical" | "chevron-up" | "clock" | "cloud-blank" | "credit-card" | "currency-dollar-circle" | "face-happy" | "face-neutral" | "face-sad" | "face-smile" | "globe" | "heart-hand" | "heart" | "help-circle" | "home" | "image" | "info-circle" | "lock" | "marker-pin" | "menu" | "minus-circle" | "minus-square" | "minus" | "percent-circle" | "percent" | "pin" | "plane" | "plus-circle" | "plus-square" | "plus" | "puzzle-piece" | "rocket" | "search" | "share" | "shopping-bag" | "shopping-cart" | "star" | "tag" | "thumbs-up" | "tool" | "truck" | "user" | "x-circle" | "x-close" | "zap";
     /** Input type: select */
     item_layout: "flex-row" | "flex-col";
     /** Input type: select */
@@ -10412,13 +6760,7 @@ export type ProductsScrollableSection = {
     /** Input type: checkbox */
     center_products: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: checkbox */
@@ -10445,22 +6787,11 @@ export type ProductsScrollableBlocksHeading = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -10468,19 +6799,7 @@ export type ProductsScrollableBlocksHeading = {
     /** Input type: range */
     preheading_font: number;
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     subtitle_font: number;
     /** Input type: range */
@@ -10566,13 +6885,7 @@ export type ProductsScrollableKoaSection = {
     /** Input type: checkbox */
     center_products: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: checkbox */
@@ -10599,22 +6912,11 @@ export type ProductsScrollableKoaBlocksHeading = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -10622,19 +6924,7 @@ export type ProductsScrollableKoaBlocksHeading = {
     /** Input type: range */
     preheading_font: number;
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     subtitle_font: number;
     /** Input type: range */
@@ -10718,18 +7008,9 @@ export type RichtextSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
@@ -10737,18 +7018,7 @@ export type RichtextSection = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm";
+    width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm";
     /** Input type: text */
     sectionID?: string;
   };
@@ -10761,11 +7031,7 @@ export type RichtextBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -10775,19 +7041,7 @@ export type RichtextBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -10817,10 +7071,7 @@ export type RichtextBlocksLabels = {
   id: string;
   settings: {
     /** Input type: radio */
-    label__style:
-      | "bg-primary-bg text-primary-text"
-      | "bg-primary-text text-primary-bg"
-      | "bg-secondary-bg text-secondary-text";
+    label__style: "bg-primary-bg text-primary-text" | "bg-primary-text text-primary-bg" | "bg-secondary-bg text-secondary-text";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -10830,19 +7081,7 @@ export type RichtextBlocksLabels = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: textarea */
     labels?: string;
   };
@@ -10861,19 +7100,7 @@ export type RichtextBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -10890,17 +7117,9 @@ export type RichtextBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -10908,19 +7127,7 @@ export type RichtextBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -10937,10 +7144,7 @@ export type RichtextBlocksFeatures = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: range */
     content_font_1: number;
     /** Input type: range */
@@ -10958,19 +7162,7 @@ export type RichtextBlocksFeatures = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     spacing: number;
     /** Input type: richtext */
@@ -11005,19 +7197,7 @@ export type RichtextBlocksPage = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: page */
@@ -11043,13 +7223,7 @@ export type ScrollableImagesSection = {
     /** Input type: range */
     caption_font: number;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: checkbox */
     container_overflow: boolean;
     /** Input type: range */
@@ -11106,11 +7280,7 @@ export type ScrollableImagesBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -11120,19 +7290,7 @@ export type ScrollableImagesBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -11149,17 +7307,9 @@ export type ScrollableImagesBlocksButtons = {
     /** Input type: radio */
     button__mobile_layout: "flex" | "flex max-md:flex-col max-md:w-full";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -11167,19 +7317,7 @@ export type ScrollableImagesBlocksButtons = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: text */
     button_primary__text?: string;
     /** Input type: url */
@@ -11204,19 +7342,7 @@ export type ScrollableImagesBlocksAccent_line = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     width: number;
     /** Input type: color */
@@ -11287,7 +7413,9 @@ export type SearchBlocksTrending_collections = {
   type: "trending_collections";
 };
 
-export type SearchBlocks = SearchBlocksTrending_products | SearchBlocksTrending_collections;
+export type SearchBlocks =
+  | SearchBlocksTrending_products
+  | SearchBlocksTrending_collections;
 
 export type SearchGridWithFiltersSection = {
   blocks: SearchGridWithFiltersBlocks[];
@@ -11295,18 +7423,9 @@ export type SearchGridWithFiltersSection = {
   id: string;
   settings: {
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
-    columns__desktop:
-      | "lg:grid-cols-3 group-ac:lg:grid-cols-2"
-      | "lg:grid-cols-4 group-ac:lg:grid-cols-3"
-      | "lg:grid-cols-5 group-ac:lg:grid-cols-4";
+    columns__desktop: "lg:grid-cols-3 group-ac:lg:grid-cols-2" | "lg:grid-cols-4 group-ac:lg:grid-cols-3" | "lg:grid-cols-5 group-ac:lg:grid-cols-4";
     /** Input type: select */
     columns__mobile: "grid-cols-1" | "grid-cols-2";
     /** Input type: checkbox */
@@ -11379,32 +7498,15 @@ export type SlideshowBlocksSlide = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -11416,19 +7518,7 @@ export type SlideshowBlocksSlide = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: checkbox */
     slide: boolean;
     /** Input type: range */
@@ -11467,34 +7557,17 @@ export type SlideshowBlocksVideoSlide = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: checkbox */
     autoplay: boolean;
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     content_font: number;
     /** Input type: range */
@@ -11508,19 +7581,7 @@ export type SlideshowBlocksVideoSlide = {
     /** Input type: radio */
     section_layout: "container-bg-full" | "fullwidth";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: checkbox */
     slide: boolean;
     /** Input type: range */
@@ -11554,12 +7615,14 @@ export type SlideshowBlocksVideoSlide = {
     /** Input type: url */
     url?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "video-slide";
 };
 
-export type SlideshowBlocks = SlideshowBlocksSlide | SlideshowBlocksVideoSlide;
+export type SlideshowBlocks =
+  | SlideshowBlocksSlide
+  | SlideshowBlocksVideoSlide;
 
 export type SlideshowKoaSection = {
   blocks: SlideshowKoaBlocks[];
@@ -11588,32 +7651,15 @@ export type SlideshowKoaBlocksSlideKoa = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: radio */
-    button_primary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_primary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: radio */
-    button_secondary__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button_secondary__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     end_day: number;
     /** Input type: range */
@@ -11679,16 +7725,7 @@ export type StoreLocatorSection = {
   id: string;
   settings: {
     /** Input type: select */
-    background_image_position:
-      | "top left"
-      | "top center"
-      | "top right"
-      | "center left"
-      | "center center"
-      | "center right"
-      | "bottom left"
-      | "bottom center"
-      | "bottom right";
+    background_image_position: "top left" | "top center" | "top right" | "center left" | "center center" | "center right" | "bottom left" | "bottom center" | "bottom right";
     /** Input type: checkbox */
     show_button: boolean;
     /** Input type: richtext */
@@ -11711,52 +7748,19 @@ export type TaggedProductImagesSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: select */
     padding_bottom: "pb-0" | "pb-sm" | "pb-md" | "pb-lg";
     /** Input type: select */
     padding_top: "pt-0" | "pt-sm" | "pt-md" | "pt-lg";
     /** Input type: select */
-    product_grid_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    product_grid_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     subtitle_font: number;
     /** Input type: range */
@@ -11775,12 +7779,7 @@ export type TaggedProductImagesBlocksProduct = {
   id: string;
   settings: {
     /** Input type: radio */
-    action__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline"
-      | "plain-link text-center";
+    action__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline" | "plain-link text-center";
     /** Input type: range */
     action_font: number;
     /** Input type: range */
@@ -11817,13 +7816,7 @@ export type TestimonialsSection = {
     /** Input type: checkbox */
     auto_rotate: boolean;
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     min_height: number;
     /** Input type: select */
@@ -11871,28 +7864,15 @@ export type VideoBannerSection = {
   id: string;
   settings: {
     /** Input type: radio */
-    align__horizontal:
-      | "items-start text-left"
-      | "items-center text-center"
-      | "items-end text-right";
+    align__horizontal: "items-start text-left" | "items-center text-center" | "items-end text-right";
     /** Input type: radio */
     align__vertical: "justify-start" | "justify-center" | "justify-end";
     /** Input type: checkbox */
     autoplay: boolean;
     /** Input type: radio */
-    button__style:
-      | "button-primary"
-      | "button-primary--outline"
-      | "button-secondary"
-      | "button-secondary--outline";
+    button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
     /** Input type: select */
-    color_scheme:
-      | "bg-theme-bg text-theme-text color-inherit"
-      | "bg-theme-bg text-theme-text color-group-1"
-      | "bg-theme-bg text-theme-text color-group-2"
-      | "bg-theme-bg text-theme-text color-group-3"
-      | "bg-theme-bg text-theme-text color-group-4"
-      | "bg-theme-bg text-theme-text color-group-5";
+    color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
     /** Input type: range */
     height: number;
     /** Input type: select */
@@ -11916,7 +7896,7 @@ export type VideoBannerSection = {
     /** Input type: url */
     url?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "video-banner";
 };
@@ -11929,7 +7909,7 @@ export type VideoBannerBlocksPreview_video = {
     /** Input type: url */
     url?: string;
     /** Input type: video_url */
-    video_url?: `${string}youtube${string}` | `${string}vimeo${string}`;
+    video_url?:  `${string}youtube${string}` | `${string}vimeo${string}`;
   };
   type: "preview_video";
 };
@@ -11940,11 +7920,7 @@ export type VideoBannerBlocksText = {
     /** Input type: select */
     alignment_desktop: "[text-align:inherit]" | "text-left" | "text-center" | "text-right";
     /** Input type: select */
-    alignment_mobile:
-      | "max-md:[text-align:inherit]"
-      | "max-md:text-left"
-      | "max-md:text-center"
-      | "max-md:text-right";
+    alignment_mobile: "max-md:[text-align:inherit]" | "max-md:text-left" | "max-md:text-center" | "max-md:text-right";
     /** Input type: range */
     margin_bottom: number;
     /** Input type: range */
@@ -11954,19 +7930,7 @@ export type VideoBannerBlocksText = {
     /** Input type: radio */
     responsive_visibility: "responsive" | "md:hidden" | "max-md:hidden";
     /** Input type: select */
-    section_max_width:
-      | "max-w-full"
-      | "max-w-[var(--layout-page-width)]"
-      | "max-w-6xl"
-      | "max-w-5xl"
-      | "max-w-4xl"
-      | "max-w-3xl"
-      | "max-w-2xl"
-      | "max-w-xl"
-      | "max-w-lg"
-      | "max-w-md"
-      | "max-w-sm"
-      | "max-w-xs";
+    section_max_width: "max-w-full" | "max-w-[var(--layout-page-width)]" | "max-w-6xl" | "max-w-5xl" | "max-w-4xl" | "max-w-3xl" | "max-w-2xl" | "max-w-xl" | "max-w-lg" | "max-w-md" | "max-w-sm" | "max-w-xs";
     /** Input type: range */
     title_font: number;
     /** Input type: richtext */
@@ -12100,13 +8064,7 @@ export type SettingsSchema = {
   /** Input type: range */
   button_vertical_padding: number;
   /** Input type: select */
-  cart_color_scheme:
-    | "bg-theme-bg text-theme-text color-inherit"
-    | "bg-theme-bg text-theme-text color-group-1"
-    | "bg-theme-bg text-theme-text color-group-2"
-    | "bg-theme-bg text-theme-text color-group-3"
-    | "bg-theme-bg text-theme-text color-group-4"
-    | "bg-theme-bg text-theme-text color-group-5";
+  cart_color_scheme: "bg-theme-bg text-theme-text color-inherit" | "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
   /** Input type: checkbox */
   cart_gift_checkbox: boolean;
   /** Input type: checkbox */
@@ -12120,12 +8078,7 @@ export type SettingsSchema = {
   /** Input type: radio */
   color_grayscale_style: "normal" | "inverted";
   /** Input type: select */
-  color_scheme:
-    | "bg-theme-bg text-theme-text color-group-1"
-    | "bg-theme-bg text-theme-text color-group-2"
-    | "bg-theme-bg text-theme-text color-group-3"
-    | "bg-theme-bg text-theme-text color-group-4"
-    | "bg-theme-bg text-theme-text color-group-5";
+  color_scheme: "bg-theme-bg text-theme-text color-group-1" | "bg-theme-bg text-theme-text color-group-2" | "bg-theme-bg text-theme-text color-group-3" | "bg-theme-bg text-theme-text color-group-4" | "bg-theme-bg text-theme-text color-group-5";
   /** Input type: radio */
   design_border_radius: "soft" | "medium" | "bold";
   /** Input type: radio */
@@ -12173,23 +8126,13 @@ export type SettingsSchema = {
   /** Input type: range */
   pro_discount: number;
   /** Input type: radio */
-  product_card__button__style:
-    | "button-primary"
-    | "button-primary--outline"
-    | "button-secondary"
-    | "button-secondary--outline";
+  product_card__button__style: "button-primary" | "button-primary--outline" | "button-secondary" | "button-secondary--outline";
   /** Input type: checkbox */
   product_card__button_color_variant_add_to_cart: boolean;
   /** Input type: checkbox */
   product_card__button_single_variant_add_to_cart: boolean;
   /** Input type: radio */
-  product_card__color_selector:
-    | "via_option"
-    | "via_option_then_image"
-    | "via_image"
-    | "via_metafield"
-    | "via_image_then_metafield"
-    | "via_metafield_then_image";
+  product_card__color_selector: "via_option" | "via_option_then_image" | "via_image" | "via_metafield" | "via_image_then_metafield" | "via_metafield_then_image";
   /** Input type: range */
   product_card__color_selector_radius: number;
   /** Input type: range */

@@ -293,6 +293,50 @@
       "settings": {
       }
     },
+    "198e4dd6-6f01-4c8d-a228-8cb7b17f5f0f": {
+      "type": "image-with-text",
+      "blocks": {
+        "d8c3e9bc-44f8-4bda-a668-d380bad661da": {
+          "type": "text",
+          "settings": {
+            "title": "<p>dgffh<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "d8c3e9bc-44f8-4bda-a668-d380bad661da"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "456a945e-822d-468f-9bf1-1c8a0c16481c": {
       "type": "product-add-to-cart-bar",
       "blocks": {
@@ -557,6 +601,7 @@
   "order": [
     "product",
     "product-siblings",
+    "198e4dd6-6f01-4c8d-a228-8cb7b17f5f0f",
     "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",

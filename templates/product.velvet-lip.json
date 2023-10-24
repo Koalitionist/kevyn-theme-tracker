@@ -596,6 +596,49 @@
         "section_liquid": "",
         "sectionID": ""
       }
+    },
+    "0973e241-37a0-47ca-89fd-5b59337d0e83": {
+      "type": "image-with-text",
+      "blocks": {
+        "79a628e9-ad3a-4005-a40e-e8cdcd646620": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>LUSCIOUS LIPS<\/h2><h3>Discover the hydrating transfer-proof formula that features full color with a velvet-matte finish and a comfortable “bare-lip” sensation.<\/h3>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "79a628e9-ad3a-4005-a40e-e8cdcd646620"
+      ],
+      "settings": {
+        "source": "image",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -606,6 +649,7 @@
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "a7ccb789-e8b1-4069-9978-e25aeb1add1c"
+    "a7ccb789-e8b1-4069-9978-e25aeb1add1c",
+    "0973e241-37a0-47ca-89fd-5b59337d0e83"
   ]
 }

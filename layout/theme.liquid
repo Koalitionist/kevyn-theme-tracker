@@ -383,6 +383,7 @@ var afterpay_js_snippet_version = '1.1.7';
 <!-- Start afterpay shadow-root style update -->
 <script>
 
+// the problem with this approach is that the DOM is loaded but the afterpay script is not
 // Wait for page to be loaded
 {% comment %} document.addEventListener("DOMContentLoaded", () => {
   // Get all elements with the tag name <square-placement>
@@ -397,6 +398,19 @@ var afterpay_js_snippet_version = '1.1.7';
   sheet.replaceSync('.afterpay-main-text { color: red; }');
   host.shadowRoot.adoptedStyleSheets = [sheet];
 }); {% endcomment %}
+
+function myFunction() {
+    // Your code to be executed after the external script loads
+    console.log("External script has loaded!");
+}
+
+var externalScript = document.querySelector('script[src="https://static.afterpay.com/shopify-afterpay-javascript.js"]');
+
+externalScript.onload = function() {
+    myFunction();
+};
+
+
 
 
 </script>

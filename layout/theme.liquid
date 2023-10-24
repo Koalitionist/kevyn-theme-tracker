@@ -382,8 +382,9 @@ var afterpay_js_snippet_version = '1.1.7';
 
 <!-- Start afterpay shadow-root style update -->
 <script>
+
 // Wait for page to be loaded
-document.addEventListener("DOMContentLoaded", () => {
+{% comment %} document.addEventListener("DOMContentLoaded", () => {
   // Get all elements with the tag name <square-placement>
   let squarePlacementElements = document.getElementsByTagName('square-placement');
 
@@ -395,7 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let sheet = new CSSStyleSheet();
   sheet.replaceSync('.afterpay-main-text { color: red; }');
   host.shadowRoot.adoptedStyleSheets = [sheet];
-});
+}); {% endcomment %}
 
 
 </script>

@@ -411,13 +411,11 @@ sheet.replaceSync('.afterpay-main-text { color: red; }');
 host.shadowRoot.adoptedStyleSheets = [sheet];
 }
 
-// Target element you're looking for
-const targetElement = document.getElementsByTagName('square-placement');
-
 // Function to create a MutationObserver and observe changes in the DOM
 function waitForElement() {
   const observer = new MutationObserver((mutationsList, observer) => {
     // Check if the target element is now in the DOM
+    const targetElement = document.getElementsByTagName('square-placement');
     if (document.contains(targetElement)) {
       // Element found, stop observing
       observer.disconnect();

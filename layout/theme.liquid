@@ -399,21 +399,6 @@ var afterpay_js_snippet_version = '1.1.7';
   host.shadowRoot.adoptedStyleSheets = [sheet];
 }); {% endcomment %}
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log('DOM LOADED!--------')
-  let  externalScript = document.querySelector('script[src="https://static.afterpay.com/shopify-afterpay-javascript.js"]');
-  console.log('external script', externalScript)
-  externalScript.onload = function() {
-    console.log('------------yes--------')
-      myFunction();
-  };
-});
-
-function myFunction() {
-    // Your code to be executed after the external script loads
-    console.log("External script has loaded!");
-}
-
 
 
 

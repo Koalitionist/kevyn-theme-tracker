@@ -412,7 +412,7 @@ host.shadowRoot.adoptedStyleSheets = [sheet];
 }
 
 // Target element you're looking for
-const targetElement = document.querySelector('square-placement');
+const targetElement = document.getElementsByTagName('square-placement');
 
 // Function to create a MutationObserver and observe changes in the DOM
 function waitForElement() {

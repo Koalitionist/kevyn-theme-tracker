@@ -315,6 +315,7 @@
       "block_order": [
         "d8c3e9bc-44f8-4bda-a668-d380bad661da"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",

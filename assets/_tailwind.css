@@ -833,3 +833,11 @@ details.appearance-none summary {
     display: block;
   }
 }
+
+.afterpay-paragraph .afterpay-main-text {
+  display: flex !important;
+  flex-direction: row;
+  width: fit-content;
+  white-space: nowrap;
+  gap: 5px;
+}

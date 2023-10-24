@@ -278,7 +278,7 @@
           "type": "text",
           "settings": {
             "title": "<h2>LUSCIOUS LIPS<\/h2><p>Discover the hydrating transfer-proof formula that features full color with a velvet-matte finish and a comfortable “bare-lip” sensation.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",

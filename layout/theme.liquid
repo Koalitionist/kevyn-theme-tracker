@@ -391,8 +391,8 @@ var firstSquarePlacementElement = squarePlacementElements[0];
 let host = firstSquarePlacementElement;
 
 let sheet = new CSSStyleSheet();
-sheet.replaceSync( `.afterpay-main-text { color: pink }`)
-host.shadowRoot.adoptedStyleSheets.push(sheet)
+sheet.replaceSync('.afterpay-main-text { color: red; }');
+host.shadowRoot.adoptedStyleSheets = [sheet];
 
 </script>
 <!-- End afterpay shadow-root style update -->

@@ -1320,6 +1320,20 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
@@ -1327,7 +1341,8 @@
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3",
-        "caf1f722-815d-439e-9def-ee1750d71d96"
+        "caf1f722-815d-439e-9def-ee1750d71d96",
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

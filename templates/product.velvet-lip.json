@@ -619,14 +619,15 @@
         "79a628e9-ad3a-4005-a40e-e8cdcd646620"
       ],
       "settings": {
-        "source": "image",
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/VelvetLipApplication_All.mp4",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "image__aspect_ratio": "pb-[100%]",
         "content_ratio": "md:grid-cols-2",
         "image__object_fit": "object-cover",
-        "image__order": "-order-1",
+        "image__order": "order-2",
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",

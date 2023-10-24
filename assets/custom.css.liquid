@@ -51,9 +51,37 @@ strong {
   align-items: center;
 }
 
-afterpay-placement{
-  grid-column: span 12 / span 12;
+{% comment %} p.afterpay-paragraph,
+afterpay-placement {
+  display: block !important;
 }
+
+.shopify-installments__content,
+.afterpay-main-text,
+.afterpay-paragraph,
+.afterpay-paragraph span,
+#shopify-installments-content,
+.product-form__other-pamyents span,
+afterpay-placement {
+  font-size: 12px !important;
+  font-family: "Calibre" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+} {% endcomment %}
+
+{% comment %} .product-form__afterpay {
+  display: none;
+}
+
+.afterpay-paragraph span.afterpay-main-text {
+  display: flex !important;
+  flex-direction: row;
+  width: fit-content;
+  white-space: nowrap;
+  gap: 5px;
+} {% endcomment %}
+
+
 @media(max-width:700px) {
   #logoSVG {
     width: 190px !important;

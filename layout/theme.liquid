@@ -383,54 +383,18 @@ var afterpay_js_snippet_version = '1.1.7';
 <!-- Start afterpay shadow-root style update -->
 <script>
 // Wait for page to be loaded
-{% comment %} document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Get all elements with the tag name <square-placement>
-let squarePlacementElements = document.getElementsByTagName('square-placement');
+  let squarePlacementElements = document.getElementsByTagName('square-placement');
 
-// If you want to access the first element with this tag name, you can do:
-let firstSquarePlacementElement = squarePlacementElements[0];
+  // If you want to access the first element with this tag name, you can do:
+  var firstSquarePlacementElement = squarePlacementElements[0];
 
-let host = firstSquarePlacementElement;
+  let host = firstSquarePlacementElement;
 
-let sheet = new CSSStyleSheet();
-sheet.replaceSync('.afterpay-main-text { color: red; }');
-host.shadowRoot.adoptedStyleSheets = [sheet];
-}); {% endcomment %}
-
-// Function to perform an action when the element is found
-function doSomethingWhenElementFound(targetElement) {
-
- let squarePlacementElements = document.getElementsByTagName('square-placement');
-
-// If you want to access the first element with this tag name, you can do:
-let firstSquarePlacementElement = squarePlacementElements[0];
-
-let host = firstSquarePlacementElement;
-
-let sheet = new CSSStyleSheet();
-sheet.replaceSync('.afterpay-main-text { color: red; }');
-host.shadowRoot.adoptedStyleSheets = [sheet];
-}
-
-// Function to create a MutationObserver and observe changes in the DOM
-function waitForElement() {
-  const observer = new MutationObserver((mutationsList, observer) => {
-    // Check if the target element is now in the DOM
-    const targetElement = document.getElementsByTagName('square-placement');
-    if (document.contains(targetElement)) {
-      // Element found, stop observing
-      observer.disconnect();
-      doSomethingWhenElementFound(targetElement);
-    }
-  });
-
-  // Start observing the DOM for changes
-  observer.observe(document.body.main, { childList: true, subtree: true });
-}
-
-// Wait for DOMContentLoaded event before initiating the observer
-document.addEventListener('DOMContentLoaded', () => {
-  waitForElement();
+  let sheet = new CSSStyleSheet();
+  sheet.replaceSync('.afterpay-main-text { color: red; }');
+  host.shadowRoot.adoptedStyleSheets = [sheet];
 });
 
 

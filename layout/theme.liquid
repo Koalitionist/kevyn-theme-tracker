@@ -403,6 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let  externalScript = document.querySelector('script[src="https://static.afterpay.com/shopify-afterpay-javascript.js"]');
 
   externalScript.onload = function() {
+    console.log('------------yes--------')
       myFunction();
   };
 });

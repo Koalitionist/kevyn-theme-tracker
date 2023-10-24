@@ -399,7 +399,7 @@ host.shadowRoot.adoptedStyleSheets = [sheet];
 
 // Function to perform an action when the element is found
 function doSomethingWhenElementFound(targetElement) {
-  debugger;
+
  let squarePlacementElements = document.getElementsByTagName('square-placement');
 
 // If you want to access the first element with this tag name, you can do:
@@ -425,7 +425,7 @@ function waitForElement() {
   });
 
   // Start observing the DOM for changes
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body.main, { childList: true, subtree: true });
 }
 
 // Wait for DOMContentLoaded event before initiating the observer

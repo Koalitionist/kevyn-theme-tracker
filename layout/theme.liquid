@@ -381,9 +381,10 @@ var afterpay_js_snippet_version = '1.1.7';
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.7) -->
 
 <!-- Start afterpay shadow-root style update -->
-{% comment %} <script>
+<script>
 let sheet = new CSSStyleSheet;
 sheet.replaceSync( `.afterpay-main-text { color: pink }`)
 host.shadowRoot.adoptedStyleSheets.push(sheet)
-</script> {% endcomment %}
+debugger;
+</script>
 <!-- End afterpay shadow-root style update -->

@@ -379,21 +379,3 @@ var afterpay_js_snippet_version = '1.1.7';
 <!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->
 {% endif %}
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.7) -->
-
-<!-- Start afterpay shadow-root style update -->
-<script>
-// Get all elements with the tag name <square-placement>
-var squarePlacementElements = document.getElementsByTagName('square-placement');
-
-// If you want to access the first element with this tag name, you can do:
-var firstSquarePlacementElement = squarePlacementElements[0];
-
-let host = firstSquarePlacementElement;
-
-let sheet = new CSSStyleSheet;
-sheet.replaceSync( `.afterpay-main-text { color: pink }`)
-host.shadowRoot.adoptedStyleSheets.push(sheet)
-
-
-</script>
-<!-- End afterpay shadow-root style update -->

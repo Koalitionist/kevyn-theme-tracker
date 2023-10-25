@@ -56,8 +56,7 @@
       ],
       "settings": {
         "source": "video",
-        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123_HEADER_BANNER_1.jpg",
-        "video": "shopify:\/\/files\/videos\/Copy of Opulent Web Video (1).mp4",
+        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
         "video_url": "",
         "url": "shopify:\/\/products\/the-lighting-stick",
         "image__object_fit": "object-cover",

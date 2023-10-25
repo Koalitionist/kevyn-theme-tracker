@@ -333,7 +333,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE COLOR STICK<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -431,8 +431,8 @@
         "b6debc72-2368-456d-a06b-779d56421b25": {
           "type": "text",
           "settings": {
-            "title": "<h2>THE LIGHTING STICK<\/h2>",
-            "title_font": 1,
+            "title": "<h1>THE LIGHTING STICK<\/h1>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",

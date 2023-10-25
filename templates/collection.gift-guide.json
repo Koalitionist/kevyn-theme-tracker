@@ -326,7 +326,7 @@
             "button_secondary__style": "button-primary--outline",
             "align__horizontal": "items-center text-center",
             "section_max_width": "max-w-2xl",
-            "margin_bottom": 0
+            "margin_bottom": 24
           }
         },
         "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_products-1": {
@@ -369,6 +369,72 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "8c333b07-3f65-46b3-992e-c1dfb54deb99": {
+      "type": "products-scrollable-koa",
+      "blocks": {
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-heading-1": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h3>HOLIDAY<\/h3>",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 24
+          }
+        },
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_products-1": {
+          "type": "source_products",
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_collection-1": {
+          "type": "source_collection",
+          "settings": {
+            "source": "holiday"
+          }
+        },
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_metafield-1": {
+          "type": "source_metafield",
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-heading-1",
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_products-1",
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_collection-1",
+        "template--14932877377623__8c333b07-3f65-46b3-992e-c1dfb54deb99-source_metafield-1"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -379,6 +445,7 @@
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
     "6aa9922c-61d7-4d79-aae3-52e054e55c9d",
-    "dc974bd2-32ed-43c9-aa69-3586c1ec5efd"
+    "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
+    "8c333b07-3f65-46b3-992e-c1dfb54deb99"
   ]
 }

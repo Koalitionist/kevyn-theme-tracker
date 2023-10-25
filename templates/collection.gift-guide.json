@@ -1,0 +1,247 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>[title]<\/h2>",
+            "title_font": 3,
+            "margin_bottom": 10,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38": {
+          "type": "product_count",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Products ([count])<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "9b52ae94-6586-4ed8-bebb-505003961df6": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "<p>[description]<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26",
+        "bb4eec3b-0a57-4e3a-9094-c46f39b73f38",
+        "9b52ae94-6586-4ed8-bebb-505003961df6"
+      ],
+      "settings": {
+        "image__show": true,
+        "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
+        "height_desktop": 300,
+        "height_mobile": 300,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "filter_sort_bar": {
+      "type": "main-collection-filter-sort-bar",
+      "settings": {
+        "filters__show": true,
+        "filters__type": "megamenu",
+        "filters__count": true,
+        "sort__show": true,
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "pagination_size": 8,
+        "columns__desktop": "lg:grid-cols-4",
+        "columns__mobile": "grid-cols-2",
+        "card_style": "default",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "6dc3e34a-7f08-4af6-8227-793033e453b3": {
+          "type": "description",
+          "settings": {
+            "title": "<p>[description]<\/p>",
+            "title_font": 1,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "6dc3e34a-7f08-4af6-8227-793033e453b3"
+      ],
+      "disabled": true,
+      "settings": {
+        "image__show": false,
+        "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
+        "height_desktop": 180,
+        "height_mobile": 180,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "df631480-8a8c-4a52-a390-7443ecf7ae96": {
+      "type": "newsletter",
+      "blocks": {
+        "db877fd7-0d3d-4594-b04b-9af931ddcb1f": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>Join The Team For 10% Off<\/h2>",
+            "title_font": 2,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 22,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "5f42c9d0-8a12-4ab9-9179-177f44d8cf46": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>AND Stay Updated with Exlusive Promotions<\/h5>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 34,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "0454f268-0847-4b5a-b79d-9394974b8c69": {
+          "type": "email",
+          "settings": {
+            "placeholder_text": "Enter your email",
+            "button_primary__text": "Sign Up",
+            "button_primary__style": "button-primary",
+            "tag": "",
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "db877fd7-0d3d-4594-b04b-9af931ddcb1f",
+        "5f42c9d0-8a12-4ab9-9179-177f44d8cf46",
+        "0454f268-0847-4b5a-b79d-9394974b8c69"
+      ],
+      "disabled": true,
+      "settings": {
+        "image__overlay": "",
+        "min_height": 400,
+        "section_max_width": "max-w-4xl",
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "sectionID": ""
+      }
+    },
+    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8": {
+      "type": "tagged-product-images",
+      "blocks": {
+        "5ba16434-29f7-4281-b7f6-7c81a3d230b2": {
+          "type": "product",
+          "settings": {
+            "product": "magsafe-iphone-cases-black-edition",
+            "tag": "@captain.sterling",
+            "description": "",
+            "description_font": 1,
+            "action": "<p>Get [title]<\/p>",
+            "action_font": 1,
+            "action__style": "plain-link text-center"
+          }
+        },
+        "f5bd6899-3f1c-4ab2-91b2-dbc13936dcaa": {
+          "type": "product",
+          "settings": {
+            "product": "cloud-magsafe-iphone-case",
+            "tag": "@selenarebeccalopez",
+            "description": "",
+            "description_font": 1,
+            "action": "<p>Get [title]<\/p>",
+            "action_font": 1,
+            "action__style": "plain-link text-center"
+          }
+        },
+        "110c1eda-1863-4be9-9faa-cf78442cdfdf": {
+          "type": "product",
+          "settings": {
+            "product": "space-magsafe-iphone-case",
+            "tag": "@_griffin_visuals_",
+            "description": "",
+            "description_font": 1,
+            "action": "<p>Get [title]<\/p>",
+            "action_font": 1,
+            "action__style": "plain-link text-center"
+          }
+        }
+      },
+      "block_order": [
+        "5ba16434-29f7-4281-b7f6-7c81a3d230b2",
+        "f5bd6899-3f1c-4ab2-91b2-dbc13936dcaa",
+        "110c1eda-1863-4be9-9faa-cf78442cdfdf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<h2><strong>Let's Stay Connected<\/strong><\/h2>",
+        "title_font": 1,
+        "subtitle": "<h5>Tag us <strong>@bullstrap<\/strong><\/h5>",
+        "subtitle_font": 1,
+        "section_max_width": "max-w-6xl",
+        "align__horizontal": "items-center text-center",
+        "product_grid_max_width": "max-w-5xl",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "filter_sort_bar",
+    "product-grid",
+    "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
+    "df631480-8a8c-4a52-a390-7443ecf7ae96",
+    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8"
+  ]
+}

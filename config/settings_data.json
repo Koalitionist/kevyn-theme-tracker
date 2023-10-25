@@ -1120,7 +1120,7 @@
               "rows": "1",
               "show_images": false,
               "image__overlay": "",
-              "show_caption": true,
+              "show_caption": false,
               "image_caption_color": "#ffffff",
               "override_1_handle": "brushes",
               "override_2_handle": "eyelash-curler",

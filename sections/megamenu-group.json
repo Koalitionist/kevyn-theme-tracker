@@ -31,7 +31,6 @@
         },
         "9b8f1e74-284c-4aab-b615-c95bb73c5548": {
           "type": "menu",
-          "disabled": true,
           "settings": {
             "menu": "main-menu",
             "icon_style": "plus",
@@ -55,7 +54,6 @@
         },
         "499dba69-ea53-4da7-9e3c-571904f2fc15": {
           "type": "menu",
-          "disabled": true,
           "settings": {
             "menu": "",
             "icon_style": "chevron-right",
@@ -452,7 +450,6 @@
         "3efbddaa-21d2-4265-ae30-49f2aabde9d1",
         "ab92f72d-c069-4d20-8b5d-82f9d184fb91"
       ],
-      "disabled": true,
       "settings": {
         "handle": "shop",
         "grid_gap": 16,

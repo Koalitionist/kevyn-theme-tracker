@@ -181,7 +181,7 @@
     "product_card__labels__discount": "percentage",
     "product_card__variant_count__show": false,
     "typography_product_card__title__font_font_family": "Calibre",
-    "typography_product_card__title__font_size_weight_height": "16px \/ 14px | 400 | 1 \/ 1.35 | 1",
+    "typography_product_card__title__font_size_weight_height": "16px \/ 14px | 100 | 1 \/ 1.35 | 1",
     "typography_product_card__title__font_spacing_transform_style": "0 | none | normal",
     "product_card__title__type": 1,
     "product_card__rating__show": true,

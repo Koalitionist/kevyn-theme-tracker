@@ -174,12 +174,30 @@
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
+        },
+        "ca56cc07-91f3-4adb-87b9-1f001af65de6": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "945203fb-49d0-4913-bb69-841d863d077e",
         "b93278cf-2f08-43ce-b7be-7f1ec158cc76",
-        "be100fda-b389-4dd0-9e97-dea78e7def26"
+        "be100fda-b389-4dd0-9e97-dea78e7def26",
+        "ca56cc07-91f3-4adb-87b9-1f001af65de6"
       ],
       "settings": {
         "source": "image",
@@ -198,7 +216,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "section_liquid": "",
         "sectionID": ""
       }

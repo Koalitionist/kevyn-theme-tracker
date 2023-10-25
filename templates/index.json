@@ -256,7 +256,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE CONTRAST STICK<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -336,7 +336,7 @@
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",

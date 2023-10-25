@@ -6,11 +6,11 @@
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
           "type": "text",
           "settings": {
-            "title": "<p>NEW<\/p>",
-            "title_font": 1,
+            "title": "<h1>NEW<\/h1>",
+            "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",

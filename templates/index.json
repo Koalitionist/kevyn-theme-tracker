@@ -49,7 +49,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
+            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",

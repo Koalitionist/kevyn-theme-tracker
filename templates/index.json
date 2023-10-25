@@ -508,15 +508,15 @@
         "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_dca93a3e-63fd-453c-abb7-afdb0dd45ec1.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",
             "image__overlay": "",
             "url": "",
             "title": "",
             "title_font": 1,
-            "button_primary__text": "NEW PRO LASH CURLER",
-            "button_primary__url": "shopify:\/\/products\/the-professional-eyelash-curler",
+            "button_primary__text": "OPULENT FINISHING POWDERS",
+            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "",
             "button_secondary__style": "button-primary--outline",
             "responsive_visibility": "responsive"

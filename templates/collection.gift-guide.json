@@ -292,7 +292,7 @@
       ],
       "settings": {
         "product_source": "blocks",
-        "product_limit": 12,
+        "product_limit": 23,
         "hide_out_of_stock": false,
         "hide_if_empty": false,
         "container_overflow": false,
@@ -358,7 +358,7 @@
       ],
       "settings": {
         "product_source": "blocks",
-        "product_limit": 12,
+        "product_limit": 24,
         "hide_out_of_stock": false,
         "hide_if_empty": false,
         "container_overflow": false,

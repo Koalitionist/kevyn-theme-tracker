@@ -242,25 +242,24 @@
       "blocks": {
         "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-heading-1": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "preheading": "",
             "preheading_font": 1,
-            "title": "",
-            "title_font": 1,
+            "title": "<h3>GIFT SETS<\/h3>",
+            "title_font": 3,
             "subtitle": "",
             "subtitle_font": 1,
             "content": "",
             "content_font": 1,
-            "button_primary__text": "Shop now",
+            "button_primary__text": "",
             "button_primary__url": "\/",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",
             "align__horizontal": "items-center text-center",
             "section_max_width": "max-w-2xl",
-            "margin_bottom": 0
+            "margin_bottom": 24
           }
         },
         "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_products-1": {

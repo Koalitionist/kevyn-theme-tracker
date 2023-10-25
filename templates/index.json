@@ -1075,12 +1075,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3": {
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DuetDefiner_Model_1000x1000px300dpi.jpg",
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CpF2FaPMz9J\/",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -1089,12 +1089,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -1117,12 +1117,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
+            "image": "shopify:\/\/shop_images\/DuetDefiner_Model_1000x1000px300dpi.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
+            "url": "https:\/\/www.instagram.com\/p\/CpF2FaPMz9J\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -1135,10 +1135,10 @@
       "block_order": [
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0",
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5",
         "caf1f722-815d-439e-9def-ee1750d71d96",
-        "1de5f47a-eee9-4730-ba8f-774bd2f953b5"
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

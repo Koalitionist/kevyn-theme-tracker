@@ -58,6 +58,7 @@
     },
     "filter_sort_bar": {
       "type": "main-collection-filter-sort-bar",
+      "disabled": true,
       "settings": {
         "filters__show": true,
         "filters__type": "megamenu",
@@ -70,6 +71,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "pagination_size": 8,
         "columns__desktop": "lg:grid-cols-4",
@@ -234,6 +236,140 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "6aa9922c-61d7-4d79-aae3-52e054e55c9d": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 0
+          }
+        },
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_products-1": {
+          "type": "source_products",
+          "disabled": true,
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_collection-1": {
+          "type": "source_collection",
+          "settings": {
+            "source": "gift-sets"
+          }
+        },
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_metafield-1": {
+          "type": "source_metafield",
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-heading-1",
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_products-1",
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_collection-1",
+        "template--14932877377623__6aa9922c-61d7-4d79-aae3-52e054e55c9d-source_metafield-1"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "dc974bd2-32ed-43c9-aa69-3586c1ec5efd": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<p>Stocking stuffers<\/p>",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 0
+          }
+        },
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_products-1": {
+          "type": "source_products",
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_collection-1": {
+          "type": "source_collection",
+          "settings": {
+            "source": "90s-nostalgia"
+          }
+        },
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_metafield-1": {
+          "type": "source_metafield",
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-heading-1",
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_products-1",
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_collection-1",
+        "template--14932877377623__dc974bd2-32ed-43c9-aa69-3586c1ec5efd-source_metafield-1"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -242,6 +378,8 @@
     "product-grid",
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
-    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8"
+    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
+    "6aa9922c-61d7-4d79-aae3-52e054e55c9d",
+    "dc974bd2-32ed-43c9-aa69-3586c1ec5efd"
   ]
 }

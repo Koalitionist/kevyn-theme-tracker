@@ -6,11 +6,11 @@
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
           "type": "text",
           "settings": {
-            "title": "<h2>NEW<\/h2>",
-            "title_font": 3,
+            "title": "<p>NEW<\/p>",
+            "title_font": 1,
             "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -20,25 +20,11 @@
         "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
           "type": "text",
           "settings": {
-            "title": "<h1>VELVET LIP PAINT<\/h1>",
-            "title_font": 3,
+            "title": "<h1>OPULENT <\/h1><h1>FINISHING <\/h1><h1>POWDER<\/h1>",
+            "title_font": 1,
             "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "379b605c-c75c-4835-a484-cb8d447550fa": {
-          "type": "text",
-          "settings": {
-            "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -49,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
+            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
@@ -66,12 +52,12 @@
       "block_order": [
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
         "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
-        "379b605c-c75c-4835-a484-cb8d447550fa",
         "00e07788-6c56-44a8-99ec-01804e63100e"
       ],
       "settings": {
         "source": "video",
-        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
+        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123_HEADER_BANNER_1.jpg",
+        "video": "shopify:\/\/files\/videos\/Copy of Opulent Web Video (1).mp4",
         "video_url": "",
         "url": "shopify:\/\/products\/the-lighting-stick",
         "image__object_fit": "object-cover",

@@ -132,6 +132,55 @@
     },
     "113443f1-f151-41f8-8d5b-7c235c9b252d": {
       "type": "image-banner",
+      "blocks": {
+        "945203fb-49d0-4913-bb69-841d863d077e": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>20% OFF<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b93278cf-2f08-43ce-b7be-7f1ec158cc76": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>HOLIDAY GIFT GUIDE<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "be100fda-b389-4dd0-9e97-dea78e7def26": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>Use code: GG20<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "945203fb-49d0-4913-bb69-841d863d077e",
+        "b93278cf-2f08-43ce-b7be-7f1ec158cc76",
+        "be100fda-b389-4dd0-9e97-dea78e7def26"
+      ],
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/HolidayGiftGuide_Banner_2400x1350px.jpg",

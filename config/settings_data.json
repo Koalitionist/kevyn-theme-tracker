@@ -621,23 +621,7 @@
               "text": "<h6>20% OFF HOLIDAY GIFT GUIDE | CODE: GG20<\/h6>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
-              "color_bg": "#000000",
-              "color_text": "#ffffff",
-              "position": "center",
-              "display_duration": 10,
-              "scheduled": false,
-              "start_date": "",
-              "end_date": ""
-            }
-          },
-          "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
-            "type": "announcement",
-            "settings": {
-              "text": "<h6>FREE DOMESTIC SHIPPING ON ALL ORDERS $75+<\/h6>",
-              "short_text": "",
-              "announcement_font": 3,
-              "link": "shopify:\/\/collections",
+              "link": "shopify:\/\/collections\/gift-guide",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",
@@ -675,6 +659,22 @@
               "margin_bottom": 34,
               "section_max_width": "max-w-sm",
               "responsive_visibility": "responsive"
+            }
+          },
+          "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
+            "type": "announcement",
+            "settings": {
+              "text": "<h6>FREE DOMESTIC SHIPPING ON ALL ORDERS $75+<\/h6>",
+              "short_text": "",
+              "announcement_font": 3,
+              "link": "shopify:\/\/collections",
+              "color_bg": "#000000",
+              "color_text": "#ffffff",
+              "position": "center",
+              "display_duration": 10,
+              "scheduled": false,
+              "start_date": "",
+              "end_date": ""
             }
           },
           "802faf61-2f10-41e8-95ef-896cecb66483": {
@@ -720,9 +720,9 @@
         },
         "block_order": [
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776",
-          "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "bff3add2-447d-4fdd-a609-bf2944c441aa",
           "f25ef904-6b1a-45c1-8304-510b7bc9f931",
+          "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "802faf61-2f10-41e8-95ef-896cecb66483",
           "387c9a24-ed60-473d-b4ff-fac00982e9be"
         ],
@@ -1055,15 +1055,10 @@
               "show_caption": false,
               "image_caption_color": "#1f0733",
               "override_1_handle": "new-arrivals",
-              "override_1_image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_dca93a3e-63fd-453c-abb7-afdb0dd45ec1.jpg",
               "override_2_handle": "online-exclusives",
-              "override_2_image": "shopify:\/\/shop_images\/Feb_Lifestyle_10_EComm_Mini_Starter_Set_1200x1200px.jpg",
               "override_3_handle": "shop-all",
-              "override_3_image": "shopify:\/\/shop_images\/ProKitsBanner.jpg",
               "override_4_handle": "nyfw-2023-get-the-look",
-              "override_4_image": "shopify:\/\/shop_images\/NYFWmobile.jpg",
-              "override_5_handle": "iconic-products",
-              "override_5_image": "shopify:\/\/shop_images\/Legacy_Products_031223_1200x1200px-10.jpg"
+              "override_5_handle": "iconic-products"
             }
           },
           "d74b7c63-840d-4f28-a204-31de924c9894": {

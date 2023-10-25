@@ -617,9 +617,8 @@
         "blocks": {
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<h6>NEW ✨ SHADE FINDER QUIZ<\/h6>",
+              "text": "<h6>20% OFF HOLIDAY GIFT GUIDE | CODE: GG20<\/h6>",
               "short_text": "",
               "announcement_font": 3,
               "link": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
@@ -717,20 +716,6 @@
               "section_max_width": "max-w-full",
               "responsive_visibility": "responsive"
             }
-          },
-          "976d24df-d4f0-4a32-a6e7-8606c70e9a63": {
-            "type": "footer_text",
-            "settings": {
-              "title": "<h6>FREE SHIPPING $75+ <\/h6>",
-              "title_font": 1,
-              "opacity": 100,
-              "alignment_desktop": "[text-align:inherit]",
-              "alignment_mobile": "max-md:[text-align:inherit]",
-              "margin_top": 0,
-              "margin_bottom": 8,
-              "section_max_width": "max-w-2xl",
-              "responsive_visibility": "responsive"
-            }
           }
         },
         "block_order": [
@@ -739,8 +724,7 @@
           "bff3add2-447d-4fdd-a609-bf2944c441aa",
           "f25ef904-6b1a-45c1-8304-510b7bc9f931",
           "802faf61-2f10-41e8-95ef-896cecb66483",
-          "387c9a24-ed60-473d-b4ff-fac00982e9be",
-          "976d24df-d4f0-4a32-a6e7-8606c70e9a63"
+          "387c9a24-ed60-473d-b4ff-fac00982e9be"
         ],
         "settings": {
           "free_shipping_bar__show": "disable",

@@ -617,6 +617,7 @@
         "blocks": {
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<h6>NEW ✨ SHADE FINDER QUIZ<\/h6>",
               "short_text": "",
@@ -634,7 +635,7 @@
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
             "settings": {
-              "text": "<p>FREE DOMESTIC SHIPPING ON ALL ORDERS $75+<\/p>",
+              "text": "<h6>FREE DOMESTIC SHIPPING ON ALL ORDERS $75+<\/h6>",
               "short_text": "",
               "announcement_font": 3,
               "link": "shopify:\/\/collections",

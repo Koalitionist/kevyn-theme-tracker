@@ -525,13 +525,13 @@
         "862565af-e409-40fa-8bd2-583ed8a15ce3": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_June_Lifestyle_2_SSE_Duet_Concealer_Brush_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_August_06_Complexion_Group_Shot_1200x1200px.jpg",
             "image__overlay": "",
             "url": "",
             "title": "",
             "title_font": 1,
-            "button_primary__text": "BECOME A PRO MEMBER",
-            "button_primary__url": "shopify:\/\/pages\/pro",
+            "button_primary__text": "Shade finder quiz",
+            "button_primary__url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
             "button_primary__style": "button-primary",
             "button_secondary__text": "Learn More",
             "button_secondary__url": "",

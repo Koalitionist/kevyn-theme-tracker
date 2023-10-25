@@ -94,15 +94,26 @@
     "c01c8908-eb19-4d95-a852-323ab30e41cd": {
       "type": "products-scrollable",
       "blocks": {
-        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3": {
-          "type": "view_all_bar",
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f": {
+          "type": "heading",
           "settings": {
+            "preheading": "",
+            "preheading_font": 1,
             "title": "<h2>BEST SELLERS<\/h2>",
             "title_font": 3,
-            "view_all_text": "<p>View All<\/p>",
-            "view_all_font": 3,
-            "url": "",
-            "margin_bottom": 36
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 14
           }
         },
         "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
@@ -113,7 +124,7 @@
         }
       },
       "block_order": [
-        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3",
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f",
         "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
       ],
       "settings": {

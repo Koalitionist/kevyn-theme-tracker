@@ -185,7 +185,7 @@
         "source": "image",
         "image": "shopify:\/\/shop_images\/HolidayGiftGuide_Banner_2400x1350px.jpg",
         "video_url": "",
-        "url": "",
+        "url": "shopify:\/\/collections\/gift-guide",
         "image__object_fit": "object-cover",
         "image__overlay": "",
         "height": 640,

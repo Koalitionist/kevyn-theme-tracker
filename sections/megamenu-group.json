@@ -477,16 +477,19 @@
         "6d8208fe-1228-49ea-87bf-7351b30b22bc": {
           "type": "feature_grid",
           "settings": {
-            "title": "<p>COMPLEXION<\/p>",
+            "title": "",
             "title_font": 1,
             "products": [
 
             ],
             "collections": [
-              "complexion"
+              "complexion",
+              "cheek",
+              "contour",
+              "highlighting"
             ],
             "blog": "",
-            "feature_title": "<p>[title]<\/p>",
+            "feature_title": "",
             "featured_title_font": 1,
             "text_position": "right",
             "overlay": "rgba(0,0,0,0)",

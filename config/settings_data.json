@@ -1086,7 +1086,7 @@
               "handle": "face",
               "font_scale": 100,
               "rows": "1",
-              "show_images": true,
+              "show_images": false,
               "image__overlay": "",
               "show_caption": false,
               "image_caption_color": "#ffffff",

@@ -458,11 +458,92 @@
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "responsive_visibility": "responsive"
       }
+    },
+    "52df4cba-2362-4139-ab4a-19c63188cf26": {
+      "type": "megamenu",
+      "blocks": {
+        "2d4d3b0c-ce11-4738-90df-dc0f8323fd3f": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 6,
+            "grid_rows": 1,
+            "padding_bottom": "pb-0",
+            "padding_top": "pt-0",
+            "align__vertical": "justify-center",
+            "align__horizontal": "items-center text-center",
+            "section_visibility": "responsive"
+          }
+        },
+        "053e66ca-e159-4c94-9310-99ffbda8e320": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "title_font": 1,
+            "menu": "face",
+            "link_title": "<p>[link]<\/p>",
+            "link_font": 1,
+            "spacing": 0,
+            "margin_bottom": 0
+          }
+        },
+        "9b19eb25-e941-4be9-8fc1-009bd44b1f07": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 4,
+            "grid_rows": 1,
+            "padding_bottom": "pb-0",
+            "padding_top": "pt-0",
+            "align__vertical": "justify-center",
+            "align__horizontal": "items-center text-center",
+            "section_visibility": "responsive"
+          }
+        },
+        "fd067ae6-8748-4882-a355-41694f39d274": {
+          "type": "highlight_items",
+          "settings": {
+            "title": "<p>Featured<\/p>",
+            "title_font": 1,
+            "url_1": "",
+            "image_1": "shopify:\/\/shop_images\/KA_StrippedNudeSkinTInt_Medium_ST07_df0a83d1-3324-4906-bc24-efb74a183682.jpg",
+            "overlay_1": "",
+            "labels_1": "product 1",
+            "text_1": "",
+            "text_1_font": 1,
+            "url_2": "",
+            "image_2": "shopify:\/\/shop_images\/Foundation_Balm_Sample_V2_Light_02_1.jpg",
+            "overlay_2": "",
+            "labels_2": "product 2",
+            "text_2": "",
+            "text_2_font": 1,
+            "url_3": "",
+            "overlay_3": "",
+            "labels_3": "",
+            "text_3": "",
+            "text_3_font": 1,
+            "size": 512,
+            "gap": 16,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "2d4d3b0c-ce11-4738-90df-dc0f8323fd3f",
+        "053e66ca-e159-4c94-9310-99ffbda8e320",
+        "9b19eb25-e941-4be9-8fc1-009bd44b1f07",
+        "fd067ae6-8748-4882-a355-41694f39d274"
+      ],
+      "settings": {
+        "handle": "",
+        "grid_gap": 16,
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "responsive_visibility": "responsive"
+      }
     }
   },
   "order": [
     "91fdad5f-eba6-402c-a514-e4064f3d4754",
     "be752d2c-6b3d-42ac-9191-7ef834365a46",
-    "a66831e4-2fd7-4c31-b577-9b13280f37ab"
+    "a66831e4-2fd7-4c31-b577-9b13280f37ab",
+    "52df4cba-2362-4139-ab4a-19c63188cf26"
   ]
 }

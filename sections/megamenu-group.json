@@ -56,7 +56,7 @@
           "type": "menu",
           "disabled": true,
           "settings": {
-            "menu": "",
+            "menu": "mega-shop-face-eye-lip-tools",
             "icon_style": "chevron-right",
             "typography_style": "megamenu-link",
             "spacing": 20,
@@ -165,7 +165,7 @@
       "settings": {
         "logo": "branding_logo_dark_on_light",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "floating": true,
+        "floating": false,
         "align__horizontal": "items-center text-center",
         "sectionID": ""
       }
@@ -451,6 +451,7 @@
         "3efbddaa-21d2-4265-ae30-49f2aabde9d1",
         "ab92f72d-c069-4d20-8b5d-82f9d184fb91"
       ],
+      "disabled": true,
       "settings": {
         "handle": "shop",
         "grid_gap": 16,

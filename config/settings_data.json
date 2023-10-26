@@ -420,7 +420,6 @@
           },
           "2e3a2403-5ae2-45cf-a6e2-57eb41ca84c2": {
             "type": "megamenu",
-            "disabled": true,
             "settings": {
               "handle": "face",
               "font_scale": 100,
@@ -429,15 +428,15 @@
               "image__overlay": "linear-gradient(46deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 19%, rgba(0, 0, 0, 0.2) 100%)",
               "show_caption": false,
               "image_caption_color": "#ffffff",
-              "override_1_handle": "complexion",
+              "override_1_handle": "",
               "override_1_image": "shopify:\/\/shop_images\/FB_SWATCH_LIFESTYLE.jpg",
-              "override_2_handle": "cheek",
+              "override_2_handle": "",
               "override_2_image": "shopify:\/\/shop_images\/Feb_Lifestyle_9_EComm_Homepage_1200x1200px.jpg",
-              "override_3_handle": "contour",
+              "override_3_handle": "",
               "override_3_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker.gif",
-              "override_4_handle": "highlight",
+              "override_4_handle": "",
               "override_4_image": "shopify:\/\/shop_images\/KAB_AUGUST_03_GLASS_GLOW_FACE_SWATCHES_1200x1200px.jpg",
-              "override_5_handle": "books",
+              "override_5_handle": "",
               "override_5_image": "shopify:\/\/shop_images\/Marissa_Wilson.jpg"
             }
           },

@@ -19,7 +19,7 @@
             "grid_layout": "grid",
             "facebook_url": "",
             "instagram_url": "",
-            "thumbnails__show": true,
+            "thumbnails__show": false,
             "metafield": "smart.menu_image",
             "override_1_handle": "shop",
             "override_2_handle": "shade-finder",

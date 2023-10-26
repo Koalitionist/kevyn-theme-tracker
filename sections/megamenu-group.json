@@ -507,7 +507,7 @@
           "settings": {
             "title": "",
             "title_font": 1,
-            "menu": "",
+            "menu": "face",
             "link_title": "<p>[link]<\/p>",
             "link_font": 1,
             "spacing": 0,

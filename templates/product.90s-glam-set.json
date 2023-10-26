@@ -536,22 +536,9 @@
             "responsive_visibility": "responsive"
           }
         },
-        "40e5a7ef-bebb-4b56-b4ad-019760dc8764": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "76fed645-fde5-4a66-82a8-877ba0f3b178": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
             "image__overlay": "",
@@ -564,12 +551,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4": {
+        "40e5a7ef-bebb-4b56-b4ad-019760dc8764": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image": "shopify:\/\/shop_images\/nLHAdRpg.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "url": "https:\/\/www.instagram.com\/p\/CxbbZ27gjNR\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -605,15 +592,29 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "40e5a7ef-bebb-4b56-b4ad-019760dc8764",
         "76fed645-fde5-4a66-82a8-877ba0f3b178",
-        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4",
+        "40e5a7ef-bebb-4b56-b4ad-019760dc8764",
         "c6117715-a063-464b-b7e2-c4820d1055bf",
-        "76b0603d-84c0-4f88-b853-25777ead1622"
+        "76b0603d-84c0-4f88-b853-25777ead1622",
+        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

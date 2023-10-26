@@ -507,7 +507,7 @@
         "handle": "face",
         "grid_gap": 16,
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "responsive_visibility": "responsive"
+        "responsive_visibility": "max-md:hidden"
       }
     }
   },

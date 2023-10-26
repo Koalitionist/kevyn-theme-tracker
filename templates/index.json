@@ -6,11 +6,11 @@
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
           "type": "text",
           "settings": {
-            "title": "<p>NEW<\/p>",
-            "title_font": 1,
+            "title": "<h2>NEW<\/h2>",
+            "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -20,11 +20,25 @@
         "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
           "type": "text",
           "settings": {
-            "title": "<h1>OPULENT <\/h1><h1>FINISHING <\/h1><h1>POWDER<\/h1>",
-            "title_font": 1,
+            "title": "<h1>VELVET LIP PAINT<\/h1>",
+            "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "379b605c-c75c-4835-a484-cb8d447550fa": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -35,7 +49,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
+            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
@@ -52,12 +66,12 @@
       "block_order": [
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
         "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
+        "379b605c-c75c-4835-a484-cb8d447550fa",
         "00e07788-6c56-44a8-99ec-01804e63100e"
       ],
       "settings": {
         "source": "video",
-        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123_HEADER_BANNER_1.jpg",
-        "video": "shopify:\/\/files\/videos\/Copy of Opulent Web Video (1).mp4",
+        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
         "video_url": "",
         "url": "shopify:\/\/products\/the-lighting-stick",
         "image__object_fit": "object-cover",
@@ -72,7 +86,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "section_liquid": "",
         "sectionID": ""
       }
@@ -80,15 +94,26 @@
     "c01c8908-eb19-4d95-a852-323ab30e41cd": {
       "type": "products-scrollable",
       "blocks": {
-        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3": {
-          "type": "view_all_bar",
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f": {
+          "type": "heading",
           "settings": {
+            "preheading": "",
+            "preheading_font": 1,
             "title": "<h2>BEST SELLERS<\/h2>",
             "title_font": 3,
-            "view_all_text": "<p>View All<\/p>",
-            "view_all_font": 3,
-            "url": "",
-            "margin_bottom": 36
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 14
           }
         },
         "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
@@ -99,7 +124,7 @@
         }
       },
       "block_order": [
-        "53386ee8-c5d3-46b6-a2ad-5bbb511fd4b3",
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f",
         "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
       ],
       "settings": {
@@ -116,44 +141,13 @@
         "sectionID": ""
       }
     },
-    "c050b217-8204-4574-99ce-651874893724": {
-      "type": "richtext",
+    "113443f1-f151-41f8-8d5b-7c235c9b252d": {
+      "type": "image-banner",
       "blocks": {
-        "template--18752996770111__c050b217-8204-4574-99ce-651874893724-1682368928bd91794d-3": {
+        "945203fb-49d0-4913-bb69-841d863d077e": {
           "type": "text",
           "settings": {
-            "title": "<h2>THREE DIMENSIONS OF EFFORTLESS SCULPTING<\/h2>",
-            "title_font": 3,
-            "opacity": 58,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 48,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-[var(--layout-page-width)]",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--18752996770111__c050b217-8204-4574-99ce-651874893724-1682368928bd91794d-3"
-      ],
-      "settings": {
-        "align__horizontal": "items-center text-center",
-        "width": "max-w-[var(--layout-page-width)]",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-sm",
-        "padding_bottom": "pb-sm",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
-    "0d93169a-e1c0-4e95-afd6-0d89f4484b65": {
-      "type": "image-with-text",
-      "blocks": {
-        "6b47dd76-fdd3-4dfd-b55a-8a760addf61d": {
-          "type": "text",
-          "settings": {
-            "title": "<h2>AS EASY <\/h2><h2>AS <\/h2><h2>1-2-3<\/h2>",
+            "title": "<h1>20% OFF<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -164,10 +158,10 @@
             "responsive_visibility": "responsive"
           }
         },
-        "eddf0b05-4e4c-48df-b0d9-0a877c376135": {
+        "b93278cf-2f08-43ce-b7be-7f1ec158cc76": {
           "type": "text",
           "settings": {
-            "title": "<h5>Choose your highlight, <\/h5><h5>blush and contour<\/h5><h5> from our Signature<\/h5><h5> Sculpting Collection for an all-day, <\/h5><h5>effortless look.<\/h5>",
+            "title": "<h1>HOLIDAY GIFT GUIDE<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -177,45 +171,53 @@
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
+        },
+        "be100fda-b389-4dd0-9e97-dea78e7def26": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>Use code: GG20<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 4,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ca56cc07-91f3-4adb-87b9-1f001af65de6": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "6b47dd76-fdd3-4dfd-b55a-8a760addf61d",
-        "eddf0b05-4e4c-48df-b0d9-0a877c376135"
+        "945203fb-49d0-4913-bb69-841d863d077e",
+        "b93278cf-2f08-43ce-b7be-7f1ec158cc76",
+        "be100fda-b389-4dd0-9e97-dea78e7def26",
+        "ca56cc07-91f3-4adb-87b9-1f001af65de6"
       ],
       "settings": {
-        "source": "video",
-        "video": "shopify:\/\/files\/videos\/3 Finger Sculpting map (Instagram Post (Square)).mp4",
-        "video_url": "",
-        "metafield": "smart.image_with_text",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-[1fr_66%]",
-        "image__object_fit": "object-cover",
-        "image__order": "order-2",
-        "image__order__mobile": "max-md:-order-1",
-        "image__mobile_padding": false,
-        "align__vertical": "justify-center",
-        "align__horizontal": "items-center text-center",
-        "section_layout": "fullwidth",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
-        "section_liquid": "",
-        "sectionID": ""
-      }
-    },
-    "113443f1-f151-41f8-8d5b-7c235c9b252d": {
-      "type": "image-banner",
-      "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_LAUNCH_073123-12.jpg",
+        "image": "shopify:\/\/shop_images\/HolidayGiftGuide_Banner_2400x1350px.jpg",
         "video_url": "",
-        "url": "",
+        "url": "shopify:\/\/collections\/gift-guide",
         "image__object_fit": "object-cover",
         "image__overlay": "",
-        "height": 1050,
+        "height": 640,
         "height_mobile": 340,
         "align__vertical": "justify-center",
         "align__horizontal_no_text": "items-center",
@@ -225,7 +227,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "section_liquid": "",
         "sectionID": ""
       }
@@ -237,10 +239,10 @@
           "type": "text",
           "settings": {
             "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
-            "title_font": 3,
+            "title_font": 2,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 14,
             "section_max_width": "max-w-[var(--layout-page-width)]",
@@ -270,8 +272,8 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-5xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-lg",
-        "padding_bottom": "pb-lg",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
@@ -283,7 +285,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE CONTRAST STICK<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -360,10 +362,10 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE COLOR STICK<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -458,8 +460,8 @@
         "b6debc72-2368-456d-a06b-779d56421b25": {
           "type": "text",
           "settings": {
-            "title": "<h2>THE LIGHTING STICK<\/h2>",
-            "title_font": 1,
+            "title": "<h1>THE LIGHTING STICK<\/h1>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",
@@ -512,7 +514,7 @@
         "video_url": "",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[75%]",
+        "image__aspect_ratio": "pb-[100%]",
         "content_ratio": "md:grid-cols-2",
         "image__object_fit": "object-cover",
         "image__order": "-order-1",
@@ -535,15 +537,15 @@
         "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_dca93a3e-63fd-453c-abb7-afdb0dd45ec1.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",
             "image__overlay": "",
             "url": "",
             "title": "",
             "title_font": 1,
-            "button_primary__text": "NEW PRO LASH CURLER",
-            "button_primary__url": "shopify:\/\/products\/the-professional-eyelash-curler",
+            "button_primary__text": "OPULENT FINISHING POWDERS",
+            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "",
             "button_secondary__style": "button-primary--outline",
             "responsive_visibility": "responsive"
@@ -552,13 +554,13 @@
         "862565af-e409-40fa-8bd2-583ed8a15ce3": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_June_Lifestyle_2_SSE_Duet_Concealer_Brush_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_August_06_Complexion_Group_Shot_1200x1200px.jpg",
             "image__overlay": "",
             "url": "",
             "title": "",
             "title_font": 1,
-            "button_primary__text": "BECOME A PRO MEMBER",
-            "button_primary__url": "shopify:\/\/pages\/pro",
+            "button_primary__text": "Shade finder quiz",
+            "button_primary__url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
             "button_primary__style": "button-primary",
             "button_secondary__text": "Learn More",
             "button_secondary__url": "",
@@ -576,183 +578,6 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",
         "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
-    "c88f7abc-f293-492b-87c6-ee3eedeff8bf": {
-      "type": "richtext",
-      "blocks": {
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "<p>Neat Preheading<\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-1": {
-          "type": "accent_line",
-          "disabled": true,
-          "settings": {
-            "color": "#11ed6e",
-            "height": 3,
-            "width": 90,
-            "margin_top": 0,
-            "margin_bottom": 20,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "height": 80,
-            "margin_top": 0,
-            "margin_bottom": 18,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-3": {
-          "type": "text",
-          "settings": {
-            "title": "<h2>EDITOR'S PICKS<\/h2>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-left",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-4": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 24,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-5": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
-            "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
-            "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-full",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-0",
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-1",
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-2",
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-3",
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-4",
-        "template--14834529304663__c88f7abc-f293-492b-87c6-ee3eedeff8bf-16892728143b0f55b4-5"
-      ],
-      "settings": {
-        "align__horizontal": "items-start text-left",
-        "width": "max-w-[var(--layout-page-width)]",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
-    "31e10a51-dbe5-437c-a7e4-fc2aedc76660": {
-      "type": "categories",
-      "blocks": {
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-0": {
-          "type": "category",
-          "settings": {
-            "title": "<h2>FACE FORWARD<\/h2>",
-            "title_font": 1,
-            "content": "",
-            "content_font": 1,
-            "image": "shopify:\/\/shop_images\/KAB_June_Lifestyle_4_Etherealist_Concealer_1200x1200px.jpg",
-            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
-            "url": "shopify:\/\/collections\/face",
-            "link": "<p>EXPLORE<\/p>",
-            "link_font": 1,
-            "style": "row-span-2 pb-[calc(150%+24px)]",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-1": {
-          "type": "category",
-          "settings": {
-            "title": "<h2>BRIDAL LOOK<\/h2>",
-            "title_font": 1,
-            "content": "",
-            "content_font": 1,
-            "image": "shopify:\/\/shop_images\/SomethingBlueSet_1200x1200px.jpg",
-            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
-            "url": "shopify:\/\/collections\/bridal-get-the-look",
-            "link": "<p>EXPLORE<\/p>",
-            "link_font": 1,
-            "style": "row-span-1 pb-[75%]",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-2": {
-          "type": "category",
-          "settings": {
-            "title": "<h2>BETTER TOGETHER<\/h2>",
-            "title_font": 1,
-            "content": "",
-            "content_font": 1,
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-07-17_at_11.08.59_AM.png",
-            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
-            "url": "shopify:\/\/collections\/perfect-pairs",
-            "link": "<p>EXPORE<\/p>",
-            "link_font": 1,
-            "style": "row-span-1 pb-[75%]",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-0",
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-1",
-        "template--14834529304663__31e10a51-dbe5-437c-a7e4-fc2aedc76660-1689272426ff434560-2"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "container_overflow": true,
-        "center_products": true,
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
@@ -809,6 +634,7 @@
         "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1",
         "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1"
       ],
+      "disabled": true,
       "settings": {
         "product_source": "blocks",
         "product_limit": 12,
@@ -1248,22 +1074,9 @@
     "f9359fcb-c5d8-4d4e-a991-e7a7821039b9": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Eyeshadow.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CqyQ6AduhEG\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/download_1_a283c79b-5731-46f6-8d78-6e3bc0f25aad.jpg",
             "image__overlay": "",
@@ -1278,10 +1091,53 @@
         },
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/ProLashCurler.jpg",
             "image__overlay": "",
             "url": "https:\/\/www.instagram.com\/p\/CrgR3s7AQck\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "caf1f722-815d-439e-9def-ee1750d71d96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Cwsc7xKut9X\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -1306,9 +1162,11 @@
         }
       },
       "block_order": [
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0",
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5",
+        "caf1f722-815d-439e-9def-ee1750d71d96",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3"
       ],
       "settings": {
@@ -1445,16 +1303,12 @@
   "order": [
     "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "c01c8908-eb19-4d95-a852-323ab30e41cd",
-    "c050b217-8204-4574-99ce-651874893724",
-    "0d93169a-e1c0-4e95-afd6-0d89f4484b65",
     "113443f1-f151-41f8-8d5b-7c235c9b252d",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
     "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
     "94a2072d-0ce0-419c-996b-ed64b07f4648",
     "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6",
     "762d39e4-4b75-493f-9d46-b262cc99e399",
-    "c88f7abc-f293-492b-87c6-ee3eedeff8bf",
-    "31e10a51-dbe5-437c-a7e4-fc2aedc76660",
     "3c576937-3efa-4efc-8e59-161e786e2c4a",
     "4452e9a0-34c2-49b8-8617-fa9179fa8dec",
     "7252a397-b2d6-480b-b379-7bee1a4b42e4",

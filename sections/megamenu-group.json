@@ -533,7 +533,7 @@
         "fd067ae6-8748-4882-a355-41694f39d274"
       ],
       "settings": {
-        "handle": "",
+        "handle": "face",
         "grid_gap": 16,
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "responsive_visibility": "responsive"

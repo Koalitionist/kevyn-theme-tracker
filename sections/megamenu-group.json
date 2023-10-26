@@ -489,7 +489,7 @@
               "highlighting"
             ],
             "blog": "",
-            "feature_title": "",
+            "feature_title": "<p>[title]<\/p>",
             "featured_title_font": 1,
             "text_position": "right",
             "overlay": "rgba(0,0,0,0)",

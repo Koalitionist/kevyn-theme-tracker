@@ -420,6 +420,7 @@
           },
           "2e3a2403-5ae2-45cf-a6e2-57eb41ca84c2": {
             "type": "megamenu",
+            "disabled": true,
             "settings": {
               "handle": "face",
               "font_scale": 100,

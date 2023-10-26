@@ -451,12 +451,11 @@
         "3efbddaa-21d2-4265-ae30-49f2aabde9d1",
         "ab92f72d-c069-4d20-8b5d-82f9d184fb91"
       ],
-      "disabled": true,
       "settings": {
         "handle": "shop",
         "grid_gap": 16,
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
-        "responsive_visibility": "responsive"
+        "responsive_visibility": "max-md:hidden"
       }
     }
   },

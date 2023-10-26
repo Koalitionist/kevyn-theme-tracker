@@ -535,20 +535,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
           "type": "image",
           "settings": {
@@ -563,12 +549,25 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "576cc634-0198-411d-91f8-1f91ac9dc157": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
+            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "\/https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ec8a43d6-0e4d-4775-9dbe-0bef3ddd277c": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -580,9 +579,9 @@
       },
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "576cc634-0198-411d-91f8-1f91ac9dc157",
+        "ec8a43d6-0e4d-4775-9dbe-0bef3ddd277c"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

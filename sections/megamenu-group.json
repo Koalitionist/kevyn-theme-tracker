@@ -465,7 +465,7 @@
         "34095815-9907-41f2-b9fa-98235ab896e2": {
           "type": "content",
           "settings": {
-            "grid_columns": 2,
+            "grid_columns": 6,
             "grid_rows": 1,
             "padding_bottom": "pb-0",
             "padding_top": "pt-0",
@@ -513,12 +513,53 @@
             "spacing": 0,
             "margin_bottom": 0
           }
+        },
+        "4f81630d-90cc-43a0-bce8-5d07bb13ab11": {
+          "type": "content",
+          "settings": {
+            "grid_columns": 6,
+            "grid_rows": 1,
+            "padding_bottom": "pb-0",
+            "padding_top": "pt-0",
+            "align__vertical": "justify-center",
+            "align__horizontal": "items-center text-center",
+            "section_visibility": "responsive"
+          }
+        },
+        "6f581389-ceb5-4e17-ad0a-9c0bbb8aadf1": {
+          "type": "highlight_items",
+          "settings": {
+            "title": "<p>Featured items<\/p>",
+            "title_font": 1,
+            "url_1": "",
+            "image_1": "shopify:\/\/shop_images\/KA_StrippedNudeSkinTInt_Medium_ST07_df0a83d1-3324-4906-bc24-efb74a183682.jpg",
+            "overlay_1": "",
+            "labels_1": "Product 1",
+            "text_1": "",
+            "text_1_font": 1,
+            "url_2": "",
+            "image_2": "shopify:\/\/shop_images\/Foundation_Balm_Sample_V2_Light_02_1.jpg",
+            "overlay_2": "",
+            "labels_2": "Product 2",
+            "text_2": "",
+            "text_2_font": 1,
+            "url_3": "",
+            "overlay_3": "",
+            "labels_3": "",
+            "text_3": "",
+            "text_3_font": 1,
+            "size": 512,
+            "gap": 16,
+            "margin_bottom": 0
+          }
         }
       },
       "block_order": [
         "34095815-9907-41f2-b9fa-98235ab896e2",
         "6d8208fe-1228-49ea-87bf-7351b30b22bc",
-        "c8329b93-b133-4b73-8d06-aea87ce4d014"
+        "c8329b93-b133-4b73-8d06-aea87ce4d014",
+        "4f81630d-90cc-43a0-bce8-5d07bb13ab11",
+        "6f581389-ceb5-4e17-ad0a-9c0bbb8aadf1"
       ],
       "settings": {
         "handle": "face",

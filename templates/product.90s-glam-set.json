@@ -564,12 +564,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "c6117715-a063-464b-b7e2-c4820d1055bf"
+        "c6117715-a063-464b-b7e2-c4820d1055bf",
+        "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

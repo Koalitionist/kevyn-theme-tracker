@@ -552,10 +552,25 @@
         },
         "80d5d4fb-3178-4050-8fff-cf0ddf7f7992": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
             "image__overlay": "",
             "url": "https:\/\/www.instagram.com\/p\/Cwsc7xKut9X\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "362897cc-7971-4b31-9202-1d968c307b5c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyEJWGOgQuW\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -591,29 +606,15 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "362897cc-7971-4b31-9202-1d968c307b5c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CyEJWGOgQuW\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
         "a780bcb7-ad98-4234-ac8f-d9f533b5d7ac",
         "80d5d4fb-3178-4050-8fff-cf0ddf7f7992",
+        "362897cc-7971-4b31-9202-1d968c307b5c",
         "ec8a43d6-0e4d-4775-9dbe-0bef3ddd277c",
-        "576cc634-0198-411d-91f8-1f91ac9dc157",
-        "362897cc-7971-4b31-9202-1d968c307b5c"
+        "576cc634-0198-411d-91f8-1f91ac9dc157"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

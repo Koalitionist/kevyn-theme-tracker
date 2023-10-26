@@ -566,27 +566,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "e631ebaf-68bf-4e43-94db-b276ed5cdeed": {
+        "22a5e534-2b19-4cf2-94da-b5ffa58286d9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle02_2000x2000_300dpi.jpg",
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
             "image__overlay": "",
-            "url": "\/https:\/\/www.instagram.com\/p\/CymAFu1vixV\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -598,9 +583,23 @@
         "35f2a8af-1b32-4db6-8c8e-0138f77651af": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "\/https:\/\/www.instagram.com\/p\/CyEJWGOgQuW\/",
+            "url": "https:\/\/www.instagram.com\/p\/Cwsc7xKut9X\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e631ebaf-68bf-4e43-94db-b276ed5cdeed": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -614,9 +613,9 @@
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3",
-        "e631ebaf-68bf-4e43-94db-b276ed5cdeed",
-        "35f2a8af-1b32-4db6-8c8e-0138f77651af"
+        "22a5e534-2b19-4cf2-94da-b5ffa58286d9",
+        "35f2a8af-1b32-4db6-8c8e-0138f77651af",
+        "e631ebaf-68bf-4e43-94db-b276ed5cdeed"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

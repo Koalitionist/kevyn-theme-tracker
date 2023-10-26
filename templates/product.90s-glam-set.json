@@ -551,12 +551,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "c6117715-a063-464b-b7e2-c4820d1055bf": {
+        "76fed645-fde5-4a66-82a8-877ba0f3b178": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
+            "url": "",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -579,12 +579,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "76fed645-fde5-4a66-82a8-877ba0f3b178": {
+        "c6117715-a063-464b-b7e2-c4820d1055bf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
             "image__overlay": "",
-            "url": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -597,9 +597,9 @@
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "c6117715-a063-464b-b7e2-c4820d1055bf",
+        "76fed645-fde5-4a66-82a8-877ba0f3b178",
         "521e3ddb-aca9-4616-8f1f-7cdbe1a46ab4",
-        "76fed645-fde5-4a66-82a8-877ba0f3b178"
+        "c6117715-a063-464b-b7e2-c4820d1055bf"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

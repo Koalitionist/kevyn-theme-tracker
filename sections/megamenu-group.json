@@ -470,7 +470,7 @@
             "padding_bottom": "pb-0",
             "padding_top": "pt-0",
             "align__vertical": "justify-center",
-            "align__horizontal": "items-center text-center",
+            "align__horizontal": "items-start text-left",
             "section_visibility": "responsive"
           }
         },
@@ -501,6 +501,7 @@
         },
         "fd067ae6-8748-4882-a355-41694f39d274": {
           "type": "highlight_items",
+          "disabled": true,
           "settings": {
             "title": "<p>Featured<\/p>",
             "title_font": 1,

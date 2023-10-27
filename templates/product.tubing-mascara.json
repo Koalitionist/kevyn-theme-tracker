@@ -639,39 +639,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "37932129-5b0f-4cbf-911d-02c3f46d72b3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_08_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CvfPVCDuYD8\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "00bed168-abb5-4171-96a1-53de6a21ac09": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
             "image__overlay": "",
             "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "5bebe399-6533-40ff-b851-fe82d8a3b056": {
-          "type": "image",
-          "settings": {
-            "image__overlay": "",
-            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -693,13 +666,41 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "5bebe399-6533-40ff-b851-fe82d8a3b056": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "37932129-5b0f-4cbf-911d-02c3f46d72b3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_08_1.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CvfPVCDuYD8\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "37932129-5b0f-4cbf-911d-02c3f46d72b3",
         "00bed168-abb5-4171-96a1-53de6a21ac09",
+        "88113ffc-b7b5-4574-957c-d037677022ae",
         "5bebe399-6533-40ff-b851-fe82d8a3b056",
-        "88113ffc-b7b5-4574-957c-d037677022ae"
+        "37932129-5b0f-4cbf-911d-02c3f46d72b3"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

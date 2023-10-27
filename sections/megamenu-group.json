@@ -488,6 +488,7 @@
         },
         "9b19eb25-e941-4be9-8fc1-009bd44b1f07": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "grid_columns": 4,
             "grid_rows": 1,

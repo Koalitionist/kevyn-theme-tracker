@@ -535,20 +535,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "cfb6b292-c73b-4d55-888f-8780df937363": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "c2ca341b-f803-4db3-80c8-7ebf222c47a8": {
           "type": "image",
           "settings": {
@@ -590,14 +576,28 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "f6be9a05-d74f-4888-8c35-250baa5a99cf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_07_12.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyjPulaulQC\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "cfb6b292-c73b-4d55-888f-8780df937363",
         "c2ca341b-f803-4db3-80c8-7ebf222c47a8",
         "dd3c0012-b29c-4973-90e1-6781b8eb92e2",
-        "f0c3bdc5-e83d-4a8b-a255-e4156d9e3810"
+        "f0c3bdc5-e83d-4a8b-a255-e4156d9e3810",
+        "f6be9a05-d74f-4888-8c35-250baa5a99cf"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

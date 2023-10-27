@@ -669,6 +669,49 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "4d876698-eeef-418b-96c6-776dc29d76e5": {
+      "type": "image-with-text",
+      "blocks": {
+        "93a5bb92-c8ea-4db5-9706-af5e75b277f1": {
+          "type": "text",
+          "settings": {
+            "title": "<p>AWARD-WINNING, Professional Lash Curler, Developed by PRO makeup artists to answer the most requested NEED; refillable eyelash curler pads - Pairs with the <a href=\"\/products\/professional-lash-curler-refill-pads-3-pack\" target=\"_blank\" title=\"Professional Lash Curler Refill Pads (3-pack)\">Professional Lash Curler Pad Refills <\/a>(sold separately)<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "93a5bb92-c8ea-4db5-9706-af5e75b277f1"
+      ],
+      "settings": {
+        "source": "image",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -679,6 +722,7 @@
     "4027ad3f-eae7-4c4d-a66d-d3c89ca1c5f3",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
-    "b87d756b-cc56-4844-9812-087ed525f8d0"
+    "b87d756b-cc56-4844-9812-087ed525f8d0",
+    "4d876698-eeef-418b-96c6-776dc29d76e5"
   ]
 }

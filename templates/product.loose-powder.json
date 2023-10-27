@@ -521,40 +521,26 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "b0dd2b02-851f-4976-965b-c4d4e74e41d6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_SMOOTH_SET_LOOSE_POWDER_LIFESTYLE01_2000x2000px_144dpi.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cx6SvXbOhM1\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "c0ed36a8-a2ad-4f3e-8fb8-85f34c8282a2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "1bbd7413-c776-458f-a647-65825dfe16b8": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
             "image__overlay": "",
             "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b0dd2b02-851f-4976-965b-c4d4e74e41d6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_SMOOTH_SET_LOOSE_POWDER_LIFESTYLE01_2000x2000px_144dpi.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Cx6SvXbOhM1\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -576,13 +562,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "c0ed36a8-a2ad-4f3e-8fb8-85f34c8282a2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "b0dd2b02-851f-4976-965b-c4d4e74e41d6",
-        "c0ed36a8-a2ad-4f3e-8fb8-85f34c8282a2",
         "1bbd7413-c776-458f-a647-65825dfe16b8",
-        "c456cc98-9cd6-44e1-b06c-e08628880994"
+        "b0dd2b02-851f-4976-965b-c4d4e74e41d6",
+        "c456cc98-9cd6-44e1-b06c-e08628880994",
+        "c0ed36a8-a2ad-4f3e-8fb8-85f34c8282a2"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

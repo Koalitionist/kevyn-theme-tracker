@@ -639,34 +639,6 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "37932129-5b0f-4cbf-911d-02c3f46d72b3": {
           "type": "image",
           "settings": {
@@ -694,13 +666,40 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "5bebe399-6533-40ff-b851-fe82d8a3b056": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "88113ffc-b7b5-4574-957c-d037677022ae": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cUhttps:\/\/www.instagram.com\/p\/Cwsc7xKut9X\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
         "37932129-5b0f-4cbf-911d-02c3f46d72b3",
-        "00bed168-abb5-4171-96a1-53de6a21ac09"
+        "00bed168-abb5-4171-96a1-53de6a21ac09",
+        "5bebe399-6533-40ff-b851-fe82d8a3b056",
+        "88113ffc-b7b5-4574-957c-d037677022ae"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

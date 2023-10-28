@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -632,7 +633,7 @@
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_9_Minis_1200x1200px_1611060d-4f3a-475e-9c78-cb1a62f65990.jpg",
             "image__overlay": "",
             "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
             "title": "",

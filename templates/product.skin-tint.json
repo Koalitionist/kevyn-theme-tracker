@@ -573,6 +573,34 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
+        "9ea96078-6817-4499-b11c-c378dfa970bb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_4_Glass_Glow_Skin_Tint_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CqnlZcSuRfA\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "abe59784-aa24-4a3f-9b1d-2df7b2dfa74e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_aa1b5861-0e94-4ec9-9378-3b3b513cf728.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
         "06a40e2b-de6b-4680-abb2-5e9793dddf77": {
           "type": "image",
           "settings": {
@@ -600,41 +628,13 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "abe59784-aa24-4a3f-9b1d-2df7b2dfa74e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_aa1b5861-0e94-4ec9-9378-3b3b513cf728.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "9ea96078-6817-4499-b11c-c378dfa970bb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_4_Glass_Glow_Skin_Tint_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CqnlZcSuRfA\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
-        "06a40e2b-de6b-4680-abb2-5e9793dddf77",
-        "87e6e9e3-9aad-412e-8f9a-4eb7fcbe1ede",
+        "9ea96078-6817-4499-b11c-c378dfa970bb",
         "abe59784-aa24-4a3f-9b1d-2df7b2dfa74e",
-        "9ea96078-6817-4499-b11c-c378dfa970bb"
+        "06a40e2b-de6b-4680-abb2-5e9793dddf77",
+        "87e6e9e3-9aad-412e-8f9a-4eb7fcbe1ede"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

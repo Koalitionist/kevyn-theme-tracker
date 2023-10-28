@@ -588,12 +588,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "bab6fee4-9717-4d9b-afc9-6e315d617e4a": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_9_Minis_1200x1200px_1611060d-4f3a-475e-9c78-cb1a62f65990.jpg",
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -602,12 +602,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "bab6fee4-9717-4d9b-afc9-6e315d617e4a": {
+        "6ab970bb-c12c-447c-8727-ad4c3e9647dd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0395.jpg",
+            "image": "shopify:\/\/shop_images\/SIGNATURE_SCULPTING_STICKS_LIFESTYLE01_2000x2000px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Crn-Z41o3cU\/",
+            "url": "https:\/\/www.instagram.com\/p\/CwF-AqzuCV_\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -630,12 +630,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "6ab970bb-c12c-447c-8727-ad4c3e9647dd": {
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SIGNATURE_SCULPTING_STICKS_LIFESTYLE01_2000x2000px.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_9_Minis_1200x1200px_1611060d-4f3a-475e-9c78-cb1a62f65990.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CwF-AqzuCV_\/",
+            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -646,10 +646,10 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3",
         "bab6fee4-9717-4d9b-afc9-6e315d617e4a",
+        "6ab970bb-c12c-447c-8727-ad4c3e9647dd",
         "b6a96415-41e5-442c-9796-ada9551e59ab",
-        "6ab970bb-c12c-447c-8727-ad4c3e9647dd"
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

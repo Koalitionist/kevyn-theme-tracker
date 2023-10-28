@@ -522,12 +522,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+        "75f31b90-2562-4545-aff3-d80da4888b49": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -536,12 +536,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
+        "b175f991-044d-4c3f-9834-7c53b6069fb1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -550,12 +549,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
+        "5830ae75-a331-4639-a073-8f62348c55da": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -564,12 +562,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "7c13afdb-0484-4b0d-9b32-f377d369c6df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -580,10 +577,10 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "75f31b90-2562-4545-aff3-d80da4888b49",
+        "b175f991-044d-4c3f-9834-7c53b6069fb1",
+        "5830ae75-a331-4639-a073-8f62348c55da",
+        "7c13afdb-0484-4b0d-9b32-f377d369c6df"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

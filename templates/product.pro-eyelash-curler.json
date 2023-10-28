@@ -653,20 +653,6 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "869724ac-bd29-4436-8c36-0653c4bff1cc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_37ac8b4a-939f-407d-8978-357d79ef10c0.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CroRvZfInan\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "a49b1031-a6fd-423b-bbca-89aad03bd5e7": {
           "type": "image",
           "settings": {
@@ -681,12 +667,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "0f69a5b3-a4f9-44b9-b664-8595e87a0861": {
+        "869724ac-bd29-4436-8c36-0653c4bff1cc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_07.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_6_Pro_Eyelash_Curler_1200x1200px_37ac8b4a-939f-407d-8978-357d79ef10c0.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CvkouHpOFid\/",
+            "url": "https:\/\/www.instagram.com\/p\/CroRvZfInan\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -708,13 +694,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "0f69a5b3-a4f9-44b9-b664-8595e87a0861": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_07.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CvkouHpOFid\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "869724ac-bd29-4436-8c36-0653c4bff1cc",
         "a49b1031-a6fd-423b-bbca-89aad03bd5e7",
-        "0f69a5b3-a4f9-44b9-b664-8595e87a0861",
-        "bceed03d-d278-41cd-b6b2-a7c476bb8ba6"
+        "869724ac-bd29-4436-8c36-0653c4bff1cc",
+        "bceed03d-d278-41cd-b6b2-a7c476bb8ba6",
+        "0f69a5b3-a4f9-44b9-b664-8595e87a0861"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

@@ -588,48 +588,6 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
           "type": "image",
           "settings": {
@@ -643,13 +601,53 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "315eb55c-25d3-43cf-80e8-60d50f40192c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SIGNATURE_SCULPTING_STICKS_LIFESTYLE01_2000x2000px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CwF-AqzuCV_\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bab6fee4-9717-4d9b-afc9-6e315d617e4a": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b6a96415-41e5-442c-9796-ada9551e59ab": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3",
+        "315eb55c-25d3-43cf-80e8-60d50f40192c",
+        "bab6fee4-9717-4d9b-afc9-6e315d617e4a",
+        "b6a96415-41e5-442c-9796-ada9551e59ab"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

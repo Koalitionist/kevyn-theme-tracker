@@ -522,12 +522,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "75f31b90-2562-4545-aff3-d80da4888b49": {
+        "b175f991-044d-4c3f-9834-7c53b6069fb1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -536,12 +536,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "b175f991-044d-4c3f-9834-7c53b6069fb1": {
+        "75f31b90-2562-4545-aff3-d80da4888b49": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_08_Signature_Stick_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
             "image__overlay": "",
-            "url": "\/",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -567,8 +567,9 @@
         "7c13afdb-0484-4b0d-9b32-f377d369c6df": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",
             "image__overlay": "",
-            "url": "\/",
+            "url": "https:\/\/www.instagram.com\/p\/CxLaBTBuicC\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -579,8 +580,8 @@
         }
       },
       "block_order": [
-        "75f31b90-2562-4545-aff3-d80da4888b49",
         "b175f991-044d-4c3f-9834-7c53b6069fb1",
+        "75f31b90-2562-4545-aff3-d80da4888b49",
         "5830ae75-a331-4639-a073-8f62348c55da",
         "7c13afdb-0484-4b0d-9b32-f377d369c6df"
       ],

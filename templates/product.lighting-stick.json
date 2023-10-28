@@ -641,20 +641,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "405dc438-76b8-42be-ac08-0afcb8ac8939": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_SIGNATURE_STICKS_LIGHTING_STICKS_LIFESTYLE01_2000x2000px_144dpi.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CuaG1b5OR6b\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "ad49b20c-6e04-46af-a42b-5a9acc2884af": {
           "type": "image",
           "settings": {
@@ -668,13 +654,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "405dc438-76b8-42be-ac08-0afcb8ac8939": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_SIGNATURE_STICKS_LIGHTING_STICKS_LIFESTYLE01_2000x2000px_144dpi.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CuaG1b5OR6b\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "5b698416-afd6-4734-ae81-dbb11c442f9e",
         "5ea5f83f-76ed-4347-afb9-29dc8f6d517a",
-        "405dc438-76b8-42be-ac08-0afcb8ac8939",
-        "ad49b20c-6e04-46af-a42b-5a9acc2884af"
+        "ad49b20c-6e04-46af-a42b-5a9acc2884af",
+        "405dc438-76b8-42be-ac08-0afcb8ac8939"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

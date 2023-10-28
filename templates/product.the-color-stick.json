@@ -601,20 +601,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "20c893d6-92a6-4d53-bc6e-6eecf73a538b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "b3aee3c8-b0f1-4e6d-8e60-b9455f26abc6": {
           "type": "image",
           "settings": {
@@ -642,13 +628,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "20c893d6-92a6-4d53-bc6e-6eecf73a538b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "4de5b1cd-5ef4-4e6b-86aa-7c146ecdb28f",
-        "20c893d6-92a6-4d53-bc6e-6eecf73a538b",
         "b3aee3c8-b0f1-4e6d-8e60-b9455f26abc6",
-        "e02de32d-34b6-48f3-9bbb-07ac44d4395e"
+        "e02de32d-34b6-48f3-9bbb-07ac44d4395e",
+        "20c893d6-92a6-4d53-bc6e-6eecf73a538b"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

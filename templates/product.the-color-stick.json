@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": true,
@@ -586,12 +587,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+        "4de5b1cd-5ef4-4e6b-86aa-7c146ecdb28f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/SIGNATURE_SCULPTING_STICKS_LIFESTYLE01_2000x2000px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "https:\/\/www.instagram.com\/p\/CwF-AqzuCV_\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -600,12 +601,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
+        "20c893d6-92a6-4d53-bc6e-6eecf73a538b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -614,12 +614,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
+        "b3aee3c8-b0f1-4e6d-8e60-b9455f26abc6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -628,12 +627,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "e02de32d-34b6-48f3-9bbb-07ac44d4395e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -644,10 +642,10 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "4de5b1cd-5ef4-4e6b-86aa-7c146ecdb28f",
+        "20c893d6-92a6-4d53-bc6e-6eecf73a538b",
+        "b3aee3c8-b0f1-4e6d-8e60-b9455f26abc6",
+        "e02de32d-34b6-48f3-9bbb-07ac44d4395e"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -572,12 +573,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+        "9ea96078-6817-4499-b11c-c378dfa970bb": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_4_Glass_Glow_Skin_Tint_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "https:\/\/www.instagram.com\/p\/CqnlZcSuRfA\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -586,12 +587,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
+        "87e6e9e3-9aad-412e-8f9a-4eb7fcbe1ede": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -600,12 +600,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
+        "06a40e2b-de6b-4680-abb2-5e9793dddf77": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_April_Lifestyle_4_Perfect_Pairs_SkinTint_GlassGlassFace_RT_1200x1200px_9cd63c38-e2ce-49da-bb7a-75633db5bd32.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
+            "url": "https:\/\/www.instagram.com\/p\/CrtHnnnuzMk\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -614,12 +614,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "abe59784-aa24-4a3f-9b1d-2df7b2dfa74e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -630,10 +629,10 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "9ea96078-6817-4499-b11c-c378dfa970bb",
+        "87e6e9e3-9aad-412e-8f9a-4eb7fcbe1ede",
+        "06a40e2b-de6b-4680-abb2-5e9793dddf77",
+        "abe59784-aa24-4a3f-9b1d-2df7b2dfa74e"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

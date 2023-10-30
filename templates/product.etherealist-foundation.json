@@ -573,6 +573,34 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
+        "6aee44d1-cbf7-4d87-9aef-cc35de31609e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_9_Minis_1200x1200px_1611060d-4f3a-475e-9c78-cb1a62f65990.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "e11b29e2-b2c8-4d69-93fd-e18a07aa3e34": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
         "766f4337-66ac-41b4-9fe1-b42d23bdcd83": {
           "type": "image",
           "settings": {
@@ -600,41 +628,13 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "e11b29e2-b2c8-4d69-93fd-e18a07aa3e34": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
-            "image__overlay": "",
-            "url": "",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "6aee44d1-cbf7-4d87-9aef-cc35de31609e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_9_Minis_1200x1200px_1611060d-4f3a-475e-9c78-cb1a62f65990.jpg",
-            "image__overlay": "",
-            "url": "",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
-        "766f4337-66ac-41b4-9fe1-b42d23bdcd83",
-        "94737490-e4e0-4c2b-a0fe-b375c24a48be",
+        "6aee44d1-cbf7-4d87-9aef-cc35de31609e",
         "e11b29e2-b2c8-4d69-93fd-e18a07aa3e34",
-        "6aee44d1-cbf7-4d87-9aef-cc35de31609e"
+        "766f4337-66ac-41b4-9fe1-b42d23bdcd83",
+        "94737490-e4e0-4c2b-a0fe-b375c24a48be"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

@@ -292,6 +292,7 @@
       ],
       "settings": {
         "source": "image",
+        "image": "shopify:\/\/shop_images\/EYELASH_CURLER_VOLUME_MASCARA_V1_1200x1200px.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

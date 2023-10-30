@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -619,6 +620,49 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "9af67c10-b5e7-45c8-8db2-3ed1b7070d55": {
+      "type": "image-with-text",
+      "blocks": {
+        "b18fdffe-dc50-4d2c-bfc6-217fa8b18bb9": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>AWARD-WINNING Eyelash Curler<\/h3><p>Open up your eyes and create perfectly curled lashes with our iconic, easy-to-use EYELASH CURLER. A pro-artist must-have secret to big, bold, curled eyelash perfection.<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "b18fdffe-dc50-4d2c-bfc6-217fa8b18bb9"
+      ],
+      "settings": {
+        "source": "image",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -629,6 +673,7 @@
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
-    "b87d756b-cc56-4844-9812-087ed525f8d0"
+    "b87d756b-cc56-4844-9812-087ed525f8d0",
+    "9af67c10-b5e7-45c8-8db2-3ed1b7070d55"
   ]
 }

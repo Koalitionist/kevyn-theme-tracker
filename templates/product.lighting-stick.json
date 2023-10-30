@@ -316,38 +316,18 @@
     },
     "0e91d5eb-6f48-43fa-85af-9f16c2d1b85d": {
       "type": "video-banner",
-      "blocks": {
-        "template--14835128893527__0e91d5eb-6f48-43fa-85af-9f16c2d1b85d-168934344363c3833b-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "<p>Checkout our Offering<\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 10,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14835128893527__0e91d5eb-6f48-43fa-85af-9f16c2d1b85d-168934344363c3833b-0"
-      ],
       "settings": {
         "video": "shopify:\/\/files\/videos\/0dc8bf2072544b77a91b5f54b9a7d499.mp4",
         "video_url": "",
         "url": "",
-        "autoplay": true,
+        "autoplay": false,
         "button__text": "",
-        "button__style": "button-primary",
+        "button__style": "button-secondary--outline",
         "image__overlay": "",
-        "height": 580,
+        "height": 680,
         "align__vertical": "justify-start",
         "align__horizontal": "items-center text-center",
-        "section_layout": "fullwidth",
+        "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",

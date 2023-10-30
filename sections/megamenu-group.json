@@ -534,6 +534,7 @@
         "9b19eb25-e941-4be9-8fc1-009bd44b1f07",
         "fd067ae6-8748-4882-a355-41694f39d274"
       ],
+      "disabled": true,
       "settings": {
         "handle": "face",
         "grid_gap": 16,

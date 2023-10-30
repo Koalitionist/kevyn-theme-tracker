@@ -1082,7 +1082,6 @@
           },
           "d74b7c63-840d-4f28-a204-31de924c9894": {
             "type": "megamenu",
-            "disabled": true,
             "settings": {
               "handle": "face",
               "font_scale": 100,

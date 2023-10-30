@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -572,54 +573,12 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+        "766f4337-66ac-41b4-9fe1-b42d23bdcd83": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -630,10 +589,7 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "766f4337-66ac-41b4-9fe1-b42d23bdcd83"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

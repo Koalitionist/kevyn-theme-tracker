@@ -1130,7 +1130,7 @@
               "rows": "1",
               "show_images": true,
               "image__overlay": "",
-              "show_caption": true,
+              "show_caption": false,
               "image_caption_color": "#ffffff",
               "override_1_handle": "lipstick",
               "override_1_image": "shopify:\/\/shop_images\/MacroLips.png",

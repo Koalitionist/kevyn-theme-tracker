@@ -601,20 +601,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "766f4337-66ac-41b4-9fe1-b42d23bdcd83": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "94737490-e4e0-4c2b-a0fe-b375c24a48be": {
           "type": "image",
           "settings": {
@@ -628,13 +614,27 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "766f4337-66ac-41b4-9fe1-b42d23bdcd83": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CuFCgIou2qY\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "6aee44d1-cbf7-4d87-9aef-cc35de31609e",
         "e11b29e2-b2c8-4d69-93fd-e18a07aa3e34",
-        "766f4337-66ac-41b4-9fe1-b42d23bdcd83",
-        "94737490-e4e0-4c2b-a0fe-b375c24a48be"
+        "94737490-e4e0-4c2b-a0fe-b375c24a48be",
+        "766f4337-66ac-41b4-9fe1-b42d23bdcd83"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

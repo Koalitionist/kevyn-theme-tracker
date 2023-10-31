@@ -271,6 +271,50 @@
         "sectionID": ""
       }
     },
+    "514f3074-0aa2-4f2f-a732-37fc184d4187": {
+      "type": "image-with-text",
+      "blocks": {
+        "ba3e1f8f-b6d9-4c64-bb84-96855d8a8e37": {
+          "type": "text",
+          "settings": {
+            "title": "<p>\"There is nothing as empowering as wearing a bold shade of lipstick. A pop of color in your lips is so uplifting and expressive. What I love about this formula is that you apply highly hydrating color in one swipe and “forget about it”: you don’t need to reapply, it does not bleed, and lips feel hydrated, full of color, and with a creamy final velvet sensation, like a rose petal”<\/p><p>- Drita, Makeup Artist and Kevyn Aucoin Brand Ambassador<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "ba3e1f8f-b6d9-4c64-bb84-96855d8a8e37"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "product-siblings": {
       "type": "product-siblings",
       "blocks": {
@@ -597,61 +641,17 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
-    },
-    "514f3074-0aa2-4f2f-a732-37fc184d4187": {
-      "type": "image-with-text",
-      "blocks": {
-        "ba3e1f8f-b6d9-4c64-bb84-96855d8a8e37": {
-          "type": "text",
-          "settings": {
-            "title": "<p>\"There is nothing as empowering as wearing a bold shade of lipstick. A pop of color in your lips is so uplifting and expressive. What I love about this formula is that you apply highly hydrating color in one swipe and “forget about it”: you don’t need to reapply, it does not bleed, and lips feel hydrated, full of color, and with a creamy final velvet sensation, like a rose petal”<\/p><p>- Drita, Makeup Artist and Kevyn Aucoin Brand Ambassador<\/p>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "ba3e1f8f-b6d9-4c64-bb84-96855d8a8e37"
-      ],
-      "settings": {
-        "source": "image",
-        "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "metafield": "smart.image_with_text",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
-        "image__object_fit": "object-cover",
-        "image__order": "order-2",
-        "image__order__mobile": "max-md:-order-1",
-        "image__mobile_padding": false,
-        "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
-        "section_layout": "container-bg-full",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "section_liquid": "",
-        "sectionID": ""
-      }
     }
   },
   "order": [
     "product",
+    "514f3074-0aa2-4f2f-a732-37fc184d4187",
     "product-siblings",
     "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "a7ccb789-e8b1-4069-9978-e25aeb1add1c",
-    "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "514f3074-0aa2-4f2f-a732-37fc184d4187"
+    "b87d756b-cc56-4844-9812-087ed525f8d0"
   ]
 }

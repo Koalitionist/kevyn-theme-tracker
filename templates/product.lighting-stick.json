@@ -323,7 +323,7 @@
         "video": "shopify:\/\/files\/videos\/0dc8bf2072544b77a91b5f54b9a7d499.mp4",
         "video_url": "",
         "url": "",
-        "autoplay": false,
+        "autoplay": true,
         "button__text": "",
         "button__style": "button-secondary--outline",
         "image__overlay": "",

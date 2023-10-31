@@ -616,6 +616,7 @@
         "blocks": {
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<h6>NEW ✨ SHADE FINDER QUIZ<\/h6>",
               "short_text": "",
@@ -718,6 +719,7 @@
           },
           "976d24df-d4f0-4a32-a6e7-8606c70e9a63": {
             "type": "footer_text",
+            "disabled": true,
             "settings": {
               "title": "<h6>FREE SHIPPING $75+ <\/h6>",
               "title_font": 1,

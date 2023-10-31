@@ -278,7 +278,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Pro Tip<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -330,7 +330,7 @@
           "type": "text",
           "settings": {
             "title": "<p>You can also accentuate other features by applying the powder to your décolleté. <\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

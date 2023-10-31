@@ -147,7 +147,7 @@
         "945203fb-49d0-4913-bb69-841d863d077e": {
           "type": "text",
           "settings": {
-            "title": "<h1>20% OFF<\/h1>",
+            "title": "",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -175,7 +175,7 @@
         "be100fda-b389-4dd0-9e97-dea78e7def26": {
           "type": "text",
           "settings": {
-            "title": "<h3>Use code: GG20<\/h3>",
+            "title": "",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",

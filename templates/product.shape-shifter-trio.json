@@ -621,6 +621,7 @@
       ],
       "settings": {
         "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_08_Shape_Shifter_Trio_1200x1200px.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

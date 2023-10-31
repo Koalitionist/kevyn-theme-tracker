@@ -218,7 +218,7 @@
         "e78fb07c-4d6f-4ad7-a466-e4204ae81fc6": {
           "type": "text",
           "settings": {
-            "title": "<h3>UNLEASH YOUR INNER ARTIST<br\/><\/h3>",
+            "title": "<h3>UNLEASH YOUR INNER ARTIST<\/h3>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -277,7 +277,7 @@
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
+        "align__horizontal": "items-center text-center",
         "section_layout": "fullwidth",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",

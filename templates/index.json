@@ -239,7 +239,7 @@
           "type": "text",
           "settings": {
             "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
-            "title_font": 2,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",

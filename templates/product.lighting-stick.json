@@ -316,6 +316,9 @@
     },
     "0e91d5eb-6f48-43fa-85af-9f16c2d1b85d": {
       "type": "video-banner",
+      "custom_css": [
+        "button {display: none;}"
+      ],
       "settings": {
         "video": "shopify:\/\/files\/videos\/0dc8bf2072544b77a91b5f54b9a7d499.mp4",
         "video_url": "",

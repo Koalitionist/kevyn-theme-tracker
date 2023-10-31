@@ -161,7 +161,7 @@
         "b93278cf-2f08-43ce-b7be-7f1ec158cc76": {
           "type": "text",
           "settings": {
-            "title": "<h1>HOLIDAY GIFT GUIDE<\/h1>",
+            "title": "<h1>HOLIDAY <br\/>GIFT GUIDE<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",

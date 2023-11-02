@@ -723,12 +723,11 @@
     "b87d756b-cc56-4844-9812-087ed525f8d0": {
       "type": "image-feed",
       "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
+        "1ee27127-258e-4a3b-a3fa-51e7ae0824dc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -737,12 +736,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
+        "3a33389c-ba86-4b5a-a04f-0ed332bd4e37": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -751,12 +749,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
+        "5ef1d3e8-b526-4153-8534-57d4d10d2432": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
+            "url": "\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -765,12 +762,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
+        "74bea571-3c20-47fe-9b3a-bccc1ad98782": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_Making_Faces_Brush_Set_Lifestyle_1500x1500px_300dpi.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
+            "url": "https:\/\/www.instagram.com\/p\/CymCJmqpV_o\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -781,10 +778,10 @@
         }
       },
       "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
+        "1ee27127-258e-4a3b-a3fa-51e7ae0824dc",
+        "3a33389c-ba86-4b5a-a04f-0ed332bd4e37",
+        "5ef1d3e8-b526-4153-8534-57d4d10d2432",
+        "74bea571-3c20-47fe-9b3a-bccc1ad98782"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

@@ -314,6 +314,113 @@
         "sectionID": ""
       }
     },
+    "0be7df39-77a1-4733-a319-c413e82f11e2": {
+      "type": "richtext",
+      "blocks": {
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Designed for effortless sculpting. This dual-ended contour brush helps create seamless definition anywhere on the face using your blush, highlight, or sculpting products. <\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "4da73737-842b-49f3-a203-eb1a1773407b": {
       "type": "richtext",
       "blocks": {
@@ -417,6 +524,50 @@
         "padding_top": "pt-sm",
         "padding_bottom": "pb-md",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "4f599965-536c-4638-8bc6-06bb035913c7": {
+      "type": "image-with-text",
+      "blocks": {
+        "1f3945e8-15e2-44c3-a7b2-4b5b0d0ed93a": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3><p>Designed for effortless sculpting. This dual-ended contour brush helps create seamless definition anywhere on the face using your blush, highlight, or sculpting products. <\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "1f3945e8-15e2-44c3-a7b2-4b5b0d0ed93a"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Feb_Lifestyle_1_Duet_Contour_Brush_Blend_1200x1200px_c24d185d-7e46-4d6f-992a-a65a91fd58e2.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
         "sectionID": ""
       }
     },
@@ -669,167 +820,18 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "0be7df39-77a1-4733-a319-c413e82f11e2": {
-      "type": "richtext",
-      "blocks": {
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "<p>Neat Preheading<\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1": {
-          "type": "accent_line",
-          "disabled": true,
-          "settings": {
-            "color": "#11ed6e",
-            "height": 3,
-            "width": 90,
-            "margin_top": 0,
-            "margin_bottom": 20,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "height": 80,
-            "margin_top": 0,
-            "margin_bottom": 18,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2": {
-          "type": "text",
-          "settings": {
-            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3": {
-          "type": "text",
-          "settings": {
-            "title": "<p>Designed for effortless sculpting. This dual-ended contour brush helps create seamless definition anywhere on the face using your blush, highlight, or sculpting products. <\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 24,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
-            "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
-            "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-full",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1",
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1",
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1",
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2",
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3",
-        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1"
-      ],
-      "settings": {
-        "align__horizontal": "items-center text-center",
-        "width": "max-w-xl",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
-    "4f599965-536c-4638-8bc6-06bb035913c7": {
-      "type": "image-with-text",
-      "blocks": {
-        "1f3945e8-15e2-44c3-a7b2-4b5b0d0ed93a": {
-          "type": "text",
-          "settings": {
-            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "1f3945e8-15e2-44c3-a7b2-4b5b0d0ed93a"
-      ],
-      "settings": {
-        "source": "image",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "metafield": "smart.image_with_text",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
-        "image__object_fit": "object-cover",
-        "image__order": "-order-1",
-        "image__order__mobile": "max-md:-order-1",
-        "image__mobile_padding": false,
-        "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
-        "section_layout": "container-bg-full",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "section_liquid": "",
-        "sectionID": ""
-      }
     }
   },
   "order": [
     "product",
     "7e1532b5-99d4-45e4-af1b-e05aabc59da9",
+    "0be7df39-77a1-4733-a319-c413e82f11e2",
     "4da73737-842b-49f3-a203-eb1a1773407b",
+    "4f599965-536c-4638-8bc6-06bb035913c7",
     "af9eecd9-4e8e-4fcd-ae30-574ca7e997f9",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "product-siblings",
-    "0be7df39-77a1-4733-a319-c413e82f11e2",
-    "4f599965-536c-4638-8bc6-06bb035913c7"
+    "product-siblings"
   ]
 }

@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -668,6 +669,112 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "0be7df39-77a1-4733-a319-c413e82f11e2": {
+      "type": "richtext",
+      "blocks": {
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3",
+        "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -678,6 +785,7 @@
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "product-siblings"
+    "product-siblings",
+    "0be7df39-77a1-4733-a319-c413e82f11e2"
   ]
 }

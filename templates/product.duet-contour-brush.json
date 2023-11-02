@@ -797,8 +797,8 @@
         "1f3945e8-15e2-44c3-a7b2-4b5b0d0ed93a": {
           "type": "text",
           "settings": {
-            "title": "",
-            "title_font": 1,
+            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

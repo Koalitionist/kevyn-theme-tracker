@@ -714,27 +714,13 @@
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2": {
           "type": "text",
           "settings": {
-            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title": "<h3>AWARD-WINNING Duet Contour Brush<\/h3>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "5fec51d2-3519-408d-a8aa-2e8f4534d9ad": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
@@ -777,7 +763,6 @@
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-accent_line-1",
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-image-1",
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-2",
-        "5fec51d2-3519-408d-a8aa-2e8f4534d9ad",
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-text-3",
         "template--14914202402903__0be7df39-77a1-4733-a319-c413e82f11e2-buttons-1"
       ],

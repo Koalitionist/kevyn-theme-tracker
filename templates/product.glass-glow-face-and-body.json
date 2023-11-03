@@ -597,6 +597,50 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "55651b77-2d95-4ea7-82d7-ab4797e511c4": {
+      "type": "image-with-text",
+      "blocks": {
+        "bc976bf3-ecbd-4d35-880e-0f845cff32d8": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>Award Winning Radiance<\/h3><p>A universal and unique highlighter for the face and body that creates youthful looking, well-hydrated skin with a glassy complexion. The multi-purpose glow-gel can be used on the face and body, leaving skin appearing clean, radiant, and seemingly transparent.<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "bc976bf3-ecbd-4d35-880e-0f845cff32d8"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_07_GLASS_GLOW_FACE_1200x1200px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -607,6 +651,7 @@
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "a7ccb789-e8b1-4069-9978-e25aeb1add1c",
-    "b87d756b-cc56-4844-9812-087ed525f8d0"
+    "b87d756b-cc56-4844-9812-087ed525f8d0",
+    "55651b77-2d95-4ea7-82d7-ab4797e511c4"
   ]
 }

@@ -580,6 +580,20 @@
             "responsive_visibility": "responsive"
           }
         },
+        "5830ae75-a331-4639-a073-8f62348c55da": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_March_Lifestyle_8_Glass_Glow_Swatches_1200x1200px_1.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CqdVS08u-YD\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
         "75f31b90-2562-4545-aff3-d80da4888b49": {
           "type": "image",
           "settings": {
@@ -607,27 +621,13 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "5830ae75-a331-4639-a073-8f62348c55da": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_4a59f5ae-0c63-40c9-bcd9-68f56e173a16.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CyGoxvZr-Ai\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
         "b175f991-044d-4c3f-9834-7c53b6069fb1",
+        "5830ae75-a331-4639-a073-8f62348c55da",
         "75f31b90-2562-4545-aff3-d80da4888b49",
-        "7c13afdb-0484-4b0d-9b32-f377d369c6df",
-        "5830ae75-a331-4639-a073-8f62348c55da"
+        "7c13afdb-0484-4b0d-9b32-f377d369c6df"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

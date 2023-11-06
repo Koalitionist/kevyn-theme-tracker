@@ -182,6 +182,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -453,85 +454,6 @@
         "sectionID": ""
       }
     },
-    "b87d756b-cc56-4844-9812-087ed525f8d0": {
-      "type": "image-feed",
-      "blocks": {
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_11_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CfrUbBfOXZk\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artist_Palette.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CZb_AE9APwN\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_12_1.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CdqctOPOCsH\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-1",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-2",
-        "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-3"
-      ],
-      "settings": {
-        "image__aspect_ratio": "pb-[100%]",
-        "min_width": 230,
-        "mobile_style": "scroll",
-        "spacing": 0,
-        "section_layout": "fullwidth",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
     "product-siblings": {
       "type": "product-siblings",
       "blocks": {
@@ -553,6 +475,96 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "4675f2e7-4ca6-4309-b3bb-c4d467ca0469": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Feb_Lifestyle_4_Duet_Concealer_Brush_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Co2ZRNUM4qC\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "cc056d71-96bf-4f03-a982-3fbe3432dfbb": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1",
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2",
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3",
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4",
+        "cc056d71-96bf-4f03-a982-3fbe3432dfbb"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -562,7 +574,7 @@
     "af9eecd9-4e8e-4fcd-ae30-574ca7e997f9",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
-    "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "product-siblings"
+    "product-siblings",
+    "4675f2e7-4ca6-4309-b3bb-c4d467ca0469"
   ]
 }

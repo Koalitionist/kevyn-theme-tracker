@@ -496,8 +496,9 @@
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_07.jpg",
             "image__overlay": "",
-            "url": "\/",
+            "url": "https:\/\/www.instagram.com\/p\/CvkouHpOFid\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -531,27 +532,13 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "cc056d71-96bf-4f03-a982-3fbe3432dfbb": {
-          "type": "image",
-          "settings": {
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1",
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2",
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3",
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4",
-        "cc056d71-96bf-4f03-a982-3fbe3432dfbb"
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

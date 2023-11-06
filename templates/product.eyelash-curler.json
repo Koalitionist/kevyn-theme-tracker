@@ -280,7 +280,7 @@
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
+            "margin_top": -12,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"

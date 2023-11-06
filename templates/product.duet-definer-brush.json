@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -574,9 +575,9 @@
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/Duet_Definer_Brush_1200x1200px_ada81e0f-a96d-4c85-a744-b46411872f27.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",

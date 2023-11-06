@@ -479,6 +479,34 @@
     "4675f2e7-4ca6-4309-b3bb-c4d467ca0469": {
       "type": "image-feed",
       "blocks": {
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_12_MakingFacesBook_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CxY8BfMg6GC\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Influencer_Expressive_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1": {
           "type": "image",
           "settings": {
@@ -506,45 +534,17 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
-        },
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Influencer_Expressive_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_12_MakingFacesBook_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CxY8BfMg6GC\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1",
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2",
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4",
         "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-3",
-        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-4"
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-1",
+        "template--14914202206295__4675f2e7-4ca6-4309-b3bb-c4d467ca0469-image-2"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",
-        "min_width": 360,
+        "min_width": 230,
         "mobile_style": "scroll",
         "spacing": 0,
         "section_layout": "fullwidth",

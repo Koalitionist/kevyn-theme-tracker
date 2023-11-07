@@ -845,6 +845,7 @@
         "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_03_black.jpg",
             "image__overlay": "",
             "url": "\/",
             "title": "",
@@ -858,19 +859,7 @@
         "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2": {
           "type": "image",
           "settings": {
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-4": {
-          "type": "image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_Black_06_1200x1200px.jpg",
             "image__overlay": "",
             "url": "\/",
             "title": "",
@@ -884,8 +873,7 @@
       },
       "block_order": [
         "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1",
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2",
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-4"
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

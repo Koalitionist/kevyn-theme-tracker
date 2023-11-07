@@ -284,57 +284,13 @@
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
+        "content_ratio": "md:grid-cols-[1fr_66%]",
         "image__object_fit": "object-cover",
         "image__order": "order-2",
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",
         "align__horizontal": "items-start text-left",
-        "section_layout": "container-bg-full",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
-        "section_liquid": "",
-        "sectionID": ""
-      }
-    },
-    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a": {
-      "type": "image-with-text",
-      "blocks": {
-        "487b0844-6c79-42a2-8a48-7445b6ed1ebb": {
-          "type": "text",
-          "settings": {
-            "title": "<h1>THE GIFT OF CONFIDENCE.<\/h1>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "487b0844-6c79-42a2-8a48-7445b6ed1ebb"
-      ],
-      "settings": {
-        "source": "video",
-        "video": "shopify:\/\/files\/videos\/VelvetLip_Stunning.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "metafield": "smart.image_with_text",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
-        "image__object_fit": "object-cover",
-        "image__order": "order-2",
-        "image__order__mobile": "max-md:-order-1",
-        "image__mobile_padding": false,
-        "align__vertical": "justify-center",
-        "align__horizontal": "items-center text-center",
         "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",
@@ -390,6 +346,50 @@
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a": {
+      "type": "image-with-text",
+      "blocks": {
+        "487b0844-6c79-42a2-8a48-7445b6ed1ebb": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE GIFT OF CONFIDENCE.<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "487b0844-6c79-42a2-8a48-7445b6ed1ebb"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/VelvetLip_Stunning.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
+        "section_liquid": "",
         "sectionID": ""
       }
     },
@@ -870,8 +870,8 @@
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
-    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a",
     "026a849a-8e8d-44f1-8c6a-421dbadda7c1",
+    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a",
     "c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9",
     "0bd4a9e5-1d40-417a-86d8-c2f7b21324f2",
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",

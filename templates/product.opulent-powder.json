@@ -300,7 +300,7 @@
           "type": "text",
           "settings": {
             "title": "<h3>GET THE LOOK<\/h3><p>Step 1: Using the pads of your fingers or a powder brush lightly apply product to the high points of the face.<\/p><p>Step 2: Finish the look off by swiping product onto your fingertip, applying it to the cupid's bow — highlighting your upper lip for an overall fuller look.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",

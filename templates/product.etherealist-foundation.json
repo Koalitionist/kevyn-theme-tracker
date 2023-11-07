@@ -446,9 +446,9 @@
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": -4,
+            "margin_bottom": -2,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
@@ -543,7 +543,7 @@
         "container_overflow": false,
         "center_products": true,
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
+        "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""

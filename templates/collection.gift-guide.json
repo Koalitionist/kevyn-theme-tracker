@@ -300,6 +300,37 @@
         "sectionID": ""
       }
     },
+    "26004a58-0318-4e17-9758-b32d9830151b": {
+      "type": "richtext",
+      "blocks": {
+        "template--14932877377623__26004a58-0318-4e17-9758-b32d9830151b-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>NEW ONLINE EXCLUSIVE GIFT SETS<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__26004a58-0318-4e17-9758-b32d9830151b-text-1"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
+        "sectionID": ""
+      }
+    },
     "11de39ab-7211-43d4-826b-0d3c87796753": {
       "type": "image-feed",
       "blocks": {
@@ -934,6 +965,7 @@
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
+    "26004a58-0318-4e17-9758-b32d9830151b",
     "11de39ab-7211-43d4-826b-0d3c87796753",
     "026a849a-8e8d-44f1-8c6a-421dbadda7c1",
     "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a",

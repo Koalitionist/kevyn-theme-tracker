@@ -307,6 +307,7 @@
         "5a9156cc-a707-49fd-84d4-60a5ae7440a5",
         "05842b15-202c-43a7-9d66-ef20f5d207cf"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",
@@ -415,8 +416,8 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
@@ -468,8 +469,8 @@
             "title": "<h3>KEVYNSPIRATION<\/h3>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 14,
             "section_max_width": "max-w-2xl",
@@ -482,8 +483,8 @@
             "title": "<h6>“The right TOOLS make an enormous DIFFERENCE in makeup APPLICATION. Foundation can be applied more evenly; lip and eye can be applied more smoothly...” <br\/><br\/>—Kevyn Aucoin, The Art of Makeup 1994<\/h6>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 24,
             "section_max_width": "max-w-2xl",

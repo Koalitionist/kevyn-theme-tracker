@@ -870,7 +870,7 @@
             "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_08_Shape_Shifter_Trio_1200x1200px.jpg",
             "image__overlay": "",
             "url": "shopify:\/\/products\/shape-shifter-trio-127-159-value",
-            "title": "<h2>SHAPE SHIFTER TRIO ($159 Value)<\/h2>",
+            "title": "<h2>SHAPE SHIFTER TRIO $127<\/h2>",
             "title_font": 3,
             "subtitle_richtext": "",
             "subtitle_font": 1,
@@ -881,10 +881,11 @@
         "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_10_Complete_Radiance_Set_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
+            "url": "shopify:\/\/products\/complete-radiance-set-100-126-value",
+            "title": "<h2>COMPLETE RADIANCE SET $100<\/h2>",
+            "title_font": 3,
             "subtitle_richtext": "",
             "subtitle_font": 1,
             "border_width": 0,

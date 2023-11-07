@@ -300,6 +300,50 @@
         "sectionID": ""
       }
     },
+    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a": {
+      "type": "image-with-text",
+      "blocks": {
+        "487b0844-6c79-42a2-8a48-7445b6ed1ebb": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE GIFT OF CONFIDENCE.<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "487b0844-6c79-42a2-8a48-7445b6ed1ebb"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/VelvetLip_Stunning.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "026a849a-8e8d-44f1-8c6a-421dbadda7c1": {
       "type": "image-feed",
       "blocks": {
@@ -346,6 +390,37 @@
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9": {
+      "type": "richtext",
+      "blocks": {
+        "template--14932877377623__c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>Discover a carefully selected collection of three dual-ended precision brushes that encourage you to blend, contour, and define like a professional makeup artist.<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9-text-1"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "sectionID": ""
       }
     },
@@ -785,108 +860,6 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
-    },
-    "622a1ab4-dd79-4a5b-974d-3a7ce39797da": {
-      "type": "features",
-      "blocks": {
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-1": {
-          "type": "feature",
-          "settings": {
-            "icon_list": "star",
-            "title": "",
-            "content": "",
-            "link_text": "",
-            "url": "",
-            "svg": "",
-            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg"
-          }
-        },
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-2": {
-          "type": "feature",
-          "settings": {
-            "icon_list": "check-square-broken",
-            "title": "<p>Dr. Emmett Brown<\/p>",
-            "content": "<p>This is all wrong. I don't know what it is. But when I kiss you, it's like I'm kissing... my brother. I guess that doesn't make any sense, does it?<\/p>",
-            "link_text": "<p>IRead More<\/p>",
-            "url": "",
-            "svg": ""
-          }
-        },
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-3": {
-          "type": "feature",
-          "settings": {
-            "icon_list": "plane",
-            "title": "<p>Stella Baines<\/p>",
-            "content": "<p>Let me show you my plan for sending you home. Please excuse the crudity of this model. I didn't have time to build it to scale or paint it.<\/p>",
-            "link_text": "<p>IRead More<\/p>",
-            "url": "",
-            "svg": ""
-          }
-        },
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-4": {
-          "type": "feature",
-          "settings": {
-            "icon_list": "check-square-broken",
-            "title": "<p>Mark Dixon<\/p>",
-            "content": "<p>Hey, hey, listen, guys... Look, I don't wanna mess with no reefer addicts, okay?<\/p>",
-            "link_text": "<p>IRead More<\/p>",
-            "url": "",
-            "svg": ""
-          }
-        },
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-5": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_list": "check-square-broken",
-            "title": "<p>George McFly<\/p>",
-            "content": "<p>I'm sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it's a little hard to come by.<\/p>",
-            "link_text": "<p>IRead More<\/p>",
-            "url": "",
-            "svg": ""
-          }
-        },
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-6": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_list": "check-square-broken",
-            "title": "<p>Lorraine Baines<\/p>",
-            "content": "<p>Marty, I'm sorry, but the only power source capable of generating 1.21 gigawatts of electricity is a bolt of lightning.<\/p>",
-            "link_text": "<p>IRead More<\/p>",
-            "url": "",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-1",
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-2",
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-3",
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-4",
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-5",
-        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-6"
-      ],
-      "disabled": true,
-      "settings": {
-        "preheading": "<p>Subtle<\/p>",
-        "preheading_font": 1,
-        "title": "<p>Amazing Features<\/p>",
-        "title_font": 1,
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dignissimos ex natus nobis. Amet, architecto corporis culpa excepturi in modi necessitatibus non, placeat quod repudiandae tempora tenetur vitae!<\/p>",
-        "content_font": 1,
-        "align__horizontal": "items-center text-center",
-        "feature_title_font": 1,
-        "feature_content_font": 1,
-        "layout": "icon-cards",
-        "icon_size": 20,
-        "feature__align__horizontal": "items-center text-center",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
-        "sectionID": ""
-      }
     }
   },
   "order": [
@@ -897,14 +870,15 @@
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
+    "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a",
     "026a849a-8e8d-44f1-8c6a-421dbadda7c1",
+    "c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9",
     "0bd4a9e5-1d40-417a-86d8-c2f7b21324f2",
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
     "6aa9922c-61d7-4d79-aae3-52e054e55c9d",
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
-    "859a1462-a683-407d-9965-c617fe5daca3",
-    "622a1ab4-dd79-4a5b-974d-3a7ce39797da"
+    "859a1462-a683-407d-9965-c617fe5daca3"
   ]
 }

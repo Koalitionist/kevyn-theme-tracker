@@ -384,8 +384,8 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-4xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-sm",
-        "padding_bottom": "pb-md",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
@@ -428,6 +428,7 @@
         "369c5d18-ebf0-42c7-8ded-0f039daf008c",
         "9955bb64-2764-4318-9e1e-326bc96e19e3"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",

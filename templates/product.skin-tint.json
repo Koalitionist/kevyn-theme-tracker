@@ -307,6 +307,7 @@
         "9ec32029-7a6c-40f8-8b87-98bdfac7aa08",
         "ec1f11fc-0606-4e26-a233-b088c4add4dc"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",
@@ -416,7 +417,7 @@
         "width": "max-w-[var(--layout-page-width)]",
         "responsive_visibility": "responsive",
         "padding_top": "pt-sm",
-        "padding_bottom": "pb-md",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
@@ -441,14 +442,14 @@
         "99644c30-d8aa-4d86-9442-5740430d98af": {
           "type": "text",
           "settings": {
-            "title": "<p><strong>1. <\/strong>Pump out one dose of SKIN TINT onto the back of your hand or onto your brush and blend onto your skin. Buff onto the skin until you've achieved a seamless, even complexion. <\/p><p><br\/><strong>2. <\/strong>Layer for additional coverage where needed.  Can be worn alone or on-top of your primer.<\/p>",
+            "title": "<p>1. Pump out one dose of SKIN TINT onto the back of your hand or onto your brush and blend onto your skin. Buff onto the skin until you've achieved a seamless, even complexion. <\/p><p><br\/>2.<strong> <\/strong>Layer for additional coverage where needed.  Can be worn alone or on-top of your primer.<\/p>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": -12,
+            "margin_bottom": -10,
+            "section_max_width": "max-w-xl",
             "responsive_visibility": "responsive"
           }
         }
@@ -470,7 +471,7 @@
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
+        "align__horizontal": "items-center text-center",
         "section_layout": "fullwidth",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",

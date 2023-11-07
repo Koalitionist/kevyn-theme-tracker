@@ -103,7 +103,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle02_2000x2000_300dpi.jpg",
             "image__overlay": "",
-            "url": "\/",
+            "url": "shopify:\/\/collections\/holiday",
             "title": "<h1>HOLIDAY<\/h1>",
             "title_font": 3,
             "subtitle_richtext": "",

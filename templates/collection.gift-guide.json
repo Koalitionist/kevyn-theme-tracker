@@ -838,6 +838,67 @@
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
+    },
+    "026a849a-8e8d-44f1-8c6a-421dbadda7c1": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-4": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1",
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2",
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-4"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -855,6 +916,7 @@
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
     "859a1462-a683-407d-9965-c617fe5daca3",
-    "622a1ab4-dd79-4a5b-974d-3a7ce39797da"
+    "622a1ab4-dd79-4a5b-974d-3a7ce39797da",
+    "026a849a-8e8d-44f1-8c6a-421dbadda7c1"
   ]
 }

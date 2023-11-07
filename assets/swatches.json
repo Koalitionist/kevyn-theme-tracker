@@ -1169,6 +1169,30 @@
     },
     {
       "Lustre": "#EEDBC7"
+    },
+    {
+      "incandescentset": "#E1CFC9"
+    },
+    {
+      "lustreset": "#EEDBC7"
+    },
+    {
+      "lighttrio": "#D7B097"
+    },
+    {
+      "mediumtrio": "#C8917A"
+    },
+    {
+      "deeptrio": "#62382D"
+    },
+    {
+      "fabulouslip": "#F77F62"
+    },
+    {
+      "enchantinglip": "#B55F59"
+    },
+    {
+      "strikinglip": "#8D1C10"
     }
   ]
 }

@@ -313,7 +313,7 @@
         "template--14835128991831__f0b1341c-bc84-4607-8c6b-b81d80d61d45-168934427718d182cd-3": {
           "type": "text",
           "settings": {
-            "title": "<h2>KEVYNSPIRATION<\/h2>",
+            "title": "<h3>KEVYNSPIRATION<\/h3>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -330,11 +330,11 @@
             "title": "<p>“I’m surprised that more women don’t curler their lashes with an eyelash curler….It’s easy to use after a little practice…, and the results are amazing. Curling the lashes opens up the eyes, making them look bigger. For many whose lashes tend to grow straight down, an eyelash curler can make a radical difference.” <br\/><br\/>— Kevyn Aucoin, The Art of Makeup, 1994<\/p>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-4xl",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": -8,
+            "margin_bottom": -12,
+            "section_max_width": "max-w-3xl",
             "responsive_visibility": "responsive"
           }
         },

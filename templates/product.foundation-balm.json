@@ -307,6 +307,7 @@
         "bed6a9b3-476a-4f79-9ff0-ccda12b11742",
         "84b0c1bc-2685-44f1-8006-ed77e340ae26"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",
@@ -470,7 +471,7 @@
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
+        "align__horizontal": "items-center text-center",
         "section_layout": "fullwidth",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",

@@ -616,9 +616,8 @@
         "blocks": {
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<h6>NEW ✨ SHADE FINDER QUIZ<\/h6>",
+              "text": "<h6> SHADE FINDER QUIZ<\/h6>",
               "short_text": "",
               "announcement_font": 3,
               "link": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",

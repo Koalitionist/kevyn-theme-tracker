@@ -328,6 +328,7 @@
         "33281367-44d6-446c-a99f-8835964a4064",
         "7c839fe8-9c95-40f1-8372-f4015073aaa0"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",
@@ -519,11 +520,11 @@
         "template--14845477027927__bbad0e22-1543-4718-a407-9ad86de0c486-text-2": {
           "type": "text",
           "settings": {
-            "title": "<h2>KEVYNSPIRATION<\/h2>",
+            "title": "<h3>KEVYNSPIRATION<\/h3>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 14,
             "section_max_width": "max-w-2xl",

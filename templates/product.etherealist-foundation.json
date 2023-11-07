@@ -442,7 +442,7 @@
         "99644c30-d8aa-4d86-9442-5740430d98af": {
           "type": "text",
           "settings": {
-            "title": "<p><strong>1.<\/strong> Pump desired amount of the foundation onto your brush.<br\/><br\/><strong>2. <\/strong>Dab the foundation over the areas that need the most coverage first, then blend outward from there.<br\/><br\/><strong>3. <\/strong>Follow with additional layers in a dabbing motion to build coverage where desired.<\/p>",
+            "title": "<p>1. Pump desired amount of the foundation onto your brush.<br\/><br\/>2.<strong> <\/strong>Dab the foundation over the areas that need the most coverage first, then blend outward from there.<br\/><br\/>3.<strong> <\/strong>Follow with additional layers in a dabbing motion to build coverage where desired.<\/p>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",

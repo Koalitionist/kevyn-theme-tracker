@@ -351,6 +351,7 @@
         "4595ff24-5254-4842-9f4f-547b17f2d0c9",
         "67e1dcfa-0f35-4642-af75-1a465db71682"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",

@@ -117,7 +117,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2023-11-07_at_4.04.27_PM.png",
             "image__overlay": "",
-            "url": "\/",
+            "url": "shopify:\/\/collections\/90s-nostalgia",
             "title": "<h1>STOCKING GIFTS<\/h1>",
             "title_font": 3,
             "subtitle_richtext": "",
@@ -860,6 +860,82 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "11de39ab-7211-43d4-826b-0d3c87796753": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_08_Shape_Shifter_Trio_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "shopify:\/\/products\/shape-shifter-trio-127-159-value",
+            "title": "<h2>SHAPE SHIFTER TRIO ($159 Value)<\/h2>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-4": {
+          "type": "image",
+          "settings": {
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1",
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2",
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3",
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-4"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -879,6 +955,7 @@
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
-    "859a1462-a683-407d-9965-c617fe5daca3"
+    "859a1462-a683-407d-9965-c617fe5daca3",
+    "11de39ab-7211-43d4-826b-0d3c87796753"
   ]
 }

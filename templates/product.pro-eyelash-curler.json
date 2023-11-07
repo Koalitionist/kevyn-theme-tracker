@@ -264,7 +264,7 @@
         "grid_gap": 12,
         "section_layout": "container-bg-full",
         "padding_top": "pt-sm",
-        "padding_bottom": "pb-sm",
+        "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }

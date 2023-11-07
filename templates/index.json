@@ -944,7 +944,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
     },
@@ -991,7 +991,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
     },

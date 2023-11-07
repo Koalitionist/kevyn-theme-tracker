@@ -81,6 +81,86 @@
         "sectionID": ""
       }
     },
+    "1cb8f6bf-3f5d-4924-b934-fa445d923963": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "<h1>GIFT SETS<\/h1>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle02_2000x2000_300dpi.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "<h1>HOLIDAY<\/h1>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-07_at_4.04.27_PM.png",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "<h1>STOCKING GIFTS<\/h1>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "<h1>BEST SELLERS<\/h1>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-1",
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-2",
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-3",
+        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-4"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7": {
       "type": "main-collection-banner",
       "blocks": {
@@ -176,6 +256,50 @@
         "sectionID": ""
       }
     },
+    "88e8b504-bdbd-41c0-890b-bf1e2df86bb8": {
+      "type": "image-with-text",
+      "blocks": {
+        "c415c3f1-b9e6-43ca-a6f8-38889ace1230": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>THE GIFT OF GLOW.<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "c415c3f1-b9e6-43ca-a6f8-38889ace1230"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/OpulentPowder_Model.mp4",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-start text-left",
+        "section_layout": "container-bg-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8": {
       "type": "tagged-product-images",
       "blocks": {
@@ -245,7 +369,7 @@
           "settings": {
             "preheading": "",
             "preheading_font": 1,
-            "title": "",
+            "title": "<h2>GIFT SETS<\/h2>",
             "title_font": 3,
             "subtitle": "",
             "subtitle_font": 1,
@@ -312,8 +436,8 @@
           "settings": {
             "preheading": "",
             "preheading_font": 1,
-            "title": "<h3>STOCKING STUFFERS<\/h3>",
-            "title_font": 1,
+            "title": "<h2>STOCKING GIFTS<\/h2>",
+            "title_font": 3,
             "subtitle": "",
             "subtitle_font": 1,
             "content": "",
@@ -378,8 +502,8 @@
           "settings": {
             "preheading": "",
             "preheading_font": 1,
-            "title": "<h3>HOLIDAY<\/h3>",
-            "title_font": 1,
+            "title": "<h2>HOLIDAY<\/h2>",
+            "title_font": 3,
             "subtitle": "",
             "subtitle_font": 1,
             "content": "",
@@ -649,6 +773,7 @@
         "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-5",
         "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-6"
       ],
+      "disabled": true,
       "settings": {
         "preheading": "<p>Subtle<\/p>",
         "preheading_font": 1,
@@ -668,145 +793,22 @@
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
-    },
-    "1cb8f6bf-3f5d-4924-b934-fa445d923963": {
-      "type": "image-feed",
-      "blocks": {
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "<h1>GIFT SETS<\/h1>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle02_2000x2000_300dpi.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "<h1>HOLIDAY<\/h1>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-07_at_4.04.27_PM.png",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "<h1>STOCKING GIFTS<\/h1>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Etherealist_Skin_Illuminating_Foundation_3c11d685-7399-4902-a426-4fc383cbfe69.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "<h1>BEST SELLERS<\/h1>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-1",
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-2",
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-3",
-        "template--14932877377623__1cb8f6bf-3f5d-4924-b934-fa445d923963-image-4"
-      ],
-      "settings": {
-        "image__aspect_ratio": "pb-[100%]",
-        "min_width": 360,
-        "mobile_style": "scroll",
-        "spacing": 0,
-        "section_layout": "fullwidth",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
-    "88e8b504-bdbd-41c0-890b-bf1e2df86bb8": {
-      "type": "image-with-text",
-      "blocks": {
-        "c415c3f1-b9e6-43ca-a6f8-38889ace1230": {
-          "type": "text",
-          "settings": {
-            "title": "<h1>THE GIFT OF GLOW.<\/h1>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "c415c3f1-b9e6-43ca-a6f8-38889ace1230"
-      ],
-      "settings": {
-        "source": "video",
-        "video": "shopify:\/\/files\/videos\/OpulentPowder_Model.mp4",
-        "video_url": "",
-        "metafield": "smart.image_with_text",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
-        "image__object_fit": "object-cover",
-        "image__order": "order-2",
-        "image__order__mobile": "max-md:-order-1",
-        "image__mobile_padding": false,
-        "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
-        "section_layout": "container-bg-full",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
-        "section_liquid": "",
-        "sectionID": ""
-      }
     }
   },
   "order": [
     "banner",
     "filter_sort_bar",
     "product-grid",
+    "1cb8f6bf-3f5d-4924-b934-fa445d923963",
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
+    "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
     "6aa9922c-61d7-4d79-aae3-52e054e55c9d",
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
     "859a1462-a683-407d-9965-c617fe5daca3",
-    "622a1ab4-dd79-4a5b-974d-3a7ce39797da",
-    "1cb8f6bf-3f5d-4924-b934-fa445d923963",
-    "88e8b504-bdbd-41c0-890b-bf1e2df86bb8"
+    "622a1ab4-dd79-4a5b-974d-3a7ce39797da"
   ]
 }

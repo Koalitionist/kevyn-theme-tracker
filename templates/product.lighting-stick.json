@@ -307,6 +307,7 @@
         "8f1c4695-80dd-47ff-ac41-24214c96a463",
         "8122dc2c-cfbd-4ff1-952f-de89f9632fa6"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",
@@ -399,8 +400,8 @@
             "title": "<p>\"Everyday we are forced to compare ourselves to impossible standards of beauty.  The truth is we are all uniquely beautiful in our own way and this should be celebrated - not covered up.  What we really want is to explore our best assets and uncover our unique beauty.\"<\/p><p><em>— <\/em>Kevyn Aucoin<\/p>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 24,
             "section_max_width": "max-w-4xl",

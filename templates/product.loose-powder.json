@@ -384,6 +384,7 @@
         "32cea999-0236-4590-a16a-c102f41272da",
         "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "{{ product }}",
         "responsive_visibility": "responsive",

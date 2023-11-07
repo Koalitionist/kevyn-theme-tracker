@@ -146,6 +146,7 @@
       "blocks": {
         "945203fb-49d0-4913-bb69-841d863d077e": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_font": 3,
@@ -174,6 +175,7 @@
         },
         "be100fda-b389-4dd0-9e97-dea78e7def26": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_font": 3,
@@ -191,7 +193,7 @@
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "shopify:\/\/collections\/gift-guide",
-            "button_primary__style": "button-primary",
+            "button_primary__style": "button-primary--outline",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",

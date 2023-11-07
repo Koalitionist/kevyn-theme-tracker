@@ -337,6 +337,112 @@
         "sectionID": ""
       }
     },
+    "1b058ded-5d0d-4fbc-8e9f-195f09f96c3c": {
+      "type": "richtext",
+      "blocks": {
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-accent_line-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>KEVYNSPIRATION<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 6,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<p>“The right TOOLS make an enormous DIFFERENCE in makeup APPLICATION. Foundation can be applied more evenly; lip and eye can be applied more smoothly...” <\/p><p>— Kevyn Aucoin, The Art of Makeup 1994<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-1",
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-accent_line-1",
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-image-1",
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-2",
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-3",
+        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-buttons-1"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "456a945e-822d-468f-9bf1-1c8a0c16481c": {
       "type": "product-add-to-cart-bar",
       "blocks": {
@@ -384,6 +490,7 @@
         "32cea999-0236-4590-a16a-c102f41272da",
         "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3"
       ],
+      "disabled": true,
       "settings": {
         "upsell_product": "{{ product }}",
         "responsive_visibility": "responsive",
@@ -658,124 +765,18 @@
         "section_liquid": "",
         "sectionID": ""
       }
-    },
-    "1b058ded-5d0d-4fbc-8e9f-195f09f96c3c": {
-      "type": "richtext",
-      "blocks": {
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "<p>Neat Preheading<\/p>",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-accent_line-1": {
-          "type": "accent_line",
-          "disabled": true,
-          "settings": {
-            "color": "#11ed6e",
-            "height": 3,
-            "width": 90,
-            "margin_top": 0,
-            "margin_bottom": 20,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-image-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "height": 80,
-            "margin_top": 0,
-            "margin_bottom": 18,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-2": {
-          "type": "text",
-          "settings": {
-            "title": "<h3>KEVYNSPIRATION<\/h3>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 6,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-3": {
-          "type": "text",
-          "settings": {
-            "title": "<p>“The right TOOLS make an enormous DIFFERENCE in makeup APPLICATION. Foundation can be applied more evenly; lip and eye can be applied more smoothly...” <\/p><p>— Kevyn Aucoin, The Art of Makeup 1994<\/p>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 24,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
-            "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
-            "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-full",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-1",
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-accent_line-1",
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-image-1",
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-2",
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-3",
-        "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-buttons-1"
-      ],
-      "settings": {
-        "align__horizontal": "items-center text-center",
-        "width": "max-w-xl",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
     }
   },
   "order": [
     "product",
     "product-siblings",
     "571b248c-4590-4041-9007-3259e631fbf8",
+    "1b058ded-5d0d-4fbc-8e9f-195f09f96c3c",
     "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0",
-    "a7ccb789-e8b1-4069-9978-e25aeb1add1c",
-    "1b058ded-5d0d-4fbc-8e9f-195f09f96c3c"
+    "a7ccb789-e8b1-4069-9978-e25aeb1add1c"
   ]
 }

@@ -300,17 +300,66 @@
         "sectionID": ""
       }
     },
+    "026a849a-8e8d-44f1-8c6a-421dbadda7c1": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_03_black.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_Black_06_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1",
+        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "0bd4a9e5-1d40-417a-86d8-c2f7b21324f2": {
       "type": "image-with-text",
       "blocks": {
         "4b9f79c5-be96-452b-bb21-50622c408fc2": {
           "type": "text",
           "settings": {
-            "title": "<h1>EXCLUSIVE<br\/>3PC MAKING FACES BRUSH SET<br\/><em>with vegan pouch<br\/>($166 Value)<\/em><\/h1>",
+            "title": "<h3>EXCLUSIVE<\/h3><h1>3PC MAKING FACES BRUSH SET<\/h1><h5><em>with vegan pouch<br\/>($166 Value)<\/em><\/h5>",
             "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
             "margin_bottom": 0,
             "section_max_width": "max-w-2xl",
@@ -838,55 +887,6 @@
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
-    },
-    "026a849a-8e8d-44f1-8c6a-421dbadda7c1": {
-      "type": "image-feed",
-      "blocks": {
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_03_black.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_Black_06_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-1",
-        "template--14932877377623__026a849a-8e8d-44f1-8c6a-421dbadda7c1-image-2"
-      ],
-      "settings": {
-        "image__aspect_ratio": "pb-[100%]",
-        "min_width": 360,
-        "mobile_style": "scroll",
-        "spacing": 0,
-        "section_layout": "fullwidth",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
     }
   },
   "order": [
@@ -897,6 +897,7 @@
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
+    "026a849a-8e8d-44f1-8c6a-421dbadda7c1",
     "0bd4a9e5-1d40-417a-86d8-c2f7b21324f2",
     "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
     "6aa9922c-61d7-4d79-aae3-52e054e55c9d",
@@ -904,7 +905,6 @@
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
     "859a1462-a683-407d-9965-c617fe5daca3",
-    "622a1ab4-dd79-4a5b-974d-3a7ce39797da",
-    "026a849a-8e8d-44f1-8c6a-421dbadda7c1"
+    "622a1ab4-dd79-4a5b-974d-3a7ce39797da"
   ]
 }

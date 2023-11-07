@@ -703,13 +703,13 @@
         "template--14929454432343__1b058ded-5d0d-4fbc-8e9f-195f09f96c3c-text-2": {
           "type": "text",
           "settings": {
-            "title": "<p>Black Friday & Cyber Monday<\/p>",
-            "title_font": 1,
+            "title": "<h3>KEVYNSPIRATION<\/h3>",
+            "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
             "margin_top": 0,
-            "margin_bottom": 14,
+            "margin_bottom": 6,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }

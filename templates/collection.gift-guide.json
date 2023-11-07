@@ -567,6 +567,107 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "622a1ab4-dd79-4a5b-974d-3a7ce39797da": {
+      "type": "features",
+      "blocks": {
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-1": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "star",
+            "title": "",
+            "content": "",
+            "link_text": "",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg"
+          }
+        },
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-2": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "check-square-broken",
+            "title": "<p>Dr. Emmett Brown<\/p>",
+            "content": "<p>This is all wrong. I don't know what it is. But when I kiss you, it's like I'm kissing... my brother. I guess that doesn't make any sense, does it?<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": ""
+          }
+        },
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-3": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "plane",
+            "title": "<p>Stella Baines<\/p>",
+            "content": "<p>Let me show you my plan for sending you home. Please excuse the crudity of this model. I didn't have time to build it to scale or paint it.<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": ""
+          }
+        },
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-4": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "check-square-broken",
+            "title": "<p>Mark Dixon<\/p>",
+            "content": "<p>Hey, hey, listen, guys... Look, I don't wanna mess with no reefer addicts, okay?<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": ""
+          }
+        },
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-5": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_list": "check-square-broken",
+            "title": "<p>George McFly<\/p>",
+            "content": "<p>I'm sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it's a little hard to come by.<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": ""
+          }
+        },
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-6": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_list": "check-square-broken",
+            "title": "<p>Lorraine Baines<\/p>",
+            "content": "<p>Marty, I'm sorry, but the only power source capable of generating 1.21 gigawatts of electricity is a bolt of lightning.<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-1",
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-2",
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-3",
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-4",
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-5",
+        "template--14932877377623__622a1ab4-dd79-4a5b-974d-3a7ce39797da-feature-6"
+      ],
+      "settings": {
+        "preheading": "<p>Subtle<\/p>",
+        "preheading_font": 1,
+        "title": "<p>Amazing Features<\/p>",
+        "title_font": 1,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dignissimos ex natus nobis. Amet, architecto corporis culpa excepturi in modi necessitatibus non, placeat quod repudiandae tempora tenetur vitae!<\/p>",
+        "content_font": 1,
+        "align__horizontal": "items-center text-center",
+        "feature_title_font": 1,
+        "feature_content_font": 1,
+        "layout": "icon-cards",
+        "icon_size": 20,
+        "feature__align__horizontal": "items-center text-center",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
     }
   },
   "order": [
@@ -580,6 +681,7 @@
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
-    "859a1462-a683-407d-9965-c617fe5daca3"
+    "859a1462-a683-407d-9965-c617fe5daca3",
+    "622a1ab4-dd79-4a5b-974d-3a7ce39797da"
   ]
 }

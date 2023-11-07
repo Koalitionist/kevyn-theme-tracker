@@ -543,7 +543,7 @@
         "container_overflow": false,
         "center_products": true,
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
+        "padding_top": "pt-sm",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""

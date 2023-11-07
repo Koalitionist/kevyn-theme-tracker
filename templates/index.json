@@ -50,10 +50,10 @@
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
-            "button_primary__style": "button-primary",
+            "button_primary__style": "button-primary--outline",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
+            "button_secondary__style": "button-primary",
             "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
             "button__desktop_layout": "flex",
             "margin_top": 0,
@@ -227,7 +227,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
         "section_liquid": "",
         "sectionID": ""
       }

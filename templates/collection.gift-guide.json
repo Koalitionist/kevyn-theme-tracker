@@ -89,7 +89,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "\/",
+            "url": "shopify:\/\/collections\/gift-sets",
             "title": "<h1>GIFT SETS<\/h1>",
             "title_font": 3,
             "subtitle_richtext": "",
@@ -452,7 +452,7 @@
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "image__aspect_ratio": "pb-[100%]",
-        "content_ratio": "md:grid-cols-2",
+        "content_ratio": "md:grid-cols-[1fr_44%]",
         "image__object_fit": "object-cover",
         "image__order": "-order-1",
         "image__order__mobile": "max-md:-order-1",

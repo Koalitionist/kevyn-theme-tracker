@@ -525,8 +525,8 @@
         "817ac75a-dd71-4c5e-bac1-28237b9b7127": {
           "type": "text",
           "settings": {
-            "title": "<h3>LUSCIOUS LIPS<\/h3><h3>Discover the hydrating transfer-proof formula that features full color with a velvet-matte finish and a comfortable “bare-lip” sensation.<\/h3>",
-            "title_font": 1,
+            "title": "<h3>LUSCIOUS LIPS<\/h3><p>Discover the hydrating transfer-proof formula that features full color with a velvet-matte finish and a comfortable “bare-lip” sensation.<\/p>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",

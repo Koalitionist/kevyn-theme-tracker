@@ -151,7 +151,7 @@
       "settings": {
         "image__aspect_ratio": "pb-[100%]",
         "min_width": 360,
-        "mobile_style": "scroll",
+        "mobile_style": "stack",
         "spacing": 0,
         "section_layout": "fullwidth",
         "responsive_visibility": "responsive",
@@ -290,13 +290,77 @@
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
         "align__vertical": "justify-center",
-        "align__horizontal": "items-start text-left",
+        "align__horizontal": "items-center text-center",
         "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",
         "padding_bottom": "pb-md",
         "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "11de39ab-7211-43d4-826b-0d3c87796753": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_08_Shape_Shifter_Trio_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "shopify:\/\/products\/shape-shifter-trio-127-159-value",
+            "title": "<h2>SHAPE SHIFTER TRIO<br\/><\/h2>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_10_Complete_Radiance_Set_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "shopify:\/\/products\/complete-radiance-set-100-126-value",
+            "title": "<h2>COMPLETE RADIANCE SET <\/h2>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "shopify:\/\/products\/luscious-lip-duo-57-71-value",
+            "title": "<h2>LUSCIOUS LIP DUO<\/h2>",
+            "title_font": 3,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1",
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2",
+        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 360,
+        "mobile_style": "stack",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
     },
@@ -860,84 +924,6 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
-    },
-    "11de39ab-7211-43d4-826b-0d3c87796753": {
-      "type": "image-feed",
-      "blocks": {
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_08_Shape_Shifter_Trio_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "shopify:\/\/products\/shape-shifter-trio-127-159-value",
-            "title": "<h2>SHAPE SHIFTER TRIO<br\/><\/h2>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_10_Complete_Radiance_Set_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "shopify:\/\/products\/complete-radiance-set-100-126-value",
-            "title": "<h2>COMPLETE RADIANCE SET <\/h2>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "shopify:\/\/products\/luscious-lip-duo-57-71-value",
-            "title": "<h2>LUSCIOUS LIP DUO<\/h2>",
-            "title_font": 3,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-4": {
-          "type": "image",
-          "settings": {
-            "image__overlay": "",
-            "url": "\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-1",
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-2",
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-3",
-        "template--14932877377623__11de39ab-7211-43d4-826b-0d3c87796753-image-4"
-      ],
-      "settings": {
-        "image__aspect_ratio": "pb-[100%]",
-        "min_width": 360,
-        "mobile_style": "scroll",
-        "spacing": 0,
-        "section_layout": "fullwidth",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
     }
   },
   "order": [
@@ -948,6 +934,7 @@
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
     "88e8b504-bdbd-41c0-890b-bf1e2df86bb8",
+    "11de39ab-7211-43d4-826b-0d3c87796753",
     "026a849a-8e8d-44f1-8c6a-421dbadda7c1",
     "69fb4d1b-5dfc-4e8b-a29e-c95f8adfa73a",
     "c0f64f21-6c9f-48dd-8a7c-1d92a2bcf2b9",
@@ -957,7 +944,6 @@
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
-    "859a1462-a683-407d-9965-c617fe5daca3",
-    "11de39ab-7211-43d4-826b-0d3c87796753"
+    "859a1462-a683-407d-9965-c617fe5daca3"
   ]
 }

@@ -1,97 +1,5 @@
 {
   "sections": {
-    "a43a2af3-464a-4d95-bdca-7173d61d2b2a": {
-      "type": "image-banner",
-      "blocks": {
-        "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
-          "type": "text",
-          "settings": {
-            "title": "<h2>NEW<\/h2>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
-          "type": "text",
-          "settings": {
-            "title": "<h1>VELVET LIP PAINT<\/h1>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "379b605c-c75c-4835-a484-cb8d447550fa": {
-          "type": "text",
-          "settings": {
-            "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "00e07788-6c56-44a8-99ec-01804e63100e": {
-          "type": "buttons",
-          "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
-            "button_primary__style": "button-primary--outline",
-            "button_secondary__text": "",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
-            "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-full",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
-        "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
-        "379b605c-c75c-4835-a484-cb8d447550fa",
-        "00e07788-6c56-44a8-99ec-01804e63100e"
-      ],
-      "disabled": true,
-      "settings": {
-        "source": "video",
-        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
-        "video_url": "",
-        "url": "shopify:\/\/products\/the-lighting-stick",
-        "image__object_fit": "object-cover",
-        "image__overlay": "",
-        "height": 880,
-        "height_mobile": 340,
-        "align__vertical": "justify-center",
-        "align__horizontal_no_text": "items-center",
-        "align__text": "text-center",
-        "section_layout": "fullwidth",
-        "section_max_width": "max-w-full",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
-        "section_liquid": "",
-        "sectionID": ""
-      }
-    },
     "8636e605-446f-469d-bb7c-333416ce7988": {
       "type": "image-banner",
       "blocks": {
@@ -139,7 +47,7 @@
         "image__object_fit": "object-cover",
         "image__overlay": "radial-gradient(rgba(150, 146, 146, 0), rgba(0, 0, 0, 0.05) 100%)",
         "height": 650,
-        "height_mobile": 290,
+        "height_mobile": 260,
         "align__vertical": "justify-center",
         "align__horizontal_no_text": "items-center",
         "align__text": "text-center",
@@ -293,6 +201,97 @@
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a": {
+      "type": "image-banner",
+      "blocks": {
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>NEW<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>VELVET LIP PAINT<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "379b605c-c75c-4835-a484-cb8d447550fa": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "00e07788-6c56-44a8-99ec-01804e63100e": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
+            "button_primary__style": "button-primary--outline",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
+        "379b605c-c75c-4835-a484-cb8d447550fa",
+        "00e07788-6c56-44a8-99ec-01804e63100e"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
+        "video_url": "",
+        "url": "shopify:\/\/products\/the-lighting-stick",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 880,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
         "section_liquid": "",
         "sectionID": ""
       }
@@ -1366,10 +1365,10 @@
     }
   },
   "order": [
-    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "8636e605-446f-469d-bb7c-333416ce7988",
     "c01c8908-eb19-4d95-a852-323ab30e41cd",
     "113443f1-f151-41f8-8d5b-7c235c9b252d",
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
     "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
     "94a2072d-0ce0-419c-996b-ed64b07f4648",

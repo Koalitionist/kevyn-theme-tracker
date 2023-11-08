@@ -331,7 +331,7 @@
         "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "section_liquid": "",
         "sectionID": ""
@@ -384,7 +384,6 @@
         "32cea999-0236-4590-a16a-c102f41272da",
         "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3"
       ],
-      "disabled": true,
       "settings": {
         "upsell_product": "{{ product }}",
         "responsive_visibility": "responsive",

@@ -274,6 +274,7 @@
         "379b605c-c75c-4835-a484-cb8d447550fa",
         "00e07788-6c56-44a8-99ec-01804e63100e"
       ],
+      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",

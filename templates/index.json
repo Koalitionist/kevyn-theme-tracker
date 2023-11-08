@@ -1143,13 +1143,40 @@
           "type": "text",
           "settings": {
             "title": "shade finder",
-            "text": "<p>FIND YOUR SHADE<\/p>",
+            "text": "<h3>FIND YOUR SHADE<\/h3>",
             "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
+          }
+        },
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
+          "type": "text",
+          "settings": {
+            "title": "gift guide",
+            "text": "<p>GIFT GUIDE<\/p>",
+            "url": "shopify:\/\/collections\/gift-guide"
+          }
+        },
+        "81e7261a-06e8-481c-a3a0-00e28205181f": {
+          "type": "text",
+          "settings": {
+            "title": "Online exclusives",
+            "text": "<p>ONLINE EXCLUSIVES<\/p>",
+            "url": "shopify:\/\/collections\/online-exclusives"
           }
         }
       },
       "block_order": [
-        "ff59544a-2739-4dd9-8e48-8810a6286ff7"
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
+        "81e7261a-06e8-481c-a3a0-00e28205181f"
       ],
       "settings": {
         "center_items": true,

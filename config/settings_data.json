@@ -1224,6 +1224,13 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "17120474394303709468": {
+        "type": "shopify:\/\/apps\/platter\/blocks\/video-testimonials\/483c6115-a647-4bea-b611-4401ca7d1013",
+        "disabled": false,
+        "settings": {
+          "z_index": 100
+        }
       }
     }
   },

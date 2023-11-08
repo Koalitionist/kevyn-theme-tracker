@@ -646,6 +646,14 @@
             "text": "<p>HOLIDAY COLLECTION<\/p>",
             "url": "shopify:\/\/collections\/holiday"
           }
+        },
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d": {
+          "type": "text",
+          "settings": {
+            "title": "Gifts under $20",
+            "text": "<p>GIFTS UNDER $20<\/p>",
+            "url": "shopify:\/\/collections\/mini-size"
+          }
         }
       },
       "block_order": [
@@ -654,7 +662,8 @@
         "b4050ccc-4b02-4bae-af97-9800c67f84ea",
         "81e7261a-06e8-481c-a3a0-00e28205181f",
         "0735172c-74d1-4f47-ae0a-1463fc457a8b",
-        "7a738e13-b235-488a-a548-713caa73944e"
+        "7a738e13-b235-488a-a548-713caa73944e",
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d"
       ],
       "settings": {
         "center_items": true,

@@ -1136,6 +1136,37 @@
         "sectionID": ""
       }
     },
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
+      "type": "marquee-bar",
+      "blocks": {
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
+          "type": "text",
+          "settings": {
+            "title": "shade finder",
+            "text": "<p>FIND YOUR SHADE<\/p>",
+            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
+          }
+        }
+      },
+      "block_order": [
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7"
+      ],
+      "settings": {
+        "center_items": true,
+        "height_desktop": 60,
+        "height_mobile": 40,
+        "spacing": 16,
+        "spacing_mobile": 16,
+        "highlight": false,
+        "auto_pause": false,
+        "duration": 10,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "f9359fcb-c5d8-4d4e-a991-e7a7821039b9": {
       "type": "image-feed",
       "blocks": {
@@ -1384,6 +1415,7 @@
     "0e74636a-5726-4ae0-854d-50b6b3e0a383",
     "b2ad8b97-5d85-4c86-b4ad-1ab7382b431c",
     "2a043576-a944-4341-a24f-5193a924b278",
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f",
     "f9359fcb-c5d8-4d4e-a991-e7a7821039b9",
     "7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4"
   ]

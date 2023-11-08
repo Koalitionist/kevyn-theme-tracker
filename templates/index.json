@@ -426,7 +426,7 @@
         "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0": {
           "type": "text",
           "settings": {
-            "title": "<h1>THE COLOR STICK<\/h1>",
+            "title": "<h1>YOUR HOLIDAY BEAUTY LOOK BOOK<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -440,7 +440,7 @@
         "cf462966-3d22-4bab-ac37-799188a5e875": {
           "type": "text",
           "settings": {
-            "title": "<h4>A pigment-rich, ultra-creamy lightweight blush.<\/h4>",
+            "title": "<h4>Be the light for everyone this season with gifts that elevate.<\/h4>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -475,8 +475,8 @@
         "a9056317-7e54-473d-9a14-5efaa859e2a0": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "DISCOVER",
-            "button_primary__url": "shopify:\/\/products\/the-color-stick",
+            "button_primary__text": "BE THE LIGHT",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
             "button_primary__style": "button-primary",
             "button_secondary__text": "Learn More",
             "button_secondary__url": "",
@@ -498,7 +498,7 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/SIGNATURE_STICKS_COLOR_STICKS_LIFESTYLE3_1200x1200px_jpg.jpg",
+        "image": "shopify:\/\/shop_images\/DianaHolidayHero.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

@@ -1014,9 +1014,9 @@
             "type": "gift",
             "disabled": true,
             "settings": {
-              "type": "quantity",
-              "target": 1,
-              "target_collection": "",
+              "type": "price",
+              "target": 1500,
+              "target_collection": "all-1",
               "target_products": [
 
               ],

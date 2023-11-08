@@ -525,7 +525,7 @@
         "b6debc72-2368-456d-a06b-779d56421b25": {
           "type": "text",
           "settings": {
-            "title": "<h1>ONLINE EXCLUSIVE GIFT SETS<\/h1>",
+            "title": "<h1>ONLINE EXCLUSIVE<br\/>GIFT SETS<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",

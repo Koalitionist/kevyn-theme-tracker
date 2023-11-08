@@ -69,6 +69,7 @@
         "379b605c-c75c-4835-a484-cb8d447550fa",
         "00e07788-6c56-44a8-99ec-01804e63100e"
       ],
+      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
@@ -97,41 +98,27 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h1>CELEBRATE THE BRIGHTEST HOLIDAY SEASON<\/h1>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-2": {
-          "type": "text",
-          "settings": {
-            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title": "<h4><br\/>CELEBRATE THE BRIGHTEST<\/h4><h2>HOLIDAY SEASON<\/h2>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
             "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
+            "margin_bottom": 8,
+            "section_max_width": "max-w-md",
             "responsive_visibility": "responsive"
           }
         },
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
+            "button_primary__text": "EXPLORE GIFT GUIDE",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__mobile_layout": "flex",
             "button__desktop_layout": "flex",
             "margin_top": 0,
             "margin_bottom": 0,
@@ -142,28 +129,26 @@
       },
       "block_order": [
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1",
-        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-2",
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"
       ],
-      "disabled": true,
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/DianaHolidayHero.jpg",
+        "image": "shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "url": "",
         "image__object_fit": "object-cover",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "height": 1050,
-        "height_mobile": 1050,
+        "image__overlay": "radial-gradient(rgba(150, 146, 146, 0), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 490,
+        "height_mobile": 290,
         "align__vertical": "justify-center",
         "align__horizontal_no_text": "items-center",
         "align__text": "text-center",
         "section_layout": "fullwidth",
-        "section_max_width": "max-w-lg",
+        "section_max_width": "max-w-xs",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
         "section_liquid": "",
         "sectionID": ""
       }
@@ -289,6 +274,7 @@
         "be100fda-b389-4dd0-9e97-dea78e7def26",
         "ca56cc07-91f3-4adb-87b9-1f001af65de6"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/HolidayGiftGuide_Banner_2400x1350px.jpg",
@@ -306,7 +292,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "section_liquid": "",
         "sectionID": ""
       }

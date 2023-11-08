@@ -343,82 +343,6 @@
         "sectionID": ""
       }
     },
-    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
-      "type": "marquee-bar",
-      "blocks": {
-        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
-          "type": "text",
-          "settings": {
-            "title": "shade finder",
-            "text": "<h3>FIND YOUR SHADE<\/h3>",
-            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
-          }
-        },
-        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "url": ""
-          }
-        },
-        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
-          "type": "text",
-          "settings": {
-            "title": "gift guide",
-            "text": "<p>GIFT GUIDE<\/p>",
-            "url": "shopify:\/\/collections\/gift-guide"
-          }
-        },
-        "81e7261a-06e8-481c-a3a0-00e28205181f": {
-          "type": "text",
-          "settings": {
-            "title": "Online exclusives",
-            "text": "<p>ONLINE EXCLUSIVES<\/p>",
-            "url": "shopify:\/\/collections\/online-exclusives"
-          }
-        },
-        "0735172c-74d1-4f47-ae0a-1463fc457a8b": {
-          "type": "text",
-          "settings": {
-            "title": "VELVET LIP PAINT",
-            "text": "<p>VELVET LIP PAINT<\/p>",
-            "url": "shopify:\/\/products\/velvet-lip-paint"
-          }
-        },
-        "7a738e13-b235-488a-a548-713caa73944e": {
-          "type": "text",
-          "settings": {
-            "title": "holiday",
-            "text": "<p>HOLIDAY COLLECTION<\/p>",
-            "url": "shopify:\/\/collections\/holiday"
-          }
-        }
-      },
-      "block_order": [
-        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
-        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
-        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
-        "81e7261a-06e8-481c-a3a0-00e28205181f",
-        "0735172c-74d1-4f47-ae0a-1463fc457a8b",
-        "7a738e13-b235-488a-a548-713caa73944e"
-      ],
-      "settings": {
-        "center_items": true,
-        "height_desktop": 60,
-        "height_mobile": 40,
-        "spacing": 99,
-        "spacing_mobile": 63,
-        "highlight": false,
-        "auto_pause": false,
-        "duration": 10,
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
     "86c1c1f4-8727-4ce8-b967-29e25fe12d97": {
       "type": "image-with-text",
       "blocks": {
@@ -669,6 +593,82 @@
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
+      "type": "marquee-bar",
+      "blocks": {
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
+          "type": "text",
+          "settings": {
+            "title": "shade finder",
+            "text": "<h3>FIND YOUR SHADE<\/h3>",
+            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
+          }
+        },
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
+          "type": "text",
+          "settings": {
+            "title": "gift guide",
+            "text": "<p>GIFT GUIDE<\/p>",
+            "url": "shopify:\/\/collections\/gift-guide"
+          }
+        },
+        "81e7261a-06e8-481c-a3a0-00e28205181f": {
+          "type": "text",
+          "settings": {
+            "title": "Online exclusives",
+            "text": "<p>ONLINE EXCLUSIVES<\/p>",
+            "url": "shopify:\/\/collections\/online-exclusives"
+          }
+        },
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b": {
+          "type": "text",
+          "settings": {
+            "title": "VELVET LIP PAINT",
+            "text": "<p>VELVET LIP PAINT<\/p>",
+            "url": "shopify:\/\/products\/velvet-lip-paint"
+          }
+        },
+        "7a738e13-b235-488a-a548-713caa73944e": {
+          "type": "text",
+          "settings": {
+            "title": "holiday",
+            "text": "<p>HOLIDAY COLLECTION<\/p>",
+            "url": "shopify:\/\/collections\/holiday"
+          }
+        }
+      },
+      "block_order": [
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
+        "81e7261a-06e8-481c-a3a0-00e28205181f",
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b",
+        "7a738e13-b235-488a-a548-713caa73944e"
+      ],
+      "settings": {
+        "center_items": true,
+        "height_desktop": 60,
+        "height_mobile": 40,
+        "spacing": 99,
+        "spacing_mobile": 63,
+        "highlight": false,
+        "auto_pause": false,
+        "duration": 10,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "sectionID": ""
       }
     },
@@ -1447,10 +1447,10 @@
     "113443f1-f151-41f8-8d5b-7c235c9b252d",
     "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
-    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f",
     "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
     "94a2072d-0ce0-419c-996b-ed64b07f4648",
     "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6",
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f",
     "762d39e4-4b75-493f-9d46-b262cc99e399",
     "3c576937-3efa-4efc-8e59-161e786e2c4a",
     "4452e9a0-34c2-49b8-8617-fa9179fa8dec",

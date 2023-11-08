@@ -349,7 +349,7 @@
         "9b347942-be15-4457-9983-6de727dd5612": {
           "type": "text",
           "settings": {
-            "title": "<h1>THE CONTRAST STICK<\/h1>",
+            "title": "<h1>SIGNATURE SCULPTING COLLECTION<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -363,7 +363,7 @@
         "bcd0d90c-c727-4832-8276-c4803d4fdcb1": {
           "type": "text",
           "settings": {
-            "title": "<h4>Define your unique features with smooth and precise application.<\/h4>",
+            "title": "<h4>Contour, color and highlight with easy-to-use sticks.<\/h4>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -378,7 +378,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "Shop now",
-            "button_primary__url": "\/The Contrast Stick",
+            "button_primary__url": "shopify:\/\/collections\/the-signature-sculpting-collection",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
@@ -399,7 +399,7 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/KAB_July_Lifestyle_04_Contrast_Stick_1200x1200px_1.jpg",
+        "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_10_Signature_Stick_1200x1200px_8885079e-e30a-40d2-b4a5-d3c2ed331a4e.jpg",
         "video_url": "",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

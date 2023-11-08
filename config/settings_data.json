@@ -1021,24 +1021,7 @@
               ],
               "receives_quantity": 1,
               "receives_discount_percentage": 100,
-              "receives_collection": "",
-              "receives_products": [
-
-              ]
-            }
-          },
-          "f7bc9ec5-ca81-4fc9-a3bf-b74e9360a64c": {
-            "type": "gift",
-            "settings": {
-              "type": "quantity",
-              "target": 3,
-              "target_collection": "",
-              "target_products": [
-
-              ],
-              "receives_quantity": 1,
-              "receives_discount_percentage": 20,
-              "receives_collection": "",
+              "receives_collection": "mini-size",
               "receives_products": [
 
               ]
@@ -1046,8 +1029,7 @@
           }
         },
         "block_order": [
-          "47b08bac-ba30-4374-9f16-2a117a738c08",
-          "f7bc9ec5-ca81-4fc9-a3bf-b74e9360a64c"
+          "47b08bac-ba30-4374-9f16-2a117a738c08"
         ],
         "settings": {
           "title": "Select Your Free Gift"

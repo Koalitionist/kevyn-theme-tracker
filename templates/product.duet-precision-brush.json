@@ -254,6 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
+        "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,
@@ -280,6 +281,7 @@
         },
         "c4875165-0a98-44b8-b429-622269596c20": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "<p>Find A Store<\/p>",
             "url": "shopify:\/\/pages\/find-a-store"

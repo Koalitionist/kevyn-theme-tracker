@@ -1012,10 +1012,11 @@
         "blocks": {
           "47b08bac-ba30-4374-9f16-2a117a738c08": {
             "type": "gift",
+            "disabled": true,
             "settings": {
               "type": "quantity",
               "target": 1,
-              "target_collection": "best-sellers",
+              "target_collection": "",
               "target_products": [
 
               ],
@@ -1023,8 +1024,7 @@
               "receives_discount_percentage": 100,
               "receives_collection": "",
               "receives_products": [
-                "mini-foundation-balm",
-                "mini-glass-glow-lip"
+
               ]
             }
           }

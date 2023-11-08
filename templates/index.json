@@ -525,7 +525,7 @@
         "b6debc72-2368-456d-a06b-779d56421b25": {
           "type": "text",
           "settings": {
-            "title": "<h1>THE LIGHTING STICK<\/h1>",
+            "title": "<h1>ONLINE EXCLUSIVE GIFT SETS<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -539,7 +539,7 @@
         "d92ead48-d031-43b2-aa6a-d9d45801fbe8": {
           "type": "text",
           "settings": {
-            "title": "<p>A refined shimmering glow that complements all skin tones from every angle.<\/p>",
+            "title": "<p>Only available here.<\/p>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -556,8 +556,8 @@
             "button_primary__text": "Shop now",
             "button_primary__url": "",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "DISCOVER",
-            "button_secondary__url": "shopify:\/\/products\/the-lighting-stick",
+            "button_secondary__text": "SHOP LIMITED EDITION SETS",
+            "button_secondary__url": "shopify:\/\/collections\/online-exclusives",
             "button_secondary__style": "button-primary",
             "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
             "button__desktop_layout": "flex",
@@ -575,7 +575,7 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/KevynAucoin23-_84.jpg",
+        "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
         "video_url": "",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

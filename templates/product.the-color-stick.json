@@ -269,52 +269,6 @@
         "sectionID": ""
       }
     },
-    "98428de0-8867-4d8b-8ec2-a494d1cd043f": {
-      "type": "product-add-to-cart-bar",
-      "blocks": {
-        "09ec4484-8156-47fb-8211-55d86a630d02": {
-          "type": "link",
-          "settings": {
-            "title": "<p>FAQ<\/p>",
-            "url": "shopify:\/\/pages\/faqs"
-          }
-        },
-        "5fe7643f-170c-4681-b4a9-daa5796e8f0c": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Find A Store<\/p>",
-            "url": "shopify:\/\/pages\/find-a-store"
-          }
-        },
-        "1269ab68-5ca9-4f38-a3f8-942b37b046ce": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Reviews<\/p>",
-            "url": "shopify:\/\/pages\/reviews"
-          }
-        },
-        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Why Kevyn Aucoin<\/p>",
-            "url": "shopify:\/\/pages\/about-kevyn-aucoin-beauty"
-          }
-        }
-      },
-      "block_order": [
-        "09ec4484-8156-47fb-8211-55d86a630d02",
-        "5fe7643f-170c-4681-b4a9-daa5796e8f0c",
-        "1269ab68-5ca9-4f38-a3f8-942b37b046ce",
-        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7"
-      ],
-      "disabled": true,
-      "settings": {
-        "upsell_product": "",
-        "responsive_visibility": "responsive",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
     "4da73737-842b-49f3-a203-eb1a1773407b": {
       "type": "richtext",
       "blocks": {
@@ -492,6 +446,52 @@
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "98428de0-8867-4d8b-8ec2-a494d1cd043f": {
+      "type": "product-add-to-cart-bar",
+      "blocks": {
+        "09ec4484-8156-47fb-8211-55d86a630d02": {
+          "type": "link",
+          "settings": {
+            "title": "<p>FAQ<\/p>",
+            "url": "shopify:\/\/pages\/faqs"
+          }
+        },
+        "5fe7643f-170c-4681-b4a9-daa5796e8f0c": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Find A Store<\/p>",
+            "url": "shopify:\/\/pages\/find-a-store"
+          }
+        },
+        "1269ab68-5ca9-4f38-a3f8-942b37b046ce": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Reviews<\/p>",
+            "url": "shopify:\/\/pages\/reviews"
+          }
+        },
+        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Why Kevyn Aucoin<\/p>",
+            "url": "shopify:\/\/pages\/about-kevyn-aucoin-beauty"
+          }
+        }
+      },
+      "block_order": [
+        "09ec4484-8156-47fb-8211-55d86a630d02",
+        "5fe7643f-170c-4681-b4a9-daa5796e8f0c",
+        "1269ab68-5ca9-4f38-a3f8-942b37b046ce",
+        "10e4c7fd-5e94-49d1-b45e-0adff2d46db7"
+      ],
+      "settings": {
+        "upsell_product": "",
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
     },
@@ -689,9 +689,9 @@
   },
   "order": [
     "product",
-    "98428de0-8867-4d8b-8ec2-a494d1cd043f",
     "4da73737-842b-49f3-a203-eb1a1773407b",
     "af9eecd9-4e8e-4fcd-ae30-574ca7e997f9",
+    "98428de0-8867-4d8b-8ec2-a494d1cd043f",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0",

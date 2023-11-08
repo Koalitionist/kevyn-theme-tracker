@@ -426,7 +426,7 @@
         "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0": {
           "type": "text",
           "settings": {
-            "title": "<h1>YOUR HOLIDAY BEAUTY LOOK BOOK<\/h1>",
+            "title": "<h1>HOLIDAY: <br\/>THE LOOKBOOK<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
@@ -440,7 +440,7 @@
         "cf462966-3d22-4bab-ac37-799188a5e875": {
           "type": "text",
           "settings": {
-            "title": "<h4>Be the light for everyone this season with gifts that elevate.<\/h4>",
+            "title": "<h4>Brighten up the season with gifts that elevate.<\/h4>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "text-center",

@@ -349,6 +349,7 @@
         },
         "33589835-561c-43fd-ae16-641b922ed352": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "<p>Find A Store<\/p>",
             "url": "shopify:\/\/pages\/find-a-store"

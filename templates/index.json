@@ -619,13 +619,13 @@
         "862565af-e409-40fa-8bd2-583ed8a15ce3": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KAB_August_06_Complexion_Group_Shot_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg",
             "image__overlay": "",
             "url": "",
             "title": "",
             "title_font": 1,
-            "button_primary__text": "Shade finder quiz",
-            "button_primary__url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
+            "button_primary__text": "VELVET LIP PAINT",
+            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
             "button_primary__style": "button-primary",
             "button_secondary__text": "Learn More",
             "button_secondary__url": "",

@@ -337,61 +337,6 @@
       "settings": {
       }
     },
-    "456a945e-822d-468f-9bf1-1c8a0c16481c": {
-      "type": "product-add-to-cart-bar",
-      "blocks": {
-        "406c7673-c348-46dc-88ff-30fd24c81362": {
-          "type": "link",
-          "settings": {
-            "title": "<p>FAQ<\/p>",
-            "url": "shopify:\/\/pages\/faqs"
-          }
-        },
-        "33589835-561c-43fd-ae16-641b922ed352": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Find A Store<\/p>",
-            "url": "shopify:\/\/pages\/find-a-store"
-          }
-        },
-        "41a85a1e-3a34-4b0b-b6db-22db5a11aaa6": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Reviews<\/p>",
-            "url": "shopify:\/\/pages\/reviews"
-          }
-        },
-        "32cea999-0236-4590-a16a-c102f41272da": {
-          "type": "link",
-          "settings": {
-            "title": "<p>Why Kevyn Aucoin<\/p>",
-            "url": "shopify:\/\/pages\/about-kevyn-aucoin-beauty"
-          }
-        },
-        "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3": {
-          "type": "link",
-          "disabled": true,
-          "settings": {
-            "title": "<p><strong>Recommended<\/strong><\/p>",
-            "url": "#reviews"
-          }
-        }
-      },
-      "block_order": [
-        "406c7673-c348-46dc-88ff-30fd24c81362",
-        "33589835-561c-43fd-ae16-641b922ed352",
-        "41a85a1e-3a34-4b0b-b6db-22db5a11aaa6",
-        "32cea999-0236-4590-a16a-c102f41272da",
-        "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3"
-      ],
-      "disabled": true,
-      "settings": {
-        "upsell_product": "{{ product }}",
-        "responsive_visibility": "responsive",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
-        "sectionID": ""
-      }
-    },
     "df631480-8a8c-4a52-a390-7443ecf7ae96": {
       "type": "newsletter",
       "blocks": {
@@ -451,6 +396,61 @@
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "sectionID": ""
+      }
+    },
+    "456a945e-822d-468f-9bf1-1c8a0c16481c": {
+      "type": "product-add-to-cart-bar",
+      "blocks": {
+        "406c7673-c348-46dc-88ff-30fd24c81362": {
+          "type": "link",
+          "settings": {
+            "title": "<p>FAQ<\/p>",
+            "url": "shopify:\/\/pages\/faqs"
+          }
+        },
+        "33589835-561c-43fd-ae16-641b922ed352": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Find A Store<\/p>",
+            "url": "shopify:\/\/pages\/find-a-store"
+          }
+        },
+        "41a85a1e-3a34-4b0b-b6db-22db5a11aaa6": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Reviews<\/p>",
+            "url": "shopify:\/\/pages\/reviews"
+          }
+        },
+        "32cea999-0236-4590-a16a-c102f41272da": {
+          "type": "link",
+          "settings": {
+            "title": "<p>Why Kevyn Aucoin<\/p>",
+            "url": "shopify:\/\/pages\/about-kevyn-aucoin-beauty"
+          }
+        },
+        "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "title": "<p><strong>Recommended<\/strong><\/p>",
+            "url": "#reviews"
+          }
+        }
+      },
+      "block_order": [
+        "406c7673-c348-46dc-88ff-30fd24c81362",
+        "33589835-561c-43fd-ae16-641b922ed352",
+        "41a85a1e-3a34-4b0b-b6db-22db5a11aaa6",
+        "32cea999-0236-4590-a16a-c102f41272da",
+        "34ed6ffb-a6d4-4f3d-83cb-238cbf344fc3"
+      ],
+      "settings": {
+        "upsell_product": "{{ product }}",
+        "responsive_visibility": "responsive",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "sectionID": ""
       }
     },
@@ -635,8 +635,8 @@
     "product",
     "671a46e8-6353-451b-b14a-0686c10f22c5",
     "product-siblings",
-    "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
+    "456a945e-822d-468f-9bf1-1c8a0c16481c",
     "07262f7f-c06b-4421-a43f-86b710eaa09a",
     "1689274456b42fb03a",
     "b87d756b-cc56-4844-9812-087ed525f8d0"

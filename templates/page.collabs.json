@@ -126,7 +126,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>TURN YOUR PASSION FOR MAKEUP INTO PROFIT<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -140,7 +140,7 @@
           "type": "text",
           "settings": {
             "title": "<h3><em>Are you a talented makeup artist or a passionate beauty enthusiast who loves sharing valuable content and tips on social media? <br\/><br\/><\/em>If you're eager to monetize your passion, we invite you to join the Kevyn Affiliate Program. It's completely free, effortless to sign up, and comes with a host of exciting benefits. If this opportunity piques your interest, here's everything you need to know to get started.<\/h3>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

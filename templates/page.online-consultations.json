@@ -101,10 +101,10 @@
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
+            "button_primary__text": "BOOK NOW",
+            "button_primary__url": "\/https:\/\/calendly.com\/kevyn-aucoin-virtual-consultations\/15-minute-virtual-consultation",
             "button_primary__style": "button-secondary--outline",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",
             "button__mobile_layout": "flex max-md:flex-col max-md:w-full",

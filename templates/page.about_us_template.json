@@ -752,7 +752,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>OUR PROMISE<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -766,7 +766,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Kevyn Aucoin Beauty is still recognized and celebrated as a leading, luxury artisty brand today — 20 years after its initial launch. The brand is distributed in top-leading international retail outlets across North America, Canada, UK, Australia and beyond. It’s a PR darling that graces the insides of Allure Beauty, Vogue, Harpers Bazarre and other press outlets. Hero products can be seen in PRO makeup artists kits, celebrity hands and used to create buzz-worthy looks amongst today’s modern influencers.<br\/><br\/>We, at Kevyn Aucoin Beauty, will continue to honor Kevyn by maintaining his iconic best-selling products and by continuing to create <strong>a visionary collection of modern products developed by PRO makeup artists, using efficacious ingredients, luxurious textures and extensive shade ranges.<br\/><br\/><\/strong>Inspired by his technique, words and imagery. We will continue to promote an always-on education mentality in all that we do and support up-and coming-artists and the professional makeup artist community through our Pro program, curated masterclasses, monthly newsletters and more. We will continue to be an advocate for adversity and inclusion and will continue to support the Hetrick-Martin Institute, which was a cause that was near and dear to our founder's heart. Our promise is to hold the spirit of Kevyn close and let it guide the brand in all that we do. <\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

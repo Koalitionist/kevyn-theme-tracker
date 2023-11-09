@@ -42,7 +42,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Team Kevyn is an exclusive  membership program for professional makeup artists and industry insiders. We welcome you to elevate your skills with best-in-class education, exclusive product discounts, and a supportive community. Open to professionals and students. Join us and unlock your full potential in makeup artistry.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -73,7 +73,7 @@
           "type": "text",
           "settings": {
             "title": "<p>TAKE A LOOK INSIDE<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -87,7 +87,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>PRO MEMBERSHIP BENEFITS<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

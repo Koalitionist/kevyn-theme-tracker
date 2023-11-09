@@ -132,7 +132,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_10_Holiday_Eyes_Tell_All_Set_1200x1200px.jpg",
-            "image__overlay": "",
+            "image__overlay": "radial-gradient(rgba(21, 21, 21, 1), rgba(30, 178, 231, 0) 57%)",
             "url": "shopify:\/\/collections\/gift-sets",
             "title": "<h1>GIFT SETS<\/h1>",
             "title_font": 3,

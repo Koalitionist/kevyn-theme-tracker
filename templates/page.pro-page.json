@@ -131,7 +131,7 @@
           "type": "text",
           "settings": {
             "title": "<p>TEAM KEVYN PRO MEMBERSHIP BENEFITS<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -145,7 +145,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>EXCLUSIVE ACCESS TO<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -159,7 +159,7 @@
           "type": "text",
           "settings": {
             "title": "<p>• Special discounts and offers only for Professionals<br\/>• Early access to new launches and promotions<br\/>• Exclusive trainings with industry experts<br\/>• Networking opportunities with beauty industry fellows<br\/>• Insider updates on trends, ultimate techniques, and tips<br\/>• NEW: Access to our Pro Affiliate program to earn commissions*<br\/>• NEW: Opportunity to apply and become a KA Ambassador**<br\/><br\/>*Learn more about this new benefit on our <a href=\"https:\/\/kevynaucoinbeauty.com\/pages\/team-kevyn-membership-terms-conditions\" title=\"https:\/\/kevynaucoinbeauty.com\/pages\/team-kevyn-membership-terms-conditions\">Terms and Conditions page<\/a>.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

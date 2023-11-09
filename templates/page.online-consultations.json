@@ -27,7 +27,7 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "url": "",
         "image__object_fit": "object-cover",
-        "image__overlay": "linear-gradient(134deg, rgba(210, 199, 199, 1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__overlay": "linear-gradient(134deg, rgba(80, 77, 77, 1), rgba(0, 0, 0, 0.05) 100%)",
         "height": 390,
         "height_mobile": 340,
         "align__vertical": "justify-center",
@@ -49,7 +49,7 @@
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h2>BECOME A BEAUTY EXPERT<\/h2>",
+            "title": "<h2>FIND YOUR INNER ARTIST<\/h2>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -63,9 +63,10 @@
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-image-1": {
           "type": "image",
           "settings": {
-            "height": 80,
-            "margin_top": 0,
-            "margin_bottom": 18,
+            "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0324.jpg",
+            "height": 400,
+            "margin_top": 34,
+            "margin_bottom": 40,
             "responsive_visibility": "responsive"
           }
         },
@@ -99,6 +100,7 @@
         },
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-buttons-1": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "\/",
@@ -126,9 +128,9 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "sectionID": ""
       }
     },
@@ -177,13 +179,13 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-14_at_11.00.31_AM.png",
+        "image": "shopify:\/\/shop_images\/IMG_4573_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "image__aspect_ratio": "pb-[100%]",
         "content_ratio": "md:grid-cols-2",
-        "image__object_fit": "object-cover",
+        "image__object_fit": "object-contain",
         "image__order": "-order-1",
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": false,
@@ -193,7 +195,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",
         "padding_bottom": "pb-md",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "section_liquid": "",
         "sectionID": ""
       }

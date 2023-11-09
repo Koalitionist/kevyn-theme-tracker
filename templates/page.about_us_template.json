@@ -602,7 +602,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE FUNDAMENTALS<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -616,7 +616,7 @@
           "type": "text",
           "settings": {
             "title": "<p>In the words of Kevyn Aucoin himself,<br\/><br\/><em>“First of all, let me say that I believe there are no rules when it comes to makeup. In a world of constant change…I feel the goal should be to expand our definition of what we consider ‘acceptable, normal and beautiful.’ The future will belong to those with open minds and open hearts, who can appreciate beauty in all its forms.” – Kevyn Aucoin<br\/><br\/><\/em>Kevyn Aucoin Beauty is a brand that encompasses approachability, artistry, empowerment and celebrates originality. It’s unapologetic, brave and rather quite fearless.<br\/><br\/>Kevyn himself believed that every woman is beautiful within, and makeup was simply his tool for helping her discover that beauty. He was a man and an artist decades ahead of his time, which has paved the way for innovative, award-winning products, high-performance formulas and textures.<br\/><br\/>His luxurious textures and expansive shade ranges have had a global-broad-appeal for 20 years, when most brands had a limited shade range.<br\/><br\/>He was a true industry pioneer who championed inclusivity, originality, empowerment and education, which you will see carried over today in the brand pillars. <br\/><br\/>Whether you’re a makeup newbie or a pro makeup artist,  It doesn’t matter what age, sex or race you are. There is something for everyone with the brands approachable artistry positioning rooted deep in inclusivity.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

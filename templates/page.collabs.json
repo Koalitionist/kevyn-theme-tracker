@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>KEVYN AFFILIATE PROGRAM<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -436,7 +436,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>HOW TO JOIN<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -450,7 +450,7 @@
           "type": "text",
           "settings": {
             "title": "<h3>If this opportunity resonates with your dreams and aspirations, all you need to do is:<br\/><br\/><strong>STEP 1: Create your account<\/strong><\/h3><h3>Register your personal account. You must be have a US resident.<br\/><br\/><strong>STEP 2:<\/strong> <strong>Fill Out the Application<\/strong><\/h3><h3>It only takes about 5 minutes. Be sure to read the Application Terms before submitting your application.<br\/><br\/><strong>STEP 3: Approval process<\/strong><\/h3><h3>We will review your application and  be sure to get in touch if you’ve been approved to join.<br\/><br\/><strong>STEP 4: Sharing and earning<\/strong><\/h3><h3>After you’re approved, you can start sharing the personal code that you will receive via email.<\/h3><h3>Just add it on your website, blog or social media posts and start earning.<\/h3>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

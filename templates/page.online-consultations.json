@@ -65,7 +65,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0324.jpg",
             "height": 400,
-            "margin_top": -8,
+            "margin_top": -12,
             "margin_bottom": -12,
             "responsive_visibility": "responsive"
           }

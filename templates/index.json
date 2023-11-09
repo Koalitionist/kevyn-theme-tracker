@@ -673,7 +673,7 @@
         "spacing_mobile": 63,
         "highlight": false,
         "auto_pause": false,
-        "duration": 10,
+        "duration": 15,
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",

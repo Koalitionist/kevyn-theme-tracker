@@ -349,13 +349,14 @@
         "template--14976720404567__1708943f-73ce-420a-a6bd-3a51c4666ead-category-4": {
           "type": "category",
           "settings": {
-            "title": "<h2>Discover<\/h2>",
-            "title_font": 1,
+            "title": "<h2>GIFT GUIDE<\/h2>",
+            "title_font": 3,
             "content": "",
             "content_font": 1,
-            "overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05) 100%)",
-            "url": "\/#",
-            "link": "<p>Find out More<\/p>",
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_10_Complete_Radiance_Set_1200x1200px.jpg",
+            "overlay": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.05) 100%)",
+            "url": "shopify:\/\/collections\/gift-guide",
+            "link": "",
             "link_font": 1,
             "style": "row-span-1 pb-[75%]",
             "responsive_visibility": "responsive"

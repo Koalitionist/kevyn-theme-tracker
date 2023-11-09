@@ -303,7 +303,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>KEVYN'S MUSES<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -317,7 +317,7 @@
           "type": "text",
           "settings": {
             "title": "<p>It was hard to find a celebrity's face that Kevyn hadn’t touched– J Lo, Madonna, Tina Turner, Whitney Houston, Kate Moss, Christy Turlington, Naomi Campbell, Janet Jackson, Liza Minelli, Stevie Nicks, Courtney Love, Lisa Marie Presley, Julia Roberts, Gwyneth Paltrow, Tori Amos and Cher, to name a few. He was a best friend to everyone who sat in his chair, which is why he was so highly requested. <\/p><p>“I was not going to go to any other person, besides Kevyn’s chair.. There was always a line, but he was the only makeup artist in town who understood black skin..I’m not going anywhere else.\" – Naomi Campbell<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -378,7 +378,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>THE MUSE<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -392,7 +392,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Kevyn singlehandedly created the celebrity makeup artist category or PRO artistry, as we call it today. He was the pioneer of contouring and made it mainstream. Empowerment and education were rooted in everything that he did. He was a master of his craft and he wanted to share it with the world. Kevyn went on to author bestselling books <em>The Art of Makeup <\/em>(1994), <em>Making Faces<\/em> (1997), and <em>Face Forward<\/em> (2001) which share his techniques. He was a muse who inspired others, including Issac Mizrahi and viral makeup artist Mario Dedivanovic (Kim Kardashian’s makeup artist). Yet, his favorite muse throughout the years continued to be his sister Carla. <\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

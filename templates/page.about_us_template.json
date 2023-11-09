@@ -64,7 +64,7 @@
           "type": "text",
           "settings": {
             "title": "<p><strong>The Man. The Myth. The Legend and his story. <\/strong><\/p>",
-            "title_font": 2,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

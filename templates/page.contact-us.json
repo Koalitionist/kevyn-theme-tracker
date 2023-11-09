@@ -55,7 +55,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Have a question? We're here to help! You can contact us directly by <a href=\"mailto:customerservice@kevynaucoin.com\"><span style=\"text-decoration:underline\">email<\/span><\/a><br\/> or by filling in the below fields. Our operating hours are Monday to <br\/>Friday 9:00 a.m to 6:00 p.m. EST (excluding major US Holidays).<\/p><p>You can also refer to our <a href=\"https:\/\/kevynaucoin.myshopify.com\/pages\/faqs-1\" title=\"faqs\">FAQ page<\/a>  for an immediate answer to common questions.<\/p><p><br\/> I consent to the transfer and processing of my personal data in accordance with the <br\/><a href=\"https:\/\/kevynaucoinbeauty.com\/pages\/cookie-policy\"> Cookie Policy<\/a> and <a href=\"https:\/\/kevynaucoinbeauty.com\/pages\/privacy-policy?ose=false\">Privacy Policy.<\/a><\/p><p><\/p><p>1-888-367-1319<\/p><p>Mon - Friday am - 6pm EST<\/p><p>customerservice@kevynaucoin.com<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -124,7 +124,7 @@
           "type": "text",
           "settings": {
             "title": "<h3>Contact Form<\/h3>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

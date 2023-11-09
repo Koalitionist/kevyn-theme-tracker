@@ -198,9 +198,9 @@
       ],
       "settings": {
         "title": "<h2>ORDER & PAYMENT<\/h2>",
-        "title_font": 1,
-        "question_font": 1,
-        "answer_font": 1,
+        "title_font": 3,
+        "question_font": 3,
+        "answer_font": 3,
         "width": "max-w-3xl",
         "responsive_visibility": "responsive",
         "padding_top": "pt-md",

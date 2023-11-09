@@ -281,7 +281,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>OUR PROGRAM BENEFITS<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -295,7 +295,7 @@
           "type": "text",
           "settings": {
             "title": "<h3>As a KA AFFILIATE, you will access:<br\/><br\/>• Receive a competitive commission for each successful conversion.<br\/>• Offer your audience special discounts in our products.<br\/>• Enjoy special discounts available only to KAB Affiliates.<br\/>• Dedicated support from our team.<br\/>• Get access to exclusive sneak peeks of upcoming launches.<br\/>• Showcase your talent and get the chance to be featured on our social channels.<\/h3>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

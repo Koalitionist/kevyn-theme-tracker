@@ -1239,20 +1239,6 @@
             "responsive_visibility": "responsive"
           }
         },
-        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Tezza-7533_1200x1200px.jpg",
-            "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CytGjCBLnG1\/",
-            "title": "",
-            "title_font": 1,
-            "subtitle_richtext": "",
-            "subtitle_font": 1,
-            "border_width": 0,
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2": {
           "type": "image",
           "disabled": true,
@@ -1268,12 +1254,12 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ContourSticks_1200x1200px.jpg",
+            "image": "shopify:\/\/shop_images\/Tezza-7533_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/CzHXsZzOfx6\/",
+            "url": "https:\/\/www.instagram.com\/p\/CytGjCBLnG1\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -1309,15 +1295,29 @@
             "border_width": 0,
             "responsive_visibility": "responsive"
           }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ContourSticks_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CzHXsZzOfx6\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
-        "1de5f47a-eee9-4730-ba8f-774bd2f953b5",
         "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0",
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5",
         "caf1f722-815d-439e-9def-ee1750d71d96",
-        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3"
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0"
       ],
       "settings": {
         "image__aspect_ratio": "pb-[100%]",

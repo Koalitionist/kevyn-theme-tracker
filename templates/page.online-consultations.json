@@ -6,8 +6,8 @@
         "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-1": {
           "type": "text",
           "settings": {
-            "title": "<p>FREE  15-MINUTE<\/p>",
-            "title_font": 1,
+            "title": "<h2>FREE  15-MINUTE<\/h2>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

@@ -200,12 +200,30 @@
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
+        },
+        "95469247-5e02-4c1b-9447-a3c7a9e8aa63": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "BOOK FREE ONLINE CONSULTATION",
+            "button_primary__url": "\/https:\/\/calendly.com\/kevyn-aucoin-virtual-consultations\/15-minute-virtual-consultation",
+            "button_primary__style": "button-secondary--outline",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
         }
       },
       "block_order": [
         "882c424b-e5c7-44f8-b443-cee247cd4b80",
         "1383d600-69d7-43bd-8237-36cb0a4f38d6",
-        "504cc336-dd4e-48ef-b58f-c61e7a4e8cc9"
+        "504cc336-dd4e-48ef-b58f-c61e7a4e8cc9",
+        "95469247-5e02-4c1b-9447-a3c7a9e8aa63"
       ],
       "settings": {
         "source": "image",

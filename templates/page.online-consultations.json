@@ -100,7 +100,6 @@
         },
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-buttons-1": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "\/",
@@ -248,12 +247,6 @@
         "sectionID": ""
       }
     },
-    "87032953-0ce3-4597-ad7a-e3f99779e0a2": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<!-- Calendly inline widget begin -->\n<div class=\"calendly-inline-widget\" data-url=\"https:\/\/calendly.com\/kevyn-aucoin-virtual-consultations\" style=\"min-width:320px;height:700px;\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/assets.calendly.com\/assets\/external\/widget.js\" async><\/script>\n<!-- Calendly inline widget end -->"
-      }
-    },
     "15ebd4e0-8bc8-49d1-a814-5da1a7d05d32": {
       "type": "benefit-tabs",
       "blocks": {
@@ -298,7 +291,7 @@
         "padding_top": "pt-md",
         "padding_bottom": "pb-md",
         "responsive_visibility": "responsive",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "sectionID": ""
       }
     }
@@ -309,7 +302,6 @@
     "main",
     "1686194870ee6d63f5",
     "0629a9fb-ed6e-424d-9357-7912bc215e8a",
-    "87032953-0ce3-4597-ad7a-e3f99779e0a2",
     "15ebd4e0-8bc8-49d1-a814-5da1a7d05d32"
   ]
 }

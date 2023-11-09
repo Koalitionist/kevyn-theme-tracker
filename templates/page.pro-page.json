@@ -434,7 +434,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>BECOME A TEAM KEVYN MEMBER<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -448,7 +448,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Apply by completing the following form with your personal information and professional credentials.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -462,7 +462,7 @@
           "type": "text",
           "settings": {
             "title": "<p>For <strong>MAKEUP ARTISTS<\/strong>, you must submit a copy of photo identification<em> <\/em>along with TWO pieces of professional makeup artist criteria. <br\/><br\/>For <strong>INDUSTRY INSIDERS<\/strong>, you must submit a copy of photo identification<em> <\/em>along with ONE piece of professional makeup artist criteria. <br\/><br\/>Required identification must be current, indicate your name and specific profession. TEAM KEVYN reserves the right to require additional professional documentation at any time. All identification will be destroyed after processing and will not be shared. TEAM KEVYN reserves the right to reject the application for any or no reason. For any additional questions, please reach out to us at TeamKevyn@kevynaucoin.com.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

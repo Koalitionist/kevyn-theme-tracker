@@ -87,7 +87,7 @@
           "type": "text",
           "settings": {
             "title": "<h2>FIND YOUR BEST BASE<\/h2>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -101,7 +101,7 @@
           "type": "text",
           "settings": {
             "title": "<h4>Choose your complexion product and click 'Find My Shade' on<br\/> the product page to begin the quiz.<br\/><br\/>2 WAYS: <br\/>FIND YOUR MATCH OR<br\/> COMPARE TO OTHER BRANDS<br\/><br\/>“If we’ve learned anything in this age of communication, it is that being true to yourself is the only real road to happiness and fulfillment.”<br\/><br\/>—Kevyn Aucoin<\/h4>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

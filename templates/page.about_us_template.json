@@ -677,7 +677,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>OUR MISSION<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -691,7 +691,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Kevyn Aucoin Beauty paves the way for bold, beautiful, <br\/>self expression.<br\/><br\/>Daring to create the unknown, while respecting its heritage and where it’s been.<br\/><br\/>Empowering you to explore, express and experiment on your own terms.<br\/><br\/>Kevyn Aucoin Beauty stays true to the belief that makeup does not cover, but rather, uncovers your true self.<br\/><br\/><em>Your Beauty is Brave<\/em><\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

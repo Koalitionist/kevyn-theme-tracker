@@ -153,7 +153,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>NEW YORK CITY<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -167,7 +167,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Despite his adversities, and humble beginnings, his passion for makeup prevailed. Kevyn recognized that self expression and the transformative power of makeup could make the world a better place. He moved to New York and became what we know as the American Dream. He sat outside the Vogue office with his portfolio until he was given a chance. <br\/>A few months later Kevyn went on to be one of the first makeup artists to be featured on the cover of Vogue. <\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-left",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -228,7 +228,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>A STAR IS BORN<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -242,7 +242,7 @@
           "type": "text",
           "settings": {
             "title": "<p>Kevyn put makeup artistry on the map. His philosophy was that every woman is beautiful within, and makeup was simply his tool for helping her discover that beauty. Kevyn was a content creator of his time, and his work was everywhere – highly acclaimed music videos, backstage at fashion week, gracing album covers and fashion advertising. His work was featured on 19 Vogue covers in 3 years and he appeared on numerous talk shows, including The Oprah Winfrey Show. Kevyn even debuted as himself in the infamous “she’s fashion roadkill” episode of Sex and the City.<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

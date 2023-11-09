@@ -27,7 +27,7 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "url": "",
         "image__object_fit": "object-cover",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__overlay": "linear-gradient(134deg, rgba(210, 199, 199, 1), rgba(0, 0, 0, 0.05) 100%)",
         "height": 390,
         "height_mobile": 340,
         "align__vertical": "justify-center",
@@ -38,7 +38,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "section_liquid": "",
         "sectionID": ""
       }

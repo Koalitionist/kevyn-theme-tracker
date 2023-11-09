@@ -49,25 +49,13 @@
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-1": {
           "type": "text",
           "settings": {
-            "title": "<p>Neat Preheading<\/p>",
-            "title_font": 1,
+            "title": "<h2>BECOME A BEAUTY EXPERT<\/h2>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-accent_line-1": {
-          "type": "accent_line",
-          "settings": {
-            "color": "#11ed6e",
-            "height": 3,
-            "width": 90,
-            "margin_top": 0,
-            "margin_bottom": 20,
+            "margin_top": -12,
+            "margin_bottom": -12,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
           }
@@ -129,7 +117,6 @@
       },
       "block_order": [
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-1",
-        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-accent_line-1",
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-image-1",
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-2",
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-3",

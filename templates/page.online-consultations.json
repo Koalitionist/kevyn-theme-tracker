@@ -159,16 +159,30 @@
     "0629a9fb-ed6e-424d-9357-7912bc215e8a": {
       "type": "image-with-text",
       "blocks": {
-        "1383d600-69d7-43bd-8237-36cb0a4f38d6": {
+        "882c424b-e5c7-44f8-b443-cee247cd4b80": {
           "type": "text",
           "settings": {
-            "title": "<h2>MEET DITA, <br\/>Kevyn Aucoin Beauty Ambassador<\/h2>",
+            "title": "<h3>INTRODUCING OUR CONSULTATION SPECIALIST, DITA<\/h3>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",
-            "margin_top": 4,
+            "margin_top": 0,
             "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "1383d600-69d7-43bd-8237-36cb0a4f38d6": {
+          "type": "text",
+          "settings": {
+            "title": "<h4><em>Kevyn Aucoin Beauty Artist Ambassador<\/em><\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": -8,
+            "margin_bottom": 2,
             "section_max_width": "max-w-sm",
             "responsive_visibility": "responsive"
           }
@@ -189,6 +203,7 @@
         }
       },
       "block_order": [
+        "882c424b-e5c7-44f8-b443-cee247cd4b80",
         "1383d600-69d7-43bd-8237-36cb0a4f38d6",
         "504cc336-dd4e-48ef-b58f-c61e7a4e8cc9"
       ],

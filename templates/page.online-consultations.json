@@ -287,7 +287,7 @@
         "template--14976720404567__15ebd4e0-8bc8-49d1-a814-5da1a7d05d32-benefit-3"
       ],
       "settings": {
-        "layout": "order-2",
+        "layout": "-order-1",
         "padding_top": "pt-md",
         "padding_bottom": "pb-md",
         "responsive_visibility": "responsive",

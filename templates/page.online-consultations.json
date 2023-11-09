@@ -43,6 +43,108 @@
         "sectionID": ""
       }
     },
+    "93098b01-4031-4e93-a2be-b8ab5eb9839b": {
+      "type": "richtext",
+      "blocks": {
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-accent_line-1": {
+          "type": "accent_line",
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-image-1": {
+          "type": "image",
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-1",
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-accent_line-1",
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-image-1",
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-2",
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-3",
+        "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-buttons-1"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -118,6 +220,7 @@
   },
   "order": [
     "7f86c31e-437a-492b-ab05-9a10671c9805",
+    "93098b01-4031-4e93-a2be-b8ab5eb9839b",
     "main",
     "1686194870ee6d63f5",
     "0629a9fb-ed6e-424d-9357-7912bc215e8a",

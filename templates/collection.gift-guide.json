@@ -37,7 +37,7 @@
         "section_max_width": "max-w-2xl",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-group-3",
         "section_liquid": "",
         "sectionID": ""
@@ -337,7 +337,7 @@
         "align__horizontal": "items-center text-center",
         "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
+        "padding_top": "pt-sm",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "section_liquid": "",

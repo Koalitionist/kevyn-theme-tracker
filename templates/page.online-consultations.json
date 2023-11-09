@@ -65,16 +65,16 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/10_26_22_Kevyn_Aucoin_0324.jpg",
             "height": 400,
-            "margin_top": 34,
-            "margin_bottom": 40,
+            "margin_top": -8,
+            "margin_bottom": -12,
             "responsive_visibility": "responsive"
           }
         },
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-2": {
           "type": "text",
           "settings": {
-            "title": "<p>Black Friday & Cyber Monday<\/p>",
-            "title_font": 1,
+            "title": "<h3>ENDLESS OPPORTUNITIES<\/h3>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -87,11 +87,11 @@
         "template--14976720404567__93098b01-4031-4e93-a2be-b8ab5eb9839b-text-3": {
           "type": "text",
           "settings": {
-            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
-            "title_font": 1,
+            "title": "<ul><li>Get online access to our professional artistry team and take your makeup application to the next level.<br\/><\/li><li>Learn how to mix and match shades to contour and sculpt your unique features. <br\/><\/li><li>Receive expert insight and product education on our entire catalog.<br\/><\/li><li>Don't be shy! This offer is for experts and beauty enthusiasts alike.<br\/><\/li><li>In store consultations available after your one-on-one virtual consultation too!<\/li><\/ul>",
+            "title_font": 3,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
+            "alignment_desktop": "text-left",
+            "alignment_mobile": "max-md:text-left",
             "margin_top": 0,
             "margin_bottom": 24,
             "section_max_width": "max-w-2xl",
@@ -162,8 +162,22 @@
         "1383d600-69d7-43bd-8237-36cb0a4f38d6": {
           "type": "text",
           "settings": {
-            "title": "<h1>MEET DITA<\/h1>",
-            "title_font": 1,
+            "title": "<h2>MEET DITA, <br\/>Kevyn Aucoin Beauty Ambassador<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 4,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-sm",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "504cc336-dd4e-48ef-b58f-c61e7a4e8cc9": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Dita has been a member of the Kevyn Aucoin Beauty Artistry Team for over 20 years. Her breadth of knowledge includes backstage fashion shows, in-store and private educational programs, bridal makeup, tips and tricks, as well as expertise in Kevyn Aucoin's renowned contouring and sculpting methods. <br\/>This is your sign to learn from the best.<\/p>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-center",
             "alignment_mobile": "max-md:text-center",
@@ -175,7 +189,8 @@
         }
       },
       "block_order": [
-        "1383d600-69d7-43bd-8237-36cb0a4f38d6"
+        "1383d600-69d7-43bd-8237-36cb0a4f38d6",
+        "504cc336-dd4e-48ef-b58f-c61e7a4e8cc9"
       ],
       "settings": {
         "source": "image",

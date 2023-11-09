@@ -3,29 +3,15 @@
     "7f86c31e-437a-492b-ab05-9a10671c9805": {
       "type": "image-banner",
       "blocks": {
-        "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-1": {
-          "type": "text",
-          "settings": {
-            "title": "<h2>FREE  15-MINUTE<\/h2>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-2": {
           "type": "text",
           "settings": {
-            "title": "<h1>ONLINE CONSULTATIONS<\/h1>",
+            "title": "<h1>VIRTUAL CONSULTATIONS<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 32,
+            "margin_top": 92,
             "margin_bottom": 128,
             "section_max_width": "max-w-2xl",
             "responsive_visibility": "responsive"
@@ -33,7 +19,6 @@
         }
       },
       "block_order": [
-        "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-1",
         "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-2"
       ],
       "settings": {
@@ -84,6 +69,7 @@
       "type": "image-with-text",
       "settings": {
         "source": "image",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-14_at_11.00.31_AM.png",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "metafield": "smart.image_with_text",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",

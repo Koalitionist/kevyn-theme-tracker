@@ -169,7 +169,7 @@
             "title": "<p>Despite his adversities, and humble beginnings, his passion for makeup prevailed. Kevyn recognized that self expression and the transformative power of makeup could make the world a better place. He moved to New York and became what we know as the American Dream. He sat outside the Vogue office with his portfolio until he was given a chance. <br\/>A few months later Kevyn went on to be one of the first makeup artists to be featured on the cover of Vogue. <\/p>",
             "title_font": 1,
             "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
+            "alignment_desktop": "text-left",
             "alignment_mobile": "max-md:[text-align:inherit]",
             "margin_top": 0,
             "margin_bottom": 0,

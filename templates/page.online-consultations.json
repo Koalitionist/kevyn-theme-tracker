@@ -108,12 +108,19 @@
         "section_liquid": "",
         "sectionID": ""
       }
+    },
+    "87032953-0ce3-4597-ad7a-e3f99779e0a2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- Calendly inline widget begin -->\n<div class=\"calendly-inline-widget\" data-url=\"https:\/\/calendly.com\/brittany-sauer\" style=\"min-width:320px;height:700px;\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/assets.calendly.com\/assets\/external\/widget.js\" async><\/script>\n<!-- Calendly inline widget end -->"
+      }
     }
   },
   "order": [
     "7f86c31e-437a-492b-ab05-9a10671c9805",
     "main",
     "1686194870ee6d63f5",
-    "0629a9fb-ed6e-424d-9357-7912bc215e8a"
+    "0629a9fb-ed6e-424d-9357-7912bc215e8a",
+    "87032953-0ce3-4597-ad7a-e3f99779e0a2"
   ]
 }

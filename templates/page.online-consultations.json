@@ -103,7 +103,7 @@
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "\/",
-            "button_primary__style": "button-primary",
+            "button_primary__style": "button-secondary--outline",
             "button_secondary__text": "Learn More",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",

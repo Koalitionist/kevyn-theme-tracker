@@ -252,19 +252,21 @@
         "template--14976720404567__15ebd4e0-8bc8-49d1-a814-5da1a7d05d32-benefit-2": {
           "type": "benefit",
           "settings": {
-            "title": "<p>Mark Dixon<\/p>",
-            "title_font": 1,
-            "content": "<p>I can't believe you'd loan me your car without telling me it had a blind spot. I could've been killed!<\/p>",
-            "content_font": 1
+            "image": "shopify:\/\/shop_images\/KAB_September_Lifestyle_12_Making_Faces_Book_1200x1200px.jpg",
+            "title": "<p>KEVYN'S LEGENDARY TECHNIQUES<\/p>",
+            "title_font": 3,
+            "content": "<p>Take all of the best-kept-secrets available in Kevyn's books to the next level and receive visual, IRL education that fits your specific needs.<\/p>",
+            "content_font": 3
           }
         },
         "template--14976720404567__15ebd4e0-8bc8-49d1-a814-5da1a7d05d32-benefit-3": {
           "type": "benefit",
           "settings": {
-            "title": "<p>Mark Dixon<\/p>",
-            "title_font": 1,
-            "content": "<p>The appropriate question is, 'when the hell are they?' You see, Einstein has just become the world's first time traveler! I sent him into the future. One minute into the future to be exact. And at precisely 1:21 a.m. and zero seconds, we shall catch up with him and the time machine.<\/p>",
-            "content_font": 1
+            "image": "shopify:\/\/shop_images\/KAB_SIGNATURE_STICKS_CONTRAST_STICKS_LIFESTYLE02_2000x2000px_144dpi.jpg",
+            "title": "<p>BE IN THE KNOW<\/p>",
+            "title_font": 3,
+            "content": "<p>Learn about our new products and how to fit them into your beauty routine, as well as how-to pair them with our iconic collections.<\/p>",
+            "content_font": 3
           }
         }
       },

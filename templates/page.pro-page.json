@@ -192,7 +192,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>MAKEUP ARTISTS<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -206,7 +206,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>40% OFF<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -220,7 +220,7 @@
           "type": "text",
           "settings": {
             "title": "<p>• 40% discount on products online<br\/>• Invitations to Pro-only Masterclasses<br\/>• Exclusive members communication<br\/>• Early access to key collections<br\/>• Chance to apply to earn commissions<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

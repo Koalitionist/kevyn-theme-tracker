@@ -453,7 +453,7 @@
           "type": "text",
           "settings": {
             "title": "<h1>AWARD-WINNING ARTIST<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -467,7 +467,7 @@
           "type": "text",
           "settings": {
             "title": "<p>In 1995, Kevyn went on to be the only makeup artist to win a CFDA Award and in 2019, J Lo dedicated her CFDA Fashion Icon award to Kevyn and Oribe for “helping her turn from an around-the-way girl, to a girl who could grace a magazine cover.”<\/p>",
-            "title_font": 1,
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",

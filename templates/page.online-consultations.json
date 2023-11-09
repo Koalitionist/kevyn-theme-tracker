@@ -6,7 +6,7 @@
         "template--14976720404567__7f86c31e-437a-492b-ab05-9a10671c9805-text-2": {
           "type": "text",
           "settings": {
-            "title": "<h1>VIRTUAL CONSULTATIONS<\/h1>",
+            "title": "<h1>FREE VIRTUAL CONSULTATIONS<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -223,8 +223,8 @@
         "align__horizontal": "items-start text-left",
         "section_layout": "container-bg-full",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-md",
-        "padding_bottom": "pb-md",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-group-5",
         "section_liquid": "",
         "sectionID": ""

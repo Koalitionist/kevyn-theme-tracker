@@ -183,7 +183,7 @@
             "alignment_mobile": "max-md:text-center",
             "margin_top": -8,
             "margin_bottom": 2,
-            "section_max_width": "max-w-sm",
+            "section_max_width": "max-w-lg",
             "responsive_visibility": "responsive"
           }
         },

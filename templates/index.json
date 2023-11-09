@@ -672,7 +672,7 @@
         "spacing": 99,
         "spacing_mobile": 63,
         "highlight": false,
-        "auto_pause": false,
+        "auto_pause": true,
         "duration": 18,
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",

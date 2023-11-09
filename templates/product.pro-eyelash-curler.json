@@ -384,7 +384,7 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-4xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
+        "padding_top": "pt-sm",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""

@@ -21,6 +21,8 @@ export const useProductRatings = (product: _Product_liquid) => {
   const [ratingNS, ratingMF] = product_data__metafield_rating.split(".");
   const [ratingStrNS, ratingstrMF] = product_data__metafield_rating_average.split(".");
 
+  console.log("product_data__type", product_data__type);
+
   switch (product_data__type) {
     case "shopify": {
       // @ts-ignore

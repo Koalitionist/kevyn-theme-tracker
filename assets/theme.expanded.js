@@ -9631,6 +9631,7 @@
     const [countNS, countMF] = product_data__metafield_reviews_count.split(".");
     const [ratingNS, ratingMF] = product_data__metafield_rating.split(".");
     const [ratingStrNS, ratingstrMF] = product_data__metafield_rating_average.split(".");
+    console.log("product_data__type", product_data__type);
     switch (product_data__type) {
       case "shopify": {
         const rating = +((_d = (_c = (_b5 = (_a5 = product == null ? void 0 : product.metafields) == null ? void 0 : _a5.reviews) == null ? void 0 : _b5.rating) == null ? void 0 : _c.rating) != null ? _d : 0);

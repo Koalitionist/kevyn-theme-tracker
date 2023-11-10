@@ -104,6 +104,7 @@ export const ProductRatingWithProduct: FC<
   } = useProductRatings(product);
 
   console.log("product title----------", product.title);
+  console.log("product metafields----------", product.metafields);
   console.log("rating-------", rating);
   console.log("show_count----------", show_count);
   return (

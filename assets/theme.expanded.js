@@ -9702,6 +9702,7 @@
       show_0_reviews
     } = useProductRatings(product);
     console.log("product title----------", product.title);
+    console.log("product metafields----------", product.metafields);
     console.log("rating-------", rating);
     console.log("show_count----------", show_count);
     return o3("figure", __spreadProps(__spreadValues({ className: clsx_m_default("inline-flex items-center", className) }, props), { children: [

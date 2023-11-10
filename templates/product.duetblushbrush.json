@@ -576,9 +576,9 @@
         "template--14834529632343__b87d756b-cc56-4844-9812-087ed525f8d0-16892734120eb7a3e9-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_10.jpg",
+            "image": "shopify:\/\/shop_images\/Feb_Lifestyle_6_Duet_Blush_Brush_Blush_1200x1200px.jpg",
             "image__overlay": "",
-            "url": "https:\/\/www.instagram.com\/p\/Cc0K5jiANwm\/",
+            "url": "https:\/\/www.instagram.com\/p\/CpAsfNvMVx9\/",
             "title": "",
             "title_font": 1,
             "subtitle_richtext": "",
@@ -662,10 +662,22 @@
             "title_type": "metafield",
             "options": ""
           }
+        },
+        "e5b921b9-771e-412e-9241-7a8baf66de0e": {
+          "type": "siblings",
+          "settings": {
+            "title": "",
+            "products": [
+
+            ],
+            "title_type": "list",
+            "options": ""
+          }
         }
       },
       "block_order": [
-        "7edf88c3-112a-4148-abe6-8f9a8952111a"
+        "7edf88c3-112a-4148-abe6-8f9a8952111a",
+        "e5b921b9-771e-412e-9241-7a8baf66de0e"
       ],
       "disabled": true,
       "settings": {

@@ -9631,7 +9631,6 @@
     const [countNS, countMF] = product_data__metafield_reviews_count.split(".");
     const [ratingNS, ratingMF] = product_data__metafield_rating.split(".");
     const [ratingStrNS, ratingstrMF] = product_data__metafield_rating_average.split(".");
-    console.log("product_data__type", product_data__type);
     switch (product_data__type) {
       case "shopify": {
         const rating = +((_d = (_c = (_b5 = (_a5 = product == null ? void 0 : product.metafields) == null ? void 0 : _a5.reviews) == null ? void 0 : _b5.rating) == null ? void 0 : _c.rating) != null ? _d : 0);
@@ -9702,10 +9701,6 @@
       show_count,
       show_0_reviews
     } = useProductRatings(product);
-    console.log("product title----------", product.title);
-    console.log("product metafields----------", product.metafields);
-    console.log("rating-------", rating);
-    console.log("show_count----------", show_count);
     return o3("figure", __spreadProps(__spreadValues({ className: clsx_m_default("inline-flex items-center", className) }, props), { children: [
       o3("div", { className: "relative flex h-5 items-center", children: rating ? o3(_, { children: [...new Array(scale_max - scale_min + 1)].map((_5, index) => {
         const lineIndex = index + scale_min - 1;
@@ -9740,7 +9735,7 @@
           },
           lineIndex
         );
-      }) }) : "No ratings" }),
+      }) }) : null }),
       show_count && (show_0_reviews || rating_count > 0) ? o3("figcaption", { className: clsx_m_default("text-xs text-theme-text/70", rating && "ml-2"), children: [
         rating_count != null ? rating_count : "No",
         " reviews"

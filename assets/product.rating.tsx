@@ -21,8 +21,6 @@ export const useProductRatings = (product: _Product_liquid) => {
   const [ratingNS, ratingMF] = product_data__metafield_rating.split(".");
   const [ratingStrNS, ratingstrMF] = product_data__metafield_rating_average.split(".");
 
-  console.log("product_data__type", product_data__type);
-
   switch (product_data__type) {
     case "shopify": {
       // @ts-ignore
@@ -105,10 +103,6 @@ export const ProductRatingWithProduct: FC<
     show_0_reviews,
   } = useProductRatings(product);
 
-  console.log("product title----------", product.title);
-  console.log("product metafields----------", product.metafields);
-  console.log("rating-------", rating);
-  console.log("show_count----------", show_count);
   return (
     <figure className={clsx("inline-flex items-center", className)} {...props}>
       <div className="relative flex h-5 items-center">
@@ -153,7 +147,7 @@ export const ProductRatingWithProduct: FC<
                 );
               })}
             </>
-          : "No ratings"}
+          : null}
       </div>
 
       {show_count && (show_0_reviews || rating_count > 0)

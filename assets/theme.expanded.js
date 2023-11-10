@@ -9701,6 +9701,8 @@
       show_count,
       show_0_reviews
     } = useProductRatings(product);
+    console.log("rating-------", rating);
+    console.log("show_count----------", show_count);
     return o3("figure", __spreadProps(__spreadValues({ className: clsx_m_default("inline-flex items-center", className) }, props), { children: [
       o3("div", { className: "relative flex h-5 items-center", children: rating ? o3(_, { children: [...new Array(scale_max - scale_min + 1)].map((_5, index) => {
         const lineIndex = index + scale_min - 1;
@@ -9735,7 +9737,7 @@
           },
           lineIndex
         );
-      }) }) : null }),
+      }) }) : "No ratings" }),
       show_count && (show_0_reviews || rating_count > 0) ? o3("figcaption", { className: clsx_m_default("text-xs text-theme-text/70", rating && "ml-2"), children: [
         rating_count != null ? rating_count : "No",
         " reviews"

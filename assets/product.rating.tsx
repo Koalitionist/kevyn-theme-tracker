@@ -103,6 +103,8 @@ export const ProductRatingWithProduct: FC<
     show_0_reviews,
   } = useProductRatings(product);
 
+  console.log("rating-------", rating);
+  console.log("show_count----------", show_count);
   return (
     <figure className={clsx("inline-flex items-center", className)} {...props}>
       <div className="relative flex h-5 items-center">
@@ -147,7 +149,7 @@ export const ProductRatingWithProduct: FC<
                 );
               })}
             </>
-          : null}
+          : "No ratings"}
       </div>
 
       {show_count && (show_0_reviews || rating_count > 0)

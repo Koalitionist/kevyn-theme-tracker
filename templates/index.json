@@ -360,25 +360,11 @@
             "responsive_visibility": "responsive"
           }
         },
-        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-2": {
-          "type": "text",
-          "settings": {
-            "title": "<p>Black Friday & Cyber Monday<\/p>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3": {
           "type": "text",
           "settings": {
-            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
-            "title_font": 1,
+            "title": "<h4>Get your one-on-one customized online consultation with our artistry team.<\/h4>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -391,10 +377,10 @@
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "\/",
+            "button_primary__text": "LEARN MORE",
+            "button_primary__url": "\/https:\/\/kevynaucoinbeauty.com\/pages\/virtual-consultations",
             "button_primary__style": "button-primary",
-            "button_secondary__text": "Learn More",
+            "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary--outline",
             "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
@@ -408,7 +394,6 @@
       },
       "block_order": [
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-1",
-        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-2",
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3",
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1"
       ],
@@ -429,7 +414,7 @@
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "section_liquid": "",
         "sectionID": ""
       }

@@ -378,7 +378,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "LEARN MORE",
-            "button_primary__url": "\/https:\/\/kevynaucoinbeauty.com\/pages\/virtual-consultations",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/pages\/virtual-consultations",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",

@@ -202,7 +202,7 @@
           "type": "buttons",
           "settings": {
             "button_primary__text": "SHOP NOW",
-            "button_primary__url": "\/https:\/\/kevynaucoinbeauty.com\/collections",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/collections",
             "button_primary__style": "button-secondary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",

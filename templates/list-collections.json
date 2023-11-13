@@ -115,9 +115,9 @@
           "type": "view_all_bar",
           "settings": {
             "title": "<h1>Eye<\/h1>",
-            "title_font": 1,
+            "title_font": 3,
             "view_all_text": "<p>See All<\/p>",
-            "view_all_font": 1,
+            "view_all_font": 3,
             "url": "shopify:\/\/collections\/eye",
             "margin_bottom": 50
           }

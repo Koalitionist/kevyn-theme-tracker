@@ -1027,10 +1027,28 @@
 
               ]
             }
+          },
+          "5bc00ae2-9bb8-47e5-b442-a69a2ce6db6e": {
+            "type": "gift",
+            "settings": {
+              "type": "price",
+              "target": 1000,
+              "target_collection": "all-1",
+              "target_products": [
+
+              ],
+              "receives_quantity": 1,
+              "receives_discount_percentage": 100,
+              "receives_collection": "mini-size",
+              "receives_products": [
+
+              ]
+            }
           }
         },
         "block_order": [
-          "47b08bac-ba30-4374-9f16-2a117a738c08"
+          "47b08bac-ba30-4374-9f16-2a117a738c08",
+          "5bc00ae2-9bb8-47e5-b442-a69a2ce6db6e"
         ],
         "settings": {
           "title": "Select Your Free Gift"

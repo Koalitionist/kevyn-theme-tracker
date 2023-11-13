@@ -429,7 +429,7 @@
         "section_layout": "fullwidth",
         "responsive_visibility": "responsive",
         "padding_top": "pt-0",
-        "padding_bottom": "pb-sm",
+        "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "section_liquid": "",
         "sectionID": ""

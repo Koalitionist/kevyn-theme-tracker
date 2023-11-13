@@ -650,6 +650,7 @@
           },
           "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
             "type": "empty_text",
+            "disabled": true,
             "settings": {
               "title": "<p>$11 OFF ORDERS $65+ | Code: 1111<\/p>",
               "title_font": 3,

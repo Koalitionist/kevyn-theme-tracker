@@ -665,10 +665,9 @@
           },
           "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
             "type": "empty_text",
-            "disabled": true,
             "settings": {
-              "title": "<h3>Nothing to see here!<\/h3><p><\/p><p>Continue shopping below. We've picked a few of our favorites. <\/p>",
-              "title_font": 1,
+              "title": "<p>$11 OFF ORDERS $65+ | Code: 1111<\/p>",
+              "title_font": 3,
               "opacity": 100,
               "alignment_desktop": "[text-align:inherit]",
               "alignment_mobile": "max-md:[text-align:inherit]",

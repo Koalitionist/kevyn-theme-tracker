@@ -281,6 +281,7 @@
         },
         "d5e1bedd-05e9-41f5-8311-8eaa6647666e": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "title": "<p>Find A Store<\/p>",
             "url": "shopify:\/\/pages\/find-a-store"
@@ -307,7 +308,6 @@
         "bed6a9b3-476a-4f79-9ff0-ccda12b11742",
         "84b0c1bc-2685-44f1-8006-ed77e340ae26"
       ],
-      "disabled": true,
       "settings": {
         "upsell_product": "",
         "responsive_visibility": "responsive",

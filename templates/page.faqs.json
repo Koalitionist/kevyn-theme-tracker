@@ -26,8 +26,8 @@
           "type": "faq",
           "settings": {
             "open": false,
-            "title": "<p>PRO 50% OFF JUNE OFFER<\/p>",
-            "answer": "<p>Offer valid until 6.21 at 11:59pm EST. Offer includes an additional 10% off the pro 40% off membership discount; totaling 50% off. Login to account for discount to automatically apply. Valid for pro members only. Not valid with other discounts.<\/p>",
+            "title": "<p>SINGLES DAY<\/p>",
+            "answer": "<p>*Offer valid until 11.20 at 11:59pm ET. Offer includes $11 off your entire order when you spend a minimum of $65 pre tax. Input code at checkout for discount to apply. Not valid with other discounts.<\/p>",
             "page": ""
           }
         },
@@ -42,6 +42,7 @@
         },
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-14": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "open": false,
             "title": "<p>SMS SIGN UP JUNE OFFER<\/p>",

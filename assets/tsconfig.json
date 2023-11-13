@@ -1,5 +1,5 @@
 {
-  "extends": "./../node_modules/fx-style/tsconfig-google.json",
+  "extends": ".\/..\/node_modules\/fx-style\/tsconfig-google.json",
   "compilerOptions": {
     "strictNullChecks": false,
     "exactOptionalPropertyTypes": false,
@@ -17,29 +17,29 @@
     "incremental": false,
     "allowJs": false,
     "typeRoots": [
-      "./../node_modules/@types",
-      "./types.ts",
-      "./_types.d.ts",
-      "./@types/types.ts"
+      ".\/..\/node_modules\/@types",
+      ".\/types.ts",
+      ".\/_types.d.ts",
+      ".\/@types\/types.ts"
     ],
     "paths": {
-      "types/*": [
-        "./@types/*"
+      "types\/*": [
+        ".\/@types\/*"
       ],
-      "/*": [
-        "./*"
+      "\/*": [
+        ".\/*"
       ],
-      "/assets/*": [
-        "./*"
+      "\/assets\/*": [
+        ".\/*"
       ],
       "react": [
-        "./../node_modules/preact/compat/"
+        ".\/..\/node_modules\/preact\/compat\/"
       ],
       "react-dom": [
-        "./../node_modules/preact/compat/"
+        ".\/..\/node_modules\/preact\/compat\/"
       ]
     },
-     "strict": false,
+    "strict": false,
     "jsx": "react-jsx",
     "target": "es6",
     "lib": [
@@ -51,9 +51,9 @@
     "importHelpers": true,
     "jsxImportSource": "preact",
     "types": [
-      "preact/jsx-runtime",
+      "preact\/jsx-runtime",
       "react",
-      "@types/node"
+      "@types\/node"
     ],
     "baseUrl": ".",
     "sourceMap": true,
@@ -65,12 +65,11 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "**\/*.ts",
+    "**\/*.tsx"
   ],
   "exclude": [
     "node_modules",
-    "./../node_modules"
+    ".\/..\/node_modules"
   ]
 }
-

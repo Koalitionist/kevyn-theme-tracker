@@ -632,6 +632,22 @@
               "end_date": ""
             }
           },
+          "09be7fb4-bf40-45cc-aa69-1accb413b9cf": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>$11 OFF ORDERS $65+ | Code: 1111<\/p>",
+              "short_text": "",
+              "announcement_font": 3,
+              "link": "shopify:\/\/collections",
+              "color_bg": "",
+              "color_text": "",
+              "position": "center",
+              "display_duration": 10,
+              "scheduled": false,
+              "start_date": "",
+              "end_date": ""
+            }
+          },
           "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
             "type": "empty_text",
             "settings": {
@@ -735,6 +751,7 @@
         },
         "block_order": [
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776",
+          "09be7fb4-bf40-45cc-aa69-1accb413b9cf",
           "f25ef904-6b1a-45c1-8304-510b7bc9f931",
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "bff3add2-447d-4fdd-a609-bf2944c441aa",

@@ -254,7 +254,7 @@
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,
         "gallery__show_thumbnails": "responsive",
-        "gallery__use_variant_thumbnail_images": false,
+        "gallery__use_variant_thumbnail_images": true,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
         "hide_not_selected_variant_images": false,

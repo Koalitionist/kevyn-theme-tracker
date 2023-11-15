@@ -249,7 +249,7 @@
       "settings": {
         "sticky": true,
         "breadcrumbs__show": false,
-        "gallery__layout": "vertical",
+        "gallery__layout": "standard",
         "gallery__zoom": true,
         "gallery__zoom_scale": 230,
         "gallery__first_image_full": true,

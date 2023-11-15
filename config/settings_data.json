@@ -619,10 +619,10 @@
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
             "settings": {
-              "text": "<h6> SHADE FINDER QUIZ<\/h6>",
+              "text": "<h6>FREE MINI WITH EVERY ORDER — CHOOSE YOUR FREE MINI AT CHECKOUT <\/h6>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/collections\/true-to-you-shade-finder-quiz",
+              "link": "shopify:\/\/collections",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",
@@ -630,6 +630,37 @@
               "scheduled": false,
               "start_date": "",
               "end_date": ""
+            }
+          },
+          "09be7fb4-bf40-45cc-aa69-1accb413b9cf": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>$11 OFF ORDERS $65+ | Code: 1111<\/p>",
+              "short_text": "",
+              "announcement_font": 3,
+              "link": "shopify:\/\/collections",
+              "color_bg": "#000000",
+              "color_text": "#ffffff",
+              "position": "center",
+              "display_duration": 7,
+              "scheduled": false,
+              "start_date": "",
+              "end_date": ""
+            }
+          },
+          "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
+            "type": "empty_text",
+            "disabled": true,
+            "settings": {
+              "title": "<p>$11 OFF ORDERS $65+ | Code: 1111<\/p>",
+              "title_font": 3,
+              "opacity": 100,
+              "alignment_desktop": "[text-align:inherit]",
+              "alignment_mobile": "max-md:[text-align:inherit]",
+              "margin_top": 34,
+              "margin_bottom": 34,
+              "section_max_width": "max-w-sm",
+              "responsive_visibility": "responsive"
             }
           },
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
@@ -660,21 +691,6 @@
               "margin_top": 0,
               "margin_bottom": 20,
               "section_max_width": "max-w-2xl",
-              "responsive_visibility": "responsive"
-            }
-          },
-          "f25ef904-6b1a-45c1-8304-510b7bc9f931": {
-            "type": "empty_text",
-            "disabled": true,
-            "settings": {
-              "title": "<h3>Nothing to see here!<\/h3><p><\/p><p>Continue shopping below. We've picked a few of our favorites. <\/p>",
-              "title_font": 1,
-              "opacity": 100,
-              "alignment_desktop": "[text-align:inherit]",
-              "alignment_mobile": "max-md:[text-align:inherit]",
-              "margin_top": 34,
-              "margin_bottom": 34,
-              "section_max_width": "max-w-sm",
               "responsive_visibility": "responsive"
             }
           },
@@ -736,9 +752,10 @@
         },
         "block_order": [
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776",
+          "09be7fb4-bf40-45cc-aa69-1accb413b9cf",
+          "f25ef904-6b1a-45c1-8304-510b7bc9f931",
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "bff3add2-447d-4fdd-a609-bf2944c441aa",
-          "f25ef904-6b1a-45c1-8304-510b7bc9f931",
           "802faf61-2f10-41e8-95ef-896cecb66483",
           "387c9a24-ed60-473d-b4ff-fac00982e9be",
           "976d24df-d4f0-4a32-a6e7-8606c70e9a63"
@@ -1027,10 +1044,31 @@
 
               ]
             }
+          },
+          "5bc00ae2-9bb8-47e5-b442-a69a2ce6db6e": {
+            "type": "gift",
+            "settings": {
+              "type": "price",
+              "target": 998,
+              "target_collection": "all-1",
+              "target_products": [
+
+              ],
+              "receives_quantity": 1,
+              "receives_discount_percentage": 100,
+              "receives_collection": "",
+              "receives_products": [
+                "kevyn-aucoin-mini-eye-shadow-brush-free-gift",
+                "mini-foundation-balm",
+                "mini-indecent-mascara",
+                "mini-stripped-nude-skin-tint"
+              ]
+            }
           }
         },
         "block_order": [
-          "47b08bac-ba30-4374-9f16-2a117a738c08"
+          "47b08bac-ba30-4374-9f16-2a117a738c08",
+          "5bc00ae2-9bb8-47e5-b442-a69a2ce6db6e"
         ],
         "settings": {
           "title": "Select Your Free Gift"

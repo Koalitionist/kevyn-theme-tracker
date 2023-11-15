@@ -193,7 +193,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.how_to_use_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.how_to_use_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.how_to_use_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,
@@ -205,7 +205,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.pro_tips_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.pro_tips_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.pro_tips_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,
@@ -217,7 +217,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.ingredients_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.ingredients_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.ingredients_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,
@@ -257,9 +257,9 @@
         "gallery__use_variant_thumbnail_images": false,
         "gallery__size": "large",
         "gallery__aspect_ratio": "auto",
-        "hide_not_selected_variant_images": false,
+        "hide_not_selected_variant_images": true,
         "variants_multi_images": "via_metafield",
-        "variants_image_metafield": "smart.images",
+        "variants_image_metafield": "custom.variant_images",
         "gallery__loop_videos": false,
         "grid_gap": 12,
         "section_layout": "container-bg-full",

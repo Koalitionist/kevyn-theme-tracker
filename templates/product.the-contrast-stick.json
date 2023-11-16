@@ -192,7 +192,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.how_to_use_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.how_to_use_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.how_to_use_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,
@@ -204,7 +204,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.pro_tips_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.pro_tips_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.pro_tips_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,
@@ -216,7 +216,7 @@
           "settings": {
             "heading": "{{ product.metafields.my_fields.ingredients_label.value }}",
             "icon": "check_mark",
-            "content": "<p>{{ product.metafields.my_fields.ingredients_text | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.my_fields.ingredients_text.value }}<\/p>",
             "page": "",
             "margin_bottom": 0,
             "margin_top": 0,

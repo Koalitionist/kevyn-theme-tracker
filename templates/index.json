@@ -294,105 +294,12 @@
         "sectionID": ""
       }
     },
-    "113443f1-f151-41f8-8d5b-7c235c9b252d": {
-      "type": "image-banner",
-      "blocks": {
-        "945203fb-49d0-4913-bb69-841d863d077e": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "b93278cf-2f08-43ce-b7be-7f1ec158cc76": {
-          "type": "text",
-          "settings": {
-            "title": "<h1>HOLIDAY <br\/>GIFT GUIDE<\/h1>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "be100fda-b389-4dd0-9e97-dea78e7def26": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 4,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "ca56cc07-91f3-4adb-87b9-1f001af65de6": {
-          "type": "buttons",
-          "settings": {
-            "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/collections\/gift-guide",
-            "button_primary__style": "button-primary--outline",
-            "button_secondary__text": "",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
-            "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-[var(--layout-page-width)]",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "945203fb-49d0-4913-bb69-841d863d077e",
-        "b93278cf-2f08-43ce-b7be-7f1ec158cc76",
-        "be100fda-b389-4dd0-9e97-dea78e7def26",
-        "ca56cc07-91f3-4adb-87b9-1f001af65de6"
-      ],
-      "disabled": true,
-      "settings": {
-        "source": "image",
-        "image": "shopify:\/\/shop_images\/HolidayGiftGuide_Banner_2400x1350px.jpg",
-        "video_url": "",
-        "url": "shopify:\/\/collections\/gift-guide",
-        "image__object_fit": "object-cover",
-        "image__overlay": "",
-        "height": 640,
-        "height_mobile": 340,
-        "align__vertical": "justify-center",
-        "align__horizontal_no_text": "items-center",
-        "align__text": "text-center",
-        "section_layout": "fullwidth",
-        "section_max_width": "max-w-[var(--layout-page-width)]",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
-        "section_liquid": "",
-        "sectionID": ""
-      }
-    },
     "a43a2af3-464a-4d95-bdca-7173d61d2b2a": {
       "type": "image-banner",
       "blocks": {
         "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h2>NEW<\/h2>",
             "title_font": 3,
@@ -407,6 +314,7 @@
         },
         "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h1>VELVET LIP PAINT<\/h1>",
             "title_font": 3,
@@ -421,6 +329,7 @@
         },
         "379b605c-c75c-4835-a484-cb8d447550fa": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
             "title_font": 3,
@@ -435,17 +344,18 @@
         },
         "00e07788-6c56-44a8-99ec-01804e63100e": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_primary__text": "Shop now",
-            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
+            "button_primary__url": "shopify:\/\/collections\/holiday-sale",
             "button_primary__style": "button-primary--outline",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
             "button_secondary__style": "button-primary",
-            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__mobile_layout": "flex",
             "button__desktop_layout": "flex",
-            "margin_top": 0,
-            "margin_bottom": 0,
+            "margin_top": 128,
+            "margin_bottom": -12,
             "section_max_width": "max-w-full",
             "responsive_visibility": "responsive"
           }
@@ -457,12 +367,11 @@
         "379b605c-c75c-4835-a484-cb8d447550fa",
         "00e07788-6c56-44a8-99ec-01804e63100e"
       ],
-      "disabled": true,
       "settings": {
         "source": "video",
-        "video": "shopify:\/\/files\/videos\/VelvetLip_Header_Banner.mp4",
+        "video": "shopify:\/\/files\/videos\/70sOFFBanner.mp4",
         "video_url": "",
-        "url": "shopify:\/\/products\/the-lighting-stick",
+        "url": "shopify:\/\/collections\/holiday-sale",
         "image__object_fit": "object-cover",
         "image__overlay": "",
         "height": 880,
@@ -1714,7 +1623,6 @@
     "dcca89f6-4599-4d99-a6b2-134fbd65f0f7",
     "6918d774-d0c4-4878-8ed8-6b6865cf524d",
     "c01c8908-eb19-4d95-a852-323ab30e41cd",
-    "113443f1-f151-41f8-8d5b-7c235c9b252d",
     "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
     "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b",

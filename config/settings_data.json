@@ -616,6 +616,22 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "blocks": {
+          "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>UP TO 70% OFF SELECT PRODUCTS<\/p>",
+              "short_text": "",
+              "announcement_font": 3,
+              "link": "shopify:\/\/collections\/holiday-sale",
+              "color_bg": "#000000",
+              "color_text": "#ffffff",
+              "position": "center",
+              "display_duration": 7,
+              "scheduled": false,
+              "start_date": "",
+              "end_date": ""
+            }
+          },
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
             "settings": {
@@ -661,22 +677,6 @@
               "margin_bottom": 34,
               "section_max_width": "max-w-sm",
               "responsive_visibility": "responsive"
-            }
-          },
-          "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
-            "type": "announcement",
-            "settings": {
-              "text": "<p>UP TO 70% OFF SELECT PRODUCTS<\/p>",
-              "short_text": "",
-              "announcement_font": 3,
-              "link": "shopify:\/\/collections\/holiday-sale",
-              "color_bg": "#000000",
-              "color_text": "#ffffff",
-              "position": "center",
-              "display_duration": 7,
-              "scheduled": false,
-              "start_date": "",
-              "end_date": ""
             }
           },
           "bff3add2-447d-4fdd-a609-bf2944c441aa": {
@@ -751,10 +751,10 @@
           }
         },
         "block_order": [
+          "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776",
           "09be7fb4-bf40-45cc-aa69-1accb413b9cf",
           "f25ef904-6b1a-45c1-8304-510b7bc9f931",
-          "0433b963-7ed7-47fb-b588-53bcb7c7d81f",
           "bff3add2-447d-4fdd-a609-bf2944c441aa",
           "802faf61-2f10-41e8-95ef-896cecb66483",
           "387c9a24-ed60-473d-b4ff-fac00982e9be",

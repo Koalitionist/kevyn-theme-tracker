@@ -68,7 +68,7 @@
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h1>CELEBRATE <br\/>SINGLES DAY<\/h1>",
+            "title": "<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "text-left",
@@ -159,7 +159,7 @@
         "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h2>CELEBRATE SINGLES DAY<\/h2>",
+            "title": "<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",

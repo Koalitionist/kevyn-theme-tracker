@@ -429,7 +429,7 @@
         "align__horizontal": "items-center text-center",
         "width": "max-w-5xl",
         "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
+        "padding_top": "pt-sm",
         "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""

@@ -13,12 +13,12 @@
     "35066f74-c962-4a2e-88be-05041114e317": {
       "type": "faq",
       "blocks": {
-        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1": {
+        "544b9ef4-20a8-4bc6-a4be-901904a14ea0": {
           "type": "faq",
           "settings": {
             "open": false,
-            "title": "<p>20% OFF REVIEWS OFFER<\/p>",
-            "answer": "<p>This offer is for any customer that makes an online purchase at KevynAucoinBeauty.com. Once you make a purchase you will receive<br\/>an email to leave a review within 2 weeks. Write a review and automatically receive your unique coupon. Please reach out to <a href=\"mailto:ShopKevyn@kevynaucoin.com\">ShopKevyn@kevynaucoin.com<\/a> for any questions.<\/p><p> <\/p>",
+            "title": "<p>UP TO 70% OFF<\/p>",
+            "answer": "<p>Offer valid until 11.20 at 11:59pm ET. Offer includes up to 70% off select<br\/>product and shades. Products reflect markdown, no code necessary. Enjoy this<br\/>limited time offer!<\/p>",
             "page": ""
           }
         },
@@ -56,6 +56,15 @@
             "open": false,
             "title": "<p>UNLOCK5 OFFER<\/p>",
             "answer": "<p>Offer includes $5 off your purchase when you sign up for SMS; one time use per customer. Offer valid on all products gift cards. Discount automatically applies at checkout. Not valid on Pro Lash Curler and Refill Pads and The Iconic Brush Set.<\/p>",
+            "page": ""
+          }
+        },
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>20% OFF REVIEWS OFFER<\/p>",
+            "answer": "<p>This offer is for any customer that makes an online purchase at KevynAucoinBeauty.com. Once you make a purchase you will receive<br\/>an email to leave a review within 2 weeks. Write a review and automatically receive your unique coupon. Please reach out to <a href=\"mailto:ShopKevyn@kevynaucoin.com\">ShopKevyn@kevynaucoin.com<\/a> for any questions.<\/p><p> <\/p>",
             "page": ""
           }
         },
@@ -178,11 +187,12 @@
         }
       },
       "block_order": [
-        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1",
+        "544b9ef4-20a8-4bc6-a4be-901904a14ea0",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-13",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-14",
         "ae89209e-d164-42d1-8d56-81bdaeb8de53",
+        "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-1",
         "a9a75c86-a2ba-4335-a09e-42774e2c541d",
         "950d98cd-3333-40eb-8bcf-c83e5a064725",
         "95ff305f-cc8f-44de-9d08-7093e9d725d4",

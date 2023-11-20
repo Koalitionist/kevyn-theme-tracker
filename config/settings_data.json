@@ -218,6 +218,7 @@
     "cart_color_scheme": "bg-theme-bg text-theme-text color-group-4",
     "beta_features__show": true,
     "pro_discount": 40,
+    "industry_discount": 25,
     "beta_features__enable": true,
     "font_heading_1": "work_sans_n4",
     "font_heading_1_custom": "",

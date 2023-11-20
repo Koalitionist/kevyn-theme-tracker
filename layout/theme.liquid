@@ -117,9 +117,13 @@
 
   <script>
     let proDiscount = {{ settings.pro_discount | json }};
+    let industryDiscount = {{ settings.industry_discount | json }};
+    let productionDiscount = {{ settings.production_discount | json }};
   </script>
   <script>
     window.proDiscount = proDiscount;
+    window.industryDiscount = industryDiscount;
+    window.productionDiscount = productionDiscount;
   </script>
 
 

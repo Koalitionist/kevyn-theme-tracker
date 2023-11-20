@@ -171,6 +171,8 @@ declare global {
       product: _Product_liquid & { hidden?: boolean }
     ) => _Product_liquid & { hidden?: boolean };
     proDiscount?: number;
+    industryDiscount?: number;
+    productionDiscount?: number;
     customerTags?: string[];
     customer?: {
       type?: string[];

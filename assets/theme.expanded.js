@@ -9277,8 +9277,18 @@
       }
       const customerTags = window.customerTags || [];
       let discount = 0;
+      let hasCustomDiscount = false;
       if (customerTags.indexOf("Pro") !== -1) {
+        hasCustomDiscount = true;
         discount = window.proDiscount;
+      } else if (customerTags.indexOf("Industry") !== -1) {
+        hasCustomDiscount = true;
+        discount = window.industryDiscount;
+      } else if (customerTags.indexOf("Production") !== -1) {
+        hasCustomDiscount = true;
+        discount = window.productionDiscount;
+      }
+      if (hasCustomDiscount) {
         const discount_percentage = discount / 100;
         const discountedPrice = price - price * discount_percentage;
         setCustomDiscount(discount_percentage);
@@ -11688,8 +11698,18 @@
       }
       const customerTags = window.customerTags || [];
       let discount = 0;
+      let hasCustomDiscount = false;
       if (customerTags.indexOf("Pro") !== -1) {
+        hasCustomDiscount = true;
         discount = window.proDiscount;
+      } else if (customerTags.indexOf("Industry") !== -1) {
+        hasCustomDiscount = true;
+        discount = window.industryDiscount;
+      } else if (customerTags.indexOf("Production") !== -1) {
+        hasCustomDiscount = true;
+        discount = window.productionDiscount;
+      }
+      if (hasCustomDiscount) {
         const discount_percentage = discount / 100;
         const discountedPrice = price - price * discount_percentage;
         setCustomDiscount(discount_percentage);

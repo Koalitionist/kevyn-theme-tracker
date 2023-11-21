@@ -1,1 +1,1648 @@
-{"sections":{"8636e605-446f-469d-bb7c-333416ce7988":{"type":"image-banner","blocks":{"template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1":{"type":"text","settings":{"title":"<h4><br\/>CELEBRATE THE BRIGHTEST<\/h4><h2>HOLIDAY SEASON<\/h2>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":8,"section_max_width":"max-w-md","responsive_visibility":"responsive"}},"template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1":{"type":"buttons","settings":{"button_primary__text":"EXPLORE GIFT GUIDE","button_primary__url":"shopify:\/\/collections\/gift-guide","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1","template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"],"settings":{"source":"image","image":"shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"","image__object_fit":"object-cover","image__overlay":"radial-gradient(rgba(150, 146, 146, 0), rgba(0, 0, 0, 0.05) 100%)","height":650,"height_mobile":260,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-xs","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-3","section_liquid":"","sectionID":""}},"dcca89f6-4599-4d99-a6b2-134fbd65f0f7":{"type":"image-banner","blocks":{"template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1":{"type":"text","settings":{"title":"<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"text-left","alignment_mobile":"max-md:text-left","margin_top":0,"margin_bottom":8,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-2":{"type":"text","settings":{"title":"<h3>GET $11 OFF YOUR ORDER WHEN<br\/>YOU SPEND $65+<\/h3>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:text-left","margin_top":0,"margin_bottom":14,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3":{"type":"text","settings":{"title":"<h4><strong>USE CODE: 1111<\/strong><\/h4>","title_font":3,"opacity":100,"alignment_desktop":"text-left","alignment_mobile":"max-md:text-left","margin_top":0,"margin_bottom":24,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1":{"type":"buttons","settings":{"button_primary__text":"Shop now","button_primary__url":"shopify:\/\/collections","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1","template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-2","template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3","template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"],"disabled":true,"settings":{"source":"image","image":"shopify:\/\/shop_images\/SINGLES_DAY_101923-Banners-08_1200x1200px.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"","image__object_fit":"object-cover","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","height":400,"height_mobile":340,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-2xl","responsive_visibility":"md:hidden","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-3","section_liquid":"","sectionID":""}},"6918d774-d0c4-4878-8ed8-6b6865cf524d":{"type":"image-banner","blocks":{"template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1":{"type":"text","settings":{"title":"<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":8,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2":{"type":"text","settings":{"title":"<h3>GET $11 OFF YOUR ORDER WHEN YOU SPEND $65+<\/h3>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":14,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-3":{"type":"text","settings":{"title":"<h3><strong>USE CODE: 1111<\/strong><\/h3>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":24,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-buttons-1":{"type":"buttons","settings":{"button_primary__text":"SHOP NOW","button_primary__url":"https:\/\/kevynaucoinbeauty.com\/collections","button_primary__style":"button-secondary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1","template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2","template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-3","template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-buttons-1"],"disabled":true,"settings":{"source":"image","image":"shopify:\/\/shop_images\/SINGLES_DAY_101923-Banners-07_2400x1440px.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"","image__object_fit":"object-cover","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","height":650,"height_mobile":300,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-2xl","responsive_visibility":"max-md:hidden","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-5","section_liquid":"","sectionID":""}},"c01c8908-eb19-4d95-a852-323ab30e41cd":{"type":"products-scrollable","blocks":{"5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f":{"type":"heading","settings":{"preheading":"","preheading_font":1,"title":"<h2>BEST SELLERS<\/h2>","title_font":3,"subtitle":"","subtitle_font":1,"content":"","content_font":1,"button_primary__text":"","button_primary__url":"\/","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","align__horizontal":"items-start text-left","section_max_width":"max-w-2xl","margin_bottom":14}},"template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2":{"type":"source_collection","settings":{"source":"best-sellers"}}},"block_order":["5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f","template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"],"settings":{"product_source":"blocks","product_limit":12,"hide_out_of_stock":true,"hide_if_empty":true,"container_overflow":true,"center_products":true,"responsive_visibility":"responsive","padding_top":"pt-sm","padding_bottom":"pb-sm","color_scheme":"bg-theme-bg text-theme-text color-group-1","sectionID":""}},"a43a2af3-464a-4d95-bdca-7173d61d2b2a":{"type":"image-banner","blocks":{"e85edb6f-9cd1-4650-91e8-90355d68b4e6":{"type":"text","disabled":true,"settings":{"title":"<h2>NEW<\/h2>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"ac6339cd-0a55-4bbc-868c-22aeef1030b8":{"type":"text","disabled":true,"settings":{"title":"<h1>VELVET LIP PAINT<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"379b605c-c75c-4835-a484-cb8d447550fa":{"type":"text","disabled":true,"settings":{"title":"<h4>Pure color and voluptuous lips in one swipe.<\/h4>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"00e07788-6c56-44a8-99ec-01804e63100e":{"type":"buttons","disabled":true,"settings":{"button_primary__text":"Shop now","button_primary__url":"shopify:\/\/collections\/holiday-sale","button_primary__style":"button-primary--outline","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary","button__mobile_layout":"flex","button__desktop_layout":"flex","margin_top":128,"margin_bottom":-12,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["e85edb6f-9cd1-4650-91e8-90355d68b4e6","ac6339cd-0a55-4bbc-868c-22aeef1030b8","379b605c-c75c-4835-a484-cb8d447550fa","00e07788-6c56-44a8-99ec-01804e63100e"],"disabled":true,"settings":{"source":"video","video":"shopify:\/\/files\/videos\/70sOFFBanner.mp4","video_url":"","url":"shopify:\/\/collections\/holiday-sale","image__object_fit":"object-cover","image__overlay":"","height":880,"height_mobile":340,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-full","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-3","section_liquid":"","sectionID":""}},"76990100-2a10-4e11-8c11-9bc13a33b24c":{"type":"richtext","blocks":{"91faef7d-d773-4d99-afc9-271463dad25d":{"type":"text","settings":{"title":"<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":14,"section_max_width":"max-w-[var(--layout-page-width)]","responsive_visibility":"responsive"}},"726fd27d-b7c6-4404-8eb4-402e447537be":{"type":"text","settings":{"title":"<h5>— Kevyn Aucoin<\/h5>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}}},"block_order":["91faef7d-d773-4d99-afc9-271463dad25d","726fd27d-b7c6-4404-8eb4-402e447537be"],"settings":{"align__horizontal":"items-center text-center","width":"max-w-5xl","responsive_visibility":"responsive","padding_top":"pt-sm","padding_bottom":"pb-sm","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"37a24d32-6076-43ad-bf4f-6cf9f35f8c3b":{"type":"image-banner","blocks":{"template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-1":{"type":"text","settings":{"title":"<h1>FREE 15-MINUTE VIRTUAL CONSULTATIONS<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":8,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3":{"type":"text","settings":{"title":"<h4>Get your one-on-one customized online consultation with our artistry team.<\/h4>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":24,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1":{"type":"buttons","settings":{"button_primary__text":"LEARN MORE","button_primary__url":"https:\/\/kevynaucoinbeauty.com\/pages\/virtual-consultations","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-1","template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3","template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1"],"settings":{"source":"image","image":"shopify:\/\/shop_images\/NYFW_Backstage_BW_2400x1440px.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"","image__object_fit":"object-cover","image__overlay":"linear-gradient(134deg, rgba(139, 130, 130, 0.55) 69%, rgba(0, 0, 0, 0.05) 100%)","height":400,"height_mobile":340,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-2xl","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-2","section_liquid":"","sectionID":""}},"17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f":{"type":"marquee-bar","blocks":{"ff59544a-2739-4dd9-8e48-8810a6286ff7":{"type":"text","settings":{"title":"shade finder","text":"<h3>FIND YOUR SHADE<\/h3>","url":"shopify:\/\/collections\/true-to-you-shade-finder-quiz"}},"87eabefb-e9b7-4908-a603-6a3a4b91b18c":{"type":"image","disabled":true,"settings":{"title":"","url":""}},"b4050ccc-4b02-4bae-af97-9800c67f84ea":{"type":"text","settings":{"title":"gift guide","text":"<p>GIFT GUIDE<\/p>","url":"shopify:\/\/collections\/gift-guide"}},"81e7261a-06e8-481c-a3a0-00e28205181f":{"type":"text","settings":{"title":"Online exclusives","text":"<p>ONLINE EXCLUSIVES<\/p>","url":"shopify:\/\/collections\/online-exclusives"}},"0735172c-74d1-4f47-ae0a-1463fc457a8b":{"type":"text","settings":{"title":"VELVET LIP PAINT","text":"<p>VELVET LIP PAINT<\/p>","url":"shopify:\/\/products\/velvet-lip-paint"}},"7a738e13-b235-488a-a548-713caa73944e":{"type":"text","settings":{"title":"holiday","text":"<p>HOLIDAY COLLECTION<\/p>","url":"shopify:\/\/collections\/holiday"}},"4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d":{"type":"text","settings":{"title":"Gifts under $20","text":"<p>GIFTS UNDER $20<\/p>","url":"shopify:\/\/collections\/mini-size"}}},"block_order":["ff59544a-2739-4dd9-8e48-8810a6286ff7","87eabefb-e9b7-4908-a603-6a3a4b91b18c","b4050ccc-4b02-4bae-af97-9800c67f84ea","81e7261a-06e8-481c-a3a0-00e28205181f","0735172c-74d1-4f47-ae0a-1463fc457a8b","7a738e13-b235-488a-a548-713caa73944e","4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d"],"settings":{"center_items":true,"height_desktop":60,"height_mobile":40,"spacing":99,"spacing_mobile":63,"highlight":false,"auto_pause":true,"duration":18,"responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-2","sectionID":""}},"86c1c1f4-8727-4ce8-b967-29e25fe12d97":{"type":"image-with-text","blocks":{"9b347942-be15-4457-9983-6de727dd5612":{"type":"text","settings":{"title":"<h1>SIGNATURE SCULPTING COLLECTION<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"bcd0d90c-c727-4832-8276-c4803d4fdcb1":{"type":"text","settings":{"title":"<h4>Contour, color and highlight with easy-to-use sticks.<\/h4>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"a142de5e-e913-4a34-8c54-e854b6a8908f":{"type":"buttons","settings":{"button_primary__text":"Shop now","button_primary__url":"shopify:\/\/collections\/the-signature-sculpting-collection","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["9b347942-be15-4457-9983-6de727dd5612","bcd0d90c-c727-4832-8276-c4803d4fdcb1","a142de5e-e913-4a34-8c54-e854b6a8908f"],"settings":{"source":"image","image":"shopify:\/\/shop_images\/KAB_August_Lifestyle_10_Signature_Stick_1200x1200px_8885079e-e30a-40d2-b4a5-d3c2ed331a4e.jpg","video_url":"","metafield":"smart.image_with_text","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","image__aspect_ratio":"pb-[100%]","content_ratio":"md:grid-cols-2","image__object_fit":"object-cover","image__order":"-order-1","image__order__mobile":"max-md:-order-1","image__mobile_padding":false,"align__vertical":"justify-center","align__horizontal":"items-center text-center","section_layout":"fullwidth","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","section_liquid":"","sectionID":""}},"94a2072d-0ce0-419c-996b-ed64b07f4648":{"type":"image-with-text","blocks":{"dec34ef0-116e-48cb-8d2f-0f7fdd3886d0":{"type":"text","settings":{"title":"<h1>HOLIDAY: <br\/>THE LOOKBOOK<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"cf462966-3d22-4bab-ac37-799188a5e875":{"type":"text","settings":{"title":"<h4>Brighten up the season with gifts that elevate.<\/h4>","title_font":1,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"ba86114e-b390-4d42-aa6b-dfbcac6f4e46":{"type":"features","disabled":true,"settings":{"content_1":"<p>Inspire people to enjoy life. It's what we do!<\/p>","content_font_1":1,"content_2":"<p>10% of our annual profits to help those in need<\/p>","content_font_2":1,"content_3":"<p>Giving is how Bullstrap fulfills it's purpose<\/p>","content_font_3":1,"content_4":"","content_font_4":1,"icon_size":30,"spacing":18,"align__horizontal":"items-center text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-4xl","responsive_visibility":"responsive"}},"a9056317-7e54-473d-9a14-5efaa859e2a0":{"type":"buttons","settings":{"button_primary__text":"BE THE LIGHT","button_primary__url":"shopify:\/\/collections\/gift-guide","button_primary__style":"button-primary","button_secondary__text":"Learn More","button_secondary__url":"","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["dec34ef0-116e-48cb-8d2f-0f7fdd3886d0","cf462966-3d22-4bab-ac37-799188a5e875","ba86114e-b390-4d42-aa6b-dfbcac6f4e46","a9056317-7e54-473d-9a14-5efaa859e2a0"],"settings":{"source":"image","image":"shopify:\/\/shop_images\/DianaHolidayHero.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","metafield":"smart.image_with_text","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","image__aspect_ratio":"pb-[100%]","content_ratio":"md:grid-cols-2","image__object_fit":"object-cover","image__order":"order-2","image__order__mobile":"max-md:-order-1","image__mobile_padding":false,"align__vertical":"justify-center","align__horizontal":"items-center text-center","section_layout":"fullwidth","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-1","section_liquid":"","sectionID":""}},"5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6":{"type":"image-with-text","blocks":{"b6debc72-2368-456d-a06b-779d56421b25":{"type":"text","settings":{"title":"<h1>ONLINE EXCLUSIVE<br\/>GIFT SETS<\/h1>","title_font":3,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"d92ead48-d031-43b2-aa6a-d9d45801fbe8":{"type":"text","settings":{"title":"<p>Only available here.<\/p>","title_font":1,"opacity":100,"alignment_desktop":"text-center","alignment_mobile":"max-md:text-center","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"35ec8c5e-307f-45c8-b8e3-4be7a33b3a92":{"type":"buttons","settings":{"button_primary__text":"Shop now","button_primary__url":"","button_primary__style":"button-primary","button_secondary__text":"SHOP LIMITED EDITION SETS","button_secondary__url":"shopify:\/\/collections\/online-exclusives","button_secondary__style":"button-primary","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["b6debc72-2368-456d-a06b-779d56421b25","d92ead48-d031-43b2-aa6a-d9d45801fbe8","35ec8c5e-307f-45c8-b8e3-4be7a33b3a92"],"settings":{"source":"image","image":"shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg","video_url":"","metafield":"smart.image_with_text","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","image__aspect_ratio":"pb-[100%]","content_ratio":"md:grid-cols-2","image__object_fit":"object-cover","image__order":"-order-1","image__order__mobile":"max-md:-order-1","image__mobile_padding":false,"align__vertical":"justify-center","align__horizontal":"items-center text-center","section_layout":"fullwidth","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-1","section_liquid":"","sectionID":""}},"762d39e4-4b75-493f-9d46-b262cc99e399":{"type":"object-over-image","blocks":{"template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1":{"type":"object","settings":{"image":"shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg","image__overlay":"","url":"","title":"","title_font":1,"button_primary__text":"OPULENT FINISHING POWDERS","button_primary__url":"shopify:\/\/products\/opulent-finishing-powder","button_primary__style":"button-primary","button_secondary__text":"","button_secondary__url":"","button_secondary__style":"button-primary--outline","responsive_visibility":"responsive"}},"862565af-e409-40fa-8bd2-583ed8a15ce3":{"type":"object","settings":{"image":"shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg","image__overlay":"","url":"","title":"","title_font":1,"button_primary__text":"VELVET LIP PAINT","button_primary__url":"shopify:\/\/products\/velvet-lip-paint","button_primary__style":"button-primary","button_secondary__text":"Learn More","button_secondary__url":"","button_secondary__style":"button-primary--outline","responsive_visibility":"responsive"}}},"block_order":["template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1","862565af-e409-40fa-8bd2-583ed8a15ce3"],"settings":{"spacing":60,"responsive_visibility":"responsive","padding_top":"pt-md","padding_bottom":"pb-md","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"3c576937-3efa-4efc-8e59-161e786e2c4a":{"type":"products-scrollable-koa","blocks":{"template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1":{"type":"heading","settings":{"preheading":"<p>FOR THE PROS<\/p>","preheading_font":1,"title":"","title_font":1,"subtitle":"","subtitle_font":1,"content":"","content_font":1,"button_primary__text":"Shop now","button_primary__url":"\/","button_primary__style":"button-primary","button_secondary__text":"Learn More","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","align__horizontal":"items-center text-center","section_max_width":"max-w-2xl","margin_bottom":0}},"template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1":{"type":"source_products","settings":{"source":[]}},"template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1":{"type":"source_collection","settings":{"source":"pro-kits"}},"template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1":{"type":"source_metafield","settings":{"metafield":"smart.related_products"}}},"block_order":["template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1","template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1","template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1","template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1"],"disabled":true,"settings":{"product_source":"blocks","product_limit":12,"hide_out_of_stock":false,"hide_if_empty":false,"container_overflow":false,"center_products":false,"responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"4452e9a0-34c2-49b8-8617-fa9179fa8dec":{"type":"products-scrollable","blocks":{"template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0":{"type":"heading","settings":{"preheading":"","preheading_font":1,"title":"<h2>FOR THE PROS<\/h2>","title_font":3,"subtitle":"","subtitle_font":1,"content":"","content_font":1,"button_primary__text":"Shop now","button_primary__url":"","button_primary__style":"button-primary","button_secondary__text":"Learn More","button_secondary__url":"","button_secondary__style":"button-primary--outline","align__horizontal":"items-start text-left","section_max_width":"max-w-2xl","margin_bottom":60}},"template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1":{"type":"source_products","disabled":true,"settings":{"source":[]}},"template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2":{"type":"source_collection","settings":{"source":"pro-kits"}},"template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3":{"type":"source_metafield","disabled":true,"settings":{"metafield":"smart.related_products"}}},"block_order":["template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0","template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1","template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2","template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3"],"settings":{"product_source":"blocks","product_limit":6,"hide_out_of_stock":false,"hide_if_empty":false,"container_overflow":true,"center_products":false,"responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"7252a397-b2d6-480b-b379-7bee1a4b42e4":{"type":"image-banner","disabled":true,"settings":{"source":"image","image":"shopify:\/\/shop_images\/LightingStickHeroNew.jpg","video_url":"","url":"shopify:\/\/products\/the-lighting-stick","image__object_fit":"object-cover","image__overlay":"","height":690,"height_mobile":340,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-[var(--layout-page-width)]","responsive_visibility":"max-md:hidden","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","section_liquid":"","sectionID":""}},"34ef0d1c-0582-4c4c-a551-00a17a6b8a3f":{"type":"richtext","blocks":{"92dc301f-eaa5-4d22-8551-ccf5ef46dba1":{"type":"text","settings":{"title":"<h2>Exceptional performance. Luxurious finish.<\/h2>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":14,"section_max_width":"max-w-[var(--layout-page-width)]","responsive_visibility":"responsive"}},"20653eba-8e13-4550-bb5a-25cefce3c007":{"type":"text","settings":{"title":"<h5>Highlighters that effortlessly glide onto your most desirable features — leaving skin dewy and luminous for a fresh-faced glow.<\/h5>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-4xl","responsive_visibility":"responsive"}}},"block_order":["92dc301f-eaa5-4d22-8551-ccf5ef46dba1","20653eba-8e13-4550-bb5a-25cefce3c007"],"disabled":true,"settings":{"align__horizontal":"items-center text-center","width":"max-w-5xl","responsive_visibility":"responsive","padding_top":"pt-md","padding_bottom":"pb-md","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"9e0f9acb-ae8a-4340-a9ab-6f54f0067a11":{"type":"image-banner","disabled":true,"settings":{"source":"image","image":"shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"shopify:\/\/collections\/complexion","image__object_fit":"object-cover","image__overlay":"","height":1050,"height_mobile":340,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-[var(--layout-page-width)]","responsive_visibility":"max-md:hidden","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","section_liquid":"","sectionID":""}},"e632efd9-bab4-44e2-810b-3c9f7f104d59":{"type":"image-banner","disabled":true,"settings":{"source":"image","image":"shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU","url":"shopify:\/\/collections\/complexion","image__object_fit":"object-cover","image__overlay":"","height":530,"height_mobile":270,"align__vertical":"justify-center","align__horizontal_no_text":"items-center","align__text":"text-center","section_layout":"fullwidth","section_max_width":"max-w-[var(--layout-page-width)]","responsive_visibility":"md:hidden","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","section_liquid":"","sectionID":""}},"0e74636a-5726-4ae0-854d-50b6b3e0a383":{"type":"richtext","blocks":{"042a7891-64a4-4f86-af98-5e37417ed83b":{"type":"text","disabled":true,"settings":{"title":"<p>Neat Preheading<\/p>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":8,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"26375f25-e6d5-4fe5-b16c-163b4312349b":{"type":"accent_line","disabled":true,"settings":{"color":"#11ed6e","height":3,"width":90,"margin_top":0,"margin_bottom":20,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"8b543fbb-8b29-479b-9166-44b26a2ca76c":{"type":"image","disabled":true,"settings":{"height":80,"margin_top":0,"margin_bottom":18,"responsive_visibility":"responsive"}},"4ac7c582-f31d-4570-b145-34afd5566869":{"type":"text","settings":{"title":"<h2>THE REVIEWS ARE IN<\/h2>","title_font":3,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":14,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"3d177eb2-f441-4009-b9d7-24c0eb8472d9":{"type":"text","disabled":true,"settings":{"title":"<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":24,"section_max_width":"max-w-2xl","responsive_visibility":"responsive"}},"b57480a4-4585-4780-9d82-aa0979f46ea6":{"type":"buttons","disabled":true,"settings":{"button_primary__text":"Shop now","button_primary__url":"\/","button_primary__style":"button-primary","button_secondary__text":"Learn More","button_secondary__url":"\/","button_secondary__style":"button-primary--outline","button__mobile_layout":"flex max-md:flex-col max-md:w-full","button__desktop_layout":"flex","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-full","responsive_visibility":"responsive"}}},"block_order":["042a7891-64a4-4f86-af98-5e37417ed83b","26375f25-e6d5-4fe5-b16c-163b4312349b","8b543fbb-8b29-479b-9166-44b26a2ca76c","4ac7c582-f31d-4570-b145-34afd5566869","3d177eb2-f441-4009-b9d7-24c0eb8472d9","b57480a4-4585-4780-9d82-aa0979f46ea6"],"settings":{"align__horizontal":"items-center text-center","width":"max-w-xl","responsive_visibility":"responsive","padding_top":"pt-md","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-group-1","sectionID":""}},"b2ad8b97-5d85-4c86-b4ad-1ab7382b431c":{"type":"featured-reviews","blocks":{"template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1":{"type":"review","settings":{"rating":5,"review":"<p>UNFORGETTABLE LIPSTICK<\/p><p>The texture feels so smooth and the color is attractive!<\/p>","author":"<p>Deborah M.<\/p>"}},"template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0":{"type":"review","settings":{"rating":5,"review":"<p>VOLUME MASCARA<\/p><p>Lengthens, Curls, Doesn't Clump or Flake & Lasts All Day<\/p><p>It looks natural on my lashes and has a good ratio of length to thickness. A second application makes it \"out on the town\" worthy.<\/p>","author":"<p>J.M. C<\/p>"}},"template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2":{"type":"review","settings":{"rating":5,"review":"<p>ETHEREALIST FOUNDATION<\/p><p>Perfection. This shade is an EXACT match for my skin. It doesn't look like makeup, it looks like my skin only smooth, radiant and pore less. Effortless application. I use a brush and this foundation disappears on my face. Never cakey or dull.<\/p>","author":"<p>Pandora J.<\/p>"}}},"block_order":["template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1","template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0","template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2"],"settings":{"image":"shopify:\/\/shop_images\/Feb_Lifestyle_8_EComm_Reviews_1200x1200px.jpg","image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","image__order":"-order-1 lg:order-2","review_font":1,"author_font":1,"style":"slider","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-md","color_scheme":"bg-theme-bg text-theme-text color-group-1","sectionID":""}},"2a043576-a944-4341-a24f-5193a924b278":{"type":"features","blocks":{"template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0":{"type":"feature","settings":{"icon_list":"none","title":"<h3>GLOBAL SHIPPING<\/h3>","content":"<p>Shop from anywhere in the world. —&gt;<\/p>","link_text":"<p>IRead More<\/p>","url":"","svg":"","image":"shopify:\/\/shop_images\/Shipping_922829d9-cb45-4f6c-866e-0755848e3bfc.png"}},"652923a9-2528-47fc-bae6-b36d84081f7d":{"type":"feature","settings":{"icon_list":"none","title":"<h3>CONTACT US<\/h3>","content":"<p>customerservice@kevynaucoin.com<\/p><p>1-888-367-1319 <\/p><p>(M-F from 9am-6pm EST)<\/p>","link_text":"<p>IRead More<\/p>","url":"","svg":"","image":"shopify:\/\/shop_images\/Contact_37f54aac-aa84-4dca-8c04-039053d289e7.png"}},"6f69cd92-8fa1-41fc-942f-d3e4370a7e47":{"type":"feature","settings":{"icon_list":"none","title":"<h3>AFTERPAY<\/h3>","content":"<p>Buy now and pay later in 4-easy installments<\/p>","link_text":"<p>IRead More<\/p>","url":"","svg":"","image":"shopify:\/\/shop_images\/Afterpay-outline.png"}},"967e3779-8008-4836-9c9d-a9f6f11720c4":{"type":"feature","settings":{"icon_list":"none","title":"<h3>FREE SHIPPING<\/h3>","content":"<p>on domestic orders $75+<\/p>","link_text":"<p>IRead More<\/p>","url":"","svg":"","image":"shopify:\/\/shop_images\/Truck_225ccb62-3844-455c-bbbd-3dda73bd7a19.png"}}},"block_order":["template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0","652923a9-2528-47fc-bae6-b36d84081f7d","6f69cd92-8fa1-41fc-942f-d3e4370a7e47","967e3779-8008-4836-9c9d-a9f6f11720c4"],"settings":{"preheading":"","preheading_font":3,"title":"","title_font":1,"content":"","content_font":1,"align__horizontal":"items-center text-center","feature_title_font":3,"feature_content_font":3,"layout":"icon-image","icon_size":80,"feature__align__horizontal":"items-center text-center","responsive_visibility":"responsive","padding_top":"pt-sm","padding_bottom":"pb-sm","color_scheme":"bg-theme-bg text-theme-text color-group-1","sectionID":""}},"f9359fcb-c5d8-4d4e-a991-e7a7821039b9":{"type":"image-feed","blocks":{"template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/download_1_a283c79b-5731-46f6-8d78-6e3bc0f25aad.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/Ck_obgZJL21\/?igshid=YmMyMTA2M2Y=","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}},"template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/ProLashCurler.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/CrgR3s7AQck\/","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}},"1de5f47a-eee9-4730-ba8f-774bd2f953b5":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Tezza-7533_1200x1200px.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/CytGjCBLnG1\/","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}},"caf1f722-815d-439e-9def-ee1750d71d96":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/KAB_SMOOTH_SET_LOOSE_POWDER_LIFESTYLE02_1500x1500_300dpi.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/CxtOvwcgGpm\/","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}},"template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/LipLiner_1200x1200px.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/CzUXS4hOPid\/","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}},"template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/ContourSticks_1200x1200px.jpg","image__overlay":"","url":"https:\/\/www.instagram.com\/p\/CzHXsZzOfx6\/","title":"","title_font":1,"subtitle_richtext":"","subtitle_font":1,"border_width":0,"responsive_visibility":"responsive"}}},"block_order":["template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1","template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2","1de5f47a-eee9-4730-ba8f-774bd2f953b5","caf1f722-815d-439e-9def-ee1750d71d96","template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3","template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0"],"settings":{"image__aspect_ratio":"pb-[100%]","min_width":230,"mobile_style":"scroll","spacing":0,"section_layout":"fullwidth","responsive_visibility":"responsive","padding_top":"pt-0","padding_bottom":"pb-0","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}},"7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4":{"type":"forms","blocks":{"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1":{"type":"text","settings":{"title":"<h2><strong>Sign Up<\/strong><\/h2>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive","text_align":"text-center","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2":{"type":"text","settings":{"title":"<p>Lorem <strong>ipsum <\/strong>dolor sit amet, consectetur adipiscing elit.<\/p>","title_font":1,"opacity":100,"alignment_desktop":"[text-align:inherit]","alignment_mobile":"max-md:[text-align:inherit]","margin_top":0,"margin_bottom":0,"section_max_width":"max-w-2xl","responsive_visibility":"responsive","text_align":"text-center","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1":{"type":"separator","settings":{"height":20}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1":{"type":"input","settings":{"title":"First Name","name":"first_name","type":"text","placeholder":"","required":false,"autocomplete":"given-name","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2":{"type":"input","settings":{"title":"Last Name","name":"last_name","type":"text","placeholder":"","required":false,"autocomplete":"family-name","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1":{"type":"email","settings":{"title":"Email","placeholder":"","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1":{"type":"password","settings":{"title":"Password","confirm_pw__title":"Confirm Password","grid_span":"col-span-12"}},"template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1":{"type":"buttons","settings":{"title":"Sign Up","reset__show":false,"reset__title":"Reset","fullwidth":true,"grid_span":"col-span-12"}}},"block_order":["template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1","template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1"],"disabled":true,"settings":{"type":"create_customer","hide_if_account":false,"show_only_on_target":false,"target_id":"","success_message":"<p>Thank you for contacting us.<\/p>","redirect":"off","width":"max-w-md","fullwidth":true,"image__overlay":"linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)","color_scheme":"bg-theme-bg text-theme-text color-inherit","sectionID":""}}},"order":["8636e605-446f-469d-bb7c-333416ce7988","dcca89f6-4599-4d99-a6b2-134fbd65f0f7","6918d774-d0c4-4878-8ed8-6b6865cf524d","c01c8908-eb19-4d95-a852-323ab30e41cd","a43a2af3-464a-4d95-bdca-7173d61d2b2a","76990100-2a10-4e11-8c11-9bc13a33b24c","37a24d32-6076-43ad-bf4f-6cf9f35f8c3b","17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f","86c1c1f4-8727-4ce8-b967-29e25fe12d97","94a2072d-0ce0-419c-996b-ed64b07f4648","5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6","762d39e4-4b75-493f-9d46-b262cc99e399","3c576937-3efa-4efc-8e59-161e786e2c4a","4452e9a0-34c2-49b8-8617-fa9179fa8dec","7252a397-b2d6-480b-b379-7bee1a4b42e4","34ef0d1c-0582-4c4c-a551-00a17a6b8a3f","9e0f9acb-ae8a-4340-a9ab-6f54f0067a11","e632efd9-bab4-44e2-810b-3c9f7f104d59","0e74636a-5726-4ae0-854d-50b6b3e0a383","b2ad8b97-5d85-4c86-b4ad-1ab7382b431c","2a043576-a944-4341-a24f-5193a924b278","f9359fcb-c5d8-4d4e-a991-e7a7821039b9","7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4"]}
+{
+  "sections": {
+    "8636e605-446f-469d-bb7c-333416ce7988": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h4><br\/>CELEBRATE THE BRIGHTEST<\/h4><h2>HOLIDAY SEASON<\/h2>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-md",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "EXPLORE GIFT GUIDE",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1",
+        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "radial-gradient(rgba(150, 146, 146, 0), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 650,
+        "height_mobile": 260,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-xs",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "dcca89f6-4599-4d99-a6b2-134fbd65f0f7": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-left",
+            "alignment_mobile": "max-md:text-left",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>GET $11 OFF YOUR ORDER WHEN<br\/>YOU SPEND $65+<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:text-left",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h4><strong>USE CODE: 1111<\/strong><\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-left",
+            "alignment_mobile": "max-md:text-left",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/collections",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1",
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-2",
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3",
+        "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/SINGLES_DAY_101923-Banners-08_1200x1200px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 400,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "6918d774-d0c4-4878-8ed8-6b6865cf524d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>GET $11 OFF YOUR ORDER WHEN YOU SPEND $65+<\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h3><strong>USE CODE: 1111<\/strong><\/h3>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "SHOP NOW",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/collections",
+            "button_primary__style": "button-secondary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1",
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2",
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-3",
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/SINGLES_DAY_101923-Banners-07_2400x1440px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 650,
+        "height_mobile": 300,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "max-md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "c01c8908-eb19-4d95-a852-323ab30e41cd": {
+      "type": "products-scrollable",
+      "blocks": {
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h2>BEST SELLERS<\/h2>",
+            "title_font": 3,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 14
+          }
+        },
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f",
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": true,
+        "hide_if_empty": true,
+        "container_overflow": true,
+        "center_products": true,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a": {
+      "type": "image-banner",
+      "blocks": {
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<h2>NEW<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<h1>VELVET LIP PAINT<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "379b605c-c75c-4835-a484-cb8d447550fa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<h4>Pure color and voluptuous lips in one swipe.<\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "00e07788-6c56-44a8-99ec-01804e63100e": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/collections\/holiday-sale",
+            "button_primary__style": "button-primary--outline",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex",
+            "button__desktop_layout": "flex",
+            "margin_top": 128,
+            "margin_bottom": -12,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "e85edb6f-9cd1-4650-91e8-90355d68b4e6",
+        "ac6339cd-0a55-4bbc-868c-22aeef1030b8",
+        "379b605c-c75c-4835-a484-cb8d447550fa",
+        "00e07788-6c56-44a8-99ec-01804e63100e"
+      ],
+      "disabled": true,
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/70sOFFBanner.mp4",
+        "video_url": "",
+        "url": "shopify:\/\/collections\/holiday-sale",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 880,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-full",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-3",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "76990100-2a10-4e11-8c11-9bc13a33b24c": {
+      "type": "richtext",
+      "blocks": {
+        "91faef7d-d773-4d99-afc9-271463dad25d": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "726fd27d-b7c6-4404-8eb4-402e447537be": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>— Kevyn Aucoin<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "91faef7d-d773-4d99-afc9-271463dad25d",
+        "726fd27d-b7c6-4404-8eb4-402e447537be"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>FREE 15-MINUTE VIRTUAL CONSULTATIONS<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Get your one-on-one customized online consultation with our artistry team.<\/h4>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "LEARN MORE",
+            "button_primary__url": "https:\/\/kevynaucoinbeauty.com\/pages\/virtual-consultations",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-1",
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3",
+        "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-buttons-1"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/NYFW_Backstage_BW_2400x1440px.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(139, 130, 130, 0.55) 69%, rgba(0, 0, 0, 0.05) 100%)",
+        "height": 400,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
+      "type": "marquee-bar",
+      "blocks": {
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
+          "type": "text",
+          "settings": {
+            "title": "shade finder",
+            "text": "<h3>FIND YOUR SHADE<\/h3>",
+            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
+          }
+        },
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
+          "type": "text",
+          "settings": {
+            "title": "gift guide",
+            "text": "<p>GIFT GUIDE<\/p>",
+            "url": "shopify:\/\/collections\/gift-guide"
+          }
+        },
+        "81e7261a-06e8-481c-a3a0-00e28205181f": {
+          "type": "text",
+          "settings": {
+            "title": "Online exclusives",
+            "text": "<p>ONLINE EXCLUSIVES<\/p>",
+            "url": "shopify:\/\/collections\/online-exclusives"
+          }
+        },
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b": {
+          "type": "text",
+          "settings": {
+            "title": "VELVET LIP PAINT",
+            "text": "<p>VELVET LIP PAINT<\/p>",
+            "url": "shopify:\/\/products\/velvet-lip-paint"
+          }
+        },
+        "7a738e13-b235-488a-a548-713caa73944e": {
+          "type": "text",
+          "settings": {
+            "title": "holiday",
+            "text": "<p>HOLIDAY COLLECTION<\/p>",
+            "url": "shopify:\/\/collections\/holiday"
+          }
+        },
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d": {
+          "type": "text",
+          "settings": {
+            "title": "Gifts under $20",
+            "text": "<p>GIFTS UNDER $20<\/p>",
+            "url": "shopify:\/\/collections\/mini-size"
+          }
+        }
+      },
+      "block_order": [
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
+        "81e7261a-06e8-481c-a3a0-00e28205181f",
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b",
+        "7a738e13-b235-488a-a548-713caa73944e",
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d"
+      ],
+      "settings": {
+        "center_items": true,
+        "height_desktop": 60,
+        "height_mobile": 40,
+        "spacing": 99,
+        "spacing_mobile": 63,
+        "highlight": false,
+        "auto_pause": true,
+        "duration": 18,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
+        "sectionID": ""
+      }
+    },
+    "86c1c1f4-8727-4ce8-b967-29e25fe12d97": {
+      "type": "image-with-text",
+      "blocks": {
+        "9b347942-be15-4457-9983-6de727dd5612": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>SIGNATURE SCULPTING COLLECTION<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "bcd0d90c-c727-4832-8276-c4803d4fdcb1": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Contour, color and highlight with easy-to-use sticks.<\/h4>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "a142de5e-e913-4a34-8c54-e854b6a8908f": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "shopify:\/\/collections\/the-signature-sculpting-collection",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "9b347942-be15-4457-9983-6de727dd5612",
+        "bcd0d90c-c727-4832-8276-c4803d4fdcb1",
+        "a142de5e-e913-4a34-8c54-e854b6a8908f"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_August_Lifestyle_10_Signature_Stick_1200x1200px_8885079e-e30a-40d2-b4a5-d3c2ed331a4e.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "94a2072d-0ce0-419c-996b-ed64b07f4648": {
+      "type": "image-with-text",
+      "blocks": {
+        "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>HOLIDAY: <br\/>THE LOOKBOOK<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "cf462966-3d22-4bab-ac37-799188a5e875": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>Brighten up the season with gifts that elevate.<\/h4>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "ba86114e-b390-4d42-aa6b-dfbcac6f4e46": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "content_1": "<p>Inspire people to enjoy life. It's what we do!<\/p>",
+            "content_font_1": 1,
+            "content_2": "<p>10% of our annual profits to help those in need<\/p>",
+            "content_font_2": 1,
+            "content_3": "<p>Giving is how Bullstrap fulfills it's purpose<\/p>",
+            "content_font_3": 1,
+            "content_4": "",
+            "content_font_4": 1,
+            "icon_size": 30,
+            "spacing": 18,
+            "align__horizontal": "items-center text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "a9056317-7e54-473d-9a14-5efaa859e2a0": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "BE THE LIGHT",
+            "button_primary__url": "shopify:\/\/collections\/gift-guide",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "dec34ef0-116e-48cb-8d2f-0f7fdd3886d0",
+        "cf462966-3d22-4bab-ac37-799188a5e875",
+        "ba86114e-b390-4d42-aa6b-dfbcac6f4e46",
+        "a9056317-7e54-473d-9a14-5efaa859e2a0"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/DianaHolidayHero.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "order-2",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6": {
+      "type": "image-with-text",
+      "blocks": {
+        "b6debc72-2368-456d-a06b-779d56421b25": {
+          "type": "text",
+          "settings": {
+            "title": "<h1>ONLINE EXCLUSIVE<br\/>GIFT SETS<\/h1>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "d92ead48-d031-43b2-aa6a-d9d45801fbe8": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Only available here.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "35ec8c5e-307f-45c8-b8e3-4be7a33b3a92": {
+          "type": "buttons",
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "SHOP LIMITED EDITION SETS",
+            "button_secondary__url": "shopify:\/\/collections\/online-exclusives",
+            "button_secondary__style": "button-primary",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "b6debc72-2368-456d-a06b-779d56421b25",
+        "d92ead48-d031-43b2-aa6a-d9d45801fbe8",
+        "35ec8c5e-307f-45c8-b8e3-4be7a33b3a92"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_09_Luscious_Lip_Duo_1200x1200px.jpg",
+        "video_url": "",
+        "metafield": "smart.image_with_text",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__aspect_ratio": "pb-[100%]",
+        "content_ratio": "md:grid-cols-2",
+        "image__object_fit": "object-cover",
+        "image__order": "-order-1",
+        "image__order__mobile": "max-md:-order-1",
+        "image__mobile_padding": false,
+        "align__vertical": "justify-center",
+        "align__horizontal": "items-center text-center",
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "762d39e4-4b75-493f-9d46-b262cc99e399": {
+      "type": "object-over-image",
+      "blocks": {
+        "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_Opulent_Finishing_Powder_Lifestyle01_2250x3000_300dpi.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "button_primary__text": "OPULENT FINISHING POWDERS",
+            "button_primary__url": "shopify:\/\/products\/opulent-finishing-powder",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "862565af-e409-40fa-8bd2-583ed8a15ce3": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_October_Lifestyle_Velvet_Lip_05.jpg",
+            "image__overlay": "",
+            "url": "",
+            "title": "",
+            "title_font": 1,
+            "button_primary__text": "VELVET LIP PAINT",
+            "button_primary__url": "shopify:\/\/products\/velvet-lip-paint",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__762d39e4-4b75-493f-9d46-b262cc99e399-1689271858e46ca994-1",
+        "862565af-e409-40fa-8bd2-583ed8a15ce3"
+      ],
+      "settings": {
+        "spacing": 60,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "3c576937-3efa-4efc-8e59-161e786e2c4a": {
+      "type": "products-scrollable-koa",
+      "blocks": {
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "preheading": "<p>FOR THE PROS<\/p>",
+            "preheading_font": 1,
+            "title": "",
+            "title_font": 1,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-center text-center",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 0
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1": {
+          "type": "source_products",
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1": {
+          "type": "source_collection",
+          "settings": {
+            "source": "pro-kits"
+          }
+        },
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1": {
+          "type": "source_metafield",
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-heading-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_products-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_collection-1",
+        "template--14908260745303__3c576937-3efa-4efc-8e59-161e786e2c4a-source_metafield-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": false,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "4452e9a0-34c2-49b8-8617-fa9179fa8dec": {
+      "type": "products-scrollable",
+      "blocks": {
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h2>FOR THE PROS<\/h2>",
+            "title_font": 3,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "Shop now",
+            "button_primary__url": "",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 60
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1": {
+          "type": "source_products",
+          "disabled": true,
+          "settings": {
+            "source": [
+
+            ]
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "pro-kits"
+          }
+        },
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3": {
+          "type": "source_metafield",
+          "disabled": true,
+          "settings": {
+            "metafield": "smart.related_products"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-0",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-1",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-2",
+        "template--14834529304663__4452e9a0-34c2-49b8-8617-fa9179fa8dec-1689272672488c6109-3"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 6,
+        "hide_out_of_stock": false,
+        "hide_if_empty": false,
+        "container_overflow": true,
+        "center_products": false,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "7252a397-b2d6-480b-b379-7bee1a4b42e4": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/LightingStickHeroNew.jpg",
+        "video_url": "",
+        "url": "shopify:\/\/products\/the-lighting-stick",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 690,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "max-md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "34ef0d1c-0582-4c4c-a551-00a17a6b8a3f": {
+      "type": "richtext",
+      "blocks": {
+        "92dc301f-eaa5-4d22-8551-ccf5ef46dba1": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>Exceptional performance. Luxurious finish.<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "20653eba-8e13-4550-bb5a-25cefce3c007": {
+          "type": "text",
+          "settings": {
+            "title": "<h5>Highlighters that effortlessly glide onto your most desirable features — leaving skin dewy and luminous for a fresh-faced glow.<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-4xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "92dc301f-eaa5-4d22-8551-ccf5ef46dba1",
+        "20653eba-8e13-4550-bb5a-25cefce3c007"
+      ],
+      "disabled": true,
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "9e0f9acb-ae8a-4340-a9ab-6f54f0067a11": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "shopify:\/\/collections\/complexion",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 1050,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "max-md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "e632efd9-bab4-44e2-810b-3c9f7f104d59": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/KAB_CONTOUR_EYESHADOW_GROUP_DRAMATIC_1200x1500px_300dpi.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "shopify:\/\/collections\/complexion",
+        "image__object_fit": "object-cover",
+        "image__overlay": "",
+        "height": 530,
+        "height_mobile": 270,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-[var(--layout-page-width)]",
+        "responsive_visibility": "md:hidden",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "0e74636a-5726-4ae0-854d-50b6b3e0a383": {
+      "type": "richtext",
+      "blocks": {
+        "042a7891-64a4-4f86-af98-5e37417ed83b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "26375f25-e6d5-4fe5-b16c-163b4312349b": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "8b543fbb-8b29-479b-9166-44b26a2ca76c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height": 80,
+            "margin_top": 0,
+            "margin_bottom": 18,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "4ac7c582-f31d-4570-b145-34afd5566869": {
+          "type": "text",
+          "settings": {
+            "title": "<h2>THE REVIEWS ARE IN<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "3d177eb2-f441-4009-b9d7-24c0eb8472d9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "b57480a4-4585-4780-9d82-aa0979f46ea6": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "042a7891-64a4-4f86-af98-5e37417ed83b",
+        "26375f25-e6d5-4fe5-b16c-163b4312349b",
+        "8b543fbb-8b29-479b-9166-44b26a2ca76c",
+        "4ac7c582-f31d-4570-b145-34afd5566869",
+        "3d177eb2-f441-4009-b9d7-24c0eb8472d9",
+        "b57480a4-4585-4780-9d82-aa0979f46ea6"
+      ],
+      "settings": {
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-md",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "b2ad8b97-5d85-4c86-b4ad-1ab7382b431c": {
+      "type": "featured-reviews",
+      "blocks": {
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>UNFORGETTABLE LIPSTICK<\/p><p>The texture feels so smooth and the color is attractive!<\/p>",
+            "author": "<p>Deborah M.<\/p>"
+          }
+        },
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>VOLUME MASCARA<\/p><p>Lengthens, Curls, Doesn't Clump or Flake & Lasts All Day<\/p><p>It looks natural on my lashes and has a good ratio of length to thickness. A second application makes it \"out on the town\" worthy.<\/p>",
+            "author": "<p>J.M. C<\/p>"
+          }
+        },
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review": "<p>ETHEREALIST FOUNDATION<\/p><p>Perfection. This shade is an EXACT match for my skin. It doesn't look like makeup, it looks like my skin only smooth, radiant and pore less. Effortless application. I use a brush and this foundation disappears on my face. Never cakey or dull.<\/p>",
+            "author": "<p>Pandora J.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-1",
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-0",
+        "template--14834529304663__b2ad8b97-5d85-4c86-b4ad-1ab7382b431c-16892727839fca3d73-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Feb_Lifestyle_8_EComm_Reviews_1200x1200px.jpg",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "image__order": "-order-1 lg:order-2",
+        "review_font": 1,
+        "author_font": 1,
+        "style": "slider",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-md",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "2a043576-a944-4341-a24f-5193a924b278": {
+      "type": "features",
+      "blocks": {
+        "template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>GLOBAL SHIPPING<\/h3>",
+            "content": "<p>Shop from anywhere in the world. —&gt;<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Shipping_922829d9-cb45-4f6c-866e-0755848e3bfc.png"
+          }
+        },
+        "652923a9-2528-47fc-bae6-b36d84081f7d": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>CONTACT US<\/h3>",
+            "content": "<p>customerservice@kevynaucoin.com<\/p><p>1-888-367-1319 <\/p><p>(M-F from 9am-6pm EST)<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Contact_37f54aac-aa84-4dca-8c04-039053d289e7.png"
+          }
+        },
+        "6f69cd92-8fa1-41fc-942f-d3e4370a7e47": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>AFTERPAY<\/h3>",
+            "content": "<p>Buy now and pay later in 4-easy installments<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Afterpay-outline.png"
+          }
+        },
+        "967e3779-8008-4836-9c9d-a9f6f11720c4": {
+          "type": "feature",
+          "settings": {
+            "icon_list": "none",
+            "title": "<h3>FREE SHIPPING<\/h3>",
+            "content": "<p>on domestic orders $75+<\/p>",
+            "link_text": "<p>IRead More<\/p>",
+            "url": "",
+            "svg": "",
+            "image": "shopify:\/\/shop_images\/Truck_225ccb62-3844-455c-bbbd-3dda73bd7a19.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__2a043576-a944-4341-a24f-5193a924b278-1689273007452b8b33-0",
+        "652923a9-2528-47fc-bae6-b36d84081f7d",
+        "6f69cd92-8fa1-41fc-942f-d3e4370a7e47",
+        "967e3779-8008-4836-9c9d-a9f6f11720c4"
+      ],
+      "settings": {
+        "preheading": "",
+        "preheading_font": 3,
+        "title": "",
+        "title_font": 1,
+        "content": "",
+        "content_font": 1,
+        "align__horizontal": "items-center text-center",
+        "feature_title_font": 3,
+        "feature_content_font": 3,
+        "layout": "icon-image",
+        "icon_size": 80,
+        "feature__align__horizontal": "items-center text-center",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "f9359fcb-c5d8-4d4e-a991-e7a7821039b9": {
+      "type": "image-feed",
+      "blocks": {
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_1_a283c79b-5731-46f6-8d78-6e3bc0f25aad.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/Ck_obgZJL21\/?igshid=YmMyMTA2M2Y=",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ProLashCurler.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CrgR3s7AQck\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tezza-7533_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CytGjCBLnG1\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "caf1f722-815d-439e-9def-ee1750d71d96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KAB_SMOOTH_SET_LOOSE_POWDER_LIFESTYLE02_1500x1500_300dpi.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CxtOvwcgGpm\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LipLiner_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CzUXS4hOPid\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ContourSticks_1200x1200px.jpg",
+            "image__overlay": "",
+            "url": "https:\/\/www.instagram.com\/p\/CzHXsZzOfx6\/",
+            "title": "",
+            "title_font": 1,
+            "subtitle_richtext": "",
+            "subtitle_font": 1,
+            "border_width": 0,
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-1",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-2",
+        "1de5f47a-eee9-4730-ba8f-774bd2f953b5",
+        "caf1f722-815d-439e-9def-ee1750d71d96",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-3",
+        "template--14834529304663__f9359fcb-c5d8-4d4e-a991-e7a7821039b9-16892734120eb7a3e9-0"
+      ],
+      "settings": {
+        "image__aspect_ratio": "pb-[100%]",
+        "min_width": 230,
+        "mobile_style": "scroll",
+        "spacing": 0,
+        "section_layout": "fullwidth",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    },
+    "7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4": {
+      "type": "forms",
+      "blocks": {
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h2><strong>Sign Up<\/strong><\/h2>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Lorem <strong>ipsum <\/strong>dolor sit amet, consectetur adipiscing elit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive",
+            "text_align": "text-center",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1": {
+          "type": "separator",
+          "settings": {
+            "height": 20
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1": {
+          "type": "input",
+          "settings": {
+            "title": "First Name",
+            "name": "first_name",
+            "type": "text",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "given-name",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2": {
+          "type": "input",
+          "settings": {
+            "title": "Last Name",
+            "name": "last_name",
+            "type": "text",
+            "placeholder": "",
+            "required": false,
+            "autocomplete": "family-name",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1": {
+          "type": "password",
+          "settings": {
+            "title": "Password",
+            "confirm_pw__title": "Confirm Password",
+            "grid_span": "col-span-12"
+          }
+        },
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "title": "Sign Up",
+            "reset__show": false,
+            "reset__title": "Reset",
+            "fullwidth": true,
+            "grid_span": "col-span-12"
+          }
+        }
+      },
+      "block_order": [
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-text-2",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-separator-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-input-2",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-email-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-password-1",
+        "template--14853186322519__7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "type": "create_customer",
+        "hide_if_account": false,
+        "show_only_on_target": false,
+        "target_id": "",
+        "success_message": "<p>Thank you for contacting us.<\/p>",
+        "redirect": "off",
+        "width": "max-w-md",
+        "fullwidth": true,
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "sectionID": ""
+      }
+    }
+  },
+  "order": [
+    "8636e605-446f-469d-bb7c-333416ce7988",
+    "dcca89f6-4599-4d99-a6b2-134fbd65f0f7",
+    "6918d774-d0c4-4878-8ed8-6b6865cf524d",
+    "c01c8908-eb19-4d95-a852-323ab30e41cd",
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
+    "76990100-2a10-4e11-8c11-9bc13a33b24c",
+    "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b",
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f",
+    "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
+    "94a2072d-0ce0-419c-996b-ed64b07f4648",
+    "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6",
+    "762d39e4-4b75-493f-9d46-b262cc99e399",
+    "3c576937-3efa-4efc-8e59-161e786e2c4a",
+    "4452e9a0-34c2-49b8-8617-fa9179fa8dec",
+    "7252a397-b2d6-480b-b379-7bee1a4b42e4",
+    "34ef0d1c-0582-4c4c-a551-00a17a6b8a3f",
+    "9e0f9acb-ae8a-4340-a9ab-6f54f0067a11",
+    "e632efd9-bab4-44e2-810b-3c9f7f104d59",
+    "0e74636a-5726-4ae0-854d-50b6b3e0a383",
+    "b2ad8b97-5d85-4c86-b4ad-1ab7382b431c",
+    "2a043576-a944-4341-a24f-5193a924b278",
+    "f9359fcb-c5d8-4d4e-a991-e7a7821039b9",
+    "7bb5f2bb-00ad-4c78-88a4-7e30a76e90f4"
+  ]
+}

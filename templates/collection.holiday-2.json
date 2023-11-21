@@ -57,6 +57,115 @@
         "sectionID": ""
       }
     },
+    "b6e5226f-e661-4633-b38e-859c8ab74bee": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Neat Preheading<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-accent_line-1": {
+          "type": "accent_line",
+          "disabled": true,
+          "settings": {
+            "color": "#11ed6e",
+            "height": 3,
+            "width": 90,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Black Friday & Cyber Monday<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "<p>Lorem ipsum <strong>dolor sit ame<\/strong>t, consectetur adipisicing elit. Accusamus cum delectus minima po<strong>rro quam quas <\/strong>ratione repellendus <em>sunt <\/em>vero voluptatum. Ali<em>quam cum eius<\/em> facere illum labore quo rem <strong>tempora <\/strong>tenetur ut velit.<\/p>",
+            "title_font": 1,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 24,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_primary__text": "Shop now",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "Learn More",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "button__mobile_layout": "flex max-md:flex-col max-md:w-full",
+            "button__desktop_layout": "flex",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-full",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-1",
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-accent_line-1",
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-2",
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-3",
+        "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-buttons-1"
+      ],
+      "settings": {
+        "source": "image",
+        "image": "shopify:\/\/shop_images\/Black_Friday_111623-CategoryBanner.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "",
+        "image__object_fit": "object-cover",
+        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
+        "height": 400,
+        "height_mobile": 340,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
+        "section_liquid": "",
+        "sectionID": ""
+      }
+    },
     "filter_sort_bar": {
       "type": "main-collection-filter-sort-bar",
       "settings": {
@@ -239,6 +348,7 @@
   },
   "order": [
     "banner",
+    "b6e5226f-e661-4633-b38e-859c8ab74bee",
     "filter_sort_bar",
     "product-grid",
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",

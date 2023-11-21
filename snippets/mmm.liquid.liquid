@@ -1,0 +1,137 @@
+<!-- MMM PDP Additions Start -->
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
+<script type="text/javascript">
+  function getCurrentPageSkus() {
+        let variants = {{ product.variants | json }}
+        let skus = '';
+        variants.forEach((variant)=>{
+          if(variant.sku && skus == ''){
+            skus += 'cprodId='+variant.sku;
+          }else if(variant.sku){
+            skus += '&cprodId='+variant.sku;
+          }
+      });
+      return skus;
+    }
+  function loadWidget() {
+    if (document.getElementById("mmmwidgets") === null || document.getElementById("mmmwidgets") === undefined) {
+      document.MMMWidget = document.MMMWidget || {};
+      var cid = "S2V2eW4gQXVjb2lu";
+      var s =  document.createElement("script");
+      var skus = getCurrentPageSkus();
+      s.defer = true;
+      s.setAttribute("id", "mmmwidgets");
+      s.setAttribute("referrerpolicy","origin");
+      var hostname = "https://www.matchmymakeup.com";
+      //s.src = hostname + "/client/" + cid + "/mmm_widget.js?" + "cprodId={{ current_variant.sku }}";
+      s.src = hostname + "/client/" + cid + "/mmm_widget.js?" + skus ;
+      document.head.appendChild(s);
+      document.MMMWidget.selectShade = function(product) {
+        var productName = product.productName;
+        var name = "input[value='" + productName +"']";
+        if(name) {
+          document.querySelector(name).click();  
+        }
+    }
+  }
+}
+</script>
+
+<div id="matchOverlay" data-product="{{ rangeName }}" data-brand="{{ product.vendor }}"></div>
+
+<script defer type="text/javascript">
+
+  loadWidget();
+  var productList = ShopifyAnalytics.meta.product.variants;
+  window.addEventListener("message", receiveMessage, false);
+  console.log("productList", productList)
+  function receiveMessage(event) {
+    if (event.origin !== "https://stage.matchmymakeup.com" 
+        && event.origin !== "https://www.matchmymakeup.com"){
+      return;
+    }
+
+    var messageObject = event.data;
+    // var productName = messageObject.product.productName;
+    if (messageObject.event_id === 'add_to_cart') {
+      var resProduct = messageObject.product
+      var unavailableMessages = ["OUT OF STOCK","SOLD OUT","UNAVAILABLE"];
+      if(resProduct.sku.length > 0 ){
+        var multiskufrommmm    =   resProduct.sku;
+          let matchedProduct;
+          for (var i = 0; i < multiskufrommmm.length; i++) {
+            matchedProduct = productList.filter(prod => prod.sku == multiskufrommmm[i]);
+            if (matchedProduct.length > 0) {
+              break; // break out of loop
+            }
+        }
+        if(matchedProduct.length > 0){
+          var productName = matchedProduct[0].public_title;
+          // var name = "span[data-swatch-tooltip*='" + productName +"'I]";
+          // var input = "input[value*='" + productName +"'I]";
+          document.querySelector("input[value='"+productName+"']").click();
+        } else{
+          alert("There was an issue adding your product to cart.\nPlease check availability of your shade:  "+resProduct.productName);
+        }
+        
+    }   
+    document.mmm.overlay.close();
+  }
+  }
+</script>
+
+<!-- MMM PDP Additions End -->
+<div class="col-span-12 ">
+  <button id="findShadeMMM" type="button" class='mmmfont' style="display: none;"> 
+  <u>Find My Shade</u>
+</button>
+</div>
+
+
+<style type="text/css">
+  
+    #findShadeMMM {
+    margin-bottom: 1rem;
+  }
+  
+  #findShadeMMM,
+  #findShadeMMM img {
+    float: none;
+    clear: both;
+    display: block;
+    max-width: 380px;
+    height: auto;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #findShadeMMM img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    border-width: 1px;
+  }
+  
+  #findShadeMMM .mms-small,
+  #findShadeMMM .mms-large {
+    display: none;
+  }
+  @media (min-width: 500px) {
+	#findShadeMMM .mms-small { display: none; }
+    #findShadeMMM .mms-medium { display: block; max-width: 375px; }
+    #findShadeMMM .mms-large { display: none; }
+  }
+  @media (min-width: 1200px) {
+    #findShadeMMM .mms-small { display: none; }
+    #findShadeMMM .mms-medium { display: none; }
+    #findShadeMMM .mms-large { display: block; max-width: 500px; }
+  }
+  .mmmfont{
+    width: max-content;
+    font-size: larger;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+</style>

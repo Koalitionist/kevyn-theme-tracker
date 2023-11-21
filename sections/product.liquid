@@ -107,6 +107,7 @@
               {% if product.variants.size > 1 %}
                 {% render 'product.variant_selector', block: block, variant: variant %}
               {% endif %}
+            {% render 'mmm' %}
             {% when 'product_sibling' %}
               {% render 'product.product_sibling', block: block %}
             {% when 'quantity_selector' %}

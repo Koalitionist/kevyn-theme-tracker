@@ -5,6 +5,7 @@
       "blocks": {
         "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "title": "<h2>[title]<\/h2>",
             "title_font": 3,

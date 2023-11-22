@@ -1032,6 +1032,7 @@
         "blocks": {
           "47b08bac-ba30-4374-9f16-2a117a738c08": {
             "type": "gift",
+            "disabled": true,
             "settings": {
               "type": "price",
               "target": 15000,

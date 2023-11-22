@@ -39,6 +39,7 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1",
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg",
@@ -189,7 +190,6 @@
         "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1",
         "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2"
       ],
-      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/BlackFriday_Banner (1).mp4",

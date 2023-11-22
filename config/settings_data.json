@@ -619,9 +619,8 @@
         "blocks": {
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<p>UP TO 70% OFF SELECT PRODUCTS<\/p>",
+              "text": "<p>30% OFF SITEWIDE | Use code: BF30<\/p>",
               "short_text": "",
               "announcement_font": 3,
               "link": "shopify:\/\/collections\/holiday-sale",

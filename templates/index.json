@@ -67,6 +67,7 @@
       "blocks": {
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h1>WE'RE STILL CELEBRATING SINGLES<\/h1>",
             "title_font": 3,
@@ -81,6 +82,7 @@
         },
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h3>GET $11 OFF YOUR ORDER WHEN<br\/>YOU SPEND $65+<\/h3>",
             "title_font": 3,
@@ -95,6 +97,7 @@
         },
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "<h4><strong>USE CODE: 1111<\/strong><\/h4>",
             "title_font": 3,
@@ -109,6 +112,7 @@
         },
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_primary__text": "Shop now",
             "button_primary__url": "shopify:\/\/collections",
@@ -133,20 +137,20 @@
       ],
       "disabled": true,
       "settings": {
-        "source": "image",
-        "image": "shopify:\/\/shop_images\/SINGLES_DAY_101923-Banners-08_1200x1200px.jpg",
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/CYBER MONDAY HEADER BANNER.mp4",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "url": "",
+        "url": "shopify:\/\/collections\/holiday-sale",
         "image__object_fit": "object-cover",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "height": 400,
+        "height": 670,
         "height_mobile": 340,
         "align__vertical": "justify-center",
         "align__horizontal_no_text": "items-center",
         "align__text": "text-center",
         "section_layout": "fullwidth",
         "section_max_width": "max-w-2xl",
-        "responsive_visibility": "md:hidden",
+        "responsive_visibility": "responsive",
         "padding_top": "pt-0",
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-3",

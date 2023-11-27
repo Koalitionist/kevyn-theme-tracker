@@ -32,7 +32,7 @@
       // ajax request catching
       (function(open) {
         XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
-          this.addEventListener("readystatechange", function() {console.log(product.id);console.log("outside")
+          this.addEventListener("readystatechange", function() {console.log(this._url);console.log("outside")
             if (this.readyState == 4 && this._url.includes("/add.js") && "{{ product.id }}" != "") {
               try {
                 $.getJSON("/cart.js", function(data) {

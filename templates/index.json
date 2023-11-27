@@ -135,7 +135,6 @@
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3",
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"
       ],
-      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/CYBER MONDAY HEADER BANNER.mp4",
@@ -194,6 +193,7 @@
         "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1",
         "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2"
       ],
+      "disabled": true,
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/BlackFriday_Banner (1).mp4",

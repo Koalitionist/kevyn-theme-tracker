@@ -32,8 +32,8 @@
       // ajax request catching
       (function(open) {
         XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
-          this.addEventListener("readystatechange", function() {console.log(this._url);console.log("outside")
-            if (this.readyState == 4 && this._url.includes("/add.js") && "{{ product.id }}" != "") {
+          this.addEventListener("readystatechange", function() {
+            if (this.readyState == 4 && this._url.includes("/cart.js") && "{{ product.id }}" != "") {
               try {
                 $.getJSON("/cart.js", function(data) {
                   var basketData = [];

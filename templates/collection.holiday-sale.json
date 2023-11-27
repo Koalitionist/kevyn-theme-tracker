@@ -45,7 +45,7 @@
       "settings": {
         "image__show": true,
         "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
-        "height_desktop": 300,
+        "height_desktop": 540,
         "height_mobile": 300,
         "align__vertical": "justify-center",
         "align__horizontal": "items-center text-center",

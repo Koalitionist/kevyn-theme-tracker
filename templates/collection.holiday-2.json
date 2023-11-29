@@ -62,10 +62,9 @@
       "blocks": {
         "template--15015483310167__b6e5226f-e661-4633-b38e-859c8ab74bee-text-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "title": "<p>Neat Preheading<\/p>",
-            "title_font": 1,
+            "title": "<h2>HOLIDAY<\/h2>",
+            "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
@@ -146,7 +145,7 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/Black_Friday_111623-CategoryBanner.jpg",
+        "image": "shopify:\/\/shop_images\/gift_guide_banner_e5e506c8-115b-44d4-ba89-91519c00caae.webp",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "url": "",
         "image__object_fit": "object-cover",

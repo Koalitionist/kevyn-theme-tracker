@@ -999,6 +999,15 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
+    },
+    "5d8b3c20-dd76-4ab2-9a30-351dc19ced05": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "a {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<p>Make the season merry and bright with gift sets, stocking stuffers and exclusive holiday products from KEVYN AUCOIN BEAUTY. Our holiday gift guide helps remove some of the stress and guesswork from seasonal shopping with exceptional makeup for professional artistry or home use. We've curated some of our best-selling products and professional-quality brushes and tools to bring tidings and joy to the makeup lovers on your gift-giving list. Explore our holiday gift guide now to find the best selection before they are gone.<\/p><\/br>\n<p><strong>Gifts for Someone Special<\/strong><\/p><\/br>\n<p>Kevyn Aucoin created iconic makeup looks that graced many a runway show or red carpet. With our gift sets, stocking stuffers, and more, anyone can capture some of his magic and feel confident and beautiful. Discover exclusive online gift sets for contouring and highlighting, dramatic eyes that pop or luscious lips with a velvety-matte finish. The KEVYN AUCOIN BEAUTY holiday gift guide also includes stocking stuffers and <a href=\"https:\/\/kevynaucoinbeauty.com\/collections\/mini-size\">mini versions of top products<\/a> great for adding to a beauty-themed gift basket.<\/p><\/br>\n<p><strong>Gifts You Give Yourself<\/strong><\/p><\/br>\n<p>This festive season is also a time of celebration, which means creating makeup looks that take you from a home get-together to an all-out glamorous party. Our holiday gift guide features must-have KEVYN AUCOIN BEAUTY products to enhance your natural complexion, add dimension or create dramatic looks featuring the latest colors or '90s style. If you need more inspiration, grab one of <a href=\"https:\/\/kevynaucoinbeauty.com\/collections\/books\">Kevyn Aucoin's beauty books<\/a> to learn his techniques and recreate celebrity and supermodel makeup looks.<\/p>"
+      }
     }
   },
   "order": [
@@ -1021,6 +1030,7 @@
     "dc974bd2-32ed-43c9-aa69-3586c1ec5efd",
     "8c333b07-3f65-46b3-992e-c1dfb54deb99",
     "ed235c22-2628-4d6e-8fb2-f2647493672c",
-    "859a1462-a683-407d-9965-c617fe5daca3"
+    "859a1462-a683-407d-9965-c617fe5daca3",
+    "5d8b3c20-dd76-4ab2-9a30-351dc19ced05"
   ]
 }

@@ -5,7 +5,6 @@
       "blocks": {
         "5a826284-bcd8-4e9e-b6b8-fe4176e6ca26": {
           "type": "title",
-          "disabled": true,
           "settings": {
             "title": "<h2>[title]<\/h2>",
             "title_font": 3,
@@ -45,8 +44,8 @@
       "settings": {
         "image__show": true,
         "image__overlay": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%)",
-        "height_desktop": 540,
-        "height_mobile": 180,
+        "height_desktop": 370,
+        "height_mobile": 250,
         "align__vertical": "justify-center",
         "align__horizontal": "items-center text-center",
         "section_layout": "fullwidth",

@@ -56,11 +56,12 @@
       {% endif %}
     {%- endpaginate %}
   </main>
+
+  {{ collection.description }}
+
 </section>
 
-{% if template contains 'collection'%}
-  {{ collection.description }}
-{% endif %}
+
 
 {% schema %}
 {

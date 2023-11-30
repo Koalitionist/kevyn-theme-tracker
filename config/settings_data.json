@@ -619,6 +619,7 @@
         "blocks": {
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p>35% OFF SITEWIDE | Use code: CM35<\/p>",
               "short_text": "",

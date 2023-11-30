@@ -58,7 +58,9 @@
   </main>
 </section>
 
-{{ collection.description }}
+{% if template contains 'collection'%}
+  {{ collection.description }}
+{% endif %}
 
 {% schema %}
 {

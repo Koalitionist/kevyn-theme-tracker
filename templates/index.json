@@ -39,7 +39,6 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1",
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"
       ],
-      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg",
@@ -135,6 +134,7 @@
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3",
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/MicrosoftTeams-image_5_af03d84f-7414-4474-a7c9-9c0d1d21e152.jpg",

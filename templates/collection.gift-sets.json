@@ -234,15 +234,6 @@
         "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
-    },
-    "6b2bf28c-6c2d-4924-adcf-45b80bcc82af": {
-      "type": "custom-liquid",
-      "custom_css": [
-        "a {text-decoration: underline;}"
-      ],
-      "settings": {
-        "custom_liquid": "<p>Share your love of KEVYN AUCOIN BEAUTY products with friends and family when you explore our collection of makeup gift sets. Whether you need something special for the holidays or want to make someone special feel the love with a just-because present, these makeup sets are sure to bring a touch of glamour and luxury to anyone's makeup routine. With lip kits, makeup brush sets, travel-size products and more, KEVYN AUCOIN BEAUTY is a shopping destination for any gift-giving occasion.<\/p><\/br>\n<p><strong>Serving Beautiful Face<\/strong><\/p><\/br>\n<p>Kevyn Aucoin earned a reputation working with supermodels, and his exceptional artistry is the inspiration behind this selection of makeup gift sets. Keep it simple with our Shape-Shifting Trio that makes contouring, highlighting and defining easy and beautiful, or go full-on glam with our <a href=\"https:\/\/kevynaucoinbeauty.com\/collections\/gift-sets\/products\/90s-supermodel-glam-set?variant=40243540099159\">'90s Supermodel Glam Set<\/a> that can help you recapture the magic of shimmery lips and matte skin. Help any makeup look last with our Prep & Set Pro Kit, a primer and setting powder combo that can prevent fading or running.<\/p><\/br>\n<p><strong>Blending for the Gods<\/strong><\/p><\/br>\n<p>Explore the makeup gift set collection at KEVYN AUCOIN BEAUTY to see even more fantastic products, such as The Master Mixing Pro Kit, Making Faces Brush Set and <a href=\"https:\/\/kevynaucoinbeauty.com\/collections\/gift-sets\/products\/smoke-show-eye-kit?variant=40095273189463\">Smoke Show Pro Eye Kit<\/a> for professional-quality products that anyone can use. No matter which makeup gift set you choose, you will find fantastic gifts that your friends or family members can enjoy.<\/p>"
-      }
     }
   },
   "order": [
@@ -251,7 +242,6 @@
     "product-grid",
     "a309f46f-ad8a-4800-8de0-c4f7aa1c36b7",
     "df631480-8a8c-4a52-a390-7443ecf7ae96",
-    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8",
-    "6b2bf28c-6c2d-4924-adcf-45b80bcc82af"
+    "8ab44ce3-5ceb-49f8-924e-69126ecc60c8"
   ]
 }

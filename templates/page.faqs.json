@@ -13,6 +13,15 @@
     "35066f74-c962-4a2e-88be-05041114e317": {
       "type": "faq",
       "blocks": {
+        "5a3d6d25-a6f3-438b-ac02-c0d1496979c1": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>FREE MINI AT CHECKOUT<\/p>",
+            "answer": "<p>Offer valid until 12.20 at 11:59pm ET. Offer includes a free mini with every order; no minimum spend. Free minis include: Mini Indecent Mascara, Mini Foundation Balm       (light, medium or deep), Mini<br\/>Etherealist Foundation (light or deep) and Mini Glass Glow Lip in Crystal Clear. Make sure to add your free mini in the cart for gift to be applied at checkout.<\/p>",
+            "page": ""
+          }
+        },
         "ff728e07-b200-4024-8d80-3984c907d7d9": {
           "type": "faq",
           "settings": {
@@ -197,6 +206,7 @@
         }
       },
       "block_order": [
+        "5a3d6d25-a6f3-438b-ac02-c0d1496979c1",
         "ff728e07-b200-4024-8d80-3984c907d7d9",
         "544b9ef4-20a8-4bc6-a4be-901904a14ea0",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12",

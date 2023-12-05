@@ -31,6 +31,15 @@
             "page": ""
           }
         },
+        "4067707b-7bab-47fc-b8f7-ee2b136a8d34": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>SPECIAL OFFER FOR BFCM SHOPPERS<\/p>",
+            "answer": "<p>*Offer valid from 1.1.2024-1.31.2024 for BFCM shoppers only. Offer includes $20 off your entire order when you spend a minimum of $40.<br\/>Input code at checkout for discount to apply. Please be signed in with your email that you shopped BFCM with before checking out. Please reach out to <a href=\"mailto:customerservice@kevynaucoin.com\">customerservice@kevynaucoin.com<\/a> with any questions.<\/p>",
+            "page": ""
+          }
+        },
         "544b9ef4-20a8-4bc6-a4be-901904a14ea0": {
           "type": "faq",
           "settings": {
@@ -208,6 +217,7 @@
       "block_order": [
         "5a3d6d25-a6f3-438b-ac02-c0d1496979c1",
         "ff728e07-b200-4024-8d80-3984c907d7d9",
+        "4067707b-7bab-47fc-b8f7-ee2b136a8d34",
         "544b9ef4-20a8-4bc6-a4be-901904a14ea0",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12",
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-13",

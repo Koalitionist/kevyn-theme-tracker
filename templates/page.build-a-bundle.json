@@ -16,6 +16,7 @@
       "blocks": {
         "af58d775-adb9-48ac-a0cf-cd00e41d2327": {
           "type": "shopify:\/\/apps\/platter\/blocks\/bundle\/483c6115-a647-4bea-b611-4401ca7d1013",
+          "disabled": true,
           "settings": {
             "handle": "",
             "title": "",
@@ -27,10 +28,30 @@
             "color_primary_text": "#ffffff",
             "color_primary_bg": "#00ce73"
           }
+        },
+        "29981170-a94c-4f32-b037-263eae249dc8": {
+          "type": "shopify:\/\/apps\/platter\/blocks\/bundle-single-step\/483c6115-a647-4bea-b611-4401ca7d1013",
+          "settings": {
+            "handle": "",
+            "content": "",
+            "text_alignment": "left",
+            "product_card__image__ratio": "tw-pb-[100%]",
+            "quick_view": "always",
+            "variant_count_text": "Available in [count] models",
+            "detailed_requirements": true,
+            "container_width": 1440,
+            "color_text": "#000000",
+            "color_bg": "#ffffff",
+            "color_primary_text": "#ffffff",
+            "color_primary_bg": "#00ce73",
+            "color_primary_outline": "#000000",
+            "border_style": "soft"
+          }
         }
       },
       "block_order": [
-        "af58d775-adb9-48ac-a0cf-cd00e41d2327"
+        "af58d775-adb9-48ac-a0cf-cd00e41d2327",
+        "29981170-a94c-4f32-b037-263eae249dc8"
       ],
       "settings": {
         "section_layout": "container-bg-full",

@@ -32,7 +32,7 @@
         "29981170-a94c-4f32-b037-263eae249dc8": {
           "type": "shopify:\/\/apps\/platter\/blocks\/bundle-single-step\/483c6115-a647-4bea-b611-4401ca7d1013",
           "settings": {
-            "handle": "",
+            "handle": "build-your-own-set",
             "content": "",
             "text_alignment": "left",
             "product_card__image__ratio": "tw-pb-[100%]",

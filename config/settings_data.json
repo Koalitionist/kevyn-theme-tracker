@@ -1050,6 +1050,7 @@
           },
           "5bc00ae2-9bb8-47e5-b442-a69a2ce6db6e": {
             "type": "gift",
+            "disabled": true,
             "settings": {
               "type": "price",
               "target": 998,

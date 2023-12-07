@@ -33,18 +33,18 @@
           "type": "shopify:\/\/apps\/platter\/blocks\/bundle-single-step\/483c6115-a647-4bea-b611-4401ca7d1013",
           "settings": {
             "handle": "build-your-own-set",
-            "content": "",
-            "text_alignment": "left",
+            "content": "<p>CHOOSE 1 LIP + 1 FOUNDATION + 1 TOOL<\/p>",
+            "text_alignment": "center",
             "product_card__image__ratio": "tw-pb-[100%]",
-            "quick_view": "always",
+            "quick_view": "variants",
             "variant_count_text": "Available in [count] models",
             "detailed_requirements": true,
             "container_width": 1440,
             "color_text": "#000000",
             "color_bg": "#ffffff",
             "color_primary_text": "#ffffff",
-            "color_primary_bg": "#00ce73",
-            "color_primary_outline": "#000000",
+            "color_primary_bg": "#1f0733",
+            "color_primary_outline": "#1f0733",
             "border_style": "soft"
           }
         }

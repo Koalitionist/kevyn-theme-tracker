@@ -619,12 +619,11 @@
         "blocks": {
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<p>RECEIVE A COMPLIMENTARY MINI WITH EVERY ORDER!<\/p>",
+              "text": "<p>20% OFF YOUR VERY OWN CUSTOM HOLIDAY SET<\/p>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/collections\/gift-guide",
+              "link": "shopify:\/\/pages\/custom-holiday-set",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",

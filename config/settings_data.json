@@ -635,12 +635,11 @@
           },
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<h6>FREE MINI WITH EVERY ORDER — CHOOSE YOUR FREE MINI AT CHECKOUT <\/h6>",
+              "text": "<h6>FREE FULL-SIZE GIFT WHEN YOU SPEND $100+<\/h6>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/collections",
+              "link": "shopify:\/\/collections\/holiday",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",

@@ -428,7 +428,7 @@
         "template--14914200272983__37a24d32-6076-43ad-bf4f-6cf9f35f8c3b-text-3": {
           "type": "text",
           "settings": {
-            "title": "<h4>Get your one-on-one customized online consultation with our artistry team.<\/h4>",
+            "title": "<h4><strong>Get your one-on-one customized online consultation with our artistry team.<\/strong><\/h4>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",

@@ -31,6 +31,15 @@
             "page": ""
           }
         },
+        "97fa10a8-2188-4081-9b09-ef3d52977d72": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOLIDAY SALE - UP TO 70% OFF<\/p>",
+            "answer": "<p>Offer valid until 12.15 at 11:59pm ET. Offer includes up to 70% off select products and shades. Products and shade discounts are automatically reflected onsite. No code necessary. Not valid with other automatic discounts.<\/p>",
+            "page": ""
+          }
+        },
         "ff728e07-b200-4024-8d80-3984c907d7d9": {
           "type": "faq",
           "settings": {
@@ -211,20 +220,12 @@
             "answer": "<p>All prices of merchandise are shown in U.S. Dollars (USD) across the site and at checkout.<\/p>",
             "page": ""
           }
-        },
-        "97fa10a8-2188-4081-9b09-ef3d52977d72": {
-          "type": "faq",
-          "settings": {
-            "open": false,
-            "title": "<p>HOLIDAY SALE<\/p>",
-            "answer": "<p>Offer valid until 12.15 at 11:59pm ET. Offer includes up to 70% off select products and shades. Products and shade discounts are automatically reflected onsite. No code necessary. Not valid with other automatic discounts.<\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "template--14836388233303__35066f74-c962-4a2e-88be-05041114e317-168969281898056d74-12",
         "5a3d6d25-a6f3-438b-ac02-c0d1496979c1",
+        "97fa10a8-2188-4081-9b09-ef3d52977d72",
         "ff728e07-b200-4024-8d80-3984c907d7d9",
         "4067707b-7bab-47fc-b8f7-ee2b136a8d34",
         "544b9ef4-20a8-4bc6-a4be-901904a14ea0",
@@ -244,8 +245,7 @@
         "4e871ba6-1dfc-4830-88bb-52e019efcaaf",
         "99208687-7db2-45cc-877c-063cf3280fae",
         "5b862012-91bb-41d2-aaf1-726eb52d15cb",
-        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2",
-        "97fa10a8-2188-4081-9b09-ef3d52977d72"
+        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2"
       ],
       "settings": {
         "title": "<h2>ORDER & PAYMENT<\/h2>",

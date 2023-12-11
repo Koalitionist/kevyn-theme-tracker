@@ -139,7 +139,7 @@
         "source": "image",
         "image": "shopify:\/\/shop_images\/GIFT_GUIDE_PROMO_12112_HeaderBanner_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "url": "shopify:\/\/pages\/custom-holiday-set",
+        "url": "shopify:\/\/collections\/gift-guide",
         "image__object_fit": "object-cover",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "height": 670,

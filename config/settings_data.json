@@ -619,12 +619,11 @@
         "blocks": {
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<p>20% OFF YOUR VERY OWN CUSTOM HOLIDAY SET<\/p>",
+              "text": "<p>UP TO 70% OFF SELECT PRODUCTS<\/p>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/pages\/custom-holiday-set",
+              "link": "shopify:\/\/collections\/holiday-sale",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",

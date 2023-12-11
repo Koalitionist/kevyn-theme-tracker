@@ -211,6 +211,15 @@
             "answer": "<p>All prices of merchandise are shown in U.S. Dollars (USD) across the site and at checkout.<\/p>",
             "page": ""
           }
+        },
+        "97fa10a8-2188-4081-9b09-ef3d52977d72": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>HOLIDAY SALE<\/p>",
+            "answer": "<p>Offer valid until 12.15 at 11:59pm ET. Offer includes up to 70% off select products and shades. Products and shade discounts are automatically reflected onsite. No code necessary. Not valid with other automatic discounts.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -235,7 +244,8 @@
         "4e871ba6-1dfc-4830-88bb-52e019efcaaf",
         "99208687-7db2-45cc-877c-063cf3280fae",
         "5b862012-91bb-41d2-aaf1-726eb52d15cb",
-        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2"
+        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2",
+        "97fa10a8-2188-4081-9b09-ef3d52977d72"
       ],
       "settings": {
         "title": "<h2>ORDER & PAYMENT<\/h2>",

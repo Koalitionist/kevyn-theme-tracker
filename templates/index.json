@@ -157,65 +157,6 @@
         "sectionID": ""
       }
     },
-    "6918d774-d0c4-4878-8ed8-6b6865cf524d": {
-      "type": "image-banner",
-      "blocks": {
-        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1",
-        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "source": "video",
-        "video": "shopify:\/\/files\/videos\/BlackFriday_Banner (1).mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "url": "shopify:\/\/collections\/holiday-sale",
-        "image__object_fit": "object-cover",
-        "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
-        "height": 650,
-        "height_mobile": 300,
-        "align__vertical": "justify-center",
-        "align__horizontal_no_text": "items-center",
-        "align__text": "text-center",
-        "section_layout": "fullwidth",
-        "section_max_width": "max-w-2xl",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-5",
-        "section_liquid": "",
-        "sectionID": ""
-      }
-    },
     "c01c8908-eb19-4d95-a852-323ab30e41cd": {
       "type": "products-scrollable",
       "blocks": {
@@ -263,6 +204,64 @@
         "padding_top": "pt-sm",
         "padding_bottom": "pb-sm",
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
+    "6918d774-d0c4-4878-8ed8-6b6865cf524d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1": {
+          "type": "text",
+          "settings": {
+            "title": "<h4>NEW LIMITED EDITION<\/h4><h2>LIMELIGHT VANITY TRAVEL KIT<\/h2>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        },
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-1",
+        "template--14914200272983__6918d774-d0c4-4878-8ed8-6b6865cf524d-text-2"
+      ],
+      "settings": {
+        "source": "video",
+        "video": "shopify:\/\/files\/videos\/video-output-DCE94D1E-4632-46D6-946D-DA789B0050E4.MOV",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
+        "url": "shopify:\/\/products\/limelight-vanity-travel-kit",
+        "image__object_fit": "object-cover",
+        "image__overlay": "radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05) 72%)",
+        "height": 600,
+        "height_mobile": 530,
+        "align__vertical": "justify-center",
+        "align__horizontal_no_text": "items-center",
+        "align__text": "text-center",
+        "section_layout": "fullwidth",
+        "section_max_width": "max-w-2xl",
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "section_liquid": "",
         "sectionID": ""
       }
     },
@@ -1594,8 +1593,8 @@
   "order": [
     "8636e605-446f-469d-bb7c-333416ce7988",
     "dcca89f6-4599-4d99-a6b2-134fbd65f0f7",
-    "6918d774-d0c4-4878-8ed8-6b6865cf524d",
     "c01c8908-eb19-4d95-a852-323ab30e41cd",
+    "6918d774-d0c4-4878-8ed8-6b6865cf524d",
     "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
     "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b",

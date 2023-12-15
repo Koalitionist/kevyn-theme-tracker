@@ -323,7 +323,7 @@
         "image__aspect_ratio": "pb-[100%]",
         "content_ratio": "md:grid-cols-2",
         "image__object_fit": "object-cover",
-        "image__order": "-order-1",
+        "image__order": "order-2",
         "image__order__mobile": "max-md:-order-1",
         "image__mobile_padding": true,
         "align__vertical": "justify-center",

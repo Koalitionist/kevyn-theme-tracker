@@ -220,6 +220,15 @@
             "answer": "<p>All prices of merchandise are shown in U.S. Dollars (USD) across the site and at checkout.<\/p>",
             "page": ""
           }
+        },
+        "a10fab06-959c-4a5c-96f7-45ca5ef6aec5": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>New Online Exclusive Limelight Vanity Travel Kit<\/p>",
+            "answer": "<p>Bag is not applicable with Pro or Industry membership discounts.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -245,7 +254,8 @@
         "4e871ba6-1dfc-4830-88bb-52e019efcaaf",
         "99208687-7db2-45cc-877c-063cf3280fae",
         "5b862012-91bb-41d2-aaf1-726eb52d15cb",
-        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2"
+        "05bafdd3-4af6-492a-b69a-e49e4b7f12f2",
+        "a10fab06-959c-4a5c-96f7-45ca5ef6aec5"
       ],
       "settings": {
         "title": "<h2>ORDER & PAYMENT<\/h2>",

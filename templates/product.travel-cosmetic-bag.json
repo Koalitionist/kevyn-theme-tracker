@@ -295,6 +295,25 @@
     },
     "97cc5bb1-d145-4e26-b1c5-bfdf9e678e22": {
       "type": "image-with-text",
+      "blocks": {
+        "ec4b2b21-2e1d-4912-879a-77cc36f7968a": {
+          "type": "text",
+          "settings": {
+            "title": "<h3>TRAVEL IN STYLE<\/h3><p>The most fashionable cosmetic travel bag for pros and beauty lovers alike. Kit includes 9 cushy-compartments — because your makeup deserves nice luggage too!<\/p>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
+          }
+        }
+      },
+      "block_order": [
+        "ec4b2b21-2e1d-4912-879a-77cc36f7968a"
+      ],
       "settings": {
         "source": "video",
         "video": "shopify:\/\/files\/videos\/video-output-DCE94D1E-4632-46D6-946D-DA789B0050E4.MOV",

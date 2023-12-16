@@ -619,6 +619,7 @@
         "blocks": {
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p>UP TO 70% OFF SELECT PRODUCTS<\/p>",
               "short_text": "",
@@ -635,12 +636,11 @@
           },
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<h6>FREE FULL-SIZE GIFT WHEN YOU SPEND $100+<\/h6>",
+              "text": "<h6>HOLIDAY GIFT GUIDE<\/h6>",
               "short_text": "",
               "announcement_font": 3,
-              "link": "shopify:\/\/collections\/holiday",
+              "link": "shopify:\/\/collections\/gift-guide",
               "color_bg": "#000000",
               "color_text": "#ffffff",
               "position": "center",
@@ -652,6 +652,7 @@
           },
           "09be7fb4-bf40-45cc-aa69-1accb413b9cf": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p>25% OFF HOLIDAY GIFT GUIDE | Use code: GG25<\/p>",
               "short_text": "",

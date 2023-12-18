@@ -416,21 +416,21 @@
             "page": ""
           }
         },
-        "22c9c13b-1945-4234-b5f6-f915506cae2a": {
-          "type": "faq",
-          "settings": {
-            "open": false,
-            "title": "<p>DO YOU SELL THE RED REPLACEMENT PADS FOR THE EYELASH CURLER?<\/p>",
-            "answer": "<p>One replacement pad comes with The Eyelash Curler. We do sell the 3-red refill pads separately that can be used with our new Professional Lash Curler. We recommend changing your pad every 6-12 months.<\/p>",
-            "page": ""
-          }
-        },
         "f5dd25e5-b0b5-41df-8824-61b857c74566": {
           "type": "faq",
           "settings": {
             "open": false,
             "title": "<p>WHAT MATERIAL ARE YOUR BRUSH BRISTLES MADE OUT OF?<\/p>",
             "answer": "<p>The bristles are synthetic.<\/p>",
+            "page": ""
+          }
+        },
+        "22c9c13b-1945-4234-b5f6-f915506cae2a": {
+          "type": "faq",
+          "settings": {
+            "open": false,
+            "title": "<p>DO YOU SELL THE RED REPLACEMENT PADS FOR THE EYELASH CURLER?<\/p>",
+            "answer": "<p>One replacement pad comes with The Eyelash Curler. We do sell the 3-red refill pads separately that can be used with our new Professional Lash Curler. We recommend changing your pad every 6-12 months.<\/p>",
             "page": ""
           }
         }
@@ -441,8 +441,8 @@
         "bb7cf4e6-859a-44b2-ab61-847aca41fc9e",
         "534eb99e-cadb-4090-b0ff-c3ce1744c9ff",
         "05cba443-ce01-48be-a26f-d042eb1b8e1f",
-        "22c9c13b-1945-4234-b5f6-f915506cae2a",
-        "f5dd25e5-b0b5-41df-8824-61b857c74566"
+        "f5dd25e5-b0b5-41df-8824-61b857c74566",
+        "22c9c13b-1945-4234-b5f6-f915506cae2a"
       ],
       "settings": {
         "title": "<h2>PRODUCTS<\/h2>",

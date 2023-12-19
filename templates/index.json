@@ -61,6 +61,56 @@
         "sectionID": ""
       }
     },
+    "c01c8908-eb19-4d95-a852-323ab30e41cd": {
+      "type": "products-scrollable",
+      "blocks": {
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f": {
+          "type": "heading",
+          "settings": {
+            "preheading": "",
+            "preheading_font": 1,
+            "title": "<h2>BEST SELLERS<\/h2>",
+            "title_font": 3,
+            "subtitle": "",
+            "subtitle_font": 1,
+            "content": "",
+            "content_font": 1,
+            "button_primary__text": "",
+            "button_primary__url": "\/",
+            "button_primary__style": "button-primary",
+            "button_secondary__text": "",
+            "button_secondary__url": "\/",
+            "button_secondary__style": "button-primary--outline",
+            "align__horizontal": "items-start text-left",
+            "section_max_width": "max-w-2xl",
+            "margin_bottom": 14
+          }
+        },
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
+          "type": "source_collection",
+          "settings": {
+            "source": "best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f",
+        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
+      ],
+      "settings": {
+        "product_source": "blocks",
+        "product_limit": 12,
+        "hide_out_of_stock": true,
+        "hide_if_empty": true,
+        "container_overflow": true,
+        "center_products": true,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-sm",
+        "padding_bottom": "pb-sm",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "sectionID": ""
+      }
+    },
     "dcca89f6-4599-4d99-a6b2-134fbd65f0f7": {
       "type": "image-banner",
       "blocks": {
@@ -134,12 +184,11 @@
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3",
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"
       ],
-      "disabled": true,
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/GIFT_GUIDE_PROMO_12112_HeaderBanner_1.jpg",
+        "image": "shopify:\/\/shop_images\/Gift_Card_Promo_Hero.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
-        "url": "shopify:\/\/collections\/gift-guide",
+        "url": "shopify:\/\/products\/rise-ai-giftcard",
         "image__object_fit": "object-cover",
         "image__overlay": "linear-gradient(134deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 100%)",
         "height": 670,
@@ -157,53 +206,49 @@
         "sectionID": ""
       }
     },
-    "c01c8908-eb19-4d95-a852-323ab30e41cd": {
-      "type": "products-scrollable",
+    "76990100-2a10-4e11-8c11-9bc13a33b24c": {
+      "type": "richtext",
       "blocks": {
-        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f": {
-          "type": "heading",
+        "91faef7d-d773-4d99-afc9-271463dad25d": {
+          "type": "text",
           "settings": {
-            "preheading": "",
-            "preheading_font": 1,
-            "title": "<h2>BEST SELLERS<\/h2>",
+            "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
             "title_font": 3,
-            "subtitle": "",
-            "subtitle_font": 1,
-            "content": "",
-            "content_font": 1,
-            "button_primary__text": "",
-            "button_primary__url": "\/",
-            "button_primary__style": "button-primary",
-            "button_secondary__text": "",
-            "button_secondary__url": "\/",
-            "button_secondary__style": "button-primary--outline",
-            "align__horizontal": "items-start text-left",
-            "section_max_width": "max-w-2xl",
-            "margin_bottom": 14
+            "opacity": 100,
+            "alignment_desktop": "text-center",
+            "alignment_mobile": "max-md:text-center",
+            "margin_top": 0,
+            "margin_bottom": 14,
+            "section_max_width": "max-w-[var(--layout-page-width)]",
+            "responsive_visibility": "responsive"
           }
         },
-        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2": {
-          "type": "source_collection",
+        "726fd27d-b7c6-4404-8eb4-402e447537be": {
+          "type": "text",
           "settings": {
-            "source": "best-sellers"
+            "title": "<h5>— Kevyn Aucoin<\/h5>",
+            "title_font": 3,
+            "opacity": 100,
+            "alignment_desktop": "[text-align:inherit]",
+            "alignment_mobile": "max-md:[text-align:inherit]",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "section_max_width": "max-w-2xl",
+            "responsive_visibility": "responsive"
           }
         }
       },
       "block_order": [
-        "5d3ebd7d-2fa4-4960-99a3-f63ea95f9d4f",
-        "template--18752996770111__c01c8908-eb19-4d95-a852-323ab30e41cd-1682371402bd9525e9-2"
+        "91faef7d-d773-4d99-afc9-271463dad25d",
+        "726fd27d-b7c6-4404-8eb4-402e447537be"
       ],
       "settings": {
-        "product_source": "blocks",
-        "product_limit": 12,
-        "hide_out_of_stock": true,
-        "hide_if_empty": true,
-        "container_overflow": true,
-        "center_products": true,
+        "align__horizontal": "items-center text-center",
+        "width": "max-w-5xl",
         "responsive_visibility": "responsive",
         "padding_top": "pt-sm",
         "padding_bottom": "pb-sm",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-1",
+        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
         "sectionID": ""
       }
     },
@@ -262,6 +307,91 @@
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-1",
         "section_liquid": "",
+        "sectionID": ""
+      }
+    },
+    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
+      "type": "marquee-bar",
+      "blocks": {
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
+          "type": "text",
+          "settings": {
+            "title": "shade finder",
+            "text": "<h3>FIND YOUR SHADE<\/h3>",
+            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
+          }
+        },
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
+          "type": "text",
+          "settings": {
+            "title": "gift guide",
+            "text": "<p>GIFT GUIDE<\/p>",
+            "url": "shopify:\/\/collections\/gift-guide"
+          }
+        },
+        "81e7261a-06e8-481c-a3a0-00e28205181f": {
+          "type": "text",
+          "settings": {
+            "title": "Online exclusives",
+            "text": "<p>ONLINE EXCLUSIVES<\/p>",
+            "url": "shopify:\/\/collections\/online-exclusives"
+          }
+        },
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b": {
+          "type": "text",
+          "settings": {
+            "title": "VELVET LIP PAINT",
+            "text": "<p>VELVET LIP PAINT<\/p>",
+            "url": "shopify:\/\/products\/velvet-lip-paint"
+          }
+        },
+        "7a738e13-b235-488a-a548-713caa73944e": {
+          "type": "text",
+          "settings": {
+            "title": "holiday",
+            "text": "<p>HOLIDAY COLLECTION<\/p>",
+            "url": "shopify:\/\/collections\/holiday"
+          }
+        },
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d": {
+          "type": "text",
+          "settings": {
+            "title": "Gifts under $20",
+            "text": "<p>GIFTS UNDER $20<\/p>",
+            "url": "shopify:\/\/collections\/mini-size"
+          }
+        }
+      },
+      "block_order": [
+        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
+        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
+        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
+        "81e7261a-06e8-481c-a3a0-00e28205181f",
+        "0735172c-74d1-4f47-ae0a-1463fc457a8b",
+        "7a738e13-b235-488a-a548-713caa73944e",
+        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d"
+      ],
+      "settings": {
+        "center_items": true,
+        "height_desktop": 60,
+        "height_mobile": 40,
+        "spacing": 99,
+        "spacing_mobile": 63,
+        "highlight": false,
+        "auto_pause": true,
+        "duration": 18,
+        "responsive_visibility": "responsive",
+        "padding_top": "pt-0",
+        "padding_bottom": "pb-0",
+        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "sectionID": ""
       }
     },
@@ -361,52 +491,6 @@
         "sectionID": ""
       }
     },
-    "76990100-2a10-4e11-8c11-9bc13a33b24c": {
-      "type": "richtext",
-      "blocks": {
-        "91faef7d-d773-4d99-afc9-271463dad25d": {
-          "type": "text",
-          "settings": {
-            "title": "<h2>\"Beauty might bring happiness, but happiness always brings beauty.”<\/h2>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "text-center",
-            "alignment_mobile": "max-md:text-center",
-            "margin_top": 0,
-            "margin_bottom": 14,
-            "section_max_width": "max-w-[var(--layout-page-width)]",
-            "responsive_visibility": "responsive"
-          }
-        },
-        "726fd27d-b7c6-4404-8eb4-402e447537be": {
-          "type": "text",
-          "settings": {
-            "title": "<h5>— Kevyn Aucoin<\/h5>",
-            "title_font": 3,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
-        }
-      },
-      "block_order": [
-        "91faef7d-d773-4d99-afc9-271463dad25d",
-        "726fd27d-b7c6-4404-8eb4-402e447537be"
-      ],
-      "settings": {
-        "align__horizontal": "items-center text-center",
-        "width": "max-w-5xl",
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-sm",
-        "padding_bottom": "pb-sm",
-        "color_scheme": "bg-theme-bg text-theme-text color-inherit",
-        "sectionID": ""
-      }
-    },
     "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b": {
       "type": "image-banner",
       "blocks": {
@@ -480,91 +564,6 @@
         "padding_bottom": "pb-0",
         "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "section_liquid": "",
-        "sectionID": ""
-      }
-    },
-    "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f": {
-      "type": "marquee-bar",
-      "blocks": {
-        "ff59544a-2739-4dd9-8e48-8810a6286ff7": {
-          "type": "text",
-          "settings": {
-            "title": "shade finder",
-            "text": "<h3>FIND YOUR SHADE<\/h3>",
-            "url": "shopify:\/\/collections\/true-to-you-shade-finder-quiz"
-          }
-        },
-        "87eabefb-e9b7-4908-a603-6a3a4b91b18c": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "url": ""
-          }
-        },
-        "b4050ccc-4b02-4bae-af97-9800c67f84ea": {
-          "type": "text",
-          "settings": {
-            "title": "gift guide",
-            "text": "<p>GIFT GUIDE<\/p>",
-            "url": "shopify:\/\/collections\/gift-guide"
-          }
-        },
-        "81e7261a-06e8-481c-a3a0-00e28205181f": {
-          "type": "text",
-          "settings": {
-            "title": "Online exclusives",
-            "text": "<p>ONLINE EXCLUSIVES<\/p>",
-            "url": "shopify:\/\/collections\/online-exclusives"
-          }
-        },
-        "0735172c-74d1-4f47-ae0a-1463fc457a8b": {
-          "type": "text",
-          "settings": {
-            "title": "VELVET LIP PAINT",
-            "text": "<p>VELVET LIP PAINT<\/p>",
-            "url": "shopify:\/\/products\/velvet-lip-paint"
-          }
-        },
-        "7a738e13-b235-488a-a548-713caa73944e": {
-          "type": "text",
-          "settings": {
-            "title": "holiday",
-            "text": "<p>HOLIDAY COLLECTION<\/p>",
-            "url": "shopify:\/\/collections\/holiday"
-          }
-        },
-        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d": {
-          "type": "text",
-          "settings": {
-            "title": "Gifts under $20",
-            "text": "<p>GIFTS UNDER $20<\/p>",
-            "url": "shopify:\/\/collections\/mini-size"
-          }
-        }
-      },
-      "block_order": [
-        "ff59544a-2739-4dd9-8e48-8810a6286ff7",
-        "87eabefb-e9b7-4908-a603-6a3a4b91b18c",
-        "b4050ccc-4b02-4bae-af97-9800c67f84ea",
-        "81e7261a-06e8-481c-a3a0-00e28205181f",
-        "0735172c-74d1-4f47-ae0a-1463fc457a8b",
-        "7a738e13-b235-488a-a548-713caa73944e",
-        "4dc68d2f-5057-45c1-a2c0-a4e8e5f95f0d"
-      ],
-      "settings": {
-        "center_items": true,
-        "height_desktop": 60,
-        "height_mobile": 40,
-        "spacing": 99,
-        "spacing_mobile": 63,
-        "highlight": false,
-        "auto_pause": true,
-        "duration": 18,
-        "responsive_visibility": "responsive",
-        "padding_top": "pt-0",
-        "padding_bottom": "pb-0",
-        "color_scheme": "bg-theme-bg text-theme-text color-group-2",
         "sectionID": ""
       }
     },
@@ -1592,13 +1591,13 @@
   },
   "order": [
     "8636e605-446f-469d-bb7c-333416ce7988",
-    "dcca89f6-4599-4d99-a6b2-134fbd65f0f7",
     "c01c8908-eb19-4d95-a852-323ab30e41cd",
-    "6918d774-d0c4-4878-8ed8-6b6865cf524d",
-    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
+    "dcca89f6-4599-4d99-a6b2-134fbd65f0f7",
     "76990100-2a10-4e11-8c11-9bc13a33b24c",
-    "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b",
+    "6918d774-d0c4-4878-8ed8-6b6865cf524d",
     "17bdb2e8-2930-46c8-8a58-1e4d8ed0ff4f",
+    "a43a2af3-464a-4d95-bdca-7173d61d2b2a",
+    "37a24d32-6076-43ad-bf4f-6cf9f35f8c3b",
     "86c1c1f4-8727-4ce8-b967-29e25fe12d97",
     "94a2072d-0ce0-419c-996b-ed64b07f4648",
     "5fa6bcdd-a5ea-432e-a88e-8b40a70fa6c6",

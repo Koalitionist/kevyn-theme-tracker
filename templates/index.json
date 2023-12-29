@@ -47,7 +47,7 @@
         "image__object_fit": "object-cover",
         "image__overlay": "radial-gradient(rgba(150, 146, 146, 0), rgba(0, 0, 0, 0.05) 100%)",
         "height": 650,
-        "height_mobile": 260,
+        "height_mobile": 280,
         "align__vertical": "justify-center",
         "align__horizontal_no_text": "items-center",
         "align__text": "text-center",

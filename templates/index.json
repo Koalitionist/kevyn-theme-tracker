@@ -294,6 +294,7 @@
         "template--15015483867223__ba8fe9a0-edbd-4c66-acb9-d56b0dd87463-text-3",
         "template--15015483867223__ba8fe9a0-edbd-4c66-acb9-d56b0dd87463-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/GIFT_CARD-MOBILE.jpg",

@@ -184,6 +184,7 @@
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-text-3",
         "template--14914200272983__dcca89f6-4599-4d99-a6b2-134fbd65f0f7-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "source": "image",
         "image": "shopify:\/\/shop_images\/Gift_Card_Promo_Hero.jpg",

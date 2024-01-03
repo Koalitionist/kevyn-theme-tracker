@@ -38,7 +38,7 @@
   assign percent_off = 100 | minus: discount
 
   assign price = price | times: percent_off | divided_by: 100
-  assign compare_at_price = product_or_variant.compare_at_prices | default: product_or_variant.price
+  assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
 
 endif
 
@@ -48,7 +48,7 @@ assign discount = settings.industry_discount
 assign percent_off = 100 | minus: discount
 
 assign price = price | times: percent_off | divided_by: 100
-assign compare_at_price = product_or_variant.compare_at_prices | default: product_or_variant.price
+assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
 
 endif
 
@@ -58,7 +58,7 @@ assign discount = settings.pro_discount
 assign percent_off = 100 | minus: discount
 
 assign price = price | times: percent_off | divided_by: 100
-assign compare_at_price = product_or_variant.compare_at_prices | default: product_or_variant.price
+assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
 
 endif
 

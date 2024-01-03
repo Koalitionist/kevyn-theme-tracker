@@ -20,7 +20,7 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "EXPLORE WAREHOUSE SALE",
+            "button_primary__text": "SHOP NOW",
             "button_primary__url": "shopify:\/\/collections\/warehouse-sale",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",

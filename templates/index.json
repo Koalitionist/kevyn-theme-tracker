@@ -6,7 +6,7 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h4><br\/>CELEBRATE THE BRIGHTEST<\/h4><h2>HOLIDAY SEASON<\/h2>",
+            "title": "<h4>WAREHOUSE SALE<\/h4><h2>UP TO 70% OFF SITEWIDE<\/h2>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
@@ -41,7 +41,7 @@
       ],
       "settings": {
         "source": "image",
-        "image": "shopify:\/\/shop_images\/HOLIDAYHERODIANA.jpg",
+        "image": "shopify:\/\/shop_images\/Warehouse_Sale_10323-03_WIDE_BANNER.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=GtDPjlUToKU",
         "url": "",
         "image__object_fit": "object-cover",

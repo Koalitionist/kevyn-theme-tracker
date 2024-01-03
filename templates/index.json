@@ -20,8 +20,8 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_primary__text": "EXPLORE GIFT GUIDE",
-            "button_primary__url": "shopify:\/\/collections\/gift-guide",
+            "button_primary__text": "EXPLORE WAREHOUSE SALE",
+            "button_primary__url": "shopify:\/\/collections\/warehouse-sale",
             "button_primary__style": "button-primary",
             "button_secondary__text": "",
             "button_secondary__url": "\/",
@@ -33,26 +33,11 @@
             "section_max_width": "max-w-full",
             "responsive_visibility": "responsive"
           }
-        },
-        "aa64779c-492f-4d36-a7bd-1bcbff1c107f": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "title_font": 1,
-            "opacity": 100,
-            "alignment_desktop": "[text-align:inherit]",
-            "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "section_max_width": "max-w-2xl",
-            "responsive_visibility": "responsive"
-          }
         }
       },
       "block_order": [
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1",
-        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1",
-        "aa64779c-492f-4d36-a7bd-1bcbff1c107f"
+        "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-buttons-1"
       ],
       "settings": {
         "source": "image",

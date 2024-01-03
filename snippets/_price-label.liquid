@@ -32,10 +32,10 @@
   if customer.tags contains 'Production' and discount_enabled
 
     assign discount = settings.production_discount
-    assign percent_off = 100 | minus: discount
+    assign percent_off = 100 | minus: discount 
 
-    assign price = price | times: percent_off | divided_by: 100
-    assign compare_at_price = product_or_variant.price
+    assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
+    assign price = compare_at_price | times: percent_off | divided_by: 100
 
   endif
 
@@ -44,8 +44,8 @@
     assign discount = settings.industry_discount
     assign percent_off = 100 | minus: discount
 
-    assign price = price | times: percent_off | divided_by: 100
-    assign compare_at_price = product_or_variant.price
+    assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
+    assign price = compare_at_price | times: percent_off | divided_by: 100
 
   endif
 
@@ -54,8 +54,8 @@
     assign discount = settings.pro_discount
     assign percent_off = 100 | minus: discount
 
-    assign price = price | times: percent_off | divided_by: 100
-    assign compare_at_price = product_or_variant.price
+    assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
+    assign price = compare_at_price | times: percent_off | divided_by: 100
 
   endif
 

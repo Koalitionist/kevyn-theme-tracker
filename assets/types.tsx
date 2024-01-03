@@ -98,6 +98,7 @@ export type _Cart_fetch_api_Items = {
   line_level_discount_allocations: _Line_level_discount_allocations[];
   line_level_total_discount: number;
   line_price: number;
+  compare_at_price: number;
   options_with_values: _Cart_fetch_api_ItemsOptions_with_values[];
   original_line_price: number;
   original_price: number;

@@ -6,13 +6,13 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h2>WAREHOUSE SALE<\/h2><h1>UP TO 70% OFF SITEWIDE<\/h1>",
+            "title": "<h3><strong>WAREHOUSE SALE<\/strong><\/h3><h1>UP TO 70% OFF SITEWIDE<\/h1>",
             "title_font": 3,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",
             "alignment_mobile": "max-md:[text-align:inherit]",
-            "margin_top": -12,
-            "margin_bottom": -12,
+            "margin_top": 4,
+            "margin_bottom": 4,
             "section_max_width": "max-w-md",
             "responsive_visibility": "responsive"
           }

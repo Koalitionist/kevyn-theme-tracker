@@ -312,27 +312,6 @@
         </script>
     {% endcase %}
   {% endif %}
-
-  <!-- ECI STart Bing base code -->
-    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187088524", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq1");</script>
-  <!-- END Bing base code -->
-
-  {% if template contains 'collection' or template contains 'gift-guide' %}
-    <style>
-      .eci-description{
-        padding: 30px;
-      }
-      .eci-description a{
-        text-decoration: underline;
-      }
-      .custom-liquid a{
-        text-decoration: underline;
-      }
-      .custom-liquid{
-        padding: 30px;
-      }
-    </style>
-  {% endif %}
 </head>
 
 <body class="min-h-screen text-theme-text bg-theme-bg bg-theme-gradient font-group-1 {{ settings.color_scheme }}"

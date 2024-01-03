@@ -620,7 +620,7 @@
           "0433b963-7ed7-47fb-b588-53bcb7c7d81f": {
             "type": "announcement",
             "settings": {
-              "text": "<p>WAREHOUSE SALE | UP TO 70% OFF<\/p>",
+              "text": "<p>WAREHOUSE SALE | UP TO 70% OFF SITEWIDE<\/p>",
               "short_text": "",
               "announcement_font": 3,
               "link": "shopify:\/\/collections\/warehouse-sale",

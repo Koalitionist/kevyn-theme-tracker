@@ -246,6 +246,13 @@
   "slideshow": {
     "close": "Close"
   },
+  "collection_card": {
+    "starting_at": "Starting at"
+  },
+  "form": {
+    "newsletter": "Newsletter",
+    "thank_you": "Thank you for Signing Up"
+  },
   "object_card": {
     "starting_at": "Starting at"
   },
@@ -271,12 +278,5 @@
   "scroll_bar_elements": {
     "show_previous": "Show Previous Item",
     "show_next": "Show Next Item"
-  },
-  "collection_card": {
-    "starting_at": "Starting at"
-  },
-  "form": {
-    "newsletter": "Newsletter",
-    "thank_you": "Thank you for Signing Up"
   }
 }

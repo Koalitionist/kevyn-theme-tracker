@@ -57,7 +57,7 @@ if customer.tags contains 'Pro' and discount_enabled
 assign discount = settings.pro_discount
 assign percent_off = 100 | minus: discount
 
-assign price = price | times: percent_off | divided_by: 100
+assign price = compare_at_price | times: percent_off | divided_by: 100 | default:price | times: percent_off | divided_by: 100
 assign compare_at_price = product_or_variant.compare_at_price | default: product_or_variant.price
 
 endif

@@ -136,7 +136,7 @@ export const CartLineItem: FC<{
                     "pointer-events-none hidden overflow-hidden opacity-0"
                 )}
                 dangerouslySetInnerHTML={{
-                  __html: `${window.formatMoney(line_item?.original_price)} `,
+                  __html: `${window.formatMoney(line_item?.compare_at_price ? line_item?.compare_at_price :  line_item?.original_price)} `,
                 }}
               ></span>
               <span

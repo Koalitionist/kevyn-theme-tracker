@@ -13637,7 +13637,7 @@
                   (line_item == null ? void 0 : line_item.original_price) === (line_item == null ? void 0 : line_item.discounted_price) && "pointer-events-none hidden overflow-hidden opacity-0"
                 ),
                 dangerouslySetInnerHTML: {
-                  __html: `${window.formatMoney(line_item == null ? void 0 : line_item.original_price)} `
+                  __html: `${window.formatMoney((line_item == null ? void 0 : line_item.compare_at_price) ? line_item == null ? void 0 : line_item.compare_at_price : line_item == null ? void 0 : line_item.original_price)} `
                 }
               }
             ),

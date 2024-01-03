@@ -90,47 +90,47 @@
     });
   };
 
-  // ../node_modules/.pnpm/preact@10.13.2/node_modules/preact/dist/preact.module.js
+  // ../node_modules/preact/dist/preact.module.js
   function h(n3, l4) {
     for (var u4 in l4)
       n3[u4] = l4[u4];
     return n3;
   }
-  function v(n3) {
+  function p(n3) {
     var l4 = n3.parentNode;
     l4 && l4.removeChild(n3);
   }
   function y(l4, u4, i4) {
-    var t4, r5, o5, f4 = {};
-    for (o5 in u4)
-      "key" == o5 ? t4 = u4[o5] : "ref" == o5 ? r5 = u4[o5] : f4[o5] = u4[o5];
+    var t4, o5, r5, f4 = {};
+    for (r5 in u4)
+      "key" == r5 ? t4 = u4[r5] : "ref" == r5 ? o5 = u4[r5] : f4[r5] = u4[r5];
     if (arguments.length > 2 && (f4.children = arguments.length > 3 ? n.call(arguments, 2) : i4), "function" == typeof l4 && null != l4.defaultProps)
-      for (o5 in l4.defaultProps)
-        void 0 === f4[o5] && (f4[o5] = l4.defaultProps[o5]);
-    return p(l4, f4, t4, r5, null);
+      for (r5 in l4.defaultProps)
+        void 0 === f4[r5] && (f4[r5] = l4.defaultProps[r5]);
+    return d(l4, f4, t4, o5, null);
   }
-  function p(n3, i4, t4, r5, o5) {
-    var f4 = { type: n3, props: i4, key: t4, ref: r5, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, __h: null, constructor: void 0, __v: null == o5 ? ++u : o5 };
-    return null == o5 && null != l.vnode && l.vnode(f4), f4;
+  function d(n3, i4, t4, o5, r5) {
+    var f4 = { type: n3, props: i4, key: t4, ref: o5, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, __h: null, constructor: void 0, __v: null == r5 ? ++u : r5 };
+    return null == r5 && null != l.vnode && l.vnode(f4), f4;
   }
-  function d() {
+  function _() {
     return { current: null };
   }
-  function _(n3) {
+  function k(n3) {
     return n3.children;
   }
-  function k(n3, l4) {
+  function b(n3, l4) {
     this.props = n3, this.context = l4;
   }
-  function b(n3, l4) {
+  function g(n3, l4) {
     if (null == l4)
-      return n3.__ ? b(n3.__, n3.__.__k.indexOf(n3) + 1) : null;
+      return n3.__ ? g(n3.__, n3.__.__k.indexOf(n3) + 1) : null;
     for (var u4; l4 < n3.__k.length; l4++)
       if (null != (u4 = n3.__k[l4]) && null != u4.__e)
         return u4.__e;
-    return "function" == typeof n3.type ? b(n3) : null;
+    return "function" == typeof n3.type ? g(n3) : null;
   }
-  function g(n3) {
+  function m(n3) {
     var l4, u4;
     if (null != (n3 = n3.__) && null != n3.__c) {
       for (n3.__e = n3.__c.base = null, l4 = 0; l4 < n3.__k.length; l4++)
@@ -138,89 +138,89 @@
           n3.__e = n3.__c.base = u4.__e;
           break;
         }
-      return g(n3);
+      return m(n3);
     }
   }
-  function m(n3) {
-    (!n3.__d && (n3.__d = true) && t.push(n3) && !w.__r++ || r2 !== l.debounceRendering) && ((r2 = l.debounceRendering) || o)(w);
+  function w(n3) {
+    (!n3.__d && (n3.__d = true) && t.push(n3) && !x.__r++ || o !== l.debounceRendering) && ((o = l.debounceRendering) || r2)(x);
   }
-  function w() {
-    var n3, l4, u4, i4, r5, o5, e3, c4;
+  function x() {
+    var n3, l4, u4, i4, o5, r5, e3, c4;
     for (t.sort(f); n3 = t.shift(); )
-      n3.__d && (l4 = t.length, i4 = void 0, r5 = void 0, e3 = (o5 = (u4 = n3).__v).__e, (c4 = u4.__P) && (i4 = [], (r5 = h({}, o5)).__v = o5.__v + 1, L(c4, o5, r5, u4.__n, void 0 !== c4.ownerSVGElement, null != o5.__h ? [e3] : null, i4, null == e3 ? b(o5) : e3, o5.__h), M(i4, o5), o5.__e != e3 && g(o5)), t.length > l4 && t.sort(f));
-    w.__r = 0;
+      n3.__d && (l4 = t.length, i4 = void 0, o5 = void 0, e3 = (r5 = (u4 = n3).__v).__e, (c4 = u4.__P) && (i4 = [], (o5 = h({}, r5)).__v = r5.__v + 1, L(c4, r5, o5, u4.__n, void 0 !== c4.ownerSVGElement, null != r5.__h ? [e3] : null, i4, null == e3 ? g(r5) : e3, r5.__h), M(i4, r5), r5.__e != e3 && m(r5)), t.length > l4 && t.sort(f));
+    x.__r = 0;
   }
-  function x(n3, l4, u4, i4, t4, r5, o5, f4, e3, a4) {
-    var h4, v4, y4, d4, k5, g5, m3, w5 = i4 && i4.__k || s, x5 = w5.length;
+  function P(n3, l4, u4, i4, t4, o5, r5, f4, e3, a4) {
+    var h4, p4, y4, _5, b4, m3, w5, x5 = i4 && i4.__k || s, P5 = x5.length;
     for (u4.__k = [], h4 = 0; h4 < l4.length; h4++)
-      if (null != (d4 = u4.__k[h4] = null == (d4 = l4[h4]) || "boolean" == typeof d4 || "function" == typeof d4 ? null : "string" == typeof d4 || "number" == typeof d4 || "bigint" == typeof d4 ? p(null, d4, null, null, d4) : Array.isArray(d4) ? p(_, { children: d4 }, null, null, null) : d4.__b > 0 ? p(d4.type, d4.props, d4.key, d4.ref ? d4.ref : null, d4.__v) : d4)) {
-        if (d4.__ = u4, d4.__b = u4.__b + 1, null === (y4 = w5[h4]) || y4 && d4.key == y4.key && d4.type === y4.type)
-          w5[h4] = void 0;
+      if (null != (_5 = u4.__k[h4] = null == (_5 = l4[h4]) || "boolean" == typeof _5 || "function" == typeof _5 ? null : "string" == typeof _5 || "number" == typeof _5 || "bigint" == typeof _5 ? d(null, _5, null, null, _5) : v(_5) ? d(k, { children: _5 }, null, null, null) : _5.__b > 0 ? d(_5.type, _5.props, _5.key, _5.ref ? _5.ref : null, _5.__v) : _5)) {
+        if (_5.__ = u4, _5.__b = u4.__b + 1, null === (y4 = x5[h4]) || y4 && _5.key == y4.key && _5.type === y4.type)
+          x5[h4] = void 0;
         else
-          for (v4 = 0; v4 < x5; v4++) {
-            if ((y4 = w5[v4]) && d4.key == y4.key && d4.type === y4.type) {
-              w5[v4] = void 0;
+          for (p4 = 0; p4 < P5; p4++) {
+            if ((y4 = x5[p4]) && _5.key == y4.key && _5.type === y4.type) {
+              x5[p4] = void 0;
               break;
             }
             y4 = null;
           }
-        L(n3, d4, y4 = y4 || c, t4, r5, o5, f4, e3, a4), k5 = d4.__e, (v4 = d4.ref) && y4.ref != v4 && (m3 || (m3 = []), y4.ref && m3.push(y4.ref, null, d4), m3.push(v4, d4.__c || k5, d4)), null != k5 ? (null == g5 && (g5 = k5), "function" == typeof d4.type && d4.__k === y4.__k ? d4.__d = e3 = A(d4, e3, n3) : e3 = C(n3, d4, y4, w5, k5, e3), "function" == typeof u4.type && (u4.__d = e3)) : e3 && y4.__e == e3 && e3.parentNode != n3 && (e3 = b(y4));
+        L(n3, _5, y4 = y4 || c, t4, o5, r5, f4, e3, a4), b4 = _5.__e, (p4 = _5.ref) && y4.ref != p4 && (w5 || (w5 = []), y4.ref && w5.push(y4.ref, null, _5), w5.push(p4, _5.__c || b4, _5)), null != b4 ? (null == m3 && (m3 = b4), "function" == typeof _5.type && _5.__k === y4.__k ? _5.__d = e3 = C(_5, e3, n3) : e3 = $(n3, _5, y4, x5, b4, e3), "function" == typeof u4.type && (u4.__d = e3)) : e3 && y4.__e == e3 && e3.parentNode != n3 && (e3 = g(y4));
       }
-    for (u4.__e = g5, h4 = x5; h4--; )
-      null != w5[h4] && ("function" == typeof u4.type && null != w5[h4].__e && w5[h4].__e == u4.__d && (u4.__d = $(i4).nextSibling), S(w5[h4], w5[h4]));
-    if (m3)
-      for (h4 = 0; h4 < m3.length; h4++)
-        O(m3[h4], m3[++h4], m3[++h4]);
+    for (u4.__e = m3, h4 = P5; h4--; )
+      null != x5[h4] && ("function" == typeof u4.type && null != x5[h4].__e && x5[h4].__e == u4.__d && (u4.__d = A(i4).nextSibling), q(x5[h4], x5[h4]));
+    if (w5)
+      for (h4 = 0; h4 < w5.length; h4++)
+        O(w5[h4], w5[++h4], w5[++h4]);
   }
-  function A(n3, l4, u4) {
-    for (var i4, t4 = n3.__k, r5 = 0; t4 && r5 < t4.length; r5++)
-      (i4 = t4[r5]) && (i4.__ = n3, l4 = "function" == typeof i4.type ? A(i4, l4, u4) : C(u4, i4, i4, t4, i4.__e, l4));
+  function C(n3, l4, u4) {
+    for (var i4, t4 = n3.__k, o5 = 0; t4 && o5 < t4.length; o5++)
+      (i4 = t4[o5]) && (i4.__ = n3, l4 = "function" == typeof i4.type ? C(i4, l4, u4) : $(u4, i4, i4, t4, i4.__e, l4));
     return l4;
   }
-  function P(n3, l4) {
-    return l4 = l4 || [], null == n3 || "boolean" == typeof n3 || (Array.isArray(n3) ? n3.some(function(n4) {
-      P(n4, l4);
+  function S(n3, l4) {
+    return l4 = l4 || [], null == n3 || "boolean" == typeof n3 || (v(n3) ? n3.some(function(n4) {
+      S(n4, l4);
     }) : l4.push(n3)), l4;
   }
-  function C(n3, l4, u4, i4, t4, r5) {
-    var o5, f4, e3;
+  function $(n3, l4, u4, i4, t4, o5) {
+    var r5, f4, e3;
     if (void 0 !== l4.__d)
-      o5 = l4.__d, l4.__d = void 0;
-    else if (null == u4 || t4 != r5 || null == t4.parentNode)
+      r5 = l4.__d, l4.__d = void 0;
+    else if (null == u4 || t4 != o5 || null == t4.parentNode)
       n:
-        if (null == r5 || r5.parentNode !== n3)
-          n3.appendChild(t4), o5 = null;
+        if (null == o5 || o5.parentNode !== n3)
+          n3.appendChild(t4), r5 = null;
         else {
-          for (f4 = r5, e3 = 0; (f4 = f4.nextSibling) && e3 < i4.length; e3 += 1)
+          for (f4 = o5, e3 = 0; (f4 = f4.nextSibling) && e3 < i4.length; e3 += 1)
             if (f4 == t4)
               break n;
-          n3.insertBefore(t4, r5), o5 = r5;
+          n3.insertBefore(t4, o5), r5 = o5;
         }
-    return void 0 !== o5 ? o5 : t4.nextSibling;
+    return void 0 !== r5 ? r5 : t4.nextSibling;
   }
-  function $(n3) {
+  function A(n3) {
     var l4, u4, i4;
     if (null == n3.type || "string" == typeof n3.type)
       return n3.__e;
     if (n3.__k) {
       for (l4 = n3.__k.length - 1; l4 >= 0; l4--)
-        if ((u4 = n3.__k[l4]) && (i4 = $(u4)))
+        if ((u4 = n3.__k[l4]) && (i4 = A(u4)))
           return i4;
     }
     return null;
   }
   function H(n3, l4, u4, i4, t4) {
-    var r5;
-    for (r5 in u4)
-      "children" === r5 || "key" === r5 || r5 in l4 || T(n3, r5, null, u4[r5], i4);
-    for (r5 in l4)
-      t4 && "function" != typeof l4[r5] || "children" === r5 || "key" === r5 || "value" === r5 || "checked" === r5 || u4[r5] === l4[r5] || T(n3, r5, l4[r5], u4[r5], i4);
+    var o5;
+    for (o5 in u4)
+      "children" === o5 || "key" === o5 || o5 in l4 || T(n3, o5, null, u4[o5], i4);
+    for (o5 in l4)
+      t4 && "function" != typeof l4[o5] || "children" === o5 || "key" === o5 || "value" === o5 || "checked" === o5 || u4[o5] === l4[o5] || T(n3, o5, l4[o5], u4[o5], i4);
   }
   function I(n3, l4, u4) {
     "-" === l4[0] ? n3.setProperty(l4, null == u4 ? "" : u4) : n3[l4] = null == u4 ? "" : "number" != typeof u4 || a.test(l4) ? u4 : u4 + "px";
   }
   function T(n3, l4, u4, i4, t4) {
-    var r5;
+    var o5;
     n:
       if ("style" === l4)
         if ("string" == typeof u4)
@@ -234,11 +234,11 @@
               i4 && u4[l4] === i4[l4] || I(n3.style, l4, u4[l4]);
         }
       else if ("o" === l4[0] && "n" === l4[1])
-        r5 = l4 !== (l4 = l4.replace(/Capture$/, "")), l4 = l4.toLowerCase() in n3 ? l4.toLowerCase().slice(2) : l4.slice(2), n3.l || (n3.l = {}), n3.l[l4 + r5] = u4, u4 ? i4 || n3.addEventListener(l4, r5 ? z : j, r5) : n3.removeEventListener(l4, r5 ? z : j, r5);
+        o5 = l4 !== (l4 = l4.replace(/Capture$/, "")), l4 = l4.toLowerCase() in n3 ? l4.toLowerCase().slice(2) : l4.slice(2), n3.l || (n3.l = {}), n3.l[l4 + o5] = u4, u4 ? i4 || n3.addEventListener(l4, o5 ? z : j, o5) : n3.removeEventListener(l4, o5 ? z : j, o5);
       else if ("dangerouslySetInnerHTML" !== l4) {
         if (t4)
           l4 = l4.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
-        else if ("width" !== l4 && "height" !== l4 && "href" !== l4 && "list" !== l4 && "form" !== l4 && "tabIndex" !== l4 && "download" !== l4 && l4 in n3)
+        else if ("width" !== l4 && "height" !== l4 && "href" !== l4 && "list" !== l4 && "form" !== l4 && "tabIndex" !== l4 && "download" !== l4 && "rowSpan" !== l4 && "colSpan" !== l4 && l4 in n3)
           try {
             n3[l4] = null == u4 ? "" : u4;
             break n;
@@ -253,43 +253,43 @@
   function z(n3) {
     return this.l[n3.type + true](l.event ? l.event(n3) : n3);
   }
-  function L(n3, u4, i4, t4, r5, o5, f4, e3, c4) {
-    var s4, a4, v4, y4, p4, d4, b4, g5, m3, w5, A5, P5, C3, $3, H4, I4 = u4.type;
+  function L(n3, u4, i4, t4, o5, r5, f4, e3, c4) {
+    var s4, a4, p4, y4, d4, _5, g5, m3, w5, x5, C3, S3, $3, A5, H4, I4 = u4.type;
     if (void 0 !== u4.constructor)
       return null;
-    null != i4.__h && (c4 = i4.__h, e3 = u4.__e = i4.__e, u4.__h = null, o5 = [e3]), (s4 = l.__b) && s4(u4);
+    null != i4.__h && (c4 = i4.__h, e3 = u4.__e = i4.__e, u4.__h = null, r5 = [e3]), (s4 = l.__b) && s4(u4);
     try {
       n:
         if ("function" == typeof I4) {
-          if (g5 = u4.props, m3 = (s4 = I4.contextType) && t4[s4.__c], w5 = s4 ? m3 ? m3.props.value : s4.__ : t4, i4.__c ? b4 = (a4 = u4.__c = i4.__c).__ = a4.__E : ("prototype" in I4 && I4.prototype.render ? u4.__c = a4 = new I4(g5, w5) : (u4.__c = a4 = new k(g5, w5), a4.constructor = I4, a4.render = q), m3 && m3.sub(a4), a4.props = g5, a4.state || (a4.state = {}), a4.context = w5, a4.__n = t4, v4 = a4.__d = true, a4.__h = [], a4._sb = []), null == a4.__s && (a4.__s = a4.state), null != I4.getDerivedStateFromProps && (a4.__s == a4.state && (a4.__s = h({}, a4.__s)), h(a4.__s, I4.getDerivedStateFromProps(g5, a4.__s))), y4 = a4.props, p4 = a4.state, a4.__v = u4, v4)
+          if (m3 = u4.props, w5 = (s4 = I4.contextType) && t4[s4.__c], x5 = s4 ? w5 ? w5.props.value : s4.__ : t4, i4.__c ? g5 = (a4 = u4.__c = i4.__c).__ = a4.__E : ("prototype" in I4 && I4.prototype.render ? u4.__c = a4 = new I4(m3, x5) : (u4.__c = a4 = new b(m3, x5), a4.constructor = I4, a4.render = B), w5 && w5.sub(a4), a4.props = m3, a4.state || (a4.state = {}), a4.context = x5, a4.__n = t4, p4 = a4.__d = true, a4.__h = [], a4._sb = []), null == a4.__s && (a4.__s = a4.state), null != I4.getDerivedStateFromProps && (a4.__s == a4.state && (a4.__s = h({}, a4.__s)), h(a4.__s, I4.getDerivedStateFromProps(m3, a4.__s))), y4 = a4.props, d4 = a4.state, a4.__v = u4, p4)
             null == I4.getDerivedStateFromProps && null != a4.componentWillMount && a4.componentWillMount(), null != a4.componentDidMount && a4.__h.push(a4.componentDidMount);
           else {
-            if (null == I4.getDerivedStateFromProps && g5 !== y4 && null != a4.componentWillReceiveProps && a4.componentWillReceiveProps(g5, w5), !a4.__e && null != a4.shouldComponentUpdate && false === a4.shouldComponentUpdate(g5, a4.__s, w5) || u4.__v === i4.__v) {
-              for (u4.__v !== i4.__v && (a4.props = g5, a4.state = a4.__s, a4.__d = false), a4.__e = false, u4.__e = i4.__e, u4.__k = i4.__k, u4.__k.forEach(function(n4) {
+            if (null == I4.getDerivedStateFromProps && m3 !== y4 && null != a4.componentWillReceiveProps && a4.componentWillReceiveProps(m3, x5), !a4.__e && null != a4.shouldComponentUpdate && false === a4.shouldComponentUpdate(m3, a4.__s, x5) || u4.__v === i4.__v) {
+              for (u4.__v !== i4.__v && (a4.props = m3, a4.state = a4.__s, a4.__d = false), a4.__e = false, u4.__e = i4.__e, u4.__k = i4.__k, u4.__k.forEach(function(n4) {
                 n4 && (n4.__ = u4);
-              }), A5 = 0; A5 < a4._sb.length; A5++)
-                a4.__h.push(a4._sb[A5]);
+              }), C3 = 0; C3 < a4._sb.length; C3++)
+                a4.__h.push(a4._sb[C3]);
               a4._sb = [], a4.__h.length && f4.push(a4);
               break n;
             }
-            null != a4.componentWillUpdate && a4.componentWillUpdate(g5, a4.__s, w5), null != a4.componentDidUpdate && a4.__h.push(function() {
-              a4.componentDidUpdate(y4, p4, d4);
+            null != a4.componentWillUpdate && a4.componentWillUpdate(m3, a4.__s, x5), null != a4.componentDidUpdate && a4.__h.push(function() {
+              a4.componentDidUpdate(y4, d4, _5);
             });
           }
-          if (a4.context = w5, a4.props = g5, a4.__P = n3, P5 = l.__r, C3 = 0, "prototype" in I4 && I4.prototype.render) {
-            for (a4.state = a4.__s, a4.__d = false, P5 && P5(u4), s4 = a4.render(a4.props, a4.state, a4.context), $3 = 0; $3 < a4._sb.length; $3++)
-              a4.__h.push(a4._sb[$3]);
+          if (a4.context = x5, a4.props = m3, a4.__P = n3, S3 = l.__r, $3 = 0, "prototype" in I4 && I4.prototype.render) {
+            for (a4.state = a4.__s, a4.__d = false, S3 && S3(u4), s4 = a4.render(a4.props, a4.state, a4.context), A5 = 0; A5 < a4._sb.length; A5++)
+              a4.__h.push(a4._sb[A5]);
             a4._sb = [];
           } else
             do {
-              a4.__d = false, P5 && P5(u4), s4 = a4.render(a4.props, a4.state, a4.context), a4.state = a4.__s;
-            } while (a4.__d && ++C3 < 25);
-          a4.state = a4.__s, null != a4.getChildContext && (t4 = h(h({}, t4), a4.getChildContext())), v4 || null == a4.getSnapshotBeforeUpdate || (d4 = a4.getSnapshotBeforeUpdate(y4, p4)), H4 = null != s4 && s4.type === _ && null == s4.key ? s4.props.children : s4, x(n3, Array.isArray(H4) ? H4 : [H4], u4, i4, t4, r5, o5, f4, e3, c4), a4.base = u4.__e, u4.__h = null, a4.__h.length && f4.push(a4), b4 && (a4.__E = a4.__ = null), a4.__e = false;
+              a4.__d = false, S3 && S3(u4), s4 = a4.render(a4.props, a4.state, a4.context), a4.state = a4.__s;
+            } while (a4.__d && ++$3 < 25);
+          a4.state = a4.__s, null != a4.getChildContext && (t4 = h(h({}, t4), a4.getChildContext())), p4 || null == a4.getSnapshotBeforeUpdate || (_5 = a4.getSnapshotBeforeUpdate(y4, d4)), P(n3, v(H4 = null != s4 && s4.type === k && null == s4.key ? s4.props.children : s4) ? H4 : [H4], u4, i4, t4, o5, r5, f4, e3, c4), a4.base = u4.__e, u4.__h = null, a4.__h.length && f4.push(a4), g5 && (a4.__E = a4.__ = null), a4.__e = false;
         } else
-          null == o5 && u4.__v === i4.__v ? (u4.__k = i4.__k, u4.__e = i4.__e) : u4.__e = N(i4.__e, u4, i4, t4, r5, o5, f4, c4);
+          null == r5 && u4.__v === i4.__v ? (u4.__k = i4.__k, u4.__e = i4.__e) : u4.__e = N(i4.__e, u4, i4, t4, o5, r5, f4, c4);
       (s4 = l.diffed) && s4(u4);
     } catch (n4) {
-      u4.__v = null, (c4 || null != o5) && (u4.__e = e3, u4.__h = !!c4, o5[o5.indexOf(e3)] = null), l.__e(n4, u4, i4);
+      u4.__v = null, (c4 || null != r5) && (u4.__e = e3, u4.__h = !!c4, r5[r5.indexOf(e3)] = null), l.__e(n4, u4, i4);
     }
   }
   function M(n3, u4) {
@@ -303,35 +303,35 @@
       }
     });
   }
-  function N(l4, u4, i4, t4, r5, o5, f4, e3) {
-    var s4, a4, h4, y4 = i4.props, p4 = u4.props, d4 = u4.type, _5 = 0;
-    if ("svg" === d4 && (r5 = true), null != o5) {
-      for (; _5 < o5.length; _5++)
-        if ((s4 = o5[_5]) && "setAttribute" in s4 == !!d4 && (d4 ? s4.localName === d4 : 3 === s4.nodeType)) {
-          l4 = s4, o5[_5] = null;
+  function N(l4, u4, i4, t4, o5, r5, f4, e3) {
+    var s4, a4, h4, y4 = i4.props, d4 = u4.props, _5 = u4.type, k5 = 0;
+    if ("svg" === _5 && (o5 = true), null != r5) {
+      for (; k5 < r5.length; k5++)
+        if ((s4 = r5[k5]) && "setAttribute" in s4 == !!_5 && (_5 ? s4.localName === _5 : 3 === s4.nodeType)) {
+          l4 = s4, r5[k5] = null;
           break;
         }
     }
     if (null == l4) {
-      if (null === d4)
-        return document.createTextNode(p4);
-      l4 = r5 ? document.createElementNS("http://www.w3.org/2000/svg", d4) : document.createElement(d4, p4.is && p4), o5 = null, e3 = false;
+      if (null === _5)
+        return document.createTextNode(d4);
+      l4 = o5 ? document.createElementNS("http://www.w3.org/2000/svg", _5) : document.createElement(_5, d4.is && d4), r5 = null, e3 = false;
     }
-    if (null === d4)
-      y4 === p4 || e3 && l4.data === p4 || (l4.data = p4);
+    if (null === _5)
+      y4 === d4 || e3 && l4.data === d4 || (l4.data = d4);
     else {
-      if (o5 = o5 && n.call(l4.childNodes), a4 = (y4 = i4.props || c).dangerouslySetInnerHTML, h4 = p4.dangerouslySetInnerHTML, !e3) {
-        if (null != o5)
-          for (y4 = {}, _5 = 0; _5 < l4.attributes.length; _5++)
-            y4[l4.attributes[_5].name] = l4.attributes[_5].value;
+      if (r5 = r5 && n.call(l4.childNodes), a4 = (y4 = i4.props || c).dangerouslySetInnerHTML, h4 = d4.dangerouslySetInnerHTML, !e3) {
+        if (null != r5)
+          for (y4 = {}, k5 = 0; k5 < l4.attributes.length; k5++)
+            y4[l4.attributes[k5].name] = l4.attributes[k5].value;
         (h4 || a4) && (h4 && (a4 && h4.__html == a4.__html || h4.__html === l4.innerHTML) || (l4.innerHTML = h4 && h4.__html || ""));
       }
-      if (H(l4, p4, y4, r5, e3), h4)
+      if (H(l4, d4, y4, o5, e3), h4)
         u4.__k = [];
-      else if (_5 = u4.props.children, x(l4, Array.isArray(_5) ? _5 : [_5], u4, i4, t4, r5 && "foreignObject" !== d4, o5, f4, o5 ? o5[0] : i4.__k && b(i4, 0), e3), null != o5)
-        for (_5 = o5.length; _5--; )
-          null != o5[_5] && v(o5[_5]);
-      e3 || ("value" in p4 && void 0 !== (_5 = p4.value) && (_5 !== l4.value || "progress" === d4 && !_5 || "option" === d4 && _5 !== y4.value) && T(l4, "value", _5, y4.value, false), "checked" in p4 && void 0 !== (_5 = p4.checked) && _5 !== l4.checked && T(l4, "checked", _5, y4.checked, false));
+      else if (P(l4, v(k5 = u4.props.children) ? k5 : [k5], u4, i4, t4, o5 && "foreignObject" !== _5, r5, f4, r5 ? r5[0] : i4.__k && g(i4, 0), e3), null != r5)
+        for (k5 = r5.length; k5--; )
+          null != r5[k5] && p(r5[k5]);
+      e3 || ("value" in d4 && void 0 !== (k5 = d4.value) && (k5 !== l4.value || "progress" === _5 && !k5 || "option" === _5 && k5 !== y4.value) && T(l4, "value", k5, y4.value, false), "checked" in d4 && void 0 !== (k5 = d4.checked) && k5 !== l4.checked && T(l4, "checked", k5, y4.checked, false));
     }
     return l4;
   }
@@ -342,8 +342,8 @@
       l.__e(n4, i4);
     }
   }
-  function S(n3, u4, i4) {
-    var t4, r5;
+  function q(n3, u4, i4) {
+    var t4, o5;
     if (l.unmount && l.unmount(n3), (t4 = n3.ref) && (t4.current && t4.current !== n3.__e || O(t4, null, u4)), null != (t4 = n3.__c)) {
       if (t4.componentWillUnmount)
         try {
@@ -354,27 +354,27 @@
       t4.base = t4.__P = null, n3.__c = void 0;
     }
     if (t4 = n3.__k)
-      for (r5 = 0; r5 < t4.length; r5++)
-        t4[r5] && S(t4[r5], u4, i4 || "function" != typeof n3.type);
-    i4 || null == n3.__e || v(n3.__e), n3.__ = n3.__e = n3.__d = void 0;
+      for (o5 = 0; o5 < t4.length; o5++)
+        t4[o5] && q(t4[o5], u4, i4 || "function" != typeof n3.type);
+    i4 || null == n3.__e || p(n3.__e), n3.__ = n3.__e = n3.__d = void 0;
   }
-  function q(n3, l4, u4) {
+  function B(n3, l4, u4) {
     return this.constructor(n3, u4);
   }
-  function B(u4, i4, t4) {
-    var r5, o5, f4;
-    l.__ && l.__(u4, i4), o5 = (r5 = "function" == typeof t4) ? null : t4 && t4.__k || i4.__k, f4 = [], L(i4, u4 = (!r5 && t4 || i4).__k = y(_, null, [u4]), o5 || c, c, void 0 !== i4.ownerSVGElement, !r5 && t4 ? [t4] : o5 ? null : i4.firstChild ? n.call(i4.childNodes) : null, f4, !r5 && t4 ? t4 : o5 ? o5.__e : i4.firstChild, r5), M(f4, u4);
+  function D(u4, i4, t4) {
+    var o5, r5, f4;
+    l.__ && l.__(u4, i4), r5 = (o5 = "function" == typeof t4) ? null : t4 && t4.__k || i4.__k, f4 = [], L(i4, u4 = (!o5 && t4 || i4).__k = y(k, null, [u4]), r5 || c, c, void 0 !== i4.ownerSVGElement, !o5 && t4 ? [t4] : r5 ? null : i4.firstChild ? n.call(i4.childNodes) : null, f4, !o5 && t4 ? t4 : r5 ? r5.__e : i4.firstChild, o5), M(f4, u4);
   }
-  function D(n3, l4) {
-    B(n3, l4, D);
+  function E(n3, l4) {
+    D(n3, l4, E);
   }
-  function E(l4, u4, i4) {
-    var t4, r5, o5, f4 = h({}, l4.props);
-    for (o5 in u4)
-      "key" == o5 ? t4 = u4[o5] : "ref" == o5 ? r5 = u4[o5] : f4[o5] = u4[o5];
-    return arguments.length > 2 && (f4.children = arguments.length > 3 ? n.call(arguments, 2) : i4), p(l4.type, f4, t4 || l4.key, r5 || l4.ref, null);
+  function F(l4, u4, i4) {
+    var t4, o5, r5, f4, e3 = h({}, l4.props);
+    for (r5 in l4.type && l4.type.defaultProps && (f4 = l4.type.defaultProps), u4)
+      "key" == r5 ? t4 = u4[r5] : "ref" == r5 ? o5 = u4[r5] : e3[r5] = void 0 === u4[r5] && void 0 !== f4 ? f4[r5] : u4[r5];
+    return arguments.length > 2 && (e3.children = arguments.length > 3 ? n.call(arguments, 2) : i4), d(l4.type, e3, t4 || l4.key, o5 || l4.ref, null);
   }
-  function F(n3, l4) {
+  function G(n3, l4) {
     var u4 = { __c: l4 = "__cC" + e++, __: n3, Consumer: function(n4, l5) {
       return n4.children(l5);
     }, Provider: function(n4) {
@@ -383,7 +383,7 @@
         return i4;
       }, this.shouldComponentUpdate = function(n5) {
         this.props.value !== n5.value && u5.some(function(n6) {
-          n6.__e = true, m(n6);
+          n6.__e = true, w(n6);
         });
       }, this.sub = function(n5) {
         u5.push(n5);
@@ -395,16 +395,16 @@
     } };
     return u4.Provider.__ = u4.Consumer.contextType = u4;
   }
-  var n, l, u, i, t, r2, o, f, e, c, s, a;
+  var n, l, u, i, t, o, r2, f, e, c, s, a, v;
   var init_preact_module = __esm({
-    "../node_modules/.pnpm/preact@10.13.2/node_modules/preact/dist/preact.module.js"() {
+    "../node_modules/preact/dist/preact.module.js"() {
       c = {};
       s = [];
       a = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
+      v = Array.isArray;
       __name(h, "h");
-      __name(v, "v");
-      __name(y, "y");
       __name(p, "p");
+      __name(y, "y");
       __name(d, "d");
       __name(_, "_");
       __name(k, "k");
@@ -413,10 +413,11 @@
       __name(m, "m");
       __name(w, "w");
       __name(x, "x");
-      __name(A, "A");
       __name(P, "P");
       __name(C, "C");
+      __name(S, "S");
       __name($, "$");
+      __name(A, "A");
       __name(H, "H");
       __name(I, "I");
       __name(T, "T");
@@ -426,17 +427,17 @@
       __name(M, "M");
       __name(N, "N");
       __name(O, "O");
-      __name(S, "S");
       __name(q, "q");
       __name(B, "B");
       __name(D, "D");
       __name(E, "E");
       __name(F, "F");
+      __name(G, "G");
       n = s.slice, l = { __e: function(n3, l4, u4, i4) {
-        for (var t4, r5, o5; l4 = l4.__; )
+        for (var t4, o5, r5; l4 = l4.__; )
           if ((t4 = l4.__c) && !t4.__)
             try {
-              if ((r5 = t4.constructor) && null != r5.getDerivedStateFromError && (t4.setState(r5.getDerivedStateFromError(n3)), o5 = t4.__d), null != t4.componentDidCatch && (t4.componentDidCatch(n3, i4 || {}), o5 = t4.__d), o5)
+              if ((o5 = t4.constructor) && null != o5.getDerivedStateFromError && (t4.setState(o5.getDerivedStateFromError(n3)), r5 = t4.__d), null != t4.componentDidCatch && (t4.componentDidCatch(n3, i4 || {}), r5 = t4.__d), r5)
                 return t4.__E = t4;
             } catch (l5) {
               n3 = l5;
@@ -444,18 +445,18 @@
         throw n3;
       } }, u = 0, i = /* @__PURE__ */ __name(function(n3) {
         return null != n3 && void 0 === n3.constructor;
-      }, "i"), k.prototype.setState = function(n3, l4) {
+      }, "i"), b.prototype.setState = function(n3, l4) {
         var u4;
-        u4 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = h({}, this.state), "function" == typeof n3 && (n3 = n3(h({}, u4), this.props)), n3 && h(u4, n3), null != n3 && this.__v && (l4 && this._sb.push(l4), m(this));
-      }, k.prototype.forceUpdate = function(n3) {
-        this.__v && (this.__e = true, n3 && this.__h.push(n3), m(this));
-      }, k.prototype.render = _, t = [], o = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, f = /* @__PURE__ */ __name(function(n3, l4) {
+        u4 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = h({}, this.state), "function" == typeof n3 && (n3 = n3(h({}, u4), this.props)), n3 && h(u4, n3), null != n3 && this.__v && (l4 && this._sb.push(l4), w(this));
+      }, b.prototype.forceUpdate = function(n3) {
+        this.__v && (this.__e = true, n3 && this.__h.push(n3), w(this));
+      }, b.prototype.render = k, t = [], r2 = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, f = /* @__PURE__ */ __name(function(n3, l4) {
         return n3.__v.__b - l4.__v.__b;
-      }, "f"), w.__r = 0, e = 0;
+      }, "f"), x.__r = 0, e = 0;
     }
   });
 
-  // ../node_modules/.pnpm/preact@10.13.2/node_modules/preact/hooks/dist/hooks.module.js
+  // ../node_modules/preact/hooks/dist/hooks.module.js
   function d2(t4, u4) {
     l.__h && l.__h(r3, t4, o2 || u4), o2 = 0;
     var i4 = r3.__H || (r3.__H = { __: [], __h: [] });
@@ -589,7 +590,7 @@
   }
   var t2, r3, u2, i2, o2, f2, c2, e2, a2, v2, l2, m2, g2;
   var init_hooks_module = __esm({
-    "../node_modules/.pnpm/preact@10.13.2/node_modules/preact/hooks/dist/hooks.module.js"() {
+    "../node_modules/preact/hooks/dist/hooks.module.js"() {
       init_preact_module();
       o2 = 0;
       f2 = [];
@@ -620,7 +621,7 @@
         var i4 = (r3 = n3.__c).__H;
         i4 && (u2 === r3 ? (i4.__h = [], r3.__h = [], i4.__.forEach(function(n4) {
           n4.__N && (n4.__ = n4.__N), n4.__V = c2, n4.__N = n4.i = void 0;
-        })) : (i4.__h.forEach(k2), i4.__h.forEach(w2), i4.__h = [])), u2 = r3;
+        })) : (i4.__h.forEach(k2), i4.__h.forEach(w2), i4.__h = [], t2 = 0)), u2 = r3;
       }, l.diffed = function(t4) {
         v2 && v2(t4);
         var o5 = t4.__c;
@@ -659,7 +660,7 @@
     }
   });
 
-  // ../node_modules/.pnpm/preact@10.13.2/node_modules/preact/compat/dist/compat.module.js
+  // ../node_modules/preact/compat/dist/compat.module.js
   function g3(n3, t4) {
     for (var e3 in t4)
       n3[e3] = t4[e3];
@@ -746,24 +747,24 @@
   function j3(n3) {
     var e3 = this, r5 = n3.i;
     e3.componentWillUnmount = function() {
-      B(null, e3.l), e3.l = null, e3.i = null;
+      D(null, e3.l), e3.l = null, e3.i = null;
     }, e3.i && e3.i !== r5 && e3.componentWillUnmount(), n3.__v ? (e3.l || (e3.i = r5, e3.l = { nodeType: 1, parentNode: r5, childNodes: [], appendChild: function(n4) {
       this.childNodes.push(n4), e3.i.appendChild(n4);
     }, insertBefore: function(n4, t4) {
       this.childNodes.push(n4), e3.i.appendChild(n4);
     }, removeChild: function(n4) {
       this.childNodes.splice(this.childNodes.indexOf(n4) >>> 1, 1), e3.i.removeChild(n4);
-    } }), B(y(P3, { context: e3.context }, n3.__v), e3.l)) : e3.l && e3.componentWillUnmount();
+    } }), D(y(P3, { context: e3.context }, n3.__v), e3.l)) : e3.l && e3.componentWillUnmount();
   }
   function z3(n3, e3) {
     var r5 = y(j3, { __v: n3, i: e3 });
     return r5.containerInfo = e3, r5;
   }
-  function G(n3, t4, e3) {
-    return null == t4.__k && (t4.textContent = ""), B(n3, t4), "function" == typeof e3 && e3(), n3 ? n3.__c : null;
+  function G2(n3, t4, e3) {
+    return null == t4.__k && (t4.textContent = ""), D(n3, t4), "function" == typeof e3 && e3(), n3 ? n3.__c : null;
   }
   function J(n3, t4, e3) {
-    return D(n3, t4), "function" == typeof e3 && e3(), n3 ? n3.__c : null;
+    return E(n3, t4), "function" == typeof e3 && e3(), n3 ? n3.__c : null;
   }
   function Q() {
   }
@@ -780,10 +781,10 @@
     return !!n3 && n3.$$typeof === B3;
   }
   function sn(n3) {
-    return an(n3) ? E.apply(null, arguments) : n3;
+    return an(n3) ? F.apply(null, arguments) : n3;
   }
   function hn(n3) {
-    return !!n3.__k && (B(null, n3), true);
+    return !!n3.__k && (D(null, n3), true);
   }
   function vn(n3) {
     return n3 && (n3.base || 1 === n3.nodeType && n3) || null;
@@ -809,7 +810,7 @@
   }
   var R, N2, A3, O2, T3, I2, W, B3, H2, Z, Y, $2, q3, K, tn, en, rn, un, on, ln, cn, dn, pn, mn, Sn, Cn;
   var init_compat_module = __esm({
-    "../node_modules/.pnpm/preact@10.13.2/node_modules/preact/compat/dist/compat.module.js"() {
+    "../node_modules/preact/compat/dist/compat.module.js"() {
       init_preact_module();
       init_preact_module();
       init_hooks_module();
@@ -819,7 +820,7 @@
       __name(E2, "E");
       __name(w3, "w");
       __name(x3, "x");
-      (w3.prototype = new k()).isPureReactComponent = true, w3.prototype.shouldComponentUpdate = function(n3, t4) {
+      (w3.prototype = new b()).isPureReactComponent = true, w3.prototype.shouldComponentUpdate = function(n3, t4) {
         return C2(this.props, n3) || C2(this.state, t4);
       };
       R = l.__b;
@@ -829,16 +830,16 @@
       N2 = "undefined" != typeof Symbol && Symbol.for && Symbol.for("react.forward_ref") || 3911;
       __name(k3, "k");
       A3 = /* @__PURE__ */ __name(function(n3, t4) {
-        return null == n3 ? null : P(P(n3).map(t4));
+        return null == n3 ? null : S(S(n3).map(t4));
       }, "A");
       O2 = { map: A3, forEach: A3, count: function(n3) {
-        return n3 ? P(n3).length : 0;
+        return n3 ? S(n3).length : 0;
       }, only: function(n3) {
-        var t4 = P(n3);
+        var t4 = S(n3);
         if (1 !== t4.length)
           throw "Children.only";
         return t4[0];
-      }, toArray: P };
+      }, toArray: S };
       T3 = l.__e;
       l.__e = function(n3, t4, e3, r5) {
         if (n3.then) {
@@ -858,7 +859,7 @@
       l.unmount = function(n3) {
         var t4 = n3.__c;
         t4 && t4.__R && t4.__R(), t4 && true === n3.__h && (n3.type = null), I2 && I2(n3);
-      }, (D2.prototype = new k()).__c = function(n3, t4) {
+      }, (D2.prototype = new b()).__c = function(n3, t4) {
         var e3 = t4.__c, r5 = this;
         null == r5.t && (r5.t = []), r5.t.push(e3);
         var u4 = F3(r5.__v), o5 = false, i4 = /* @__PURE__ */ __name(function() {
@@ -887,8 +888,8 @@
           }
           this.__b = null;
         }
-        var i4 = e3.__a && y(_, null, n3.fallback);
-        return i4 && (i4.__h = null), [y(_, null, e3.__a ? null : n3.children), i4];
+        var i4 = e3.__a && y(k, null, n3.fallback);
+        return i4 && (i4.__h = null), [y(k, null, e3.__a ? null : n3.children), i4];
       };
       W = /* @__PURE__ */ __name(function(n3, t4, e3) {
         if (++e3[1] === e3[0] && n3.o.delete(t4), n3.props.revealOrder && ("t" !== n3.props.revealOrder[0] || !n3.o.size))
@@ -903,7 +904,7 @@
       __name(P3, "P");
       __name(j3, "j");
       __name(z3, "z");
-      (V2.prototype = new k()).__a = function(n3) {
+      (V2.prototype = new b()).__a = function(n3) {
         var t4 = this, e3 = F3(t4.__v), r5 = t4.o.get(n3);
         return r5[0]++, function(u4) {
           var o5 = /* @__PURE__ */ __name(function() {
@@ -913,7 +914,7 @@
         };
       }, V2.prototype.render = function(n3) {
         this.u = null, this.o = /* @__PURE__ */ new Map();
-        var t4 = P(n3.children);
+        var t4 = S(n3.children);
         n3.revealOrder && "b" === n3.revealOrder[0] && t4.reverse();
         for (var e3 = t4.length; e3--; )
           this.o.set(t4[e3], this.u = [1, 0, this.u]);
@@ -925,17 +926,17 @@
         });
       };
       B3 = "undefined" != typeof Symbol && Symbol.for && Symbol.for("react.element") || 60103;
-      H2 = /^(?:accent|alignment|arabic|baseline|cap|clip(?!PathU)|color|dominant|fill|flood|font|glyph(?!R)|horiz|image|letter|lighting|marker(?!H|W|U)|overline|paint|pointer|shape|stop|strikethrough|stroke|text(?!L)|transform|underline|unicode|units|v|vector|vert|word|writing|x(?!C))[A-Z]/;
+      H2 = /^(?:accent|alignment|arabic|baseline|cap|clip(?!PathU)|color|dominant|fill|flood|font|glyph(?!R)|horiz|image(!S)|letter|lighting|marker(?!H|W|U)|overline|paint|pointer|shape|stop|strikethrough|stroke|text(?!L)|transform|underline|unicode|units|v|vector|vert|word|writing|x(?!C))[A-Z]/;
       Z = /^on(Ani|Tra|Tou|BeforeInp|Compo)/;
       Y = /[A-Z0-9]/g;
       $2 = "undefined" != typeof document;
       q3 = /* @__PURE__ */ __name(function(n3) {
         return ("undefined" != typeof Symbol && "symbol" == typeof Symbol() ? /fil|che|rad/ : /fil|che|ra/).test(n3);
       }, "q");
-      __name(G, "G");
+      __name(G2, "G");
       __name(J, "J");
-      k.prototype.isReactComponent = {}, ["componentWillMount", "componentWillReceiveProps", "componentWillUpdate"].forEach(function(t4) {
-        Object.defineProperty(k.prototype, t4, { configurable: true, get: function() {
+      b.prototype.isReactComponent = {}, ["componentWillMount", "componentWillReceiveProps", "componentWillUpdate"].forEach(function(t4) {
+        Object.defineProperty(b.prototype, t4, { configurable: true, get: function() {
           return this["UNSAFE_" + t4];
         }, set: function(n3) {
           Object.defineProperty(this, t4, { configurable: true, writable: true, value: n3 });
@@ -962,9 +963,9 @@
               "defaultValue" === o5 && "value" in t4 && null == t4.value ? o5 = "value" : "download" === o5 && true === i4 ? i4 = "" : "ondoubleclick" === l4 ? o5 = "ondblclick" : "onchange" !== l4 || "input" !== e3 && "textarea" !== e3 || q3(t4.type) ? "onfocus" === l4 ? o5 = "onfocusin" : "onblur" === l4 ? o5 = "onfocusout" : Z.test(o5) ? o5 = l4 : -1 === e3.indexOf("-") && H2.test(o5) ? o5 = o5.replace(Y, "-$&").toLowerCase() : null === i4 && (i4 = void 0) : l4 = o5 = "oninput", "oninput" === l4 && u4[o5 = l4] && (o5 = "oninputCapture"), u4[o5] = i4;
             }
           }
-          "select" == e3 && u4.multiple && Array.isArray(u4.value) && (u4.value = P(t4.children).forEach(function(n5) {
+          "select" == e3 && u4.multiple && Array.isArray(u4.value) && (u4.value = S(t4.children).forEach(function(n5) {
             n5.props.selected = -1 != u4.value.indexOf(n5.props.value);
-          })), "select" == e3 && null != u4.defaultValue && (u4.value = P(t4.children).forEach(function(n5) {
+          })), "select" == e3 && null != u4.defaultValue && (u4.value = S(t4.children).forEach(function(n5) {
             n5.props.selected = u4.multiple ? -1 != u4.defaultValue.indexOf(n5.props.value) : u4.defaultValue == n5.props.value;
           })), t4.class && !t4.className ? (u4.class = t4.class, Object.defineProperty(u4, "className", en)) : (t4.className && !t4.class || t4.class && t4.className) && (u4.class = u4.className = t4.className), n4.props = u4;
         }(n3), n3.$$typeof = B3, rn && rn(n3);
@@ -994,19 +995,19 @@
       pn = /* @__PURE__ */ __name(function(n3, t4) {
         return n3(t4);
       }, "pn");
-      mn = _;
+      mn = k;
       __name(yn, "yn");
       __name(_n, "_n");
       __name(bn, "bn");
       Sn = y2;
       __name(gn, "gn");
-      Cn = { useState: h2, useId: V, useReducer: s2, useEffect: p2, useLayoutEffect: y2, useInsertionEffect: Sn, useTransition: bn, useDeferredValue: _n, useSyncExternalStore: gn, startTransition: yn, useRef: _2, useImperativeHandle: A2, useMemo: F2, useCallback: T2, useContext: q2, useDebugValue: x2, version: "17.0.2", Children: O2, render: G, hydrate: J, unmountComponentAtNode: hn, createPortal: z3, createElement: y, createContext: F, createFactory: fn, cloneElement: sn, createRef: d, Fragment: _, isValidElement: an, findDOMNode: vn, Component: k, PureComponent: w3, memo: x3, forwardRef: k3, flushSync: pn, unstable_batchedUpdates: dn, StrictMode: mn, Suspense: D2, SuspenseList: V2, lazy: M2, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: ln };
+      Cn = { useState: h2, useId: V, useReducer: s2, useEffect: p2, useLayoutEffect: y2, useInsertionEffect: Sn, useTransition: bn, useDeferredValue: _n, useSyncExternalStore: gn, startTransition: yn, useRef: _2, useImperativeHandle: A2, useMemo: F2, useCallback: T2, useContext: q2, useDebugValue: x2, version: "17.0.2", Children: O2, render: G2, hydrate: J, unmountComponentAtNode: hn, createPortal: z3, createElement: y, createContext: G, createFactory: fn, cloneElement: sn, createRef: _, Fragment: k, isValidElement: an, findDOMNode: vn, Component: b, PureComponent: w3, memo: x3, forwardRef: k3, flushSync: pn, unstable_batchedUpdates: dn, StrictMode: mn, Suspense: D2, SuspenseList: V2, lazy: M2, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: ln };
     }
   });
 
-  // ../node_modules/.pnpm/localforage@1.10.0/node_modules/localforage/dist/localforage.js
+  // ../node_modules/localforage/dist/localforage.js
   var require_localforage = __commonJS({
-    "../node_modules/.pnpm/localforage@1.10.0/node_modules/localforage/dist/localforage.js"(exports, module) {
+    "../node_modules/localforage/dist/localforage.js"(exports, module) {
       (function(f4) {
         if (typeof exports === "object" && typeof module !== "undefined") {
           module.exports = f4();
@@ -3249,23 +3250,23 @@
     }
   });
 
-  // ../node_modules/.pnpm/@preact+compat@17.1.2_preact@10.13.2/node_modules/@preact/compat/index.mjs
-  var compat_exports = {};
-  __export(compat_exports, {
+  // ../node_modules/react/index.mjs
+  var react_exports = {};
+  __export(react_exports, {
     Children: () => O2,
-    Component: () => k,
-    Fragment: () => _,
+    Component: () => b,
+    Fragment: () => k,
     PureComponent: () => w3,
     StrictMode: () => mn,
     Suspense: () => D2,
     SuspenseList: () => V2,
     __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: () => ln,
     cloneElement: () => sn,
-    createContext: () => F,
+    createContext: () => G,
     createElement: () => y,
     createFactory: () => fn,
     createPortal: () => z3,
-    createRef: () => d,
+    createRef: () => _,
     default: () => Cn,
     findDOMNode: () => vn,
     flushSync: () => pn,
@@ -3274,7 +3275,7 @@
     isValidElement: () => an,
     lazy: () => M2,
     memo: () => x3,
-    render: () => G,
+    render: () => G2,
     startTransition: () => yn,
     unmountComponentAtNode: () => hn,
     unstable_batchedUpdates: () => dn,
@@ -3296,16 +3297,16 @@
     useTransition: () => bn,
     version: () => cn
   });
-  var init_compat = __esm({
-    "../node_modules/.pnpm/@preact+compat@17.1.2_preact@10.13.2/node_modules/@preact/compat/index.mjs"() {
+  var init_react = __esm({
+    "../node_modules/react/index.mjs"() {
       init_compat_module();
       init_compat_module();
     }
   });
 
-  // ../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js
+  // ../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js
   var require_use_sync_external_store_shim_development = __commonJS({
-    "../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js"(exports) {
+    "../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js"(exports) {
       "use strict";
       if (true) {
         (function() {
@@ -3313,7 +3314,7 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React15 = (init_compat(), __toCommonJS(compat_exports));
+          var React15 = (init_react(), __toCommonJS(react_exports));
           var ReactSharedInternals = React15.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error(format) {
             {
@@ -3431,9 +3432,9 @@
     }
   });
 
-  // ../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/shim/index.js
+  // ../node_modules/use-sync-external-store/shim/index.js
   var require_shim = __commonJS({
-    "../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/shim/index.js"(exports, module) {
+    "../node_modules/use-sync-external-store/shim/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -3443,9 +3444,9 @@
     }
   });
 
-  // ../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js
+  // ../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js
   var require_with_selector_development = __commonJS({
-    "../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js"(exports) {
+    "../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js"(exports) {
       "use strict";
       if (true) {
         (function() {
@@ -3453,7 +3454,7 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React15 = (init_compat(), __toCommonJS(compat_exports));
+          var React15 = (init_react(), __toCommonJS(react_exports));
           var shim = require_shim();
           function is(x5, y4) {
             return x5 === y4 && (x5 !== 0 || 1 / x5 === 1 / y4) || x5 !== x5 && y4 !== y4;
@@ -3535,9 +3536,9 @@
     }
   });
 
-  // ../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/shim/with-selector.js
+  // ../node_modules/use-sync-external-store/shim/with-selector.js
   var require_with_selector = __commonJS({
-    "../node_modules/.pnpm/use-sync-external-store@1.2.0_@preact+compat@17.1.2/node_modules/use-sync-external-store/shim/with-selector.js"(exports, module) {
+    "../node_modules/use-sync-external-store/shim/with-selector.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -3547,9 +3548,9 @@
     }
   });
 
-  // ../node_modules/.pnpm/uri-js@4.4.1/node_modules/uri-js/dist/es5/uri.all.js
+  // ../node_modules/uri-js/dist/es5/uri.all.js
   var require_uri_all = __commonJS({
-    "../node_modules/.pnpm/uri-js@4.4.1/node_modules/uri-js/dist/es5/uri.all.js"(exports, module) {
+    "../node_modules/uri-js/dist/es5/uri.all.js"(exports, module) {
       (function(global2, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define(["exports"], factory) : factory(global2.URI = global2.URI || {});
       })(exports, function(exports2) {
@@ -4614,9 +4615,9 @@
     }
   });
 
-  // ../node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal/index.js
+  // ../node_modules/fast-deep-equal/index.js
   var require_fast_deep_equal = __commonJS({
-    "../node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal/index.js"(exports, module) {
+    "../node_modules/fast-deep-equal/index.js"(exports, module) {
       "use strict";
       module.exports = /* @__PURE__ */ __name(function equal2(a4, b4) {
         if (a4 === b4)
@@ -5036,7 +5037,7 @@
     });
   }, "initProductAddToCartBarLinks");
 
-  // ../node_modules/.pnpm/clsx@1.2.1/node_modules/clsx/dist/clsx.m.js
+  // ../node_modules/clsx/dist/clsx.m.js
   function r(e3) {
     var t4, f4, n3 = "";
     if ("string" == typeof e3 || "number" == typeof e3)
@@ -5063,7 +5064,7 @@
   init_preact_module();
   init_compat_module();
 
-  // ../node_modules/.pnpm/preact@10.13.2/node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js
+  // ../node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js
   init_preact_module();
   init_preact_module();
   var _3 = 0;
@@ -5209,7 +5210,7 @@
       const blockId = item.dataset.blockId;
       const title = item.querySelector("[data-collapsible-title]").innerHTML;
       const content = item.querySelector("[data-collapsible-content]").innerHTML;
-      B(
+      D(
         o3(Accordion, { title, content, blockId, initOpen: !!item.open }),
         item.parentElement
       );
@@ -5223,7 +5224,7 @@
             const item = node;
             const title = item.querySelector("[data-collapsible-title]").innerHTML;
             const content = item.querySelector("[data-collapsible-content]").innerHTML;
-            B(
+            D(
               o3(Accordion, { title, content, initOpen: !!item.open }),
               item.parentElement
             );
@@ -5410,7 +5411,7 @@
   // global-stores.tsx
   var import_localforage = __toESM(require_localforage());
 
-  // ../node_modules/.pnpm/zustand@4.3.7_@preact+compat@17.1.2_immer@9.0.21/node_modules/zustand/esm/vanilla.mjs
+  // ../node_modules/zustand/esm/vanilla.mjs
   var import_meta = {};
   var createStoreImpl = /* @__PURE__ */ __name((createState) => {
     let state;
@@ -5450,8 +5451,8 @@
     return createStore(createState);
   }, "vanilla");
 
-  // ../node_modules/.pnpm/zustand@4.3.7_@preact+compat@17.1.2_immer@9.0.21/node_modules/zustand/esm/index.mjs
-  init_compat();
+  // ../node_modules/zustand/esm/index.mjs
+  init_react();
   var import_with_selector = __toESM(require_with_selector(), 1);
   var import_meta2 = {};
   var { useSyncExternalStoreWithSelector } = import_with_selector.default;
@@ -5480,9 +5481,9 @@
   }, "createImpl");
   var create = /* @__PURE__ */ __name((createState) => createState ? createImpl(createState) : createImpl, "create");
 
-  // ../node_modules/.pnpm/zustand@4.3.7_@preact+compat@17.1.2_immer@9.0.21/node_modules/zustand/esm/middleware.mjs
+  // ../node_modules/zustand/esm/middleware.mjs
   var import_meta3 = {};
-  function createJSONStorage(getStorage) {
+  function createJSONStorage(getStorage, options) {
     let storage;
     try {
       storage = getStorage();
@@ -5496,7 +5497,7 @@
           if (str2 === null) {
             return null;
           }
-          return JSON.parse(str2);
+          return JSON.parse(str2, options == null ? void 0 : options.reviver);
         }, "parse");
         const str = (_a5 = storage.getItem(name)) != null ? _a5 : null;
         if (str instanceof Promise) {
@@ -5504,7 +5505,10 @@
         }
         return parse(str);
       },
-      setItem: (name, newValue) => storage.setItem(name, JSON.stringify(newValue)),
+      setItem: (name, newValue) => storage.setItem(
+        name,
+        JSON.stringify(newValue, options == null ? void 0 : options.replacer)
+      ),
       removeItem: (name) => storage.removeItem(name)
     };
     return persistStorage;
@@ -5809,7 +5813,7 @@
   }, "persistImpl");
   var persist = persistImpl;
 
-  // ../node_modules/.pnpm/immer@9.0.21/node_modules/immer/dist/immer.esm.mjs
+  // ../node_modules/immer/dist/immer.esm.mjs
   function n2(n3) {
     for (var r5 = arguments.length, t4 = Array(r5 > 1 ? r5 - 1 : 0), e3 = 1; e3 < r5; e3++)
       t4[e3 - 1] = arguments[e3];
@@ -6044,13 +6048,13 @@
     return l3(n3);
   }
   __name(D3, "D");
-  var G2;
+  var G3;
   var U2;
   var W2 = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x");
   var X2 = "undefined" != typeof Map;
   var q4 = "undefined" != typeof Set;
   var B4 = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect;
-  var H3 = W2 ? Symbol.for("immer-nothing") : ((G2 = {})["immer-nothing"] = true, G2);
+  var H3 = W2 ? Symbol.for("immer-nothing") : ((G3 = {})["immer-nothing"] = true, G3);
   var L3 = W2 ? Symbol.for("immer-draftable") : "__$immer_draftable";
   var Q2 = W2 ? Symbol.for("immer-state") : "__$immer_state";
   var Y2 = { 0: "Illegal state", 1: "Immer drafts cannot have computed properties", 2: "This object has been frozen and should not be mutated", 3: function(n3) {
@@ -6227,7 +6231,7 @@
   var ln2 = an2.createDraft.bind(an2);
   var dn2 = an2.finishDraft.bind(an2);
 
-  // ../node_modules/.pnpm/zustand@4.3.7_@preact+compat@17.1.2_immer@9.0.21/node_modules/zustand/esm/middleware/immer.mjs
+  // ../node_modules/zustand/esm/middleware/immer.mjs
   var immerImpl = /* @__PURE__ */ __name((initializer) => (set, get, store) => {
     store.setState = (updater, replace, ...a4) => {
       const nextState = typeof updater === "function" ? fn2(updater) : updater;
@@ -6904,7 +6908,7 @@
     const currentImageCount = Math.round(
       scrollbarProps.left / (((_a5 = scrollbarRef.current) == null ? void 0 : _a5.offsetWidth) - ((_b5 = scrollbarRef.current) == null ? void 0 : _b5.offsetWidth) * scrollbarProps.width) * (itemCount - 1)
     ) + 1;
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3(
         "div",
         {
@@ -7176,7 +7180,7 @@
     const currentImageCount = Math.round(
       scrollbarProps.left / (((_a5 = scrollbarRef.current) == null ? void 0 : _a5.offsetWidth) - ((_b5 = scrollbarRef.current) == null ? void 0 : _b5.offsetWidth) * scrollbarProps.width) * (itemCount - 1)
     ) + 1;
-    return o3(_, { children: o3(
+    return o3(k, { children: o3(
       "div",
       {
         ref: scrollbarRef,
@@ -7361,7 +7365,7 @@
         return ((_a6 = v1 == null ? void 0 : v1.featured_media) == null ? void 0 : _a6.id) === ((_b6 = v22 == null ? void 0 : v22.featured_media) == null ? void 0 : _b6.id);
       }) === i4
     );
-    return o3(_, { children: o3("main", { className: "scroll-container grid h-full md:absolute md:inset-0", children: o3(
+    return o3(k, { children: o3("main", { className: "scroll-container grid h-full md:absolute md:inset-0", children: o3(
       "div",
       {
         className: "scrollbar-none md:min-h-56 grid max-w-full flex-1 snap-x snap-mandatory auto-cols-[40%] grid-flow-col-dense overflow-x-auto md:auto-cols-[100%] md:gap-8",
@@ -7440,7 +7444,7 @@
                       title: (_f2 = media.alt) != null ? _f2 : product == null ? void 0 : product.title
                     }
                   ),
-                  model: o3(_, { children: [
+                  model: o3(k, { children: [
                     o3(
                       "span",
                       {
@@ -7472,7 +7476,7 @@
               `media-${media.id}`
             );
           }),
-          showScroll ? o3(_, { children: [
+          showScroll ? o3(k, { children: [
             o3(ScrollBarButtonsNew, { itemCount: mediaItems == null ? void 0 : mediaItems.length }),
             o3(ScrollBarNew, { itemCount: mediaItems == null ? void 0 : mediaItems.length, showCount: true })
           ] }) : null
@@ -7809,9 +7813,9 @@
     }, [updateProduct, upsellProduct]);
     if ((_a5 = cartData.items) == null ? void 0 : _a5.some((item) => item.variant_id === (selectedVariant == null ? void 0 : selectedVariant.id))) {
       if (!upsellProduct) {
-        return o3(_, {});
+        return o3(k, {});
       }
-      return o3(_, { children: [
+      return o3(k, { children: [
         o3("picture", { className: "relative block h-[50px] w-[50px] overflow-hidden rounded-theme-sm max-sm:hidden", children: o3(
           Image2,
           {
@@ -7843,7 +7847,7 @@
         ) : o3(ProductBuyButtons, { useProduct })
       ] });
     }
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3("picture", { className: "relative block h-[50px] w-[50px] overflow-hidden rounded-theme-sm max-sm:hidden", children: o3(
         Image2,
         {
@@ -8212,7 +8216,7 @@
         loadComplementaryProducts();
       }
     }, [loadComplementaryProducts, hydrated]);
-    return o3("div", { className: "pb-4", children: products.length > 0 ? o3(_, { children: [
+    return o3("div", { className: "pb-4", children: products.length > 0 ? o3(k, { children: [
       o3(Typography, { fontType: settings.title_font, children: settings.title }),
       o3("main", { className: "relative py-2", children: products.length === 1 && settings.style === "small" ? o3("div", { children: products == null ? void 0 : products.map(
         (upsellProduct) => settings.style === "small" ? o3(ProductCardFlat, { product: upsellProduct }, upsellProduct.id) : o3(ProductCardContainer, { product: upsellProduct }, upsellProduct.id)
@@ -8609,7 +8613,7 @@
         return ((_a6 = v1 == null ? void 0 : v1.featured_media) == null ? void 0 : _a6.id) === ((_b6 = v22 == null ? void 0 : v22.featured_media) == null ? void 0 : _b6.id);
       }) === i4
     );
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3("main", { className: "scroll-container relative grid", children: o3(
         "div",
         {
@@ -8696,7 +8700,7 @@
                         title: (_h2 = media.alt) != null ? _h2 : product == null ? void 0 : product.title
                       }
                     ),
-                    model: o3(_, { children: [
+                    model: o3(k, { children: [
                       o3(
                         "span",
                         {
@@ -8883,7 +8887,7 @@
       (media, i4, arr) => arr.findIndex((m3) => m3.src === media.src) === i4
     );
     console.log({ mediaItems });
-    return o3(_, { children: [
+    return o3(k, { children: [
       settings.gallery__show_thumbnails === "responsive" || settings.gallery__show_thumbnails === "max-md:hidden" ? o3(
         "aside",
         {
@@ -9031,7 +9035,7 @@
                       title: (_f2 = media.alt) != null ? _f2 : product == null ? void 0 : product.title
                     }
                   ),
-                  model: o3(_, { children: [
+                  model: o3(k, { children: [
                     o3(
                       "span",
                       {
@@ -9085,7 +9089,7 @@
         }
       });
     }, [product == null ? void 0 : product.variants]);
-    return o3(_, { children: ((_b5 = (_a5 = window == null ? void 0 : window.location) == null ? void 0 : _a5.pathname) == null ? void 0 : _b5.includes(product == null ? void 0 : product.url)) ? o3(
+    return o3(k, { children: ((_b5 = (_a5 = window == null ? void 0 : window.location) == null ? void 0 : _a5.pathname) == null ? void 0 : _b5.includes(product == null ? void 0 : product.url)) ? o3(
       "figure",
       {
         className: clsx_m_default(
@@ -9154,7 +9158,7 @@
     const percentage = pre_order && pre_order_limit ? (quantity + pre_order_limit) / threshold * 100 : (variant == null ? void 0 : variant.inventory_management) !== "shopify" || (variant == null ? void 0 : variant.inventory_policy) === "continue" ? 100 : !(variant == null ? void 0 : variant.available) ? 0 : quantity / threshold * 100;
     const color = percentage < 33 ? "error" : percentage >= 66 ? "success" : "warning";
     const description = pre_order && !hasInventory && available && (!pre_order_limit || quantity + pre_order_limit > threshold) ? "On Preorder" : pre_order && !hasInventory && available && pre_order_limit && quantity + pre_order_limit > 0 ? `${quantity + pre_order_limit} items on Preorder` : !trackInventory || sellPast || quantity >= threshold ? "Available" : !available ? "Sold out" : (variant == null ? void 0 : variant.inventory_quantity) === 1 ? "Last item" : `${variant == null ? void 0 : variant.inventory_quantity} items left`;
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3("div", { className: "flex h-2 w-full max-w-xl overflow-hidden rounded-full bg-gray-300", children: o3("div", { className: "relative h-full flex-1", children: o3(
         "div",
         {
@@ -9210,7 +9214,7 @@
     }
     switch (settings.preorder_date) {
       case "estimate":
-        return o3(_, { children: [
+        return o3(k, { children: [
           o3("span", { className: "font-bold text-primary-bg", children: pre_order_date ? label : "On Preorder" }),
           o3(
             "input",
@@ -9223,7 +9227,7 @@
           )
         ] });
       case "precise":
-        return o3(_, { children: [
+        return o3(k, { children: [
           o3("span", { className: "font-bold text-primary-bg", children: pre_order_date ? `Preorder shipping on ${new Date(pre_order_date).toLocaleDateString(
             window.Shopify.locale,
             { month: "short", year: "numeric", day: "2-digit" }
@@ -9242,7 +9246,7 @@
           )
         ] });
       case "none":
-        return o3(_, { children: [
+        return o3(k, { children: [
           o3("span", { className: "font-bold text-primary-bg", children: "On Preorder" }),
           o3(
             "input",
@@ -9272,6 +9276,7 @@
     p2(() => {
       const price = selectedVariant == null ? void 0 : selectedVariant.price;
       const tags = window.product.tags;
+      const comparedAt = selectedVariant == null ? void 0 : selectedVariant.compare_at_price;
       if (tags.indexOf("no-discount") !== -1) {
         return;
       }
@@ -9289,11 +9294,12 @@
         discount = window.productionDiscount;
       }
       if (hasCustomDiscount) {
+        const priceToUse = comparedAt ? comparedAt : price;
         const discount_percentage = discount / 100;
-        const discountedPrice = price - price * discount_percentage;
+        const discountedPrice = priceToUse - priceToUse * discount_percentage;
         setCustomDiscount(discount_percentage);
         setHasDiscountCustomer(true);
-        setCustomCompareAtPrice(price);
+        setCustomCompareAtPrice(priceToUse);
         setCustomDiscountedPrice(discountedPrice);
       }
     }, [selectedVariant]);
@@ -9368,7 +9374,7 @@
       }
     }, [hydrated, siblingGroup]);
     if (!siblingGroup) {
-      return o3(_, {});
+      return o3(k, {});
     }
     const options = siblingGroup.options.split(",").map((option) => option.trim());
     switch (settings.selector) {
@@ -9712,7 +9718,7 @@
       show_0_reviews
     } = useProductRatings(product);
     return o3("figure", __spreadProps(__spreadValues({ className: clsx_m_default("inline-flex items-center", className) }, props), { children: [
-      o3("div", { className: "relative flex h-5 items-center", children: rating ? o3(_, { children: [...new Array(scale_max - scale_min + 1)].map((_5, index) => {
+      o3("div", { className: "relative flex h-5 items-center", children: rating ? o3(k, { children: [...new Array(scale_max - scale_min + 1)].map((_5, index) => {
         const lineIndex = index + scale_min - 1;
         return o3(
           "svg",
@@ -10137,7 +10143,7 @@
         }) }) })
       ] });
     }
-    return o3("div", { className: "grid gap-2", children: ((_j = (_i = product == null ? void 0 : product.variants) == null ? void 0 : _i.filter((variant) => !product_data__hide_oos_variants || variant.available)) == null ? void 0 : _j.length) <= 0 || ((_k = product == null ? void 0 : product.variants) == null ? void 0 : _k.length) === 1 && ((_m = (_l = product == null ? void 0 : product.variants) == null ? void 0 : _l[0]) == null ? void 0 : _m.option1) === "Default Title" ? null : o3(_, { children: (_n2 = product == null ? void 0 : product.options_with_values) == null ? void 0 : _n2.map(({ name, position, values }) => {
+    return o3("div", { className: "grid gap-2", children: ((_j = (_i = product == null ? void 0 : product.variants) == null ? void 0 : _i.filter((variant) => !product_data__hide_oos_variants || variant.available)) == null ? void 0 : _j.length) <= 0 || ((_k = product == null ? void 0 : product.variants) == null ? void 0 : _k.length) === 1 && ((_m = (_l = product == null ? void 0 : product.variants) == null ? void 0 : _l[0]) == null ? void 0 : _m.option1) === "Default Title" ? null : o3(k, { children: (_n2 = product == null ? void 0 : product.options_with_values) == null ? void 0 : _n2.map(({ name, position, values }) => {
       const index = position - 1;
       const isColorSelector = (settings == null ? void 0 : settings.color_selector) && (settings == null ? void 0 : settings.color_list.split(",").map((color) => color.trim().toLowerCase()).includes(name.toLowerCase()));
       const isUpsellCheckbox = upsellSettings && (upsellSettings == null ? void 0 : upsellSettings.option_name) === name;
@@ -10408,11 +10414,11 @@
                   );
                 },
                 children: [
-                  !(upsellVariant == null ? void 0 : upsellVariant.available) ? o3("span", { className: "whitespace-nowrap", children: "Not Available" }) : upsellVariant.id !== selectedVariant.id ? o3("span", { className: "whitespace-nowrap", children: "Add" }) : o3(_, { children: [
+                  !(upsellVariant == null ? void 0 : upsellVariant.available) ? o3("span", { className: "whitespace-nowrap", children: "Not Available" }) : upsellVariant.id !== selectedVariant.id ? o3("span", { className: "whitespace-nowrap", children: "Add" }) : o3(k, { children: [
                     o3("span", { className: "group-hover:hidden", children: "Added" }),
                     o3("span", { className: "hidden group-hover:inline-block", children: "Remove" })
                   ] }),
-                  o3("div", { className: "text-xl", "data-card-price": "", children: o3("div", { className: "product-price grid auto-cols-min grid-flow-col-dense items-baseline gap-2 whitespace-nowrap", children: upsellVariant.id !== selectedVariant.id ? o3(_, { children: [
+                  o3("div", { className: "text-xl", "data-card-price": "", children: o3("div", { className: "product-price grid auto-cols-min grid-flow-col-dense items-baseline gap-2 whitespace-nowrap", children: upsellVariant.id !== selectedVariant.id ? o3(k, { children: [
                     "+",
                     o3(
                       "span",
@@ -10422,7 +10428,7 @@
                         }
                       }
                     )
-                  ] }) : o3(_, { children: [
+                  ] }) : o3(k, { children: [
                     o3("span", { className: "inline-grid auto-cols-min grid-flow-col-dense items-baseline gap-2 group-hover:hidden", children: [
                       "+",
                       o3(
@@ -10643,7 +10649,7 @@
         case "text":
           return;
         case "title":
-          B(
+          D(
             o3(
               ProductTitle,
               {
@@ -10655,10 +10661,10 @@
           );
           return;
         case "vendor":
-          B(o3(ProductVendor, { useProduct }), block);
+          D(o3(ProductVendor, { useProduct }), block);
           return;
         case "description":
-          B(
+          D(
             o3(
               ProductDescription,
               {
@@ -10670,17 +10676,17 @@
           );
           return;
         case "share":
-          B(o3(ProductShare, { useProduct }), block);
+          D(o3(ProductShare, { useProduct }), block);
           return;
         case "custom_liquid":
           return;
         case "collapsible_tab":
           return;
         case "rating":
-          B(o3(ProductRating, { useProduct }), block);
+          D(o3(ProductRating, { useProduct }), block);
           return;
         case "complementary":
-          B(
+          D(
             o3(
               ProductComplementaryItems,
               {
@@ -10694,11 +10700,11 @@
         case "icon_with_text":
           return;
         case "price": {
-          B(o3(ProductPrice, { useProduct }), block);
+          D(o3(ProductPrice, { useProduct }), block);
           return;
         }
         case "variant_selector": {
-          B(
+          D(
             o3(
               ProductVariantSelector,
               {
@@ -10712,7 +10718,7 @@
           return;
         }
         case "variant_upsell": {
-          B(
+          D(
             o3(
               ProductVariantUpsell,
               {
@@ -10725,7 +10731,7 @@
           return;
         }
         case "product_sibling": {
-          B(
+          D(
             o3(
               ProductSibling,
               {
@@ -10738,16 +10744,16 @@
           return;
         }
         case "sku": {
-          B(o3(ProductSku, { useProduct }), block);
+          D(o3(ProductSku, { useProduct }), block);
           return;
         }
         case "quantity_selector": {
           block.innerHTML = "";
-          B(o3(ProductQuantitySelector, { useProduct }), block);
+          D(o3(ProductQuantitySelector, { useProduct }), block);
           return;
         }
         case "buy_buttons": {
-          B(
+          D(
             o3(
               ProductBuyButtons,
               {
@@ -10761,7 +10767,7 @@
         }
         case "dynamic_buy_buttons": {
           const eventBlock = block.querySelector("[data-product-block-dynamic-button-events]");
-          B(
+          D(
             o3(
               DynamicProductBuyButtons,
               {
@@ -10775,7 +10781,7 @@
           return;
         }
         case "inventory": {
-          B(
+          D(
             o3(
               ProductInventorySlider,
               {
@@ -10788,7 +10794,7 @@
           return;
         }
         case "image": {
-          B(
+          D(
             o3(
               ProductImage,
               {
@@ -10802,7 +10808,7 @@
         }
         case "pre_order": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductPreOrder,
               {
@@ -10815,7 +10821,7 @@
           return;
         }
         case "side_effects": {
-          B(
+          D(
             o3(ProductSideEffects, { useProduct, productSection: productSection3 }),
             block
           );
@@ -10827,13 +10833,13 @@
       const type = galleryElement.dataset.productMediaGallery;
       switch (type) {
         case "horizontal":
-          B(
+          D(
             o3(ProductGalleryHorizontal, { settings: sectionSettings, useProduct }),
             galleryElement
           );
           return;
         case "vertical":
-          B(
+          D(
             o3(ProductGalleryVertical, { settings: sectionSettings, useProduct }),
             galleryElement
           );
@@ -10844,7 +10850,7 @@
     const productAddToCartBarUpsellProduct = (_d = root == null ? void 0 : root.dataset) == null ? void 0 : _d.productAddToCartBarUpsellProduct;
     if (root) {
       root.innerHTML = "";
-      B(
+      D(
         o3(
           ProductAddToCartBar,
           {
@@ -11022,7 +11028,7 @@
       switch (type) {
         case "image_gallery": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductQuickViewImageGallery,
               {
@@ -11036,7 +11042,7 @@
         }
         case "payment_terms": {
           const eventBlock = block.querySelector("[data-product-block-payment-terms-events]");
-          B(
+          D(
             o3(
               PaymentTerms,
               {
@@ -11053,7 +11059,7 @@
           return;
         case "title":
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductTitle,
               {
@@ -11065,10 +11071,10 @@
           );
           return;
         case "vendor":
-          B(o3(ProductVendor, { useProduct: useProductQuickView }), block);
+          D(o3(ProductVendor, { useProduct: useProductQuickView }), block);
           return;
         case "description":
-          B(
+          D(
             o3(
               ProductDescription,
               {
@@ -11080,17 +11086,17 @@
           );
           return;
         case "share":
-          B(o3(ProductShare, { useProduct: useProductQuickView }), block);
+          D(o3(ProductShare, { useProduct: useProductQuickView }), block);
           return;
         case "custom_liquid":
           return;
         case "collapsible_tab":
           return;
         case "rating":
-          B(o3(ProductRating, { useProduct: useProductQuickView }), block);
+          D(o3(ProductRating, { useProduct: useProductQuickView }), block);
           return;
         case "complementary":
-          B(
+          D(
             o3(
               ProductComplementaryItems,
               {
@@ -11105,12 +11111,12 @@
           return;
         case "price": {
           block.innerHTML = "";
-          B(o3(ProductPrice, { useProduct: useProductQuickView }), block);
+          D(o3(ProductPrice, { useProduct: useProductQuickView }), block);
           return;
         }
         case "variant_selector": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductVariantSelector,
               {
@@ -11124,17 +11130,17 @@
         }
         case "sku": {
           block.innerHTML = "";
-          B(o3(ProductSku, { useProduct: useProductQuickView }), block);
+          D(o3(ProductSku, { useProduct: useProductQuickView }), block);
           return;
         }
         case "quantity_selector": {
           block.innerHTML = "";
-          B(o3(ProductQuantitySelector, { useProduct: useProductQuickView }), block);
+          D(o3(ProductQuantitySelector, { useProduct: useProductQuickView }), block);
           return;
         }
         case "buy_buttons": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductBuyButtons,
               {
@@ -11148,7 +11154,7 @@
         }
         case "dynamic_buy_buttons": {
           const eventBlock = block.querySelector("[data-product-block-dynamic-button-events]");
-          B(
+          D(
             o3(
               DynamicProductBuyButtons,
               {
@@ -11163,7 +11169,7 @@
         }
         case "inventory": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductInventorySlider,
               {
@@ -11177,7 +11183,7 @@
         }
         case "side_effects": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductSideEffects,
               {
@@ -11192,12 +11198,12 @@
         }
         case "preload_products": {
           block.innerHTML = "";
-          B(o3(ProductQuickViewPreloadEvents, { useProduct: useProductQuickView }), block);
+          D(o3(ProductQuickViewPreloadEvents, { useProduct: useProductQuickView }), block);
           return;
         }
         case "pre_order": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductPreOrder,
               {
@@ -11246,7 +11252,7 @@
           if (product) {
             subscription();
             productCardContainer.innerHTML = "";
-            B(
+            D(
               o3(
                 ProductCardInner,
                 {
@@ -11262,7 +11268,7 @@
         });
       } else {
         productCardContainer.innerHTML = "";
-        B(
+        D(
           o3(
             ProductCardInner,
             {
@@ -11693,6 +11699,7 @@
     p2(() => {
       const price = product.price_min;
       const tags = product.tags;
+      const comparedAt = product.compare_at_price;
       if (tags.indexOf("no-discount") !== -1) {
         return;
       }
@@ -11710,21 +11717,22 @@
         discount = window.productionDiscount;
       }
       if (hasCustomDiscount) {
+        const priceToUse = comparedAt ? comparedAt : price;
         const discount_percentage = discount / 100;
-        const discountedPrice = price - price * discount_percentage;
+        const discountedPrice = priceToUse - priceToUse * discount_percentage;
         setCustomDiscount(discount_percentage);
         setHasDiscountCustomer(true);
-        setCustomCompareAtPrice(price);
+        setCustomCompareAtPrice(priceToUse);
         setCustomDiscountedPrice(discountedPrice);
       }
     }, [product]);
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3(
         "a",
         {
           ref: containerRef,
           className: clsx_m_default(
-            "product-card__image group relative grid h-0 outline-none hf:outline-none ",
+            "product-card__image group relative grid h-0 outline-none hf:outline-none",
             settings.product_card__image__ratio
           ),
           href: collectionUrl ? collectionUrl + product.url : product.url,
@@ -11820,8 +11828,8 @@
                     );
                   }) : null,
                   (product.price < product.compare_at_price || hasDiscountCustomer && customDiscount > 0) && product.available ? o3("div", { className: "label-item label--primary m-0.5", children: {
-                    sale: o3(_, { children: "On Sale" }),
-                    percentage: product.price === 0 ? "FREE" : o3(_, { children: [
+                    sale: o3(k, { children: "On Sale" }),
+                    percentage: product.price === 0 ? "FREE" : o3(k, { children: [
                       hasDiscountCustomer ? customDiscount * 100 : Math.round(
                         (product.compare_at_price - product.price) * 100 / product.compare_at_price
                       ),
@@ -11997,7 +12005,7 @@
           }),
           ((_x = colorOption == null ? void 0 : colorOption.values) == null ? void 0 : _x.length) > Math.floor(
             (containerWidth - 70) / (settings.product_card__color_selector_size + 10)
-          ) - 1 ? o3(_, { children: o3(
+          ) - 1 ? o3(k, { children: o3(
             "button",
             {
               className: "h-7 cursor-pointer items-center gap-1 whitespace-nowrap text-sm",
@@ -12024,7 +12032,7 @@
               "mt-auto w-full flex-1 flex-col justify-end self-end text-center",
               (productCardContainer == null ? void 0 : productCardContainer.getAttribute("data-product-card-hide-button")) ? "hidden" : "flex"
             ),
-            children: product.available ? (product.variants.length > 1 || !settings.product_card__button_single_variant_add_to_cart) && !settings.product_card__button_color_variant_add_to_cart || product.options.filter(Boolean).length > 1 ? o3(_, { children: [
+            children: product.available ? (product.variants.length > 1 || !settings.product_card__button_single_variant_add_to_cart) && !settings.product_card__button_color_variant_add_to_cart || product.options.filter(Boolean).length > 1 ? o3(k, { children: [
               o3(
                 "a",
                 {
@@ -12402,13 +12410,13 @@
         `[data-drawer="bundle--${settings.section_id}"] [data-bundle-drawer]`
       );
       if (bundleBarRoot) {
-        G(o3(BundleBar, { settings }), bundleBarRoot);
+        G2(o3(BundleBar, { settings }), bundleBarRoot);
       }
       if (previewRoot) {
-        G(o3(BundlePreview, { settings }), previewRoot);
+        G2(o3(BundlePreview, { settings }), previewRoot);
       }
       if (drawerRoot) {
-        G(o3(BundleDrawer, { settings }), drawerRoot);
+        G2(o3(BundleDrawer, { settings }), drawerRoot);
       }
     });
   }, "initBundles");
@@ -12534,7 +12542,7 @@
                     }
                   }
                 ),
-                o3("h4", { className: "absolute left-1/2 top-[calc(100%+0.5rem)] -translate-x-1/2 text-center text-xs text-white sm:text-sm sm:font-semibold md:whitespace-nowrap", children: block.type === "free_shipping" ? o3(_, { children: "Free Shipping" }) : {
+                o3("h4", { className: "absolute left-1/2 top-[calc(100%+0.5rem)] -translate-x-1/2 text-center text-xs text-white sm:text-sm sm:font-semibold md:whitespace-nowrap", children: block.type === "free_shipping" ? o3(k, { children: "Free Shipping" }) : {
                   specific_product: block.receives_quantity <= 1 ? (block == null ? void 0 : block.receives_discount) === 100 ? "Free Product" : "Discounted Product" : (block == null ? void 0 : block.receives_discount) === 100 ? "Free Products" : "Discounted Products",
                   product_percentage: `${block == null ? void 0 : block.receives_discount}% Off each`,
                   product_amount: o3(
@@ -12584,7 +12592,7 @@
           className: "button-base flex items-center justify-between whitespace-nowrap bg-theme-bg text-primary-bg",
           children: [
             o3("span", { className: "font-medium", children: "Checkout" }),
-            o3("span", { className: "ml-3 flex items-center justify-center", children: cartData.total_discount > 0 ? o3(_, { children: [
+            o3("span", { className: "ml-3 flex items-center justify-center", children: cartData.total_discount > 0 ? o3(k, { children: [
               o3(
                 "span",
                 {
@@ -12642,7 +12650,7 @@
       ].reverse();
       setTargetItems(initialItems);
     }, [cartData.items, settings.target_collections, settings.target_products]);
-    return o3(_, { children: [
+    return o3(k, { children: [
       o3("main", { className: "grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-6 md:gap-4 xl:gap-6 max-md:sm:[&>div:empty:nth-last-child(-n+3)]:hidden max-sm:[&>div:empty:nth-last-child(-n+4)]:hidden", children: [...new Array(Math.max(6, Math.ceil(targetItems.length / 6) * 6, targetItems.length))].map(
         (_5, index) => {
           const item = targetItems[index];
@@ -13015,7 +13023,7 @@
                         }
                       }
                     ),
-                    !variant.available ? o3(_, { children: "- Sold Out" }) : null
+                    !variant.available ? o3(k, { children: "- Sold Out" }) : null
                   ]
                 },
                 variant.id
@@ -13077,7 +13085,7 @@
         loadPromotionalItems();
       }
     }, [loadPromotionalItems, hydrated]);
-    return o3(_, { children: products.length ? o3(_, { children: [
+    return o3(k, { children: products.length ? o3(k, { children: [
       o3("div", { className: "cart-title pt-4 sm:mx-4", children: "You may also like" }),
       o3("main", { className: "relative py-4 sm:mx-4", children: o3("div", { className: "grid gap-6 ", children: (_c = (_b5 = (_a5 = products == null ? void 0 : products.filter((product) => product.available)) == null ? void 0 : _a5.slice(0, settings.cart__recommended_products_quantity)) == null ? void 0 : _b5.sort((a4, b4) => a4.price_min - b4.price_min)) == null ? void 0 : _c.map((upsellProduct) => {
         return o3("div", { className: "border-b border-b-gray-300 pb-6", children: o3(ProductCardFlatWide, { product: upsellProduct, disableCartOpen: true }) }, upsellProduct.id);
@@ -13234,9 +13242,9 @@
       if (!((_c = (_b5 = (_a5 = settings == null ? void 0 : settings.products) == null ? void 0 : _a5[0]) == null ? void 0 : _b5.variants) == null ? void 0 : _c.length)) {
         return;
       }
-      G(o3(RouteProtection, { settings }), element);
+      G2(o3(RouteProtection, { settings }), element);
       if (cartPageRouteProtection) {
-        G(o3(RouteProtection, { settings }), cartPageRouteProtection);
+        G2(o3(RouteProtection, { settings }), cartPageRouteProtection);
       }
     });
   }, "initRouteProtectionItems");
@@ -13458,7 +13466,7 @@
         setTimeout(() => document.dispatchEvent(new Event("product-quick-view:open")), 1);
       }
     }), [updateProduct]);
-    return o3(_, { children: (discountProducts == null ? void 0 : discountProducts.length) ? o3(_, { children: [
+    return o3(k, { children: (discountProducts == null ? void 0 : discountProducts.length) ? o3(k, { children: [
       o3("div", { className: "h-4" }),
       o3("div", { className: clsx_m_default("-m-4 bg-[#F5E8FF] p-4", showGiftSection && ""), children: o3("div", { className: "relative", children: [
         o3("header", { className: "flex items-baseline justify-between text-lg font-semibold", children: [
@@ -13512,7 +13520,7 @@
     const giftItemsRoot = document.querySelector("[data-cart-drawer-gifts]");
     if (giftItemsRoot) {
       giftItemsRoot.innerHTML = "";
-      G(o3(GiftItems, {}), giftItemsRoot);
+      G2(o3(GiftItems, {}), giftItemsRoot);
     }
   }
   __name(initGiftDiscounts, "initGiftDiscounts");
@@ -13522,7 +13530,7 @@
   var CartLineItems = /* @__PURE__ */ __name(() => {
     var _a5, _b5;
     const { cartData } = useCartDrawer(({ cartData: cartData2 }) => ({ cartData: cartData2 }));
-    return o3(_, { children: cartData && ((_a5 = cartData == null ? void 0 : cartData.items) == null ? void 0 : _a5.length) ? o3(_, { children: (_b5 = cartData == null ? void 0 : cartData.items) == null ? void 0 : _b5.map((line_item, index, line_items) => {
+    return o3(k, { children: cartData && ((_a5 = cartData == null ? void 0 : cartData.items) == null ? void 0 : _a5.length) ? o3(k, { children: (_b5 = cartData == null ? void 0 : cartData.items) == null ? void 0 : _b5.map((line_item, index, line_items) => {
       if ((line_item == null ? void 0 : line_item.quantity) === 0)
         return null;
       return o3(
@@ -13739,7 +13747,7 @@
   var CartDrawerLineItems = /* @__PURE__ */ __name(() => {
     var _a5;
     const { cartData } = useCartDrawer(({ cartData: cartData2 }) => ({ cartData: cartData2 }));
-    return o3(_, { children: cartData && ((_a5 = cartData.items) == null ? void 0 : _a5.length) ? o3(_, { children: cartData.items.map((line_item, index, line_items) => {
+    return o3(k, { children: cartData && ((_a5 = cartData.items) == null ? void 0 : _a5.length) ? o3(k, { children: cartData.items.map((line_item, index, line_items) => {
       if ((line_item == null ? void 0 : line_item.quantity) === 0)
         return null;
       return o3(
@@ -13959,19 +13967,19 @@
     yield cartDrawer.getState().initCart();
     if (cartDrawerLineItems) {
       cartDrawerLineItems.innerHTML = "";
-      B(o3(CartDrawerLineItems, {}), cartDrawerLineItems);
+      D(o3(CartDrawerLineItems, {}), cartDrawerLineItems);
     }
     if (cartLineItems) {
-      B(o3(CartLineItems, {}), cartLineItems);
+      D(o3(CartLineItems, {}), cartLineItems);
     }
     if (cartSideEffects) {
-      B(o3(CartSideEffects, {}), cartSideEffects);
+      D(o3(CartSideEffects, {}), cartSideEffects);
     }
   }), "initLineItems");
   var initNonDrawerModal = /* @__PURE__ */ __name(() => __async(void 0, null, function* () {
     const drawerAddedItems = document.querySelector("[data-drawer-added-items]");
     if (drawerAddedItems) {
-      B(o3(CartLastAddedItems, {}), drawerAddedItems);
+      D(o3(CartLastAddedItems, {}), drawerAddedItems);
     }
   }), "initNonDrawerModal");
   var initCart = /* @__PURE__ */ __name(() => __async(void 0, null, function* () {
@@ -14068,7 +14076,7 @@
       return;
     const settings = JSONParse((_a5 = promotionalItems.querySelector("[data-section-settings]")) == null ? void 0 : _a5.innerHTML);
     if (settings) {
-      B(
+      D(
         o3(PromotionalItems, { settings }),
         promotionalItems
       );
@@ -14797,7 +14805,7 @@ ${Object.entries(colors).map(([key, value]) => {
   init_compat_module();
   var initGlobalEffects = /* @__PURE__ */ __name(() => __async(void 0, null, function* () {
     const root = document.querySelector("[data-global-effects]");
-    G(o3(GlobalEffects, {}), root);
+    G2(o3(GlobalEffects, {}), root);
   }), "initGlobalEffects");
   var GlobalEffects = /* @__PURE__ */ __name(() => {
     useHeaderScrollEffect();
@@ -15293,7 +15301,7 @@ ${Object.entries(colors).map(([key, value]) => {
       switch (type) {
         case "payment_terms": {
           const eventBlock = block.querySelector("[data-product-block-payment-terms-events]");
-          B(
+          D(
             o3(
               PaymentTerms,
               {
@@ -15316,7 +15324,7 @@ ${Object.entries(colors).map(([key, value]) => {
           return;
         case "title":
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductTitle,
               {
@@ -15328,10 +15336,10 @@ ${Object.entries(colors).map(([key, value]) => {
           );
           return;
         case "vendor":
-          B(o3(ProductVendor, { useProduct: useProductDrawer }), block);
+          D(o3(ProductVendor, { useProduct: useProductDrawer }), block);
           return;
         case "description":
-          B(
+          D(
             o3(
               ProductDescription,
               {
@@ -15343,17 +15351,17 @@ ${Object.entries(colors).map(([key, value]) => {
           );
           return;
         case "share":
-          B(o3(ProductShare, { useProduct: useProductDrawer }), block);
+          D(o3(ProductShare, { useProduct: useProductDrawer }), block);
           return;
         case "custom_liquid":
           return;
         case "collapsible_tab":
           return;
         case "rating":
-          B(o3(ProductRating, { useProduct: useProductDrawer }), block);
+          D(o3(ProductRating, { useProduct: useProductDrawer }), block);
           return;
         case "complementary":
-          B(
+          D(
             o3(
               ProductComplementaryItems,
               {
@@ -15368,12 +15376,12 @@ ${Object.entries(colors).map(([key, value]) => {
           return;
         case "price": {
           block.innerHTML = "";
-          B(o3(ProductPrice, { useProduct: useProductDrawer }), block);
+          D(o3(ProductPrice, { useProduct: useProductDrawer }), block);
           return;
         }
         case "variant_selector": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductVariantSelector,
               {
@@ -15387,17 +15395,17 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "sku": {
           block.innerHTML = "";
-          B(o3(ProductSku, { useProduct: useProductDrawer }), block);
+          D(o3(ProductSku, { useProduct: useProductDrawer }), block);
           return;
         }
         case "quantity_selector": {
           block.innerHTML = "";
-          B(o3(ProductQuantitySelector, { useProduct: useProductDrawer }), block);
+          D(o3(ProductQuantitySelector, { useProduct: useProductDrawer }), block);
           return;
         }
         case "buy_buttons": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductBuyButtons,
               {
@@ -15411,7 +15419,7 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "dynamic_buy_buttons": {
           const eventBlock = block.querySelector("[data-product-block-dynamic-button-events]");
-          B(
+          D(
             o3(
               DynamicProductBuyButtons,
               {
@@ -15426,7 +15434,7 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "inventory": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductInventorySlider,
               {
@@ -15440,7 +15448,7 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "image": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductImage,
               {
@@ -15454,7 +15462,7 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "side_effects": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductSideEffects,
               {
@@ -15469,12 +15477,12 @@ ${Object.entries(colors).map(([key, value]) => {
         }
         case "preload_products": {
           block.innerHTML = "";
-          B(o3(ProductDrawerPreloadEvents, { useProduct: useProductDrawer }), block);
+          D(o3(ProductDrawerPreloadEvents, { useProduct: useProductDrawer }), block);
           return;
         }
         case "pre_order": {
           block.innerHTML = "";
-          B(
+          D(
             o3(
               ProductPreOrder,
               {
@@ -15528,7 +15536,7 @@ ${Object.entries(colors).map(([key, value]) => {
         getRecentlyViewedProducts();
       }
     }, [getRecentlyViewedProducts, hydrated, recentlyViewed.length]);
-    return o3(_, { children: recentlyViewedProducts.length ? o3(
+    return o3(k, { children: recentlyViewedProducts.length ? o3(
       ScrollContainer,
       {
         count: (_a5 = recentlyViewedProducts == null ? void 0 : recentlyViewedProducts.length) != null ? _a5 : 0,
@@ -15577,7 +15585,7 @@ ${Object.entries(colors).map(([key, value]) => {
         shopifySection.style.setProperty("--scrollable-display", "block");
       }
     }, [relatedProducts.length, shopifySection.style]);
-    return o3(_, { children: relatedProducts.length ? o3(
+    return o3(k, { children: relatedProducts.length ? o3(
       ScrollContainer,
       {
         count: (_a5 = relatedProducts == null ? void 0 : relatedProducts.length) != null ? _a5 : 0,
@@ -15601,7 +15609,7 @@ ${Object.entries(colors).map(([key, value]) => {
       const settings = JSONParse(
         container.dataset.productsScrollableRecentlyViewed
       );
-      G(
+      G2(
         o3(
           ProductsScrollableRecentlyViewed,
           {
@@ -15617,7 +15625,7 @@ ${Object.entries(colors).map(([key, value]) => {
         container.dataset.productsScrollableRecommended
       );
       const productId = container.dataset.productsScrollableProductId;
-      G(
+      G2(
         o3(
           ProductsScrollableRecommended,
           {
@@ -15912,7 +15920,7 @@ ${Object.entries(colors).map(([key, value]) => {
     );
     const searchTerms = JSONParse(searchContent.dataset.searchDefaultValue);
     if (settings) {
-      B(o3(Search, { settings, searchTerms, blocks }), searchContent);
+      D(o3(Search, { settings, searchTerms, blocks }), searchContent);
     }
     const pageForm = document.querySelector("[data-search-types-form]");
     pageForm == null ? void 0 : pageForm.addEventListener("submit", (e3) => {
@@ -16070,7 +16078,7 @@ ${Object.entries(colors).map(([key, value]) => {
               "container-bg-full relative grid gap-16 overflow-hidden bg-theme-bg pb-14 pt-10 text-theme-text lg:flex"
             ),
             children: [
-              blocks.some((block) => "products" in block) ? o3(_, { children: blocks.map((block, index, arr) => {
+              blocks.some((block) => "products" in block) ? o3(k, { children: blocks.map((block, index, arr) => {
                 const productBlock = "products" in block && upsellProducts.filter(Boolean).length >= (block == null ? void 0 : block.products.length) ? block : null;
                 const collectionBlock = "collections" in block && (block == null ? void 0 : block.collections.length) ? block : null;
                 if (productBlock) {
@@ -16171,7 +16179,7 @@ ${Object.entries(colors).map(([key, value]) => {
                   ] }, index);
                 }
                 return null;
-              }) }) : o3(_, { children: [
+              }) }) : o3(k, { children: [
                 o3("section", { className: "flex-1", children: [
                   o3("header", { className: "flex w-full items-baseline justify-between border-b border-b-gray-300 pb-3.5", children: [
                     o3("div", { className: "flex items-baseline gap-4", children: o3(Typography, { fontType: settings.search_results_title_font, children: settings.search_results_title }) }),
@@ -16724,12 +16732,12 @@ ${Object.entries(colors).map(([key, value]) => {
         });
       };
     }, [design_tooltips_show, handleExit, handleHover, tooltips]);
-    return o3(_, {});
+    return o3(k, {});
   }, "Tooltips");
   var initTooltip = /* @__PURE__ */ __name(() => __async(void 0, null, function* () {
     const tooltipContainer = document.querySelector("[data-tooltip-display]");
     if (tooltipContainer) {
-      G(o3(Tooltips, {}), tooltipContainer);
+      G2(o3(Tooltips, {}), tooltipContainer);
     }
   }), "initTooltip");
 

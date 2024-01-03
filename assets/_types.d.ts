@@ -9131,6 +9131,7 @@ export type ShopifyTemplateTypes =
   | "password"
   | "product"
   | "search";
+
 export type ShopifySection<T = never> = {
   name: string;
   blocks?: ShopifySectionBlock[];
@@ -9148,6 +9149,7 @@ export type ShopifySection<T = never> = {
   };
   disabled_block_files?: boolean;
   generate_block_files?: string[];
+  disabled?: boolean;
 } & (
   | {
       enabled_on?: {
@@ -10638,6 +10640,16 @@ export type Translations = {
     /*  Close */
     close: string;
   };
+  collection_card: {
+    /*  Starting at */
+    starting_at: string;
+  };
+  form: {
+    /*  Newsletter */
+    newsletter: string;
+    /*  Thank you for Signing Up */
+    thank_you: string;
+  };
   object_card: {
     /*  Starting at */
     starting_at: string;
@@ -10679,16 +10691,6 @@ export type Translations = {
     show_previous: string;
     /*  Show Next Item */
     show_next: string;
-  };
-  collection_card: {
-    /*  Starting at */
-    starting_at: string;
-  };
-  form: {
-    /*  Newsletter */
-    newsletter: string;
-    /*  Thank you for Signing Up */
-    thank_you: string;
   };
 };
 declare global {

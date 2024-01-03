@@ -15,8 +15,8 @@ export const ProductPrice: FC<{ useProduct: UseBoundStore<StoreApi<ReactProductS
 
   useEffect(() => {
     const price = selectedVariant?.price;
-
     const tags = window.product.tags;
+    const comparedAt= selectedVariant?.compare_at_price;
 
     if (tags.indexOf("no-discount") !== -1) {
       return;
@@ -39,11 +39,13 @@ export const ProductPrice: FC<{ useProduct: UseBoundStore<StoreApi<ReactProductS
     }
 
     if (hasCustomDiscount) {
+      const priceToUse=comparedAt ? comparedAt : price;
+
       const discount_percentage = discount / 100;
-      const discountedPrice = price - price * discount_percentage;
+      const discountedPrice = priceToUse - priceToUse * discount_percentage;
       setCustomDiscount(discount_percentage);
       setHasDiscountCustomer(true);
-      setCustomCompareAtPrice(price);
+      setCustomCompareAtPrice(priceToUse);
       setCustomDiscountedPrice(discountedPrice);
     }
   }, [selectedVariant]);

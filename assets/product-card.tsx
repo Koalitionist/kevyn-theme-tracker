@@ -625,6 +625,7 @@ export const ProductCardInner: FC<
   useEffect(() => {
     const price = product.price_min;
     const tags = product.tags;
+    const comparedAt= product.compare_at_price;
 
     if (tags.indexOf("no-discount") !== -1) {
       return;
@@ -647,12 +648,14 @@ export const ProductCardInner: FC<
     }
 
     if (hasCustomDiscount) {
+      const priceToUse=comparedAt ? comparedAt : price;
       const discount_percentage = discount / 100;
-      const discountedPrice = price - price * discount_percentage;
+      const discountedPrice = priceToUse - priceToUse * discount_percentage;
+
       setCustomDiscount(discount_percentage);
       setHasDiscountCustomer(true);
-      setCustomCompareAtPrice(price);
-      setCustomDiscountedPrice(discountedPrice);
+      setCustomCompareAtPrice(priceToUse);
+      setCustomDiscountedPrice(discountedPrice);     
     }
   }, [product]);
 
@@ -661,7 +664,7 @@ export const ProductCardInner: FC<
       <a
         ref={containerRef}
         className={clsx(
-          "product-card__image group relative grid h-0 outline-none hf:outline-none ",
+          "product-card__image group relative grid h-0 outline-none hf:outline-none",
           settings.product_card__image__ratio
         )}
         href={collectionUrl ? collectionUrl + product.url : product.url}

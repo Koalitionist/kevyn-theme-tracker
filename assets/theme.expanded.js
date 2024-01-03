@@ -13595,6 +13595,7 @@
           setVariant((_a6 = p4 == null ? void 0 : p4.variants) == null ? void 0 : _a6.find(({ id }) => id === (line_item == null ? void 0 : line_item.variant_id)));
         });
       }
+      debugger;
     }, [hydrated, line_item == null ? void 0 : line_item.handle, line_item == null ? void 0 : line_item.variant_id, variant]);
     return o3("tr", { className: "group hf:bg-gray-50", children: [
       o3("td", { className: "py-4 pl-4 pr-3 text-sm sm:pl-6", children: o3("div", { className: "grid w-full items-center gap-4 sm:grid-cols-[100px_1fr]", children: [

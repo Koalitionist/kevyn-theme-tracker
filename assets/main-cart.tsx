@@ -88,6 +88,7 @@ export const CartLineItem: FC<{
         setVariant(p?.variants?.find(({ id }) => id === line_item?.variant_id));
       });
     }
+    debugger;
   }, [hydrated, line_item?.handle, line_item?.variant_id, variant]);
 
   return (

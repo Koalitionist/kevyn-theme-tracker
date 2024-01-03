@@ -6,7 +6,7 @@
         "template--14914200272983__8636e605-446f-469d-bb7c-333416ce7988-text-1": {
           "type": "text",
           "settings": {
-            "title": "<h4>WAREHOUSE SALE<\/h4><h2>UP TO 70% OFF SITEWIDE<\/h2>",
+            "title": "<h4><strong>WAREHOUSE SALE<\/strong><\/h4><h1>UP TO 70% OFF SITEWIDE<\/h1>",
             "title_font": 1,
             "opacity": 100,
             "alignment_desktop": "[text-align:inherit]",

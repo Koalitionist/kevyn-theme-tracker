@@ -635,6 +635,7 @@
           },
           "21914d90-1ecd-4b8e-ba6a-2ac81f017776": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<h6>HOLIDAY GIFT GUIDE<\/h6>",
               "short_text": "",
